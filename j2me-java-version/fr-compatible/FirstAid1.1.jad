@@ -1,0 +1,9 @@
+MIDlet-1: First Aid Mobile 3.0,icon.png,de.firstai.FirstAidMobile
+MIDlet-Jar-URL: PremiersSecours3.0.jar
+MIDlet-Icon: icon.png
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 3.0
+MIDlet-Name: Premiers Secours 3.0
+MIDlet-Vendor: Kai Kajus Noack
+MIDlet-Info-URL: www.firstai.de
+MicroEdition-Profile: MIDP-2.0

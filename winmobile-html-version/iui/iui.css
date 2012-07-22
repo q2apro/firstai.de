@@ -1,0 +1,638 @@
+/* OLD:  iui.css (c) 2007 by iUI Project Members, see LICENSE.txt for license */
+
+body {
+    margin: 0;
+    font-family: Helvetica, Verdana, Tahoma;
+    background: #EEFFEE;
+    color: #000000;
+/*    overflow-x: hidden;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;*/
+}
+
+/*body > *:not(.toolbar) {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    min-height: 372px;
+}
+
+body[orient="landscape"] > *:not(.toolbar) {
+    min-height: 268px;
+}
+
+body > *[selected="true"] {
+    display: block;
+}
+*/
+/*a[selected], a:active {
+    background-color: #58E675 !important; /* alt: 194fdb 
+    background-image: url(listArrowSel.png), url(selection.png) !important;
+    background-repeat: no-repeat, repeat-x;
+    background-position: right center, left top;
+    color: #FFFFFF !important;
+}
+
+a[selected="progress"] {
+    background-image: url(loading.gif), url(selection.png) !important;
+}*/
+
+/************************************************************************************************/
+
+body .toolbar {
+	display:block;
+    background: url(toolbar.png) #EEFFEE repeat-x; /* old 6d84a2  */
+	text-align: center;
+}
+
+.toolbar h1 {
+	margin-top:0px;
+    padding: 14px 0px 15px 0px;
+	width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+	text-align:center;
+	border-top: 1px solid #2d3642; 
+}
+
+/*body[orient="landscape"] > .toolbar > h1 {
+    margin-left: -125px;
+    width: 250px;
+}*/
+
+.button {
+    overflow: hidden;
+	padding: 5px 10px 5px 10px;
+	text-align:center; /*display:block;*/
+    font-size: 14px;  color: #FFFFFF;  font-weight: bold;
+	text-decoration: none;
+}
+
+#menuButton {
+    background: url(menuButton.png) #6d84a2 repeat-x; /* old 6d84a2  */
+	display: inline;
+}
+#backButton { 	display:none;
+	background-image: url('backButton.png');
+}
+#backButton2 { 	
+	background-image: url('backButton.png');
+	margin-left: 80px;
+}
+
+
+/************************************************************************************************/
+
+body > ul { 
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-right: 5px;
+}
+
+
+body > ul > li {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+	text-align: center;
+}
+
+/*body > ul > li.group {
+    position: relative;
+    top: -1px;
+    margin-bottom: -2px;
+    border-top: 1px solid #7d7d7d;
+    border-bottom: 1px solid #999999;
+    padding: 1px 10px;
+    background: url(listGroup.png) repeat-x;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+    color: #FFFFFF;
+}
+
+body > ul > li.group:first-child {
+    top: 0;
+    border-top: none;
+}
+*/
+body > ul > li > a {
+    display: block;
+    margin: -8px 0 -8px -10px;
+    padding: 8px 32px 8px 10px;
+    text-decoration: none;
+    color: inherit;
+    background: url(listArrow.png) no-repeat right center;
+}
+
+body > ul > ol > li {
+    padding-right: 22px;
+	padding-bottom: 10px;
+	font-size: 13px;
+	/*padding-bottom:10px;*/
+	line-height:20px;
+}
+body > ul > p {
+    padding-right: 22px;
+	font-size: 13px;
+}
+
+/*a[target="_replace"] {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    font-size: 14px;
+    color: cornflowerblue;
+    background-color: #FFFFFF;
+    background-image: none;
+}*/
+
+/************************************************************************************************/
+    
+/*body > .dialog {
+    top: 0;
+    width: 100%;
+    min-height: 417px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0;
+    text-align: right;
+}
+
+.dialog > fieldset {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #6d84a2;
+    padding: 10px 6px;
+    background: url(toolbar.png) #7388a5 repeat-x;
+}
+
+.dialog > fieldset > h1 {
+    margin: 0 10px 0 10px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px -1px 0;
+    text-align: center;
+}
+
+.dialog > fieldset > label {
+    position: absolute;
+    margin: 16px 0 0 6px;
+    font-size: 12px;
+    color: #999999;
+}
+input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0 0 0;
+    padding: 6px 6px 6px 44px;
+    font-size: 12px;
+    font-weight: normal;
+}*/
+
+/************************************************************************************************/
+
+/*body > .panel {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 10px;
+    background: #c8c8c8 url(pinstripes.png);
+}
+
+.panel > fieldset {
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 0;
+    background: #FFFFFF;
+    -webkit-border-radius: 10px;
+    border: 1px solid #999999;
+    text-align: right;
+    font-size: 12px;
+}
+
+.row  {
+    position: relative;
+    min-height: 42px;
+    border-bottom: 1px solid #999999;
+    -webkit-border-radius: 0;
+    text-align: right;
+}
+
+fieldset > .row:last-child {
+    border-bottom: none !important;
+}
+
+.row > input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    border: none;
+    padding: 12px 10px 0 110px;
+    height: 42px;
+    background: none;
+}
+
+.row > label {
+    position: absolute;
+    margin: 0 0 0 14px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.row > .toggle {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 100px;
+    height: 28px;
+}
+
+.toggle {
+    border: 1px solid #888888;
+    -webkit-border-radius: 6px;
+    background: #FFFFFF url(toggle.png) repeat-x;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.toggle[toggled="true"] {
+    border: 1px solid #143fae;
+    background: #194fdb url(toggleOn.png) repeat-x;
+}
+
+.toggleOn {
+    display: none;
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    color: #FFFFFF;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px -1px 0;
+}
+
+.toggleOff {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    right: 0;
+    top: 0;
+    color: #666666;
+}
+
+.toggle[toggled="true"] > .toggleOn {
+    display: block;
+}
+
+.toggle[toggled="true"] > .toggleOff {
+    display: none;
+}
+
+.thumb {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 40px;
+    height: 28px;    
+    border: 1px solid #888888;
+    -webkit-border-radius: 6px;
+    background: #ffffff url(thumb.png) repeat-x;
+}
+
+.toggle[toggled="true"] > .thumb {
+    left: auto;
+    right: -1px;
+}
+
+.panel > h2 {
+    margin: 0 0 8px 14px;
+    font-size: inherit;
+    font-weight: bold;
+    color: #4d4d70;
+    text-shadow: rgba(255, 255, 255, 0.75) 2px 2px 0;
+}
+*/
+
+/************************************************************************************************/
+
+/*#preloader {
+    display: none;
+    background-image: url(loading.gif), url(selection.png),
+        url(blueButton.png), url(listArrowSel.png), url(listGroup.png);
+}*/
+
+
+
+/*************** kai kajus noack *********************************************************************************/
+
+img { border: 1px solid #575757; margin: 10px 0px 10px 0px;}
+
+h3 { padding-left:0px; padding-top: 8px; }
+	
+a { color:black; }
+
+
+/* menu */
+#home { }
+
+#aid_disclaimer { display: none; }
+
+#aid_allergic	{ display: none; }
+#aid_amputation	{ display: none; }
+#aid_animalbite	{ display: none; }
+#aid_apnoea	{ display: none; }
+#aid_asthma	{ display: none; }
+#aid_backinjury	{ display: none; }
+#aid_birth	{ display: none; }
+#aid_bleedinglight	{ display: none; }
+#aid_bleedingsevere	{ display: none; }
+#aid_brainconcussion	{ display: none; }
+#aid_burningsevere	{ display: none; }
+#aid_burningslight	{ display: none; }
+#aid_checkbreathing	{ display: none; }
+#aid_chemicalburn	{ display: none; }
+#aid_chemicalburneyes	{ display: none; }
+#aid_dangerzone	{ display: none; }
+#aid_diabeticcoma	{ display: none; }
+#aid_diarrhoea	{ display: none; }
+#aid_disclaimer	{ display: none; }
+#aid_drowning	{ display: none; }
+#aid_electricityaccident	{ display: none; }
+#aid_emergencycall	{ display: none; }
+#aid_epilepsy	{ display: none; }
+#aid_eyeinjury	{ display: none; }
+#aid_fracture	{ display: none; }
+#aid_frostbitemild	{ display: none; }
+#aid_frostbitesevere	{ display: none; }
+#aid_general	{ display: none; }
+#aid_heartattack	{ display: none; }
+#aid_hyperthermia	{ display: none; }
+#aid_hypoglycaemia	{ display: none; }
+#aid_hypothermia	{ display: none; }
+#aid_icerescue	{ display: none; }
+#aid_insectstings	{ display: none; }
+#aid_nosebleeding	{ display: none; }
+#aid_poisining	{ display: none; }
+#aid_recoveryposition	{ display: none; }
+#aid_resuscitation	{ display: none; }
+#aid_safeguardaccident	{ display: none; }
+#aid_shock	{ display: none; }
+#aid_skullfracture	{ display: none; }
+#aid_snakebite	{ display: none; }
+#aid_sos	{ display: none; }
+#aid_sprain	{ display: none; }
+#aid_stroke	{ display: none; }
+#aid_suffocation	{ display: none; }
+#aid_sunburn	{ display: none; }
+#aid_sunstroke	{ display: none; }
+#aid_unconsciouswithbreath	{ display: none; }
+#aid_unconsciouswithoutbreath	{ display: none; }
+#aid_vomiting	{ display: none; }
+#cclicence	{ display: none; }
+#telEmergency	{ display: none; }
+
+/****/
+
+/* languages contact etc */
+#menu	{ display: none; }
+
+/* chose language */
+#language { display: none; }
+
+#donate { display: none; }
+
+#cclicence { display: none; }
+
+#telEmergency { display: none; }
+
+#telAfrica { display: none; }
+#telAsia { display: none; }
+#telEurope { display: none; }
+#telNorthamerica { display: none; }
+#telOceania { display: none; }
+#telSouthamerica { display: none; }
+
+
+#algeria	 { display: none; }
+#angola	 { display: none; }
+#benin	 { display: none; }
+#botswana	 { display: none; }
+#burkinafaso	 { display: none; }
+#burundi	 { display: none; }
+#cameroon	 { display: none; }
+#capeverde	 { display: none; }
+#centralafricanrepublic	 { display: none; }
+#chad	 { display: none; }
+#comoros	 { display: none; }
+#congodemocraticrepublic	 { display: none; }
+#congorepublic	 { display: none; }
+#djibouti	 { display: none; }
+#egypt	 { display: none; }
+#equatorialguinea	 { display: none; }
+#eritrea	 { display: none; }
+#ethiopia	 { display: none; }
+#gabon	 { display: none; }
+#gambia	 { display: none; }
+#ghana	 { display: none; }
+#guinea	 { display: none; }
+#guinea-bissau	 { display: none; }
+#ivorycoast	 { display: none; }
+#kenya	 { display: none; }
+#lesotho	 { display: none; }
+#liberia	 { display: none; }
+#libya	 { display: none; }
+#madagascar	 { display: none; }
+#malawi	 { display: none; }
+#mali	 { display: none; }
+#mauritania	 { display: none; }
+#mauritius	 { display: none; }
+#mayotte	 { display: none; }
+#morocco	 { display: none; }
+#mozambique	 { display: none; }
+#namibia	 { display: none; }
+#niger	 { display: none; }
+#nigeria	 { display: none; }
+#reunion	 { display: none; }
+#rwanda	 { display: none; }
+#sahrawiarabdemocraticrepublic	 { display: none; }
+#saotomeandprincipe	 { display: none; }
+#senegal	 { display: none; }
+#seychelles	 { display: none; }
+#sierraleone	 { display: none; }
+#somalia	 { display: none; }
+#southafrica	 { display: none; }
+#sudan	 { display: none; }
+#swaziland	 { display: none; }
+#tanzania	 { display: none; }
+#togo	 { display: none; }
+#tunisia	 { display: none; }
+#uganda	 { display: none; }
+#zambia	 { display: none; }
+#zimbabwe	 { display: none; }
+#afghanistan	 { display: none; }
+#armenia	 { display: none; }
+#azerbaijan	 { display: none; }
+#bahrain	 { display: none; }
+#bangladesh	 { display: none; }
+#bhutan	 { display: none; }
+#brunei	 { display: none; }
+#cambodia	 { display: none; }
+#china	 { display: none; }
+#easttimor	 { display: none; }
+#georgia	 { display: none; }
+#hongkong	 { display: none; }
+#india	 { display: none; }
+#indonesia	 { display: none; }
+#iran	 { display: none; }
+#iraq	 { display: none; }
+#israel	 { display: none; }
+#japan	 { display: none; }
+#jordan	 { display: none; }
+#kazakhstan	 { display: none; }
+#kurdistan	 { display: none; }
+#kuwait	 { display: none; }
+#kyrgyzstan	 { display: none; }
+#laos	 { display: none; }
+#lebanon	 { display: none; }
+#macau	 { display: none; }
+#malaysia	 { display: none; }
+#maldives	 { display: none; }
+#mongolia	 { display: none; }
+#myanmar	 { display: none; }
+#nepal	 { display: none; }
+#northkorea	 { display: none; }
+#oman	 { display: none; }
+#pakistan	 { display: none; }
+#philippines	 { display: none; }
+#qatar	 { display: none; }
+#saudiarabia	 { display: none; }
+#singapore	 { display: none; }
+#southkorea	 { display: none; }
+#srilanka	 { display: none; }
+#syria	 { display: none; }
+#taiwan	 { display: none; }
+#tajikistan	 { display: none; }
+#thailand	 { display: none; }
+#turkmenistan	 { display: none; }
+#unitedarabemirates	 { display: none; }
+#uzbekistan	 { display: none; }
+#vietnam	 { display: none; }
+#yemen	 { display: none; }
+#albania	 { display: none; }
+#andorra	 { display: none; }
+#austria	 { display: none; }
+#belarus	 { display: none; }
+#belgium	 { display: none; }
+#bosniaandherzegovina	 { display: none; }
+#bulgaria	 { display: none; }
+#croatia	 { display: none; }
+#cyprus	 { display: none; }
+#czechrepublic	 { display: none; }
+#denmark	 { display: none; }
+#estonia	 { display: none; }
+#finland	 { display: none; }
+#france	 { display: none; }
+#germany	 { display: none; }
+#greece	 { display: none; }
+#hungary	 { display: none; }
+#iceland	 { display: none; }
+#ireland	 { display: none; }
+#italy	 { display: none; }
+#kosovo	 { display: none; }
+#latvia	 { display: none; }
+#liechtenstein	 { display: none; }
+#lithuania	 { display: none; }
+#luxembourg	 { display: none; }
+#macedonia	 { display: none; }
+#malta	 { display: none; }
+#moldova	 { display: none; }
+#monaco	 { display: none; }
+#montenegro	 { display: none; }
+#netherlands	 { display: none; }
+#norway	 { display: none; }
+#poland	 { display: none; }
+#portugal	 { display: none; }
+#romania	 { display: none; }
+#russia	 { display: none; }
+#sanmarino	 { display: none; }
+#serbia	 { display: none; }
+#slovakia	 { display: none; }
+#slovenia	 { display: none; }
+#spain	 { display: none; }
+#sweden	 { display: none; }
+#switzerland	 { display: none; }
+#turkey	 { display: none; }
+#ukraine	 { display: none; }
+#unitedkingdom	 { display: none; }
+#vaticancity	 { display: none; }
+#antiguaandbarbuda	 { display: none; }
+#bahamas	 { display: none; }
+#barbados	 { display: none; }
+#belize	 { display: none; }
+#canada	 { display: none; }
+#caymanislands	 { display: none; }
+#costarica	 { display: none; }
+#cuba	 { display: none; }
+#dominica	 { display: none; }
+#dominicanrepublic	 { display: none; }
+#elsalvador	 { display: none; }
+#greenland	 { display: none; }
+#grenada	 { display: none; }
+#guatemala	 { display: none; }
+#haiti	 { display: none; }
+#honduras	 { display: none; }
+#jamaica	 { display: none; }
+#mexico	 { display: none; }
+#nicaragua	 { display: none; }
+#panama	 { display: none; }
+#stkittsandnevis	 { display: none; }
+#stlucia	 { display: none; }
+#saintpierreandmiquelon	 { display: none; }
+#stvincentandgrenadines	 { display: none; }
+#trinidadandtobago	 { display: none; }
+#unitedstatesofamerica	 { display: none; }
+#australia	 { display: none; }
+#fiji	 { display: none; }
+#kiribati	 { display: none; }
+#marshallislands	 { display: none; }
+#micronesia	 { display: none; }
+#nauru	 { display: none; }
+#newzealand	 { display: none; }
+#palau	 { display: none; }
+#papuanewguinea	 { display: none; }
+#samoa	 { display: none; }
+#solomonislands	 { display: none; }
+#tonga	 { display: none; }
+#tuvalu	 { display: none; }
+#vanuatu	 { display: none; }
+#argentina	 { display: none; }
+#bolivia	 { display: none; }
+#brazil	 { display: none; }
+#chile	 { display: none; }
+#colombia	 { display: none; }
+#ecuador	 { display: none; }
+#guyana	 { display: none; }
+#paraguay	 { display: none; }
+#peru	 { display: none; }
+#suriname	 { display: none; }
+#uruguay	 { display: none; }
+#venezuela	 { display: none; }
+
+

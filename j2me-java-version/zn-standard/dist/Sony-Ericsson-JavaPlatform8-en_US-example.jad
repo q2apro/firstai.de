@@ -1,0 +1,9 @@
+MIDlet-Name: First Aid ZN 3.0 standard
+MIDlet-Version: 3.0
+MIDlet-Vendor: Kai Kajus Noack
+MIDlet-Jar-URL: Sony-Ericsson-JavaPlatform8-en_US-example.jar
+MIDlet-Jar-Size: 1182902
+MIDlet-Icon: /icon.png
+MIDlet-Info-URL: http://www.firstai.de
+MIDlet-1: First Aid ZN 3.0 standard,icon.png,de.firstai.FirstAid3
+MIDlet-Delete-Confirm: Do you really want to remove the application?

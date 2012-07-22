@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meposeproject>
+	<meposeproperty name="id.buildxml" value="C:\workspace\FirstAid3.0std-ZN\build.xml" />
+	<meposeproperty name="id.supported.platforms" value="MIDP/2.0" />
+	<meposeproperty name="id.supported.configurations" value="CLDC/1.1" />
+	<meposeproperty name="id.supported.devices" value="Generic/Midp2Cldc11,Sony-Ericsson/JavaPlatform8" />
+	<meposeproperty name="id.path.siemenshome" value="\" />
+	<meposeproperty name="id.path.motorolahome" value="\" />
+	<meposeproperty name="id.path.projecthome" value="C:\workspace\FirstAid3.0std-ZN" />
+	<meposeproperty name="id.path.mpphome" value="" />
+	<meposeproperty name="id.current.target.onlybuild" value="j2mepolish" />
+	<meposeproperty name="id.path.sonyhome" value="C:\SonyEricsson\JavaME_SDK_CLDC" />
+	<meposeproperty name="id.current.device" value="Sony-Ericsson/JavaPlatform8" />
+	<meposeproperty name="id.path.polishhome" value="C:\Programme\J2ME-Polish" />
+	<meposeproperty name="id.path.wtkhome" value="C:\WTK2.5.1" />
+	<meposeproperty name="id.path.nokiahome" value="\" />
+</meposeproject>

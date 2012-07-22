@@ -1,0 +1,1047 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Erste Hilfe iPhone 1.0</title>
+<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<meta name="description" content="iPhone Version für Erste Hilfe auf dem Handy - Online - inklusive aller Bilder und Audio" />
+<!-- Copyright of Web-Application - CC by-nc-nd 3.0 (c) Kai Kajus Noack-->
+<style type="text/css" media="screen">@import "iui/iui.css";</style>
+<style type="text/css" media="screen">
+	p, li { line-height: 2.0; font-family: Verdana, Arial; }
+	ul p { padding-left:15px; }
+	ul { list-style-type:decimal; }
+	ol { padding-bottom: 30px; }
+	img { border: 1px solid #575757; 
+		display: block; margin: 15px auto 15px auto;} 
+</style>
+<script type="application/x-javascript">
+		// back button used in iui
+		langback = "Zur&uuml;ck";
+</script>
+<script type="application/x-javascript" src="iui/iui.js"></script>
+	<script type="application/x-javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }; false);
+		function hideURLbar() { window.scrollTo(0,1); }
+	</script>
+</head>
+<body>
+    <div class="toolbar">
+        <h1 id="pageTitle"></h1>
+        <a id="menuButton" class="button" href="#menu">Men&uuml;</a>
+        <a id="backButton" class="button" href="#"></a>
+    </div>
+
+    <ul id="home" title="Erste Hilfe iPhone 1.0" selected="true">
+        <li><a href="#aid_disclaimer"># Haftung + Hinweise!</a></li>
+        <li><a href="#telEmergency"># Notrufe weltweit</a></li>
+        <li><a href="#aid_general"># Allgemeines</a></li>
+        <li><a href="#aid_allergic">Allergische Reaktion</a></li>
+        <li><a href="#aid_amputation">Amputation</a></li>
+        <li><a href="#aid_asthma">Asthma / Atemnot</a></li>
+        <li><a href="#aid_apnoea">Atemstillstand</a></li>
+        <li><a href="#aid_checkbreathing">Atmung prüfen</a></li>
+        <li><a href="#aid_eyeinjury">Augenverletzung</a></li>
+        <li><a href="#aid_apnoea">Beatmung</a></li>
+        <li><a href="#aid_unconsciouswithbreath">Bewusstlosigkeit mit Atmung</a></li>
+        <li><a href="#aid_unconsciouswithoutbreath">Bewusstlosigkeit ohne Atmung</a></li>
+        <li><a href="#aid_bleedinglight">Blutung (leicht)</a></li>
+        <li><a href="#aid_bleedingsevere">Blutung (schwer)</a></li>
+        <li><a href="#aid_diabeticcoma">Diabetisches Koma</a></li>
+        <li><a href="#aid_diarrhoea">Durchfall</a></li>
+        <li><a href="#aid_icerescue">Eisunfall</a></li>
+        <li><a href="#aid_electricityaccident">Elektrounfall</a></li>
+        <li><a href="#aid_epilepsy">Epileptischer Anfall</a></li>
+        <li><a href="#aid_vomiting">Erbrechen</a></li>
+        <li><a href="#aid_frostbitemild">Erfrierung (leicht)</a></li>
+        <li><a href="#aid_frostbitesevere">Erfrierung (stark)</a></li>
+        <li><a href="#aid_suffocation">Ersticken</a></li>
+        <li><a href="#aid_drowning">Ertrinken</a></li>
+        <li><a href="#aid_birth">Geburt</a></li>
+        <li><a href="#aid_dangerzone">Gefahrenzone (Retten)</a></li>
+        <li><a href="#aid_brainconcussion">Gehirnerschütterung</a></li>
+        <li><a href="#aid_resuscitation">Herzdruckmassage</a></li>
+        <li><a href="#aid_heartattack">Herzinfarkt</a></li>
+        <li><a href="#aid_hyperthermia">Hitzschlag</a></li>
+        <li><a href="#aid_insectstings">Insektenstich</a></li>
+        <li><a href="#aid_fracture">Knochenbruch</a></li>
+        <li><a href="#aid_nosebleeding">Nasenbluten</a></li>
+        <li><a href="#aid_emergencycall">Notruf</a></li>
+        <li><a href="#aid_resuscitation">Reanimation</a></li>
+        <li><a href="#aid_backinjury">Rückenverletzung</a></li>
+        <li><a href="#aid_skullfracture">Schädelbasisbruch</a></li>
+        <li><a href="#aid_stroke">Schlaganfall</a></li>
+        <li><a href="#aid_snakebite">Schlangenbiss</a></li>
+        <li><a href="#aid_shock">Schock</a></li>
+        <li><a href="#aid_sunburn">Sonnenbrand</a></li>
+        <li><a href="#aid_sunstroke">Sonnenstich</a></li>
+        <li><a href="#aid_sos">SOS</a></li>
+        <li><a href="#aid_recoveryposition">Stabile Seitenlage</a></li>
+        <li><a href="#aid_animalbite">Tierbiss</a></li>
+        <li><a href="#aid_hyperthermia">Überhitzung</a></li>
+        <li><a href="#aid_diabeticcoma">Überzuckerung</a></li>
+        <li><a href="#aid_safeguardaccident">Unfallstelle sichern</a></li>
+        <li><a href="#aid_hypothermia">Unterkühlung</a></li>
+        <li><a href="#aid_hypoglycaemia">Unterzuckerung</a></li>
+        <li><a href="#aid_chemicalburn">Verätzung</a></li>
+        <li><a href="#aid_chemicalburneyes">Verätzung (Augen)</a></li>
+        <li><a href="#aid_burningslight">Verbrennung (leicht)</a></li>
+        <li><a href="#aid_burningsevere">Verbrennung (schwer)</a></li>
+        <li><a href="#aid_poisining">Vergiftung</a></li>
+        <li><a href="#aid_safeguardaccident">Verkehrsunfall</a></li>
+        <li><a href="#aid_suffocation">Verschlucken</a></li>
+        <li><a href="#aid_sprain">Verstauchung + Verrenkung</a></li>
+        <li><a href="#aid_resuscitation">Wiederbelebung</a></li>
+        <li><a href="#aid_backinjury">Wirbelsäule</a></li>
+        <li><a href="#cclicence"><img src="iui/cc88x31.png" /></a></li>
+    </ul>
+
+<ul id="aid_disclaimer" title="Haftung + Hinweise"><br />
+<a href="audio/de/0.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li><b>Software</b><br />
+Erste Hilfe auf dem Handy<br />
+Version: i1.0<br />
+Release: 2008-12-24<br />
+Copyright: Kai Kajus Noack<br /><br />
+Lizenz: Creative Commons <a href="#cclicence"><img style="border:none; margin: 0px 0px 20px 0px;" alt="Creative Commons" src="iui/cc88x31.png" /></a>
+Dieses Programm soll Informationen zur Ersten Hilfe geben. Es stellt jedoch in keiner Weise einen Ersatz für einen Erste-Hilfe-Kurs dar, sondern dient der Auffrischung des bereits erworbenen Wissens. <br /><br /><b>Illustrationen &copy; <a target="_blank" href="http://stefan.ganz.priv.at/">Med4Teens</a><br />Interface &copy; <a target="_blank" href="http://code.google.com/p/iui/">iUI Library</a></b></li><br /><br />
+<li><b>Haftungsausschluss</b><br />
+Bitte beachten Sie, dass ich keine Verantwortung für Konsequenzen, die aus der Nutzung entstehen, übernehme.<br />
+JEGLICHE HAFTUNG IST AUSGESCHLOSSEN!<br />
+VERWENDUNG AUF EIGENE GEFAHR!<br /><br />
+In allen Notfällen suchen Sie bitte sofort professionelle Hilfe.</li><br /><br />
+<li><b>Entwicklung des Projekts</b><br />
+
+Das Programm soll vielsprachig werden. Freiwillige Übersetzer gesucht!!<br /><br />
+Weitere Informationen erhaltet ihr im Internet unter <a href="http://firstai.de/">www.firstai.de</a> oder schreibt eine E-Mail an: <script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>"+emailME+"</a>"); </script></li><br /><br />
+<span style="font-style:italic;font-size:80%">Rette einen Menschen und du rettest die ganze Welt.</span><br /></ol></ul><br />
+
+
+<ul id="aid_general" title="Allgemeines"> <br />
+<a href="audio/de/2.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Leisten Sie immer Erste Hilfe. Sie können keine Fehler machen.</li>
+<li>Achten Sie immer auf Ihre eigene Sicherheit.</li>
+<li>Machen Sie sich ein Bild von der Situation + Sichern Sie die Unfallstelle.</li>
+<li>Notruf + Sofortmaßnahmen!</li>
+<li>Bei mehreren Verletzten hat der am stärksten bedrohte Vorrang.</li>
+<li>Beruhigen Sie den Betroffenen. Und bleiben Sie selbst ruhig!</li>
+<li>Lagern Sie den Betroffenen falls möglich bequem. Grundsätzlich nie Alkohol, Nikotin oder Medikamente verabreichen.</li></ol></ul>
+<ul id="aid_allergic" title="Allergische Reaktion"> <img style="border:none;" src="images/aid046.png" />
+<a href="audio/de/3.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Notruf absetzen.</li>
+<li>Beruhigen des Betroffenen und bequem hinsetzen.</li>
+<li>Allergie-auslösenden Stoff (z. B. Insektenstachel) vorsichtig entfernen.</li>
+<li>Betroffene Hautstelle kühlen (feuchter Umschlag, Eis). <img style="border:none;" src="images/aid046ice.png" /></li>
+<li>Falls Betroffener ein Gegenmittel hat, sollte er dieses nutzen.</li>
+<li>Kontrolle des Zustands bis Notarzt eintrifft.</li>
+<li>Bei eintretender Bewusstlosigkeit oder Atemnot entsprechende Maßnahmen ergreifen! <img src="images/aid077.png" /></li></ol></ul>
+<ul id="aid_amputation" title="Amputation"> 
+<a href="audio/de/4.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Abgetrennter Körperteil kann wieder angenäht werden. Ziel: Amputat bis zum Eintreffen im Krankenhaus kühlen. </p>
+<ol><li>Betroffenen beruhigen, hinlegen und zudecken.</li>
+<li>Blutung stoppen, siehe 'Blutung (schwer)' und 'Schock'.</li>
+<li>Abgetrennten Körperteil in ein sauberes trockenes Tuch wickeln und in eine wasserdichte Plastiktüte legen. </li>
+<li>Diese Plastiktüte verschließen und in eine zweite Plastiktüte legen, die kühles Wasser/Eis enthält. </li>
+<li>Keinen Alkohol, Zigaretten oder Essen geben (falls im Krankenhaus mit Narkose operiert wird). </li>
+<li>Das Amputat nicht einfrieren (nur kühlen). </li>
+<li>Notarzt rufen oder selbst zum Krankenhaus fahren. </li></ol></ul>
+<ul id="aid_animalbite" title="Tierbiss"> <img src="images/aid047.png" />
+<a href="audio/de/45.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Achtung, hohe Infektionsgefahr. Folgen wie Eiter, Tetanus, Tollwut.</p>
+<ol><li>Wunde sofort mit heißem Seifenwasser auswaschen. <img src="images/aid049.png" /></li>
+<li>Anschließend Wunddesinfektion auftragen.</li>
+<li>Bei starker Blutung den Oberkörper erhöht lagern.</li>
+<li>Keimfreien Verband anlegen. <img src="images/aid085.png" /></li>
+<li>Krankenhaus aufsuchen oder Notruf absetzen.</li></ol></ul>
+<ul id="aid_apnoea" title="Atemstillstand"> 
+<a href="audio/de/6.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Keine Geräusche oder Atembewegungen, auffallende Hautverfärbung.</p>
+<ol><li>Notruf absetzen.</li>
+<li>Betroffenen auf Rücken legen.</li>
+<li>Entfernen von Fremdkörpern aus Mund und Rachen. Überstrecken des Kopfes in den Nacken. <img src="images/aid067.png" /></li>
+<li>Nasenflügel zusammendrücken, damit Nase geschlossen ist. <img src="images/aid010.png" /></li>
+<li>Tief einatmen und Mund auf Mund des Betroffenen aufsetzen, sodass keine Luft entweichen kann. <img src="images/aid011.png" /></li>
+<li>Langsam und vollständig ausatmen.</li>
+<li>Falls ohne Erfolg: Atemspende fortsetzen bis Notarzt eintrifft.</li></ol></ul>
+<ul id="aid_asthma" title="Asthma/Atemnot"> 
+<a href="audio/de/5.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Starke Atemnot. Pfeifendes Atemgeräusch. Angstgefühle.</p>
+<ol><li>Beruhigen des Betroffenen. (Bleiben Sie selbst ruhig!)</li>
+<li>Kleidung lockern.</li>
+<li>Betroffenen bequem leicht nach vorne gebeugt hinsetzen und auffordern, langsam und tief ein- und auszuatmen.</li>
+<li>Falls der Betroffene einen Inhalator besitzt, sollte dieser benutzt werden (helfen Sie dabei). Nach 5-10 min sollte sich Wirkung zeigen. <img src="images/aid074.png" /></li>
+<li>Sofern keine Besserung eintritt: Inhalator jede 5 min anwenden, solange bis Notarzt eintrifft.</li>
+<li>Notruf absetzen.</li>
+<li>Falls es zum Atemstillstand kommt, mit der <a href="#aid_apnoea">Beatmung</a> beginnen.</li></ol></ul>
+<ul id="aid_backinjury" title="Rückenverletzung"> 
+<a href="audio/de/59.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Schmerzen im Rücken, gefühllose Arme und Beine.</p>
+<ol><li>Verletzten auf keinen Fall bewegen! <img src="images/aid064.png" /></li>
+<li>Kopf so halten, dass Betroffener stabil liegt. <img src="images/aid065.png" /></li>
+<li>Verletzten nur mittels seitlicher Polsterung stabilisieren.</li>
+<li>Betroffenen beruhigen.</li>
+<li>Notruf absetzen, Hinweis auf Rückenverletzung.</li></ol></ul>
+<ul id="aid_birth" title="Geburt"> 
+<a href="audio/de/25.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Abgang von Fruchtwasser. Presswehen treten ein. Unerwartete Geburt.</p> <img src="images/aid025.png" />
+<ol><li>Intimsphäre wahren und Ruhe bewahren! - Notruf absetzen.</li>
+<li>Die Schwangere breitbeinig, mit freigemachtem Unterkörper auf sterile Unterlage hinsetzen.</li>
+<li>Kniee anwinkeln. Beine etwas heranziehen. Becken leicht erhöht lagern. - Die Geburt ist ein natürlicher Prozess und läuft häufig ohne Komplikationen ab.</li>
+<li>Schwangere beruhigen und auf Atmung konzentrieren lassen: Durch Nase einatmen und Mund ausatmen (normales Atemtempo).</li>
+<li>Pressrhythmus: Tief Luft holen, anhalten und pressen. Sobald Kopf des Babys erscheint, mit beiden Händen unterstützend zugreifen. <img src="images/aid021.png" /> <img src="images/aid022.png" /></li>
+<li>Nach der Geburt: Neugeborenes schräg nach unten hängen, um Fruchtwasser aus Atemwegen zu befreien. (Evtl. mit dem Mund das Fruchtwasser aus der Nase des Babys absaugen.) Kind muss atmen und schreien!</li>
+<li>Nabelschnur 30 cm vom Kind entfernt abbinden (kann auch im Krankenhaus erfolgen). Scheide der Mutter steril abdecken. <img src="images/aid023.png" /></li>
+<li>Das Baby abtrocknen und warm halten. Uhrzeit notieren und zum Krankenhaus fahren.</li></ol></ul>
+<ul id="aid_bleedinglight" title="Blutung Leicht"> 
+<a href="audio/de/13.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<img src="images/aid082.png" />  
+<p>Ziel: Stoppen der Blutung.</p>
+<ol><li>Wunde nicht berühren (Infektionsgefahr).</li>
+<li>Wunde nicht mit Puder, Salben, Sprays behandeln.</li>
+<li>Wundversorgung mittels keimfreier Wundauflage und Befestigungsmaterial (Pflaster, Binde). <img src="images/aid098.png" /></li>
+<li>Bei kleiner Blutung reicht meist ein Pflasterstreifen.</li>
+<li>Bei großflächiger Verletzung Wundauflage und Verbandtuch benutzen. Verband nicht zu fest binden, da Stauung zu vermehrter Blutung führt. <img src="images/aid084.png" /><img src="images/aid085.png" /></li>
+<li>Hinweis: Tollwut-Wunden mit Seifenlösung auswaschen. <img src="images/aid049.png" /></li></ol></ul>
+<ul id="aid_bleedingsevere" title="Blutung Schwer"> 
+<a href="audio/de/14.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Spritzendes, in Stößen austretendes Blut. Gefahr: Schock durch Blutverlust, Infektionen, Tod. Ziel: Stoppen der Blutung.</p>
+<ol><li>Kleidung entfernen (notfalls aufschneiden), Wunde freilegen.</li>
+<li>Binde oder notfalls Kleidungsstück mit Druck um Wunde wickeln. <img src="images/aid086.png" /></li>
+<li>Für mind. 10 min Druck auf Wunde ausüben.</li>
+<li>Falls Binde mit Blut durchnässt, nicht die alte Binde entfernen! Eine andere Binde/Kleidungsstück darüber binden.</li>
+<li>Verletztes Glied (sofern nicht gebrochen) über Höhe des Herzens lagern, damit sich Blutung verlangsamt. Wenn möglich Betroffenen hinlegen.</li>
+<li>Falls Blutung nicht stoppt, Druck auf Wunde beibehalten und zusätzlich Druckpunkte über der Wunde setzen: Bei Blutung am Unterarm den Oberarm abdrücken (Ader auf Arm-Innenseite mittig zwischen Ellbogen und Achselhöhle, mit Fingern abdrücken). Bei Blutung des Beins, Druckpunkt in Leiste setzen (Ader in Leistenbeuge, wo Arterie über Beckenknochen verläuft, mit Handballen abdrücken). <img src="images/aid089.png" /><img src="images/aid092.png" /></li>
+<li>Sofort Notarzt anfordern.</li>
+<li>Sobald Blutung unter Kontrolle: Schockbekämpfung einleiten. <img src="images/aid093.png" /></li></ol></ul>
+<ul id="aid_brainconcussion" title="Gehirnerschütterung"> 
+<a href="audio/de/27.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Kopfschmerz, Übelkeit, Erbrechen. Sehstörung. Bewusstlosigkeit kann eintreten.</p> <img src="images/aid035a.png" />
+<ol><li>Betroffenen hinlegen.</li>
+<li>Notruf absetzen.</li></ol>
+<p>Bei Blutung am Kopf:</p>
+<ol><li>Betroffenen hinlegen, Kopf erhöht lagern (Kissen). <img src="images/aid061.png" /></li>
+<li>Wundversorgung durchführen (Kopf-Verband anlegen).</li>
+<li>Notruf absetzen.</li></ol></ul>
+
+
+
+
+<ul id="aid_burningslight" title="Verbrennung Leicht"> 
+<a href="audio/de/52.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Rötung der Haut. Leichte Schwellung. Schmerzen.</p>
+<ol><li>Betroffene Stelle unter laufendem kalten Wasser kühlen. <img src="images/aid100.png" /></li>
+<li>Feuchten Verband locker anlegen.</li></ol></ul>
+<ul id="aid_burningsevere" title="Verbrennung Schwer"> 
+<a href="audio/de/53.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Gefleckte weiße rote Stellen, Blasenbildung. Flüssigkeitsaustritt aus Haut. Tiefe Gewebeschädigung. Starke Schmerzen oder keine Schmerzen (aufgrund verbrannter Nerven).</p> <img src="images/aid097.png" />
+<ol><li>Kleidung soweit wie möglich entfernen.</li>
+<li>Mit kaltem Wasser (ca. 15°C) bis zu 10 min kühlen, bis Schmerzlinderung eintritt. <img src="images/aid100.png" /></li>
+<li>Falls Verbrennung großflächig, nur mit feuchten Tüchern kühlen.</li>
+<li>Notruf absetzen.</li>
+<li>Nach Kühlung die Wundversorgung durchführen. Sterile, trockene Wundauflage benutzen. Keine Flüssigkeiten aufbringen (keine Cremes, Öle, Salben etc.). Blasen nicht aufstechen. <img src="images/aid085.png" /></li>
+<li>Atmung und Bewusstsein des Betroffenen kontrollieren, bis Notarzt eintrifft.</li></ol></ul>
+<ul id="aid_checkbreathing" title="Atmung prüfen"> <br />
+<a href="audio/de/7.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Atemgeräusche prüfen.</li>
+<li>Atmung am Oberbauch feststellen (Hand auflegen). <img src="images/aid027.png" /></li>
+<li>Atmung an Nase/Mund fühlbar.</li></ol></ul>
+<ul id="aid_chemicalburneyes" title="Verätzung (Augen)"> <br />
+<a href="audio/de/9.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Notarzt rufen, auf Ätz-Substanz hinweisen.</li>
+<li>Auge sofort mit viel Wasser spülen. Gesundes Auge während Spülung abdecken.</li>
+<li>Wasserstrahl vom inneren Augenwinkel zum äußeren Augenwinkel. Ca. 20 min reinigen. <img src="images/aid019.png" /></li>
+<li>Beide Augen des Betroffenen schließen und mit angefeuchtetem Tuch verbinden. <img src="images/aid020.png" /></li>
+<li>Zustand kontrollieren, bis Notarzt eintrifft.</li></ol></ul>
+<ul id="aid_chemicalburn" title="Verätzung"> 
+<a href="audio/de/51.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Zerstörung von Gewebe.</p> <img src="images/aid095.png" />
+<ol><li>Eigenschutz beachten!</li>
+<li>Zügig handeln und verätzte Stellen abspülen (bei Verätzung der Augen mind. 20 min mit klarem Wasser spülen). Wasserstrahl vom inneren Augenwinkel zum äußeren Augenwinkel. <img src="images/aid100.png" /></li>
+<li>Notruf absetzen.</li>
+<li>Bei Verätzung des Verdauungsweges: Vermehrt Flüssigkeit trinken.</li>
+<li>Kein Erbrechen auslösen!</li></ol></ul>
+
+
+<ul id="aid_dangerzone" title="Gefahrenzone (Retten)"> <br />
+<a href="audio/de/26.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Grifftechnik: Arm des Verletzten vor dessen Brust, hinter den Verletzten stellen.</li>
+<li>Mit beiden Händen den angewinkelten Arm des Verletzten durch dessen Achseln greifen.</li>
+<li>Person in Sicherheit bringen. <img src="images/aid001.png" /> <img src="images/aid007.png" /></li></ol></ul>
+<ul id="aid_diabeticcoma" title="Diabetisches Koma"> 
+<a href="audio/de/15.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Blutzuckerspiegel zu hoch bzw. Insulinmangel.</p>
+<ol><li>Symptome: Durst, häufiges Wasserlassen, Übelkeit, Erbrechen. Atem riecht nach Obst.</li>
+<li>Notruf absetzen.</li>
+<li>Unterstützung bei der Insulingabe, sofern sichergestellt, dass Diabetiker. <img src="images/aid016.png" /></li>
+<li><a href="#aid_recoveryposition">Stabile Seitenlage</a>. (Keine weiteren Möglichkeiten für den Ersthelfer.)</li>
+<li>Zustand des Betroffenen kontrollieren bis Notarzt eintrifft.</li></ol></ul>
+<ul id="aid_diarrhoea" title="Durchfall"> 
+<a href="audio/de/16.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Nahrungsmittel-Unverträglichkeit, Darm-Entzündung oder Erkrankung. Stuhlgang wässrig, schleimig oder blutig.</p>
+<ol><li>Gefahr für Kreislauf aufgrund Flüssigkeits- und Salz-Verlustes!</li>
+<li>Flüssigkeit zuführen (Tee, Wasser).</li>
+<li>Bei starken Beschwerden Arzt aufsuchen oder Notruf absetzen.</li></ol></ul>
+<ul id="aid_drowning" title="Ertrinken"> <br />
+<a href="audio/de/24.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Notruf absetzen. Personen in der Nähe um Hilfe bitten. <img src="images/aid032.png" /></li>
+<li>Aus Wasser retten! <img src="images/aid033.png" /> <img src="images/aid034.png" /></li>
+<li>Wenn Atmung vorhanden: <a href="#aid_recoveryposition">Stabile Seitenlage</a>. Betroffenen warm halten (Decke). Zustand kontrollieren, bis der Notarzt eintrifft.</li>
+<li>Bei Atemstillstand sofort mit <a href="#aid_resuscitation">Wiederbelebung beginnen!</a> (Ausfließenlassen von Wasser aus Lungen ist nutzlos.)</li></ol></ul>
+<ul id="aid_electricityaccident" title="Elektrounfall"> <br />
+<a href="audio/de/18.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Zuerst Stromzuleitung unterbrechen! <img src="images/aid045plug.png" /> <img src="images/aid045.png" />
+    Gefahr: Bewusstlosigkeit, Atemstillstand.</li>
+<li><a href="#aid_unconsciouswithbreath">A - Bewusstlosigkeit mit Atmung</a></li>
+<li><a href="#aid_unconsciouswithoutbreath">B - Bewusstlosigkeit ohne Atmung</a> <img src="images/aid042.png" /> <img src="images/aid043.png" /></li></ol></ul>
+<ul id="aid_emergencycall" title="Notruf"> <br />
+<a href="audio/de/34.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Wählen Sie mit dem nächst-verfügbaren Telefon 112. Immer möglich und kostenlos! Zögern Sie nie, den Notarzt zu rufen!</li><li>Am Telefon Folgendes durchgeben: <br />- Wo (Unfallort). <br />- Was ist passiert. <br />- Wie viele Verletzte. <br />- Welche Verletzungen. <br />Danach auf Rückfragen warten.</li></ol></ul>
+<ul id="aid_epilepsy" title="Epileptischer Anfall"> 
+<a href="audio/de/19.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Starrer Körper, geballte Fäuste, gepresster Kiefer, Zucken in Beinen oder Gesicht. Rollende Augen. Speichelfluss. Bewusstlosigkeit möglich.</p> <img src="images/aid058.png" />
+<ol><li>Betroffenen nicht halten oder in Bewegung einschränken.</li>
+<li>Betroffenen auf weiche Unterlage (Kissen) legen, Objekte in direkter Nähe entfernen, somit Selbstverletzungen vorbeugen.</li>
+<li>Beruhigend zum Betroffenen reden. Kleidung lockern, für Atemfreiheit sorgen.</li>
+<li>Falls Betroffener erbricht, Kopf zur Seite drehen, damit Erbrochenes abfließen kann.</li>
+<li>Atemwege freihalten. Gefahr, dass Zunge verschluckt wird.</li>
+<li><a href="#aid_recoveryposition">Stabile Seitenlage</a> + Notruf absetzen. Weiterhin Zustand des Betroffenen kontrollieren.</li>
+<li>Andere Leute auf Distanz halten.</li></ol></ul>
+<ul id="aid_eyeinjury" title="Augenverletzung"> <br />
+<a href="audio/de/8.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Fremdkörper im Auge belassen, nicht entfernen.</li>
+<li>Augen nicht bewegen, um weitere Verletzungen zu vermeiden. Auge nicht berühren.</li>
+<li>Bei Augen-Blutung mit Kompresse oder Verbandtuch bedecken. <img src="images/aid020.png" /></li>
+<li>Auge mit kalter Auflage kühlen (verringert Schwellung, Blutung stoppt schneller).</li>
+<li>Notruf absetzen oder selbst zum Krankenhaus fahren.</li></ol></ul>
+<ul id="aid_fracture" title="Knochenbruch"> 
+<a href="audio/de/32.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Anzeichen: Unnatürliche Lage und Beweglichkeit. Deformierung. Schmerzhafte Bewegung, berührungsempfindlich.</p> <img src="images/aid104.png" />
+<ol><li>Bewegungen vermeiden!</li>
+<li>Notruf absetzen.</li>
+<li>Bruch ruhig stellen, d.h. Umpolstern mit dichtem Material. Position des gebrochenen Knochens beibehalten. <img src="images/aid107.png" /></li>
+<li>Bei offenem Bruch die Wunde keimfrei abdecken. <img src="images/aid106.png" /></li></ol></ul>
+<ul id="aid_frostbitemild" title="Erfrierung leicht"> 
+<a href="audio/de/21.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Blässe, Schwellen. Gefahr für Blutzufuhr.</p>
+<ol><li>Warmen Bereich aufsuchen.</li>
+<li>Kälte beseitigen. Nasse Kleidung entfernen, abtrocknen.</li>
+<li>Aufwärmen mit lauwarmem Wasser und Körperwärme des Helfers.</li>
+<li>Warmes Getränk (Tee) geben. Keinen Alkohol! <img src="images/aid040.png" /></li></ol></ul>
+<ul id="aid_frostbitesevere" title="Erfrierung stark"> 
+<a href="audio/de/22.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Kalte harte Haut, grau-weiß, Blasenbildung, Gewebe stirbt ab. Gefahr für Blutzufuhr!</p> <img src="images/aid096.png" />
+<ol><li>Warmen Bereich aufsuchen.</li>
+<li>Wunden versorgen/abdecken.</li>
+<li>Zuckerhaltiges Getränk verabreichen.</li>
+<li>Nicht warmreiben!</li>
+<li>Notruf absetzen.</li></ol></ul>
+<ul id="aid_heartattack" title="Herzinfarkt"> 
+<a href="audio/de/29.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Schwere mehr als 5 min anhaltende Schmerzen + Druck im Brustkorb, besonders in Arme/Schultern ausstrahlend. Angstgefühl, Blässe, kalter Schweiß. Eventuell Übelkeit, Kurzatmigkeit.</p> <img src="images/aid076.png" /> <img src="images/aid083.png" />
+<ol><li>Notruf absetzen! Hinweis auf vermuteten Herzinfarkt.</li>
+<li>Oberkörper erhöht lagern. Enge Kleidung lockern. Keine Medikamente oder Getränke geben. <img src="images/aid061.png" /></li>
+<li>Beruhigend auf Betroffenen einreden.</li>
+<li>Bewusstsein und Atmung kontrollieren.</li>
+<li>Dem Betroffenen Aspirin verabreichen, falls verfügbar.</li>
+<li>Bei Bewusstlosigkeit die <a href="#aid_resuscitation">Wiederbelebung einleiten</a>.</li></ol></ul>
+
+
+<ul id="aid_hypoglycaemia" title="Unterzuckerung"> 
+<a href="audio/de/50.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Blutzuckerspiegel unter Mindestwert (aufgrund Überdosierung von Insulin oder ungenügender Nahrungsaufnahme).<br/>
+Symptome: Blässe, Nervosität, Hunger, Zittern, Schweiß.</p> <img src="images/aid018.png" />
+<ol><li>Zuerst klären, ob der Betroffene Diabetiker ist (siehe Diabetiker-Ausweis).</li>
+<li>Notruf absetzen.</li>
+<li>Dem Betroffenen gezuckerte Getränke und Traubenzucker geben (sofern keine Schluckschwierigkeiten). <img src="images/aid017.png" /></li>
+<li>Bei Bewusstlosigkeit und vorhandener Atmung: <a href="#aid_recoveryposition">Stabile Seitenlage</a> einnehmen und Atmung kontrollieren. Falls Atemstillstand eintritt, den Betroffenen beatmen.</li>
+<li>Wenn Atmung vorhanden, dem Bewusstlosen ein Stück Zucker in die Backentasche legen und von außen gegendrücken.</li></ol></ul>
+<ul id="aid_hyperthermia" title="Überhitzung"> 
+<a href="audio/de/30.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Durst, Schwäche, Desorientiertheit, Bewusstseinsstörung, starker Schweiß, heiße Haut.</p> <img src="images/aid035.png" />
+<ol><li>Notruf absetzen.</li>
+<li>Kühlen, schattigen Platz aufsuchen (Raum mit Klimaanlage sehr geeignet).</li>
+<li>Betroffenen hinlegen, Beine hochlagern. Kleidung lockern. <img src="images/aid078.png" /></li>
+<li>Haut mit Wasser kühlen oder kalte Handtücher auflegen.</li>
+<li>Viel Wasser oder Säfte trinken.</li></ol></ul>
+<ul id="aid_hypothermia" title="Unterkühlung"> 
+<a href="audio/de/49.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Kältezittern, Schläfrigkeit, Erschöpfung, bis hin zur Bewusstlosigkeit. Kalte, blasse Haut. Langsamer Puls, schwacher Herzschlag.</p> <img src="images/aid014.png" />
+<ol><li>Warmen Bereich aufsuchen.</li>
+<li>Notruf absetzen.</li>
+<li>Kälteeinwirkung beenden. Körpertemperatur erhöhen (Decke und Körper-zu-Körper-Kontakt).</li>
+<li>Nasse Kleidung entfernen und trockene warme Kleidung anziehen. In Decken packen. Kopf bedecken.</li>
+<li>Heißen Tee, Brühe oder heißes Wasser zu trinken geben. Keinen Alkohol! Betroffenen wachhalten. <img src="images/aid039.png" /> <img src="images/aid040.png" /></li>
+<li>Zustand bis zum Eintreffen des Notarztes kontrollieren. Bei Verlust des Bewusstseins Wiederbelebung einleiten.</li>
+<li><a href="#aid_unconsciouswithbreath">A - Bewusstlosigkeit mit Atmung</a></li>
+<li><a href="#aid_unconsciouswithoutbreath">B - Bewusstlosigkeit ohne Atmung</a></li></ol></ul>
+<ul id="aid_icerescue" title="Eisunfall"> 
+<a href="audio/de/17.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Eigenschutz beachten! Gefahr: Ertrinken, Unterkühlung.</p>
+<ol><li>Rettung erfolgt via Leiter, Brett, Stange. Gewicht muss großflächig verteilt werden.</li>
+<li>Andere Personen um Mithilfe auffordern. Notruf absetzen lassen.</li>
+<li>Auf Bauch (möglichst angeseilt) mit Hilfsmittel vorsichtig zur Einbruchstelle robben. <img src="images/aid041.png" /></li>
+<li>Verunglücktem auf Distanz das Hilfsmittel reichen (nicht die Hand!) und herausziehen.</li>
+<li>Rückwärts bis zum Ufer zurückrobben.</li>
+<li>Erste-Hilfe-Maßnahmen.</li>
+<li>Eigenrettung möglich: Bei festem Eis Gewicht auf Eis verteilen und sich selbst herausziehen. Flach auf Bauch zum Ufer zurückrobben. Bei brüchigem Eis versuchen Eis bis zum Ufer Stück für Stück abzubrechen.</li></ol></ul>
+<ul id="aid_insectstings" title="Insektenstich"> <img style="border:none;" src="images/aid046.png" />
+<a href="audio/de/31.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Schwellungen, Hautausschlag, brennendes Gefühl, Schwäche, Atemnot, Kreislaufprobleme, Herzrasen.</p>
+<ol><li>Stachel vorsichtig entfernen (mit Pinzette). Nicht auf Stachel drücken, könnte noch mehr Gift injizieren.</li>
+<li>Kühlung der betroffenen Stelle (kalte Kompresse).</li>
+<li>Betroffene Stelle niedriger als Herz-Höhe halten, damit Gift langsamer zirkuliert.</li>
+<li>Bei Stich im Mund-Rachen-Raum: Eis lutschen lassen, kalte Umschläge um Hals. <img style="border:none;" src="images/aid046ice.png" /></li>
+<li>Bei ernsten Beschwerden Notruf absetzen.</li></ol></ul>
+<ul id="aid_nosebleeding" title="Nasenbluten"> 
+<a href="audio/de/33.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Kleine Ader in Nasenspitze geplatzt.</p>
+<ol><li>Blutenden leicht nach vorne gelehnt hinsetzen. Kopf gerade halten.</li>
+<li>Nicht flach lagern, da Kopf über Herz-Höhe Bluten verlangsamt.</li>
+<li>Kalter Nackenumschlag.</li>
+<li>Nasenspitze bis zum Stopp der Blutung zudrücken (für 10 min).</li>
+<li>Anschließend Nase in keiner Weise anstrengen (kein Naseschnauben).</li>
+<li>Bei ernsten Beschwerden oder wenn Blutung anhält Notruf absetzen.</li></ol></ul>
+<ul id="aid_poisining" title="Vergiftung"> 
+<a href="audio/de/54.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<img src="images/aid052.png" />
+<p>Verwirrung, Halluzination, große Pupillen, Fieber, Krämpfe. Bewusstlosigkeit.</p>
+<ol><li>Gegenmittel nur verabreichen, wenn medizinisch ausgebildete Person vor Ort. <img src="images/aid056.png" /></li>
+<li>Keine Getränke geben. Kein Erbrechen auslösen.</li>
+<li>Notruf absetzen + auf Vergiftung hinweisen!</li>
+<li>Giftreste und Erbrochenes sicherstellen! <img src="images/aid054a.png" /></li>
+<li>Sofern Betroffener bewusstlos ist und atmet: <a href="#aid_recoveryposition">Stabile Seitenlage</a> herstellen. Bewusstsein und Atmung kontrollieren bis Notarzt eintrifft.</li>
+<li>Sofern keine Atmung: Maßnahmen zur <a href="#aid_resuscitation">Wiederbelebung einleiten</a>. Mund vorher von eventuell Erbrochenem befreien.</li></ol></ul>
+
+
+<ul id="aid_recoveryposition" title="Stabile Seitenlage"> <br />
+<a href="audio/de/44.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Betroffenen in Rückenlage, Beine ausstrecken. Daneben knien.</li>
+<li>Nahen Arm im rechten Winkel zum Körper positionieren.</li>
+<li>Fernen Arm über Brust des Verletzten ziehen und Handrücken auf Wange platzieren. <img src="images/aid008.png" /></li>
+<li>Entferntes Knie fassen, zu sich ziehen und auf Boden legen. Bein etwa im rechten Winkel positionieren. Hand des Betroffenen bleibt auf dessen Wange.</li>
+<li>Sicherstellen, dass Atemwege frei sind.</li>
+<li>Kopf in Nacken beugen, Kinn anheben. Mund leicht öffnen. Atmung kontrollieren. <img src="images/aid009.png" /></li>
+<li>Bewusstsein und Atmung kontrollieren bis Notarzt eintrifft.</li><li>Stabile Seitenlage (Baby): <img src="images/aid028.png" /></li></ol></ul>
+<ul id="aid_resuscitation" title="Wiederbelebung">
+<a href="audio/de/58.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p><b># Herzdruckmassage</b></p>
+<ol><li>Betroffenen in Rückenlage. Daneben hinknien.</li>
+<li>Brustkorb freimachen.</li>
+<li>In der Mitte des Brustkorbs (kurz über Brustbein) einen Handballen platzieren. <img src="images/aid013.png" /></li>
+<li>Anderen Handballen auf Handrücken der bereits platzierten Hand.</li>
+<li>Arme, Ellbogen durchdrücken. <img src="images/aid003.png" /></li>
+<li>Brustkorb des Betroffenen 5 cm senkrecht eindrücken (aus dem Oberkörper arbeiten) und wieder entlasten.</li>
+<li>30-mal in Folge kurz und kräftig drücken.</li></ol>
+<p style="padding-left:15px;"><b># Beatmung</b></p>
+<ol><li>Entfernen von Fremdkörpern aus Mund und Rachen. Überstrecken des Kopfes in den Nacken. <img src="images/aid067.png" /></li>
+<li>Nasenflügel zusammendrücken, damit Nase geschlossen ist. <img src="images/aid010.png" /></li>
+<li>Tief einatmen und Mund auf Mund des Betroffenen aufsetzen, sodass keine Luft entweichen kann. <img src="images/aid011.png" /></li>
+<li>Zweimal Mund zu Mund beatmen (langsam, vollständig ausatmen).</li>
+<li>Danach wieder Herzdruckmassage.<br /><br />
+Herzdruckmassage + Beatmung fortführen bis Rettungsdienst kommt. <img src="images/aid012.png" /></li></ol> <p style="padding-left:15px;"><b># Wiederbelebung (Baby)</b></p> <ol><li>Nur zwei Finger benutzen: <img src="images/aid029.png" /></li> <li>Nicht zu stark beatmen: <img src="images/aid030.png" /></li> </ol></ul>
+<ul id="aid_safeguardaccident" title="Unfallstelle sichern"> <br />
+<a href="audio/de/55.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Eigenen Pkw 50-100 m hinter Unfallstelle halten (falls Autobahn oder Landstraße). Danach Warnblinker anschalten und Warnweste anziehen.</li>
+<li>Warndreieck vor Unfallstelle aufstellen. Achtung: Bei einem Unfall in der Kurve, Warndreieck vor der Kurve platzieren! <img src="images/aid111.jpg" /></li>
+<li>Andere Personen um Mithilfe auffordern.</li>
+<li>Tür des Unfall-Pkws öffnen (falls verklemmt, mittels Wagenheber aufstemmen). Zündung ausschalten.</li>
+<li>Unfallopfer bergen: Abschnallen, Sitz nach hinten schieben. Verletzten mit Rettungsgriff aus Wagen befreien. <img src="images/aid001.png" /></li>
+<li>Notruf absetzen.</li>
+<li>Erste-Hilfe-Maßnahmen.</li></ol></ul>
+<ul id="aid_shock" title="Schock"> 
+<a href="audio/de/40.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Kreislauf-Störung durch mangelhafte Sauerstoffversorgung im Körper.<br />
+Ursache: Verlust von Flüssigkeit, reduzierte Blutmenge.<br />
+Symptome: Blässe, kalte Haut, kalter Schweiß, Unruhe.</p>
+<ol><li>Schockursache beseitigen (z.B. Flüssigkeitsverlust stoppen, Wunde abbinden)!</li>
+<li>Betroffenen auf Decke legen, Beine hoch lagern. Beruhigen. <img src="images/aid078.png" /></li>
+<li>Notruf absetzen.</li>
+<li>Bei Atem- und Herz-Kreislauf-Störungen <a href="#aid_resuscitation">Wiederbelebung einleiten</a>.</li></ol></ul>
+<ul id="aid_skullfracture" title="Schädelbasisbruch"> 
+<a href="audio/de/37.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Leichte Blutungen aus Nase, Mund oder Ohr. Oft offene Wunde am Schädel.</p>
+<ol><li>Atemwege freihalten.</li>
+<li>Bei Bewusstsein: Verletzten nach vorne gebeugt hinsetzen. Weitere Bewegungen vermeiden!</li>
+<li>Bei Bewusstlosigkeit: <a href="#aid_recoveryposition">Stabile Seitenlage</a> (keinen Druck auf Kopfwunde).</li>
+<li>Notruf absetzen.</li>
+<li>Kopfverband anlegen.</li>
+<li>Bei Atem- und Herz-Kreislauf-Störungen <a href="#aid_resuscitation">Wiederbelebung einleiten</a>.</li></ol></ul>
+<ul id="aid_snakebite" title="Schlangenbiss"> <img src="images/aid051.png" /> 
+<a href="audio/de/39.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Punktförmige Wunde in Stecknadelgröße, heftige Schmerzen, Schwellung, blaurote Verfärbung. Kreislaufstörung, Schockgefahr.</p>
+<ol><li>Verletzten Körperteil ruhigstellen</li>
+<li>Kalte Umschläge auf Bissstelle.</li>
+<li>Schockbekämpfung.</li>
+<li>Notruf absetzen.</li></ol></ul>
+<ul id="aid_sos" title="SOS"> <br />
+<a href="audio/de/43.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Signal: 3x kurz, 3x lang, 3x kurz.</li>
+<li>Optisch (Blitzlicht, Taschenlampe) oder Akustisch (Signalpfeife, Klopfen).</li></ol></ul>
+
+
+<ul id="aid_sprain" title="Verstauchung + Verrenkung"> 
+<a href="audio/de/57.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Schmerzen, Schwellung (Bluterguss), Funktionsverlust, Verformung des Gliedes.</p>
+<ol><li>Ruhigstellung des Gliedes ausschließlich in der für Betroffenen angenehmsten Position.</li>
+<li>Kühlen (mit Eisbeutel).</li>
+<li>Falls möglich Glied hoch lagern.</li>
+<li>Krankenhaus aufsuchen oder Notruf absetzen.</li></ol></ul>
+<ul id="aid_stroke" title="Schlaganfall"> 
+<a href="audio/de/38.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Plötzliches Lähmungs- oder Taubheitsgefühl (Gesicht, Arm, Bein), gestörtes Sprachverständnis, Sehstörung, Bewusstseinstrübung, starke Kopfschmerzen. Probleme beim Atmen und Schlucken, Kontrollverlust über Blase und Darm.</p> <img src="images/aid059.png" />
+<ol><li>Notruf absetzen!</li>
+<li>Enge Kleidung lockern, keine Medikamente oder Getränke geben.</li>
+<li>Betroffenen bequem hinsetzen oder hinlegen. Beruhigen!</li>
+<li>Bewusstsein und Atmung kontrollieren.</li>
+<li>Bei Atem- und Herz-Kreislauf-Störungen <a href="#aid_resuscitation">Wiederbelebung einleiten</a>.</li></ol></ul>
+<ul id="aid_suffocation" title="Ersticken"> 
+<a href="audio/de/23.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Unzureichende Sauerstoffversorgung. Luftröhre verschlossen. Gefahr: Atemstillstand.<br />
+Symptome: Pfeifendes Atemgeräusch, Hustenreiz, Atemnot, Hautverfärbung.</p> <img src="images/aid066.png" />
+<ol><li>Sofort handeln! Betroffenen kräftig Husten lassen.</li>
+<li>Mit flacher Hand auf Rücken zwischen Schulterblättern kräftig klopfen (Babys dabei auf Unterarm legen, Kopf nach unten halten). <img src="images/aid068.png" /> <img src="images/aid031.png" /></li>
+<li>Wenn ohne Erfolg: Hinter Person stellen, Arme um Taille legen, leicht nach vorne beugen.</li>
+<li>Hand zur Faust ballen, auf Magen-Höhe des Betroffenen positionieren und mit anderer Hand umfassen. <img src="images/aid069.png" /></li>
+<li>Beide Hände in Umklammerung mit hartem Stoß in Richtung Magen nach oben/innen ziehen (als ob Sie die Person hochheben wollen).</li>
+<li>Bis zu 5-mal wiederholen! Luftwege sollten vom Objekt befreit sein.</li>
+<li>Notruf absetzen.</li>
+<li>Falls Maßnahme nicht erfolgreich, trotzdem fortsetzen, bis Notarzt eintrifft.</li></ol></ul>
+<ul id="aid_sunburn" title="Sonnenbrand"> <br />
+<a href="audio/de/41.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Betroffenen aus direkter Sonneneinstrahlung nehmen. Weitere Sonne meiden.</li>
+<li>Viel Wasser trinken, um Dehydration entgegenzuwirken.</li>
+<li>Bei ernsthaftem Sonnenbrand (Blasenbildung, Rötung, Schmerzen) unbedingt Arzt aufsuchen.</li>
+<li>Leichte Hautrötungen mit feuchten Umschlägen kühlen. After-Sun-Lotion oder Gel auftragen.</li></ol></ul>
+<ul id="aid_sunstroke" title="Sonnenstich"> 
+<a href="audio/de/42.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Heißer roter Kopf, kühle Haut, Übelkeit, Kopfschmerz, Schwindelgefühl. Ursache: Reizung der Hirnhaut.</p> <img src="images/aid035.png" />
+<ol><li>Kühlen Ort aufsuchen (Schatten) und Oberkörper des Betroffenen erhöht lagern. <img src="images/aid061.png" /></li>
+<li>Mit nassen Tüchern Kopf kühlen.</li>
+<li>Notruf absetzen, Atmung weiterhin kontrollieren.</li>
+<li>Bei Bewusstsein: Ggf. kühles Getränk geben.</li>
+<li>Bei Atemstillstand mit Beatmung beginnen:</li>
+<li><a href="#aid_apnoea">Weiter mit Beatmung!</a> <img src="images/aid036.png" /></li></ol></ul>
+
+
+
+
+<ul id="aid_unconsciouswithbreath" title="Bewusstlosigkeit mit Atmung"> 
+<a href="audio/de/11.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Keine Reaktion auf Ansprache und Schütteln. Atmung vorhanden.</p> <img style="border:none;" src="images/aid057.png" />
+<ol><li>Falls Menschen in der Nähe, diese um Mithilfe bitten.</li>
+<li><a href="#aid_recoveryposition">Stabile Seitenlage</a>. Kopf nach hinten ziehen, Mund öffnen, damit bei Erbrechen dieses ablaufen kann. <img src="images/aid008.png" /> <img src="images/aid009.png" /></li>
+<li>Notruf absetzen.</li></ol></ul>
+<ul id="aid_unconsciouswithoutbreath" title="Bewusstlosigkeit ohne Atmung"> <br />
+<a href="audio/de/12.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<ol><li>Keine Reaktion vorhanden, Atmung nicht feststellbar. <img style="border:none;" src="images/aid057.png" /></li>
+<li><a href="#aid_resuscitation">Wiederbelebung einleiten!</a></li></ol></ul>
+<ul id="aid_vomiting" title="Erbrechen"> 
+<a href="audio/de/20.mp3" target="_blank" type="audio/mpeg" class="playbtn">&nbsp;Play</a><br /><br/>
+<p>Folge von Übelkeit. Magen befreit sich. Ursachen: Infektion, Vergiftung, Geschwür, Medikamente, falsche Nahrung, Schwangerschaft.</p> <img src="images/aid054.png" />
+<ol><li>Gefahr für Kreislauf aufgrund Flüssigkeits- und Salz-Verlustes!</li>
+<li>Flüssigkeit zuführen (Tee, Wasser).</li>
+<li>Bei starken Beschwerden, blutigem oder anhaltendem Erbrechen Arzt aufsuchen.</li></ol></ul>
+
+
+
+      <ul id="menu" title="Menü">
+        <li><a target="_self" href="#language">Sprache wählen</a></li>
+        <li><a target="_self" href="http://www.firstai.de/iphone/firstaidDEoffline.html">Bookmark der Offline-Version</a></li>
+        <li><a href="#donate">Projekt-Spende</a></li>
+        <li><script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>Mail an Entwickler</a>"); </script>
+        <!-- OFFLINE <li><a target="_self" href="http://iphone.firstai.de/offline/">Auf neue Version prüfen</a></li>-->
+        </ul> 
+
+
+
+    <ul id="language" title="Sprache wählen">
+	<li><a target="_self" href="firstaidDE.html">Deutsch</a></li>
+	<li><a target="_self" href="firstaidEN.html">English</a></li>
+	<li><a target="_self" href="firstaidFR.html">Fran&ccedil;ais</a></li>
+	<li><a target="_self" href="firstaidLT.html">Lietuvi&#154;kai</a></li>
+	<li><a target="_self" href="firstaidPT.html">Portugu&#234;s</a></li>
+	<li><a target="_self" href="firstaidVI.html">Ti&#7871;ng Vi&#7879;t</a></li>
+    </ul>
+
+
+
+    <ul id="donate" title="Spenden">
+  <h3 style="padding-left:15px;"><span style="color:#00B316;">Warum spenden?</span></h3>
+  <p>Denkst du, das Projekt ist eine gute Idee? Dann spende bitte! Denn das Projekt überlebt nur durch Spenden.</p>
+  <p>Spende online via <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5315619">PayPal</a> oder überweise einen Betrag auf das Konto: Kai Kajus Noack, Konto-Nr. 5400736393, BLZ 70220300, BWM Bank</p>
+  <p>Jede Unterstützung zählt!</p><br />
+  <p><span style="font-style:italic;font-size:80%;">Ein kleiner Schritt für einen Menschen, aber ein großer Schritt für die Menschheit.</span></p></ul>
+
+  <ul id="cclicence" title="Licence">  <h3 style="padding-left:15px;">Lizenz</h3>
+  <p><b>Creative Commons BY-NC-ND 3.0</b><br />
+Du darfst das Werk zu den folgenden Bedingungen vervielfältigen, verbreiten und öffentlich zugänglich machen:</p>
+   <ol><li><b>Namensnennung</b><br />
+Du musst den Namen des Rechteinhabers <i>Kai Kajus Noack</i> nennen und einen Link auf die Webseite <i>www.firstai.de</i> angeben (wodurch aber nicht der Eindruck entstehen darf, du oder die Nutzung des Werkes durch dich würden entlohnt).</li><br />
+   <li><b>Keine kommerzielle Nutzung</b><br />
+Dieses Werk darf nicht für kommerzielle Zwecke verwendet werden.</li><br />
+   <li><b>Keine Bearbeitung</b><br />
+Dieses Werk darf nicht bearbeitet oder in anderer Weise verändert werden.</li><br />
+<li>Im Falle einer Verbreitung musst du anderen die Lizenzbedingungen, unter welche dieses Werk fällt, mitteilen. Einfach den Link auf <span style="font-size:80%;">http://creativecommons.org/licenses/by-nc-nd/3.0/de/</span> einbinden.</li><br />
+<li>Jede der vorgenannten Bedingungen kann aufgehoben werden, sofern du dazu die Einwilligung des Rechteinhabers erhältst.</li><br />
+<li>Diese Lizenz lässt die Urheberpersönlichkeitsrechte unberührt.</li></ol></ul>
+
+ <ul id="telEmergency" title="Kontinent">
+  <li><a target="_self" href="#telAfrica">Afrika</a></li>
+  <li><a target="_self" href="#telAsia">Asien</a></li>
+  <li><a target="_self" href="#telEurope">Europa</a></li>
+  <li><a target="_self" href="#telNorthamerica">Nord-/Zentralamerika</a></li>
+  <li><a target="_self" href="#telOceania">Ozeanien</a></li>
+  <li><a target="_self" href="#telSouthamerica">Südamerika</a></li> <img src="images/aid002.png" />
+</ul>
+
+	<ul id="telAfrica" title="Afrika">
+	<li><a href="#egypt">&Auml;gypten</a></li>
+	<li><a href="#algeria">Algerien</a></li>
+	<li><a href="#angola">Angola</a></li>
+	<li><a href="#equatorialguinea">&Auml;quatorialguinea</a></li>
+	<li><a href="#ethiopia">&Auml;thiopien</a></li>
+	<li><a href="#benin">Benin</a></li>
+	<li><a href="#botswana">Botsuana</a></li>
+	<li><a href="#burkinafaso">Burkina Faso</a></li>
+	<li><a href="#burundi">Burundi</a></li>
+	<li><a href="#djibouti">Dschibuti</a></li>
+	<li><a href="#ivorycoast">Elfenbeink&uuml;ste</a></li>
+	<li><a href="#eritrea">Eritrea</a></li>
+	<li><a href="#gabon">Gabun</a></li>
+	<li><a href="#gambia">Gambia</a></li>
+	<li><a href="#ghana">Ghana</a></li>
+	<li><a href="#guinea">Guinea</a></li>
+	<li><a href="#guinea-bissau">Guinea-Bissau</a></li>
+	<li><a href="#cameroon">Kamerun</a></li>
+	<li><a href="#capeverde">Kap Verde</a></li>
+	<li><a href="#kenya">Kenia</a></li>
+	<li><a href="#comoros">Komoren</a></li>
+	<li><a href="#congodemocraticrepublic">Kongo (Demokrat. Republik)</a></li>
+	<li><a href="#congorepublic">Kongo (Republik)</a></li>
+	<li><a href="#lesotho">Lesotho</a></li>
+	<li><a href="#liberia">Liberia</a></li>
+	<li><a href="#libya">Libyen</a></li>
+	<li><a href="#madagascar">Madagaskar</a></li>
+	<li><a href="#malawi">Malawi</a></li>
+	<li><a href="#mali">Mali</a></li>
+	<li><a href="#morocco">Marokko</a></li>
+	<li><a href="#mauritania">Mauretanien</a></li>
+	<li><a href="#mauritius">Mauritius</a></li>
+	<li><a href="#mayotte">Mayotte</a></li>
+	<li><a href="#mozambique">Mosambik</a></li>
+	<li><a href="#namibia">Namibia</a></li>
+	<li><a href="#niger">Niger</a></li>
+	<li><a href="#nigeria">Nigeria</a></li>
+	<li><a href="#reunion">R&eacute;union</a></li>
+	<li><a href="#rwanda">Ruanda</a></li>
+	<li><a href="#sahrawiarabdemocraticrepublic">Sahara (Demokrat. Arab. Republik)</a></li>
+	<li><a href="#zambia">Sambia</a></li>
+	<li><a href="#saotomeandprincipe">Sao Tom&eacute; und Principe</a></li>
+	<li><a href="#senegal">Senegal</a></li>
+	<li><a href="#seychelles">Seychellen</a></li>
+	<li><a href="#sierraleone">Sierra Leone</a></li>
+	<li><a href="#zimbabwe">Simbabwe</a></li>
+	<li><a href="#somalia">Somalia</a></li>
+	<li><a href="#southafrica">S&uuml;dafrika</a></li>
+	<li><a href="#sudan">Sudan</a></li>
+	<li><a href="#swaziland">Swasiland</a></li>
+	<li><a href="#tanzania">Tansania</a></li>
+	<li><a href="#togo">Togo</a></li>
+	<li><a href="#chad">Tschad</a></li>
+	<li><a href="#tunisia">Tunesien</a></li>
+	<li><a href="#uganda">Uganda</a></li>
+	<li><a href="#centralafricanrepublic">Zentralafrikanische Republik</a></li>
+	</ul>
+
+	<ul id="telAsia" title="Asien">
+	<li><a href="#afghanistan">Afghanistan</a></li>
+	<li><a href="#armenia">Armenien</a></li>
+	<li><a href="#azerbaijan">Aserbaidschan</a></li>
+	<li><a href="#bahrain">Bahrain</a></li>
+	<li><a href="#bangladesh">Bangladesch</a></li>
+	<li><a href="#bhutan">Bhutan</a></li>
+	<li><a href="#brunei">Brunei</a></li>
+	<li><a href="#china">China</a></li>
+	<li><a href="#georgia">Georgien</a></li>
+	<li><a href="#hongkong">Hong Kong</a></li>
+	<li><a href="#india">Indien</a></li>
+	<li><a href="#indonesia">Indonesien</a></li>
+	<li><a href="#iraq">Irak</a></li>
+	<li><a href="#iran">Iran</a></li>
+	<li><a href="#israel">Israel</a></li>
+	<li><a href="#japan">Japan</a></li>
+	<li><a href="#yemen">Jemen</a></li>
+	<li><a href="#jordan">Jordanien</a></li>
+	<li><a href="#cambodia">Kambodscha</a></li>
+	<li><a href="#kazakhstan">Kasachstan</a></li>
+	<li><a href="#qatar">Katar</a></li>
+	<li><a href="#kyrgyzstan">Kirgisistan</a></li>
+	<li><a href="#kurdistan">Kurdistan</a></li>
+	<li><a href="#kuwait">Kuwait</a></li>
+	<li><a href="#laos">Laos</a></li>
+	<li><a href="#lebanon">Libanon</a></li>
+	<li><a href="#macau">Macao</a></li>
+	<li><a href="#malaysia">Malaysia</a></li>
+	<li><a href="#maldives">Malediven</a></li>
+	<li><a href="#mongolia">Mongolei</a></li>
+	<li><a href="#myanmar">Myanmar</a></li>
+	<li><a href="#nepal">Nepal</a></li>
+	<li><a href="#northkorea">Nordkorea</a></li>
+	<li><a href="#oman">Oman</a></li>
+	<li><a href="#easttimor">Osttimor</a></li>
+	<li><a href="#pakistan">Pakistan</a></li>
+	<li><a href="#philippines">Philippinen</a></li>
+	<li><a href="#saudiarabia">Saudi-Arabien</a></li>
+	<li><a href="#singapore">Singapur</a></li>
+	<li><a href="#srilanka">Sri Lanka</a></li>
+	<li><a href="#southkorea">S&uuml;dkorea</a></li>
+	<li><a href="#syria">Syrien</a></li>
+	<li><a href="#tajikistan">Tadschikistan</a></li>
+	<li><a href="#taiwan">Taiwan</a></li>
+	<li><a href="#thailand">Thailand</a></li>
+	<li><a href="#turkmenistan">Turkmenistan</a></li>
+	<li><a href="#uzbekistan">Usbekistan</a></li>
+	<li><a href="#unitedarabemirates">Vereinigte Arabische Emirate</a></li>
+	<li><a href="#vietnam">Vietnam</a></li>
+	</ul>
+
+	<ul id="telEurope" title="Europa">
+	<li><a href="#albania">Albanien</a></li>
+	<li><a href="#andorra">Andorra</a></li>
+	<li><a href="#belgium">Belgien</a></li>
+	<li><a href="#bosniaandherzegovina">Bosnien und Herzegowina</a></li>
+	<li><a href="#bulgaria">Bulgarien</a></li>
+	<li><a href="#denmark">D&auml;nemark</a></li>
+	<li><a href="#germany">Deutschland</a></li>
+	<li><a href="#estonia">Estland</a></li>
+	<li><a href="#finland">Finnland</a></li>
+	<li><a href="#france">Frankreich</a></li>
+	<li><a href="#greece">Griechenland</a></li>
+	<li><a href="#unitedkingdom">Großbritannien</a></li>
+	<li><a href="#ireland">Irland</a></li>
+	<li><a href="#iceland">Island</a></li>
+	<li><a href="#italy">Italien</a></li>
+	<li><a href="#kosovo">Kosovo</a></li>
+	<li><a href="#croatia">Kroatien</a></li>
+	<li><a href="#latvia">Lettland</a></li>
+	<li><a href="#liechtenstein">Liechtenstein</a></li>
+	<li><a href="#lithuania">Litauen</a></li>
+	<li><a href="#luxembourg">Luxemburg</a></li>
+	<li><a href="#malta">Malta</a></li>
+	<li><a href="#macedonia">Mazedonien</a></li>
+	<li><a href="#moldova">Moldau (Moldawien)</a></li>
+	<li><a href="#monaco">Monaco</a></li>
+	<li><a href="#montenegro">Montenegro</a></li>
+	<li><a href="#netherlands">Niederlande</a></li>
+	<li><a href="#norway">Norwegen</a></li>
+	<li><a href="#austria">&Ouml;sterreich</a></li>
+	<li><a href="#poland">Polen</a></li>
+	<li><a href="#portugal">Portugal</a></li>
+	<li><a href="#romania">Rum&auml;nien</a></li>
+	<li><a href="#russia">Russland</a></li>
+	<li><a href="#sanmarino">San Marino</a></li>
+	<li><a href="#sweden">Schweden</a></li>
+	<li><a href="#switzerland">Schweiz</a></li>
+	<li><a href="#serbia">Serbien</a></li>
+	<li><a href="#slovakia">Slowakei</a></li>
+	<li><a href="#slovenia">Slowenien</a></li>
+	<li><a href="#spain">Spanien</a></li>
+	<li><a href="#czechrepublic">Tschechien</a></li>
+	<li><a href="#turkey">T&uuml;rkei</a></li>
+	<li><a href="#ukraine">Ukraine</a></li>
+	<li><a href="#hungary">Ungarn</a></li>
+	<li><a href="#vaticancity">Vatikanstadt</a></li>
+	<li><a href="#belarus">Wei&szlig;russland</a></li>
+	<li><a href="#cyprus">Zypern</a></li>
+	</ul>
+
+	<ul id="telOceania" title="Ozeanien">
+	<li><a href="#australia">Australien</a></li>
+	<li><a href="#fiji">Fidschi</a></li>
+	<li><a href="#kiribati">Kiribati</a></li>
+	<li><a href="#marshallislands">Marshallinseln</a></li>
+	<li><a href="#micronesia">Mikronesien</a></li>
+	<li><a href="#nauru">Nauru</a></li>
+	<li><a href="#newzealand">Neuseeland</a></li>
+	<li><a href="#palau">Palau</a></li>
+	<li><a href="#papuanewguinea">Papua-Neuguinea</a></li>
+	<li><a href="#solomonislands">Salomonen</a></li>
+	<li><a href="#samoa">Samoa</a></li>
+	<li><a href="#tonga">Tonga</a></li>
+	<li><a href="#tuvalu">Tuvalu</a></li>
+	<li><a href="#vanuatu">Vanuatu</a></li>
+	</ul>
+
+	<ul id="telNorthamerica" title="Nord-/Zentralamerika">
+	<li><a href="#antiguaandbarbuda">Antigua und Barbuda</a></li>
+	<li><a href="#bahamas">Bahamas</a></li>
+	<li><a href="#barbados">Barbados</a></li>
+	<li><a href="#belize">Belize</a></li>
+	<li><a href="#caymanislands">Cayman Islands</a></li>
+	<li><a href="#costarica">Costa Rica</a></li>
+	<li><a href="#dominica">Dominica</a></li>
+	<li><a href="#dominicanrepublic">Dominikanische Republik</a></li>
+	<li><a href="#elsalvador">El Salvador</a></li>
+	<li><a href="#grenada">Grenada</a></li>
+	<li><a href="#greenland">Gr&ouml;nland</a></li>
+	<li><a href="#guatemala">Guatemala</a></li>
+	<li><a href="#haiti">Haiti</a></li>
+	<li><a href="#honduras">Honduras</a></li>
+	<li><a href="#jamaica">Jamaika</a></li>
+	<li><a href="#canada">Kanada</a></li>
+	<li><a href="#cuba">Kuba</a></li>
+	<li><a href="#mexico">Mexiko</a></li>
+	<li><a href="#nicaragua">Nicaragua</a></li>
+	<li><a href="#panama">Panama</a></li>
+	<li><a href="#stkittsandnevis">Saint Kitts und Nevis</a></li>
+	<li><a href="#stlucia">Saint Lucia</a></li>
+	<li><a href="#saintpierreandmiquelon">Saint Pierre und Miquelon</a></li>
+	<li><a href="#stvincentandgrenadines">Saint Vincent und Grenadinen</a></li>
+	<li><a href="#trinidadandtobago">Trinidad und Tobago</a></li>
+	<li><a href="#unitedstatesofamerica">Vereinigten Staaten von Amerika</a></li>
+	</ul>
+
+	<ul id="telSouthamerica" title="S&uuml;damerika">
+	<li><a href="#argentina">Argentinien</a></li>
+	<li><a href="#bolivia">Bolivien</a></li>
+	<li><a href="#brazil">Brasilien</a></li>
+	<li><a href="#chile">Chile</a></li>
+	<li><a href="#ecuador">Ecuador</a></li>
+	<li><a href="#guyana">Guyana</a></li>
+	<li><a href="#colombia">Kolumbien</a></li>
+	<li><a href="#paraguay">Paraguay</a></li>
+	<li><a href="#peru">Peru</a></li>
+	<li><a href="#suriname">Suriname</a></li>
+	<li><a href="#uruguay">Uruguay</a></li>
+	<li><a href="#venezuela">Venezuela</a></li>
+	</ul>
+
+  	<!-- <li>Geldkarten sperren <a href="tel:116116">(116116)</a></li> -->
+
+<!-- ALL COUNTRIES WITH EMERGENCY NUMBERS -->
+
+<ul id="egypt" title="&Auml;gypten"><br /><ol><li>Feuerwehr <a href="tel:180">(180)</a></li><li>Notarzt <a href="tel:123">(123)</a></li><li>Polizei <a href="tel:122">(122)</a></li></ol></ul>
+<ul id="algeria" title="Algerien"><br /><ol><li>Feuerwehr <a href="tel:14">(14)</a></li><li>Notarzt <a href="tel:17">(17)</a></li><li>Polizei <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="angola" title="Angola"><br /><ol><li>Feuerwehr <a href="tel:118">(118)</a></li><li>Notarzt <a href="tel:118">(118)</a></li><li>Polizei <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="equatorialguinea" title="&Auml;quatorialguinea"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="ethiopia" title="&Auml;thiopien"><br /><ol><li>Feuerwehr <a href="tel:93">(93)</a></li><li>Notarzt <a href="tel:92">(92)</a></li><li>Polizei <a href="tel:91">(91)</a></li></ol></ul>
+<ul id="benin" title="Benin"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt <a href="tel:301769">(301769)</a></li><li>Polizei <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="botswana" title="Botsuana"><br /><ol><li>Feuerwehr <a href="tel:998">(998)</a></li><li>Notarzt <a href="tel:997">(997)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="burkinafaso" title="Burkina Faso"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt (lokale Nummern)</li><li>Polizei <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="burundi" title="Burundi"><br /><ol><li>Feuerwehr (kein System)</li><li>Notarzt (kein System)</li><li>Polizei (kein System)</li></ol></ul>
+<ul id="djibouti" title="Dschibuti"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt <a href="tel:351351">(351351)</a></li><li>Polizei <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="ivorycoast" title="Elfenbeink&uuml;ste"><br /><ol><li>Feuerwehr <a href="tel:180">(180)</a></li><li>Notarzt <a href="tel:110">(110)</a></li><li>Polizei <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="eritrea" title="Eritrea"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="gabon" title="Gabun"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt <a href="tel:1300">(1300)</a></li><li>Polizei <a href="tel:1730">(1730)</a></li></ol></ul>
+<ul id="gambia" title="Gambia"><br /><ol><li>Feuerwehr <a href="tel:118">(118)</a></li><li>Notarzt <a href="tel:116">(116)</a></li><li>Polizei <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="ghana" title="Ghana"><br /><ol><li>Feuerwehr <a href="tel:192">(192)</a></li><li>Notarzt <a href="tel:193">(193)</a></li><li>Polizei <a href="tel:191">(191)</a></li></ol></ul>
+<ul id="guinea" title="Guinea"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="guinea-bissau" title="Guinea-Bissau"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="cameroon" title="Kamerun"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt (lokale Nummern)</li><li>Polizei <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="capeverde" title="Kap Verde"><br /><ol><li>Feuerwehr <a href="tel:131">(131)</a></li><li>Notarzt <a href="tel:130">(130)</a></li><li>Polizei <a href="tel:132">(132)</a></li></ol></ul>
+<ul id="kenya" title="Kenia"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:999">(999)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="comoros" title="Komoren"><br /><ol><li>Feuerwehr (nur Radiotelefon)</li><li>Notarzt (nur Radiotelefon)</li><li>Polizei (nur Radiotelefon)</li></ol></ul>
+<ul id="congodemocraticrepublic" title="Kongo (Demokrat. Republik)"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="congorepublic" title="Kongo (Republik)"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="lesotho" title="Lesotho"><br /><ol><li>Feuerwehr <a href="tel:122">(122)</a></li><li>Notarzt <a href="tel:121">(121)</a></li><li>Polizei <a href="tel:123">(123)</a></li></ol></ul>
+<ul id="liberia" title="Liberia"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="libya" title="Libyen"><br /><ol><li>Feuerwehr <a href="tel:193">(193)</a></li><li>Notarzt <a href="tel:193">(193)</a></li><li>Polizei <a href="tel:193">(193)</a></li></ol></ul>
+<ul id="madagascar" title="Madagaskar"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt <a href="tel:2262566">(2262566)</a></li><li>Polizei <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="malawi" title="Malawi"><br /><ol><li>Feuerwehr <a href="tel:199">(199)</a></li><li>Notarzt <a href="tel:199">(199)</a></li><li>Polizei <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="mali" title="Mali"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt <a href="tel:15">(15)</a></li><li>Polizei <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="morocco" title="Marokko"><br /><ol><li>Feuerwehr <a href="tel:15">(15)</a></li><li>Notarzt <a href="tel:15">(15)</a></li><li>Polizei <a href="tel:19">(19)</a></li></ol></ul>
+<ul id="mauritania" title="Mauretanien"><br /><ol><li>Feuerwehr <a href="tel:118">(118)</a></li><li>Notarzt (lokale Nummern)</li><li>Polizei <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="mauritius" title="Mauritius"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:999">(999)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="mayotte" title="Mayotte"><br /><ol><li>Feuerwehr <a href="tel:603054">(603054)</a></li><li>Notarzt <a href="tel:15">(15)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="mozambique" title="Mosambik"><br /><ol><li>Feuerwehr <a href="tel:198">(198)</a></li><li>Notarzt <a href="tel:117">(117)</a></li><li>Polizei <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="namibia" title="Namibia"><br /><ol><li>Feuerwehr <a href="tel:2032270">(2032270)</a></li><li>Notarzt <a href="tel:2032276">(2032276)</a></li><li>Polizei <a href="tel:1011">(1011)</a></li></ol></ul>
+<ul id="niger" title="Niger"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt <a href="tel:723141">(723141)</a></li><li>Polizei <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="nigeria" title="Nigeria"><br /><ol><li>Feuerwehr <a href="tel:190">(190)</a></li><li>Notarzt <a href="tel:199">(199)</a></li><li>Polizei <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="reunion" title="R&eacute;union"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a> oder <a href="tel:112">(112 mobil)</a></li><li>Notarzt <a href="tel:15">(15)</a> oder <a href="tel:112">(112 mobil)</a></li><li>Polizei <a href="tel:17">(17)</a> oder <a href="tel:112">(112 mobil)</a></li></ol></ul>
+<ul id="rwanda" title="Ruanda"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="sahrawiarabdemocraticrepublic" title="Sahara (Demokrat. Arab. Republik)"><br /><ol><li>Feuerwehr (--)</li><li>Notarzt (--)</li><li>Polizei (--)</li></ol></ul>
+<ul id="zambia" title="Sambia"><br /><ol><li>Feuerwehr <a href="tel:993">(993)</a> oder <a href="tel:112">(112 mobil)</a></li><li>Notarzt <a href="tel:991">(991)</a> oder <a href="tel:112">(112 mobil)</a></li><li>Polizei <a href="tel:999">(999)</a> oder <a href="tel:112">(112 mobil)</a></li></ol></ul>
+<ul id="saotomeandprincipe" title="Sao Tom&eacute; und Principe"><br /><ol><li>Feuerwehr (--)</li><li>Notarzt (--)</li><li>Polizei (--)</li></ol></ul>
+<ul id="senegal" title="Senegal"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt <a href="tel:8891515">(8891515)</a></li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="seychelles" title="Seychellen"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:999">(999)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="sierraleone" title="Sierra Leone"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:999">(999)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="zimbabwe" title="Simbabwe"><br /><ol><li>Feuerwehr <a href="tel:993">(993)</a></li><li>Notarzt <a href="tel:994">(994)</a></li><li>Polizei <a href="tel:995">(995)</a></li></ol></ul>
+<ul id="somalia" title="Somalia"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="southafrica" title="S&uuml;dafrika"><br /><ol><li>Feuerwehr <a href="tel:10111">(10111)</a></li><li>Notarzt <a href="tel:10177">(10177)</a></li><li>Polizei <a href="tel:10111">(10111)</a></li></ol></ul>
+<ul id="sudan" title="Sudan"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt (lokale Nummern)</li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="swaziland" title="Swasiland"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt <a href="tel:6060911">(6060911)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="tanzania" title="Tansania"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="togo" title="Togo"><br /><ol><li>Feuerwehr <a href="tel:118">(118)</a></li><li>Notarzt <a href="tel:191">(191)</a></li><li>Polizei <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="chad" title="Tschad"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt (lokale Nummern)</li><li>Polizei <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="tunisia" title="Tunesien"><br /><ol><li>Feuerwehr <a href="tel:198">(198)</a></li><li>Notarzt <a href="tel:190">(190)</a></li><li>Polizei <a href="tel:197">(197)</a></li></ol></ul>
+<ul id="uganda" title="Uganda"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a> oder <a href="tel:111">(111 mobil)</a></li><li>Notarzt <a href="tel:999">(999)</a> oder <a href="tel:111">(111 mobil)</a></li><li>Polizei <a href="tel:999">(999)</a> oder <a href="tel:111">(111 mobil)</a></li></ol></ul>
+<ul id="centralafricanrepublic" title="Zentralafrikanische Republik"><br /><ol><li>Feuerwehr <a href="tel:118">(118)</a></li><li>Notarzt <a href="tel:610600">(610600)</a></li><li>Polizei <a href="tel:611253">(611253)</a></li></ol></ul>
+
+
+
+<ul id="afghanistan" title="Afghanistan"><br /><ol><li>Feuerwehr (--)</li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei (--)</li></ol></ul>
+<ul id="armenia" title="Armenien"><br /><ol><li>Feuerwehr <a href="tel:101">(101)</a></li><li>Notarzt <a href="tel:103">(103)</a></li><li>Polizei <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="azerbaijan" title="Aserbaidschan"><br /><ol><li>Feuerwehr <a href="tel:101">(101)</a></li><li>Notarzt <a href="tel:103">(103)</a></li><li>Polizei <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="bahrain" title="Bahrain"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:999">(999)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="bangladesh" title="Bangladesch"><br /><ol><li>Feuerwehr <a href="tel:9555555">(9555555)</a></li><li>Notarzt <a href="tel:199">(199)</a></li><li>Polizei <a href="tel:8665513">(8665513)</a></li></ol></ul>
+<ul id="bhutan" title="Bhutan"><br /><ol><li>Feuerwehr <a href="tel:113">(113)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="brunei" title="Brunei"><br /><ol><li>Feuerwehr <a href="tel:995">(995)</a></li><li>Notarzt <a href="tel:991">(991)</a></li><li>Polizei <a href="tel:993">(993)</a></li></ol></ul>
+<ul id="china" title="China"><br /><ol><li>Feuerwehr <a href="tel:119">(119)</a></li><li>Notarzt <a href="tel:120">(120)</a></li><li>Polizei <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="georgia" title="Georgien"><br /><ol><li>Feuerwehr <a href="tel:022">(022)</a></li><li>Notarzt <a href="tel:022">(022)</a></li><li>Polizei <a href="tel:022">(022)</a></li></ol></ul>
+<ul id="hongkong" title="Hong Kong"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:999">(999)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="india" title="Indien"><br /><ol><li>Feuerwehr <a href="tel:101">(101)</a></li><li>Notarzt <a href="tel:102">(102)</a></li><li>Polizei <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="indonesia" title="Indonesien"><br /><ol><li>Feuerwehr <a href="tel:113">(113)</a></li><li>Notarzt <a href="tel:118">(118)</a></li><li>Polizei <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="iraq" title="Irak"><br /><ol><li>Feuerwehr (kein System)</li><li>Notarzt (kein System)</li><li>Polizei (kein System)</li></ol></ul>
+<ul id="iran" title="Iran"><br /><ol><li>Feuerwehr <a href="tel:125">(125)</a> oder <a href="tel:112">(112 mobil)</a></li><li>Notarzt <a href="tel:115">(115)</a> oder <a href="tel:112">(112 mobil)</a></li><li>Polizei <a href="tel:110">(110)</a> oder <a href="tel:112">(112 mobil)</a></li></ol></ul>
+<ul id="israel" title="Israel"><br /><ol><li>Feuerwehr <a href="tel:102">(102)</a></li><li>Notarzt <a href="tel:101">(101)</a></li><li>Polizei <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="japan" title="Japan"><br /><ol><li>Feuerwehr <a href="tel:119">(119)</a></li><li>Notarzt <a href="tel:119">(119)</a></li><li>Polizei <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="yemen" title="Jemen"><br /><ol><li>Feuerwehr <a href="tel:199">(199)</a></li><li>Notarzt <a href="tel:199">(199)</a></li><li>Polizei <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="jordan" title="Jordanien"><br /><ol><li>Feuerwehr <a href="tel:193">(193)</a></li><li>Notarzt <a href="tel:193">(193)</a></li><li>Polizei <a href="tel:192">(192)</a></li></ol></ul>
+<ul id="cambodia" title="Kambodscha"><br /><ol><li>Feuerwehr <a href="tel:118">(118)</a></li><li>Notarzt <a href="tel:199">(199)</a></li><li>Polizei <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="kazakhstan" title="Kasachstan"><br /><ol><li>Feuerwehr <a href="tel:03">(03)</a></li><li>Notarzt <a href="tel:03">(03)</a></li><li>Polizei <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="qatar" title="Katar"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:999">(999)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="kyrgyzstan" title="Kirgisistan"><br /><ol><li>Feuerwehr <a href="tel:03">(03)</a></li><li>Notarzt <a href="tel:03">(03)</a></li><li>Polizei <a href="tel:133">(133)</a></li></ol></ul>
+<ul id="kurdistan" title="Kurdistan"><br /><ol><li>Feuerwehr <a href="tel:125">(125)</a></li><li>Notarzt <a href="tel:115">(115)</a></li><li>Polizei <a href="tel:129">(129)</a></li></ol></ul>
+<ul id="kuwait" title="Kuwait"><br /><ol><li>Feuerwehr <a href="tel:777">(777)</a></li><li>Notarzt <a href="tel:777">(777)</a></li><li>Polizei <a href="tel:777">(777)</a></li></ol></ul>
+<ul id="laos" title="Laos"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt <a href="tel:03">(03)</a></li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="lebanon" title="Libanon"><br /><ol><li>Feuerwehr <a href="tel:175">(175)</a></li><li>Notarzt <a href="tel:140">(140)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="macau" title="Macao"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:999">(999)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="malaysia" title="Malaysia"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a> oder <a href="tel:112">(112 mobil)</a></li><li>Notarzt <a href="tel:999">(999)</a> oder <a href="tel:112">(112 mobil)</a></li><li>Polizei <a href="tel:999">(999)</a> oder <a href="tel:112">(112 mobil)</a></li></ol></ul>
+<ul id="maldives" title="Malediven"><br /><ol><li>Feuerwehr <a href="tel:118">(118)</a></li><li>Notarzt <a href="tel:102">(102)</a></li><li>Polizei <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="mongolia" title="Mongolei"><br /><ol><li>Feuerwehr <a href="tel:101">(101)</a></li><li>Notarzt <a href="tel:103">(103)</a></li><li>Polizei <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="myanmar" title="Myanmar"><br /><ol><li>Feuerwehr <a href="tel:199">(199)</a></li><li>Notarzt <a href="tel:199">(199)</a></li><li>Polizei <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="nepal" title="Nepal"><br /><ol><li>Feuerwehr <a href="tel:101">(101)</a></li><li>Notarzt <a href="tel:228094">(228094)</a></li><li>Polizei <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="northkorea" title="Nordkorea"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="oman" title="Oman"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:999">(999)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="easttimor" title="Osttimor"><br /><ol><li>Feuerwehr (--)</li><li>Notarzt <a href="tel:7233212">(7233212)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="pakistan" title="Pakistan"><br /><ol><li>Feuerwehr <a href="tel:16">(16)</a></li><li>Notarzt <a href="tel:115">(115)</a></li><li>Polizei <a href="tel:15">(15)</a></li></ol></ul>
+<ul id="philippines" title="Philippinen"><br /><ol><li>Feuerwehr <a href="tel:117">(117)</a></li><li>Notarzt <a href="tel:117">(117)</a></li><li>Polizei <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="saudiarabia" title="Saudi-Arabien"><br /><ol><li>Feuerwehr <a href="tel:998">(998)</a></li><li>Notarzt <a href="tel:997">(997)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="singapore" title="Singapur"><br /><ol><li>Feuerwehr <a href="tel:995">(995)</a></li><li>Notarzt <a href="tel:995">(995)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="srilanka" title="Sri Lanka"><br /><ol><li>Feuerwehr <a href="tel:111">(111)</a></li><li>Notarzt <a href="tel:110">(110)</a></li><li>Polizei <a href="tel:119">(119)</a> oder <a href="tel:112">(112 mobil)</a></li></ol></ul>
+<ul id="southkorea" title="S&uuml;dkorea"><br /><ol><li>Feuerwehr <a href="tel:119">(119)</a></li><li>Notarzt <a href="tel:119">(119)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="syria" title="Syrien"><br /><ol><li>Feuerwehr <a href="tel:113">(113)</a></li><li>Notarzt <a href="tel:110">(110)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="tajikistan" title="Tadschikistan"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt <a href="tel:03">(03)</a></li><li>Polizei <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="taiwan" title="Taiwan"><br /><ol><li>Feuerwehr <a href="tel:119">(119)</a></li><li>Notarzt <a href="tel:119">(119)</a></li><li>Polizei <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="thailand" title="Thailand"><br /><ol><li>Feuerwehr <a href="tel:199">(199)</a></li><li>Notarzt <a href="tel:191">(191)</a></li><li>Polizei <a href="tel:191">(191)</a> oder <a href="tel:1155">(1155 Touristen)</a></li></ol></ul>
+<ul id="turkmenistan" title="Turkmenistan"><br /><ol><li>Feuerwehr <a href="tel:03">(03)</a></li><li>Notarzt <a href="tel:03">(03)</a></li><li>Polizei <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="uzbekistan" title="Usbekistan"><br /><ol><li>Feuerwehr <a href="tel:03">(03)</a></li><li>Notarzt <a href="tel:03">(03)</a></li><li>Polizei <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="unitedarabemirates" title="Vereinigte Arabische Emirate"><br /><ol><li>Feuerwehr <a href="tel:997">(997)</a></li><li>Notarzt <a href="tel:998">(998)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="vietnam" title="Vietnam"><br /><ol><li>Feuerwehr <a href="tel:114">(114)</a></li><li>Notarzt <a href="tel:115">(115)</a></li><li>Polizei <a href="tel:113">(113)</a></li></ol></ul>
+
+
+
+<ul id="albania" title="Albanien"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt <a href="tel:17">(17)</a></li><li>Polizei <a href="tel:19">(19)</a></li></ol></ul>
+<ul id="andorra" title="Andorra"><br /><ol><li>Feuerwehr <a href="tel:118">(118)</a></li><li>Notarzt <a href="tel:118">(118)</a></li><li>Polizei <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="belgium" title="Belgien"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="bosniaandherzegovina" title="Bosnien und Herzegowina"><br /><ol><li>Feuerwehr <a href="tel:123">(123)</a></li><li>Notarzt <a href="tel:124">(124)</a></li><li>Polizei <a href="tel:122">(122)</a></li></ol></ul>
+<ul id="bulgaria" title="Bulgarien"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="denmark" title="D&auml;nemark"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="germany" title="Deutschland"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:110">(110)</a></li><li>Geldkarten sperren <a href="tel:116116">(116116)</a></li></ol></ul>
+<ul id="estonia" title="Estland"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="finland" title="Finnland"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="france" title="Frankreich"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a> oder <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:15">(15)</a> oder <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:17">(17)</a> oder <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="greece" title="Griechenland"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="unitedkingdom" title="Großbritannien"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="ireland" title="Irland"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="iceland" title="Island"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="italy" title="Italien"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="kosovo" title="Kosovo"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="croatia" title="Kroatien"><br /><ol><li>Feuerwehr <a href="tel:93">(93)</a></li><li>Notarzt <a href="tel:94">(94)</a></li><li>Polizei <a href="tel:92">(92)</a></li></ol></ul>
+<ul id="latvia" title="Lettland"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="liechtenstein" title="Liechtenstein"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="lithuania" title="Litauen"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="luxembourg" title="Luxemburg"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="malta" title="Malta"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="macedonia" title="Mazedonien"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="moldova" title="Moldau (Moldawien)"><br /><ol><li>Feuerwehr <a href="tel:901">(901)</a></li><li>Notarzt <a href="tel:903">(903)</a></li><li>Polizei <a href="tel:902">(902)</a></li></ol></ul>
+<ul id="monaco" title="Monaco"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="montenegro" title="Montenegro"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="netherlands" title="Niederlande"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="norway" title="Norwegen"><br /><ol><li>Feuerwehr <a href="tel:110">(110)</a></li><li>Notarzt <a href="tel:113">(113)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="austria" title="&Ouml;sterreich"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="poland" title="Polen"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="portugal" title="Portugal"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="romania" title="Rum&auml;nien"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="russia" title="Russland"><br /><ol><li>Feuerwehr <a href="tel:01">(01)</a></li><li>Notarzt <a href="tel:03">(03)</a></li><li>Polizei <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="sanmarino" title="San Marino"><br /><ol><li>Feuerwehr <a href="tel:116">(116)</a></li><li>Notarzt <a href="tel:113">(113)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="sweden" title="Schweden"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="switzerland" title="Schweiz"><br /><ol><li>Feuerwehr <a href="tel:118">(118)</a> oder <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:144">(144)</a> oder <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:117">(117)</a> oder <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="serbia" title="Serbien"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="slovakia" title="Slowakei"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="slovenia" title="Slowenien"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:113">(113)</a></li></ol></ul>
+<ul id="spain" title="Spanien"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="czechrepublic" title="Tschechien"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="turkey" title="T&uuml;rkei"><br /><ol><li>Feuerwehr <a href="tel:110">(110)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:155">(155)</a></li></ol></ul>
+<ul id="ukraine" title="Ukraine"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="hungary" title="Ungarn"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="vaticancity" title="Vatikanstadt"><br /><ol><li>Feuerwehr <a href="tel:115">(115)</a></li><li>Notarzt <a href="tel:113">(113)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="belarus" title="Weißrussland"><br /><ol><li>Feuerwehr <a href="tel:01">(01)</a></li><li>Notarzt <a href="tel:03">(03)</a></li><li>Polizei <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="cyprus" title="Zypern"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+
+
+
+<ul id="australia" title="Australien"><br /><ol><li>Feuerwehr <a href="tel:000">(000)</a> oder <a href="tel:112">(112 mobil)</a></li><li>Notarzt <a href="tel:000">(000)</a> oder <a href="tel:112">(112 mobil)</a></li><li>Polizei <a href="tel:000">(000)</a> oder <a href="tel:112">(112 mobil)</a></li></ol></ul>
+<ul id="fiji" title="Fidschi"><br /><ol><li>Feuerwehr <a href="tel:9170">(9170)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="kiribati" title="Kiribati"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt <a href="tel:994">(994)</a></li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="marshallislands" title="Marshallinseln"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt <a href="tel:6254111">(6254111)</a></li><li>Polizei <a href="tel:6258666">(6258666)</a></li></ol></ul>
+<ul id="micronesia" title="Mikronesien"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="nauru" title="Nauru"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="newzealand" title="Neuseeland"><br /><ol><li>Feuerwehr <a href="tel:111">(111)</a></li><li>Notarzt <a href="tel:111">(111)</a></li><li>Polizei <a href="tel:111">(111)</a></li></ol></ul>
+<ul id="palau" title="Palau"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="papuanewguinea" title="Papua-Neuguinea"><br /><ol><li>Feuerwehr <a href="tel:110">(110)</a></li><li>Notarzt (lokale Nummern)</li><li>Polizei <a href="tel:000">(000)</a></li></ol></ul>
+<ul id="solomonislands" title="Salomonen"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="samoa" title="Samoa"><br /><ol><li>Feuerwehr <a href="tel:994">(994)</a></li><li>Notarzt <a href="tel:996">(996)</a></li><li>Polizei <a href="tel:995">(995)</a></li></ol></ul>
+<ul id="tonga" title="Tonga"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:933">(933)</a></li><li>Polizei <a href="tel:922">(922)</a></li></ol></ul>
+<ul id="tuvalu" title="Tuvalu"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="vanuatu" title="Vanuatu"><br /><ol><li>Feuerwehr <a href="tel:112">(112)</a></li><li>Notarzt <a href="tel:112">(112)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+
+
+
+<ul id="antiguaandbarbuda" title="Antigua und Barbuda"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="bahamas" title="Bahamas"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="barbados" title="Barbados"><br /><ol><li>Feuerwehr <a href="tel:113">(113)</a></li><li>Notarzt <a href="tel:115">(115)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="belize" title="Belize"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="caymanislands" title="Cayman Islands"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="costarica" title="Costa Rica"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="dominica" title="Dominica"><br /><ol><li>Feuerwehr <a href="tel:999">(999)</a></li><li>Notarzt <a href="tel:999">(999)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="dominicanrepublic" title="Dominikanische Republik"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="elsalvador" title="El Salvador"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="grenada" title="Grenada"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="greenland" title="Gr&ouml;nland"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt (lokale Nummern)</li><li>Polizei (lokale Nummern)</li></ol></ul>
+<ul id="guatemala" title="Guatemala"><br /><ol><li>Feuerwehr <a href="tel:122">(122)</a></li><li>Notarzt <a href="tel:123">(123)</a></li><li>Polizei <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="haiti" title="Haiti"><br /><ol><li>Feuerwehr (lokale Nummern)</li><li>Notarzt <a href="tel:118">(118)</a></li><li>Polizei <a href="tel:114">(114)</a></li></ol></ul>
+<ul id="honduras" title="Honduras"><br /><ol><li>Feuerwehr <a href="tel:198">(198)</a></li><li>Notarzt <a href="tel:378654">(378654)</a></li><li>Polizei <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="jamaica" title="Jamaika"><br /><ol><li>Feuerwehr <a href="tel:110">(110)</a></li><li>Notarzt <a href="tel:110">(110)</a></li><li>Polizei <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="canada" title="Kanada"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="cuba" title="Kuba"><br /><ol><li>Feuerwehr <a href="tel:26811">(26811)</a></li><li>Notarzt <a href="tel:26811">(26811)</a></li><li>Polizei <a href="tel:26811">(26811)</a></li></ol></ul>
+<ul id="mexico" title="Mexiko"><br /><ol><li>Feuerwehr <a href="tel:060">(060)</a></li><li>Notarzt <a href="tel:060">(060)</a></li><li>Polizei <a href="tel:080">(080)</a></li></ol></ul>
+<ul id="nicaragua" title="Nicaragua"><br /><ol><li>Feuerwehr <a href="tel:2650162">(2650162)</a></li><li>Notarzt <a href="tel:2651761">(2651761)</a></li><li>Polizei <a href="tel:118">(118)</a></li></ol></ul>
+<ul id="panama" title="Panama"><br /><ol><li>Feuerwehr <a href="tel:103">(103)</a></li><li>Notarzt <a href="tel:2699778">(2699778)</a></li><li>Polizei <a href="tel:104">(104)</a></li></ol></ul>
+<ul id="stkittsandnevis" title="Saint Kitts und Nevis"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="stlucia" title="Saint Lucia"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="saintpierreandmiquelon" title="Saint Pierre und Miquelon"><br /><ol><li>Feuerwehr <a href="tel:18">(18)</a></li><li>Notarzt <a href="tel:15">(15)</a></li><li>Polizei <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="stvincentandgrenadines" title="Saint Vincent und Grenadinen"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="trinidadandtobago" title="Trinidad und Tobago"><br /><ol><li>Feuerwehr <a href="tel:990">(990)</a></li><li>Notarzt <a href="tel:990">(990)</a></li><li>Polizei <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="unitedstatesofamerica" title="Vereinigten Staaten von Amerika"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+
+
+
+<ul id="argentina" title="Argentinien"><br /><ol><li>Feuerwehr <a href="tel:100">(100)</a></li><li>Notarzt <a href="tel:107">(107)</a></li><li>Polizei <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="bolivia" title="Bolivien"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="brazil" title="Brasilien"><br /><ol><li>Feuerwehr <a href="tel:193">(193)</a></li><li>Notarzt <a href="tel:192">(192)</a></li><li>Polizei <a href="tel:190">(190)</a></li></ol></ul>
+<ul id="chile" title="Chile"><br /><ol><li>Feuerwehr <a href="tel:132">(132)</a></li><li>Notarzt <a href="tel:131">(131)</a></li><li>Polizei <a href="tel:133">(133)</a></li></ol></ul>
+<ul id="ecuador" title="Ecuador"><br /><ol><li>Feuerwehr <a href="tel:102">(102)</a></li><li>Notarzt <a href="tel:131">(131)</a></li><li>Polizei <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="guyana" title="Guyana"><br /><ol><li>Feuerwehr <a href="tel:912">(912)</a></li><li>Notarzt <a href="tel:913">(913)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="colombia" title="Kolumbien"><br /><ol><li>Feuerwehr <a href="tel:119">(119)</a></li><li>Notarzt <a href="tel:119">(119)</a></li><li>Polizei <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="paraguay" title="Paraguay"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="peru" title="Peru"><br /><ol><li>Feuerwehr <a href="tel:116">(116)</a></li><li>Notarzt <a href="tel:116">(116)</a></li><li>Polizei <a href="tel:105">(105)</a></li></ol></ul>
+<ul id="suriname" title="Suriname"><br /><ol><li>Feuerwehr <a href="tel:115">(115)</a></li><li>Notarzt <a href="tel:115">(115)</a></li><li>Polizei <a href="tel:115">(115)</a></li></ol></ul>
+<ul id="uruguay" title="Uruguay"><br /><ol><li>Feuerwehr <a href="tel:911">(911)</a></li><li>Notarzt <a href="tel:911">(911)</a></li><li>Polizei <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="venezuela" title="Venezuela"><br /><ol><li>Feuerwehr <a href="tel:171">(171)</a></li><li>Notarzt <a href="tel:171">(171)</a></li><li>Polizei <a href="tel:171">(171)</a></li></ol></ul>
+
+
+
+</body>
+</html>

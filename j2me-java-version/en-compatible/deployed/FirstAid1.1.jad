@@ -1,0 +1,10 @@
+MIDlet-1: First Aid Mobile 3.0,icon.png,de.firstai.FirstAidMobile
+MIDlet-Icon: icon.png
+MIDlet-Info-URL: www.firstai.de
+MIDlet-Jar-Size: 16175
+MIDlet-Jar-URL: First.Aid.3.0.comp.jar
+MIDlet-Name: First Aid Mobile 3.0
+MIDlet-Vendor: Kai Kajus Noack
+MIDlet-Version: 3.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

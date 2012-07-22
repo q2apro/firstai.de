@@ -1,0 +1,138 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEB2F9A8-7189-416A-A8F6-F6F9D0FC6C73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FirstAid3</RootNamespace>
+    <AssemblyName>FirstAid3</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>Smartphone</PlatformFamilyName>
+    <PlatformID>f27da329-3269-4191-98e0-c87d3d7f1db9</PlatformID>
+    <OSVersion>5.02</OSVersion>
+    <DeployDirSuffix>FirstAid3</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CFMeasureString.cs" />
+    <Compile Include="Form1_EN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_EN.Designer.cs">
+      <DependentUpon>Form1_EN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aid089.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\aid089.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\aid001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <EmbeddedResource Include="Form1_EN.resx">
+      <DependentUpon>Form1_EN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\aid107.png" />
+    <EmbeddedResource Include="Resources\aid092.png" />
+    <EmbeddedResource Include="Resources\aid085.png" />
+    <EmbeddedResource Include="Resources\aid084.png" />
+    <EmbeddedResource Include="Resources\aid069.png" />
+    <EmbeddedResource Include="Resources\aid067.png" />
+    <EmbeddedResource Include="Resources\aid065.png" />
+    <EmbeddedResource Include="Resources\aid061.png" />
+    <EmbeddedResource Include="Resources\aid058.png" />
+    <EmbeddedResource Include="Resources\aid045plug.png" />
+    <EmbeddedResource Include="Resources\aid041.png" />
+    <EmbeddedResource Include="Resources\aid034.png" />
+    <EmbeddedResource Include="Resources\aid031.png" />
+    <EmbeddedResource Include="Resources\aid030.png" />
+    <EmbeddedResource Include="Resources\aid029.png" />
+    <EmbeddedResource Include="Resources\aid028.png" />
+    <EmbeddedResource Include="Resources\aid025.png" />
+    <EmbeddedResource Include="Resources\aid023.png" />
+    <EmbeddedResource Include="Resources\aid022.png" />
+    <EmbeddedResource Include="Resources\aid019.png" />
+    <EmbeddedResource Include="Resources\aid013.png" />
+    <EmbeddedResource Include="Resources\aid012.png" />
+    <EmbeddedResource Include="Resources\aid011.png" />
+    <EmbeddedResource Include="Resources\aid010.png" />
+    <EmbeddedResource Include="Resources\aid009.png" />
+    <EmbeddedResource Include="Resources\aid008.png" />
+    <EmbeddedResource Include="Resources\aid003.png" />
+    <EmbeddedResource Include="Resources\cc88x31.png" />
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,182 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4413B247-FF8E-4DDD-B43B-9CF42F244DD5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FirstAid1</RootNamespace>
+    <AssemblyName>FirstAid1</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>Smartphone</PlatformFamilyName>
+    <PlatformID>f27da329-3269-4191-98e0-c87d3d7f1db9</PlatformID>
+    <OSVersion>5.02</OSVersion>
+    <DeployDirSuffix>FirstAid1</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="resources\0.mp3" />
+    <Content Include="resources\11.mp3" />
+    <Content Include="resources\12.mp3" />
+    <Content Include="resources\13.mp3" />
+    <Content Include="resources\14.mp3" />
+    <Content Include="resources\15.mp3" />
+    <Content Include="resources\16.mp3" />
+    <Content Include="resources\17.mp3" />
+    <Content Include="resources\18.mp3" />
+    <Content Include="resources\19.mp3" />
+    <Content Include="resources\2.mp3" />
+    <Content Include="resources\20.mp3" />
+    <Content Include="resources\21.mp3" />
+    <Content Include="resources\22.mp3" />
+    <Content Include="resources\23.mp3" />
+    <Content Include="resources\24.mp3" />
+    <Content Include="resources\25.mp3" />
+    <Content Include="resources\26.mp3" />
+    <Content Include="resources\27.mp3" />
+    <Content Include="resources\29.mp3" />
+    <Content Include="resources\3.mp3" />
+    <Content Include="resources\30.mp3" />
+    <Content Include="resources\31.mp3" />
+    <Content Include="resources\32.mp3" />
+    <Content Include="resources\33.mp3" />
+    <Content Include="resources\34.mp3" />
+    <Content Include="resources\37.mp3" />
+    <Content Include="resources\38.mp3" />
+    <Content Include="resources\39.mp3" />
+    <Content Include="resources\4.mp3" />
+    <Content Include="resources\40.mp3" />
+    <Content Include="resources\41.mp3" />
+    <Content Include="resources\42.mp3" />
+    <Content Include="resources\43.mp3" />
+    <Content Include="resources\44.mp3" />
+    <Content Include="resources\45.mp3" />
+    <Content Include="resources\49.mp3" />
+    <Content Include="resources\5.mp3" />
+    <Content Include="resources\50.mp3" />
+    <Content Include="resources\51.mp3" />
+    <Content Include="resources\52.mp3" />
+    <Content Include="resources\53.mp3" />
+    <Content Include="resources\54.mp3" />
+    <Content Include="resources\55.mp3" />
+    <Content Include="resources\57.mp3" />
+    <Content Include="resources\58.mp3" />
+    <Content Include="resources\59.mp3" />
+    <Content Include="resources\6.mp3" />
+    <Content Include="resources\7.mp3" />
+    <Content Include="resources\8.mp3" />
+    <Content Include="resources\9.mp3" />
+    <Content Include="resources\aid001.png" />
+    <Content Include="resources\aid003.png" />
+    <Content Include="resources\aid008.png" />
+    <Content Include="resources\aid009.png" />
+    <Content Include="resources\aid010.png" />
+    <Content Include="resources\aid011.png" />
+    <Content Include="resources\aid012.png" />
+    <Content Include="resources\aid013.png" />
+    <Content Include="resources\aid019.png" />
+    <Content Include="resources\aid022.png" />
+    <Content Include="resources\aid023.png" />
+    <Content Include="resources\aid025.png" />
+    <Content Include="resources\aid028.png" />
+    <Content Include="resources\aid029.png" />
+    <Content Include="resources\aid030.png" />
+    <Content Include="resources\aid031.png" />
+    <Content Include="resources\aid034.png" />
+    <Content Include="resources\aid041.png" />
+    <Content Include="resources\aid045plug.png" />
+    <Content Include="resources\aid058.png" />
+    <Content Include="resources\aid061.png" />
+    <Content Include="resources\aid065.png" />
+    <Content Include="resources\aid067.png" />
+    <Content Include="resources\aid069.png" />
+    <Content Include="resources\aid084.png" />
+    <Content Include="resources\aid085.png" />
+    <Content Include="resources\aid089.png" />
+    <Content Include="resources\aid092.png" />
+    <Content Include="resources\aid107.png" />
+    <Content Include="resources\bground.png" />
+    <Content Include="resources\cc88x31.png" />
+    <Content Include="resources\down.png" />
+    <Content Include="resources\icon.png" />
+    <Content Include="resources\up.png" />
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

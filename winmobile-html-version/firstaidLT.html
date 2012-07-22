@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Pirmoji Medicinos Pagalba winMobile 1.0</title>
+<!-- 	Copyright of Web-Application 
+	CC by-nc-nd 3.0 (c) Kai Kajus Noack-->
+	<style type="text/css" media="screen">@import "iui/iui.css";</style>
+	
+	<script language="javascript" type="text/javascript">
+	var recentLayer = 'home'; 
+	var lastLayer = '';
+	var level = 0;
+	function showAid(what) {
+		if (what != 'home') {
+			level ++;
+			document.getElementById("home").style.display = "none"; 
+			document.getElementById(recentLayer).style.display = "none"; 
+			document.getElementById(what).style.display = "block"; 
+			document.getElementById("menuButton").style.display = "none"; 
+			document.getElementById("backButton").style.display = "inline"; 
+		}
+		else {
+			document.getElementById(recentLayer).style.display = "none"; 
+			document.getElementById("home").style.display = "block"; 
+			document.getElementById("menuButton").style.display = "inline"; 
+			document.getElementById("backButton").style.display = "none"; 
+			level = 0;
+		}
+		lastLayer = recentLayer; 
+		recentLayer = what;
+	}
+	function showLast() {
+		level -= 2;
+		if (level < 0) { showAid('home'); }
+		else { showAid(lastLayer); }
+	}
+	
+	function startScreen() {
+		document.getElementById(recentLayer).style.display = "none"; 
+		document.getElementById("home").style.display = "block"; 
+		document.getElementById("menuButton").style.display = "inline"; 
+		document.getElementById("backButton").style.display = "none"; 
+	}
+		
+	</script>
+	
+	<style type="text/css" media="screen">	
+		body { 
+			font-family: Arial, Verdana, Tahoma; 
+		} 
+	</style>
+
+</head>
+
+<body>
+    <div id="toptoolbar" class="toolbar">
+        <h1 id="pageTitle">Pirmoji Pagalba 1.0</h1>
+	<a id="backButton" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a>
+	<a id="menuButton" class="button" href="#toptoolbar" onclick="showAid('menu')">Menu</a> 
+    </div>
+
+    <ul id="home" title="Pirmoji Medicinos Pagalba winMobile 1.0">
+        <li><a href="#toptoolbar" onclick="showAid('aid_disclaimer')"># Atsakomyb&#279; + Nuorodos</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('telEmergency')"># Pagalbos telefonai</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_general')"># Bendros nuorodos</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_chemicalburneyes')">Aki&#371; nudegimas chemikalais</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_eyeinjury')">Aki&#371; su&#382;eidimai</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_allergic')">Alergin&#279;s reakcijos</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_amputation')">Amputavimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_poisining')">Apsinuodijimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_asthma')">Astma / Kv&#279;pavimo sutrikimai</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_diabeticcoma')">Diabetin&#279; koma</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_apnoea')">Dirbtinis kv&#279;pavimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_asthma')">Dusulys</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_safeguardaccident')">Eismo nelaim&#279;</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_epilepsy')">Epilepsija</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_resuscitation')">Gaivinimas (Reanimacija)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_dangerzone')">Gelb&#279;jimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_birth')">Gimdymo pri&#279;mimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_emergencycall')">Greitosios pagalbos kvietimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_snakebite')">Gyvat&#279;s &#303;kandimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_animalbite')">Gyv&#363;n&#371; &#303;kandimai</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_diabeticcoma')">Hiperglikemija (cukraus kiekio padid&#279;jimas kraujyje)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_hypoglycaemia')">Hipoglikemija (cukraus kiekio suma&#382;&#279;jimas kraujyje)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_stroke')">Insultas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_skullfracture')">Kaukol&#279;s l&#363;&#382;is</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_fracture')">Kaulo l&#363;&#382;is, atviras</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_nosebleeding')">Kraujavimas i&#353; nosies</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_bleedinglight')">Kraujavimas, lengvas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_bleedingsevere')">Kraujavimas, stiprus</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_resuscitation')">Kr&#363;tin&#279;s l&#261;stos masa&#382;as</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_apnoea')">Kv&#279;pavimas sustoj&#281;s</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_checkbreathing')">Kv&#279;pavimo kontroliavimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_safeguardaccident')">Nelaim&#279;s vieta, pa&#382;ym&#279;kite</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_icerescue')">Nelaimingas atsitikimas ant ledo</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_chemicalburn')">Nudegimas chemikalais</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_sunburn')">Nudegimas saul&#279;je</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_burningslight')">Nudegimas, lengvas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_burningsevere')">Nudegimas, stiprus</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_backinjury')">Nugaros su&#382;alojimai</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_frostbitemild')">Nu&#353;alimas, lengvas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_frostbitesevere')">Nu&#353;alimas, sunkus</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_electricityaccident')">Nutrenkimas elektros srove</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_hyperthermia')">Perkaitimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_resuscitation')">Reanimacija</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithoutbreath')">S&#261;mon&#279;s netekimas (nukent&#279;j&#281;s nekv&#279;puoja)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithbreath')">S&#261;mon&#279;s netekimas/ nualpimas (nukent&#279;j&#281;s kv&#279;puoja)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_sunstroke')">Saul&#279;s sm&#363;gis</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_sprain')">Sausgysl&#279;s patempimas, s&#261;nario i&#353;sukimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_heartattack')">&#352;irdies infarktas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_drowning')">Skendimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_brainconcussion')">Smegen&#371; sukr&#279;timas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_shock')">&#352;okas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_sos')">SOS - Nelaim&#279;s Signalas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">Stabili pozicija ant &#353;ono.</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_backinjury')">Stuburo l&#363;&#382;is</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_hypothermia')">Su&#353;alimas (Hipotermija)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_suffocation')">U&#382;dusimas / U&#382;springimas</a></li>
+<!--        <li><a href="#toptoolbar" onclick="showAid('aid_suffocation')">U&#382;springimas</a></li> -->
+        <li><a href="#toptoolbar" onclick="showAid('aid_insectstings')">Vabzd&#382;i&#371; &#303;kandimai</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_vomiting')">V&#279;mimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_diarrhoea')">Viduriavimas</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('cclicence')"><img style="margin-top:4px; margin-bottom:2px;" src="iui/cc88x31.png" /> </a></li>
+    </ul>
+
+   
+<ul id="aid_disclaimer" title="Atsakomyb&#279; + Nuorodos"><h3>Atsakomyb&#279; + Nuorodos</h3>
+<ol><li><b>Programin&#279; &#303;ranga</b><br />
+Pirmoji Medicinos Pagalba Mobiliajam Telefonui<br />
+Versija: j3.0<br />
+Leidiniai: 2008-12-24<br />
+Visos teis&#279;s saugomos: Kai Kajus Noack<br />Vert&#279;ja: Alma Petru&#353;kevi&#269;i&#363;t&#279;<br /><br />
+Licencija: Creative Commons by-nc-nd <br /><a href="#toptoolbar" onclick="showAid('cclicence')"><img style="border:none; margin: 0px 0px 20px 0px;" alt="Creative Commons" src="iui/cc88x31.png" /></a><br />
+&#352;i programa teikia informacij&#261; apie pirm&#261;j&#261; medicinos pagalb&#261;. Ji neatstoja pirmosios pagalbos kurso, bet padeda atnaujinti jau &#303;gytas &#382;inias.<br /><br />Iliustracijos &copy; <a target="_blank" href="http://stefan.ganz.priv.at/">Med4Teens</a><br />Interface &copy; <a target="_blank" href="http://code.google.com/p/iui/">iUI Library</a></li><br /><br />
+<li><b>Atsakomyb&#279;s nebuvimas</b><br />
+Pra&#353;au atsi&#382;velgti &#303; tai, jog u&#382; galimas vartojimo pasekmes neatsakau.<br />
+NEPRISIIMU JOKIOS ATSAKOMYB&#278;S!<br />
+VIS&#260; RIZIK&#260; PRISIIMA VARTOTOJAS!<br /><br />
+Visais nelaim&#279;s atvejais nedelsiant kreipkit&#279;s profesionalios pagalbos.</li><br /><br />
+<li><b>Projekto rengimo</b><br />
+
+&#352;i programa skirta tam, kad taptu daugiakalbe. Ie&#353;kome savanori&#371; vert&#279;j&#371;!<br /><br />
+Daugiau informacijos galite rasti internete adresu <a href="http://www.firstai.de/">www.firstai.de</a> arba klauskite elektroniniu pa&#353;tu: <script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>"+emailME+"</a>"); </script></li><br /><br />
+<span style="font-style:italic;font-size:80%">I&#353;gelb&#279;k vien&#261; &#382;mog&#371; ir Tu i&#353;gelb&#279;si &#382;monij&#261;.</span><br /></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul><br />
+
+
+<ul id="aid_general" title="Bendros nuorodos"><h3>Bendros nuorodos</h3>
+<ol><li>Visuomet suteikite pirm&#261;j&#261; medicinos pagalb&#261;. Nedarykite klaid&#371;.</li>
+<li>Saugokit&#279;s patys.</li>
+<li>Susidarykite ai&#353;k&#371; vaizd&#261; apie situacij&#261; + pa&#382;ym&#279;kite nelaim&#279;s viet&#261;.</li>
+<li>I&#353;kvieskite greit&#261;j&#261; pagalb&#261; + Suteikite nukent&#279;jusiajam pirm&#261;j&#261; medicinos pagalb&#261;.</li>
+<li>Esant keliems nukent&#279;jusiesiems pirmenyb&#281; suteikite sunkiausiai su&#382;alotam.</li>
+<li>Nuraminkite nukent&#279;jus&#303;j&#303;. Stenkit&#279;s i&#353;likti ramus!</li>
+<li>Paguldykite susi&#382;alojus&#303; kaip galima patogiau. Jokiu b&#363;du neduokite jam alkoholio, nikotino arba vaist&#371;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_allergic" title="Alergin&#279;s reakcijos"><h3>Alergin&#279;s reakcijos</h3><br /><img style="border:none;" src="images/aid046.png" />
+<ol><li>I&#353;kviesti greit&#261;j&#261; pagalb&#261;.</li>
+<li>Nuraminkite alergijos i&#353;tikt&#261; &#382;mog&#371; ir pasodinkite j&#303; patogiai.</li>
+<li>Pa&#353;alinkite alergijos suk&#279;l&#279;j&#261; (pvz. vabzd&#382;io geluon&#303;).</li>
+<li>&#352;aldykie alergin&#279;s reakcijos i&#353;tikta viet&#261; (dr&#279;gnais kompresais, ledu). <br /><img style="border:none;" src="images/aid046ice.png" /></li>
+<li>Jei &#382;mogus, i&#353;tiktas alergines reakcijos, turi prie&#353;alergini&#371; vaist&#371;, duokite juos i&#353;gerti.</li>
+<li>Kontroliuokite alergijos i&#353;tiktojo b&#363;kl&#281;, kol atvyks gydytojas.</li>
+<li>S&#261;mon&#279;s netekimo ar kv&#279;pavimo sutrikimo atvejais imkit&#279;s atitinkam&#371; priemoni&#371;! <br /><img src="images/aid077.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_amputation" title="Amputavimas"><h3>Amputavimas</h3>
+<p>Amputuotos k&#363;no dalys gali b&#363;ti prisi&#363;tos. Amputuot&#261; k&#363;no dal&#303; &#353;aldyti, kol atvyks gydytojas.</p>
+<ol><li>Nukent&#279;jus&#303;j&#303; nuraminkite, paguldykite ir u&#382;klokite.</li>
+<li>Sustabdykite kraujavim&#261;, &#382;i&#363;r&#279;ti 'Kraujavimas (stiprus") ir "&#352;okas".</li>
+<li>Amputuot&#261; k&#363;no dal&#303; suvyniokite &#303; &#353;var&#371; saus&#261; rank&#353;luost&#303; ir &#303;d&#279;kite &#303; neper&#353;lampant&#303; plastikin&#303; mai&#353;el&#303;.</li>
+<li>Plastikin&#303; mai&#353;el&#303; u&#382;ri&#353;kite ir &#303;d&#279;kite &#303; kit&#261; plastikin&#303; mai&#353;el&#303; pripildyt&#261; &#353;alto vandens arba ledo.</li>
+<li>Neduokite alkoholio, r&#363;kyti ar valgyti (ligonin&#279;je gali prireikti operuoti su narkoze).</li>
+<li>Amputuotos k&#363;no dalies ned&#279;kite &#303; &#353;aldikli&#303; (tik &#353;aldykite).</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261; arba va&#382;iuokite &#303; ligonin&#281;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_animalbite" title="Gyv&#363;n&#371; &#303;kandimai"><h3>Gyv&#363;n&#371; &#303;kandimai</h3> <br /><img src="images/aid047.png" />
+<p>D&#279;mesio: Galite u&#382;sikr&#279;sti stablige, pasiutlige.</p>
+<ol><li>Nuplaukite &#382;aizd&#261; kar&#353;tu vandeniu su muilu. <br /><img src="images/aid049.png" /></li>
+<li>Dezinfekuokite &#382;aizd&#261;.</li>
+<li>Sunkaus kraujavimo atveju, paguldykite nekent&#279;jus&#303; taip, kad vir&#353;utin&#279; k&#363;no dalis b&#363;t&#371; pakelta.</li>
+<li>Sutvarstykite steriliu tvars&#269;iu. <br /><img src="images/aid085.png" /></li>
+<li>Kreipkit&#279;s pas gydytoj&#261; arba kvieskite greit&#261;j&#261; pagalb&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_apnoea" title="Kv&#279;pavimas sustoj&#281;s"><h3>Kv&#279;pavimas sustoj&#281;s</h3>
+<p>Negird&#279;ti kv&#279;pavimo, n&#279;ra kv&#279;pavimui b&#363;ding&#371; judesi&#371;, pasikeitusi odos spalva.</p>
+<ol><li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Paguldykite kv&#279;pavimo sutrikim&#371; i&#353;tikt&#261;j&#303; ant nugaros.</li>
+<li>I&#353; nukent&#279;jusiojo burnos ir gerkl&#279;s pa&#353;alinkite svetimk&#363;nius. Atlo&#353;kite nukentejusiojo galv&#261;. <br /><img src="images/aid067.png" /></li>
+<li>Suspauskite nosies sparnelius taip, kad nosis b&#363;t&#371; u&#382;kim&#353;ta. <br /><img src="images/aid010.png" /></li>
+<li>Giliai &#303;kv&#279;pkite, priglauskite savo burn&#261; prie nukent&#279;jusiojo burnos taip, kad visas J&#363;s&#371; i&#353;kv&#279;piamas oras patekt&#371; &#303; nukent&#279;jusiojo plau&#269;ius. <br /><img src="images/aid011.png" /></li>
+<li>Giliai ir l&#279;tai i&#353;kv&#279;pkite.</li>
+<li>Jei nukent&#279;jusysis neatsigauna, t&#281;skite dirbtin&#303; kv&#279;pavim&#261; i&#353; burnos &#303; burn&#261;, kol atvyks gydytojas.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_asthma" title="Astma / Kv&#279;pavimo sutrikimai"><h3>Astma / Kv&#279;pavimo sutrikimai</h3>
+<p>&#362;m&#363;s kv&#279;pavimo sutrikimai. &#352;vok&#353;&#269;iantis kv&#279;pavimas. Baim&#279;s jausmas.</p>
+<ol><li>Nuraminkite i&#353;tikt&#261; astmos priepuolio &#382;mog&#371;. Stenkit&#279;s i&#353;likti ramus!</li>
+<li>Atlaisvinkite jo drabu&#382;ius.</li>
+<li>I&#353;tikt&#261;j&#303; astmos priepolio pasodinkite patogiai, &#353;iek tiek palenkite &#303; priek&#303;, liepkite jam l&#279;tai ir giliai kv&#279;puoti.</li>
+<li>Jei astmos priepuolio i&#353;tiktasis turi inhaliatori&#371;, pad&#279;kite jam juo pasinaudoti. Po 5-10 min. tur&#279;t&#371; pager&#279;ti. <br /><img src="images/aid074.png" /></li>
+<li>Jei nepager&#279;t&#371;, toliau naudokite inhaliatori&#371; kas 5 minutes, kol atvyks gydytojas.</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Jei astmos priepuolio i&#353;tiktasis nustot&#371; kv&#279;puoti, prad&#279;kite dirbtin&#303; <a href="#toptoolbar" onclick="showAid('aid_apnoea')">kv&#279;pavim&#261;</a>.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_backinjury" title="Nugaros su&#382;alojimai"><h3>Nugaros su&#382;alojimai</h3>
+<p>Skausmas nugaroje, nutirp&#281; rankos ir kojos.</p>
+<ol><li>Jokiu b&#363;du nejudinkite su&#382;alotojo! <br /><img src="images/aid064.png" /></li>
+<li>Laikykite nukent&#279;jusiojo galv&#261; taip, kad b&#363;sena b&#363;t&#371; stabili. <br /><img src="images/aid065.png" /></li>
+<li>Stabilizuoti nukent&#279;jusiojo b&#363;sen&#261; paremiant i&#353; &#353;on&#371;.</li>
+<li>Nusiraminkite nukent&#279;jus&#303;j&#303;.</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;, informuokite apie nugaros su&#382;eidim&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_birth" title="Gimdymo pri&#279;mimas"><h3>Gimdymo pri&#279;mimas</h3>
+<p>I&#353;tek&#279;jo vaisiaus vandenys. Prasideda gimdymo skausmai. Netik&#279;tas gimdymas.</p> <br /><img src="images/aid025.png" />
+<ol><li>I&#353;likite ram&#363;s! - Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Pasodinkite n&#279;&#353;&#269;i&#261;j&#261; prask&#279;stomis apnuogintomis kojomis ant sterilaus pagrindo.</li>
+<li>Sulenkite kelius. &#352;iek tiek pakelkite jos duben&#303;. - Gimdymas yra nat&#363;ralus procesas ir da&#382;niausiai praeina be komplikacij&#371;.</li>
+<li>Nuraminkite moter&#303;, leiskite jai sutelkti d&#279;mes&#303; &#303; kv&#279;pavim&#261;: &#302;kv&#279;pti per nos&#303;, i&#353;kv&#279;pti per burn&#261; (normaliu grei&#269;iu).</li>
+<li>St&#363;mimo ritmas: Giliai &#303;kv&#279;pti, sulaikyti kv&#279;pavim&#261;, stumti. Kai pasirodys k&#363;dikio galvut&#279;, prilaikykite j&#261; abiem rankomis. <br /><img src="images/aid021.png" /> <br /><img src="images/aid022.png" /></li>
+<li>Po gimdymo: pakelkite k&#363;dik&#303; nuo&#382;ulniai galva &#382;emyn lengvai palenkta galvele, kad i&#353; k&#363;dikio kv&#279;pavimo tak&#371; pasi&#353;alint&#371; skystis. (Gali prireikti i&#353; jo burnos ir nosyt&#279;s burnos pagalba issiurbti likus&#303; skyst&#303;). K&#363;dikis turi kv&#279;puoti ir verkti!</li>
+<li>Suri&#353;kite bambagysl&#281; 30 cm atstumu nuo kudikio (tai gali b&#363;ti atlikta ligonin&#279;je). Steriliai apdenkite gimdyv&#279;s mak&#353;t&#303;. <br /><img src="images/aid023.png" /></li>
+<li>Nusausinkite k&#363;dik&#303; ir laikykite j&#303; &#353;iltai. &#302;sid&#279;m&#279;kite laik&#261; ir va&#382;iuokite i ligonin&#281;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_bleedinglight" title="Kraujavimas, lengvas"><h3>Kraujavimas, lengvas</h3> <br /><img src="images/aid082.png" />
+<p>Tikslas: Kraujavimo sustabdymas.</p>
+<ol><li>&#381;aizdos nelieskite (d&#279;l infekcijos pavojaus).</li>
+<li>&#381;aizdos niekuo netepkite, nepurk&#353;kite ir nepudruokite.</li>
+<li>Ant &#382;aizdos u&#382;d&#279;kite steril&#371; tvarst&#303; ir j&#303; u&#382;klijuokite pleistru ar bintu apri&#353;kite su&#382;eist&#261; viet&#261;. <br /><img src="images/aid098.png" /></li>
+<li>Esant silpnam kraujavimui u&#382;tenka tik paprasto pleistro.</li>
+<li>Didesnei &#382;aizdai naudokite steril&#371; tvarst&#303;. Ji u&#382;d&#279;kite ant &#382;aizdos ir apri&#353;kite bintu (ver&#382;kite ne per stipriai, nes tai gali sukelti dar didesn&#303; kraujavim&#261;). <br /><img src="images/aid084.png" /><br /><img src="images/aid085.png" /></li>
+<li>&#302;kandus pasiutusiam gyv&#363;nui &#382;aizd&#261; nuplaukite vandeniu ir muilu. <br /><img src="images/aid049.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_bleedingsevere" title="Kraujavimas, stiprus"><h3>Kraujavimas, stiprus</h3>
+<p>Kraujas liejasi i&#353; &#382;aizdos pulsuodamas, purk&#353;damas. Pavojus, kad i&#353;tiks &#353;okas d&#279;l kraujo netekimo, infekcija, &#382;mogus gali mirti. Tikslas: kraujavimo sustabdymas.</p>
+<ol><li>Pa&#353;alinkite drabu&#382;ius (esant b&#363;tinybei juos prakirpkite), apnuoginkite su&#382;alot&#261; viet&#261;.</li>
+<li>Bintu arba drabu&#382;io skiaute apvyniokite &#382;aizd&#261; j&#261; u&#382;spaud&#382;iant. <br /><img src="images/aid086.png" /></li>
+<li>U&#382;ver&#382;t&#261; &#382;aizd&#261; laikykite ma&#382;iausiai 10 minu&#269;i&#371;.</li>
+<li>Jei naudojamas var&#382;tas persisunk&#279; krauju, jo nepa&#353;alinkite! Ant vir&#353;aus d&#279;kite kit&#261; bint&#261; ar drabu&#382;io skiaut&#281;.</li>
+<li>Su&#382;eist&#261; gal&#363;n&#281;, jei ji nel&#363;&#382;us, pakelkite auk&#353;&#269;iau &#353;irdies lygmens, kad kraujavimas susilpn&#279;t&#371;. Jei yra galimyb&#279;, su&#382;eist&#261;j&#303; paguldykite.</li>
+<li>Jei kraujavimo nepavyksta sustabdyti, &#382;aizd&#261; laikykite u&#382;spaud&#281; toliau, tuo pa&#269;iu ver&#382;kite vir&#353; su&#382;eistos vietos: kraujuojant dilbiui- &#382;ast&#261; (pir&#353;tais spauskite per vidu&#303;i i&#353; vidin&#279;s rankos pus&#279;s tarp alk&#363;n&#279;s ir pa&#382;asties); kraujuojant kojai - u&#382;spauskite ranka kirk&#353;n&#303; (spauskite kraujagysles kirk&#353;nyje, kur arterija eina per dubens kaulus). <br /><img src="images/aid089.png" /><br /><img src="images/aid092.png" /></li>
+<li>Nedelsiant kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Jeigu kraujavimas sustojo, imkit&#279;s pirmosios pagalbos priemoni&#371; &#353;okui pa&#353;alinti. <br /><img src="images/aid093.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_brainconcussion" title="Smegen&#371; sukr&#279;timas"><h3>Smegen&#371; sukr&#279;timas</h3>
+<p>Galvos skausmas, pykinimas, v&#279;mimas. Pablog&#279;j&#281;s reg&#279;jimas. Galimas s&#261;mon&#303;s netekimas.</p> <br /><img src="images/aid035a.png" />
+<ol><li>Nukent&#279;jus&#303;j&#303; paguldykite.</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li></ol>
+<p>Jeigu galva kraujuoja:</p>
+<ol><li>Paguldykite nukent&#279;jus&#303;j&#303;, pakelkite galv&#261; (ant pagalv&#279;s). <br /><img src="images/aid061.png" /></li>
+<li>Apri&#353;kite &#382;aizd&#261; (naudokite tvarst&#303;).</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+
+
+
+
+<ul id="aid_burningslight" title="Nudegimas, lengvas"><h3>Nudegimas, lengvas</h3>
+<p>Odos paraudimas. Lengvas patinimas. Skausmas.</p>
+<ol><li>&#352;aldykite su&#382;eist&#261; viet&#261; po &#353;altu tekan&#269;iu vandeniu. <br /><img src="images/aid100.png" /></li>
+<li>Never&#382;iant aptvarstykite dr&#279;gnu tvars&#269;iu.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_burningsevere" title="Nudegimas, stiprus"><h3>Nudegimas, stiprus</h3>
+<p>P&#363;sl&#279;ti baltai raudoni odos plotai. &#352;lapiuojanti oda. Giluminis audini&#371; pa&#382;eidimas. Stiprus skausmas arba skausmo n&#279;ra (d&#279;l sudegusi&#371; nerv&#371;).</p> <br /><img src="images/aid097.png" />
+<ol><li>Pa&#353;alikite kiek &#303;manoma drabu&#382;ius.</li>
+<li>&#352;aldykite nudegusias k&#363;no dalis &#353;altu vandeniu (ma&#382;daug 15 ° C) iki 10 min, kol skausmas atsl&#363;gs. <br /><img src="images/aid100.png" /></li>
+<li>Jei nudeginimas platus, &#353;aldykite dr&#279;gnais rank&#353;luo&#353;&#269;iais.</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Po to kai at&#353;ald&#279;te &#382;aizd&#261;, j&#261; sutvarstykite. Naudokite steril&#371; saus&#261; tvarst&#303;. Nenaudokite joki&#371; skys&#269;i&#371; (krem&#371;, aliej&#371;, tepa&#371;i ir kt.) Nepradurkite susidariusi&#371; p&#363;sli&#371;. <br /><img src="images/aid085.png" /></li>
+<li>Kontroliuokite nukent&#279;jusiojo kv&#279;pavim&#261; ir s&#261;mon&#281; kol atvyks gydytojas.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_checkbreathing" title="Kv&#279;pavimo kontroliavimas"><h3>Kv&#279;pavimo kontroliavimas</h3>
+<ol><li>Patikrinkite kv&#279;pavimo gars&#261;.</li>
+<li>Kr&#363;tin&#279;s l&#261;stos jud&#279;jimas (tikrinti ant pilvo u&#382;dedant rank&#261;). <br /><img src="images/aid027.png" /></li>
+<li>Patikrinti ar jau&#269;iamas kv&#279;pavim&#261; per nos&#303; ar burn&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_chemicalburneyes" title="Aki&#371; nudegimas chemikalais"><h3>Aki&#371; nudegimas chemikalais</h3>
+<ol><li>Kvieskite greit&#261;j&#261; pagalb&#261;, informuokite apie chemin&#281; med&#382;iag&#261;, nudeginusi&#261; ak&#303;.</li>
+<li>Plaukite ak&#303; vandeniu. Plaunant u&#382;denkite sveik&#261; ak&#303;.</li>
+<li>Su&#382;eist&#261; ak&#303; plaukite &#353;alto vandens srove apie 20 min. nuo vidinio akies kra&#353;to link i&#353;orinio. <br /><img src="images/aid019.png" /></li>
+<li>U&#382;merkite abi akis ir u&#382;ri&#353;kite dr&#279;gnu tvars&#269;iu. <br /><img src="images/aid020.png" /></li>
+<li>Steb&#279;kite nukent&#279;jusiojo b&#363;sen&#261; kol atvyks greitoji medicinos pagalba.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_chemicalburn" title="Nudegimas chemikalais"><h3>Nudegimas chemikalais</h3>
+<p>Audini&#371; su&#382;alojimas.</p> <br /><img src="images/aid095.png" />
+<ol><li>Saugokit&#279;s patys!</li>
+<li>Nedelsiant nuplaukite nudegint&#261; viet&#261; (nudegusi&#261; ak&#303; plauti &#353;altu vandeniu ma&#382;. 20 min., vandens srov&#281; kreipti nuo vidinio link i&#353;orinio akies kra&#353;to). <br /><img src="images/aid100.png" /></li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Cheminis vir&#353;kinamojo trakto nudegimas. Gerti daug vandens.</li>
+<li>Neprovokuoti v&#279;mimo!</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+
+
+<ul id="aid_dangerzone" title="Gelb&#279;jimas"><h3>Gelb&#279;jimas</h3>
+<ol><li>B&#363;das: atsistokite u&#382; nukent&#279;jusiojo, nukent&#279;jusiojo ranka ant jo kr&#363;tin&#279;s.</li>
+<li>Apkabinkite nukent&#279;jus&#303;j&#303; pro pa&#382;astis ir paimkite u&#382; sulenktos nukent&#279;jusiojo rankos.</li>
+<li>Gabenkite nukent&#279;jus&#303;j&#303; &#303; saugi&#261; viet&#261;. <br /><img src="images/aid001.png" /> <br /><img src="images/aid007.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_diabeticcoma" title="Diabetin&#279; koma"><h3>Diabetin&#279; koma</h3>
+<p>Cukraus koncentracija kraujyje per didel&#279; (atitinkamai tr&#363;ksta insulino).</p>
+<ol><li>Po&#382;ymiai: tro&#353;kulys, da&#382;nas &#353;lapinimasis, pykinimas, v&#279;mimasi. Kv&#279;pavimas atsiduoda vaisiais.</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Jeigu ai&#353;ku, kad &#382;mogus diabetikas, pad&#279;kite susileisti insulino. <br /><img src="images/aid016.png" /></li>
+<li>Paguldykite nukent&#279;jus&#303;j&#303; <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">stabiliai ant &#353;ono</a>. Daugiau pirmos pagalbos teik&#279;jas negali tokiu atveju padaryti.</li>
+<li>Steb&#279;ti bukl&#281;, kol atvyks gydytojas.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_diarrhoea" title="Viduriavimas"><h3>Viduriavimas</h3>
+<p>Apsinuodijimas maistu, infekcijos arba &#382;arnyno liga. Viduriavimas skystas, gleiv&#279;tas arba su krauju.</p>
+<ol><li>Pavojus d&#279;l dehidratacijos ir mineral&#371; tr&#363;kumo!</li>
+<li>Duoti gerti skys&#269;i&#371; (arbatos, vandens).</li>
+<li>Sunkiais atvejais vykti pas gydytoj&#261; arba kvieti greit&#261;j&#261; pagalb&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_drowning" title="Skendimas"><h3>Skendimas</h3>
+<ol><li>Kvieskite greit&#261;j&#261; pagalb&#261;. Pra&#353;ykite aplinkini&#371; &#382;moni&#371; pagalbos. <br /><img src="images/aid032.png" /></li>
+<li>Gelbekite sk&#281;stant&#303;j&#303;! <br /><img src="images/aid033.png" /> <br /><img src="images/aid034.png" /></li>
+<li>Jeigu nukent&#279;jus&#303;sis kv&#279;puoja: Paguldykite &#303; <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">stabili&#261; pozicij&#261; ant &#353;ono</a>. Apklokite (antklode). Steb&#279;kite b&#363;kle, kol atvyks greitoji pagalba.</li>
+<li>Jeigu nukent&#279;jus&#303;sis nekv&#279;puoja: Nedelsiant prad&#279;kite <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">gaivinim&#261;!</a> (Nesistenkinte pa&#353;alinti vandens i&#353; plau&#269;iu.)</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_electricityaccident" title="Nutrenkimas elektros srove"><h3>Nutrenkimas elektros srove</h3>
+<ol><li>Visu pirma nutraukite elektros energijos tiekim&#261;! <br /><img src="images/aid045plug.png" /> <br /><img src="images/aid045.png" />
+Galimas s&#261;mon&#279;s netekimas kv&#279;pavimo sustojimas.</li>
+<li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithbreath')">A - S&#261;mon&#279;s netekimas,kv&#279;pavimas nesutrik&#281;s</a></li>
+<li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithoutbreath')">B - S&#261;mon&#279;s netekimas, kv&#279;pavimo n&#279;ra</a> <br /><img src="images/aid042.png" /> <br /><img src="images/aid043.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_emergencycall" title="Greitosios pagalbos kvietimas"><h3>Greitosios pagalbos kvietimas</h3>
+<ol><li>Paskambinkite pirmu pasitaikiusiu telefonu 112 (JAV: 911). Visada galima ir nemokamai!</li><li>Nedvejokite ir kvieskite greit&#261;j&#261; pagalb&#261;! Telefonu privalote suteikti &#353;i&#261; informacij&#261;:<br />- Kas nutiko<br />- Kur (nelaimingo atsitikimo vieta)<br />- Kiek nukentejusi&#371;j&#371;<br />- Kokios traumos.<br />Laukite tolimesni&#371; nurodymu.</li></ol></ul>
+<ul id="aid_epilepsy" title="Epilepsija"><h3>Epilepsija</h3>
+<p>Susting&#281;s k&#363;nas, sugniau&#382;ti kum&#353;&#269;iai, suk&#261;stas &#382;andikaulis, tr&#363;k&#269;iojan&#269;ios gal&#363;n&#279;s arba veidas. Besivartan&#269;ios akys. Seil&#279;jimasis. Galimas s&#261;mon&#279;s netekimas.</p> <br /><img src="images/aid058.png" />
+<ol><li>Nelaikykite nukent&#279;jusiojo, neribokite jo judesi&#371;.</li>
+<li>Paguldykite nukent&#279;jus&#303;j&#303; ant mink&#353;to pagrindo (pagalv&#279;s), pa&#353;alinkite arti esancius daiktus siekiant u&#382;kirsti keli&#261; susi&#382;alojimams.</li>
+<li>Raminkite nukent&#279;jus&#303;j&#303; &#382;od&#382;iais. Atlaisvinkite drabu&#382;ius, kad jis gal&#279;t&#371; laisvai kv&#279;puoti.</li>
+<li>Jeigu nukent&#279;j&#281;s vemia, pakreipkite jo galv&#261; taip, kad neu&#382;springt&#371;.</li>
+<li>Steb&#279;kite, kad kv&#279;pavimo takai b&#363;t&#371; laisvi. Nukent&#279;j&#281;s gali nuryti lie&#382;uv&#303;.</li>
+<li>Paguldykite <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">stabiliai ant &#353;ono</a> + kvieskite greit&#261;j&#261; pagalb&#261;. Steb&#279;kite nukent&#279;jusiojo b&#363;kl&#281;.</li>
+<li>Neleiskite prisiartinti kitiems &#382;mon&#279;ms.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_eyeinjury" title="Aki&#371; su&#382;eidimai"><h3>Aki&#371; su&#382;eidimai</h3>
+<ol><li>Svetimk&#363;n&#303; palikite akyje, nesistenkite jo pa&#353;alinti.</li>
+<li>Akies nejudinkite ir nelieskite, tam kad jos dar daugiau nesu&#382;eistum&#279;te.</li>
+<li>Jeigu akis kraujuoja, u&#382;d&#279;kite ant jos kompres&#261; arba steril&#371; tvarst&#303;. <br /><img src="images/aid020.png" /></li>
+<li>Ak&#303; &#353;aldykite &#353;altu kompresu, tai ma&#382;ina tinim&#261;, stabdo kraujavim&#261;.</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261; arba va&#382;iuokite &#303; ligonin&#281;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_fracture" title="Kaulo l&#363;&#382;is, atviras"><h3>Kaulo l&#363;&#382;is, atviras</h3>
+<p>Simptomai: nenat&#363;rali pozicija, nenat&#363;ralus kaul&#371; jud&#279;jimas. Deformacija. Skausmingas jud&#279;jimas, skausmas prisilietus.</p> <br /><img src="images/aid104.png" />
+<ol><li>Vengti judesi&#371;!</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>U&#382;d&#279;kite &#303;tvar&#261; sulau&#382;ytam kaului, paremkite nekei&#269;iant kaulo pozicijos. <br /><img src="images/aid107.png" /></li>
+<li>Jei l&#363;&#382;is atviras, steriliai pridenkite &#382;aizd&#261;. <br /><img src="images/aid106.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_frostbitemild" title="Nu&#353;alimas, lengvas"><h3>Nu&#353;alimas, lengvas</h3>
+<p>Bly&#353;kumas, patinimas. Gali sutrikti apr&#363;pinimas krauju.</p>
+<ol><li>Nuveskite nukent&#279;jus&#303;j&#303; &#303; &#353;ilum&#261;.</li>
+<li>Pasistenkite nukent&#279;jus&#303;j&#303; su&#353;ildyti, pa&#353;alinkite &#353;lapius drabu&#382;ius.</li>
+<li>Su&#353;ildykite drungnu vandeniu ir savo k&#363;no &#353;iluma.</li>
+<li>Duokite &#353;ilto g&#279;rimo (arbatos). Jokio alkoholio! <br /><img src="images/aid040.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_frostbitesevere" title="Nu&#353;alimas, sunkus"><h3>Nu&#353;alimas, sunkus</h3>
+<p>&#352;alta ir kieta k&#363;no oda, pilkai balta spalva, darosi p&#363;sl&#279;s, audiniai apmir&#353;ta. Gali sutrikti apr&#363;pinimas krauju!</p> <br /><img src="images/aid096.png" />
+<ol><li>Eikite &#303; &#353;ilt&#261; viet&#261;.</li>
+<li>&#381;aizdas sutvarstykite/apdenkite.</li>
+<li>Duokite cukrumi saldinto g&#279;rimo.</li>
+<li>Nesistenkite su&#353;ildyti trynimu!</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_heartattack" title="&#352;irdies infarktas"><h3>&#352;irdies infarktas</h3>
+<p>Sunkus, daugiau kaip 5 min. trunkantis spaudimas ir skausmas kr&#363;tin&#279;je, ypatingai besiskleidi&#382;antis rankos bei paties srityje. Nerimas, bly&#353;kumas, &#353;altas prakaitas. Galimas pykinimas, dusulys.</p> <br /><img src="images/aid076.png" /> <br /><img src="images/aid083.png" />
+<ol><li>Kvieskite greit&#261;j&#261; pagalb&#261;! Prane&#353;kite apie galim&#261; &#353;irdies infarkt&#261;.</li>
+<li>Vir&#353;utin&#281; k&#363;no dal&#303; pakelkite. Atpalaiduokite drabu&#382;ius. Neduokite vaist&#371; ar g&#279;rim&#371;. <br /><img src="images/aid061.png" /></li>
+<li>Raminkite nukent&#279;jus&#303;j&#303; &#382;od&#382;iais.</li>
+<li>Kontroliuokite s&#261;mon&#281; ir kv&#279;pavim&#261;.</li>
+<li>Jeigu turite, duokite aspirino.</li>
+<li>Jei asmuo praranda s&#261;mon&#281;, prad&#279;kite <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">gaivinim&#261;</a>.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+
+
+<ul id="aid_hypoglycaemia" title="Hipoglikemija (cukraus kiekio suma&#382;&#279;jimas kraujyje)"><h3>Hipoglikemija (cukraus kiekio suma&#382;&#279;jimas kraujyje)</h3>
+<p>Cukraus koncentracija kraujyje yra ma&#382;esne nei ma&#382;iausia vert&#279; (perdozavus insulino arba d&#279;l nepakankamo maitinimosi).<br/>
+Simptomai: bly&#353;kumas, nervingumas, alkis, drebulys, prakaitas.</p> <br /><img src="images/aid018.png" />
+<ol><li>&#302;sitikinkite, kad asmuo yra diabetikas (diabetiko &#382;enklelis).</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Duokite cukrumi saldinto g&#279;rimo arba dekstroz&#279;s / gliukoz&#279;s (jei n&#279;ra rijimo problem&#371;). <br /><img src="images/aid017.png" /></li>
+<li>Jei asmuo be s&#261;mon&#279;s, bet kv&#279;puoja: paguldykite <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">stabiliai ant &#353;ono</a> ir steb&#279;kite kv&#279;pavim&#261;. Jei kv&#279;pavimas sustojo, darykite dirbtin&#303; kv&#279;pavim&#261;.</li>
+<li>Jei nukent&#279;jus&#303;sis kv&#279;puoja, bet be s&#261;mon&#279;s, &#303;d&#279;kite gabaliuk&#261; cukraus u&#382; &#382;ando ir paspauskite i&#353; i&#353;or&#279;s.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_hyperthermia" title="Perkaitimas"><h3>Perkaitimas</h3>
+<p>Tro&#353;kulys, silpnumas, orientacijos sutrikimas, pykinimas, sumi&#353;imas, stiprus prakaitavimas, kar&#353;&#269;iuojanti oda.</p> <br /><img src="images/aid035.png" />
+<ol><li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>V&#279;sinti, ie&#353;koti pav&#279;sio (patalpa su oro kondicionieriumi pageidautina).</li>
+<li>Asmen&#303; paguldyti, pakelti kojas. Atlaisvinti drabu&#382;ius. <br /><img src="images/aid078.png" /></li>
+<li>Od&#261; v&#279;sinti vandeniu arba u&#382;d&#279;ti &#353;alt&#261; rank&#353;luost&#303;.</li>
+<li>Gerti daug vandens ar sulciui.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_hypothermia" title="Su&#353;alimas (Hipotermija)"><h3>Su&#353;alimas (Hipotermija)</h3>
+<p>&#352;altas drebulys, mieguistumas, i&#353;sekimas net iki s&#261;mon&#279;s netekimo. &#352;alta, bly&#353;ki oda. &#381;emas pulsas, silpnas &#353;irdies plakimas.</p> <br /><img src="images/aid014.png" />
+<ol><li>Eiti &#303; &#353;ilt&#261; patalp&#261;.</li>
+<li>Kviesti greit&#261;j&#261; pagalb&#261;.</li>
+<li>Pa&#353;alinti &#353;al&#269;io &#353;altin&#303;.. Didinti k&#363;no temperat&#363;r&#261; (dekio arba savo k&#363;no kontaktu).</li>
+<li>Nurenkite &#353;lapius drabu&#382;ius ir aprengite &#353;iltais drabu&#382;iais. Apsupkite dekiu. U&#382;denkite galv&#261;.</li>
+<li>Duokite atsigerti kar&#353;tos arbatos, sriubos arba kar&#353;to vandens. Jokio alkoholio! Neleiskite asmeniui u&#382;migti. <br /><img src="images/aid039.png" /> <br /><img src="images/aid040.png" /></li>
+<li>Steb&#279;kite su&#353;alusiojo b&#363;kl&#281;, kol atvyks greitoji pagalba. Jei asmuo netenka s&#261;mon&#279;s, prad&#279;kite gaivinim&#261;:</li>
+<li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithbreath')">A - Nukent&#279;j&#281;s be s&#261;mon&#279;s, bet kv&#279;puoja</a></li>
+<li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithoutbreath')">B – Be s&#261;mon&#279;s, nekv&#279;puoja</a></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_icerescue" title="Nelaimingas atsitikimas ant ledo"><h3>Nelaimingas atsitikimas ant ledo</h3>
+<p>Saugokit&#279;s patys. Pavojus nusk&#281;sti, nu&#353;alimas.</p>
+<ol><li>Gelb&#279;kite kop&#279;&#269;i&#371;, lentos ar lazdos pagalba. Svoris ant ledo turi b&#363;ti tolygiai paskirstytas.</li>
+<li>Papra&#353;ykite kit&#371; &#382;moni&#371; pagalbos. Pra&#353;ykite i&#353;kviesti greit&#261;j&#261; pagalb&#261;.</li>
+<li>Su &#303;rankiu rankoje, atsargiai &#353;liau&#382;kite ant pilvo (jei &#303;manoma, prisiri&#353;us virve) link &#303;skilusio ledo. <br /><img src="images/aid041.png" /></li>
+<li>Paduokite nukent&#279;jusiam &#303;rank&#303; (ne savo rank&#261;!) ir traukite.</li>
+<li>&#352;liau&#382;kite atgal link kranto.</li>
+<li>Suteikite Pirm&#261;j&#261; medicinos pagalb&#261;.</li>
+<li>Savaranki&#353;kas gelb&#279;jimasis: Jei ledas kietos, paskirstykite svor&#303; tolygiai ir stenkit&#279;s i&#353;lipti.Ant pilvo &#353;liau&#382;kite link kranto. Jei ledas trapus, pabandykite sulau&#382;yti led&#261; iki kra&#353;to.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_insectstings" title="Vabzd&#382;i&#371; &#303;kandimai"><h3>Vabzd&#382;i&#371; &#303;kandimai</h3> <br /><img src="images/aid046.png" />
+<p>Patinimas, odos b&#279;rimas, deginimas, silpnumas, pasunkej&#281;s kv&#279;pavimas, svaigimas, tachikardija.</p>
+<ol><li>Atsargiai pa&#353;alinkite geluon&#303; (su pincetu). Nespauskite geluonies, nes taip galite &#303;&#353;virk&#353;ti daugiau nuod&#371;.</li>
+<li>At&#353;aldykite su&#382;eist&#261; viet&#261; (u&#382;d&#279;kite &#353;alt&#261; kompres&#261;).</li>
+<li>&#302;gelt&#261; viet&#261; laikykite &#382;emiau nei &#353;irdis, taip cirkuliuos nuodai l&#279;&#269;iau.</li>
+<li>Jeigu geluonis yra burnos ertm&#279;je: &#269;iulpti ledus ir u&#382;d&#279;kite &#353;alt&#261; kompres&#261; aplink gerkl&#281;. <br /><img src="images/aid046ice.png" /></li>
+<li>Pasirei&#353;kus sunkioms problemoms i&#353;kviesti greit&#261;j&#261; pagalb&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_nosebleeding" title="Kraujavimas i&#353; nosies"><h3>Kraujavimas i&#353; nosies</h3>
+<p>&#302;tr&#363;kusi kraujagysl&#279; nosies ertm&#279;je.</p>
+<ol><li>Pasodinkite kraujuojant&#303; asmen&#303; ir truput&#303; palenkite &#303; prieki. Laikykite galv&#261; tiesiai.</li>
+<li>Neguldykite asmens, galvos pad&#279;tis vir&#353; &#353;irdies l&#279;tina kraujavim&#261;.</li>
+<li>U&#382;d&#279;kite &#353;alt&#261; kompres&#261; ant sprando.</li>
+<li>U&#382;spauskite nos&#303; kol kraujavimas sustos (apie 10 min.)</li>
+<li>V&#279;liau nevarginkite nosies (ne &#353;nyp&#353;kite).</li>
+<li>Jeigu problema rimta arba kraujavimas ilgai nenustoja, kvieskite gydytoj&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_poisining" title="Apsinuodijimas"><h3>Apsinuodijimas</h3> <br /><img src="images/aid052.png" />
+<p>Sumi&#353;imas, haliucinacijos, issipl&#279;t&#281; vyzd&#382;iai, kar&#353;&#269;iavimas, me&#353;lungis, s&#261;mon&#279;s netekimas.</p>
+<ol><li>Duokite prie&#353;nuod&#382;i&#371; tik tada jeigu &#353;alia kvalifikuotas medikas. <br /><img src="images/aid056.png" /></li>
+<li>Neduokite gerti. Neprovokuokite v&#279;mimo.</li>
+<li>I&#353;kvieskite greit&#261;j&#261; pagalb&#261;, b&#363;tinai nurodykite, kad asmuo apsinuodij&#281;s!</li>
+<li>I&#353;saugokite nuod&#371; ir v&#279;mimo liku&#269;ius! <br /><img src="images/aid054a.png" /></li>
+<li>Jeigu nukent&#279;j&#281;s be s&#261;mon&#279;s, bet kv&#279;puoja: paguldykite <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">stabiliai ant &#353;ono</a>. Steb&#279;kite s&#261;mon&#281; ir kv&#279;pavim&#261; kol atvyks gydytojas.</li>
+<li>Jeigu nukentejusysis nekv&#279;puoja: Nedelsiant prad&#279;kite <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">gaivinim&#261;!</a> Prie&#353; pradedant dirbtin&#303; kv&#279;pavim&#261;, patikrinkite, ar neu&#382;sikim&#353;&#281; kv&#279;pavimo takai, pavyzd&#382;iui d&#279;l v&#279;mimo.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+
+
+<ul id="aid_recoveryposition" title="Stabili pozicija ant &#353;ono."><h3>Stabili pozicija ant &#353;ono.</h3>
+<ol><li>Paguldykite nukent&#279;jus&#303;j&#303; ant nugaros, i&#353;tieskite kojas. Atsiklaupkite &#353;alia.</li>
+<li>Ar&#269;iausiai j&#363;s&#371; esan&#269;i&#261; nekent&#279;jusiojo rank&#261; pad&#279;kite sta&#269;iu kampu prie k&#363;no.</li>
+<li>Tolimesni&#261;j&#261; rank&#261; u&#382;d&#279;kite ant kr&#363;tin&#279;s, o delno i&#353;orin&#281; pus&#281; ant skruosto. <br /><img src="images/aid008.png" /></li>
+<li>4.Paimkite tolimesn&#303; kel&#303;, patraukite link sav&#281;s ir pad&#279;kite ant &#382;em&#279;s. Koja turi gul&#279;ti sta&#269;iu kampu. Ranka nukent&#279;jusiojo ant skruoto.</li>
+<li>&#302;sitikinkite, kad kv&#279;pavimo takai n&#279;ra blokuojami.</li>
+<li>Atlo&#353;kite galv&#261;, kilstel&#279;kite smakr&#261;. Lengvai pra&#382;iodinkite burn&#261;. Steb&#279;kite kv&#279;pavim&#261;. <br /><img src="images/aid009.png" /></li>
+<li>Steb&#279;kite nukent&#279;jusiojo b&#363;kl&#281; kol atvyks greitoji pagalba.</li><li>K&#363;dikio stabili pozicija ant &#353;ono: <br /><img src="images/aid028.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_resuscitation" title="Gaivinimas (Reanimacija)"><h3>Gaivinimas (Reanimacija)</h3>
+<p><b># I&#353;orinis &#353;irdies masa&#382;as</b></p>
+<ol><li>Nukent&#279;jus&#303;j&#303; paguldykite ir atsiklaupkite &#353;alia jo.</li>
+<li>Atsekite kr&#363;tin&#279;s dalies drabu&#382;ius.</li>
+<li>U&#382;d&#279;kite savo vien&#261; deln&#261; ant apatin&#279;s kr&#363;tinkaulio dalies. <br /><img src="images/aid013.png" /></li>
+<li>Kit&#261; deln&#261; u&#382;d&#279;kite ant jo.</li>
+<li>I&#353;tieskite rankas ir alk&#363;nes. <br /><img src="images/aid003.png" /></li>
+<li>Statmenai i&#353; vir&#353;aus nelenkdami alk&#363;ni&#371; stipriai paspauskite kr&#363;tinkaul&#303; apie 5 cm ir atleiskite.</li>
+<li>Trumpai ir stipriai kartokite &#353;&#303; judes&#303; i&#353; eil&#279;s 30 kart&#371;!</li></ol>
+<p><b># Dirbtinis kv&#279;pavimas</b></p>
+<ol><li>Pa&#353;alinkite visus svetimk&#363;nius, esancius nukent&#279;jusiojo burnoje (protezus, v&#279;mal&#371; liku&#269;ius ir kt.). Atlo&#353;kite nukent&#279;jusiojo galv&#261; prilaikydami kakl&#261;. <br /><img src="images/aid067.png" /></li>
+<li>Laisva ranka u&#382;spauskite nos&#303;. <br /><img src="images/aid010.png" /></li>
+<li>Giliai &#303;kv&#279;pkite ir &#303;p&#363;skite or&#261; nukent&#279;jusiam &#303; burn&#261; taip, kad oras negal&#279;t&#371; i&#353;eiti. <br /><img src="images/aid011.png" /></li>
+<li>&#302;p&#363;tim&#261; i&#353; burnos &#303; burn&#261; kartokite du kartus (l&#279;tai, pilnai i&#353;kvepiant).</li>
+<li>V&#279;l darykite i&#353;orin&#303; &#353;irdies masa&#382;&#261;.<br /><br />
+I&#353;orinis &#353;irdies masa&#382;as kartu su dirbtiniu kv&#279;pavimu atliekamas tol kol atva&#382;iuos greitoji pagalba. <br /><img src="images/aid012.png" /></li></ol> <p><b># K&#363;dikio Gaivinimas</b></p> <ol><li>Naudoti tik du pir&#353;tus: <br /><img src="images/aid029.png" /></li> <li>&#302;p&#363;skite ne per stipriai: <br /><img src="images/aid030.png" /></li> </ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_safeguardaccident" title="Nelaim&#279;s vieta, pa&#382;ym&#279;kite"><h3>Nelaim&#279;s vieta, pa&#382;ym&#279;kite</h3>
+<ol><li>Savo automobil&#303; pastatykite 50-100 m u&#382; eismo ivykio vietos (jeigu &#303;vykis greitkelyje arba plente). &#302;junkite avarin&#303; signal&#261;. Apsirenkite matomumo liemen&#281;.</li>
+<li>&#302;vykio vietoje pastatykite avarin&#303; &#382;enkl&#261;. D&#279;mesio: Jei avarija pos&#363;kyje, pastatykite avarin&#303; &#382;enkl&#261; prie&#353; pos&#363;k&#303;! <br /><img src="images/aid111.jpg" /></li>
+<li>Pa&#353;aukite aplinkinius &#382;mones &#303; pagalb&#261;.</li>
+<li>Atidarykite automobilio duris (jei u&#382;strig&#281;, naudokite automobilio keltuv&#261;). I&#353;junkite degim&#261;.</li>
+<li>Gelb&#279;kite avarijos auk&#261; : atsekite saugos dir&#382;&#261;, atstumkite s&#279;dyn&#281;. I&#353;kelkite su&#382;eist&#261;j&#303; apkabin&#281; per pa&#382;astis. <br /><img src="images/aid001.png" /></li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Suteikite pirm&#261;j&#261; medicinos pagalb&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_shock" title="&#352;okas"><h3>&#352;okas</h3>
+<p>Kraujotakos sutrikimas d&#279;l nepakankamo deguonies tiekimo &#303; k&#363;n&#261;.<br />
+Prie&#382;astis: Skys&#269;i&#371; praradimas, suma&#382;&#279;j&#281;s kraujo t&#363;ris.<br />
+Simptomai: bly&#353;kumas, &#353;alta oda, &#353;altas prakaitas, nerimas.</p>
+<ol><li>Pa&#353;alinkite &#353;oko prie&#382;ast&#303; (pvz.sustabdykite skys&#269;i&#371; praradim&#261;, sutvarstykite &#382;aizd&#261;)!</li>
+<li>Paguldykite su&#382;eist&#261;j&#303; ant paklod&#279;s, pakelkite kojas auk&#353;tyn. Nuraminkit nukent&#279;jus&#303;j&#303;. <br /><img src="images/aid078.png" /></li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Jei sunku kv&#279;puoti ar sutrikusi kraujotaka, prad&#279;kite <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">gaivinim&#261;</a>.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_skullfracture" title="Kaukol&#279;s l&#363;&#382;is"><h3>Kaukol&#279;s l&#363;&#382;is</h3>
+<p>Lengvas kraujavimai i&#353; nosies, burnos arba aus&#371;. Da&#382;nai atviros &#382;aizdos kaukol&#279;je.</p>
+<ol><li>Steb&#279;kite kv&#279;pavimo takus, kad neu&#382;sikim&#353;t&#371;.</li>
+<li>Jeigu nukent&#279;j&#281;s s&#261;moningas: Pasodinkite ir lengvai palenkite &#303; priek&#303;. Stenkit&#279;s daugiau nejudinti.!</li>
+<li>Jei be s&#261;mon&#279;s: <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">Stabili pozicija ant &#353;ono</a> (nespauskite &#382;aizdos galvoje).</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Sutvarstykite galv&#261; tvars&#269;iu.</li>
+<li>Jei sunku kv&#279;puoti, sutrikusi kraujotaka, <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">prad&#279;kite gaivinim&#261;</a>.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_snakebite" title="Gyvat&#279;s &#303;kandimas"><h3>Gyvat&#279;s &#303;kandimas</h3> <br /><img src="images/aid051.png" /> 
+<p>Smeigtuko dyd&#382;io durtin&#279; &#382;aizda, stiprus skausmas, patinimas, purpurin&#279; spalva. Kraujotakos sutrikimas, galimas &#353;okas.</p>
+<ol><li>&#302;k&#261;st&#261; k&#363;no dal&#303; paguldyti.</li>
+<li>D&#279;kite &#353;altus kompresus ant &#303;kandimo vietos.</li>
+<li>Imkit&#279;s veiksm&#371; prie&#353; &#353;ok&#261;.</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_sos" title="SOS - Nelaim&#279;s Signalas"><h3>SOS - Nelaim&#279;s Signalas</h3>
+<ol><li>Signalas: 3x trumpai, 3x ilgai, 3x trumpai.</li>
+<li>Opti&#353;kai (lempute, pro&#382;ektoriumi) oder akusti&#353;kai (signalini&#353;kai &#353;vilpuku, beldimu).</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+
+
+<ul id="aid_sprain" title="Sausgysl&#279;s patempimas, s&#261;nario i&#353;sukimas"><h3>Sausgysl&#279;s patempimas, s&#261;nario i&#353;sukimas</h3>
+<p>Skausmas, tinimas (m&#279;lyn&#279;), funcijos nebuvimas, gal&#363;ni&#371; deformacijos.</p>
+<ol><li>Paguldykite nukent&#279;jusiojo gal&#363;n&#281; patogiai.</li>
+<li>&#352;aldyti (naudokite ledo paketus).</li>
+<li>Jei &#303;manoma paguldykite gal&#363;n&#281; auk&#353;&#269;iau.</li>
+<li>Vykite &#303; ligonin&#281; ar kvieskite greitosios pagalbos gydytoj&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_stroke" title="Insultas"><h3>Insultas</h3>
+<p>Staigus paraly&#382;ius arba nutirpimas (veido, rankos, kojos), kalbos, regos sutrikimai, sutrikusi s&#261;mon&#279;, stipr&#363;s galvos skausmai. Kv&#279;pavimo, rijimo problemos, &#353;lapimo p&#363;sl&#279;s ir &#382;arnyno nevaldymas.</p> <br /><img src="images/aid059.png" />
+<ol><li>Kvieskite greit&#261;j&#261; pagalb&#261;!</li>
+<li>Atpalaiduokite ver&#382;ian&#269;ius drabu&#382;ius, neduokite medikament&#371;, neduokite gerti.</li>
+<li>Nukent&#279;jus&#303;j&#303; pasodinkite arba paguldykite patogiai. Nusiraminkite!</li>
+<li>Steb&#279;kite s&#261;mon&#281; ir kv&#279;pavim&#261;.</li>
+<li>Jeigu problemos su kv&#279;pavimu arba s&#261;mon&#279;s sutrikimai, <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">prad&#279;kite gaivinim&#261;</a>.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_suffocation" title="U&#382;dusimas"><h3>U&#382;dusimas</h3>
+<p>Nepakankamas apr&#363;pinimas deguonimi. Trach&#279;ja u&#382;daryta. Gali sustoti kv&#279;pavimas (apn&#279;ja)<br />
+Simptomai: &#353;vok&#353;&#269;iantis kv&#279;pavimas, kosulys, dusulys, odos spalvos pakitimas.</p> <br /><img src="images/aid066.png" />
+<ol><li>Veikite skubiai! Leiskite nukent&#279;jusiajam stipriai atsikos&#279;ti.</li>
+<li>Stipriai suduokite plok&#353;&#269;ia ranka kelet&#261; kart&#371; per nugar&#261; tarp men&#269;i&#371; (k&#363;dik&#303; pasiguldykite sau ant rankos, galv&#261; laikykite &#382;emyn). <br /><img src="images/aid068.png" /> <br /><img src="images/aid031.png" /></li>
+<li>Jei tai neduoda rezultat&#371;: atsistokite asmeniui i&#353; nugaros, u&#382;d&#279;kite rankas ant juosmens, palenkite nukent&#279;jus&#303;j&#303; lengvai &#303; priek&#303;.</li>
+<li>Sugniau&#382;kite kum&#353;t&#303; nukent&#279;jusiojo skrand&#382;io lygmenyje ir apkabinkite kita ranka. <br /><img src="images/aid069.png" /></li>
+<li>Abi apkabinusias rankas traukite staigiu judesiu auk&#353;tyn/link sav&#281;s, lyg nor&#279;tum&#279;te nukent&#279;jus&#303;j&#303; kilstel&#279;ti.</li>
+<li>Kartokite tai iki 5-i&#371; kart&#371;! Kv&#279;pavimo takai tur&#279;t&#371; atsilaisvinti, jeigu buvo u&#382;kim&#353;ti daiktu.</li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li>
+<li>Jei &#353;i pirmosios pagalbos priemon&#279; n&#279;ra s&#279;kminga, vistiek t&#281;skite j&#261; kol atvyks gydytojas</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_sunburn" title="Nudegimas saul&#279;je"><h3>Nudegimas saul&#279;je</h3>
+<ol><li>Nuveskite nukent&#279;jus&#303;j&#303; &#303; pav&#279;s&#303;. Venkite saul&#279; spinduli&#371;.</li>
+<li>Duokite gerti daug vandens (d&#279;l dehidratacijos).</li>
+<li>Esant sunkiam nudegimui (darosi p&#363;sl&#279;s, paraudimas, skausmas), nedelsiant kreipkit&#279;s pas gydytoj&#261;.</li>
+<li>Jeigu oda tik truput&#303; raudona, &#353;aldykite j&#261; dr&#279;gnais kompresais. Naudokite krem&#261; arba gel&#303; skirt&#261; tepti po deginimosi saul&#279;je.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_sunstroke" title="Saul&#279;s sm&#363;gis"><h3>Saul&#279;s sm&#363;gis</h3>
+<p>Galva kar&#353;ta ir raudona, oda &#353;alta, &#353;leik&#353;tulys, galvos skausmas, galvos svaigimas. Prie&#382;astis: Sudirginta smegen&#371; membrana.</p> <br /><img src="images/aid035.png" />
+<ol><li>Ie&#353;kokite v&#279;sios vietos, pav&#279;sio. Vir&#353;utin&#279; k&#363;no dalis turi b&#363;ti pakelta auk&#353;&#269;iau. <br /><img src="images/aid061.png" /></li>
+<li>&#352;aldykite galv&#261; dr&#279;gnais kompresais.</li>
+<li>Skambinkite greitajai pagalbai, steb&#279;kite kv&#279;pavim&#261;.</li>
+<li>Jei nekent&#279;jus&#303;sis s&#261;moningas: Duokite gerti &#353;alto g&#279;rimo.</li>
+<li>Jeigu sustojo kv&#279;pavimas, prad&#279;kite dirbtin&#303; kv&#279;pavim&#261;.</li>
+<li>T&#281;skite dirbtin&#303; kv&#279;pavim&#261;! <br /><img src="images/aid036.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+
+
+
+
+<ul id="aid_unconsciouswithbreath" title="S&#261;mon&#279;s netekimas/ nualpimas (nukent&#279;j&#281;s kv&#279;puoja)"><h3>S&#261;mon&#279;s netekimas/ nualpimas (nukent&#279;j&#281;s kv&#279;puoja)</h3>
+<p>Nukent&#279;j&#281;s nereaguoja &#303; kalbinim&#261; ar judinim&#261;. Nukent&#279;j&#281;s kv&#279;puoja.</p> <br /><img style="border:none;" src="images/aid057.png" />
+<ol><li>Jei netoliese yra &#382;moni&#371;, kreipkit&#279;s &#303; juos pagalbos.</li>
+<li>Paguldykite nukent&#279;jus&#303;j&#303; <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">stabiliai ant &#353;ono</a>. Galv&#261; palenkite &#382;emyn, pra&#382;iodinkite burn&#261;, kad vemiant neu&#382;springt&#371;. <br /><img src="images/aid008.png" /> <br /><img src="images/aid009.png" /></li>
+<li>Kvieskite greit&#261;j&#261; pagalb&#261;.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_unconsciouswithoutbreath" title="S&#261;mon&#279;s netekimas (nukent&#279;j&#281;s nekv&#279;puoja)"><h3>S&#261;mon&#279;s netekimas (nukent&#279;j&#281;s nekv&#279;puoja)</h3>
+<ol><li>Nukent&#279;j&#281;s nerodo jokios reakcijos, nekv&#279;puoja. <br /><img style="border:none;" src="images/aid057.png" /></li>
+<li><a href="#toptoolbar" onclick="showAid('aid_resuscitation')">Prad&#279;kite gaivinti</a> (dirbtinis kv&#279;pavimas + &#353;irdies masa&#382;as).</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+<ul id="aid_vomiting" title="V&#279;mimas"><h3>V&#279;mimas</h3>
+<p>Pykinimo rezultatas. Pasitu&#353;tina skrandis. Prie&#382;astys: infekcijos, apsinuodijimai, opos, medikamentai, nekokybi&#353;kas maistas, ne&#353;tumas.</p> <br /><img src="images/aid054.png" />
+<ol><li>Pavojus d&#279;l dehidratacijos ir mineral&#371; tr&#363;kumo!</li>
+<li>Duokite gerti skys&#269;i&#371; (arbatos, vandens).</li>
+<li>Sunkiais atvejais, vemiant krauju arba jeigu v&#279;mimas nenustoja, skambinkite gydytojui.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Atgal</a><br /><br /></ul>
+
+
+    <ul id="language" title="Pasirinkite kalba">
+        <li><a target="_self" href="firstaidDE.html">Deutsch</a></li>
+        <li><a target="_self" href="firstaidEN.html">English</a></li>
+        <li><a target="_self" href="firstaidFR.html">Fran&ccedil;ais</a></li>
+        <li><a target="_self" href="firstaidLT.html">Lietuvi&#154;kai</a></li>
+        <li><a target="_self" href="firstaidVI.html">Ti&#7871;ng Vi&#7879;t</a></li>
+    </ul>
+
+   <ul id="menu" title="Menu">
+        <li><a href="#toptoolbar" onclick="showAid('language')">Pasirinkite kalb&#261;</a></li>
+        <!-- <li><a target="_self" href="http://www.firstai.de/winmobile/firstaidLToffline.htm">Offline-Versija</a></li> -->
+        <li><a href="#toptoolbar" onclick="showAid('donate')">Parama projektui</a></li>
+        <li><script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>Ra&#353;yti lai&#353;k&#261; K&#363;r&#279;jui</a>"); </script>
+        <!-- <li><a target="_self" href="http://www.firstai.de/winmobile/offline/">Ie&#353;koti naujos versijos</a></li> -->
+        </ul>
+	
+  <ul id="donate" title="Parama">
+  <h3><span style="color:#00B316;">Kod&#279;l paremti?</span></h3>
+  <p>Jeigu manote, kad projektas yra gera id&#279;ja. Pra&#353;ome mus paremti. &#352;is projektas egzistuos tik J&#363;s&#371; auk&#371; d&#279;ka.</p>
+  <p>Aukas si&#371;skite internetu per PayPal: <script type="text/javascript"> emailME3=("kai.noack@" + "firstai.de"); document.write(emailME3); </script> arba &#269;ek&#303; pa&#353;tu.</p>
+  <p>Kiekvienas &#303;na&#353;as vertingas!</p><br />
+  <p><span style="font-style:italic;font-size:80%;">(Vienas ma&#382;as &#382;ingsnelis &#382;mogui, vienas mil&#382;ini&#353;kas &#353;uolis &#382;monijai)</span></p></ul>
+  
+  <ul id="cclicence" title="Licence">  <h3>Licencija</h3>
+  <p><b>Creative Commons BY-NC-ND 3,0</b><br />
+Galima kopijuoti, platinti ir naudotis pagal &#353;ias s&#261;lygas:</p>
+   <ol><li><b>Nuosavyb&#279;</b><br />
+Galima naudotis nurodant, kad licencija priklaiso K&#363;r&#279;jui Kai Kajus Noack, bei esant nuorodai &#303; svetaine www.firstai.de (ta&#269;iau ne bet kaip, o neutraliai, nuoroda nerei&#353;kia, kad mes pritariame jums ar jusu darbui).</li><br />
+   <li><b>Nekomercinis projektas</b><br />
+Jums negalima naudoti &#353;io darbo komerciniais tikslais.</li><br />
+   <li><b>Naudojimas</b><br />
+J&#363;s negalite keisti, perra&#353;yti, papildyti &#353;io darbo.</li><br />
+<li>Norint platinti privaloma laikytis &#353;ios licencijos s&#261;lyg&#371;. Geriausias su nuoroda &#303; <span style="font-size:80%;">http://creativecommons.org/licenses/by-nc-nd/3.0/</span></li><br />
+<li>&#352;ios s&#261;lygos gali b&#363;ti kei&#269;iamos tik su savininko pritarimu.</li><br />
+<li>Licencija ne&#303;takoja autoriaus asmenini&#371; teisi&#371;.</li></ol></ul>
+
+
+ <ul id="telEmergency" title="&#381;emynas">
+  <li><a href="#toptoolbar" onclick="showAid('telAfrica')">Afrika</a></li>
+  <li><a href="#toptoolbar" onclick="showAid('telAsia')">Azija</a></li>
+  <li><a href="#toptoolbar" onclick="showAid('telEurope')">Europa</a></li>
+  <li><a href="#toptoolbar" onclick="showAid('telOceania')">Okeanija</a></li>
+  <li><a href="#toptoolbar" onclick="showAid('telSouthamerica')">Piet&#371; Amerika</a></li> 
+  <li><a href="#toptoolbar" onclick="showAid('telNorthamerica')">&#352;iaur&#279;s / Centrin&#279;-Amerika</a></li>
+  <br /><img src="images/aid002.png" />
+</ul>
+
+<ul id="telAfrica" title="Afrika">
+<li><a href="#toptoolbar" onclick="showAid('algeria')">Al&#382;yras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('angola')">Angola</a></li>
+<li><a href="#toptoolbar" onclick="showAid('benin')">Beninas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('botswana')">Botsvana</a></li>
+<li><a href="#toptoolbar" onclick="showAid('burkinafaso')">Burkina Fasas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('burundi')">Burundis</a></li>
+<li><a href="#toptoolbar" onclick="showAid('chad')">Cadas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('centralafricanrepublic')">Centrin&#279; Afrikos Respublika</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ivorycoast')">Dramblio Kaulo Krantas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('djibouti')">D&#382;ibutis</a></li>
+<li><a href="#toptoolbar" onclick="showAid('egypt')">Egiptas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('eritrea')">Eritr&#279;ja</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ethiopia')">Etiopija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('gabon')">Gabonas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('gambia')">Gambija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ghana')">Gana</a></li>
+<li><a href="#toptoolbar" onclick="showAid('guinea')">Gvin&#279;ja</a></li>
+<li><a href="#toptoolbar" onclick="showAid('guinea-bissau')">Gvin&#279;ja-Bisau</a></li>
+<li><a href="#toptoolbar" onclick="showAid('cameroon')">Kamerunas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kenya')">Kenija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('comoros')">Komorai</a></li>
+<li><a href="#toptoolbar" onclick="showAid('congodemocraticrepublic')">Kongas (Kongo Demokratin&#279; Respublika)</a></li>
+<li><a href="#toptoolbar" onclick="showAid('congorepublic')">Kongas (Kongo Respublika)</a></li>
+<li><a href="#toptoolbar" onclick="showAid('lesotho')">Lesotas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('liberia')">Liberija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('libya')">Libija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('madagascar')">Madagaskaras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mayotte')">Majota</a></li>
+<li><a href="#toptoolbar" onclick="showAid('malawi')">Malavis</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mali')">Malis</a></li>
+<li><a href="#toptoolbar" onclick="showAid('morocco')">Marokas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mauritius')">Mauricijus</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mauritania')">Mauritanija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mozambique')">Mozambikas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('namibia')">Namibija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('nigeria')">Nigerija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('niger')">Nigeris</a></li>
+<li><a href="#toptoolbar" onclick="showAid('southafrica')">Piet&#371; Afrika</a></li>
+<li><a href="#toptoolbar" onclick="showAid('equatorialguinea')">Pusiaujo Gvin&#279;ja</a></li>
+<li><a href="#toptoolbar" onclick="showAid('reunion')">Reunionas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('rwanda')">Ruanda</a></li>
+<li><a href="#toptoolbar" onclick="showAid('sahrawiarabdemocraticrepublic')">Sacharos Arab&#371; Demokratin&#279; Respublika</a></li>
+<li><a href="#toptoolbar" onclick="showAid('saotomeandprincipe')">San Tome ir Prinsipe</a></li>
+<li><a href="#toptoolbar" onclick="showAid('seychelles')">Sei&#353;eliai</a></li>
+<li><a href="#toptoolbar" onclick="showAid('senegal')">Senegalas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('sierraleone')">Siera Leone</a></li>
+<li><a href="#toptoolbar" onclick="showAid('somalia')">Somalis</a></li>
+<li><a href="#toptoolbar" onclick="showAid('sudan')">Sudanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('swaziland')">Svazilandas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('tanzania')">Tanzanija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('togo')">Togas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('tunisia')">Tunisas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('uganda')">Uganda</a></li>
+<li><a href="#toptoolbar" onclick="showAid('capeverde')">&#381;aliojo Ky&#353;ulio salos</a></li>
+<li><a href="#toptoolbar" onclick="showAid('zambia')">Zambija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('zimbabwe')">Zimbabv&#279;</a></li>
+</ul><ul id="telAsia" title="Azija">
+<li><a href="#toptoolbar" onclick="showAid('afghanistan')">Afganistanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('armenia')">Arm&#279;nija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('azerbaijan')">Azerbaid&#382;anas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bahrain')">Bahreinas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bangladesh')">Banglade&#353;as</a></li>
+<li><a href="#toptoolbar" onclick="showAid('brunei')">Brun&#279;jus</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bhutan')">Butanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('philippines')">Filipinai</a></li>
+<li><a href="#toptoolbar" onclick="showAid('georgia')">Gruzija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('hongkong')">Honkongas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('india')">Indija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('indonesia')">Indonezija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('iraq')">Irakas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('iran')">Iranas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('israel')">Izraelis</a></li>
+<li><a href="#toptoolbar" onclick="showAid('japan')">Japonija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('yemen')">Jemenas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('jordan')">Jordanija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('unitedarabemirates')">Jungtiniai Arabu Emyratai</a></li>
+<li><a href="#toptoolbar" onclick="showAid('cambodia')">Kambod&#382;a</a></li>
+<li><a href="#toptoolbar" onclick="showAid('qatar')">Kataras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kazakhstan')">Kazachstanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('china')">Kinija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kyrgyzstan')">Kirgizija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kurdistan')">Kurdistanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kuwait')">Kuveitas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('laos')">Laosas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('lebanon')">Libanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('macau')">Makao</a></li>
+<li><a href="#toptoolbar" onclick="showAid('malaysia')">Malaizija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('maldives')">Maldyvai</a></li>
+<li><a href="#toptoolbar" onclick="showAid('myanmar')">Mianmaras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mongolia')">Mongolija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('nepal')">Nepalas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('oman')">Omanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('pakistan')">Pakistanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('southkorea')">Piet&#371; Kor&#279;ja (Kor&#279;jos Respublika)</a></li>
+<li><a href="#toptoolbar" onclick="showAid('easttimor')">Ryt&#371; Timoras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('saudiarabia')">Saudo Arabija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('northkorea')">&#352;iaur&#279;s Kor&#279;ja</a></li>
+<li><a href="#toptoolbar" onclick="showAid('singapore')">Singapuras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('syria')">Sirija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('srilanka')">&#352;ri Lanka</a></li>
+<li><a href="#toptoolbar" onclick="showAid('tajikistan')">Tad&#382;ikistanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('thailand')">Tailandas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('taiwan')">Taivanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('turkmenistan')">Turkm&#279;nistanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('uzbekistan')">Uzbekija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('vietnam')">Vietnamas</a></li>
+</ul><ul id="telEurope" title="Europa">
+<li><a href="#toptoolbar" onclick="showAid('ireland')">Airija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('albania')">Albanija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('andorra')">Andora</a></li>
+<li><a href="#toptoolbar" onclick="showAid('austria')">Austrija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('belarus')">Baltarusija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('belgium')">Belgija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bosniaandherzegovina')">Bosnija ir Hercegovina</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bulgaria')">Bulgarija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('czechrepublic')">&#268;ekijos Respublika</a></li>
+<li><a href="#toptoolbar" onclick="showAid('denmark')">Danija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('estonia')">Estija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('greece')">Graikija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('iceland')">Islandija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('spain')">Ispanija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('italy')">Italija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('unitedkingdom')">Jungtin&#279; Karalyst&#279;</a></li>
+<li><a href="#toptoolbar" onclick="showAid('montenegro')">Juodkalnija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('cyprus')">Kipras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kosovo')">Kosovas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('croatia')">Kroatija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('latvia')">Latvija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('poland')">Lenkija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('liechtenstein')">Lichten&#353;teinas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('lithuania')">Lietuva</a></li>
+<li><a href="#toptoolbar" onclick="showAid('luxembourg')">Liuksemburgas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('macedonia')">Makedonija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('malta')">Malta</a></li>
+<li><a href="#toptoolbar" onclick="showAid('moldova')">Moldavija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('monaco')">Monakas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('norway')">Norvegija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('netherlands')">Nyderlandai</a></li>
+<li><a href="#toptoolbar" onclick="showAid('portugal')">Portugalija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('france')">Pranc&#363;zija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('romania')">Rumunija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('russia')">Rusija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('sanmarino')">San Marinas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('serbia')">Serbija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('slovakia')">Slovakija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('slovenia')">Slov&#279;nija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('finland')">Suomija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('sweden')">&#352;vedija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('switzerland')">&#352;veicarija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('turkey')">Turkija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ukraine')">Ukraina</a></li>
+<li><a href="#toptoolbar" onclick="showAid('vaticancity')">Vatikanas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('hungary')">Vengrija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('germany')">Vokietija</a></li>
+</ul><ul id="telNorthamerica" title="&#352;iaur&#279;s / Centrin&#279;-Amerika">
+<li><a href="#toptoolbar" onclick="showAid('antiguaandbarbuda')">Antigva ir Barbuda</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bahamas')">Bahamai</a></li>
+<li><a href="#toptoolbar" onclick="showAid('barbados')">Barbadosas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('belize')">Belizas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('dominica')">Dominika</a></li>
+<li><a href="#toptoolbar" onclick="showAid('dominicanrepublic')">Dominikos Respublika</a></li>
+<li><a href="#toptoolbar" onclick="showAid('elsalvador')">El Salvadoras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('grenada')">Grenada</a></li>
+<li><a href="#toptoolbar" onclick="showAid('greenland')">Grenlandija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('guatemala')">Gvatemala</a></li>
+<li><a href="#toptoolbar" onclick="showAid('haiti')">Haitis</a></li>
+<li><a href="#toptoolbar" onclick="showAid('honduras')">Honduras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('jamaica')">Jamaika</a></li>
+<li><a href="#toptoolbar" onclick="showAid('unitedstatesofamerica')">Jungtin&#279;s Amerikos Valstijos</a></li>
+<li><a href="#toptoolbar" onclick="showAid('caymanislands')">Kaimanu salos</a></li>
+<li><a href="#toptoolbar" onclick="showAid('canada')">Kanada</a></li>
+<li><a href="#toptoolbar" onclick="showAid('costarica')">Kosta Rika</a></li>
+<li><a href="#toptoolbar" onclick="showAid('cuba')">Kuba</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mexico')">Meksika</a></li>
+<li><a href="#toptoolbar" onclick="showAid('nicaragua')">Nikaragva</a></li>
+<li><a href="#toptoolbar" onclick="showAid('panama')">Panama</a></li>
+<li><a href="#toptoolbar" onclick="showAid('stkittsandnevis')">Sent Kitsas ir Nevis</a></li>
+<li><a href="#toptoolbar" onclick="showAid('stlucia')">Sent Lusija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('saintpierreandmiquelon')">Sent Pjeras ir Mikelonas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('stvincentandgrenadines')">Sent Vinsentas ir Grenadinai</a></li>
+<li><a href="#toptoolbar" onclick="showAid('trinidadandtobago')">Trinidadas ir Tobagas</a></li>
+</ul><ul id="telOceania" title="Okeanija">
+<li><a href="#toptoolbar" onclick="showAid('australia')">Australija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('fiji')">Fid&#382;is</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kiribati')">Kiribatis</a></li>
+<li><a href="#toptoolbar" onclick="showAid('marshallislands')">Mar&#353;alo salos</a></li>
+<li><a href="#toptoolbar" onclick="showAid('micronesia')">Mikronezija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('newzealand')">Naujoji Zelandija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('nauru')">Nauru</a></li>
+<li><a href="#toptoolbar" onclick="showAid('palau')">Palau</a></li>
+<li><a href="#toptoolbar" onclick="showAid('papuanewguinea')">Papua ir Naujoji Gvineja</a></li>
+<li><a href="#toptoolbar" onclick="showAid('solomonislands')">Saliamono Salos</a></li>
+<li><a href="#toptoolbar" onclick="showAid('samoa')">Samoa</a></li>
+<li><a href="#toptoolbar" onclick="showAid('tonga')">Tonga</a></li>
+<li><a href="#toptoolbar" onclick="showAid('tuvalu')">Tuvalu</a></li>
+<li><a href="#toptoolbar" onclick="showAid('vanuatu')">Vanuatu</a></li>
+</ul><ul id="telSouthamerica" title="Piet&#371; Amerika">
+<li><a href="#toptoolbar" onclick="showAid('argentina')">Argentina</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bolivia')">Bolivija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('brazil')">Brazilija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('chile')">&#268;il&#279;</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ecuador')">Ekvadoras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('guyana')">Gajana</a></li>
+<li><a href="#toptoolbar" onclick="showAid('colombia')">Kolumbija</a></li>
+<li><a href="#toptoolbar" onclick="showAid('paraguay')">Paragvajus</a></li>
+<li><a href="#toptoolbar" onclick="showAid('peru')">Peru</a></li>
+<li><a href="#toptoolbar" onclick="showAid('suriname')">Surinamas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('uruguay')">Urugvajus</a></li>
+<li><a href="#toptoolbar" onclick="showAid('venezuela')">Venesuela </a></li>
+</ul>
+
+
+<!-- ALL COUNTRIES WITH EMERGENCY NUMBERS -->
+
+<ul id="algeria" title="Al&#382;yras"><h3>Al&#382;yras</h3><ol><li>Gaisrine <a href="tel:14">(14)</a></li><li>Gydytojas <a href="tel:17">(17)</a></li><li>Policija <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="angola" title="Angola"><h3>Angola</h3><ol><li>Gaisrine <a href="tel:118">(118)</a></li><li>Gydytojas <a href="tel:118">(118)</a></li><li>Policija <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="benin" title="Beninas"><h3>Beninas</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:301769">(301769)</a></li><li>Policija <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="botswana" title="Botsvana"><h3>Botsvana</h3><ol><li>Gaisrine <a href="tel:998">(998)</a></li><li>Gydytojas <a href="tel:997">(997)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="burkinafaso" title="Burkina Fasas"><h3>Burkina Fasas</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="burundi" title="Burundis"><h3>Burundis</h3><ol><li>Gaisrine <a href="tel:nera ry&#353;io">(nera ry&#353;io)</a></li><li>Gydytojas <a href="tel:nera ry&#353;io">(nera ry&#353;io)</a></li><li>Policija <a href="tel:nera ry&#353;io">(nera ry&#353;io)</a></li></ol></ul>
+<ul id="chad" title="Cadas"><h3>Cadas</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="centralafricanrepublic" title="Centrin&#279; Afrikos Respublika"><h3>Centrin&#279; Afrikos Respublika</h3><ol><li>Gaisrine <a href="tel:118">(118)</a></li><li>Gydytojas <a href="tel:610600">(610600)</a></li><li>Policija <a href="tel:611253">(611253)</a></li></ol></ul>
+<ul id="ivorycoast" title="Dramblio Kaulo Krantas"><h3>Dramblio Kaulo Krantas</h3><ol><li>Gaisrine <a href="tel:180">(180)</a></li><li>Gydytojas <a href="tel:110">(110)</a></li><li>Policija <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="djibouti" title="D&#382;ibutis"><h3>D&#382;ibutis</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:351351">(351351)</a></li><li>Policija <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="egypt" title="Egiptas"><h3>Egiptas</h3><ol><li>Gaisrine <a href="tel:180">(180)</a></li><li>Gydytojas <a href="tel:123">(123)</a></li><li>Policija <a href="tel:122">(122)</a></li></ol></ul>
+<ul id="eritrea" title="Eritr&#279;ja"><h3>Eritr&#279;ja</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="ethiopia" title="Etiopija"><h3>Etiopija</h3><ol><li>Gaisrine <a href="tel:93">(93)</a></li><li>Gydytojas <a href="tel:92">(92)</a></li><li>Policija <a href="tel:91">(91)</a></li></ol></ul>
+<ul id="gabon" title="Gabonas"><h3>Gabonas</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:1300">(1300)</a></li><li>Policija <a href="tel:1730">(1730)</a></li></ol></ul>
+<ul id="gambia" title="Gambija"><h3>Gambija</h3><ol><li>Gaisrine <a href="tel:118">(118)</a></li><li>Gydytojas <a href="tel:116">(116)</a></li><li>Policija <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="ghana" title="Gana"><h3>Gana</h3><ol><li>Gaisrine <a href="tel:192">(192)</a></li><li>Gydytojas <a href="tel:193">(193)</a></li><li>Policija <a href="tel:191">(191)</a></li></ol></ul>
+<ul id="guinea" title="Gvin&#279;ja"><h3>Gvin&#279;ja</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="guinea-bissau" title="Gvin&#279;ja-Bisau"><h3>Gvin&#279;ja-Bisau</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="cameroon" title="Kamerunas"><h3>Kamerunas</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="kenya" title="Kenija"><h3>Kenija</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:999">(999)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="comoros" title="Komorai"><h3>Komorai</h3><ol><li>Gaisrine <a href="tel:tik radijo ry&#353;io telefonais">(tik radijo ry&#353;io telefonais)</a></li><li>Gydytojas <a href="tel:tik radijo ry&#353;io telefonais">(tik radijo ry&#353;io telefonais)</a></li><li>Policija <a href="tel:tik radijo ry&#353;io telefonais">(tik radijo ry&#353;io telefonais)</a></li></ol></ul>
+<ul id="congodemocraticrepublic" title="Kongas (Kongo Demokratin&#279; Respublika)"><h3>Kongas (Kongo Demokratin&#279; Respublika)</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="congorepublic" title="Kongas (Kongo Respublika)"><h3>Kongas (Kongo Respublika)</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="lesotho" title="Lesotas"><h3>Lesotas</h3><ol><li>Gaisrine <a href="tel:122">(122)</a></li><li>Gydytojas <a href="tel:121">(121)</a></li><li>Policija <a href="tel:123">(123)</a></li></ol></ul>
+<ul id="liberia" title="Liberija"><h3>Liberija</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="libya" title="Libija"><h3>Libija</h3><ol><li>Gaisrine <a href="tel:193">(193)</a></li><li>Gydytojas <a href="tel:193">(193)</a></li><li>Policija <a href="tel:193">(193)</a></li></ol></ul>
+<ul id="madagascar" title="Madagaskaras"><h3>Madagaskaras</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:2262566">(2262566)</a></li><li>Policija <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="mayotte" title="Majota"><h3>Majota</h3><ol><li>Gaisrine <a href="tel:603054">(603054)</a></li><li>Gydytojas <a href="tel:15">(15)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="malawi" title="Malavis"><h3>Malavis</h3><ol><li>Gaisrine <a href="tel:199">(199)</a></li><li>Gydytojas <a href="tel:199">(199)</a></li><li>Policija <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="mali" title="Malis"><h3>Malis</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:15">(15)</a></li><li>Policija <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="morocco" title="Marokas"><h3>Marokas</h3><ol><li>Gaisrine <a href="tel:15">(15)</a></li><li>Gydytojas <a href="tel:15">(15)</a></li><li>Policija <a href="tel:19">(19)</a></li></ol></ul>
+<ul id="mauritius" title="Mauricijus"><h3>Mauricijus</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:999">(999)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="mauritania" title="Mauritanija"><h3>Mauritanija</h3><ol><li>Gaisrine <a href="tel:118">(118)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="mozambique" title="Mozambikas"><h3>Mozambikas</h3><ol><li>Gaisrine <a href="tel:198">(198)</a></li><li>Gydytojas <a href="tel:117">(117)</a></li><li>Policija <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="namibia" title="Namibija"><h3>Namibija</h3><ol><li>Gaisrine <a href="tel:2032270">(2032270)</a></li><li>Gydytojas <a href="tel:2032276">(2032276)</a></li><li>Policija <a href="tel:1011">(1011)</a></li></ol></ul>
+<ul id="nigeria" title="Nigerija"><h3>Nigerija</h3><ol><li>Gaisrine <a href="tel:190">(190)</a></li><li>Gydytojas <a href="tel:199">(199)</a></li><li>Policija <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="niger" title="Nigeris"><h3>Nigeris</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:723141">(723141)</a></li><li>Policija <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="southafrica" title="Piet&#371; Afrika"><h3>Piet&#371; Afrika</h3><ol><li>Gaisrine <a href="tel:10111">(10111)</a></li><li>Gydytojas <a href="tel:10177">(10177)</a></li><li>Policija <a href="tel:10111">(10111)</a></li></ol></ul>
+<ul id="equatorialguinea" title="Pusiaujo Gvin&#279;ja"><h3>Pusiaujo Gvin&#279;ja</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="reunion" title="Reunionas"><h3>Reunionas</h3><ol><li>Gaisrine <a href="tel:18 arba 112 mobilusis">(18 arba 112 mobilusis)</a></li><li>Gydytojas <a href="tel:15 arba 112 mobilusis">(15 arba 112 mobilusis)</a></li><li>Policija <a href="tel:17 arba 112 mobilusis">(17 arba 112 mobilusis)</a></li></ol></ul>
+<ul id="rwanda" title="Ruanda"><h3>Ruanda</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="sahrawiarabdemocraticrepublic" title="Sacharos Arab&#371; Demokratin&#279; Respublika"><h3>Sacharos Arab&#371; Demokratin&#279; Respublika</h3><ol><li>Gaisrine <a href="tel:--">(--)</a></li><li>Gydytojas <a href="tel:--">(--)</a></li><li>Policija <a href="tel:--">(--)</a></li></ol></ul>
+<ul id="saotomeandprincipe" title="San Tome ir Prinsipe"><h3>San Tome ir Prinsipe</h3><ol><li>Gaisrine <a href="tel:--">(--)</a></li><li>Gydytojas <a href="tel:--">(--)</a></li><li>Policija <a href="tel:--">(--)</a></li></ol></ul>
+<ul id="seychelles" title="Sei&#353;eliai"><h3>Sei&#353;eliai</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:999">(999)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="senegal" title="Senegalas"><h3>Senegalas</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:8891515">(8891515)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="sierraleone" title="Siera Leone"><h3>Siera Leone</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:999">(999)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="somalia" title="Somalis"><h3>Somalis</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="sudan" title="Sudanas"><h3>Sudanas</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="swaziland" title="Svazilandas"><h3>Svazilandas</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:6060911">(6060911)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="tanzania" title="Tanzanija"><h3>Tanzanija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="togo" title="Togas"><h3>Togas</h3><ol><li>Gaisrine <a href="tel:118">(118)</a></li><li>Gydytojas <a href="tel:191">(191)</a></li><li>Policija <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="tunisia" title="Tunisas"><h3>Tunisas</h3><ol><li>Gaisrine <a href="tel:198">(198)</a></li><li>Gydytojas <a href="tel:190">(190)</a></li><li>Policija <a href="tel:197">(197)</a></li></ol></ul>
+<ul id="uganda" title="Uganda"><h3>Uganda</h3><ol><li>Gaisrine <a href="tel:999 arba 111 mobilusis">(999 arba 111 mobilusis)</a></li><li>Gydytojas <a href="tel:999 arba 111 mobilusis">(999 arba 111 mobilusis)</a></li><li>Policija <a href="tel:999 arba 111 mobilusis">(999 arba 111 mobilusis)</a></li></ol></ul>
+<ul id="capeverde" title="&#381;aliojo Ky&#353;ulio salos"><h3>&#381;aliojo Ky&#353;ulio salos</h3><ol><li>Gaisrine <a href="tel:131">(131)</a></li><li>Gydytojas <a href="tel:130">(130)</a></li><li>Policija <a href="tel:132">(132)</a></li></ol></ul>
+<ul id="zambia" title="Zambija"><h3>Zambija</h3><ol><li>Gaisrine <a href="tel:993 arba 112 mobilusis">(993 arba 112 mobilusis)</a></li><li>Gydytojas <a href="tel:991 arba 112 mobilusis">(991 arba 112 mobilusis)</a></li><li>Policija <a href="tel:999 arba 112 mobilusis">(999 arba 112 mobilusis)</a></li></ol></ul>
+<ul id="zimbabwe" title="Zimbabv&#279;"><h3>Zimbabv&#279;</h3><ol><li>Gaisrine <a href="tel:993">(993)</a></li><li>Gydytojas <a href="tel:994">(994)</a></li><li>Policija <a href="tel:995">(995)</a></li></ol></ul>
+
+
+
+<ul id="afghanistan" title="Afganistanas"><h3>Afganistanas</h3><ol><li>Gaisrine <a href="tel:--">(--)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:--">(--)</a></li></ol></ul>
+<ul id="armenia" title="Arm&#279;nija"><h3>Arm&#279;nija</h3><ol><li>Gaisrine <a href="tel:101">(101)</a></li><li>Gydytojas <a href="tel:103">(103)</a></li><li>Policija <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="azerbaijan" title="Azerbaid&#382;anas"><h3>Azerbaid&#382;anas</h3><ol><li>Gaisrine <a href="tel:101">(101)</a></li><li>Gydytojas <a href="tel:103">(103)</a></li><li>Policija <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="bahrain" title="Bahreinas"><h3>Bahreinas</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:999">(999)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="bangladesh" title="Banglade&#353;as"><h3>Banglade&#353;as</h3><ol><li>Gaisrine <a href="tel:9555555">(9555555)</a></li><li>Gydytojas <a href="tel:199">(199)</a></li><li>Policija <a href="tel:8665513">(8665513)</a></li></ol></ul>
+<ul id="brunei" title="Brun&#279;jus"><h3>Brun&#279;jus</h3><ol><li>Gaisrine <a href="tel:995">(995)</a></li><li>Gydytojas <a href="tel:991">(991)</a></li><li>Policija <a href="tel:993">(993)</a></li></ol></ul>
+<ul id="bhutan" title="Butanas"><h3>Butanas</h3><ol><li>Gaisrine <a href="tel:113">(113)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="philippines" title="Filipinai"><h3>Filipinai</h3><ol><li>Gaisrine <a href="tel:117">(117)</a></li><li>Gydytojas <a href="tel:117">(117)</a></li><li>Policija <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="georgia" title="Gruzija"><h3>Gruzija</h3><ol><li>Gaisrine <a href="tel:022">(022)</a></li><li>Gydytojas <a href="tel:022">(022)</a></li><li>Policija <a href="tel:022">(022)</a></li></ol></ul>
+<ul id="hongkong" title="Honkongas"><h3>Honkongas</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:999">(999)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="india" title="Indija"><h3>Indija</h3><ol><li>Gaisrine <a href="tel:101">(101)</a></li><li>Gydytojas <a href="tel:102">(102)</a></li><li>Policija <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="indonesia" title="Indonezija"><h3>Indonezija</h3><ol><li>Gaisrine <a href="tel:113">(113)</a></li><li>Gydytojas <a href="tel:118">(118)</a></li><li>Policija <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="iraq" title="Irakas"><h3>Irakas</h3><ol><li>Gaisrine <a href="tel:nera ry&#353;io">(nera ry&#353;io)</a></li><li>Gydytojas <a href="tel:nera ry&#353;io">(nera ry&#353;io)</a></li><li>Policija <a href="tel:nera ry&#353;io">(nera ry&#353;io)</a></li></ol></ul>
+<ul id="iran" title="Iranas"><h3>Iranas</h3><ol><li>Gaisrine <a href="tel:125 arba 112 mobilusis">(125 arba 112 mobilusis)</a></li><li>Gydytojas <a href="tel:115 arba 112 mobilusis">(115 arba 112 mobilusis)</a></li><li>Policija <a href="tel:110 arba 112 mobilusis ">(110 arba 112 mobilusis )</a></li></ol></ul>
+<ul id="israel" title="Izraelis"><h3>Izraelis</h3><ol><li>Gaisrine <a href="tel:102">(102)</a></li><li>Gydytojas <a href="tel:101">(101)</a></li><li>Policija <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="japan" title="Japonija"><h3>Japonija</h3><ol><li>Gaisrine <a href="tel:119">(119)</a></li><li>Gydytojas <a href="tel:119">(119)</a></li><li>Policija <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="yemen" title="Jemenas"><h3>Jemenas</h3><ol><li>Gaisrine <a href="tel:199">(199)</a></li><li>Gydytojas <a href="tel:199">(199)</a></li><li>Policija <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="jordan" title="Jordanija"><h3>Jordanija</h3><ol><li>Gaisrine <a href="tel:193">(193)</a></li><li>Gydytojas <a href="tel:193">(193)</a></li><li>Policija <a href="tel:192">(192)</a></li></ol></ul>
+<ul id="unitedarabemirates" title="Jungtiniai Arabu Emyratai"><h3>Jungtiniai Arabu Emyratai</h3><ol><li>Gaisrine <a href="tel:997">(997)</a></li><li>Gydytojas <a href="tel:998">(998)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="cambodia" title="Kambod&#382;a"><h3>Kambod&#382;a</h3><ol><li>Gaisrine <a href="tel:118">(118)</a></li><li>Gydytojas <a href="tel:199">(199)</a></li><li>Policija <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="qatar" title="Kataras"><h3>Kataras</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:999">(999)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="kazakhstan" title="Kazachstanas"><h3>Kazachstanas</h3><ol><li>Gaisrine <a href="tel:03">(03)</a></li><li>Gydytojas <a href="tel:03">(03)</a></li><li>Policija <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="china" title="Kinija"><h3>Kinija</h3><ol><li>Gaisrine <a href="tel:119">(119)</a></li><li>Gydytojas <a href="tel:120">(120)</a></li><li>Policija <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="kyrgyzstan" title="Kirgizija"><h3>Kirgizija</h3><ol><li>Gaisrine <a href="tel:03">(03)</a></li><li>Gydytojas <a href="tel:03">(03)</a></li><li>Policija <a href="tel:133">(133)</a></li></ol></ul>
+<ul id="kurdistan" title="Kurdistanas"><h3>Kurdistanas</h3><ol><li>Gaisrine <a href="tel:125">(125)</a></li><li>Gydytojas <a href="tel:115">(115)</a></li><li>Policija <a href="tel:129">(129)</a></li></ol></ul>
+<ul id="kuwait" title="Kuveitas"><h3>Kuveitas</h3><ol><li>Gaisrine <a href="tel:777">(777)</a></li><li>Gydytojas <a href="tel:777">(777)</a></li><li>Policija <a href="tel:777">(777)</a></li></ol></ul>
+<ul id="laos" title="Laosas"><h3>Laosas</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:03">(03)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="lebanon" title="Libanas"><h3>Libanas</h3><ol><li>Gaisrine <a href="tel:175">(175)</a></li><li>Gydytojas <a href="tel:140">(140)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="macau" title="Makao"><h3>Makao</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:999">(999)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="malaysia" title="Malaizija"><h3>Malaizija</h3><ol><li>Gaisrine <a href="tel:999 arba 112 mobilusis">(999 arba 112 mobilusis)</a></li><li>Gydytojas <a href="tel:999 arba 112 mobilusis">(999 arba 112 mobilusis)</a></li><li>Policija <a href="tel:999 arba 112 mobilusis">(999 arba 112 mobilusis)</a></li></ol></ul>
+<ul id="maldives" title="Maldyvai"><h3>Maldyvai</h3><ol><li>Gaisrine <a href="tel:118">(118)</a></li><li>Gydytojas <a href="tel:102">(102)</a></li><li>Policija <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="myanmar" title="Mianmaras"><h3>Mianmaras</h3><ol><li>Gaisrine <a href="tel:199">(199)</a></li><li>Gydytojas <a href="tel:199">(199)</a></li><li>Policija <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="mongolia" title="Mongolija"><h3>Mongolija</h3><ol><li>Gaisrine <a href="tel:101">(101)</a></li><li>Gydytojas <a href="tel:103">(103)</a></li><li>Policija <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="nepal" title="Nepalas"><h3>Nepalas</h3><ol><li>Gaisrine <a href="tel:101">(101)</a></li><li>Gydytojas <a href="tel:228094">(228094)</a></li><li>Policija <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="oman" title="Omanas"><h3>Omanas</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:999">(999)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="pakistan" title="Pakistanas"><h3>Pakistanas</h3><ol><li>Gaisrine <a href="tel:16">(16)</a></li><li>Gydytojas <a href="tel:115">(115)</a></li><li>Policija <a href="tel:15">(15)</a></li></ol></ul>
+<ul id="southkorea" title="Piet&#371; Kor&#279;ja (Kor&#279;jos Respublika)"><h3>Piet&#371; Kor&#279;ja (Kor&#279;jos Respublika)</h3><ol><li>Gaisrine <a href="tel:119">(119)</a></li><li>Gydytojas <a href="tel:119">(119)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="easttimor" title="Ryt&#371; Timoras"><h3>Ryt&#371; Timoras</h3><ol><li>Gaisrine <a href="tel:--">(--)</a></li><li>Gydytojas <a href="tel:7233212">(7233212)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="saudiarabia" title="Saudo Arabija"><h3>Saudo Arabija</h3><ol><li>Gaisrine <a href="tel:998">(998)</a></li><li>Gydytojas <a href="tel:997">(997)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="northkorea" title="&#352;iaur&#279;s Kor&#279;ja"><h3>&#352;iaur&#279;s Kor&#279;ja</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="singapore" title="Singapuras"><h3>Singapuras</h3><ol><li>Gaisrine <a href="tel:995">(995)</a></li><li>Gydytojas <a href="tel:995">(995)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="syria" title="Sirija"><h3>Sirija</h3><ol><li>Gaisrine <a href="tel:113">(113)</a></li><li>Gydytojas <a href="tel:110">(110)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="srilanka" title="&#352;ri Lanka"><h3>&#352;ri Lanka</h3><ol><li>Gaisrine <a href="tel:111">(111)</a></li><li>Gydytojas <a href="tel:110">(110)</a></li><li>Policija <a href="tel:119 arba 112 mobilusis">(119 arba 112 mobilusis)</a></li></ol></ul>
+<ul id="tajikistan" title="Tad&#382;ikistanas"><h3>Tad&#382;ikistanas</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:03">(03)</a></li><li>Policija <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="thailand" title="Tailandas"><h3>Tailandas</h3><ol><li>Gaisrine <a href="tel:199">(199)</a></li><li>Gydytojas <a href="tel:191">(191)</a></li><li>Policija <a href="tel:191 arba 1155 (turistams)">(191 arba 1155 (turistams))</a></li></ol></ul>
+<ul id="taiwan" title="Taivanas"><h3>Taivanas</h3><ol><li>Gaisrine <a href="tel:119">(119)</a></li><li>Gydytojas <a href="tel:119">(119)</a></li><li>Policija <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="turkmenistan" title="Turkm&#279;nistanas"><h3>Turkm&#279;nistanas</h3><ol><li>Gaisrine <a href="tel:03">(03)</a></li><li>Gydytojas <a href="tel:03">(03)</a></li><li>Policija <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="uzbekistan" title="Uzbekija"><h3>Uzbekija</h3><ol><li>Gaisrine <a href="tel:03">(03)</a></li><li>Gydytojas <a href="tel:03">(03)</a></li><li>Policija <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="vietnam" title="Vietnamas"><h3>Vietnamas</h3><ol><li>Gaisrine <a href="tel:114">(114)</a></li><li>Gydytojas <a href="tel:115">(115)</a></li><li>Policija <a href="tel:113">(113)</a></li></ol></ul>
+
+
+
+<ul id="ireland" title="Airija"><h3>Airija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="albania" title="Albanija"><h3>Albanija</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:17">(17)</a></li><li>Policija <a href="tel:19">(19)</a></li></ol></ul>
+<ul id="andorra" title="Andora"><h3>Andora</h3><ol><li>Gaisrine <a href="tel:118">(118)</a></li><li>Gydytojas <a href="tel:118">(118)</a></li><li>Policija <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="austria" title="Austrija"><h3>Austrija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="belarus" title="Baltarusija"><h3>Baltarusija</h3><ol><li>Gaisrine <a href="tel:01">(01)</a></li><li>Gydytojas <a href="tel:03">(03)</a></li><li>Policija <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="belgium" title="Belgija"><h3>Belgija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="bosniaandherzegovina" title="Bosnija ir Hercegovina"><h3>Bosnija ir Hercegovina</h3><ol><li>Gaisrine <a href="tel:123">(123)</a></li><li>Gydytojas <a href="tel:124">(124)</a></li><li>Policija <a href="tel:122">(122)</a></li></ol></ul>
+<ul id="bulgaria" title="Bulgarija"><h3>Bulgarija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="czechrepublic" title="&#268;ekijos Respublika"><h3>&#268;ekijos Respublika</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="denmark" title="Danija"><h3>Danija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="estonia" title="Estija"><h3>Estija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="greece" title="Graikija"><h3>Graikija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="iceland" title="Islandija"><h3>Islandija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="spain" title="Ispanija"><h3>Ispanija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="italy" title="Italija"><h3>Italija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="unitedkingdom" title="Jungtin&#279; Karalyst&#279;"><h3>Jungtin&#279; Karalyst&#279;</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="montenegro" title="Juodkalnija"><h3>Juodkalnija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="cyprus" title="Kipras"><h3>Kipras</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="kosovo" title="Kosovas"><h3>Kosovas</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="croatia" title="Kroatija"><h3>Kroatija</h3><ol><li>Gaisrine <a href="tel:93">(93)</a></li><li>Gydytojas <a href="tel:94">(94)</a></li><li>Policija <a href="tel:92">(92)</a></li></ol></ul>
+<ul id="latvia" title="Latvija"><h3>Latvija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="poland" title="Lenkija"><h3>Lenkija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="liechtenstein" title="Lichten&#353;teinas"><h3>Lichten&#353;teinas</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="lithuania" title="Lietuva"><h3>Lietuva</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="luxembourg" title="Liuksemburgas"><h3>Liuksemburgas</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="macedonia" title="Makedonija"><h3>Makedonija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="malta" title="Malta"><h3>Malta</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="moldova" title="Moldavija"><h3>Moldavija</h3><ol><li>Gaisrine <a href="tel:901">(901)</a></li><li>Gydytojas <a href="tel:903">(903)</a></li><li>Policija <a href="tel:902">(902)</a></li></ol></ul>
+<ul id="monaco" title="Monakas"><h3>Monakas</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="norway" title="Norvegija"><h3>Norvegija</h3><ol><li>Gaisrine <a href="tel:110">(110)</a></li><li>Gydytojas <a href="tel:113">(113)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="netherlands" title="Nyderlandai"><h3>Nyderlandai</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="portugal" title="Portugalija"><h3>Portugalija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="france" title="Pranc&#363;zija"><h3>Pranc&#363;zija</h3><ol><li>Gaisrine <a href="tel:18 arba 112">(18 arba 112)</a></li><li>Gydytojas <a href="tel:15 arba 112">(15 arba 112)</a></li><li>Policija <a href="tel:17 arba 112">(17 arba 112)</a></li></ol></ul>
+<ul id="romania" title="Rumunija"><h3>Rumunija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="russia" title="Rusija"><h3>Rusija</h3><ol><li>Gaisrine <a href="tel:01">(01)</a></li><li>Gydytojas <a href="tel:03">(03)</a></li><li>Policija <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="sanmarino" title="San Marinas"><h3>San Marinas</h3><ol><li>Gaisrine <a href="tel:116">(116)</a></li><li>Gydytojas <a href="tel:113">(113)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="serbia" title="Serbija"><h3>Serbija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="slovakia" title="Slovakija"><h3>Slovakija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="slovenia" title="Slov&#279;nija"><h3>Slov&#279;nija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:113">(113)</a></li></ol></ul>
+<ul id="finland" title="Suomija"><h3>Suomija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="sweden" title="&#352;vedija"><h3>&#352;vedija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="switzerland" title="&#352;veicarija"><h3>&#352;veicarija</h3><ol><li>Gaisrine <a href="tel:118 arba 112">(118 arba 112)</a></li><li>Gydytojas <a href="tel: 144 arba 112">( 144 arba 112)</a></li><li>Policija <a href="tel:117 arba 112">(117 arba 112)</a></li></ol></ul>
+<ul id="turkey" title="Turkija"><h3>Turkija</h3><ol><li>Gaisrine <a href="tel:110">(110)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:155">(155)</a></li></ol></ul>
+<ul id="ukraine" title="Ukraina"><h3>Ukraina</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="vaticancity" title="Vatikanas"><h3>Vatikanas</h3><ol><li>Gaisrine <a href="tel:115">(115)</a></li><li>Gydytojas <a href="tel:113">(113)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="hungary" title="Vengrija"><h3>Vengrija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="germany" title="Vokietija"><h3>Vokietija</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:110">(110)</a></li></ol></ul>
+
+
+
+<ul id="australia" title="Australija"><h3>Australija</h3><ol><li>Gaisrine <a href="tel:000 arba 112 mobilusis">(000 arba 112 mobilusis)</a></li><li>Gydytojas <a href="tel:000 arba 112 mobilusis">(000 arba 112 mobilusis)</a></li><li>Policija <a href="tel:000 arba 112 mobilusis">(000 arba 112 mobilusis)</a></li></ol></ul>
+<ul id="fiji" title="Fid&#382;is"><h3>Fid&#382;is</h3><ol><li>Gaisrine <a href="tel:9170">(9170)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="kiribati" title="Kiribatis"><h3>Kiribatis</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:994">(994)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="marshallislands" title="Mar&#353;alo salos"><h3>Mar&#353;alo salos</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:6254111 ">(6254111 )</a></li><li>Policija <a href="tel:6258666">(6258666)</a></li></ol></ul>
+<ul id="micronesia" title="Mikronezija"><h3>Mikronezija</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="newzealand" title="Naujoji Zelandija"><h3>Naujoji Zelandija</h3><ol><li>Gaisrine <a href="tel:111">(111)</a></li><li>Gydytojas <a href="tel:111">(111)</a></li><li>Policija <a href="tel:111">(111)</a></li></ol></ul>
+<ul id="nauru" title="Nauru"><h3>Nauru</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="palau" title="Palau"><h3>Palau</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="papuanewguinea" title="Papua ir Naujoji Gvineja"><h3>Papua ir Naujoji Gvineja</h3><ol><li>Gaisrine <a href="tel:110">(110)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:000">(000)</a></li></ol></ul>
+<ul id="solomonislands" title="Saliamono Salos"><h3>Saliamono Salos</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="samoa" title="Samoa"><h3>Samoa</h3><ol><li>Gaisrine <a href="tel:994">(994)</a></li><li>Gydytojas <a href="tel:996">(996)</a></li><li>Policija <a href="tel:995">(995)</a></li></ol></ul>
+<ul id="tonga" title="Tonga"><h3>Tonga</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:933">(933)</a></li><li>Policija <a href="tel:922">(922)</a></li></ol></ul>
+<ul id="tuvalu" title="Tuvalu"><h3>Tuvalu</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="vanuatu" title="Vanuatu"><h3>Vanuatu</h3><ol><li>Gaisrine <a href="tel:112">(112)</a></li><li>Gydytojas <a href="tel:112">(112)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+
+
+
+<ul id="antiguaandbarbuda" title="Antigva ir Barbuda"><h3>Antigva ir Barbuda</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="bahamas" title="Bahamai"><h3>Bahamai</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="barbados" title="Barbadosas"><h3>Barbadosas</h3><ol><li>Gaisrine <a href="tel:113">(113)</a></li><li>Gydytojas <a href="tel:115">(115)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="belize" title="Belizas"><h3>Belizas</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="dominica" title="Dominika"><h3>Dominika</h3><ol><li>Gaisrine <a href="tel:999">(999)</a></li><li>Gydytojas <a href="tel:999">(999)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="dominicanrepublic" title="Dominikos Respublika"><h3>Dominikos Respublika</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="elsalvador" title="El Salvadoras"><h3>El Salvadoras</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="grenada" title="Grenada"><h3>Grenada</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="greenland" title="Grenlandija"><h3>Grenlandija</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Policija <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li></ol></ul>
+<ul id="guatemala" title="Gvatemala"><h3>Gvatemala</h3><ol><li>Gaisrine <a href="tel:122">(122)</a></li><li>Gydytojas <a href="tel:123">(123)</a></li><li>Policija <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="haiti" title="Haitis"><h3>Haitis</h3><ol><li>Gaisrine <a href="tel:vietinio telefono ry&#353;io numeriais">(vietinio telefono ry&#353;io numeriais)</a></li><li>Gydytojas <a href="tel:118">(118)</a></li><li>Policija <a href="tel:114">(114)</a></li></ol></ul>
+<ul id="honduras" title="Honduras"><h3>Honduras</h3><ol><li>Gaisrine <a href="tel:198">(198)</a></li><li>Gydytojas <a href="tel:378654">(378654)</a></li><li>Policija <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="jamaica" title="Jamaika"><h3>Jamaika</h3><ol><li>Gaisrine <a href="tel:110">(110)</a></li><li>Gydytojas <a href="tel:110">(110)</a></li><li>Policija <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="unitedstatesofamerica" title="Jungtin&#279;s Amerikos Valstijos"><h3>Jungtin&#279;s Amerikos Valstijos</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="caymanislands" title="Kaimanu salos"><h3>Kaimanu salos</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="canada" title="Kanada"><h3>Kanada</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="costarica" title="Kosta Rika"><h3>Kosta Rika</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="cuba" title="Kuba"><h3>Kuba</h3><ol><li>Gaisrine <a href="tel:26811">(26811)</a></li><li>Gydytojas <a href="tel:26811">(26811)</a></li><li>Policija <a href="tel:26811">(26811)</a></li></ol></ul>
+<ul id="mexico" title="Meksika"><h3>Meksika</h3><ol><li>Gaisrine <a href="tel:060">(060)</a></li><li>Gydytojas <a href="tel:060">(060)</a></li><li>Policija <a href="tel:080">(080)</a></li></ol></ul>
+<ul id="nicaragua" title="Nikaragva"><h3>Nikaragva</h3><ol><li>Gaisrine <a href="tel:2650162">(2650162)</a></li><li>Gydytojas <a href="tel:2651761">(2651761)</a></li><li>Policija <a href="tel:118">(118)</a></li></ol></ul>
+<ul id="panama" title="Panama"><h3>Panama</h3><ol><li>Gaisrine <a href="tel:103">(103)</a></li><li>Gydytojas <a href="tel:2699778">(2699778)</a></li><li>Policija <a href="tel:104">(104)</a></li></ol></ul>
+<ul id="stkittsandnevis" title="Sent Kitsas ir Nevis"><h3>Sent Kitsas ir Nevis</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="stlucia" title="Sent Lusija"><h3>Sent Lusija</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="saintpierreandmiquelon" title="Sent Pjeras ir Mikelonas"><h3>Sent Pjeras ir Mikelonas</h3><ol><li>Gaisrine <a href="tel:18">(18)</a></li><li>Gydytojas <a href="tel:15">(15)</a></li><li>Policija <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="stvincentandgrenadines" title="Sent Vinsentas ir Grenadinai"><h3>Sent Vinsentas ir Grenadinai</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="trinidadandtobago" title="Trinidadas ir Tobagas"><h3>Trinidadas ir Tobagas</h3><ol><li>Gaisrine <a href="tel:990">(990)</a></li><li>Gydytojas <a href="tel:990">(990)</a></li><li>Policija <a href="tel:999">(999)</a></li></ol></ul>
+
+
+
+<ul id="argentina" title="Argentina"><h3>Argentina</h3><ol><li>Gaisrine <a href="tel:100">(100)</a></li><li>Gydytojas <a href="tel:107">(107)</a></li><li>Policija <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="bolivia" title="Bolivija"><h3>Bolivija</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="brazil" title="Brazilija"><h3>Brazilija</h3><ol><li>Gaisrine <a href="tel:193">(193)</a></li><li>Gydytojas <a href="tel:192">(192)</a></li><li>Policija <a href="tel:190">(190)</a></li></ol></ul>
+<ul id="chile" title="&#268;il&#279;"><h3>&#268;il&#279;</h3><ol><li>Gaisrine <a href="tel:132">(132)</a></li><li>Gydytojas <a href="tel:131">(131)</a></li><li>Policija <a href="tel:133">(133)</a></li></ol></ul>
+<ul id="ecuador" title="Ekvadoras"><h3>Ekvadoras</h3><ol><li>Gaisrine <a href="tel:102">(102)</a></li><li>Gydytojas <a href="tel:131">(131)</a></li><li>Policija <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="guyana" title="Gajana"><h3>Gajana</h3><ol><li>Gaisrine <a href="tel:912">(912)</a></li><li>Gydytojas <a href="tel:913">(913)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="colombia" title="Kolumbija"><h3>Kolumbija</h3><ol><li>Gaisrine <a href="tel:119">(119)</a></li><li>Gydytojas <a href="tel:119">(119)</a></li><li>Policija <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="paraguay" title="Paragvajus"><h3>Paragvajus</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="peru" title="Peru"><h3>Peru</h3><ol><li>Gaisrine <a href="tel:116">(116)</a></li><li>Gydytojas <a href="tel:116">(116)</a></li><li>Policija <a href="tel:105">(105)</a></li></ol></ul>
+<ul id="suriname" title="Surinamas"><h3>Surinamas</h3><ol><li>Gaisrine <a href="tel:115">(115)</a></li><li>Gydytojas <a href="tel:115">(115)</a></li><li>Policija <a href="tel:115">(115)</a></li></ol></ul>
+<ul id="uruguay" title="Urugvajus"><h3>Urugvajus</h3><ol><li>Gaisrine <a href="tel:911">(911)</a></li><li>Gydytojas <a href="tel:911">(911)</a></li><li>Policija <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="venezuela" title="Venesuela"><h3>Venesuela</h3><ol><li>Gaisrine <a href="tel:171">(171)</a></li><li>Gydytojas <a href="tel:171">(171)</a></li><li>Policija <a href="tel:171">(171)</a></li></ol></ul>
+
+
+
+</body>
+</html>

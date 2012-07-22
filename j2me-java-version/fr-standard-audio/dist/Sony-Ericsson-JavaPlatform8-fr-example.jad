@@ -1,0 +1,9 @@
+MIDlet-Name: Premiers Secours 3.0 audio
+MIDlet-Version: 3.0
+MIDlet-Vendor: Kai Kajus Noack
+MIDlet-Jar-URL: Sony-Ericsson-JavaPlatform8-fr-example.jar
+MIDlet-Jar-Size: 7970526
+MIDlet-Icon: /icon.png
+MIDlet-Info-URL: http://www.firstai.de
+MIDlet-1: Premiers Secours 3.0 audio,icon.png,de.firstai.FirstAid3
+MIDlet-Delete-Confirm: Supprimer logiciel?

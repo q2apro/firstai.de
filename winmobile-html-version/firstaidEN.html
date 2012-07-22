@@ -1,0 +1,1006 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>First Aid Windows Mobile 1.0</title>
+<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<meta name="description" content="Version for First Aid on your Mobile - Internet Explorer Mobile - including all images" />
+<!-- 	Copyright of Web-Application 
+	CC by-nc-nd 3.0 (c) Kai Kajus Noack-->
+	<style type="text/css" media="screen">@import "iui/iui.css";</style>
+	<style type="text/css" media="screen">		</style>
+	
+	<script language="javascript" type="text/javascript">
+	var recentLayer = 'home'; 
+	var lastLayer = '';
+	var level = 0;
+	function showAid(what) {
+		if (what != 'home') {
+			level ++;
+			document.getElementById("home").style.display = "none"; 
+			document.getElementById(recentLayer).style.display = "none"; 
+			document.getElementById(what).style.display = "block"; 
+			document.getElementById("menuButton").style.display = "none"; 
+			document.getElementById("backButton").style.display = "inline"; 
+		}
+		else {
+			document.getElementById(recentLayer).style.display = "none"; 
+			document.getElementById("home").style.display = "block"; 
+			document.getElementById("menuButton").style.display = "inline"; 
+			document.getElementById("backButton").style.display = "none"; 
+			level = 0;
+		}
+		lastLayer = recentLayer; 
+		recentLayer = what;
+	}
+	function showLast() {
+		level -= 2;
+		if (level < 0) { showAid('home'); }
+		else { showAid(lastLayer); }
+	}
+	
+	function startScreen() {
+		document.getElementById(recentLayer).style.display = "none"; 
+		document.getElementById("home").style.display = "block"; 
+		document.getElementById("menuButton").style.display = "inline"; 
+		document.getElementById("backButton").style.display = "none"; 
+	}
+		
+	</script>
+</head>
+
+<body>
+    <div id="toptoolbar" class="toolbar">
+	<h1 id="pageTitle">First Aid winMobile 1.0</h1><!-- <span id="pageTitle" style="line-height:42px; padding: 10px 0px 15px 0px; font-size: 13px; font-weight: bold; color: #FFFFFF;">First Aid winMobile 1.0</span>-->
+	<a id="menuButton" class="button" href="#toptoolbar" onclick="showAid('menu')">Menu</a>
+	<a id="backButton" class="button" href="#toptoolbar" onclick="showLast()">Back</a>
+    </div>
+
+    <ul id="home" title="First Aid Windows Mobile 1.0">
+        <li><a href="#toptoolbar" onclick="showAid('aid_disclaimer')"># Disclaimer + Info!</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('telEmergency')"># Emergency Calls</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_general')"># General Conduct</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_allergic')">Allergic Reaction</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_amputation')">Amputation</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_animalbite')">Animal bite</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_apnoea')">Apnoea</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_asthma')">Asthma</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_backinjury')">Back Injury</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_birth')">Birth</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_bleedinglight')">Bleeding (light)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_bleedingsevere')">Bleeding (severe)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_brainconcussion')">Brain Concussion</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_apnoea')">Breathing</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_asthma')">Breathlessness</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_burningslight')">Burning (slight)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_burningsevere')">Burning (severe)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_checkbreathing')">Check Breathing</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_chemicalburneyes')">Chemical Burn (Eyes)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_chemicalburn')">Chemical Burn</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_resuscitation')">Chest Compression</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_suffocation')">Choking</a></li> <!-- -->
+        <li><a href="#toptoolbar" onclick="showAid('aid_dangerzone')">Danger Zone (Rescue)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_diabeticcoma')">Diabetic Coma</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_diarrhoea')">Diarrhoea</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_drowning')">Drowning</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_electricityaccident')">Electricity Accident</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_emergencycall')">Emergency Call</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_epilepsy')">Epilepsy</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_eyeinjury')">Eye Injury</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_fracture')">Fracture</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_frostbitemild')">Frostbite (mild)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_frostbitesevere')">Frostbite (severe)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_heartattack')">Heart Attack</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_diabeticcoma')">Hyperglycaemia (sugar)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_hypoglycaemia')">Hypoglycaemia (low sugar)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_hyperthermia')">Hyperthermia (hot body)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_hypothermia')">Hypothermia (cool body)</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_icerescue')">Ice Rescue</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_insectstings')">Insect stings</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_nosebleeding')">Nosebleeding</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_poisining')">Poisoning</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_resuscitation')">Reanimation</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">Recovery Position</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_resuscitation')">Resuscitation</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_safeguardaccident')">Safeguard Accident</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_shock')">Shock</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_skullfracture')">Skull fracture</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_snakebite')">Snakebite</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_sos')">SOS</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_backinjury')">Spinal fracture</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_sprain')">Sprain + Strain</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_stroke')">Stroke</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_suffocation')">Suffocation</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_sunburn')">Sunburn</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_sunstroke')">Sunstroke</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_suffocation')">Swallow/Choking</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_safeguardaccident')">Traffic Accident</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithbreath')">Unconscious with breathing</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithoutbreath')">Unconscious without breathing</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('aid_vomiting')">Vomiting</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('cclicence')"><img style="margin-top:4px; margin-bottom:2px;" src="iui/cc88x31.png" /> </a></li>
+    </ul>
+   
+   
+<ul id="aid_disclaimer" title="Disclaimer + Info"><h3>Disclaimer + Info</h3>
+<ol><li><b>Software</b><br />
+First Aid on your Mobile<br />
+Version: w1.0<br />
+Release: 2008-12-24<br />
+Copyright: Kai Kajus Noack<br /><br />
+Licence: Creative Commons <br /><a href="#toptoolbar" onclick="showAid('cclicence')"><img style="border:none; margin: 0px 0px 20px 0px;" alt="Creative Commons" src="iui/cc88x31.png" /></a><br />
+This program is supposed to give information on first aid. However, it does not represent a substitute to a first aid course. It rather serves you refreshing your already acquired knowledge.<br /><br />Illustrations &copy; <a target="_blank" href="http://stefan.ganz.priv.at/">Med4Teens</a></li><br /><br />
+<li><b>Disclaimer</b><br />
+Please note that I take no responsibility for consequences resulting from the use of the software.<br />
+ANY LIABILITY IS EXCLUDED!<br />
+USE AT YOUR OWN RISK!<br /><br />
+In all emergencies, please seek professional help immediately.</li><br /><br />
+<li><b>Project Development</b><br />
+
+The program is supposed to become multilingual. <b>Voluntary Translators</b> needed!!<br /><br />
+Further information is available on the Internet <a href="http://www.firstai.de">www.firstai.de</a> or write an email to: <script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>"+emailME+"</a>"); </script></li><br /><br />
+<span style="font-style:italic;font-size:80%">To save one life is to have saved the world.</span><br /></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul><br />
+
+
+<ul id="aid_general" title="General Conduct"><h3>General Conduct</h3>
+<ol><li>Always perform first aid. You cannot make any mistakes.</li>
+<li>Always pay attention to your own safety.</li>
+<li>Examine the situation and secure the accident place.</li>
+<li>Emergency call + First Aid measures!</li>
+<li>If there are several casualties, the treatment of the most harmed has priority.</li>
+<li>Always try to calm down the person concerned. Stay calm yourself!</li>
+<li>If possible lay her/him down comfortably. Never give alcohol, nicotine or drugs to a person who is the victim of an accident.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_allergic" title="Allergic Reaction"><h3>Allergic Reaction</h3><br /><img style="border:none;" src="images/aid046.png" />
+<ol><li>Phone for an ambulance immediately.</li>
+<li>Try to calm down the casualty and let him sit comfortable.</li>
+<li>Remove allergic causing matter (e.g. sting of a bee) carefully.</li>
+<li>Cool affected skin (wet compress, ice). <br /><img style="border:none;" src="images/aid046ice.png" /></li>
+<li>If casualty has an antidote, he should use it (help him).</li>
+<li>Monitor casualty's condition until ambulance arrives.</li>
+<li>If casualty loses consciousness or breathing stops, follow appropriate instructions! <br /><img src="images/aid077.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_amputation" title="Amputation"><h3>Amputation</h3>
+<p>Amputated body part can be reattached again. Goal: Keep amputated part cool until you arrive at hospital. </p>
+<ol><li>Calm the person, lay him/her down, and cover with blanket.</li>
+<li>Stop the bleeding, see 'Bleeding (severe)' and 'Shock'.</li>
+<li>Wrap amputated part in a clean and dry cloth, and put it into a waterproof plastic bag. </li>
+<li>Close this plastic bag and put it into another plastic bag, that contains cool water/ice. </li>
+<li>Do not give alcohol, cigarettes or food to casualty (in case of a surgery with anaesthesia in hospital). </li>
+<li>Do not freeze the amputated part (just keep it cool). </li>
+<li>Call emergency or drive casualty to hospital yourself.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_animalbite" title="Animal bite"><h3>Animal bite</h3> <br /><img src="images/aid047.png" />
+<p> Attention: High danger of infection. Result could be infection, tetanus, rabies.</p>
+<ol><li>Wash wound with hot soapy water. <br /><img src="images/aid049.png" /></li>
+<li>Afterwards disinfect the wound.</li>
+<li>If there is severe bleeding, elevate the person's upper body.</li>
+<li>Apply an aseptic bandage. <br /><img src="images/aid085.png" /></li>
+<li>Go to a hospital or call emergency doctor.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_apnoea" title="Apnoea"><h3>Apnoea</h3>
+<p> No breathing sounds or breath movements, noticeable discolouration of the skin.</p>
+<ol><li>Emergency call.</li>
+<li>Lay casualty on his/her back.</li>
+<li>Remove any substances from the mouth and throat. Stretch head backwards. <br /><img src="images/aid067.png" /></li>
+<li>Pinch the nose, so that nose is closed. <br /><img src="images/aid010.png" /></li>
+<li>Take a deep breath and put your mouth onto the mouth of the casualty, that no air can leak. <br /><img src="images/aid011.png" /></li>
+<li>Breath out slowly and fully.</li>
+<li>If without success: Do breathing as long as ambulance arrives.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_asthma" title="Asthma"><h3>Asthma</h3>
+<p>Heavy breathlessness. Wheezing respiratory noise. Anxieties.</p>
+<ol><li>Calm the person. Stay calm yourself!</li>
+<li>Loosen clothing.</li>
+<li>Let casualty sit and lean forward, encourage him/her to breath slowly and deeply.</li>
+<li>If casualty has an inhalator, he should use it (help him). After 5-10 min it should take effect. <br /><img src="images/aid074.png" /></li>
+<li>If there is no improvement: Use inhalator every 5 min until ambulance arrives.</li>
+<li>Emergency call.</li>
+<li>If apnoea (cessation of breathing) occurs, follow instructions given for apnoea.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_backinjury" title="Back Injury"><h3>Back Injury</h3>
+<p> Pain in the back, numb arms and legs.</p>
+<ol><li>Do not move the casualty!! <br /><img src="images/aid064.png" /></li>
+<li>Hold the head so that the person lies still (keep their head stationary) <br /><img src="images/aid065.png" /></li>
+<li>Stabilize the casualty with bolsters on either side.</li>
+<li>Calm the person.</li>
+<li>Emergency call, point out the back injury.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_birth" title="Birth"><h3>Birth</h3>
+<p> Outflow of amniotic fluid. Contraction pains occur. Unexpected birth.</p> <br /><img src="images/aid025.png" />
+<ol><li>Pay attention to privacy and keep calm! - Emergency call.</li>
+<li>Let the pregnant woman bare the lower part of her body, and sit down on a sterile underlay with spread legs.</li>
+<li>Angle the knees. Pull up the legs. Position the basin slightly upward. - Birth is a natural process and runs mostly without complications.</li>
+<li>Calm the woman, let her concentrate on her breathing: Breathe in through nose, breathe out through mouth (in normal speed).</li>
+<li>Rhythm of pressing: Take a deep breath, hold breath, and press. As soon as the baby's head appears, support by taking hold of it with both of your hands. <br /><img src="images/aid021.png" /> <br /><img src="images/aid022.png" /></li>
+<li>After the childbirth: Hold the baby on a slant with head down to liberate the airways from amniotic fluid. (You may have to suck out the fluid from the baby's nose by mouth.) The baby must breathe and cry!</li>
+<li>Bind off the umbilical cord 30 cm away from the child (can also be done in hospital). Keep the vagina of the mother sterile. <br /><img src="images/aid023.png" /></li>
+<li>Dry the baby and keep it warm. Note the time and drive to the hospital.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_bleedinglight" title="Bleeding (light)"><h3>Bleeding (light)</h3> <br /><img src="images/aid082.png" />
+<p> Goal: Stop the bleeding.</p>
+<ol><li>Do not touch the wound (danger of infection).</li>
+<li>Do not treat wound with powder, salves or sprays.</li>
+<li>Wound treatment: cover with sterile material and a bandage. <br /><img src="images/aid098.png" /></li>
+<li>For slight bleeding a plaster is often sufficient.</li>
+<li>If wound is large-scale, use a wound cover and a bandage. Do not apply bandage too tight, as a stasis can lead to increased bleeding. <br /><img src="images/aid084.png" /><br /><img src="images/aid085.png" /></li>
+<li>Note: Wounds as a result of the bite from a rabid animal have to be washed with soapy solution. <br /><img src="images/aid049.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_bleedingsevere" title="Bleeding (severe)"><h3>Bleeding (severe)</h3>
+<p> Splashing, pulsating blood. Danger: Choking because of blood loss, infections, death. Goal: Stop the bleeding.</p>
+<ol><li>Remove clothes (cut if necessary) and reveal wound.</li>
+<li>Wrap a bandage or, if necessary, a garment with pressure around the wound. <br /><img src="images/aid086.png" /></li>
+<li>Exert pressure for at least 10 min.</li>
+<li>If bandage is soaked with blood, do not remove it. Instead wrap another bandage/garment around it.</li>
+<li>Place the affected limb (if not broken) higher than the heart to reduce amount of blood pressure. If possible lay down casualty.</li>
+<li>If bleeding does not stop, keep pressure on wound, and set additional pressure point on wound: For a bleeding of the forearm compress the upper arm (press vein at inner side of arm, in the middle of elbow and arm-pit, using your fingers). For bleeding of leg, set pressure point in groin (press vein at crook of groin, where artery leads over pelvic bone, using the ball of your hand). <br /><img src="images/aid089.png" /><br /><img src="images/aid092.png" /></li>
+<li>Call emergency doctor immediately.</li>
+<li>As soon as bleeding is under control: Initiate anti-shocking measures. <br /><img src="images/aid093.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_brainconcussion" title="Brain Concussion"><h3>Brain Concussion</h3>
+<p> Headache, nausea, vomiting. Impaired vision. Unconsciousness can occur.</p> <br /><img src="images/aid035a.png" />
+<ol><li>Lay down person concerned.</li>
+<li>Emergency call.</li></ol>
+<p> If bleeding from head:</p>
+<ol><li>Lay down casualty, with the head elevated (on pillow). <br /><img src="images/aid061.png" /></li>
+<li>Do wound-treatment (use head-bandage).</li>
+<li>Emergency call.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+
+
+
+
+<ul id="aid_burningslight" title="Burning (slight)"><h3>Burning (slight)</h3>
+<p> Redness of skin. Mild swellings. Pain.</p>
+<ol><li>Hold area involved under cool water. <br /><img src="images/aid100.png" /></li>
+<li>Apply wet bandage loosely.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_burningsevere" title="Burning (severe)"><h3>Burning (severe)</h3>
+<p> Spotted white-red areas, blistering. Skin loses fluid. Deep damage of tissue. Strong pain or no pain (because of burned nerves).</p> <br /><img src="images/aid097.png" />
+<ol><li>Remove clothes as much as possible.</li>
+<li>Cool burned body parts with water (about 15°C, 59°F) up to 10 min, until pain reduces. <br /><img src="images/aid100.png" /></li>
+<li>If burning is extensive, just use wet cloths to cool.</li>
+<li>Emergency call.</li>
+<li>After cooling, do the wound treatment: Use a sterile dressing. Do not apply fluids (no creams, oils, ointments etc.). Do not pierce the blisters. <br /><img src="images/aid085.png" /></li>
+<li>Control breathing and consciousness of the person until emergency doctor arrives.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_checkbreathing" title="Check Breathing"><h3>Check Breathing</h3>
+<ol><li>Check breathing sounds.</li>
+<li>Diagnose breathing in the upper abdomen (lay your hand on it). <br /><img src="images/aid027.png" /></li>
+<li>Sense breathing at nose and mouth.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_chemicalburneyes" title="Chemical Burn (Eyes)"><h3>Chemical Burn (Eyes)</h3>
+<ol><li>Emergency call, point out chemicals.</li>
+<li>Flush eye with much water. Cover healthy eye during flushing.</li>
+<li>Lead the water jet from inner angle of eye to outer angle of eye. Clean for at least 20 min under clear water. <br /><img src="images/aid019.png" /></li>
+<li>Close both eyes of the casualty and bind with wet cloth. <br /><img src="images/aid020.png" /></li>
+<li>Monitor condition until ambulance arrives.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_chemicalburn" title="Chemical Burn"><h3>Chemical Burn</h3>
+<p> Injury of tissue.</p> <br /><img src="images/aid095.png" />
+<ol><li>Mind self-protection!</li>
+<li>Act quickly and wash the burned locations. <br /><img src="images/aid100.png" /></li>
+<li>Emergency call.</li>
+<li>If there is a chemical burn of the digestive tract, particularly the mouth and throat, drink a lot of water.</li>
+<li>Do not cause vomiting!</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+
+
+<ul id="aid_dangerzone" title="Danger Zone (Rescue)"><h3>Danger Zone (Rescue)</h3>
+<ol><li>Grip execution: Position one arm of the injured in front of his/her chest, and get behind him/her.</li>
+<li>Put your hands under the shoulders of the wounded, grabbing the angled arm.</li>
+<li>Pull back and carry the person into safety. <br /><img src="images/aid001.png" /> <br /><img src="images/aid007.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_diabeticcoma" title="Diabetic Coma"><h3>Diabetic Coma</h3>
+<p> Blood sugar level is too high (resp. lack of insulin).</p>
+<ol><li> Symptoms: Thirst, frequent urination, nausea, vomit. Breath smells of fruits/wine.</li>
+<li>Call emergency.</li>
+<li>Support casualty (if confirmed as diabetic) taking insulin. <br /><img src="images/aid016.png" /></li>
+<li><a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">Recovery position.</a> (No further possibilities for the first aider.)</li>
+<li>Monitor the condition of the casualty until emergency doctor arrives.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_diarrhoea" title="Diarrhoea"><h3>Diarrhoea</h3>
+<p>Reaction to contaminated food, infection of intestine or disorder. Stool is diluted, slimy or bloody.</p>
+<ol><li>Danger for the circulation because of dehydration and loss of salt!</li>
+<li>Give liquids (tea, water).</li>
+<li>If there are strong disorders call the emergency doctor.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_drowning" title="Drowning"><h3>Drowning</h3>
+<ol><li>Call emergency. Ask people next to you for help. <br /><img src="images/aid032.png" /></li>
+<li>Rescue person out of water! <br /><img src="images/aid033.png" /> <br /><img src="images/aid034.png" /></li>
+<li>If casualty is breathing: <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">Recovery position.</a> Keep him/her warm (cover). Monitor condition until emergency doctor arrives.</li>
+<li>If casualty is not breathing: Immediately start with <a href="#toptoolbar" onclick="showAid('aid_aid_resuscitation')">resuscitation!</a> (Ejecting water from the lungs is useless.)</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_electricityaccident" title="Electricity Accident"><h3>Electricity Accident</h3>
+<ol><li>Firstly interrupt the electricity supply! <br /><img src="images/aid045plug.png" /> <br /><img src="images/aid045.png" />
+    Danger: Unconsciousness, apnoea.</li>
+<li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithbreath')">A - Unconsciousness with breathing</a></li>
+<li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithoutbreath')">B - Unconsciousness without breathing</a> <br /><img src="images/aid042.png" /> <br /><img src="images/aid043.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_emergencycall" title="Emergency Call"><h3>Emergency Call</h3>
+<ol><li>Dial 112 with the next available phone (USA: 911). Always possible and for free! Do not hesitate to call for an ambulance!</li><li>On the phone you must provide the following information:<br />- What has happened <br />- Where (accident place) <br />- How many casualties <br />- What kind of injuries. <br />Afterwards wait for further instructions or queries.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_epilepsy" title="Epilepsy"><h3>Epilepsy</h3>
+<p> Rigid body, clenched fists, pressed jaw, twitching in limbs or face. Rolling eyes. Salivation. Unconsciousness possible.</p> <br /><img src="images/aid058.png" />
+<ol><li>Do not hold the casualty or restrain their movement.</li>
+<li>Lay the casualty on a soft base (cushion), remove close objects to prevent self-injury.</li>
+<li>Calm down the casualty. Loosen clothing, provide freedom to breath.</li>
+<li>If casualty vomits, turn their head to the side so that vomit can drain.</li>
+<li>Keep airways clear. Danger of swallowing the tongue.</li>
+<li><a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">Recovery Position</a> + Emergency call. Continue monitoring the casualty's condition.</li>
+<li>Keep other people at distance.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_eyeinjury" title="Eye Injury"><h3>Eye Injury</h3>
+<ol><li>Leave object in the eye of casualty, do not remove it.</li>
+<li>Keep eyes motionless to avoid further injuries. Do not touch the eye.</li>
+<li>If eye is bleeding, cover it with a compress or a sterile gauze. <br /><img src="images/aid020.png" /></li>
+<li>Cool the eye with a cold pad (reduces swelling, bleeding stops quicker).</li>
+<li>Emergency call or drive casualty to hospital yourself.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_fracture" title="Fracture"><h3>Fracture</h3>
+<p> Symptoms: Unnatural position and movability of bone. Deformation. Painful movement, touch-sensitive.</p> <br /><img src="images/aid104.png" />
+<ol><li>Avoid movements!</li>
+<li>Emergency call.</li>
+<li>Immobilize the fractured bone, i.e. bolster material around bone tightly. Keep position of the bone. <br /><img src="images/aid107.png" /></li>
+<li>If fracture is open, cover the wound with sterile material. <br /><img src="images/aid106.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_frostbitemild" title="Frostbite (mild)"><h3>Frostbite (mild)</h3>
+<p> Paleness, swellings. Danger for blood supply.</p>
+<ol><li>Move casualty into a warm area.</li>
+<li>Get away from cold, remove cold clothes, dry person.</li>
+<li>Warm up with lukewarm water and with body heat of the helper.</li>
+<li>Give warm drink (tea). No alcohol! <br /><img src="images/aid040.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_frostbitesevere" title="Frostbite (severe)"><h3>Frostbite (severe)</h3>
+<p> Cold hard skin, grey-white, blistering, tissue dies off. Danger for blood supply!</p> <br /><img src="images/aid096.png" />
+<ol><li>Go to warm area.</li>
+<li>Wound treatment/covering.</li>
+<li>Give a sugary drink.</li>
+<li>Do not rub the casualty to warm them!</li>
+<li>Emergency call.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_heartattack" title="Heart Attack"><h3>Heart Attack</h3>
+<p> Heavy, more than 5 min lasting pressure and pain in the chest, particularly radiating in the arms/shoulders. Anxiety, paleness, cold sweat. Possibly nausea, shortness of breath.</p> <br /><img src="images/aid076.png" /> <br /><img src="images/aid083.png" />
+<ol><li>Emergency call! Point out the supposed heart attack.</li>
+<li>Position with the upper body elevated. Loosen tight clothing. Do not give drugs or drinks. <br /><img src="images/aid061.png" /></li>
+<li>Talk calmly to the person concerned.</li>
+<li>Control consciousness and breathing.</li>
+<li>Give aspirin if available.</li>
+<li>If person becomes unconscious, start <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">resuscitation</a>.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+
+
+<ul id="aid_hypoglycaemia" title="Hypoglycaemia (low sugar)"><h3>Hypoglycaemia (low sugar)</h3>
+<p>Blood sugar level is below minimum value (because of overdose of insulin or insufficient intake of food).<br/>
+ Symptoms: Paleness, nervousness, hunger, shivering, sweating.</p> <br /><img src="images/aid018.png" />
+<ol><li>Make sure that the person is a diabetic (look for a diabetic badge).</li>
+<li>Emergency call.</li>
+<li>Give a sugary drink and dextrose/glucose (if there are no problems in swallowing). <br /><img src="images/aid017.png" /></li>
+<li>If person is conscious and breathing: <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">Recovery position</a>. Monitor breathing of the person. If apnoea appears, start with breath giving.</li>
+<li>If there is breathing, you can put a lump of sugar into the cheek pouch, push from outside against it.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_hyperthermia" title="Hyperthermia (hot body)"><h3>Hyperthermia (hot body)</h3>
+<p> Thirst, weakness, disorientation, nausea, confusion, strong sweating, hot skin.</p> <br /><img src="images/aid035.png" />
+<ol><li>Emergency call.</li>
+<li>Find a cool shady place (room with air conditioning preferable).</li>
+<li>Lay down person, elevate legs. Loosen clothing. <br /><img src="images/aid078.png" /></li>
+<li>Cool skin with cold water or lay on cold towels.</li>
+<li>Give plenty of water or juices to drink.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_hypothermia" title="Hypothermia (cool body)"><h3>Hypothermia (cool body)</h3>
+<p> Cold shiver, drowsiness, exhaustion up to unconsciousness. Cold pale skin. Slow pulse, weak heartbeat.</p> <br /><img src="images/aid014.png" />
+<ol><li>Go to a warm area/room.</li>
+<li>Call emergency.</li>
+<li>Increase body temperature (cover and body-to-body-contact).</li>
+<li>Remove wet clothes and put on warm clothes. Cover with blankets or other covers. Cover the head.</li>
+<li>Give hot tea, soup or hot water to drink. No alcohol! Keep person awake. <br /><img src="images/aid039.png" /> <br /><img src="images/aid040.png" /></li>
+<li>Monitor casualty's condition until emergency doctor arrives. If person becomes unconscious, initiate resuscitation:</li>
+<li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithbreath')">A - Unconsciousness with breathing</a></li>
+<li><a href="#toptoolbar" onclick="showAid('aid_unconsciouswithoutbreath')">B - Unconsciousness without breathing</a></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_icerescue" title="Ice Rescue"><h3>Ice Rescue</h3>
+<p> Pay attention to your own safety. Danger: Drowning, Hypothermia.</p>
+<ol><li>Ask other people for help. Call for an emergency ambulance.</li>
+<li>Rescue via ladder, board or bar. Weight must be distributed evenly.</li>
+<li>Crawl carefully on your front along the support (if possible roped to a stable point) with a pole or similar tool. <br /><img src="images/aid041.png" /></li>
+<li>Reach to the person with the pole or other tool (not your hand!), encourage him/her to take hold of it and pull him/her out.</li>
+<li>Crawl backwards back to the edge.</li>
+<li>First-Aid measures.</li>
+<li>Self-rescue possible: If ice is solid, you can distribute your weight on the ice and pull yourself out. Crawl flat on your front to the edge. If ice is fragile, try to break the ice piece by piece up to the edge.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_insectstings" title="Insect stings"><h3>Insect stings</h3> <br /><img src="images/aid046.png" />
+<p> Swelling, skin rash, burning feeling, weakness, difficult breathing, decreased consciousness, tachycardia.</p>
+<ol><li>Remove sting carefully (with a tweezer). Do not squeeze the sting as this could inject more venom.</li>
+<li>Cool concerned spot (apply a cold compress).</li>
+<li>Concerned area should be kept lower than the heart to slow circulation of the venom.</li>
+<li>If stung in mouth/jaw area: Suck ice-cream, and apply a cold compress around throat. <br /><img src="images/aid046ice.png" /></li>
+<li>If severe problems, notably difficulty in breathing or decreased consciousness, occur, call an ambulance immediately.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_nosebleeding" title="Nosebleeding"><h3>Nosebleeding</h3>
+<p> Burst small artery in the nose.</p>
+<ol><li>Sit the person down, leaning slightly forward. Keep head straight.</li>
+<li>Do not position the person flat, as head over height of heart slows down bleeding.</li>
+<li>Place cooling material round neck (wet cloth).</li>
+<li>Pinch nostrils together until bleeding stops (for 10 min).</li>
+<li>Afterwards do not strain the nose (no snorting).</li>
+<li>If severe problems occur or bleeding cannot be stopped, call emergency doctor.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_poisining" title="Poisoning"><h3>Poisoning</h3> <br /><img src="images/aid052.png" />
+<p> Confusion, hallucinations, enlarged pupils, fever, cramps. Unconsciousness.</p>
+<ol><li>Only give antidotes if you are accompanied by a trained medic. <br /><img src="images/aid056.png" /></li>
+<li>Do not give drinks. Do not cause vomiting.</li>
+<li>Emergency call + point out the poisoning!</li>
+<li>Safeguard rest of poison and the vomit! <br /><img src="images/aid054a.png" /></li>
+<li>If casualty is conscious and breathing: <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">Recovery position.</a> Monitor condition until emergency doctor arrives.</li>
+<li>If casualty is not breathing: Immediately start with <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">resuscitation!</a> Free mouth from vomit beforehand.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+
+
+<ul id="aid_recoveryposition" title="Recovery Position"><h3>Recovery Position</h3>
+<ol><li>Lay casualty on her/his back, straighten legs. Knee beside him/her.</li>
+<li>Place arm nearest to you at a right angle to the body.</li>
+<li>Pull arm furthest from you across the chest and place the back of the hand against cheek. <br /><img src="images/aid008.png" /></li>
+<li>Get the far knee, pull it to your side, and lay it on the ground. Position the leg at a right angle. Keep casualty's hand under the cheek of the person.</li>
+<li>Make sure the airways are free.</li>
+<li>Open mouth slightly, and position the head to the side so that vomit can drain. Check breathing. <br /><img src="images/aid009.png" /></li>
+<li>Control the casualty's condition until the emergency doctor arrives.</li><li>Recovery position for babies: <br /><img src="images/aid028.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_resuscitation" title="Resuscitation"><h3>Resuscitation</h3>
+<p><b>#Heart Massage</b></p>
+<ol><li>Lay casualty on his/her back. Kneel beside person.</li>
+<li>Bare the chest.</li>
+<li>Place the heel of the hand in the middle of the chest (just over sternum). <br /><img src="images/aid013.png" /></li>
+<li>Place other hand on the back of the hand which is already in position.</li>
+<li>Extend your arms and elbows. <br /><img src="images/aid003.png" /></li>
+<li>Press 5 cm deep into the person's chest (power comes from upper part of the body) and release.</li>
+<li>Push 30 times in a row shortly and strongly!</li></ol>
+<p><b>#Breathing</b></p>
+<ol><li>Remove any substances out of mouth and throat. Stretch head backwards. <br /><img src="images/aid067.png" /></li>
+<li>Pinch the nose together, so that nose is closed. <br /><img src="images/aid010.png" /></li>
+<li>Take a deep breath and put your mouth onto the mouth of the casualty, that no air can leak. <br /><img src="images/aid011.png" /></li>
+<li>Do mouth-to-mouth breathing two times (breath out slowly and fully).</li>
+<li>Afterwards do heart massage again.<br /><br />
+Repeat heart massage + mouth-breathing until the emergency doctor arrives. <br /><img src="images/aid012.png" /></li></ol> <p><b># Resuscitation (Baby)</b></p> <ol><li>Only use two fingers: <br /><img src="images/aid029.png" /></li> <li>Do not breath too strong: <br /><img src="images/aid030.png" /></li> </ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_safeguardaccident" title="Safeguard Accident"><h3>Safeguard Accident</h3>
+<ol><li>Stop your own car 50-100 m behind the accident site (if you are on a highway or country road). Switch on warning lights. Put on high visibility vest.</li>
+<li>Position the warning triangle before the accident site. Attention: If accident is on a curve position the warning triangle before the curve! <br /><img src="images/aid111.jpg" /></li>
+<li>Ask other people for their help.</li>
+<li>Open the door of the accident car (if jammed, prise it open using a car jack). Turn off ignition.</li>
+<li>Rescue the accident victim: Unstrap seat-belt, move seat backwards. Free the casualty out of the car by <a href="#toptoolbar" onclick="showAid('aid_dangerzone')">rescue grip</a>. <br /><img src="images/aid001.png" /></li>
+<li>Emergency call.</li>
+<li>Proceed with first aid measures.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_shock" title="Shock"><h3>Shock</h3>
+<p> Circulatory disorder by poor oxygen supply in the body.<br />
+ Cause: Loss of fluid, reduced blood volume.<br />
+ Symptoms: Paleness, cold skin, cold sweat, anxiety.</p>
+<ol><li>Eliminate the cause of the shock (e.g. stop the fluid loss, bind the wound)!</li>
+<li>Lay the wounded person on a blanket, raising the legs. Calm the person. <br /><img src="images/aid078.png" /></li>
+<li>Emergency call.</li>
+<li>If difficulties in breathing or consciousness, initiate <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">resuscitation</a>.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_skullfracture" title="Skull fracture"><h3>Skull fracture</h3>
+<p> Light bleeding from nose, mouth or ear. Often open wounds on skull.</p>
+<ol><li>Keep the airways free.</li>
+<li>If conscious: Let the injured sit with head bowed forwards. Avoid further movements!</li>
+<li>If unconscious: <a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">Recovery position</a> (no pressure on wound of head).</li>
+<li>Emergency call.</li>
+<li>Apply head bandage.</li>
+<li>If difficulties in breathing or consciousness, initiate <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">resuscitation</a>.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_snakebite" title="Snakebite"><h3>Snakebite</h3> <br /><img src="images/aid051.png" /> 
+<p> Puncture wound the size of a pin, severe pains, swelling, purple colour. Circulatory disturbance, danger of shock.</p>
+<ol><li>Steady the wounded part of the body.</li>
+<li>Apply cold material around bite wound.</li>
+<li>Take measures against shock.</li>
+<li>Emergency call.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_sos" title="SOS"><h3>SOS</h3>
+<ol><li>Signal: 3x short, 3x long, 3x short.</li>
+<li>Optically (strobe light, flashlight), or acoustically (signal whistle, knocking).</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+
+
+<ul id="aid_sprain" title="Sprain + Strain"><h3>Sprain + Strain</h3>
+<p> Pain, swelling (bruise), loss of function, deformation of the limb.</p>
+<ol><li>Place the injured part of the body in the position most comfortable for the casualty.</li>
+<li>Cool (using ice packs).</li>
+<li>If possible, position the injured part elevated.</li>
+<li>Go to hospital or call emergency doctor.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_stroke" title="Stroke"><h3>Stroke</h3>
+<p> Sudden feeling of paralysis or numbness (face, arm, leg), disturbances in language understanding, vision problems, disturbed consciousness, severe headache. Problems in breathing and swallowing, loss of control over bladder and intestine.</p> <br /><img src="images/aid059.png" />
+<ol><li>Emergency call!</li>
+<li>Loosen tight clothing. Do not give drugs or drinks.</li>
+<li>Sit or lay down person concerned comfortably. Calm him/her!</li>
+<li>Control consciousness and breathing.</li>
+<li>If difficulties in breathing or consciousness, initiate <a href="#toptoolbar" onclick="showAid('aid_resuscitation')">resuscitation</a>.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_suffocation" title="Suffocation (Choking)"><h3>Suffocation (Choking)</h3>
+<p> Insufficient oxygen supply. Trachea closed. Danger: Apnoea.<br />
+ Symptoms: Wheezing respiratory noise, cough stimulus, shortness of breath, skin discolouration.</p> <br /><img src="images/aid066.png" />
+<ol><li>Immediate action! Let the person concerned cough very strongly.</li>
+<li>Strike strongly with a flat hand on the back between the shoulder blades (lay babies on your forearm, with head down). <br /><img src="images/aid068.png" /> <br /><img src="images/aid031.png" /></li>
+<li>If without success: Stand behind person, arms around waist, bow slightly forward.</li>
+<li>Clench your fist, position it at height of person's stomach, and take it with your other hand. <br /><img src="images/aid069.png" /></li>
+<li>In embrace use both hands to give a hard blow upwards towards stomach (as if you would try to lift the person).</li>
+<li>Repeat this up to 5 times! Airways should get free from object.</li>
+<li>Emergency call.</li>
+<li>If first aid measure is unsuccessful at first, keep on doing it until emergency doctor arrives.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_sunburn" title="Sunburn"><h3>Sunburn</h3>
+<ol><li>Remove affected person from direct sunlight. Avoid further sun.</li>
+<li>Drink much water to stop dehydration.</li>
+<li>If there is a serious sunburn (blisters, redness, pain), seek medical advice.</li>
+<li>If the skin is just lightly red, it can be cooled with wet compresses. Use after-sun lotion or gel.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_sunstroke" title="Sunstroke"><h3>Sunstroke</h3>
+<p> Hot red head, cool skin, sickness, headache, dizziness. Cause: Irritation of the cerebral membrane.</p> <br /><img src="images/aid035.png" />
+<ol><li>Go to a cool place (shadow) and position the upper body of the person up. <br /><img src="images/aid061.png" /></li>
+<li>Cool the head with wet blankets.</li>
+<li>Emergency call, keep controlling the breathing.</li>
+<li>If conscious: Give cool drink if applicable.</li>
+<li>If apnoea appears, start with breathing:</li>
+<li>Go on with <a href="#toptoolbar" onclick="showAid('aid_apnoea')">Breath Giving!</a> <br /><img src="images/aid036.png" /></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+
+
+
+
+<ul id="aid_unconsciouswithbreath" title="Unconscious with breathing"><h3>Unconscious with breathing</h3>
+<p>No reaction on loudly asking, no response on shaking. Breathing does exist.</p> <br /><img style="border:none;" src="images/aid057.png" />
+<ol><li>If there are people next to you ask for help.</li>
+<li><a href="#toptoolbar" onclick="showAid('aid_recoveryposition')">Recovery position.</a> Open mouth and position head this way that vomit can drain. <br /><img src="images/aid008.png" /> <br /><img src="images/aid009.png" /></li>
+<li>Emergency call.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_unconsciouswithoutbreath" title="Unconscious without breathing"><h3>Unconscious without breathing</h3>
+<ol><li>No reaction of casualty, no breathing. <br /><img style="border:none;" src="images/aid057.png" /></li>
+<li><a href="#toptoolbar" onclick="showAid('aid_resuscitation')">Initiate Resuscitation.</a></li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+<ul id="aid_vomiting" title="Vomiting"><h3>Vomiting</h3>
+<p> Arises from nausea. Stomach empties itself. Causes: Infection, poisoning, ulcer, drugs, bad food, pregnancy.</p> <br /><img src="images/aid054.png" />
+<ol><li>Danger for the circulation because of dehydration and loss of salt!</li>
+<li>Give liquids (tea, water).</li>
+<li>If there are strong disorders, bloody or continuous vomiting, call the emergency doctor.</li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /><br /></ul>
+
+
+
+    <ul id="language" title="Choose your Language">
+        <li><a target="_self" href="firstaidDE.html">Deutsch</a></li>
+        <li><a target="_self" href="firstaidEN.html">English</a></li>
+        <li><a target="_self" href="firstaidFR.html">Fran&ccedil;ais</a></li>
+        <li><a target="_self" href="firstaidLT.html">Lietuvi&#154;kai</a></li>
+        <li><a target="_self" href="firstaidVI.html">Ti&#7871;ng Vi&#7879;t</a></li>
+    </ul>
+
+
+   <ul id="menu" title="Menu">
+        <li><a href="#toptoolbar" onclick="showAid('language')">Choose your Language</a></li>
+        <!-- <li><a target="_self" href="http://www.firstai.de/winmobile/offline/First.Aid.Offline.1.0.htm">Bookmark Offline-Version</a></li> -->
+        <li><a href="#toptoolbar" onclick="showAid('donate')">Donate for Project</a></li>
+        <li><script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>Mail to Developer</a>"); </script>
+        <!-- <li><a target="_self" href="http://www.firstai.de/winmobile/offline/">Check for new Version</a></li> -->
+        </ul>
+	
+    <ul id="donate" title="Donation">
+  <h3><span style="color:#00B316;">Why donate?</span></h3>
+  <p>Do you think the project is a good idea? Then donate please! Because the project survives only by you.</p>
+  <p>Donate online via PayPal to: <script type="text/javascript"> emailME3=("kai.noack@" + "firstai.de"); document.write(emailME3); </script> or you may send a check by mail.</p>
+  <p>Every single contribution counts!</p><br />
+  <p><span style="font-style:italic;font-size:80%;">(One small step for a man, one giant leap for mankind.)</span></p></ul>
+  
+  <ul id="cclicence" title="Licence">  <h3>Licence</h3>
+  <p><b>Creative Commons BY-NC-ND 3.0</b><br />
+You are free to copy, distribute and transmit the work under the following conditions:</p>
+   <ol><li><b>Attribution</b><br />
+You must attribute the work by mentioning the licensor's name Kai Kajus Noack and linking to the website www.firstai.de (but not in any way that suggests that they endorse you or your use of the work).</li><br />
+   <li><b>Non-Commercial</b><br />
+You may not use this work for commercial purposes.</li><br />
+   <li><b>No Derivative Works</b><br />
+You may not alter, transform, or build upon this work.</li><br />
+<li>For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to <span style="font-size:80%;">http://creativecommons.org/licenses/by-nc-nd/3.0/</span></li><br />
+<li>Any of the above conditions can be waived if you get permission from the copyright holder.</li><br />
+<li>Nothing in this license impairs or restricts the author's moral rights. </li></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">Back</a><br /></ul>
+
+ <ul id="telEmergency" title="Continent">
+  <li><a href="#toptoolbar" onclick="showAid('telAfrica')">Africa</a></li>
+  <li><a href="#toptoolbar" onclick="showAid('telAsia')">Asia</a></li>
+  <li><a href="#toptoolbar" onclick="showAid('telEurope')">Europe</a></li>
+  <li><a href="#toptoolbar" onclick="showAid('telNorthamerica')">North-/Central-America</a></li>
+  <li><a href="#toptoolbar" onclick="showAid('telOceania')">Oceania</a></li>
+  <li><a href="#toptoolbar" onclick="showAid('telSouthamerica')">South-America</a></li> <br /><img src="images/aid002.png" />
+</ul>
+
+<ul id="telAfrica" title="Africa">
+<li><a href="#toptoolbar" onclick="showAid('algeria')">Algeria</a></li>
+<li><a href="#toptoolbar" onclick="showAid('angola')">Angola</a></li>
+<li><a href="#toptoolbar" onclick="showAid('benin')">Benin</a></li>
+<li><a href="#toptoolbar" onclick="showAid('botswana')">Botswana</a></li>
+<li><a href="#toptoolbar" onclick="showAid('burkinafaso')">Burkina Faso</a></li>
+<li><a href="#toptoolbar" onclick="showAid('burundi')">Burundi</a></li>
+<li><a href="#toptoolbar" onclick="showAid('cameroon')">Cameroon</a></li>
+<li><a href="#toptoolbar" onclick="showAid('capeverde')">Cape Verde</a></li>
+<li><a href="#toptoolbar" onclick="showAid('centralafricanrepublic')">Central African Republic</a></li>
+<li><a href="#toptoolbar" onclick="showAid('chad')">Chad</a></li>
+<li><a href="#toptoolbar" onclick="showAid('comoros')">Comoros</a></li>
+<li><a href="#toptoolbar" onclick="showAid('congodemocraticrepublic')">Congo (Democratic Republic)</a></li>
+<li><a href="#toptoolbar" onclick="showAid('congorepublic')">Congo (Republic)</a></li>
+<li><a href="#toptoolbar" onclick="showAid('djibouti')">Djibouti</a></li>
+<li><a href="#toptoolbar" onclick="showAid('egypt')">Egypt</a></li>
+<li><a href="#toptoolbar" onclick="showAid('equatorialguinea')">Equatorial Guinea</a></li>
+<li><a href="#toptoolbar" onclick="showAid('eritrea')">Eritrea</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ethiopia')">Ethiopia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('gabon')">Gabon</a></li>
+<li><a href="#toptoolbar" onclick="showAid('gambia')">Gambia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ghana')">Ghana</a></li>
+<li><a href="#toptoolbar" onclick="showAid('guinea')">Guinea</a></li>
+<li><a href="#toptoolbar" onclick="showAid('guinea-bissau')">Guinea-Bissau</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ivorycoast')">Ivory Coast</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kenya')">Kenya</a></li>
+<li><a href="#toptoolbar" onclick="showAid('lesotho')">Lesotho</a></li>
+<li><a href="#toptoolbar" onclick="showAid('liberia')">Liberia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('libya')">Libya</a></li>
+<li><a href="#toptoolbar" onclick="showAid('madagascar')">Madagascar</a></li>
+<li><a href="#toptoolbar" onclick="showAid('malawi')">Malawi</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mali')">Mali</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mauritania')">Mauritania</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mauritius')">Mauritius</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mayotte')">Mayotte</a></li>
+<li><a href="#toptoolbar" onclick="showAid('morocco')">Morocco</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mozambique')">Mozambique</a></li>
+<li><a href="#toptoolbar" onclick="showAid('namibia')">Namibia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('niger')">Niger</a></li>
+<li><a href="#toptoolbar" onclick="showAid('nigeria')">Nigeria</a></li>
+<li><a href="#toptoolbar" onclick="showAid('reunion')">Réunion</a></li>
+<li><a href="#toptoolbar" onclick="showAid('rwanda')">Rwanda</a></li>
+<li><a href="#toptoolbar" onclick="showAid('sahrawiarabdemocraticrepublic')">Sahrawi Arab Democratic Republic</a></li>
+<li><a href="#toptoolbar" onclick="showAid('saotomeandprincipe')">Sao Tomé and Principe</a></li>
+<li><a href="#toptoolbar" onclick="showAid('senegal')">Senegal</a></li>
+<li><a href="#toptoolbar" onclick="showAid('seychelles')">Seychelles</a></li>
+<li><a href="#toptoolbar" onclick="showAid('sierraleone')">Sierra Leone</a></li>
+<li><a href="#toptoolbar" onclick="showAid('somalia')">Somalia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('southafrica')">South Africa</a></li>
+<li><a href="#toptoolbar" onclick="showAid('sudan')">Sudan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('swaziland')">Swaziland</a></li>
+<li><a href="#toptoolbar" onclick="showAid('tanzania')">Tanzania</a></li>
+<li><a href="#toptoolbar" onclick="showAid('togo')">Togo</a></li>
+<li><a href="#toptoolbar" onclick="showAid('tunisia')">Tunisia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('uganda')">Uganda</a></li>
+<li><a href="#toptoolbar" onclick="showAid('zambia')">Zambia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('zimbabwe')">Zimbabwe</a></li>
+</ul><ul id="telAsia" title="Asia">
+<li><a href="#toptoolbar" onclick="showAid('afghanistan')">Afghanistan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('armenia')">Armenia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('azerbaijan')">Azerbaijan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bahrain')">Bahrain</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bangladesh')">Bangladesh</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bhutan')">Bhutan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('brunei')">Brunei</a></li>
+<li><a href="#toptoolbar" onclick="showAid('cambodia')">Cambodia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('china')">China</a></li>
+<li><a href="#toptoolbar" onclick="showAid('easttimor')">East Timor</a></li>
+<li><a href="#toptoolbar" onclick="showAid('georgia')">Georgia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('hongkong')">Hong Kong</a></li>
+<li><a href="#toptoolbar" onclick="showAid('india')">India</a></li>
+<li><a href="#toptoolbar" onclick="showAid('indonesia')">Indonesia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('iran')">Iran</a></li>
+<li><a href="#toptoolbar" onclick="showAid('iraq')">Iraq</a></li>
+<li><a href="#toptoolbar" onclick="showAid('israel')">Israel</a></li>
+<li><a href="#toptoolbar" onclick="showAid('japan')">Japan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('jordan')">Jordan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kazakhstan')">Kazakhstan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kurdistan')">Kurdistan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kuwait')">Kuwait</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kyrgyzstan')">Kyrgyzstan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('laos')">Laos</a></li>
+<li><a href="#toptoolbar" onclick="showAid('lebanon')">Lebanon</a></li>
+<li><a href="#toptoolbar" onclick="showAid('macau')">Macau</a></li>
+<li><a href="#toptoolbar" onclick="showAid('malaysia')">Malaysia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('maldives')">Maldives</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mongolia')">Mongolia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('myanmar')">Myanmar</a></li>
+<li><a href="#toptoolbar" onclick="showAid('nepal')">Nepal</a></li>
+<li><a href="#toptoolbar" onclick="showAid('northkorea')">North Korea</a></li>
+<li><a href="#toptoolbar" onclick="showAid('oman')">Oman</a></li>
+<li><a href="#toptoolbar" onclick="showAid('pakistan')">Pakistan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('philippines')">Philippines</a></li>
+<li><a href="#toptoolbar" onclick="showAid('qatar')">Qatar</a></li>
+<li><a href="#toptoolbar" onclick="showAid('saudiarabia')">Saudi Arabia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('singapore')">Singapore</a></li>
+<li><a href="#toptoolbar" onclick="showAid('southkorea')">South Korea (Republic Korea)</a></li>
+<li><a href="#toptoolbar" onclick="showAid('srilanka')">Sri Lanka</a></li>
+<li><a href="#toptoolbar" onclick="showAid('syria')">Syria</a></li>
+<li><a href="#toptoolbar" onclick="showAid('taiwan')">Taiwan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('tajikistan')">Tajikistan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('thailand')">Thailand</a></li>
+<li><a href="#toptoolbar" onclick="showAid('turkmenistan')">Turkmenistan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('unitedarabemirates')">United Arab Emirates</a></li>
+<li><a href="#toptoolbar" onclick="showAid('uzbekistan')">Uzbekistan</a></li>
+<li><a href="#toptoolbar" onclick="showAid('vietnam')">Vietnam</a></li>
+<li><a href="#toptoolbar" onclick="showAid('yemen')">Yemen</a></li>
+</ul><ul id="telEurope" title="Europe">
+<li><a href="#toptoolbar" onclick="showAid('albania')">Albania</a></li>
+<li><a href="#toptoolbar" onclick="showAid('andorra')">Andorra</a></li>
+<li><a href="#toptoolbar" onclick="showAid('austria')">Austria</a></li>
+<li><a href="#toptoolbar" onclick="showAid('belarus')">Belarus</a></li>
+<li><a href="#toptoolbar" onclick="showAid('belgium')">Belgium</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bosniaandherzegovina')">Bosnia and Herzegovina</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bulgaria')">Bulgaria</a></li>
+<li><a href="#toptoolbar" onclick="showAid('croatia')">Croatia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('cyprus')">Cyprus</a></li>
+<li><a href="#toptoolbar" onclick="showAid('czechrepublic')">Czech Republic</a></li>
+<li><a href="#toptoolbar" onclick="showAid('denmark')">Denmark</a></li>
+<li><a href="#toptoolbar" onclick="showAid('estonia')">Estonia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('finland')">Finland</a></li>
+<li><a href="#toptoolbar" onclick="showAid('france')">France</a></li>
+<li><a href="#toptoolbar" onclick="showAid('germany')">Germany</a></li>
+<li><a href="#toptoolbar" onclick="showAid('greece')">Greece</a></li>
+<li><a href="#toptoolbar" onclick="showAid('hungary')">Hungary</a></li>
+<li><a href="#toptoolbar" onclick="showAid('iceland')">Iceland</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ireland')">Ireland</a></li>
+<li><a href="#toptoolbar" onclick="showAid('italy')">Italy</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kosovo')">Kosovo</a></li>
+<li><a href="#toptoolbar" onclick="showAid('latvia')">Latvia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('liechtenstein')">Liechtenstein</a></li>
+<li><a href="#toptoolbar" onclick="showAid('lithuania')">Lithuania</a></li>
+<li><a href="#toptoolbar" onclick="showAid('luxembourg')">Luxembourg</a></li>
+<li><a href="#toptoolbar" onclick="showAid('macedonia')">Macedonia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('malta')">Malta</a></li>
+<li><a href="#toptoolbar" onclick="showAid('moldova')">Moldova</a></li>
+<li><a href="#toptoolbar" onclick="showAid('monaco')">Monaco</a></li>
+<li><a href="#toptoolbar" onclick="showAid('montenegro')">Montenegro</a></li>
+<li><a href="#toptoolbar" onclick="showAid('netherlands')">Netherlands</a></li>
+<li><a href="#toptoolbar" onclick="showAid('norway')">Norway</a></li>
+<li><a href="#toptoolbar" onclick="showAid('poland')">Poland</a></li>
+<li><a href="#toptoolbar" onclick="showAid('portugal')">Portugal</a></li>
+<li><a href="#toptoolbar" onclick="showAid('romania')">Romania</a></li>
+<li><a href="#toptoolbar" onclick="showAid('russia')">Russia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('sanmarino')">San Marino</a></li>
+<li><a href="#toptoolbar" onclick="showAid('serbia')">Serbia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('slovakia')">Slovakia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('slovenia')">Slovenia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('spain')">Spain</a></li>
+<li><a href="#toptoolbar" onclick="showAid('sweden')">Sweden</a></li>
+<li><a href="#toptoolbar" onclick="showAid('switzerland')">Switzerland</a></li>
+<li><a href="#toptoolbar" onclick="showAid('turkey')">Turkey</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ukraine')">Ukraine</a></li>
+<li><a href="#toptoolbar" onclick="showAid('unitedkingdom')">United Kingdom</a></li>
+<li><a href="#toptoolbar" onclick="showAid('vaticancity')">Vatican City</a></li>
+</ul><ul id="telNorthamerica" title="North-/Central-America">
+<li><a href="#toptoolbar" onclick="showAid('antiguaandbarbuda')">Antigua and Barbuda</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bahamas')">Bahamas</a></li>
+<li><a href="#toptoolbar" onclick="showAid('barbados')">Barbados</a></li>
+<li><a href="#toptoolbar" onclick="showAid('belize')">Belize</a></li>
+<li><a href="#toptoolbar" onclick="showAid('canada')">Canada</a></li>
+<li><a href="#toptoolbar" onclick="showAid('caymanislands')">Cayman Islands</a></li>
+<li><a href="#toptoolbar" onclick="showAid('costarica')">Costa Rica</a></li>
+<li><a href="#toptoolbar" onclick="showAid('cuba')">Cuba</a></li>
+<li><a href="#toptoolbar" onclick="showAid('dominica')">Dominica</a></li>
+<li><a href="#toptoolbar" onclick="showAid('dominicanrepublic')">Dominican Republic</a></li>
+<li><a href="#toptoolbar" onclick="showAid('elsalvador')">El Salvador</a></li>
+<li><a href="#toptoolbar" onclick="showAid('greenland')">Greenland</a></li>
+<li><a href="#toptoolbar" onclick="showAid('grenada')">Grenada</a></li>
+<li><a href="#toptoolbar" onclick="showAid('guatemala')">Guatemala</a></li>
+<li><a href="#toptoolbar" onclick="showAid('haiti')">Haiti</a></li>
+<li><a href="#toptoolbar" onclick="showAid('honduras')">Honduras</a></li>
+<li><a href="#toptoolbar" onclick="showAid('jamaica')">Jamaica</a></li>
+<li><a href="#toptoolbar" onclick="showAid('mexico')">Mexico</a></li>
+<li><a href="#toptoolbar" onclick="showAid('nicaragua')">Nicaragua</a></li>
+<li><a href="#toptoolbar" onclick="showAid('panama')">Panama</a></li>
+<li><a href="#toptoolbar" onclick="showAid('stkittsandnevis')">Saint Kitts and Nevis</a></li>
+<li><a href="#toptoolbar" onclick="showAid('stlucia')">Saint Lucia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('saintpierreandmiquelon')">Saint Pierre and Miquelon</a></li>
+<li><a href="#toptoolbar" onclick="showAid('stvincentandgrenadines')">Saint Vincent and Grenadines</a></li>
+<li><a href="#toptoolbar" onclick="showAid('trinidadandtobago')">Trinidad and Tobago</a></li>
+<li><a href="#toptoolbar" onclick="showAid('unitedstatesofamerica')">United States of America</a></li>
+</ul><ul id="telOceania" title="Oceania">
+<li><a href="#toptoolbar" onclick="showAid('australia')">Australia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('fiji')">Fiji</a></li>
+<li><a href="#toptoolbar" onclick="showAid('kiribati')">Kiribati</a></li>
+<li><a href="#toptoolbar" onclick="showAid('marshallislands')">Marshall Islands</a></li>
+<li><a href="#toptoolbar" onclick="showAid('micronesia')">Micronesia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('nauru')">Nauru</a></li>
+<li><a href="#toptoolbar" onclick="showAid('newzealand')">New Zealand</a></li>
+<li><a href="#toptoolbar" onclick="showAid('palau')">Palau</a></li>
+<li><a href="#toptoolbar" onclick="showAid('papuanewguinea')">Papua New Guinea</a></li>
+<li><a href="#toptoolbar" onclick="showAid('samoa')">Samoa</a></li>
+<li><a href="#toptoolbar" onclick="showAid('solomonislands')">Solomon Islands</a></li>
+<li><a href="#toptoolbar" onclick="showAid('tonga')">Tonga</a></li>
+<li><a href="#toptoolbar" onclick="showAid('tuvalu')">Tuvalu</a></li>
+<li><a href="#toptoolbar" onclick="showAid('vanuatu')">Vanuatu</a></li>
+</ul><ul id="telSouthamerica" title="South-America">
+<li><a href="#toptoolbar" onclick="showAid('argentina')">Argentina</a></li>
+<li><a href="#toptoolbar" onclick="showAid('bolivia')">Bolivia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('brazil')">Brazil</a></li>
+<li><a href="#toptoolbar" onclick="showAid('chile')">Chile</a></li>
+<li><a href="#toptoolbar" onclick="showAid('colombia')">Colombia</a></li>
+<li><a href="#toptoolbar" onclick="showAid('ecuador')">Ecuador</a></li>
+<li><a href="#toptoolbar" onclick="showAid('guyana')">Guyana</a></li>
+<li><a href="#toptoolbar" onclick="showAid('paraguay')">Paraguay</a></li>
+<li><a href="#toptoolbar" onclick="showAid('peru')">Peru</a></li>
+<li><a href="#toptoolbar" onclick="showAid('suriname')">Suriname</a></li>
+<li><a href="#toptoolbar" onclick="showAid('uruguay')">Uruguay</a></li>
+<li><a href="#toptoolbar" onclick="showAid('venezuela')">Venezuela</a></li>
+</ul>
+
+
+  	<!-- <li>Deactive your Bankcards <a href="tel:116116">(116116)</a></li> -->
+
+<!-- ALL COUNTRIES WITH EMERGENCY NUMBERS -->
+
+<ul id="algeria" title="Algeria"><h3>Algeria</h3><ol><li>Fire <a href="tel:14">(14)</a></li><li>Medical <a href="tel:17">(17)</a></li><li>Police <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="angola" title="Angola"><h3>Angola</h3><ol><li>Fire <a href="tel:118">(118)</a></li><li>Medical <a href="tel:118">(118)</a></li><li>Police <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="benin" title="Benin"><h3>Benin</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical <a href="tel:301769">(301769)</a></li><li>Police <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="botswana" title="Botswana"><h3>Botswana</h3><ol><li>Fire <a href="tel:998">(998)</a></li><li>Medical <a href="tel:997">(997)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="burkinafaso" title="Burkina Faso"><h3>Burkina Faso</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical (local numbers)</li><li>Police <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="burundi" title="Burundi"><h3>Burundi</h3><ol><li>Fire (no system)</li><li>Medical (no system)</li><li>Police (no system)</li></ol></ul>
+<ul id="cameroon" title="Cameroon"><h3>Cameroon</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical (local numbers)</li><li>Police <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="capeverde" title="Cape Verde"><h3>Cape Verde</h3><ol><li>Fire <a href="tel:131">(131)</a></li><li>Medical <a href="tel:130">(130)</a></li><li>Police <a href="tel:132">(132)</a></li></ol></ul>
+<ul id="centralafricanrepublic" title="Central African Republic"><h3>Central African Republic</h3><ol><li>Fire <a href="tel:118">(118)</a></li><li>Medical <a href="tel:610600">(610600)</a></li><li>Police <a href="tel:611253">(611253)</a></li></ol></ul>
+<ul id="chad" title="Chad"><h3>Chad</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical (local numbers)</li><li>Police <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="comoros" title="Comoros"><h3>Comoros</h3><ol><li>Fire (only radio telephones)</li><li>Medical (only radio telephones)</li><li>Police (only radio telephones)</li></ol></ul>
+<ul id="congodemocraticrepublic" title="Congo (Democratic Republic)"><h3>Congo (Democratic Republic)</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="congorepublic" title="Congo (Republic)"><h3>Congo (Republic)</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="djibouti" title="Djibouti"><h3>Djibouti</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical <a href="tel:351351">(351351)</a></li><li>Police <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="egypt" title="Egypt"><h3>Egypt</h3><ol><li>Fire <a href="tel:180">(180)</a></li><li>Medical <a href="tel:123">(123)</a></li><li>Police <a href="tel:122">(122)</a></li></ol></ul>
+<ul id="equatorialguinea" title="Equatorial Guinea"><h3>Equatorial Guinea</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="eritrea" title="Eritrea"><h3>Eritrea</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="ethiopia" title="Ethiopia"><h3>Ethiopia</h3><ol><li>Fire <a href="tel:93">(93)</a></li><li>Medical <a href="tel:92">(92)</a></li><li>Police <a href="tel:91">(91)</a></li></ol></ul>
+<ul id="gabon" title="Gabon"><h3>Gabon</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical <a href="tel:1300">(1300)</a></li><li>Police <a href="tel:1730">(1730)</a></li></ol></ul>
+<ul id="gambia" title="Gambia"><h3>Gambia</h3><ol><li>Fire <a href="tel:118">(118)</a></li><li>Medical <a href="tel:116">(116)</a></li><li>Police <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="ghana" title="Ghana"><h3>Ghana</h3><ol><li>Fire <a href="tel:192">(192)</a></li><li>Medical <a href="tel:193">(193)</a></li><li>Police <a href="tel:191">(191)</a></li></ol></ul>
+<ul id="guinea" title="Guinea"><h3>Guinea</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="guinea-bissau" title="Guinea-Bissau"><h3>Guinea-Bissau</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="ivorycoast" title="Ivory Coast"><h3>Ivory Coast</h3><ol><li>Fire <a href="tel:180">(180)</a></li><li>Medical <a href="tel:110">(110)</a></li><li>Police <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="kenya" title="Kenya"><h3>Kenya</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:999">(999)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="lesotho" title="Lesotho"><h3>Lesotho</h3><ol><li>Fire <a href="tel:122">(122)</a></li><li>Medical <a href="tel:121">(121)</a></li><li>Police <a href="tel:123">(123)</a></li></ol></ul>
+<ul id="liberia" title="Liberia"><h3>Liberia</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="libya" title="Libya"><h3>Libya</h3><ol><li>Fire <a href="tel:193">(193)</a></li><li>Medical <a href="tel:193">(193)</a></li><li>Police <a href="tel:193">(193)</a></li></ol></ul>
+<ul id="madagascar" title="Madagascar"><h3>Madagascar</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical <a href="tel:2262566">(2262566)</a></li><li>Police <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="malawi" title="Malawi"><h3>Malawi</h3><ol><li>Fire <a href="tel:199">(199)</a></li><li>Medical <a href="tel:199">(199)</a></li><li>Police <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="mali" title="Mali"><h3>Mali</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical <a href="tel:15">(15)</a></li><li>Police <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="mauritania" title="Mauritania"><h3>Mauritania</h3><ol><li>Fire <a href="tel:118">(118)</a></li><li>Medical (local numbers)</li><li>Police <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="mauritius" title="Mauritius"><h3>Mauritius</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:999">(999)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="mayotte" title="Mayotte"><h3>Mayotte</h3><ol><li>Fire <a href="tel:603054">(603054)</a></li><li>Medical <a href="tel:15">(15)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="morocco" title="Morocco"><h3>Morocco</h3><ol><li>Fire <a href="tel:15">(15)</a></li><li>Medical <a href="tel:15">(15)</a></li><li>Police <a href="tel:19">(19)</a></li></ol></ul>
+<ul id="mozambique" title="Mozambique"><h3>Mozambique</h3><ol><li>Fire <a href="tel:198">(198)</a></li><li>Medical <a href="tel:117">(117)</a></li><li>Police <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="namibia" title="Namibia"><h3>Namibia</h3><ol><li>Fire <a href="tel:2032270">(2032270)</a></li><li>Medical <a href="tel:2032276">(2032276)</a></li><li>Police <a href="tel:1011">(1011)</a></li></ol></ul>
+<ul id="niger" title="Niger"><h3>Niger</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical <a href="tel:723141">(723141)</a></li><li>Police <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="nigeria" title="Nigeria"><h3>Nigeria</h3><ol><li>Fire <a href="tel:190">(190)</a></li><li>Medical <a href="tel:199">(199)</a></li><li>Police <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="reunion" title="Réunion"><h3>Réunion</h3><ol><li>Fire <a href="tel:18">(18)</a> or <a href="tel:112">112 mobile</a></li><li>Medical <a href="tel:15">(15)</a> or <a href="tel:112">112 mobile</a></li><li>Police <a href="tel:17">(17)</a> or <a href="tel:112">112 mobile</a></li></ol></ul>
+<ul id="rwanda" title="Rwanda"><h3>Rwanda</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="sahrawiarabdemocraticrepublic" title="Sahrawi Arab Democratic Republic"><h3>Sahrawi Arab Democratic Republic</h3><ol><li>Fire <a href="tel:--">(--)</a></li><li>Medical <a href="tel:--">(--)</a></li><li>Police <a href="tel:--">(--)</a></li></ol></ul>
+<ul id="saotomeandprincipe" title="Sao Tomé and Principe"><h3>Sao Tomé and Principe</h3><ol><li>Fire <a href="tel:--">(--)</a></li><li>Medical <a href="tel:--">(--)</a></li><li>Police <a href="tel:--">(--)</a></li></ol></ul>
+<ul id="senegal" title="Senegal"><h3>Senegal</h3><ol><li>Fire (local numbers)</li><li>Medical <a href="tel:8891515">(8891515)</a></li><li>Police (local numbers)</li></ol></ul>
+<ul id="seychelles" title="Seychelles"><h3>Seychelles</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:999">(999)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="sierraleone" title="Sierra Leone"><h3>Sierra Leone</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:999">(999)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="somalia" title="Somalia"><h3>Somalia</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="southafrica" title="South Africa"><h3>South Africa</h3><ol><li>Fire <a href="tel:10111">(10111)</a></li><li>Medical <a href="tel:10177">(10177)</a></li><li>Police <a href="tel:10111">(10111)</a></li></ol></ul>
+<ul id="sudan" title="Sudan"><h3>Sudan</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical (local numbers)</li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="swaziland" title="Swaziland"><h3>Swaziland</h3><ol><li>Fire (local numbers)</li><li>Medical <a href="tel:6060911">(6060911)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="tanzania" title="Tanzania"><h3>Tanzania</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="togo" title="Togo"><h3>Togo</h3><ol><li>Fire <a href="tel:118">(118)</a></li><li>Medical <a href="tel:191">(191)</a></li><li>Police <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="tunisia" title="Tunisia"><h3>Tunisia</h3><ol><li>Fire <a href="tel:198">(198)</a></li><li>Medical <a href="tel:190">(190)</a></li><li>Police <a href="tel:197">(197)</a></li></ol></ul>
+<ul id="uganda" title="Uganda"><h3>Uganda</h3><ol><li>Fire <a href="tel:999">(999)</a> or <a href="tel:111">111 mobile</a></li><li>Medical <a href="tel:999">(999)</a> or <a href="tel:111">111 mobile</a></li><li>Police <a href="tel:999">(999)</a> or <a href="tel:111">111 mobile</a></li></ol></ul>
+<ul id="zambia" title="Zambia"><h3>Zambia</h3><ol><li>Fire <a href="tel:993">(993)</a> or <a href="tel:112">112 mobile</a></li><li>Medical <a href="tel:991">(991)</a> or <a href="tel:112">112 mobile</a></li><li>Police <a href="tel:999">(999)</a> or <a href="tel:112">112 mobile</a></li></ol></ul>
+<ul id="zimbabwe" title="Zimbabwe"><h3>Zimbabwe</h3><ol><li>Fire <a href="tel:993">(993)</a></li><li>Medical <a href="tel:994">(994)</a></li><li>Police <a href="tel:995">(995)</a></li></ol></ul>
+
+
+
+<ul id="afghanistan" title="Afghanistan"><h3>Afghanistan</h3><ol><li>Fire <a href="tel:--">(--)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:--">(--)</a></li></ol></ul>
+<ul id="armenia" title="Armenia"><h3>Armenia</h3><ol><li>Fire <a href="tel:101">(101)</a></li><li>Medical <a href="tel:103">(103)</a></li><li>Police <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="azerbaijan" title="Azerbaijan"><h3>Azerbaijan</h3><ol><li>Fire <a href="tel:101">(101)</a></li><li>Medical <a href="tel:103">(103)</a></li><li>Police <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="bahrain" title="Bahrain"><h3>Bahrain</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:999">(999)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="bangladesh" title="Bangladesh"><h3>Bangladesh</h3><ol><li>Fire <a href="tel:9555555">(9555555)</a></li><li>Medical <a href="tel:199">(199)</a></li><li>Police <a href="tel:8665513">(8665513)</a></li></ol></ul>
+<ul id="bhutan" title="Bhutan"><h3>Bhutan</h3><ol><li>Fire <a href="tel:113">(113)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="brunei" title="Brunei"><h3>Brunei</h3><ol><li>Fire <a href="tel:995">(995)</a></li><li>Medical <a href="tel:991">(991)</a></li><li>Police <a href="tel:993">(993)</a></li></ol></ul>
+<ul id="cambodia" title="Cambodia"><h3>Cambodia</h3><ol><li>Fire <a href="tel:118">(118)</a></li><li>Medical <a href="tel:199">(199)</a></li><li>Police <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="china" title="China"><h3>China</h3><ol><li>Fire <a href="tel:119">(119)</a></li><li>Medical <a href="tel:120">(120)</a></li><li>Police <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="easttimor" title="East Timor"><h3>East Timor</h3><ol><li>Fire <a href="tel:--">(--)</a></li><li>Medical <a href="tel:7233212">(7233212)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="georgia" title="Georgia"><h3>Georgia</h3><ol><li>Fire <a href="tel:022">(022)</a></li><li>Medical <a href="tel:022">(022)</a></li><li>Police <a href="tel:022">(022)</a></li></ol></ul>
+<ul id="hongkong" title="Hong Kong"><h3>Hong Kong</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:999">(999)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="india" title="India"><h3>India</h3><ol><li>Fire <a href="tel:101">(101)</a></li><li>Medical <a href="tel:102">(102)</a></li><li>Police <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="indonesia" title="Indonesia"><h3>Indonesia</h3><ol><li>Fire <a href="tel:113">(113)</a></li><li>Medical <a href="tel:118">(118)</a></li><li>Police <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="iran" title="Iran"><h3>Iran</h3><ol><li>Fire <a href="tel:125">(125)</a> or <a href="tel:112">112 mobile</a></li><li>Medical <a href="tel:115">(115)</a> or <a href="tel:112">112 mobile</a></li><li>Police <a href="tel:110 or 112 mobile ">(110 or 112 mobile )</a></li></ol></ul>
+<ul id="iraq" title="Iraq"><h3>Iraq</h3><ol><li>Fire (no system)</li><li>Medical (no system)</li><li>Police (no system)</li></ol></ul>
+<ul id="israel" title="Israel"><h3>Israel</h3><ol><li>Fire <a href="tel:102">(102)</a></li><li>Medical <a href="tel:101">(101)</a></li><li>Police <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="japan" title="Japan"><h3>Japan</h3><ol><li>Fire <a href="tel:119">(119)</a></li><li>Medical <a href="tel:119">(119)</a></li><li>Police <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="jordan" title="Jordan"><h3>Jordan</h3><ol><li>Fire <a href="tel:193">(193)</a></li><li>Medical <a href="tel:193">(193)</a></li><li>Police <a href="tel:192">(192)</a></li></ol></ul>
+<ul id="kazakhstan" title="Kazakhstan"><h3>Kazakhstan</h3><ol><li>Fire <a href="tel:03">(03)</a></li><li>Medical <a href="tel:03">(03)</a></li><li>Police <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="kurdistan" title="Kurdistan"><h3>Kurdistan</h3><ol><li>Fire <a href="tel:125">(125)</a></li><li>Medical <a href="tel:115">(115)</a></li><li>Police <a href="tel:129">(129)</a></li></ol></ul>
+<ul id="kuwait" title="Kuwait"><h3>Kuwait</h3><ol><li>Fire <a href="tel:777">(777)</a></li><li>Medical <a href="tel:777">(777)</a></li><li>Police <a href="tel:777">(777)</a></li></ol></ul>
+<ul id="kyrgyzstan" title="Kyrgyzstan"><h3>Kyrgyzstan</h3><ol><li>Fire <a href="tel:03">(03)</a></li><li>Medical <a href="tel:03">(03)</a></li><li>Police <a href="tel:133">(133)</a></li></ol></ul>
+<ul id="laos" title="Laos"><h3>Laos</h3><ol><li>Fire (local numbers)</li><li>Medical <a href="tel:03">(03)</a></li><li>Police (local numbers)</li></ol></ul>
+<ul id="lebanon" title="Lebanon"><h3>Lebanon</h3><ol><li>Fire <a href="tel:175">(175)</a></li><li>Medical <a href="tel:140">(140)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="macau" title="Macau"><h3>Macau</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:999">(999)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="malaysia" title="Malaysia"><h3>Malaysia</h3><ol><li>Fire <a href="tel:999">(999)</a> or <a href="tel:112">112 mobile</a></li><li>Medical <a href="tel:999">(999)</a> or <a href="tel:112">112 mobile</a></li><li>Police <a href="tel:999">(999)</a> or <a href="tel:112">112 mobile</a></li></ol></ul>
+<ul id="maldives" title="Maldives"><h3>Maldives</h3><ol><li>Fire <a href="tel:118">(118)</a></li><li>Medical <a href="tel:102">(102)</a></li><li>Police <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="mongolia" title="Mongolia"><h3>Mongolia</h3><ol><li>Fire <a href="tel:101">(101)</a></li><li>Medical <a href="tel:103">(103)</a></li><li>Police <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="myanmar" title="Myanmar"><h3>Myanmar</h3><ol><li>Fire <a href="tel:199">(199)</a></li><li>Medical <a href="tel:199">(199)</a></li><li>Police <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="nepal" title="Nepal"><h3>Nepal</h3><ol><li>Fire <a href="tel:101">(101)</a></li><li>Medical <a href="tel:228094">(228094)</a></li><li>Police <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="northkorea" title="North Korea"><h3>North Korea</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="oman" title="Oman"><h3>Oman</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:999">(999)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="pakistan" title="Pakistan"><h3>Pakistan</h3><ol><li>Fire <a href="tel:16">(16)</a></li><li>Medical <a href="tel:115">(115)</a></li><li>Police <a href="tel:15">(15)</a></li></ol></ul>
+<ul id="philippines" title="Philippines"><h3>Philippines</h3><ol><li>Fire <a href="tel:117">(117)</a></li><li>Medical <a href="tel:117">(117)</a></li><li>Police <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="qatar" title="Qatar"><h3>Qatar</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:999">(999)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="saudiarabia" title="Saudi Arabia"><h3>Saudi Arabia</h3><ol><li>Fire <a href="tel:998">(998)</a></li><li>Medical <a href="tel:997">(997)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="singapore" title="Singapore"><h3>Singapore</h3><ol><li>Fire <a href="tel:995">(995)</a></li><li>Medical <a href="tel:995">(995)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="southkorea" title="South Korea (Republic Korea)"><h3>South Korea (Republic Korea)</h3><ol><li>Fire <a href="tel:119">(119)</a></li><li>Medical <a href="tel:119">(119)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="srilanka" title="Sri Lanka"><h3>Sri Lanka</h3><ol><li>Fire <a href="tel:111">(111)</a></li><li>Medical <a href="tel:110">(110)</a></li><li>Police <a href="tel:119">(119)</a> or <a href="tel:112">112 mobile</a></li></ol></ul>
+<ul id="syria" title="Syria"><h3>Syria</h3><ol><li>Fire <a href="tel:113">(113)</a></li><li>Medical <a href="tel:110">(110)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="taiwan" title="Taiwan"><h3>Taiwan</h3><ol><li>Fire <a href="tel:119">(119)</a></li><li>Medical <a href="tel:119">(119)</a></li><li>Police <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="tajikistan" title="Tajikistan"><h3>Tajikistan</h3><ol><li>Fire (local numbers)</li><li>Medical <a href="tel:03">(03)</a></li><li>Police <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="thailand" title="Thailand"><h3>Thailand</h3><ol><li>Fire <a href="tel:199">(199)</a></li><li>Medical <a href="tel:191">(191)</a></li><li>Police <a href="tel:191">(191)</a> or <a href="tel:1155">(1155 tourists)</a></li></ol></ul>
+<ul id="turkmenistan" title="Turkmenistan"><h3>Turkmenistan</h3><ol><li>Fire <a href="tel:03">(03)</a></li><li>Medical <a href="tel:03">(03)</a></li><li>Police <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="unitedarabemirates" title="United Arab Emirates"><h3>United Arab Emirates</h3><ol><li>Fire <a href="tel:997">(997)</a></li><li>Medical <a href="tel:998">(998)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="uzbekistan" title="Uzbekistan"><h3>Uzbekistan</h3><ol><li>Fire <a href="tel:03">(03)</a></li><li>Medical <a href="tel:03">(03)</a></li><li>Police <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="vietnam" title="Vietnam"><h3>Vietnam</h3><ol><li>Fire <a href="tel:114">(114)</a></li><li>Medical <a href="tel:115">(115)</a></li><li>Police <a href="tel:113">(113)</a></li></ol></ul>
+<ul id="yemen" title="Yemen"><h3>Yemen</h3><ol><li>Fire <a href="tel:199">(199)</a></li><li>Medical <a href="tel:199">(199)</a></li><li>Police <a href="tel:199">(199)</a></li></ol></ul>
+
+
+
+<ul id="albania" title="Albania"><h3>Albania</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical <a href="tel:17">(17)</a></li><li>Police <a href="tel:19">(19)</a></li></ol></ul>
+<ul id="andorra" title="Andorra"><h3>Andorra</h3><ol><li>Fire <a href="tel:118">(118)</a></li><li>Medical <a href="tel:118">(118)</a></li><li>Police <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="austria" title="Austria"><h3>Austria</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="belarus" title="Belarus"><h3>Belarus</h3><ol><li>Fire <a href="tel:01">(01)</a></li><li>Medical <a href="tel:03">(03)</a></li><li>Police <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="belgium" title="Belgium"><h3>Belgium</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="bosniaandherzegovina" title="Bosnia and Herzegovina"><h3>Bosnia and Herzegovina</h3><ol><li>Fire <a href="tel:123">(123)</a></li><li>Medical <a href="tel:124">(124)</a></li><li>Police <a href="tel:122">(122)</a></li></ol></ul>
+<ul id="bulgaria" title="Bulgaria"><h3>Bulgaria</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="croatia" title="Croatia"><h3>Croatia</h3><ol><li>Fire <a href="tel:93">(93)</a></li><li>Medical <a href="tel:94">(94)</a></li><li>Police <a href="tel:92">(92)</a></li></ol></ul>
+<ul id="cyprus" title="Cyprus"><h3>Cyprus</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="czechrepublic" title="Czech Republic"><h3>Czech Republic</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="denmark" title="Denmark"><h3>Denmark</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="estonia" title="Estonia"><h3>Estonia</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="finland" title="Finland"><h3>Finland</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="france" title="France"><h3>France</h3><ol><li>Fire <a href="tel:18">(18)</a> or <a href="tel:112">(112)</a></li><li>Medical <a href="tel:15">(15)</a> or <a href="tel:112">(112)</a></li><li>Police <a href="tel:17">(17)</a> or <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="germany" title="Germany"><h3>Germany</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="greece" title="Greece"><h3>Greece</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="hungary" title="Hungary"><h3>Hungary</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="iceland" title="Iceland"><h3>Iceland</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="ireland" title="Ireland"><h3>Ireland</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="italy" title="Italy"><h3>Italy</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="kosovo" title="Kosovo"><h3>Kosovo</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="latvia" title="Latvia"><h3>Latvia</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="liechtenstein" title="Liechtenstein"><h3>Liechtenstein</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="lithuania" title="Lithuania"><h3>Lithuania</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="luxembourg" title="Luxembourg"><h3>Luxembourg</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="macedonia" title="Macedonia"><h3>Macedonia</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="malta" title="Malta"><h3>Malta</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="moldova" title="Moldova"><h3>Moldova</h3><ol><li>Fire <a href="tel:901">(901)</a></li><li>Medical <a href="tel:903">(903)</a></li><li>Police <a href="tel:902">(902)</a></li></ol></ul>
+<ul id="monaco" title="Monaco"><h3>Monaco</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="montenegro" title="Montenegro"><h3>Montenegro</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="netherlands" title="Netherlands"><h3>Netherlands</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="norway" title="Norway"><h3>Norway</h3><ol><li>Fire <a href="tel:110">(110)</a></li><li>Medical <a href="tel:113">(113)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="poland" title="Poland"><h3>Poland</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="portugal" title="Portugal"><h3>Portugal</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="romania" title="Romania"><h3>Romania</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="russia" title="Russia"><h3>Russia</h3><ol><li>Fire <a href="tel:01">(01)</a></li><li>Medical <a href="tel:03">(03)</a></li><li>Police <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="sanmarino" title="San Marino"><h3>San Marino</h3><ol><li>Fire <a href="tel:116">(116)</a></li><li>Medical <a href="tel:113">(113)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="serbia" title="Serbia"><h3>Serbia</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="slovakia" title="Slovakia"><h3>Slovakia</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="slovenia" title="Slovenia"><h3>Slovenia</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:113">(113)</a></li></ol></ul>
+<ul id="spain" title="Spain"><h3>Spain</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="sweden" title="Sweden"><h3>Sweden</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="switzerland" title="Switzerland"><h3>Switzerland</h3><ol><li>Fire <a href="tel:118">(118)</a> or <a href="tel:112">(112)</a></li><li>Medical <a href="tel:144">(144)</a> or <a href="tel:112">(112)</a></li><li>Police <a href="tel:117">(117)</a> or <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="turkey" title="Turkey"><h3>Turkey</h3><ol><li>Fire <a href="tel:110">(110)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:155">(155)</a></li></ol></ul>
+<ul id="ukraine" title="Ukraine"><h3>Ukraine</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="unitedkingdom" title="United Kingdom"><h3>United Kingdom</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="vaticancity" title="Vatican City"><h3>Vatican City</h3><ol><li>Fire <a href="tel:115">(115)</a></li><li>Medical <a href="tel:113">(113)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+
+
+
+<ul id="australia" title="Australia"><h3>Australia</h3><ol><li>Fire <a href="tel:000">(000)</a> or <a href="tel:112">112 mobile</a></li><li>Medical <a href="tel:000">(000)</a> or <a href="tel:112">112 mobile</a></li><li>Police <a href="tel:000">(000)</a> or <a href="tel:112">112 mobile</a></li></ol></ul>
+<ul id="fiji" title="Fiji"><h3>Fiji</h3><ol><li>Fire <a href="tel:9170">(9170)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="kiribati" title="Kiribati"><h3>Kiribati</h3><ol><li>Fire (local numbers)</li><li>Medical <a href="tel:994">(994)</a></li><li>Police (local numbers)</li></ol></ul>
+<ul id="marshallislands" title="Marshall Islands"><h3>Marshall Islands</h3><ol><li>Fire (local numbers)</li><li>Medical <a href="tel:6254111">(6254111)</a></li><li>Police <a href="tel:6258666">(6258666)</a></li></ol></ul>
+<ul id="micronesia" title="Micronesia"><h3>Micronesia</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="nauru" title="Nauru"><h3>Nauru</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="newzealand" title="New Zealand"><h3>New Zealand</h3><ol><li>Fire <a href="tel:111">(111)</a></li><li>Medical <a href="tel:111">(111)</a></li><li>Police <a href="tel:111">(111)</a></li></ol></ul>
+<ul id="palau" title="Palau"><h3>Palau</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="papuanewguinea" title="Papua New Guinea"><h3>Papua New Guinea</h3><ol><li>Fire <a href="tel:110">(110)</a></li><li>Medical (local numbers)</li><li>Police <a href="tel:000">(000)</a></li></ol></ul>
+<ul id="samoa" title="Samoa"><h3>Samoa</h3><ol><li>Fire <a href="tel:994">(994)</a></li><li>Medical <a href="tel:996">(996)</a></li><li>Police <a href="tel:995">(995)</a></li></ol></ul>
+<ul id="solomonislands" title="Solomon Islands"><h3>Solomon Islands</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="tonga" title="Tonga"><h3>Tonga</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:933">(933)</a></li><li>Police <a href="tel:922">(922)</a></li></ol></ul>
+<ul id="tuvalu" title="Tuvalu"><h3>Tuvalu</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="vanuatu" title="Vanuatu"><h3>Vanuatu</h3><ol><li>Fire <a href="tel:112">(112)</a></li><li>Medical <a href="tel:112">(112)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+
+
+
+<ul id="antiguaandbarbuda" title="Antigua and Barbuda"><h3>Antigua and Barbuda</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="bahamas" title="Bahamas"><h3>Bahamas</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="barbados" title="Barbados"><h3>Barbados</h3><ol><li>Fire <a href="tel:113">(113)</a></li><li>Medical <a href="tel:115">(115)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="belize" title="Belize"><h3>Belize</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="canada" title="Canada"><h3>Canada</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="caymanislands" title="Cayman Islands"><h3>Cayman Islands</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="costarica" title="Costa Rica"><h3>Costa Rica</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="cuba" title="Cuba"><h3>Cuba</h3><ol><li>Fire <a href="tel:26811">(26811)</a></li><li>Medical <a href="tel:26811">(26811)</a></li><li>Police <a href="tel:26811">(26811)</a></li></ol></ul>
+<ul id="dominica" title="Dominica"><h3>Dominica</h3><ol><li>Fire <a href="tel:999">(999)</a></li><li>Medical <a href="tel:999">(999)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="dominicanrepublic" title="Dominican Republic"><h3>Dominican Republic</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="elsalvador" title="El Salvador"><h3>El Salvador</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="greenland" title="Greenland"><h3>Greenland</h3><ol><li>Fire (local numbers)</li><li>Medical (local numbers)</li><li>Police (local numbers)</li></ol></ul>
+<ul id="grenada" title="Grenada"><h3>Grenada</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="guatemala" title="Guatemala"><h3>Guatemala</h3><ol><li>Fire <a href="tel:122">(122)</a></li><li>Medical <a href="tel:123">(123)</a></li><li>Police <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="haiti" title="Haiti"><h3>Haiti</h3><ol><li>Fire (local numbers)</li><li>Medical <a href="tel:118">(118)</a></li><li>Police <a href="tel:114">(114)</a></li></ol></ul>
+<ul id="honduras" title="Honduras"><h3>Honduras</h3><ol><li>Fire <a href="tel:198">(198)</a></li><li>Medical <a href="tel:378654">(378654)</a></li><li>Police <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="jamaica" title="Jamaica"><h3>Jamaica</h3><ol><li>Fire <a href="tel:110">(110)</a></li><li>Medical <a href="tel:110">(110)</a></li><li>Police <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="mexico" title="Mexico"><h3>Mexico</h3><ol><li>Fire <a href="tel:060">(060)</a></li><li>Medical <a href="tel:060">(060)</a></li><li>Police <a href="tel:080">(080)</a></li></ol></ul>
+<ul id="nicaragua" title="Nicaragua"><h3>Nicaragua</h3><ol><li>Fire <a href="tel:2650162">(2650162)</a></li><li>Medical <a href="tel:2651761">(2651761)</a></li><li>Police <a href="tel:118">(118)</a></li></ol></ul>
+<ul id="panama" title="Panama"><h3>Panama</h3><ol><li>Fire <a href="tel:103">(103)</a></li><li>Medical <a href="tel:2699778">(2699778)</a></li><li>Police <a href="tel:104">(104)</a></li></ol></ul>
+<ul id="stkittsandnevis" title="Saint Kitts and Nevis"><h3>Saint Kitts and Nevis</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="stlucia" title="Saint Lucia"><h3>Saint Lucia</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="saintpierreandmiquelon" title="Saint Pierre and Miquelon"><h3>Saint Pierre and Miquelon</h3><ol><li>Fire <a href="tel:18">(18)</a></li><li>Medical <a href="tel:15">(15)</a></li><li>Police <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="stvincentandgrenadines" title="Saint Vincent and Grenadines"><h3>Saint Vincent and Grenadines</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="trinidadandtobago" title="Trinidad and Tobago"><h3>Trinidad and Tobago</h3><ol><li>Fire <a href="tel:990">(990)</a></li><li>Medical <a href="tel:990">(990)</a></li><li>Police <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="unitedstatesofamerica" title="United States of America"><h3>United States of America</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+
+
+
+<ul id="argentina" title="Argentina"><h3>Argentina</h3><ol><li>Fire <a href="tel:100">(100)</a></li><li>Medical <a href="tel:107">(107)</a></li><li>Police <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="bolivia" title="Bolivia"><h3>Bolivia</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="brazil" title="Brazil"><h3>Brazil</h3><ol><li>Fire <a href="tel:193">(193)</a></li><li>Medical <a href="tel:192">(192)</a></li><li>Police <a href="tel:190">(190)</a></li></ol></ul>
+<ul id="chile" title="Chile"><h3>Chile</h3><ol><li>Fire <a href="tel:132">(132)</a></li><li>Medical <a href="tel:131">(131)</a></li><li>Police <a href="tel:133">(133)</a></li></ol></ul>
+<ul id="colombia" title="Colombia"><h3>Colombia</h3><ol><li>Fire <a href="tel:119">(119)</a></li><li>Medical <a href="tel:119">(119)</a></li><li>Police <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="ecuador" title="Ecuador"><h3>Ecuador</h3><ol><li>Fire <a href="tel:102">(102)</a></li><li>Medical <a href="tel:131">(131)</a></li><li>Police <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="guyana" title="Guyana"><h3>Guyana</h3><ol><li>Fire <a href="tel:912">(912)</a></li><li>Medical <a href="tel:913">(913)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="paraguay" title="Paraguay"><h3>Paraguay</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="peru" title="Peru"><h3>Peru</h3><ol><li>Fire <a href="tel:116">(116)</a></li><li>Medical <a href="tel:116">(116)</a></li><li>Police <a href="tel:105">(105)</a></li></ol></ul>
+<ul id="suriname" title="Suriname"><h3>Suriname</h3><ol><li>Fire <a href="tel:115">(115)</a></li><li>Medical <a href="tel:115">(115)</a></li><li>Police <a href="tel:115">(115)</a></li></ol></ul>
+<ul id="uruguay" title="Uruguay"><h3>Uruguay</h3><ol><li>Fire <a href="tel:911">(911)</a></li><li>Medical <a href="tel:911">(911)</a></li><li>Police <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="venezuela" title="Venezuela"><h3>Venezuela</h3><ol><li>Fire <a href="tel:171">(171)</a></li><li>Medical <a href="tel:171">(171)</a></li><li>Police <a href="tel:171">(171)</a></li></ol></ul>
+
+
+</body>
+</html>

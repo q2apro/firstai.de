@@ -1,0 +1,8 @@
+C:\Dokumente und Einstellungen\Kai\Eigene Dateien\Visual Studio 2005\Projects\FirstAid1\FirstAid1\bin\Debug\FirstAid1.exe
+C:\Dokumente und Einstellungen\Kai\Eigene Dateien\Visual Studio 2005\Projects\FirstAid1\FirstAid1\bin\Debug\FirstAid1.pdb
+C:\Dokumente und Einstellungen\Kai\Eigene Dateien\Visual Studio 2005\Projects\FirstAid1\FirstAid1\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\Kai\Eigene Dateien\Visual Studio 2005\Projects\FirstAid1\FirstAid1\obj\Debug\FirstAid1.Form1.resources
+C:\Dokumente und Einstellungen\Kai\Eigene Dateien\Visual Studio 2005\Projects\FirstAid1\FirstAid1\obj\Debug\FirstAid1.Properties.Resources.resources
+C:\Dokumente und Einstellungen\Kai\Eigene Dateien\Visual Studio 2005\Projects\FirstAid1\FirstAid1\obj\Debug\FirstAid1.csproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\Kai\Eigene Dateien\Visual Studio 2005\Projects\FirstAid1\FirstAid1\obj\Debug\FirstAid1.exe
+C:\Dokumente und Einstellungen\Kai\Eigene Dateien\Visual Studio 2005\Projects\FirstAid1\FirstAid1\obj\Debug\FirstAid1.pdb

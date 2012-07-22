@@ -1,0 +1,52 @@
+Sony-Ericsson/JavaPlatform8	de_DE	Sony-Ericsson-JavaPlatform8-de_DE-example.jar	Sony-Ericsson-JavaPlatform8-de_DE-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	de_DE	Sony-Ericsson-JavaPlatform8-de_DE-example.jar	Sony-Ericsson-JavaPlatform8-de_DE-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	de_DE	Sony-Ericsson-JavaPlatform8-de_DE-example.jar	Sony-Ericsson-JavaPlatform8-de_DE-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	de_DE	Sony-Ericsson-JavaPlatform8-de_DE-example.jar	Sony-Ericsson-JavaPlatform8-de_DE-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	de_DE	Sony-Ericsson-JavaPlatform8-de_DE-example.jar	Sony-Ericsson-JavaPlatform8-de_DE-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	de_DE	Sony-Ericsson-JavaPlatform8-de_DE-example.jar	Sony-Ericsson-JavaPlatform8-de_DE-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	de_DE	Sony-Ericsson-JavaPlatform8-de_DE-example.jar	Sony-Ericsson-JavaPlatform8-de_DE-example.jad	-	nullxnull
+
+Sony-Ericsson/JavaPlatform8	en_US	Sony-Ericsson-JavaPlatform8-en_US-example.jar	Sony-Ericsson-JavaPlatform8-en_US-example.jad	-	nullxnull
+

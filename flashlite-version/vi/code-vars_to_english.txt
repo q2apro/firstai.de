@@ -1,0 +1,281 @@
+ENGLISH FL
+
+if (menuPointer==0) {   
+txtMeasure.text = "Disclaimer+ Info";  
+aidtext.text = aid_disclaimer; 
+}
+
+else if (menuPointer==1) { 
+txtMeasure.text = "General Conduct";  
+aidtext.text = aid_general; 
+}
+
+ else if (menuPointer==2) { 
+  txtMeasure.text = "Allergic Reaction";
+  aidtext.text = aid_allergic;
+ }
+ else if (menuPointer==3) {  
+  txtMeasure.text = "Amputation";
+  aidtext.text = aid_amputation;
+ }
+ else if (menuPointer==4) {  
+  txtMeasure.text = "Animal bite";
+  aidtext.text = aid_animalbite;
+ }
+ else if (menuPointer==5) {  
+  txtMeasure.text = "Apnoea";
+  aidtext.text = aid_apnoea; 
+ }
+ else if (menuPointer==6) { 
+  txtMeasure.text = "Asthma";
+  aidtext.text = aid_asthma;
+ }
+ else if (menuPointer==7) { 
+  txtMeasure.text = "Back Injury";
+  aidtext.text = aid_backinjury;
+ }
+ else if (menuPointer==8) { 
+  txtMeasure.text = "Birth";
+  aidtext.text = aid_birth;
+ }
+ else if (menuPointer==9) { 
+  txtMeasure.text = "Bleeding (light)";
+  aidtext.text = aid_bleedinglight; 
+ }
+ else if (menuPointer==10) { 
+  txtMeasure.text = "Bleeding (severe)";
+  aidtext.text = aid_bleedingsevere;
+ }
+ else if (menuPointer==11) { 
+  txtMeasure.text = "Brain Concussion";
+  aidtext.text = aid_brainconcussion;
+ }
+ else if (menuPointer==12) { 
+  txtMeasure.text = "Breathing";
+  aidtext.text = aid_apnoea;
+ }
+ else if (menuPointer==13) { 
+  txtMeasure.text = "Breathlessness";
+  aidtext.text = aid_asthma;
+ }
+ else if (menuPointer==14) { 
+  txtMeasure.text = "Burning (slight)";
+  aidtext.text = aid_burningslight;
+ }
+ else if (menuPointer==15) { 
+  txtMeasure.text = "Burning (severe)";
+  aidtext.text = aid_burningsevere;
+ }
+ else if (menuPointer==16) { 
+  txtMeasure.text = "Check Breathing";
+  aidtext.text = aid_checkbreathing;
+ }
+ else if (menuPointer==17) { 
+  txtMeasure.text = "Chemical Burn (Eyes)";
+  aidtext.text = aid_chemicalburneyes;
+ }
+ else if (menuPointer==18) { 
+  txtMeasure.text = "Chemical Burn";
+  aidtext.text = aid_chemicalburn;
+ }
+ else if (menuPointer==19) { 
+  txtMeasure.text = "Chest Compression";
+  aidtext.text = aid_resuscitation;
+ }
+ else if (menuPointer==20) { 
+  txtMeasure.text = "Danger Zone";
+  aidtext.text = aid_dangerzone;
+ }
+ else if (menuPointer==21) { 
+  txtMeasure.text = "Diabetic Coma";
+  aidtext.text = aid_diabeticcoma;
+ }
+ else if (menuPointer==22) { 
+  txtMeasure.text = "Diarrhoea";
+  aidtext.text = aid_diarrhoea;
+ }
+ else if (menuPointer==23) { 
+  txtMeasure.text = "Drowning";
+  aidtext.text = aid_drowning;
+  aidtext.text += "\n\n" + "* Resuscitation *\n\n" + aid_resuscitation;
+ }
+ else if (menuPointer==24) { 
+  txtMeasure.text = "Electricity Accident";
+  aidtext.text = aid_electricityaccident;
+  aidtext.text += "\n\n" + "* Unconscious with breath *\n\n" + aid_unconsciouswithbreath;
+  aidtext.text += "\n\n" + "* Unconscious without breath *\n\n" + aid_unconsciouswithoutbreath;
+  aidtext.text += "\n\n" + "* Resuscitation *\n\n" + aid_resuscitation;
+ }
+ else if (menuPointer==25) { 
+  txtMeasure.text = "Emergency Call";
+  aidtext.text = aid_emergencycall;
+ }
+ else if (menuPointer==26) { 
+  txtMeasure.text = "Epilepsy";
+  aidtext.text = aid_epilepsy;
+ }
+ else if (menuPointer==27) { 
+  txtMeasure.text = "Eye Injury";
+  aidtext.text = aid_eyeinjury;
+ }
+ else if (menuPointer==28) { 
+  txtMeasure.text = "Fracture";
+  aidtext.text = aid_fracture;
+ } 
+ else if (menuPointer==29) { 
+  txtMeasure.text = "Frostbite (mild)";
+  aidtext.text = aid_frostbitemild;
+ }
+ else if (menuPointer==30) { 
+  txtMeasure.text = "Frostbite (severe)";
+  aidtext.text = aid_frostbitesevere;
+ }
+ else if (menuPointer==31) { 
+  txtMeasure.text = "Heart Attack";
+  aidtext.text = aid_heartattack;
+  aidtext.text += "\n\n" + "* Resuscitation *\n\n" + aid_resuscitation;
+ }
+ else if (menuPointer==32) { 
+  txtMeasure.text = "Hyperglycaemia (sugar)";
+  aidtext.text = aid_diabeticcoma;
+ }
+ else if (menuPointer==33) { 
+  txtMeasure.text = "Hypoglycaemia (low sugar)";
+  aidtext.text = aid_hypoglycaemia;
+ }
+ else if (menuPointer==34) { 
+  txtMeasure.text = "Hyperthermia (hot body)";
+  aidtext.text = aid_hyperthermia;
+ }
+ else if (menuPointer==35) { 
+  txtMeasure.text = "Hypothermia (cool body)";
+  aidtext.text = aid_hypothermia;
+  aidtext.text += "\n\n" + "* Unconscious with breath *\n\n" + aid_unconsciouswithbreath;
+  aidtext.text += "\n\n" + "* Unconscious without breath *\n\n" + aid_unconsciouswithoutbreath;
+  aidtext.text += "\n\n" + "* Resuscitation *\n\n" + aid_resuscitation;
+ } 
+ else if (menuPointer==36) { 
+  txtMeasure.text = "Ice Rescue";
+  aidtext.text = aid_icerescue;
+ } 
+ else if (menuPointer==37) { 
+  txtMeasure.text = "Insect stings";
+  aidtext.text = aid_insectstings;
+ }
+ else if (menuPointer==38) { 
+  txtMeasure.text = "Nosebleeding";
+  aidtext.text = aid_nosebleeding;
+ }
+ else if (menuPointer==39) { 
+  txtMeasure.text = "Poisoning";
+  aidtext.text = aid_poisining;
+  aidtext.text += "\n\n" + "* Resuscitation *\n\n" + aid_resuscitation;
+ }
+ else if (menuPointer==40) { 
+  txtMeasure.text = "Reanimation";
+  aidtext.text = aid_resuscitation;
+ }
+ else if (menuPointer==41) { 
+  txtMeasure.text = "Recovery Position";
+  aidtext.text = aid_recoveryposition;
+ }
+ else if (menuPointer==42) { 
+  txtMeasure.text = "Resuscitation";
+  aidtext.text = aid_resuscitation;
+ }
+ else if (menuPointer==43) { 
+  txtMeasure.text = "Safeguard Accident";
+  aidtext.text = aid_safeguardaccident;
+ }
+ else if (menuPointer==44) { 
+  txtMeasure.text = "Shock";
+  aidtext.text = aid_shock;
+  aidtext.text += "\n\n" + "* Resuscitation *\n\n" + aid_resuscitation;
+ }
+ else if (menuPointer==45) { 
+  txtMeasure.text = "Skull fracture";
+  aidtext.text = aid_skullfracture;
+  aidtext.text += "\n\n" + "* Resuscitation *\n\n" + aid_resuscitation;
+ }
+ else if (menuPointer==46) { 
+  txtMeasure.text = "Snakebite";
+  aidtext.text = aid_snakebite;
+ }
+ else if (menuPointer==47) { 
+  txtMeasure.text = "SOS";
+  aidtext.text = aid_sos;
+ }
+ else if (menuPointer==48) { 
+  txtMeasure.text = "Spinal fracture";
+  aidtext.text = aid_backinjury;
+ }
+ else if (menuPointer==49) { 
+  txtMeasure.text = "Sprain + Strain";
+  aidtext.text = aid_sprain;
+ }
+ else if (menuPointer==50) { 
+  txtMeasure.text = "Stroke";
+  aidtext.text = aid_stroke;
+  aidtext.text += "\n\n" + "* Resuscitation *\n\n" + aid_resuscitation;
+ }
+ else if (menuPointer==51) { 
+  txtMeasure.text = "Suffocation (Choking)";
+  aidtext.text = aid_suffocation;
+ }
+ else if (menuPointer==52) { 
+  txtMeasure.text = "Sunburn";
+  aidtext.text = aid_sunburn;
+ }
+ else if (menuPointer==53) { 
+  txtMeasure.text = "Sunstroke";
+  aidtext.text = aid_sunstroke;
+  aidtext.text += "\n\n" + "* Breathing *\n\n" + aid_apnoea;
+ }
+ else if (menuPointer==54) { 
+  txtMeasure.text = "Swallow/Choking";
+  aidtext.text = aid_suffocation;
+ }
+ else if (menuPointer==55) { 
+  txtMeasure.text = "Traffic Accident";
+  aidtext.text = aid_safeguardaccident;
+ }
+ else if (menuPointer==56) { 
+  txtMeasure.text = "Unconscious with breath";
+  aidtext.text = aid_unconsciouswithbreath;
+ }
+ else if (menuPointer==57) { 
+  txtMeasure.text = "Unconscious without breath";
+  aidtext.text = aid_unconsciouswithoutbreath;
+  aidtext.text += "\n\n" + "* Resuscitation *\n\n" + aid_resuscitation;
+ }
+ else if (menuPointer==58) { 
+  txtMeasure.text = "Vomiting";
+  aidtext.text = aid_vomiting;
+ }
+ else if (menuPointer==59) { 
+  txtMeasure.text = "Emergencies Africa";
+	 
+  aidtext.text = telAfrica;
+ }
+ else if (menuPointer==60) { 
+  txtMeasure.text = "Emergencies Asia";
+  aidtext.text = telAsia;
+ }
+ else if (menuPointer==61) { 
+  txtMeasure.text = "Emergencies Europe";
+  aidtext.text = telEurope;
+ }
+ else if (menuPointer==62) { 
+  txtMeasure.text = "North-/Central America";
+  aidtext.text = telNorthamerica;
+ }
+ else if (menuPointer==63) { 
+  txtMeasure.text = "Emergencies Oceania";
+  aidtext.text = telOceania;
+ }
+ else if (menuPointer==64) { 
+  txtMeasure.text = "South America";
+  aidtext.text = telSouthamerica;
+ }
+ 
+ 

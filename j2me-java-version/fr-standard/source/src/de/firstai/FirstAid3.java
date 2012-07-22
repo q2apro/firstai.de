@@ -1,0 +1,351 @@
+// Premiers.Secours.3.0.standard
+package de.firstai;
+
+import java.io.IOException;
+import javax.microedition.midlet.*;
+import javax.microedition.lcdui.*;
+
+import de.enough.polish.ui.UiAccess;
+
+
+public class FirstAid3 extends MIDlet implements CommandListener {
+
+	boolean started = false;
+	Form details;
+	Display display;
+	List menu;
+	List telEmergency;
+
+	// setup of the navigation buttons
+	static final Command cmdBack = new Command("Retour", Command.BACK, 2);
+	static final Command cmdExit = new Command("Quitter", Command.EXIT, 2);
+
+	StringItem aid_disclaimer, aid_general, aid_allergic, aid_asthma, aid_amputation, aid_apnoea, aid_checkbreathing, aid_eyeinjury, aid_chemicalburneyes, 
+	aid_unconsciouswithbreath, aid_unconsciouswithoutbreath, aid_bleedinglight, aid_bleedingsevere, aid_diabeticcoma, aid_diarrhoea, aid_icerescue, aid_electricityaccident, aid_epilepsy, 
+	aid_vomiting, aid_frostbitemild, aid_frostbitesevere, aid_suffocation, aid_drowning, aid_birth, aid_dangerzone, aid_brainconcussion, aid_resuscitation, aid_heartattack, aid_hyperthermia, 
+	aid_insectstings, aid_fracture, aid_nosebleeding, aid_emergencycall, aid_backinjury, aid_skullfracture, aid_stroke, aid_snakebite, aid_shock, aid_sunburn, aid_sunstroke, 
+	aid_sos, aid_recoveryposition, aid_animalbite, aid_safeguardaccident, aid_hypothermia, aid_hypoglycaemia, aid_chemicalburn, aid_burningslight, aid_burningsevere, aid_poisining, 
+	aid_sprain, separator;
+
+	StringItem[] stringItemArray;
+	Image aid001, aid003, aid008, aid009, aid010, aid011, aid012, aid013, aid019, aid022;
+	Image aid023, aid025, aid028, aid029, aid030, aid031, aid034, aid041, aid045, aid058;
+	Image aid061, aid065, aid067, aid069, aid084, aid085, aid089, aid092, aid107;
+	Image imageCC;
+
+	StringItem stringAfrica;
+	StringItem stringAsia;
+	StringItem stringEurope;
+	StringItem stringNorthamerica;
+	StringItem stringOceania;
+	StringItem stringSouthamerica;
+	
+	public FirstAid3() {
+
+		this.menu = new List("Premiers Secours 3.0", Choice.IMPLICIT);
+		this.menu.append("# Responsabilité + Info", null);
+		this.menu.append("# Appels d'urgence", null);
+		this.menu.append("# Conduite générale", null);
+		this.menu.append("Allergie", null);
+		this.menu.append("Accident de la circulation", null);
+		// this.menu.append("Accident de voiture", null);
+		this.menu.append("Accouchement", null);
+		this.menu.append("Amputation", null);
+		this.menu.append("Appelez les services d'urgence", null);
+		this.menu.append("Arrêt respiratoire", null);
+		this.menu.append("Asthme", null);
+		this.menu.append("Brûlure chimique", null);
+		this.menu.append("Brûlure chimique (yeux)", null);
+		this.menu.append("Brûlure grave", null);
+		this.menu.append("Brûlure légère", null);
+		this.menu.append("Brûlure par le froid - grave", null);
+		this.menu.append("Brûlure par le froid - léger", null);
+		this.menu.append("Choc (Hémorragies)", null);
+		this.menu.append("Coma diabétique", null);
+		this.menu.append("Commotion cérébrale", null);
+		this.menu.append("Compression du thorax", null);
+		this.menu.append("Coup de soleil", null);
+		this.menu.append("Crise Cardiaque", null);
+		this.menu.append("Dégagement d'urgence", null);
+		this.menu.append("Diarrhées", null);
+		this.menu.append("Dos - Blessure", null);
+		this.menu.append("Électrocution", null);
+		this.menu.append("Entorse", null);
+		this.menu.append("Épilepsie", null);
+		this.menu.append("Essoufflement", null);
+		this.menu.append("Etouffement/Étranglement", null);
+		// this.menu.append("Étranglement", null);
+		this.menu.append("Fracture", null);
+		this.menu.append("Fracture du crâne", null);
+		this.menu.append("Fracture du dos", null);
+		this.menu.append("Hyperglycémie (forte teneur en sucre)", null);
+		this.menu.append("Hyperthermie (corps trop chaud)", null);
+		this.menu.append("Hypoglycémie (faible teneur en sucre)", null);
+		this.menu.append("Hypothermie (corps trop froid)", null);
+		this.menu.append("Inconscient avec respiration", null);
+		this.menu.append("Inconscient sans respiration", null);
+		this.menu.append("Insolation", null);
+		this.menu.append("Intoxication", null);
+		this.menu.append("Morsures d'animaux", null);
+		this.menu.append("Nez - saignement", null);
+		this.menu.append("Noyade", null);
+		this.menu.append("Oeil - blessures", null);
+		this.menu.append("Piqûres d'insectes", null);
+		this.menu.append("Position latérale de sécurité", null);
+		this.menu.append("Réanimation", null);
+		// this.menu.append("Réanimation", null);
+		this.menu.append("Respiration", null);
+		this.menu.append("Saignement grave", null);
+		this.menu.append("Saignement léger", null);
+		this.menu.append("Sauvetage sur glace", null);
+		this.menu.append("Serpent - Morsures", null);
+		this.menu.append("SOS", null);
+		this.menu.append("Vérifiez la respiration", null);
+		this.menu.append("Vertige", null);
+		this.menu.append("Vomissements", null);
+		this.menu.append("-------------", null); //
+		this.menu.append("Appelez 112", null); //
+
+		// commands
+		this.menu.addCommand(cmdExit);
+		this.menu.setCommandListener(this);
+
+		details = new Form ("First Aid on your Mobile");
+
+		/**** Init the Images ****/
+		try { aid001 = Image.createImage ("/aid001.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid003 = Image.createImage ("/aid003.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid008 = Image.createImage ("/aid008.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid009 = Image.createImage ("/aid009.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid010 = Image.createImage ("/aid010.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid011 = Image.createImage ("/aid011.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid012 = Image.createImage ("/aid012.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid013 = Image.createImage ("/aid013.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid019 = Image.createImage ("/aid019.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid022 = Image.createImage ("/aid022.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+
+		try { aid023 = Image.createImage ("/aid023.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid025 = Image.createImage ("/aid025.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid028 = Image.createImage ("/aid028.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid029 = Image.createImage ("/aid029.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid030 = Image.createImage ("/aid030.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid031 = Image.createImage ("/aid031.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid034 = Image.createImage ("/aid034.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid041 = Image.createImage ("/aid041.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid045 = Image.createImage ("/aid045plug.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid058 = Image.createImage ("/aid058.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+
+		try { aid061 = Image.createImage ("/aid061.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid065 = Image.createImage ("/aid065.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid067 = Image.createImage ("/aid067.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid069 = Image.createImage ("/aid069.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid084 = Image.createImage ("/aid084.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid085 = Image.createImage ("/aid085.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid089 = Image.createImage ("/aid089.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid092 = Image.createImage ("/aid092.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		try { aid107 = Image.createImage ("/aid107.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+		
+		try { imageCC = Image.createImage ("/cc88x31.png"); } catch (IOException e1) { throw new RuntimeException ("Unable to load Image: "+e1); }
+	}
+
+	public void startApp() {
+		if (!started) {
+			// emergency numbers list
+			telEmergency = new List ("Continent", Choice.IMPLICIT);
+			telEmergency.append("Afrique", null);
+			telEmergency.append("Amérique du Nord / Centrale", null);
+			telEmergency.append("Amérique du Sud", null);
+			telEmergency.append("Asie", null);
+			telEmergency.append("Europe", null);
+			telEmergency.append("Océanie", null);
+			telEmergency.addCommand(cmdBack);
+			telEmergency.setCommandListener(this);
+			stringAfrica = new StringItem("- Afrique -", "\n# Afrique du Sud\nPol:10111 | Amb:10177 | Pom:10111\n\n# Algérie\nPol:17 | Amb:17 | Pom:14\n\n# Angola\nPol:110 | Amb:118 | Pom:118\n\n# Bénin\nPol:17 | Amb:301769 | Pom:18\n\n# Botswana\nPol:999 | Amb:997 | Pom:998\n\n# Burkina Faso\nPol:17 | Amb:Numéro Local | Pom:18\n\n# Burundi\nPol:Pas de système | Amb:Pas de système | Pom:Pas de système\n\n# Cameroun\nPol:17 | Amb:Numéro Local | Pom:18\n\n# Cap-Vert\nPol:132 | Amb:130 | Pom:131\n\n# Comores\nPol:Radio téléphone seulement | Amb:Radio téléphone seulement | Pom:Radio téléphone seulement\n\n# Congo (République démocratique)\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Congo (République)\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Côte d'Ivoire\nPol:110 | Amb:110 | Pom:180\n\n# Djibouti\nPol:17 | Amb:351351 | Pom:18\n\n# Egypte\nPol:122 | Amb:123 | Pom:180\n\n# Erythrée\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Ethiopie\nPol:91 | Amb:92 | Pom:93\n\n# Gabon\nPol:1730 | Amb:1300 | Pom:18\n\n# Gambie\nPol:117 | Amb:116 | Pom:118\n\n# Ghana\nPol:191 | Amb:193 | Pom:192\n\n# Guinée\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Guinée équatoriale\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Guinée-Bissau\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Kenya\nPol:999 | Amb:999 | Pom:999\n\n# Lesotho\nPol:123 | Amb:121 | Pom:122\n\n# Libéria\nPol:911 | Amb:911 | Pom:911\n\n# Libye\nPol:193 | Amb:193 | Pom:193\n\n# Madagascar\nPol:117 | Amb:2262566 | Pom:18\n\n# Malawi\nPol:199 | Amb:199 | Pom:199\n\n# Mali\nPol:17 | Amb:15 | Pom:18\n\n# Maroc\nPol:19 | Amb:15 | Pom:15\n\n# Maurice\nPol:999 | Amb:999 | Pom:999\n\n# Mauritanie\nPol:117 | Amb:Numéro Local | Pom:118\n\n# Mayotte\nPol:112 | Amb:15 | Pom:603054\n\n# Mozambique\nPol:119 | Amb:117 | Pom:198\n\n# Namibie\nPol:1011 | Amb:2032276 | Pom:2032270\n\n# Niger\nPol:17 | Amb:723141 | Pom:18\n\n# Nigéria\nPol:119 | Amb:199 | Pom:190\n\n# Ouganda\nPol:999 ou 111 portable | Amb:999 ou 111 portable | Pom:999 ou 111 portable\n\n# République arabe sahraouie démocratique\nPol:-- | Amb:-- | Pom:--\n\n# République centrafricaine\nPol:611253 | Amb:610600 | Pom:118\n\n# Réunion\nPol:17 ou 112 portable | Amb:15 ou 112 portable | Pom:18 ou 112 portable\n\n# Rwanda\nPol:112 | Amb:Numéro Local | Pom:Numéro Local\n\n# Sao Tomé et Principe\nPol:-- | Amb:-- | Pom:--\n\n# Sénégal\nPol:Numéro Local | Amb:8891515 | Pom:Numéro Local\n\n# Seychelles\nPol:999 | Amb:999 | Pom:999\n\n# Sierra Leone\nPol:999 | Amb:999 | Pom:999\n\n# Somalie\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Soudan\nPol:999 | Amb:Numéro Local | Pom:999\n\n# Swaziland\nPol:999 | Amb:6060911 | Pom:Numéro Local\n\n# Tanzanie\nPol:112 | Amb:112 | Pom:112\n\n# Tchad\nPol:17 | Amb:Numéro Local | Pom:18\n\n# Togo\nPol:101 | Amb:191 | Pom:118\n\n# Tunisie\nPol:197 | Amb:190 | Pom:198\n\n# Zambie\nPol:999 ou 112 portable | Amb:991 ou 112 portable | Pom:993 ou 112 portable\n\n# Zimbabwe\nPol:995 | Amb:994 | Pom:993");
+			stringAsia = new StringItem("- Asie -", "\n# Afghanistan\nPol:-- | Amb:112 | Pom:--\n\n# Arabie saoudite\nPol:999 | Amb:997 | Pom:998\n\n# Arménie\nPol:102 | Amb:103 | Pom:101\n\n# Azerbaïdjan\nPol:102 | Amb:103 | Pom:101\n\n# Bahreïn\nPol:999 | Amb:999 | Pom:999\n\n# Bangladesh\nPol:8665513 | Amb:199 | Pom:9555555\n\n# Bhoutan\nPol:110 | Amb:112 | Pom:113\n\n# Brunei\nPol:993 | Amb:991 | Pom:995\n\n# Cambodge\nPol:117 | Amb:199 | Pom:118\n\n# Chine\nPol:110 | Amb:120 | Pom:119\n\n# Corée du Nord\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Corée du Sud (République de Corée)\nPol:112 | Amb:119 | Pom:119\n\n# Émirats arabes unis\nPol:999 | Amb:998 | Pom:997\n\n# Géorgie\nPol:022 | Amb:022 | Pom:022\n\n# Hong Kong\nPol:999 | Amb:999 | Pom:999\n\n# Inde\nPol:100 | Amb:102 | Pom:101\n\n# Indonésie\nPol:110 | Amb:118 | Pom:113\n\n# Iran\nPol:110 ou 112 portable  | Amb:115 ou 112 portable | Pom:125 ou 112 portable\n\n# Iraq\nPol:Pas de système | Amb:Pas de système | Pom:Pas de système\n\n# Israël\nPol:100 | Amb:101 | Pom:102\n\n# Japon\nPol:110 | Amb:119 | Pom:119\n\n# Jordanie\nPol:192 | Amb:193 | Pom:193\n\n# Kazakhstan\nPol:03 | Amb:03 | Pom:03\n\n# Kirghizistan\nPol:133 | Amb:03 | Pom:03\n\n# Koweït\nPol:777 | Amb:777 | Pom:777\n\n# Kurdistan\nPol:129 | Amb:115 | Pom:125\n\n# Laos\nPol:Numéro Local | Amb:03 | Pom:Numéro Local\n\n# Liban\nPol:112 | Amb:140 | Pom:175\n\n# Macao\nPol:999 | Amb:999 | Pom:999\n\n# Malaisie\nPol:999 ou 112 portable | Amb:999 ou 112 portable | Pom:999 ou 112 portable\n\n# Maldives\nPol:119 | Amb:102 | Pom:118\n\n# Mongolie\nPol:102 | Amb:103 | Pom:101\n\n# Myanmar\nPol:199 | Amb:199 | Pom:199\n\n# Népal\nPol:100 | Amb:228094 | Pom:101\n\n# Oman\nPol:999 | Amb:999 | Pom:999\n\n# Ouzbékistan\nPol:03 | Amb:03 | Pom:03\n\n# Pakistan\nPol:15 | Amb:115 | Pom:16\n\n# Philippines\nPol:117 | Amb:117 | Pom:117\n\n# Qatar\nPol:999 | Amb:999 | Pom:999\n\n# Singapour\nPol:999 | Amb:995 | Pom:995\n\n# Sri Lanka\nPol:119 ou 112 portable | Amb:110 | Pom:111\n\n# Syrie\nPol:112 | Amb:110 | Pom:113\n\n# Tadjikistan\nPol:02 | Amb:03 | Pom:Numéro Local\n\n# Taiwan\nPol:110 | Amb:119 | Pom:119\n\n# Thaïlande\nPol:191 ou 1155 (touristes) | Amb:191 | Pom:199\n\n# Timor oriental\nPol:112 | Amb:7233212 | Pom:--\n\n# Turkménistan\nPol:03 | Amb:03 | Pom:03\n\n# Vietnam\nPol:113 | Amb:115 | Pom:114\n\n# Yémen\nPol:199 | Amb:199 | Pom:199");
+			stringEurope = new StringItem("- Europe -", "\n# Albanie\nPol:19 | Amb:17 | Pom:18\n\n# Allemagne\nPol:110 | Amb:112 | Pom:112\n\n# Andorre\nPol:110 | Amb:118 | Pom:118\n\n# Autriche\nPol:112 | Amb:112 | Pom:112\n\n# Belgique\nPol:112 | Amb:112 | Pom:112\n\n# Biélorussie\nPol:02 | Amb:03 | Pom:01\n\n# Bosnie-Herzégovine\nPol:122 | Amb:124 | Pom:123\n\n# Bulgarie\nPol:112 | Amb:112 | Pom:112\n\n# Chypre\nPol:112 | Amb:112 | Pom:112\n\n# Cité du Vatican\nPol:112 | Amb:113 | Pom:115\n\n# Croatie\nPol:92 | Amb:94 | Pom:93\n\n# Danemark\nPol:112 | Amb:112 | Pom:112\n\n# Espagne\nPol:112 | Amb:112 | Pom:112\n\n# Estonie\nPol:112 | Amb:112 | Pom:112\n\n# Finlande\nPol:112 | Amb:112 | Pom:112\n\n# France\nPol:17 ou 112 | Amb:15 ou 112 | Pom:18 ou 112\n\n# Grèce\nPol:112 | Amb:112 | Pom:112\n\n# Hongrie\nPol:112 | Amb:112 | Pom:112\n\n# Irlande\nPol:112 | Amb:112 | Pom:112\n\n# Islande\nPol:112 | Amb:112 | Pom:112\n\n# Italie\nPol:112 | Amb:112 | Pom:112\n\n# Kosovo\nPol:911 | Amb:911 | Pom:911\n\n# Lettonie\nPol:112 | Amb:112 | Pom:112\n\n# Liechtenstein\nPol:112 | Amb:112 | Pom:112\n\n# Lituanie\nPol:112 | Amb:112 | Pom:112\n\n# Luxembourg\nPol:112 | Amb:112 | Pom:112\n\n# Macédoine\nPol:112 | Amb:112 | Pom:112\n\n# Malte\nPol:112 | Amb:112 | Pom:112\n\n# Moldova\nPol:902 | Amb:903 | Pom:901\n\n# Monaco\nPol:112 | Amb:112 | Pom:112\n\n# Monténégro\nPol:112 | Amb:112 | Pom:112\n\n# Norvège\nPol:112 | Amb:113 | Pom:110\n\n# Pays-Bas\nPol:112 | Amb:112 | Pom:112\n\n# Pologne\nPol:112 | Amb:112 | Pom:112\n\n# Portugal\nPol:112 | Amb:112 | Pom:112\n\n# République tchèque\nPol:112 | Amb:112 | Pom:112\n\n# Roumanie\nPol:112 | Amb:112 | Pom:112\n\n# Royaume-Uni\nPol:112 | Amb:112 | Pom:112\n\n# Russie\nPol:02 | Amb:03 | Pom:01\n\n# Saint-Marin\nPol:112 | Amb:113 | Pom:116\n\n# Serbie\nPol:112 | Amb:112 | Pom:112\n\n# Slovaquie\nPol:112 | Amb:112 | Pom:112\n\n# Slovénie\nPol:113 | Amb:112 | Pom:112\n\n# Suède\nPol:112 | Amb:112 | Pom:112\n\n# Suisse\nPol:117 ou 112 | Amb: 144 ou 112 | Pom:118 ou 112\n\n# Turquie\nPol:155 | Amb:112 | Pom:110\n\n# Ukraine\nPol:112 | Amb:112 | Pom:112");
+			stringNorthamerica = new StringItem("- Amérique du Nord / Centrale -", "\n# Antigua-et-Barbuda\nPol:911 | Amb:911 | Pom:911\n\n# Bahamas\nPol:911 | Amb:911 | Pom:911\n\n# Barbade\nPol:112 | Amb:115 | Pom:113\n\n# Belize\nPol:911 | Amb:911 | Pom:911\n\n# Canada\nPol:911 | Amb:911 | Pom:911\n\n# Costa Rica\nPol:911 | Amb:911 | Pom:911\n\n# Cuba\nPol:26811 | Amb:26811 | Pom:26811\n\n# Dominique\nPol:999 | Amb:999 | Pom:999\n\n# El Salvador\nPol:911 | Amb:911 | Pom:911\n\n# États-Unis d'Amérique\nPol:911 | Amb:911 | Pom:911\n\n# Grenade\nPol:112 | Amb:911 | Pom:911\n\n# Groenland\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Guatemala\nPol:110 | Amb:123 | Pom:122\n\n# Haïti\nPol:114 | Amb:118 | Pom:Numéro Local\n\n# Honduras\nPol:119 | Amb:378654 | Pom:198\n\n# Îles Caïmans\nPol:911 | Amb:911 | Pom:911\n\n# Jamaïque\nPol:119 | Amb:110 | Pom:110\n\n# Mexique\nPol:080 | Amb:060 | Pom:060\n\n# Nicaragua\nPol:118 | Amb:2651761 | Pom:2650162\n\n# Panama\nPol:104 | Amb:2699778 | Pom:103\n\n# République dominicaine\nPol:911 | Amb:911 | Pom:911\n\n# Sainte-Lucie\nPol:999 | Amb:911 | Pom:911\n\n# Saint-Kitts-et-Nevis\nPol:911 | Amb:911 | Pom:911\n\n# Saint-Pierre-et-Miquelon\nPol:17 | Amb:15 | Pom:18\n\n# Saint-Vincent-et-les Grenadines\nPol:911 | Amb:911 | Pom:911\n\n# Trinité-et-Tobago\nPol:999 | Amb:990 | Pom:990");
+			stringOceania = new StringItem("- Océanie -", "\n# Australie\nPol:000 ou 112 portable | Amb:000 ou 112 portable | Pom:000 ou 112 portable\n\n# Fidji\nPol:911 | Amb:911 | Pom:9170\n\n# Iles Marshall\nPol:6258666 | Amb:6254111  | Pom:Numéro Local\n\n# Îles Salomon\nPol:911 | Amb:911 | Pom:911\n\n# Kiribati\nPol:Numéro Local | Amb:994 | Pom:Numéro Local\n\n# Micronésie\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Nauru\nPol:Numéro Local | Amb:Numéro Local | Pom:Numéro Local\n\n# Nouvelle-Zélande\nPol:111 | Amb:111 | Pom:111\n\n# Palau\nPol:911 | Amb:911 | Pom:911\n\n# Papouasie-Nouvelle-Guinée\nPol:000 | Amb:Numéro Local | Pom:110\n\n# Samoa\nPol:995 | Amb:996 | Pom:994\n\n# Tonga\nPol:922 | Amb:933 | Pom:999\n\n# Tuvalu\nPol:911 | Amb:911 | Pom:911\n\n# Vanuatu\nPol:112 | Amb:112 | Pom:112");
+			stringSouthamerica = new StringItem("- Amérique du Sud -", "\n# Argentine\nPol:101 | Amb:107 | Pom:100\n\n# Bolivie\nPol:911 | Amb:911 | Pom:911\n\n# Brésil\nPol:190 | Amb:192 | Pom:193\n\n# Chili\nPol:133 | Amb:131 | Pom:132\n\n# Colombie\nPol:119 | Amb:119 | Pom:119\n\n# Equateur\nPol:101 | Amb:131 | Pom:102\n\n# Guyana\nPol:911 | Amb:913 | Pom:912\n\n# Paraguay\nPol:911 | Amb:911 | Pom:911\n\n# Pérou\nPol:105 | Amb:116 | Pom:116\n\n# Suriname\nPol:115 | Amb:115 | Pom:115\n\n# Uruguay\nPol:911 | Amb:911 | Pom:911\n\n# Venezuela\nPol:171 | Amb:171 | Pom:171");
+
+			// First-Aid-Text
+			aid_disclaimer = new StringItem ("Responsabilité + Info", "1. Logiciel\nPremiers Secours sur Portable\nVersion: j3.0\nDisponibilité: 2008-12-24\nDroit d'auteur: Kai Kajus Noack\nTraduction: Sami Ben-Hassine\n\nLicence: Creative Commons by-nc-nd\n\nIllustrations © Med4Teens\n\nCe logiciel est censé donner des informations sur les gestes de premiers secours. Toutefois, il ne se substitut pas à une formation aux premiers secours. Il sert plutôt au rafraîchissant des connaissances déjà acquises.\n\n2. Responsabilité\nS'il vous plaît, notez que je ne prends aucune responsabilité pour les conséquences résultant de l'usage du logiciel.\nToute responsabilité est exclue!\nÀ utiliser à vos propres risques!\n\nDans tous les cas d'urgence, s'il vous plaît, chercher immédiatement une aide médicale professionnelle.\n\n3. Projet de développement\nLe logiciel est censé devenir multilingue. Traducteurs volontaires rechercher!\nDes informations complémentaires sont disponibles sur le site Internet www.firstai.de ou écrire un e-mail à: info@firstai.de\n\nSauver une vie c'est sauver le monde.");aid_general = new StringItem ("Conduite générale", "1. Toujours effectuer les gestes de premiers secours. Vous ne pouvez pas faire d'erreur.\n2. Toujours prêter attention à votre propre sécurité.\n3. Examinez la situation et sécurisez le lieu de l'accident.\n4. Appelez les services d'urgences + les gestes de premiers secours!\n5. S'il y a plusieurs victimes, traiter en priorité celle qui est la plus gravement blessée.\n6. Toujours essayer de rassurez la personne concernée. Restez calme vous même!\n7. Si possible, asseyez ou allongez la victime confortablement. Ne jamais donner d'alcool, de nicotine ou de la drogue à la victime.");aid_allergic = new StringItem ("Allergie", "1. Appelez immédiatement une ambulance.\n2. Essayez de calmer la victime et laissez la s'asseoir confortable.\n3. Retirez avec soin l'origine de l'allergie (par exemple le dard de l'abeille).\n4. Refroidir la peau (compresse humide, glace sans contact direct avec la peau).\n5. Si la victime a un antidote, elle doit l'utiliser (l'aider).\n6. Veillez sur la victime jusqu'à l'arrivée de l'ambulance.\n7. Si la victime perd conscience ou s'arrête de respirer, voir les instructions appropriées!");aid_animalbite = new StringItem ("Morsures d'animaux", "Attention: Danger élevé d'infection. Conséquences possibles: infection, tétanos, rage.\n1. Lavez la plaie à l'eau chaude savonneuse.\n2. Ensuite, désinfectez la plaie.\n3. S'il y a hémorragie sévère, élever le haut du corps de la personne.\n4. Mettre un pansement stérile.\n5. Allez à l'hôpital ou appeler un médecin d'urgence.");aid_apnoea = new StringItem ("Arrêt respiratoire", "Pas de son respiratoire, ou de mouvements respiratoire, notable changement de la coloration de la peau.\n1. Appelez les services d'urgence.\n2. Allongez la victime sur son dos.\n3. Retirer les substances se trouvant dans la bouche et la gorge. Basculez la tête vers l'arrière.\n4. Pincez le nez de sorte que le nez soit fermé.\n5. Prenez une grande inspiration et mettre votre bouche sur la bouche de la victime de sorte que l'air ne s'échappe pas.\n6. Expirez lentement et complètement.\n7. Si la victime ne se remet pas à respirer : continuez l'opération jusqu'à l'arrivée de l'ambulance.");aid_asthma = new StringItem ("Asthme", "Fort essoufflement. Sifflements respiratoires. Anxiété.\n1. Rassurez la personne. Restez calme vous même!\n2. Desserrez les vêtements.\n3. Asseyez la victime et la pencher vers l'avant. Encouragez la victime à respirer lentement et profondément.\n4. Si la victime a un inhalateur, elle devrait l'utiliser (l'aider). Après 5 à 10 min, cela devrait prendre effet.\n5. S'il n'y a pas d'amélioration: Utiliser l'inhalateur toutes les 5 min jusqu'à l'arrivée de l'ambulance.\n6. Appelez les services d'urgence.\n7. Si la victime arrête de respirer, voir les instructions: Arrêt respiratoire.");aid_backinjury = new StringItem ("Dos - Blessure", "Douleur dans le dos, bras et jambes engourdis.\n1. Ne pas déplacer la victime!!\n2. Maintenez la tête de la victime de façon à ce qu'elle ne bouge plus (garder la tête stationnaire)\n3. Stabilisez la victime avec des vêtements ou autres sur les côtés.\n4. Rassurez la personne.\n5. Appelez les services d'urgence, leur indiquer l'emplacement de la blessure.");aid_birth = new StringItem ("Accouchement", "Perte des eaux. Contractions douloureuses. Accouchement inattendu.\n1. Ne pas exposer l'intimité de la femme enceinte et gardez son calme! - Appelez les services d'urgence.\n2. Laissez les jambes à nu jusqu'à mi-cuisse et asseyez la femme enceinte sur une surface stérile jambes écartées.\n3. Lui plier les genoux. Ecartez les jambes. Placez le bassin légèrement vers le haut. - La naissance est un processus naturel et fonctionne le plus souvent sans complications.\n4. Rassurez la femme enceinte, la laisser se concentrer sur sa respiration: Respirez par le nez, expirer par la bouche (à vitesse normale).\n5. Rythme à adopter: Prendre une grande inspiration, tenir le souffle, et pousser. Dès que la tête du bébé apparaît, la soutenir avec vos deux mains.\n6. Après l'accouchement: Tenez le bébé en oblique la tête vers la bas pour libérer les voies respiratoires du liquide amniotique. (Il est possible que vous ayez à aspirer le fluide par le nez du bébé avec votre bouche). Le bébé doit respirer et pleurer!\n7. Lier le cordon ombilical à 30 cm du bébé (peut aussi être fait à l'hôpital). Veillez à la stérilité du vagin de la mère.\n8. Séchez le bébé et le garder au chaud. Noter l'heure et les conduire à l'hôpital.");aid_bleedinglight = new StringItem ("Saignement léger", "Objectif: arrêter le saignement.\n1. Ne pas toucher la plaie (risque d'infection).\n2. Ne pas traiter la plaie avec de la poudre, du baume ou de la crème ou encore avec un vaporisateur.\n3. Traitement des plaies: couvrir avec du matériel stérile (compresse) et un bandage.\n4. Pour les petits saignements un pansement est souvent suffisant.\n5. Si la plaie est grande, utiliser une compresse et un bandage. Ne pas trop serrer le bandage, car un ralentissement de la circulation sanguine peut augmenter le saignement.\n6. Remarque: Les plaies dues à la morsure d'un animal enragé doivent être lavés avec une solution savonneuse.");aid_bleedingsevere = new StringItem ("Saignement grave", "Jet de sang, perte considérable de sang. Danger: perte de connaissance due à la perte de sang, infections, mort. Objectif: arrêter l'hémorragie.\n1. Retirez les vêtements de la victime (les couper si nécessaire) pour faire apparaître la plaie.\n2. Bandez la plaie avec un bandage ou, si nécessaire, un vêtement, et serrez fortement.\n3. Exercez une pression d'au moins 10 min.\n4. Si le bandage est imbibé de sang, ne pas le retirer. Mettre un bandage/vêtement supplémentaire.\n5. Positionnez le membre blessé (s'il n'est pas cassé) à une hauteur plus élevée que le cœur afin de ralentir la circulation sanguine vers le membre blessé. Si possible, allongez la victime.\n6. Si le saignement ne s'arrête pas, maintenir la pression sur la plaie et ajoutez des points de pression: Pour un saignement de l'avant-bras, compressez la partie supérieure du bras (compressez la veine situer sur la face interne du bras qui fait face au thorax). Pour un saignement de la jambe, compressez la partie supérieure de la jambe dans l'aine (compressez la veine situer entre les jambes sur la face interne de la jambe concernée).\n7. Appelez les services d'urgence immédiatement.\n8. Dès que le saignement est sous contrôle: Engager la mesure Anti-choc (Voir Choc).");aid_brainconcussion = new StringItem ("Commotion cérébrale", "Maux de tête, des nausées, des vomissements. Affaiblissement de la vision. Possible perte de connaissance.\n1. Allongez la victime.\n2. Appelez les services d'urgence.\n\nSi saignement à la tête:\n1. Allongez la victime et surélevée la tête (vêtement/oreiller).\n2. Traitez la plaie (utiliser un bandage/vêtement).\n3. Appelez les services d'urgence.");aid_burningslight = new StringItem ("Brûlure légère", "Rougeur de la peau. Léger gonflements. Douleur.\n1. Passez la zone concernée sous l'eau froide.\n2. Mettre un bandage humide pas trop serré.");aid_burningsevere = new StringItem ("Brûlure grave", "Peau blanche-rouge, boursouflures, écoulement de liquide. Dommages tissulaires profond. Forte douleur ou aucune douleur (à cause des nerfs brûlés).\n1. Retirez les vêtements autant que possible.\n2. Refroidir les zones brûlées avec de l'eau (environ 15 ° C, 59 ° F) pendant 10 min, jusqu'à ce que la douleur diminue.\n3. Si la brûlure est très étendue, utilisez des linges humides pour refroidir.\n4. Appelez les services d'urgence.\n5. Après refroidissement, traitez la/les plaie(s): Utiliser un pansement/bandage stérile. Ne pas appliquer de fluides (pas de crèmes, huiles, etc.) Ne pas percer les cloques.\n6. Surveillez la respiration et l'état de conscience de la victime jusqu'à l'arrivée du médecin d'urgence.");aid_checkbreathing = new StringItem ("Vérifiez la respiration", "1. Vérifiez la respiration avec l'oreille sur le torse.\n2. Vérifiez la respiration sur le haut du torse (poser votre main sur le torse).\n3. Sentir la respiration par le nez et/ou la bouche de la victime avec votre joue.");aid_chemicalburneyes = new StringItem ("Brûlure chimique (yeux)", "1. Appelez les services d'urgence, leur indiquer les produits chimiques en question.\n2. Rincez les yeux avec beaucoup d'eau. Couvrir l'oeil en bonne santé durant le rinçage.\n3. Conduire le jet d'eau à partir de l'angle interne de l'œil vers l'extérieur de l'œil. Rincez pendant au moins 20 minutes sous l'eau claire.\n4. Fermez les deux yeux de la victime et lui bandez les yeux avec un linge humide.\n5. Veillez sur la victime jusqu'à l'arrivée de l'ambulance.");aid_chemicalburn = new StringItem ("Brûlure chimique", "Blessures des tissus.\n1. L'esprit d'autoprotection!\n2. Agir rapidement et lavez-les endroits brûlés.\n3. Appelez les services d'urgence.\n4. S'il y a brûlure chimique dans les voies digestives, boire beaucoup d'eau.\n5. Ne pas provoquer de vomissements!");aid_dangerzone = new StringItem ("Dégagement d'urgence", "1. Exécution du dégagement: Positionnez un bras de la victime sur sa poitrine, et mettez vous derrière la victime.\n2. Passez vos mains sous les aisselles de la victime pour attraper le poignet et le coude du bras de la victime que vous avez mis sur sa poitrine.\n3. Retirez et transporter la personne en sécurité.");aid_diabeticcoma = new StringItem ("Coma diabétique", "Sucre dans le sang trop élevé (manque d'insuline).\nSymptômes: soif, perte contrôle vessie, nausées, vomissements. Halène à l'odeur de fruits/vin.\n1. Appelez les services d'urgence.\n2. Aidez la victime (si certitude diabète) à prendre l'insuline.\n3. Position latérale de sécurité. (Pas d'autres gestes possibilites pour le moment.)\n4. Surveiller l'état de la victime jusqu'à l'arrivée de l'ambulance.");aid_diarrhoea = new StringItem ("Diarrhées", "Intoxication alimentaire, infection de l'intestin ou troubles. Excrément liquide, visqueux ou sanglant.\n1. Danger pour la circulation sanguine en raison de la déshydratation et la perte de sel!\n2. Faites boire (thé, eau).\n3. Si il y a de forts troubles appeler le médecin d'urgence. Dans tous les cas, consulter un médecin.");aid_drowning = new StringItem ("Noyade", "1. Appelez les services d'urgence. Demandez à côté de vous pour obtenir de l'aide.\n2. Sortez la victime de l'eau!\n3. Si la victime respire: Position latérale de sécurité. Garder la victime au chaud (couverture). Surveiller la victime jusqu'à l'arrivée de l'ambulance.\n4. Si victime ne respire pas: Commencez immédiatement à la réanimation (Voir Réanimation)! (Émission de l'eau des poumons est inutile.)");aid_electricityaccident = new StringItem ("Électrocution", "1. Tout d'abord coupez l'électricité!\nDanger: perte de conscience, arrêt respiratoire.\n2. A - Victime inconsciente / respire (Appelez les urgences)\n3. B - Victime inconsciente / ne respire pas (Voir vérifiez la respiration + réanimation + appelez les Urgences)");aid_emergencycall = new StringItem ("Appelez les services d'urgence", "Appelez le 15 (112 à l'international). N'hésitez pas à appeler une ambulance!\n\nAu téléphone, vous devez fournir les informations suivantes:\n- Que s'est-il passé \n- Où (lieu de l'accident) \n- Combien de victimes \n- Quel type de blessures. \nEnsuite, attendre leurs instructions.");aid_epilepsy = new StringItem ("Épilepsie", "Corps rigide, poings serrés, mâchoire serrée, contraction musculaires dans les membres ou le visage. Yeux retournés. Bave. Perte de connaissance possible.\n1. Ne pas tenir la victime ou restreindre ses mouvements.\n2. Allongez la victime sur une base souple (coussin), déplacez les objets proches pour éviter les blessures.\n3. Rassurez la victime. Desserrer les vêtements, assurez-vous qu'elle puisse respirer convenablement.\n4. Si la victime vomit, tournez la tête sur le côté pour que le vomit se déverse.\n5. Gardez les voies respiratoires libres. Risque d'avaler sa langue.\n6. Position latérale de sécurité + appel des urgences. Continuez de surveiller l'état de la victime.\n7. Tenir les autres personnes à distance.");aid_eyeinjury = new StringItem ("Oeil - blessures", "1. Laissez l'objet dans l'œil de victime, ne pas le retirer.\n2. Gardez les yeux immobiles pour éviter de nouvelles blessures. Ne touchez pas les yeux.\n3. Si l'œil saigne, recouvrir d'une compresse ou d'une gaze stérile.\n4. Refroidir les yeux avec un tampon froid (réduit le gonflement, le saignement s'arrête plus rapidement).\n5. Appelez les urgences ou allez en voiture à l'hôpital.");aid_fracture = new StringItem ("Fracture", "Symptômes: Forme et mouvement non naturel de l'os. Déformation. Mouvement douloureux, sensible au toucher.\n1. Évitez les mouvements!\n2. Appelez les services d'urgence.\n3. Immobilisez l'os fracturé, c'est-à-dire soutenir l'os à un objet en l'attachant solidement. Gardez la position naturelle de l'os.\n4. Si la fracture est ouverte, couvrir la plaie avec du matériel stérile.");aid_frostbitemild = new StringItem ("Brûlure par le froid - léger", "Pâleur, gonflements. Danger pour l'approvisionnement en sang.\n1. Emmenez la victime dans un endroit chaud.\n2. Eloignez vous du froid, retirer les vêtements froid, séchez la victime.\n3. Réchauffez avec de l'eau tiède et avec la chaleur du corps du sauveteur.\n4. Donnez une boisson chaude (thé). Pas d'alcool!");aid_frostbitesevere = new StringItem ("Brûlure par le froid - grave", "Peau froide, gris-blanc, cloque, tissu de peau mort. Danger pour l'approvisionnement en sang!\n1. Allez dans un endroit chaud.\n2. Traitement des plaies / les couvrir.\n3. Donnez une boisson sucrée.\n4. Ne frottez pas la victime pour la réchauffer!\n5. Appelez les services d'urgence.");aid_heartattack = new StringItem ("Crise Cardiaque", "Lourd, plus de 5 min de pression et de douleur dans la poitrine rayonnant dans les bras / épaules. Anxiété, pâleur, sueurs froides. Peut-être des nausées, essoufflement.\n1. Appelez les urgences! Les informez d'une possible crise cardiaque.\n2. Surélevez le haut du corps de la victime. Desserrez les vêtements. Ne donnez pas de médicaments ou de boissons.\n3. Parlez calmement à la victime.\n4. Vérifiez l'état de conscience et la respiration de la victime.\n5. Donnez de l'aspirine, si disponible.\n6. Si la personne est inconsciente, commencez la réanimation (voir Réanimation).");aid_hypoglycaemia = new StringItem ("Hypoglycémie (faible teneur en sucre)", "Niveau de sucre dans le sang inférieur à la valeur minimum (à cause d'un surdosage d'insuline ou pas suffisamment d'apport en nourriture).\nSymptômes: pâleur, nervosité, faim, tremblements, sueur.\n1. Assurez-vous que la personne est une personne diabétique (chercher un badge/carte diabétique).\n2. Appelez les services d'urgences.\n3. Donner une boisson sucrée et du dextrose ou glucose (si il n'y a pas de problèmes de déglutition).\n4. Si la personne est consciente et respire: position latérale de sécurité. Surveiller la respiration de la personne. Si arrêt respiratoire: voir Arrêt respiratoire.\n5. Si la victime respire, vous pouvez mettre un morceau de sucre à l'intérieur de la joue, fermez la bouche et poussez le sucre de l'extérieur.");aid_hyperthermia = new StringItem ("Hyperthermie (corps trop chaud)", "Soif, faiblesse, désorientation, nausées, confusion, forte transpiration, la peau est chaude.\n1. Appelez les services d'urgence.\n2. Trouver un lieu ombragé et frais (chambre avec air conditionné préférable).\n3. Allongez la victime, élever les jambes. Desserrez les vêtements.\n4. Refroidir la peau avec beaucoup d'eau ou couvrir avec des serviettes froides.\n5. Donnez beaucoup d'eau ou des jus de fruits à boire.");aid_hypothermia = new StringItem ("Hypothermie (corps trop froid)", "Tremble de froid, somnolence, épuisement jusqu'à l'inconscience. Peau froide et pâle. Faible pouls, rythme cardiaque faible.\n1. Emmenez la victime dans un endroit chaud.\n2. Appelez les services d'urgence.\n3. Augmenter la température du corps (couverture et corps à corps).\n4. Enlevez les vêtements mouillés et mettre des vêtements chauds. Couvrir. Couvrir la tête.\n5. Donnez du thé chaud, soupe ou de l'eau chaude à boire. Pas d'alcool! Gardez la victime éveillée.\n6. Surveillez la victime jusqu'a l'arrivée des services d'urgence. Si la victime perd conscience, procéder à la réanimation (voir réanimation).\n7. A - Victime inconsciente / respire (Appelez les Urgences)\n8. B - Victime inconsciente / ne respire pas (Voir Arrêt respiratoire + les Urgences)");aid_icerescue = new StringItem ("Sauvetage sur glace", "Faites attention à votre propre sécurité. Danger: noyade, hypothermie.\n1. Demandez à d'autres personnes de vous aider. Appelez les services d'urgence.\n2. Effectuez le sauvetage grâce à une échelle, une planche ou une barre. Poids doit être réparti de façon égale.\n3. Ramper lentement vers la victime sur le support (si possible s'attacher avec une corde à un point stable) avec une barre ou autre.\n4. Atteindre la victime avec la barre ou autre (ne pas utiliser vos mains!) encouragez la à prendre l'objet et tirez la vers vous.\n5. Rampez lentement en arrière.\n6. Gestes de premiers secours.\n7. Auto-évacuation possible: Si la glace est solide, vous pouvez distribuer votre poids sur la glace et ramper à plat ventre, pour vous sortir de l'eau et vous diriger vers la terre ferme. Si la glace est fragile, essayer de la briser petit à petit jusqu'à la terre ferme.");aid_insectstings = new StringItem ("Piqûres d'insectes", "Gonflement, éruption cutanée, sensation de brûlure, faiblesse, respiration difficile, diminution de l'état de conscience, tachycardie.\n1. Retirez soigneusement le dard (avec une pince à épiler). Ne pas presser le dard car cela pourrait injecter plus de venin.\n2. Refroidir la zone concernée (utilisez une compresse froide).\n3. La zone concernée devrait être située à une hauteur inférieure au cœur pour ralentir la circulation du venin.\n4. Si piqûre dans la bouche/mâchoire : Manger une glace et utilisez une compresse froide pour refroidir la gorge.\n5. Si de graves problèmes apparaissent, problème de respiration ou perte de conscience, appelez une ambulance.");aid_nosebleeding = new StringItem ("Nez - saignement", "Rupture d'une petite artère dans le bout du nez.\n1. Asseyez la victime, penchée légèrement vers l'avant. Gardez la tête droite.\n2. Ne pas allonger la victime, car avoir la tête à une hauteur plus élevée que le coeur ralenti le saignement.\n3. Enveloppez le cou avec un linge froid (vêtement mouillé).\n4. Pincement des narines jusqu'à ce que le saignement s'arrête (au moins 10 min).\n5. Ensuite, ne pas forcer sur le nez (ne pas renifler ou souffler fortement).\n6. Si de graves problèmes apparaissent ou le saignement ne peut pas être arrêté, appelez les Urgences.");aid_poisining = new StringItem ("Intoxication", "Confusion, hallucinations, pupille dilatée, fièvre, crampes. Perte de conscience.\n1. Donnez un antidote, uniquement si vous êtes accompagné par un médecin.\n2. Ne pas donner de boissons. Ne pas faire vomir.\n3. Appelez les Urgences + les informés de la nature de l'empoisonnement!\n4. Protégez la victime du reste de poison et des vomissements!\n5. Si la victime est consciente et respire: position latérale de sécurité. Surveiller l'état de la victime jusqu'à l'arrivée de l'ambulance.\n6. Si victime ne respire pas: commencer immédiatement la Réanimation! Vider la bouche de la victime avant de procéder (vomit).");aid_recoveryposition = new StringItem ("Position latérale de sécurité", "1. Allongez la victime sur le dos, jambes bien droite. Genoux collés.\n2. Placez le bras le plus proche de vous en angle droit par rapport au corps.\n3. Tirez le bras le plus éloigné de vous en travers de la poitrine et placez le dos de la main contre la joue proche de vous.\n4. Prenez le genou le plus éloigné, tirez-le vers vous, et posez le sur le sol. Mettre cette jambe en angle droit. Gardez la main de la victime sur sa joue, la paume doit toucher le sol et la tête doit être posé sur le dos de cette main.\n5. Assurez-vous que les voies respiratoires sont libres.\n6. Ouvrez légèrement la bouche et mettre la tête légèrement en arrière pour drainer la vomit. Vérifiez la respiration.\n7. Surveillez la victime jusqu'à l'arrivée des Urgences.");aid_resuscitation = new StringItem ("Réanimation", "# Massage Cardiaque\n1. Allongez la victime sur le dos. S'agenouiller à coté d'elle.\n2. Découvrir la poitrine.\n3. Placez la paume d'une main au milieu de la poitrine (au dessus du sternum).\n4. Placez la deuxième main sur la première.\n5. Tendres les bras.\n6. Appuyez sur 5 cm de profondeur dans la poitrine de la victime (la puissance doit venir de la partie haute de votre corps) puis relâcher.\n7. Pressez 30 fois de suite en peu de temps et fermement!\n\n# Bouche à bouche\n1. Enlevez les substances contenues dans la bouche et la gorge. Pivotez la tête en arrière.\n2. Pincez le nez de sorte à le fermer hermétiquement.\n3. Prenez une grande inspiration et mettre votre bouche sur la bouche de la victime de sorte que l'air ne peut s'échapper.\n4. Faire le bouche-à-bouche deux fois de suite (expirer lentement et entièrement).\n5. Ensuite, faire le massage cardiaque à nouveau.\n\nRépétez le massage cardiaque et le bouche-à-bouche jusqu'à l'arrivée de l'ambulance.");aid_safeguardaccident = new StringItem ("Accident de voiture", "1. Arrêtez votre propre voiture 50-100 m derrière le site de l'accident (si vous êtes sur une autoroute ou route de campagne). Allumer les feux de détresse. Mettez votre gilet de haute visibilité.\n2. Placez triangle de présignalisation avant l'accident. Attention: Si l'accident se trouve dans une courbe positionnez le triangle avant la courbe!\n3. Demandez de l'aide aux personnes autour de vous.\n4. Ouvrez la porte de la voiture accidentée (si bloquée, ouvrir à l'aide d'un cric de voiture). Éteignez le moteur de la voiture.\n5. Secours aux victimes de l'accident: détachez la ceinture de sécurité, déplacez le siège vers l'arrière. Sortir la victime de la voiture grâce à la technique de dégagement d'urgence.\n6. Appelez les services d'urgence.\n7. Commencez les gestes de premiers secours.");aid_shock = new StringItem ("Choc (Hémorragies)", "Troubles de la circulation sanguine dus à un manque d'oxygène dans le corps.\nCause: forte perte de sang, réduction du volume sanguin.\nSymptômes: pâleur, peau froide, sueur froide, anxiété.\n1. Éliminer la cause du choc (par exemple, arrêter la perte de sang, traitez la plaie)!\n2. Déposez la victime sur une couverture, élevez les jambes. Calmez la personne.\n3. Appelez les services d'urgence.\n4. Si difficultés à respirer ou perte de conscience, commencez la réanimation.");aid_skullfracture = new StringItem ("Fracture du crâne", "Léger saignement du nez, de la bouche ou des oreilles. Souvent, plaies ouvertes au crâne.\n1. Gardez les voies respiratoires libres.\n2. Si conscient: laissez la victime s'asseoir avec la tête incliné vers l'avant. Évitez de nouveaux mouvements!\n3. Si inconscient: position latérale de sécurité (pas de pression sur la blessure de la tête).\n4. Appelez les services d'urgence.\n5. Mettre un bandage sur la tête.\n6. Si difficultés à respirer ou perte de conscience, commencez la réanimation.");aid_snakebite = new StringItem ("Serpent - Morsures", "Plaie de la taille d'une épingle, de fortes douleurs, gonflement, couleur pourpre. Troubles de la circulation sanguine, danger de mise en état de choc.\n1. Traitez les parties blessées.\n2. Refroidir la zone autour de la morsure.\n3. Commencez les gestes Anti-chocs (Choc).\n4. Appelez les services d'urgence.");aid_sos = new StringItem ("SOS", "1. Signal: 3x court, 3xlong, 3x court.\n2. Visuel (laser de poche, lampe de poche), ou sonore (sifflet, frapper contre une surface).");aid_sprain = new StringItem ("Entorse", "Douleur, gonflements (bleu), perte de mobilité, déformation.\n1. Placez la partie blessée du corps dans la position la plus confortable pour la victime.\n2. Refroidir (à l'aide de packs de glace).\n3. Si possible, élevez la partie blessée.\n4. Allez à l'hôpital ou appelez les Urgences.");aid_stroke = new StringItem ("Vertige", "Sentiment de paralysie ou engourdissement subit (visage, bras, jambe), problèmes de compréhension, troubles de la vision, perte de conscience, forts maux de tête. Problèmes de respiration et de déglutition, perte de contrôle de la vessie et des intestins.\n1. Appelez les services d'urgence!\n2. Desserrez les vêtements. Ne donner pas de médicaments ou de boissons.\n3. Asseyez ou allongez confortablement la victime. Rassurez la!\n4. Surveillez l'état de conscience et la respiration de la victime.\n5. Si difficultés à respirer ou perte de conscience, commencez la réanimation.");aid_suffocation = new StringItem ("Etouffement", "Manque d'oxygène. Trachée fermée. Danger: arrêt respiratoire.\nSymptômes: bruit respiratoire (sifflement), toux, essoufflement, décoloration de la peau.\n1. Agir immédiatement! Laissez la victime tousser très fortement.\n2. Tapez fortement avec la paume de la main sur le dos entre les omoplates (allongez le bébé sur votre avant-bras, la tête en bas).\n3. Si, sans succès: Tenez-vous derrière la victime, les bras autour de la taille, penchez-vous légèrement vers l'avant.\n4. Serrez votre poing à hauteur de l'estomac de la victime et prendre votre poing avec l'autre main.\n5. Utilisez les deux mains pour donner un coup sec dans l'estomac en ramenant vers le haut (comme vous le feriez pour essayer de lever la personne).\n6. Répétez cette manoeuvre jusqu'à 5 fois! Les voies respiratoires devraient être libérées de l'objet.\n7. Appelez les services d'urgence.\n8. Si la première tentative échoue, répétez la manoeuvre jusqu'à l'arrivée de l'ambulance.");aid_sunburn = new StringItem ("Coup de soleil", "1. Déplacez la victime de la lumière directe du soleil. Éviter de nouvelles expositions au soleil.\n2. Faire boire beaucoup d'eau pour arrêter la déshydratation.\n3. Si brûlure grave (cloques, rougeur, douleur), demandez un avis médical.\n4. Si la peau est légèrement rouge, elle peut être refroidi à l'aide de compresse humide. Utilisez une lotion ou gel de protection solaire.");aid_sunstroke = new StringItem ("Insolation", "Tête chaude, visage rouge, maux de tête, vertiges. Cause: Irritation de la membrane cérébrale.\n1. Déplacez la victime dans un endroit frais (à l'ombre) et la partie supérieure du corps de la victime doit rester élevée.\n2. Refroidir la tête avec des couvertures humides.\n3. Appelez les Urgences, Surveillez la respiration.\n4. Si conscient: Donnez une boisson fraîche le cas échéant.\n5. Si arrêt respiratoire, voir réanimation\n6. Commencez le bouche-à-bouche!");aid_unconsciouswithbreath = new StringItem ("Inconscient avec respiration", "Victime ne réagit pas lorsqu'on lui parle, pas de réaction lorsqu'on la secoue. Respiration existante.\n1. Si il y a des gens à côté de vous, demandez de l'aide.\n2. Position latérale de sécurité. Ouvrir la bouche et positionnez la tête de façon à laissez sortir le vomit.\n3. Appelez les services d'urgence.");aid_unconsciouswithoutbreath = new StringItem ("Inconscient sans respiration", "1. Pas de réaction de la victime, pas de respiration.\n\nCommencez la réanimation.");aid_vomiting = new StringItem ("Vomissements", "Provoqué par des nausées. L'estomac se vide. Causes: infections, intoxications, ulcère, drogues/médicaments, mauvaise alimentation, grossesse.\n1. Danger pour la circulation sanguine en raison de la déshydratation et la perte de sel!\n2. Faire boire (thé, eau).\n3. Si il y a de forts troubles, du sang ou des vomissements continus, appelez les Urgences.");
+			aid_amputation = new StringItem ("Amputation", "Une partie du corps, amputée, peut être rattachée. Objectif: Conserver la partie amputée dans le froid jusqu'à l’arrivée à l'hôpital.\n1. Rassurez la victime, allongez la et la couvrir d’une couverture.\n2. Arrêtez l'hémorragie, voir 'Saignement grave' et 'Choc'. \n3. Emballez la partie amputée dans un vêtement propre et sec et la mettre dans un sac en plastique étanche.\n4. Fermez le sac en plastique et mettez-le dans un autre sac en plastique, qui contient de l'eau fraîche / glace.\n5. Ne donnez pas d'alcool, de cigarettes ou de la nourriture à la victime (dans le cas d'une intervention chirurgicale avec anesthésie à l'hôpital).\n6. Ne pas congeler la partie amputée (juste la tenir au frais).\n7. Appelez les Urgences ou allez en voiture à l'hôpital."); 
+			separator = new StringItem ("Separator", "-");  
+					// connection between MENU + NRs 
+					stringItemArray = new StringItem[] {
+							aid_disclaimer, separator, aid_general, aid_allergic, aid_safeguardaccident, aid_birth, aid_amputation, aid_emergencycall, aid_apnoea, aid_asthma, aid_chemicalburn, aid_chemicalburneyes, aid_burningsevere, aid_burningslight, aid_frostbitesevere, aid_frostbitemild, aid_shock, aid_diabeticcoma, aid_brainconcussion, aid_resuscitation, aid_sunburn, aid_heartattack, aid_dangerzone, aid_diarrhoea, aid_backinjury, aid_electricityaccident, aid_sprain, aid_epilepsy, aid_asthma, aid_suffocation, aid_fracture, aid_skullfracture, aid_backinjury, aid_diabeticcoma, aid_hyperthermia, aid_hypoglycaemia, aid_hypothermia, aid_unconsciouswithbreath, aid_unconsciouswithoutbreath, aid_sunstroke, aid_poisining, aid_animalbite, aid_nosebleeding, aid_drowning, aid_eyeinjury, aid_insectstings, aid_recoveryposition, aid_resuscitation, aid_apnoea, aid_bleedingsevere, aid_bleedinglight, aid_icerescue, aid_snakebite, aid_sos, aid_checkbreathing, aid_stroke, aid_vomiting, separator}; 
+
+			display = Display.getDisplay(this);
+			display.setCurrent(this.menu);
+
+			// sets the focus to the given index of the specified list.
+			UiAccess.setCurrentListIndex(display, this.menu, 0);
+
+			// set commands and listener to form
+			details.addCommand(cmdBack);
+			details.setCommandListener(this);
+
+			// application has started
+			started = true;
+		}
+	}
+
+
+	public void applyText(int auswahl) {
+		// clear form
+		details.deleteAll();
+		// assign title according title of menuItem 
+		details.setTitle(UiAccess.getListItem(menu, menu.getSelectedIndex()).getText());
+		// assign text according to int 'auswahl' 
+		details.append(stringItemArray[auswahl].getText());
+
+		// img:IMAGES
+		
+		// spacer
+		details.append(""); 
+		
+		// img: CC licence
+		if (auswahl==0) { details.append(imageCC); }
+		// img:apnoea
+		else if (auswahl==8 || auswahl==48) { details.append(aid067);
+						  details.append(""); details.append(aid010);
+						  details.append(""); details.append(aid011); }
+		// img:backinjury
+		else if (auswahl==24 || auswahl==32) { details.append(aid065); }
+		// img:birth
+		else if (auswahl==5) { details.append(aid025);
+								details.append(""); details.append(aid022); 
+								details.append(""); details.append(aid023); }
+		// img:chemicalburneyes
+		else if (auswahl==11) { details.append(aid019); }
+		// img:bleedinglight
+		else if (auswahl==50) { details.append(aid084);
+							    details.append(""); details.append(aid085); }
+		// img:bleedingsevere
+		else if (auswahl==49) { details.append(aid084);
+							    details.append(""); details.append(aid085);
+							    details.append(""); details.append(aid089);
+							    details.append(""); details.append(aid092); }
+		// img:brainconcussion
+		else if (auswahl==18) { details.append(aid061); }
+		// img:dangerzone
+		else if (auswahl==22) { details.append(aid001); }
+		// img:drowning
+		else if (auswahl==43) { details.append(aid034); }
+		// img:electricityaccident
+		else if (auswahl==25) { details.append(aid045); }
+		// img:epilepsy
+		else if (auswahl==27) { details.append(aid058); }
+		// img:fracture
+		else if (auswahl==28) { details.append(aid107); }
+		// img:heartattack
+		else if (auswahl==21) { details.append(aid061); }
+		// img:icerescue
+		else if (auswahl==51) { details.append(aid041); }
+		// img:recoveryposition
+		else if (auswahl==46) { details.append(aid008); 
+							  details.append(""); details.append(aid009); 
+							  details.append("\nPosition latérale de sécurité (pour bébé):"); details.append(aid028); }
+		// img:resuscitation (FR: removed one)
+		else if (auswahl==19 || auswahl==47) { 
+							  details.append(aid013);
+							  details.append(""); details.append(aid003); 
+							  details.append(""); details.append(aid067); 
+							  details.append(""); details.append(aid010); 
+							  details.append(""); details.append(aid011); 
+							  details.append(""); details.append(aid012);
+							  details.append("\n\n# Réanimation (Bébé)\n\nUtiliser seulement deux doigts:"); details.append(aid029); 
+							  details.append("\nNe pas expirer trop fort:"); details.append(aid030); }
+		// img:safeguardaccident (FR: removed one)
+		else if (auswahl==4) { details.append(aid001); }
+		// img:suffocation (FR: removed one)
+		else if (auswahl==30) { details.append(aid031); 
+							  details.append(""); details.append(aid069); }
+		// img:sunstroke
+		else if (auswahl==39) { details.append(aid061); }
+		// img: unconsciouswithbreath
+		else if (auswahl==37) { details.append(aid008); 
+							  details.append(""); details.append(aid009); }
+		
+		// spacer below
+		details.append("");
+
+		// append Resuscitation measures!
+		// for unconsciouswithoutbreath / drowning / heartattack / brainconcussion / stroke / shock / poisining
+		if (auswahl==38 || auswahl==43 || auswahl==21 || auswahl==18 || auswahl==55 || auswahl==16 || auswahl==40) { 
+			details.append(aid_resuscitation);
+			  details.append(aid013);
+			  details.append(""); details.append(aid003);  details.append(""); details.append(aid067); 
+			  details.append(""); details.append(aid010);  details.append(""); details.append(aid011); 
+			  details.append(""); details.append(aid012);
+		}
+		// for electricity / hypothermia
+		else if (auswahl==25 || auswahl==36) { 
+			details.append(aid_unconsciouswithbreath); 
+			details.append("");
+			details.append(aid_unconsciouswithoutbreath); 
+			details.append("");
+			details.append(aid_resuscitation); 
+			  details.append(""); details.append(aid003);   details.append(""); details.append(aid067); 
+			  details.append(""); details.append(aid010);   details.append(""); details.append(aid011); 
+		} // for sunstroke / asthma / hypoglycaemia
+		else if (auswahl==39 || auswahl==9 || auswahl==35) { 
+			details.append(aid_apnoea);
+			details.append(""); details.append(aid010);	
+			details.append(""); details.append(aid011); 
+		}
+	}
+
+	public void pauseApp() {
+	}
+
+	public void destroyApp(boolean unconditional) {
+		notifyDestroyed();
+	}
+
+	public void commandAction(Command c, Displayable d) {
+		// System.out.println(c.getLabel());
+		if(c.getCommandType() == Command.BACK) {
+			display.setCurrent(menu);
+		}
+		else if (c.getCommandType() == Command.EXIT) {
+			notifyDestroyed();
+		}
+		// Country Emergency Menu
+		else if (display.getCurrent().getTitle() == telEmergency.getTitle()) {
+			details.deleteAll();
+			details.setTitle(UiAccess.getListItem(telEmergency, telEmergency.getSelectedIndex()).getText());
+			if (telEmergency.getSelectedIndex() == 0) { details.append(stringAfrica); } 
+			else if (telEmergency.getSelectedIndex() == 1) { details.append(stringNorthamerica); }
+			else if (telEmergency.getSelectedIndex() == 2) { details.append(stringSouthamerica); }
+			else if (telEmergency.getSelectedIndex() == 3) { details.append(stringAsia); }
+			else if (telEmergency.getSelectedIndex() == 4) { details.append(stringEurope); }
+			else if (telEmergency.getSelectedIndex() == 5) { details.append(stringOceania); }
+			display.setCurrent(details);
+		}
+		// Main Menu
+		else if (display.getCurrent().getTitle() == menu.getTitle()) {
+			if (menu.getSelectedIndex() == 1) { 
+				display = Display.getDisplay(this);
+				display.setCurrent(telEmergency);
+			}
+			// catch divider
+			else if (menu.getSelectedIndex() == 57) { }
+			// notruf
+			else if (menu.getSelectedIndex() == 58) {
+				try {
+					platformRequest("tel:112");
+					// http://developers.sun.com/mobility/midp/ttips/platformRequest/index.html
+				} catch(IOException e){
+					e.printStackTrace();
+				}
+			}
+			else {
+				// apply text to form and show it
+				applyText(menu.getSelectedIndex());
+				display = Display.getDisplay(this);
+				display.setCurrent(details);
+			}
+		}
+	}
+}

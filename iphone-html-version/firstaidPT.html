@@ -1,0 +1,985 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Primeiros Socorros 1.0 iPhone</title>
+<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<meta name="description" content="iPhone Version Primeiros Socorros no seu celular" />
+<!-- Copyright of Web-Application - CC by-nc-nd 3.0 (c) Kai Kajus Noack-->
+<style type="text/css" media="screen">@import "iui/iui.css";</style>
+<style type="text/css" media="screen">
+	p, li { line-height: 2.0; font-family: Verdana, Arial; }
+	ul p { padding-left:15px; }
+	ul { list-style-type:decimal; }
+	ol { padding-bottom: 30px; }
+	img { border: 1px solid #575757; 
+		display: block; margin: 15px auto 15px auto;} 
+</style>
+<script type="application/x-javascript">
+		// back button used in iui
+		langback = "Voltar";
+</script>
+<script type="application/x-javascript" src="iui/iui.js"></script>
+	<script type="application/x-javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }; false);
+		function hideURLbar() { window.scrollTo(0,1); }
+	</script>
+</head>
+<body>
+    <div class="toolbar">
+        <h1 id="pageTitle"></h1>
+        <a id="menuButton" class="button" href="#menu">Menu</a>
+        <a id="backButton" class="button" href="#"></a>
+    </div>
+
+    <ul id="home" title="Primeiros Socorros 1.0 iPhone" selected="true">
+        <li><a href="#aid_disclaimer"># Aviso Legal</a></li>
+        <li><a href="#telEmergency"># Chamadas de emergência</a></li>
+        <li><a href="#aid_general"># Conduta Geral</a></li>
+        <li><a href="#aid_resuscitation">A compressão do tórax</a></li>
+        <li><a href="#aid_diabeticcoma">A hiperglicemia (açúcar)</a></li>
+        <li><a href="#aid_hypoglycaemia">A hipoglicemia (níveis baixos de açúcar)</a></li>
+        <li><a href="#aid_hypothermia">A hipotermia (corpo frio)</a></li>
+        <li><a href="#aid_electricityaccident">Acidente com Electricidade</a></li>
+        <li><a href="#aid_safeguardaccident">Acidente de Tráfego</a></li>
+        <li><a href="#aid_snakebite">Acidente ofídico</a></li>
+        <li><a href="#aid_drowning">Afogamento</a></li>
+        <li><a href="#aid_amputation">Amputação</a></li>
+        <li><a href="#aid_apnoea">Apnéia</a></li>
+        <li><a href="#aid_suffocation">Asfixia</a></li>
+        <li><a href="#aid_asthma">Asma</a></li>
+        <li><a href="#aid_heartattack">Ataque do coração</a></li>
+        <li><a href="#aid_stroke">Ataque Súbito</a></li>
+        <li><a href="#aid_checkbreathing">Checar Respiração</a></li>
+        <li><a href="#aid_shock">Choque</a></li>
+        <li><a href="#aid_diabeticcoma">Coma diabético</a></li>
+        <li><a href="#aid_brainconcussion">Concussão no cerébro</a></li>
+        <li><a href="#aid_diarrhoea">Diarreia</a></li>
+        <li><a href="#aid_asthma">Dispnéia</a></li>
+        <li><a href="#aid_suffocation">Engasgado</a></li>
+        <li><a href="#aid_poisining">Envenenamento</a></li>
+        <li><a href="#aid_epilepsy">Epilepsia</a></li>
+        <li><a href="#aid_sprain">Esforços + distenção</a></li>
+        <li><a href="#aid_fracture">Fratura</a></li>
+        <li><a href="#aid_skullfracture">Fratura Craniana</a></li>
+        <li><a href="#aid_backinjury">Fratura Espinhal</a></li>
+        <li><a href="#aid_hyperthermia">Hipertermia (calor corporal)</a></li>
+        <li><a href="#aid_unconsciouswithbreath">Inconsciência com respiração</a></li>
+        <li><a href="#aid_unconsciouswithoutbreath">Inconsciência sem respirar</a></li>
+        <li><a href="#aid_sunstroke">Insolação</a></li>
+        <li><a href="#aid_backinjury">Lesões nas Costas</a></li>
+        <li><a href="#aid_eyeinjury">Lesões oculares</a></li>
+        <li><a href="#aid_emergencycall">Ligar para emergência</a></li>
+        <li><a href="#aid_animalbite">Mordida de Animal</a></li>
+        <li><a href="#aid_birth">Nascimento</a></li>
+        <li><a href="#aid_insectstings">Picadas de Insetos</a></li>
+        <li><a href="#aid_recoveryposition">Posição de Recuperação</a></li>
+        <li><a href="#aid_frostbitesevere">Queimadura por frio grave</a></li>
+        <li><a href="#aid_frostbitemild">Queimadura por frio leve</a></li>
+        <li><a href="#aid_chemicalburn">Queimadura Quimica</a></li>
+        <li><a href="#aid_chemicalburneyes">Queimadura Quimica (Olhos)</a></li>
+        <li><a href="#aid_sunburn">Queimadura solar</a></li>
+        <li><a href="#aid_burningsevere">Queimaduras Graves</a></li>
+        <li><a href="#aid_burningslight">Queimaduras Ligeiras</a></li>
+        <li><a href="#aid_allergic">Reação alérgica</a></li>
+        <li><a href="#aid_resuscitation">Reanimação</a></li>
+        <li><a href="#aid_resuscitation">Reanimação</a></li>
+        <li><a href="#aid_icerescue">Resgate no gelo</a></li>
+        <li><a href="#aid_apnoea">Respiração</a></li>
+        <li><a href="#aid_bleedingsevere">Sangramento grave</a></li>
+        <li><a href="#aid_bleedinglight">Sangramento leve</a></li>
+        <li><a href="#aid_nosebleeding">Sangramento no Nariz</a></li>
+        <li><a href="#aid_safeguardaccident">Segurança em Acidente</a></li>
+        <li><a href="#aid_sos">SOS</a></li>
+        <li><a href="#aid_vomiting">Vômito</a></li>
+        <li><a href="#aid_dangerzone">Zona de Perigo (Resgate)</a></li>
+        <li><a href="#cclicence"><img src="iui/cc88x31.png" /></a></li>
+    </ul>
+
+<ul id="aid_disclaimer" title="Aviso Legal"><br/>
+<ol><li><b>Software </b><br />
+Primeiros Socorros no seu celular<br />
+Versão: i3.0<br />
+Release: 2009-09-20<br />
+Copyright: Kai Kajus Noack<br />Tradutor: Lucas Daniel Souza de Medeiros<br /><br />
+Licença: Creative Commons <a href="#cclicence"><img style="border:none; margin: 0px 0px 20px 0px;" alt="Creative Commons" src="iui/cc88x31.png" /></a>
+Este programa tem o propósito de dar informações sobre primeiros socorros. No entanto, elas não substituem nenhum curso. É algo que serve para atualizar o conhecimento já adquirido.<br /><br />Figuras &copy; <a target="_blank" href="http://stefan.ganz.priv.at/">Med4Teens</a><br />Interface &copy; <a target="_blank" href="http://code.google.com/p/iui/">iUI Library</a></li><br /><br />
+<li><b>Disclaimer </b><br />
+Por favor note que eu não me responsabilizo pelas consequências resultantes da utilização do software.<br />
+Qualquer responsabilidade é excluída!<br />
+Utilização por sua conta e risco!<br /><br />
+Em todas as situações de emergência, por favor procurar ajuda profissional imediatamente.</li><br /><br />
+<li><b>Projeto de Desenvolvimento </b><br />
+O programa pretende tornar-se multilingue. Tradutores Voluntários são bem vindos!<br /><br />
+Mais informações estão disponíveis na Internet <a href="http://www.firstai.de">www.firstai.de</a> ou escreva um e-mail para: <script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>"+emailME+"</a>"); </script></li><br /><br />
+<span style="font-size:80%">Salvar uma vida, é ter salvado o mundo.</span><br /></ol></ul><br />
+
+
+<ul id="aid_general" title="Conduta Geral"> <br />
+<ol><li>Realizar sempre os primeiros socorros. Você não pode cometer erros.</li>
+<li>Prestar sempre atenção à sua própria segurança.</li>
+<li>Analisar a situação e garantir segurança no lugar do acidente.</li>
+<li>Chamada de emergência + Primeiros Socorros!</li>
+<li>Se existirem várias vítimas, o tratamento dos mais prejudicados tem prioridade.</li>
+<li>Tente acalmar a vítima. Fique calmo você também!</li>
+<li>Se possível deitá-lo(a) confortavelmente. Nunca dê álcool, nicotina ou drogas para uma pessoa.</li></ol></ul>
+<ul id="aid_allergic" title="Reação alérgica"> <img style="border:none;" src="images/aid046.png" />
+<ol><li>Telefone para uma ambulância imediatamente.</li>
+<li>Tente acalmar a vítima e deixá-lo sentar-se confortavelmente.</li>
+<li>Remover a causa da alergia (por exemplo um férrão de abelha) cuidadosamente.</li>
+<li>Esfrie a pele afetada (compressa úmida, gelo). <img style="border:none;" src="images/aid046ice.png" /></li>
+<li>Se tiver um antídoto, ele deve usá-lo (ajude-o).</li>
+<li>Monitore a condição da vítima até a ambulância chegar.</li>
+<li>Se o acidentado perder a consciência ou a respiração parar, siga instruções apropriadas! <img src="images/aid077.png" /></li></ol></ul>
+<ul id="aid_amputation" title="Amputação"> 
+<p>A parte do corpo amputada pode ser recolocada. Objetivo: Manter a parte amputada arrefecida até chegar ao hospital.</p>
+<ol><li>Acalmar a pessoa, deitá-lo(a) para baixo, e cobrir com cobertor.</li>
+<li>Parar o sangramento, consulte 'Hemorragia (grave)' e 'Choque'.</li>
+<li>Embrulhe a parte amputada em um pano limpo e seco, e colocá-la em um saco plástico impermeável.</li>
+<li>Fechar este saco plástico e colocá-lo em outro saco plástico, que contenha água fria/gelo.</li>
+<li>Não dê álcool, cigarros ou alimentos à vítima (no caso de uma cirurgia com anestesia no hospital).</li>
+<li>Não congele a parte amputada, (apenas mantenha fria).</li>
+<li>Ligue para emergência ou por ultimo leve-a ao hospital sozinho.</li></ol></ul>
+<ul id="aid_animalbite" title="Mordida de Animal"> <img src="images/aid047.png" />
+<p>Atenção: alto risco de infecção. Resultado poderia dar infecção, tétano, ou raiva.</p>
+<ol><li>Lavar ferida com água quente sabão. <img src="images/aid049.png" /></li>
+<li>Depois desinfecte a ferida.</li>
+<li>Se houver hemorragia grave, elevar a parte superior do corpo da pessoa.</li>
+<li>Aplicar um curativo asséptico. <img src="images/aid085.png" /></li>
+<li>Vá a um hospital ou ligue para emergência.</li></ol></ul>
+<ul id="aid_apnoea" title="Apnéia"> 
+<p>Sem sons ou movimentos respiratórios, perceptível descoloração da pele.</p>
+<ol><li>Chamada de emergência.</li>
+<li>Deite o acidentado de costas.</li>
+<li>Estique a cabeça pra trás. Remover objetos da boca e da garganta. <img src="images/aid067.png" /></li>
+<li>Puxe o nariz e verifique se está fechado. <img src="images/aid010.png" /></li>
+<li>Respire fundo e encaixe a boca na boca do acidentado, de forma que não possa vazar ar. <img src="images/aid011.png" /></li>
+<li>Respire fora devagar e completamente.</li>
+<li>Senão tiver sucesso: Faça respiração até a ambulância chegar.</li></ol></ul>
+<ul id="aid_asthma" title="Asma"> 
+<p>Grande dificuldade em respirar. Chiado ruído respiratório. Ansiedades.</p>
+<ol><li>Acalme à pessoa. Fique calmo você também!</li>
+<li>Afrouxar roupas.</li>
+<li>Deixe o acidentado sentar inclinado para frente, mande-o respirar devagar e profundamente.</li>
+<li>Se ocasionalmente tiver um inalador, ele deve usá-lo (ajude-o). 5-10 min após a utilização deverá fazer efeito. <img src="images/aid074.png" /></li>
+<li>Caso não haja melhora: Use o inalador a cada 5 min até ambulância chegar.</li>
+<li>Chamada de emergência.</li>
+<li>Se houver <a href="#aid_apnoea">apnéia</a>, comece com a respiração.</li></ol></ul>
+<ul id="aid_backinjury" title="Lesões nas Costas"> 
+<p>Dor nas costas, braços e pernas dormentes.</p>
+<ol><li>Não mova o acidentado!! <img src="images/aid064.png" /></li>
+<li>Segure a cabeça do jeito que estiver, mantendo a pessoa estável (manter a sua cabeça parado) <img src="images/aid065.png" /></li>
+<li>Estabilizar o acidentado com travesseiros na lateral.</li>
+<li>Acalme à vitima.</li>
+<li>Ligue para emergência, lembre-se de salientar o tipo de lesão.</li></ol></ul>
+<ul id="aid_birth" title="Nascimento"> 
+<p>Saída de líquido amniótico. Contração, ocorrerá dores. Nascimento inesperado.</p> <img src="images/aid025.png" />
+<ol><li>Preste atenção à privacidade e mantenha a calma! - Ligue para a emergência.</li>
+<li>Deixar a mulher grávida nua apenas parte inferior do seu corpo, e sente-se em local estéril sobre um calço com as pernas dobradas.</li>
+<li>Dobre os joelhos. Suba as pernas. Posição da bacia ligeiramente ascendente. - O parto é um processo natural e ocorrerá sem complicações.</li>
+<li>Mantenha a mulher calma, deixe-a concentrar-se na propria respiração: inspire através do nariz, e expire da boca para fora (em velocidade normal).</li>
+<li>Ritmo de pressionamento: Respire fundo, mantenha respiração, e pressione. Logo que a cabeça do bebê aparecer, apoie-o, segurando-o com ambas as mãos. <img src="images/aid021.png" /> <img src="images/aid022.png" /></li>
+<li>Após o parto: Segure o bebê cuidadosamente com cabeça para baixo para liberar as vias aéreas e saida de líquido amniótico. (Talvez você tenha que sugar para fora o fluido a partir da boca do bebê pelo nariz.) O bebê deve respirar e chorar!</li>
+<li>Amarrar o cordão umbilical 30 centímetros de distância da criança (também pode ser feito no hospital). Mantenha a vagina da mãe estéril. <img src="images/aid023.png" /></li>
+<li>Seque o bebê e o mantenha aquecido. Anote a hora e leve-a para o hospital.</li></ol></ul>
+<ul id="aid_bleedinglight" title="Sangramento leve"> <img src="images/aid082.png" />  
+<p>Objetivo: Parar o sangramento.</p>
+<ol><li>Não toque na ferida (risco de infecção).</li>
+<li>Não se trata ferida com pó ou sprays.</li>
+<li>Rratamento da ferida: utilize material estéril e uma bandagem. <img src="images/aid098.png" /></li>
+<li>Para pequenas hemorragias é freqüentemente suficiente um tamponamento.</li>
+<li>Se for uma grande hemorragia usar uma atadura e cobrir com uma bandagem. Não se aplica à bandagem apertado como uma imobilização, pode levar ao aumento das hemorragias. <img src="images/aid084.png" /><img src="images/aid085.png" /></li>
+<li>Nota: Ferimentos de raiva têm que ser lavadas com solução de sabão. <img src="images/aid049.png" /></li></ol></ul>
+<ul id="aid_bleedingsevere" title="Sangramento grave"> 
+<p>Salpicos, sangue pulsante. Perigo: Pode engasgar por causa da perda de sangue, infecções, a morte. Objetivo: Parar o sangramento.</p>
+<ol><li>Remover roupas (cortar se necessário) e amostrar ferida.</li>
+<li>Enrole uma gaze ou se necessário, uma peça com a pressão em torno da ferida. <img src="images/aid086.png" /></li>
+<li>Exercer pressão por pelo menos 10 min.</li>
+<li>Se for as bandagens ficarem encharcadas com sangue, não remova-as. Em vez disso, enrole outra bandagem / vestuário em torno do ferimento.</li>
+<li>Conservar o membro afetado (caso não esteja quebrado) mais elevado do que o coração para reduzir a quantidade de pressão arterial. Se possível deitar à viima.</li>
+<li>Se não parar de sangrar, manter a pressão sobre a ferida, e defina mais um ponto de pressão na ferida: Para uma hemorragia do antebraço comprima o braço (Pressione na face interna da veia do braço, no meio do cotovelo e na dobra do braço, utilizando seus dedos). Sangramento na perna deve-se fazer pressão de ponto no inguinal (pressione na veia da virilha trafulha, artéria onde leva mais de osso ilíaco, utilizando a sua palma da mão). <img src="images/aid089.png" /><img src="images/aid092.png" /></li>
+<li>Ligue para emergência médico imediatamente.</li>
+<li>Assim que o sangramento estiver sob controle: Iniciar medidas anti-asfixiante. <img src="images/aid093.png" /></li></ol></ul>
+<ul id="aid_brainconcussion" title="Concussão no cerébro"> 
+<p>Dores de cabeça, náuseas, vômitos. Visão deficiente. Inconsciência pode ocorrer.</p> <img src="images/aid035a.png" />
+<ol><li>Olhar desinteressado ou vago (ao infinito).</li>
+<li>Chame a emergência.</li></ol>
+<p>Se sangrar a cabeça:</p>
+<ol><li>Posicione a vítima, em uma posição de cabeça elevada (no travesseiro). <img src="images/aid061.png" /></li>
+<li>Faça tratamento de ferida (utilize bandagem estéril).</li>
+<li>Ligue para emergência.</li></ol></ul>
+
+
+
+
+<ul id="aid_burningslight" title="Queimaduras Ligeiras"> 
+<p>Vermelhidão da pele. Leve inchaço. Dor.</p>
+<ol><li>Mantenha a área queimada sob água fria. <img src="images/aid100.png" /></li>
+<li>Aplicar curativo molhado folgadamente.</li></ol></ul>
+<ul id="aid_burningsevere" title="Queimaduras Graves"> 
+<p>Manchas de vermelho-branco e areas com formação de bolhas. A pele perde fluido. Danos profundos de tecido. Forte dor ou sem dor (por causa dos nervos queimados).</p> <img src="images/aid097.png" />
+<ol><li>Remover as roupas tanto quanto possível.</li>
+<li>Refrigere as partes do corpo queimado com água (cerca de 15 ° C, 59 ° F) por até 10 minutos, até a dor diminuir. <img src="images/aid100.png" /></li>
+<li>Em casos em que a queimadura for extensa, utilize toalhas molhadas para esfriar.</li>
+<li>Ligue para emergência.</li>
+<li>Após o resfriamento da ferida: Use um curativo estéril. Não aplique qualquer fluido (sem cremes, óleos, pomadas, etc.) Não furar as bolhas. <img src="images/aid085.png" /></li>
+<li>Controle a respiração e consciência da pessoa até a chegada da emergência.</li></ol></ul>
+<ul id="aid_checkbreathing" title="Checar Respiração"> <br />
+<ol><li>Verifique sons respiratórios.</li>
+<li>Diagnosticar a respiração na parte superior do abdómen (leigos a sua mão sobre ela). <img src="images/aid027.png" /></li>
+<li>No sentido respiração boca e nariz.</li></ol></ul>
+<ul id="aid_chemicalburneyes" title="Queimadura Quimica (Olhos)"> <br />
+<ol><li>Ligue para emergência, leve a embalagem do produto químico, 'pois o mesmo tem telefone especifico para casos de acidentes.'</li>
+<li>Lave os olhos com muita água. Cubra algum olho saudável durante a lavagem.</li>
+<li>Conduzir o jato de água do ângulo interior do olho ao ângulo exterior do olho. Limpe durante pelo menos 20 minutos sob água. <img src="images/aid019.png" /></li>
+<li>Fechar os dois olhos da vitima e cobri-lo com pano úmido. <img src="images/aid020.png" /></li>
+<li>Monitore as condições até a ambulância chegar.</li></ol></ul>
+<ul id="aid_chemicalburn" title="Queimadura Quimica"> 
+<p>Lesões de tecido.</p> <img src="images/aid095.png" />
+<ol><li>Mente auto-defesa!</li>
+<li>Agir rapidamente e lavar os locais queimados. <img src="images/aid100.png" /></li>
+<li>Ligar para emergência.</li>
+<li>Se há uma queimadura química no sistema digestivo uma das maneiras é beber muita água.</li>
+<li>Não provocar vômitos!</li></ol></ul>
+
+
+<ul id="aid_dangerzone" title="Zona de Perigo (Resgate)"> <br />
+<ol><li>Realização: Posicione os braços da vitima na frente de seu peito, e ficar por trás dele / dela.</li>
+<li>Coloque as mãos sob os ombros dos feridos, agarrando o braço de forma angular.</li>
+<li>Puxar para trás e levar a pessoa em segurança. <img src="images/aid001.png" /> <img src="images/aid007.png" /></li></ol></ul>
+<ul id="aid_diabeticcoma" title="Coma diabético"> 
+<p>Nível de açúcar no sangue for demasiado elevado (falta de insulina).</p>
+<ol><li>Sintomas: Sede, freqüência urinária, náuseas, vômitos. Respiração com cheiro de frutas / vinho.</li>
+<li>Ligue para emergência.</li>
+<li>Ajude a vitima (se for assegurada diabéticos) a tomar insulina. <img src="images/aid016.png" /></li>
+<li><a href="#aid_recoveryposition">Posição de recuperação.</a> (Não existem posições para os primeiros socorros.)</li>
+<li>Monitorar a condição da vitima até que chegue médico de emergência.</li></ol></ul>
+<ul id="aid_diarrhoea" title="Diarreia"> 
+<p>Reação para alimentos contaminados, a infecção do intestino ou distúrbio. Fezes é diluído, viscosas ou sanguinolenta.</p>
+<ol><li>Perigo para a circulação devido à desidratação e perda de sal!</li>
+<li>Dê líquidos (chá, água).</li>
+<li>Se houver fortes perturbações levar ao médico de emergência.</li></ol></ul>
+<ul id="aid_drowning" title="Afogamento"> <br />
+<ol><li>Chamada de emergência. Pergunte as pessoas próximas a você para ajudar. <img src="images/aid032.png" /></li>
+<li>Resgate a pessoa para fora da água! <img src="images/aid033.png" /> <img src="images/aid034.png" /></li>
+<li>Se a vitima estiver respirando: <a href="#aid_recoveryposition">Posição de recuperação</a>. Mantenha-o quente (cubra-o). Monitore seu estado até a chegada da ambulancia.</li>
+<li>Se a vitima não estiver respirando: Comece imediatamente com a <a href="#aid_resuscitation">reanimação</a>! (Remover a água dos pulmões é inútil.)</li></ol></ul>
+<ul id="aid_electricityaccident" title="Acidente com Electricidade"> <br />
+<ol><li>Em primeiro lugar interromper o fornecimento de electricidade! <img src="images/aid045plug.png" /> <img src="images/aid045.png" />
+Perigo: inconsciência, apneia.</li>
+<li><a href="#aid_unconsciouswithbreath">A - inconsciência com a respiração</a></li>
+<li><a href="#aid_unconsciouswithoutbreath">B - inconsciência sem respirar</a> <img src="images/aid042.png" /> <img src="images/aid043.png" /></li></ol></ul>
+<ul id="aid_emergencycall" title="Ligar para emergência"> <br />
+<ol><li>Disque 193 (bombeiros) 192 (SAMU). Sempre que possível, é de graça! Não hesite em ligar para uma ambulância!</li><li>Ao telefonar você deve fornecer as seguintes informações:<br /><br />- O que tem acontecido <br />- Onde (lugar do acidente) <br />- Quantas vitimas <br />- Que tipo de lesões. <br /><br />Posteriormente espere para novas investigações. </li></ol></ul>
+<ul id="aid_epilepsy" title="Epilepsia"> 
+<p>Corpo rígido, punhos fechados , mandíbula pressionada, contração muscular nos membros ou face. Olhos revirando. Salivação. possível inconsciência .</p> <img src="images/aid058.png" />
+<ol><li>Não segure a vitima ou o seu movimento.</li>
+<li>Coloque a vitima em uma base suave (almofadas), remover objetos proximos para evitar auto-lesão.</li>
+<li>Acalme a vitima. Afrouxar roupas, dar liberdade de respiração.</li>
+<li>Se a vitima vômitar, vire a cabeça para o lado que o vômito possa escorrer.</li>
+<li>Manter vias aéreas claro. Risco de engolir a língua.</li>
+<li><a href="#aid_recoveryposition">Posição recuperação</a>: chame a emergência. Continuar a monitorar o estado da vítima.</li>
+<li>Mantenha os curiosos à distância.</li></ol></ul>
+<ul id="aid_eyeinjury" title="Lesões oculares"> <br />
+<ol><li>Deixe objeto no olho da vitima, não remova-o!</li>
+<li>Mantenha os olhos sem se mexer para evitar novas lesões. Não toque no olho.</li>
+<li>Se olho está sangrando, cubra-o com uma compressa ou uma gaze estéril. <img src="images/aid020.png" /></li>
+<li>Mantenha o olho com uma almofada fria (reduz edema, estanca a hemorragia mais rápido).</li>
+<li>Ligue para emergência ou leve-o por si mesmo.</li></ol></ul>
+<ul id="aid_fracture" title="Fratura"> 
+<p>Sintomas: Posição deslocada e mobilidade do osso. Deformação. Movimento doloroso, sensível ao toque.</p> <img src="images/aid104.png" />
+<ol><li>Evite movimentos!</li>
+<li>Ligar para emergencia.</li>
+<li>Imobilizar o osso fraturado, ou seja, imobilizar o local apoiado-o firmemente. Manter a posição do osso. <img src="images/aid107.png" /></li>
+<li>Se for fratura aberta, cobrir a ferida com material estéril. <img src="images/aid106.png" /></li></ol></ul>
+<ul id="aid_frostbitemild" title="Queimadura por frio leve"> 
+<p>Palidez, inchaços. Perigo para a irrigação sanguínea.</p>
+<ol><li>Leve à vitima para uma zona quente.</li>
+<li>Afaste-se de frio, retire roupas frio, seque a pessoa.</li>
+<li>Aquecer com água morna e com o calor do corpo do ajudante.</li>
+<li>Dar bebida quente (chá). Nenhum álcool! <img src="images/aid040.png" /></li></ol></ul>
+<ul id="aid_frostbitesevere" title="Queimadura por frio grave"> 
+<p>Pele extremamente fria, cinza-branca, bolhas, tecido morto. Perigo para o fornecimento de sangue!</p> <img src="images/aid096.png" />
+<ol><li>Ir para a área quente.</li>
+<li>Tratamento ferida / cobertura.</li>
+<li>Dê uma bebida açucarada.</li>
+<li>Não esfregue a vitima com material quente!</li>
+<li>Chame a emergência.</li></ol></ul>
+<ul id="aid_heartattack" title="Ataque do coração"> 
+<p>Pesados, com duração superior a 5 min de pressão e dor no peito, especialmente irradiando nos braços/ombros. Ansiedade, palidez, sudorese fria. Eventualmente, náuseas, falta de ar.</p> <img src="images/aid076.png" /> <img src="images/aid083.png" />
+<ol><li>Chame a emergência e peça o 'DEA'(desfribilador externo automatico)! Avise sobre o suposto ataque cardíaco.</li>
+<li>Posicione a parte superior do corpo elevada. Afrouxar roupas apertadas. Não dê drogas ou bebidas. <img src="images/aid061.png" /></li>
+<li>Calmamente conversar com a pessoa em causa.</li>
+<li>Controle a consciência e respiração.</li>
+<li>Dê a aspirina se disponível.</li>
+<li>Se pessoa estiver inconsciente iniciar a <a href="#aid_resuscitation">reanimação</a>.</li></ol></ul>
+
+
+<ul id="aid_hypoglycaemia" title="A hipoglicemia (níveis baixos de açúcar)"> 
+<p>Nível de açúcar no sangue está abaixo valor mínimo (porcausa de overdose de insulina suficiente ou não ingestão de alimentos).<br/>
+Sintomas: Palidez, nervosismo, a fome, arrepios, suores.</p> <img src="images/aid018.png" />
+<ol><li>Certifique-se de que a pessoa é diabética (procure por um crachá de diabético).</li>
+<li>Chame a emergência.</li>
+<li>Dê uma bebida açucarada e dextrose/glicose (se não houver problemas de deglutição). <img src="images/aid017.png" /></li>
+<li>Se pessoa está consciente e respira: <a href="#aid_recoveryposition">Posição de recuperação</a>. Monitore a respiração da pessoa. Se houver apneia, dê início com a respiração.</li>
+<li>Se não houver respiração, você pode colocar um pouco de açúcar na bochecha, empurre a partir de fora contra ele.</li></ol></ul>
+<ul id="aid_hyperthermia" title="Hipertermia (calor corporal)"> 
+<p>Sede, fraqueza, desorientação, náuseas, confusão, forte sudorese, pele quente.</p> <img src="images/aid035.png" />
+<ol><li>Chame a emergência.</li>
+<li>Encontre um lugar fresco (sala com ar condicionado preferível).</li>
+<li>Fixar pessoa, elevar as pernas. Afrouxar roupas. <img src="images/aid078.png" /></li>
+<li>Arrefecer a pele com muita água ou passar toalha umida.</li>
+<li>Dê muita água ou sucos para beber.</li></ol></ul>
+<ul id="aid_hypothermia" title="A hipotermia (corpo frio)"> 
+<p>Arrepio frio, sonolência, cansaço, até inconsciência. Cor de pele pálida. Pulso lento, batimento cardíaco fraco.</p> <img src="images/aid014.png" />
+<ol><li>Vá a uma área quente/sala.</li>
+<li>Chamar a emergência.</li>
+<li>Pare de impacto do frio. Aumente da temperatura corporal (cubra e faça contato corpo-a-corpo).</li>
+<li>Remover roupas molhadas e colocar roupas quentes. Cobrir a cabeça.</li>
+<li>Dá chá quente, sopa quente ou água para beber. Nenhum álcool! Manter a pessoa acordada. <img src="images/aid039.png" /> <img src="images/aid040.png" /></li>
+<li>Monitore a condição da vitima até que a emergencia chegue. Se pessoa ficar inconsciente, inicie a reanimação:</li>
+<li><a href="#aid_unconsciouswithbreath">A - inconsciência com a respiração</a></li>
+<li><a href="#aid_unconsciouswithoutbreath">B - inconsciência sem respirar</a></li></ol></ul>
+<ul id="aid_icerescue" title="Resgate no gelo"> 
+<p>Preste atenção à sua própria segurança. Perigo: Afogamento, hipotermia.</p>
+<ol><li>Resgate via escada de bordo ou corda. O peso deve ser distribuído amplamente.</li>
+<li>Chame outras pessoas para ajudar. Deixe uma pessoa responsavel por chamar a ambulância.</li>
+<li>Rastejar cuidadosamente sobre sua barriga (se possível até um ponto estável) com a ferramenta para a violação. <img src="images/aid041.png" /></li>
+<li>Manuseie sobre a vitima a distância da ferramenta, (não é a sua mão!) E puxe-a para fora.</li>
+<li>Rastejar para trás de volta para a beira.</li>
+<li>Primeiros socorros.</li>
+<li>Possível auto-salvamento: Se o gelo é sólido pode-se distribuir o seu peso sobre o gelo e puxe-se. Rastejar em sua barriga para a beira. Se gelo for frágil, pode tentar quebrar o gelo pedaço por pedaço até a beira.</li></ol></ul>
+<ul id="aid_insectstings" title="Picadas de Insetos"> <img src="images/aid046.png" />
+<p>Inchaço, vermelhidão, sensação de queimor, fraqueza, dificuldade respiratória, diminuição da consciência, taquicardia.</p>
+<ol><li>Retire com cuidado o ferrão (com uma pinça). Não aperte o ferrão pois assim poderia injetar mais veneno.</li>
+<li>Refrigerar o local da causa (aplicar uma compressa fria).</li>
+<li>Área em questão deve ser mantida mais baixo do que o coração a fim de diminuir a circulação do veneno.</li>
+<li>Se a picada for na area boca-queixo: Abuse de gelados, e aplique uma compressa fria em torno da garganta. <img src="images/aid046ice.png" /></li>
+<li>Se ocorrerem problemas graves chamar uma ambulância.</li></ol></ul>
+<ul id="aid_nosebleeding" title="Sangramento no Nariz"> 
+<p>Rompeu uma pequena artéria na ponta do nariz.</p>
+<ol><li>Sente a pessoa com o sangramento, um pouco virada pra frente. Manter a cabeça reta.</li>
+<li>Não coloque a pessoa deitada, mantenha a cabeça acima do nivel do coração, para assim cessar o sangramento lentamente.</li>
+<li>Enrole o pescoço com pano frio.</li>
+<li>Pressione as narinas juntas até que estanque a hemorragia (por 10 min).</li>
+<li>Depois não assoe o nariz (sem sopros violentos).</li>
+<li>Se ocorrerem problemas graves ou sangramento não puder ser parado, chame a emergência médica.</li></ol></ul>
+<ul id="aid_poisining" title="Envenenamento"> <img src="images/aid052.png" />
+<p>Confusão, alucinações, pupilas dilatadas, febre, cãinbras. Inconsciência.</p>
+<ol><li>Só dar antídotos, se forem acompanhados por um médico treinado. <img src="images/aid056.png" /></li>
+<li>Não dê bebidas. Não provocar vômitos.</li>
+<li>Chame a emergência anotar o tipo do envenenamento!</li>
+<li>Guardar os restos do veneno e vomitar! <img src="images/aid054a.png" /></li>
+<li>Se vítima está consciente e respira: Manter em <a href="#aid_recoveryposition">posição de recuperação</a>. Monitore o estado da vitima ate a chegada da ambulância.</li>
+<li>Se a vítima não estiver respirando: Começar imediatamente com <a href="#aid_resuscitation">reanimação</a>! Limpe a boca de vômito de antemão.</li></ol></ul>
+
+
+<ul id="aid_recoveryposition" title="Posição de Recuperação"> <br />
+<ol><li>Coloque a vitima sobre as suas costas, posiciona as pernas. Joelho para baixo ao lado.</li>
+<li>Coloque o braço mais próximo a você em um ângulo reto com o corpo.</li>
+<li>Puxar braço mais afastado do peito e coloque as costas da mão contra a bochecha. <img src="images/aid008.png" /></li>
+<li>Pegue o joelho longe, puxe-o para seu lado, e estabelecem-lo no chão. Posição da perna direita em um ângulo. Manter a mão sobre a bochecha da vitima.</li>
+<li>Certifique-se as vias aéreas estão livres.</li>
+<li>Boca ligeiramente aberta, e a posição da cabeça de forma que o vômito possa escorrer. Confira a respiração. <img src="images/aid009.png" /></li>
+<li>Controle o estado da vitima até que a emergência chegue.</li><li>Posição de recuperação para bebês:<img src="images/aid028.png" /></li></ol></ul>
+<ul id="aid_resuscitation" title="Reanimação">
+<p><b># Massagem no Coração</b></p>
+<ol><li>Deite a vitima de frente. Ajoelhe-se ao lado.</li>
+<li>Retire qualquer roupa que cubra o peito(regiao do coracao).</li>
+<li>Coloque uma mão aberta no meio do peito (um pouco acima do esterno). <img src="images/aid013.png" /></li>
+<li>Colocar a outra mão sobre as costas da mão, que já está na posição correta.</li>
+<li>Estique os seus braços e cotovelos. <img src="images/aid003.png" /></li>
+<li>Pressione 5 cm de profundidade no tórax da vitima (a força vem da parte superior do corpo) e solte.</li>
+<li>Pressione 30 vezes em uma linha em breve e forte!</li></ol>
+<p style="padding-left:15px;"><b># Respiração</b></p>
+<ol><li>Estique a cabeça para trás do pescoço. Remover substâncias para fora da boca e da garganta. <img src="images/aid067.png" /></li>
+<li>Empurre as abas do nariz em conjunto, de forma que nariz fique fechado. <img src="images/aid010.png" /></li>
+<li>Respire fundo e coloque a boca na boca da vitima, de forma que não pode vazar ar. <img src="images/aid011.png" /></li>
+<li>Fazer a respiração boca-a-boca duas vezes (respiração lenta e totalmente fora).</li>
+<li>Depois fazer massagem cardíaca novamente.<br /><br />
+Repita a massagem cardíaca, respiração boca até a chegada da ambulância. <img src="images/aid012.png" /></li></ol> <p style="padding-left:15px;"><b>Ressuscitação (Bebê)</b></p> <ol><li>Use apenas dois dedos: <img src="images/aid029.png" /></li> <li>Não respire muito forte: <img src="images/aid030.png" /></li> </ol></ul>
+<ul id="aid_safeguardaccident" title="Segurança em Acidente"> <br />
+<ol><li>Pare com seu próprio carro 50-100m atrás do local do acidente, (se você estiver em uma rodovia). Ligue os alertas. Ponha colentede visibilidade.</li>
+<li>Posicione o triângulo de aviso antes do local do acidente. Atenção: Se o acidente é uma curva posicione o triângulo de aviso antes da curva! <img src="images/aid111.jpg" /></li>
+<li>Peça ajuda à outras pessoas.</li>
+<li>Abrir a porta do carro da vitima. Desligue ignição.</li>
+<li>Socorro às vítimas do acidente: soltar o cinto de segurança, mova o assento para trás. Deixe a remoção da vitima de dentro do carro <a href="#aid_dangerzone">pelo pessoal de resgate</a>. <img src="images/aid001.png" /></li>
+<li>Chame a emergência.</li>
+<li>Prossiga com os primeiros socorros.</li></ol></ul>
+<ul id="aid_shock" title="Choque"> 
+<p>Distúrbio circulatório pela fraca oferta de oxigênio no organismo.<br />
+Causa: Perda de líquido, reduzido volume sanguíneo.<br />
+Sintomas: Palidez, pele fria, suor frio, ansiedade.</p>
+<ol><li>Eliminar a causa do choque (por exemplo, parar a perda de fluido, vincular a ferida)!</li>
+<li>Estabelecer os feridos em um cobertor, a posição das pernas para cima. Manter a vitima calma. <img src="images/aid078.png" /></li>
+<li>Chame a emergência.</li>
+<li>Se notar dificuldades em respirar ou consciência, iniciar <a href="#aid_resuscitation">reanimação</a>.</li></ol></ul>
+<ul id="aid_skullfracture" title="Fratura Craniana"> 
+<p>Aspectos: sangramentos fora do nariz, boca ou ouvido. Muitas vezes existem feridas abertas no crânio.</p>
+<ol><li>Mantenha as vias aéreas livres.</li>
+<li>Se consciente: Sente com os feridos curvando a cabeça para frente. Evitar maiores movimentos!</li>
+<li>Se inconsciente: <a href="#aid_recoveryposition">Posição de Recuperação</a> (sem pressão sobre a ferida da cabeça).</li>
+<li>Chame a emergência.</li>
+<li>Aplicar curativo na cabeça.</li>
+<li>Se as dificuldades em respirar ou consciência, iniciar <a href="#aid_resuscitation">reanimação</a>.</li></ol></ul>
+<ul id="aid_snakebite" title="Acidente ofídico"> <img src="images/aid051.png" /> 
+<p>Ferimento no tamanho de um alfinete, dor severa, edema, cor púrpura. Distúrbio circulatório, perigo de choque.</p>
+<ol><li>Estabilize a parte do corpo ferida.</li>
+<li>Aplicar compressa fria ao redor da ferida.</li>
+<li>Utilize medidas contra choque.</li>
+<li>Chame a emergência.</li></ol></ul>
+<ul id="aid_sos" title="SOS"> <br />
+<ol><li>Sinal: 3x curto, longas 3x, 3x curto.</li>
+<li>Visualmente (luz estrobo, lanterna), ou acusticamente (sinal de apito, bater).</li></ol></ul>
+
+
+<ul id="aid_sprain" title="Esforços + distenção"> 
+<p>Dor, inchaço (contusão), perda da função, deformação do membro.</p>
+<ol><li>Imobilize a parte lesada do corpo apenas na posição mais confortável para a vitima.</li>
+<li>Resfriar (utilizando bolsa de gelo).</li>
+<li>Se possível, elevar a parte lesada.</li>
+<li>Ir para o hospital ou chamar a emergência médica.</li></ol></ul>
+<ul id="aid_stroke" title="Ataque Súbito"> 
+<p>Súbita sensação de dormência ou paralisia (face, braços, pernas), perturbações da linguagem compreensão, a visão problemas de consciência perturbada, uma forte dor de cabeça. Problemas na respiração e deglutição, perda de controle sobre a bexiga e intestino.</p> <img src="images/aid059.png" />
+<ol><li>Chame a emergência!</li>
+<li>Afrouxar roupas apertadas, não dê drogas ou bebidas.</li>
+<li>Sentar ou deita-lo confortavelmente. Acalme-o!</li>
+<li>Controle consciência e respiração.</li>
+<li>Se sentir dificuldades em respirar ou consciência, iniciar <a href="#aid_resuscitation">reanimação</a>.</li></ol></ul>
+<ul id="aid_suffocation" title="Asfixia"> 
+<p>A insuficiência de oxigénio. Traquéia fechou. Perigo: apneia.<br />
+Sintomas: ofegante ruído respiratório, tosse constante, falta de ar, descoloração da pele.</p> <img src="images/aid066.png" />
+<ol><li>Ação imediata! Deixa a pessoa aflita com tosse muito forte.</li>
+<li>Bata firmemente com uma mão nas costas plana entre as escápulas. <img src="images/aid068.png" /> <img src="images/aid031.png" /></li>
+<li>Se sem sucesso: Fique atrás da vitima, braços em volta da cintura, curvar ligeiramente para frente.</li>
+<li>Firmar o seu punho, posição que tinha à altura do estômago da pessoa, e levá-la com a outra mão. <img src="images/aid069.png" /></li>
+<li>Ao abraçar usar as duas mãos para dar um duro golpe para cima em direção O estômago (seria como tentar levantar a pessoa).</li>
+<li>Repita até 5-vezes! Vias respiratórias devem ficar isentas do objeto.</li>
+<li>Chamada de emergência.</li>
+<li>Se os primeiros socorros não for bem-sucedido, continue à fazê-lo até que chegue a emergência.</li></ol></ul>
+<ul id="aid_sunburn" title="Queimadura solar"> <br />
+<ol><li>Retire a pessoa afectada a partir de luz solar direta. Evitar maiores exposições.</li>
+<li>Beba muita água para reparar a desidratação.</li>
+<li>Se existir uma grave queimadura solar (bolhas, vermelhidão, dor), procurar um médico.</li>
+<li>Se a pele tiver um leve vermelho, ela pode ser arrefecida com toalha molhada. Usar gel ou loção após o a exposição.</li></ol></ul>
+<ul id="aid_sunstroke" title="Insolação"> 
+<p>Cabeça quente vermelho, pele fria, de doença, de cabeça, tontura. Causa: irritação da membrana cerebral.</p> <img src="images/aid035.png" />
+<ol><li>Vá para um lugar frio (sombra) e colocar a parte superior do corpo da pessoa para cima. <img src="images/aid061.png" /></li>
+<li>Esfriar a cabeça com cobertores molhados.</li>
+<li>Chame a emergência, mantenha o controle da respiração.</li>
+<li>Se consciente: Ministre bebida fresca, se aplicável.</li>
+<li>Se aparecer apneia, inicie a respiração:</li>
+<li><a href="#aid_apnoea">Vá em frente dê-lhe <a href="#aid_apnoea">respiração</a>!</a> <img src="images/aid036.png" /></li></ol></ul>
+
+
+
+
+<ul id="aid_unconsciouswithbreath" title="Inconsciência com respiração"> 
+<p>Nenhuma reação em voz alta a perguntas, sem resposta sobre agitação. Existe apenas respiração.</p> <img style="border:none;" src="images/aid057.png" />
+<ol><li>Se há pessoas próximas a você peça ajuda.</li>
+<li><a href="#aid_recoveryposition">Posição de recuperação</a>. Boca aberta de maneira que o vômito possa escorrer. <img src="images/aid008.png" /> <img src="images/aid009.png" /></li>
+<li>Chame a emergência.</li></ol></ul>
+<ul id="aid_unconsciouswithoutbreath" title="Inconsciência sem respirar"> <br />
+<ol><li>Nenhuma reação da vítima, sem respirar. <img style="border:none;" src="images/aid057.png" /></li>
+<li>Inicie <a href="#aid_resuscitation">Reanimação.</a></li></ol></ul>
+<ul id="aid_vomiting" title="Vômito"> 
+<p>Surge a partir de náuseas. Estômago esvazia por si mesmo. Causas: Infecção, intoxicação, úlcera, drogas, comida ruim, ou gravidez.</p> <img src="images/aid054.png" />
+<ol><li>Perigo para a circulação devido à desidratação e perda de sal!</li>
+<li>Dê líquidos (chá, água).</li>
+<li>Se houver fortes perturbações, com sangue ou vômitos contínuos chame a emergência médica.</li></ol></ul>
+
+
+   <ul id="menu" title="Menu">
+        <li><a target="_self" href="#language">Escolha seu idioma</a></li>
+        <li><a target="_self" href="http://www.firstai.de/iphone/firstaidPToffline.html">Favoritos Offline - Versão</a></li>
+        <li><a href="#donate">Doações para o Projeto</a></li>
+        <li><script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>E-mails para desenvolvedores</a>"); </script>
+        <!-- FOR OFFLINE <li><a target="_self" href="http://iphone.firstai.de/offline/">Verifique se há novas versões</a></li></ul> -->
+    </ul>
+
+    <ul id="language" title="Escolha seu idioma">
+	<li><a target="_self" href="firstaidDE.html">Deutsch</a></li>
+	<li><a target="_self" href="firstaidEN.html">English</a></li>
+	<li><a target="_self" href="firstaidFR.html">Fran&ccedil;ais</a></li>
+	<li><a target="_self" href="firstaidLT.html">Lietuvi&#154;kai</a></li>
+	<li><a target="_self" href="firstaidPT.html">Portugu&#234;s</a></li>
+	<li><a target="_self" href="firstaidVI.html">Ti&#7871;ng Vi&#7879;t</a></li>
+    </ul>
+
+
+    <ul id="donate" title="Doação">
+	  <h3 style="padding-left:15px;"><span style="color:#00B316;">Porque doar?</span></h3>
+	  <p>Você acha que o projeto é uma boa idéia? Então por favor doe! Porque o projeto sobrevive apenas por você e eu.</p>
+	  <p>Doar on-line via PayPal para: <script type="text/javascript"> emailME3=("donation@" + "firstai.de"); document.write(emailME3); </script> ou você pode enviar uma doação pelo correio.</p>
+	  <p>Cada única contribuição conta!</p><br />
+	  <p><span style="font-style:italic;font-size:80%;">(Um pequeno passo para um homem, um salto gigante para a humanidade.)</span></p></ul>
+  
+  <ul id="cclicence" title="Licence">  <h3 style="padding-left:15px;">Licença</h3>
+	  <p><b>Creative Commons BY-NC-ND 3.0</b><br />
+	Vocês são livres para copiar, distribuir e transmitir a trabalhar sob as seguintes condições:</p>
+	   <ol><li><b>Atribuição</b><br />
+	Você deve dar crédito ao trabalho de mencionar o nome do licenciante Kai Kajus Noack ou ligando para o site www.firstai.de (mas não de qualquer forma que sugira que eles endossa você ou o uso do trabalho).</li><br />
+	   <li><b>Não-Comercial</b><br />
+	Você não pode utilizar esta obra para fins comerciais.</li><br />
+	   <li><b>Não a Obras Derivadas</b><br />
+	Você não pode alterar, transformar ou criar em cima deste trabalho.</li><br />
+	<li>Para cada reutilização ou distribuição, deverá deixar claro para outros os termos da licença desta obra. A melhor maneira de fazer isso é com um link para <span style="font-size:80%;">http://creativecommons.org/licenses/by-nc-nd/3.0/</span></li><br />
+	<li>Qualquer das condições acima pode ser aplicada se você receber permissão do detentor dos direitos autorais.</li><br />
+	<li>Nada nesta licença prejudica ou restringe os direitos morais do autor.</li></ol></ul>
+
+    
+
+	
+	 <ul id="telEmergency" title="Continente">
+	  <li><a target="_self" href="#telAfrica">África</a></li>
+	  <li><a target="_self" href="#telNorthamerica">América do Norte/Central</a></li>
+	  <li><a target="_self" href="#telSouthamerica">América do Sul</a></li>
+	  <li><a target="_self" href="#telAsia">Ásia</a></li>
+	  <li><a target="_self" href="#telEurope">Europa</a></li>
+	  <li><a target="_self" href="#telOceania">Oceania</a></li>
+	  <img src="images/aid002.png" />
+	</ul>
+
+    
+<ul id="telAfrica" title="África">
+<li><a href="#southafrica">África do Sul</a></li>
+<li><a href="#angola">Angola</a></li>
+<li><a href="#algeria">Argélia</a></li>
+<li><a href="#benin">Benin</a></li>
+<li><a href="#botswana">Botsuana</a></li>
+<li><a href="#burkinafaso">Burkina Faso</a></li>
+<li><a href="#burundi">Burundi</a></li>
+<li><a href="#capeverde">Cabo Verde</a></li>
+<li><a href="#cameroon">Camarões</a></li>
+<li><a href="#centralafricanrepublic">Central Africano República</a></li>
+<li><a href="#chad">Chade</a></li>
+<li><a href="#comoros">Comoros</a></li>
+<li><a href="#congodemocraticrepublic">Congo (República Democrática)</a></li>
+<li><a href="#congorepublic">Congo (República)</a></li>
+<li><a href="#ivorycoast">Costa do Marfim</a></li>
+<li><a href="#djibouti">Djibuti</a></li>
+<li><a href="#egypt">Egito</a></li>
+<li><a href="#eritrea">Eritréia</a></li>
+<li><a href="#ethiopia">Etiópia</a></li>
+<li><a href="#gabon">Gabão</a></li>
+<li><a href="#gambia">Gâmbia</a></li>
+<li><a href="#ghana">Gana</a></li>
+<li><a href="#guinea">Guiné</a></li>
+<li><a href="#equatorialguinea">Guiné Equatorial</a></li>
+<li><a href="#guinea-bissau">Guiné-Bissau</a></li>
+<li><a href="#lesotho">Lesoto</a></li>
+<li><a href="#liberia">Libéria</a></li>
+<li><a href="#libya">Líbia</a></li>
+<li><a href="#madagascar">Madagascar</a></li>
+<li><a href="#malawi">Malauí</a></li>
+<li><a href="#mali">Mali</a></li>
+<li><a href="#morocco">Marrocos</a></li>
+<li><a href="#mauritius">Maurício</a></li>
+<li><a href="#mauritania">Mauritânia</a></li>
+<li><a href="#mayotte">Mayotte</a></li>
+<li><a href="#mozambique">Moçambique</a></li>
+<li><a href="#namibia">Namíbia</a></li>
+<li><a href="#niger">Níger</a></li>
+<li><a href="#nigeria">Nigéria</a></li>
+<li><a href="#kenya">Quênia</a></li>
+<li><a href="#sahrawiarabdemocraticrepublic">República Árabe Saaraui Democrática</a></li>
+<li><a href="#reunion">Reunião</a></li>
+<li><a href="#rwanda">Ruanda</a></li>
+<li><a href="#saotomeandprincipe">São Tomé e Príncipe</a></li>
+<li><a href="#senegal">Senegal</a></li>
+<li><a href="#sierraleone">Serra Leoa</a></li>
+<li><a href="#seychelles">Seychelles</a></li>
+<li><a href="#somalia">Somália</a></li>
+<li><a href="#swaziland">Suazilândia</a></li>
+<li><a href="#sudan">Sudão</a></li>
+<li><a href="#tanzania">Tanzânia</a></li>
+<li><a href="#togo">Togo</a></li>
+<li><a href="#tunisia">Tunísia</a></li>
+<li><a href="#uganda">Uganda</a></li>
+<li><a href="#zambia">Zâmbia</a></li>
+<li><a href="#zimbabwe">Zimbabué</a></li>
+</ul><ul id="telAsia" title="Ásia">
+<li><a href="#afghanistan">Afeganistão</a></li>
+<li><a href="#saudiarabia">Arábia Saudita</a></li>
+<li><a href="#armenia">Armênia</a></li>
+<li><a href="#azerbaijan">Azerbaijão</a></li>
+<li><a href="#bangladesh">Bangladesh</a></li>
+<li><a href="#bahrain">Barém</a></li>
+<li><a href="#brunei">Brunei</a></li>
+<li><a href="#bhutan">Butão</a></li>
+<li><a href="#cambodia">Camboja</a></li>
+<li><a href="#qatar">Catar</a></li>
+<li><a href="#kazakhstan">Cazaquistão</a></li>
+<li><a href="#china">China</a></li>
+<li><a href="#singapore">Cingapura</a></li>
+<li><a href="#northkorea">Coréia do Norte</a></li>
+<li><a href="#southkorea">Coréia do Sul (República da Coreia)</a></li>
+<li><a href="#kurdistan">Curdistão</a></li>
+<li><a href="#unitedarabemirates">Emirados Árabes Unidos</a></li>
+<li><a href="#philippines">Filipinas</a></li>
+<li><a href="#georgia">Geórgia</a></li>
+<li><a href="#hongkong">Hong Kong</a></li>
+<li><a href="#yemen">Iêmen</a></li>
+<li><a href="#india">Índia</a></li>
+<li><a href="#indonesia">Indonésia</a></li>
+<li><a href="#iran">Irão</a></li>
+<li><a href="#iraq">Iraque</a></li>
+<li><a href="#israel">Israel</a></li>
+<li><a href="#japan">Japão</a></li>
+<li><a href="#jordan">Jordânia</a></li>
+<li><a href="#kuwait">Kuwait</a></li>
+<li><a href="#laos">Laos</a></li>
+<li><a href="#lebanon">Líbano</a></li>
+<li><a href="#macau">Macau</a></li>
+<li><a href="#malaysia">Malásia</a></li>
+<li><a href="#maldives">Maldivas</a></li>
+<li><a href="#mongolia">Mongólia</a></li>
+<li><a href="#myanmar">Myanmar</a></li>
+<li><a href="#nepal">Nepal</a></li>
+<li><a href="#srilanka">O Sri Lanka</a></li>
+<li><a href="#oman">Omã</a></li>
+<li><a href="#pakistan">Paquistão</a></li>
+<li><a href="#kyrgyzstan">Quirguistão</a></li>
+<li><a href="#syria">Síria</a></li>
+<li><a href="#thailand">Tailândia</a></li>
+<li><a href="#taiwan">Taiwan</a></li>
+<li><a href="#tajikistan">Tajiquistão</a></li>
+<li><a href="#easttimor">Timor Leste</a></li>
+<li><a href="#turkmenistan">Turquemenistão</a></li>
+<li><a href="#uzbekistan">Uzbequistão</a></li>
+<li><a href="#vietnam">Vietnã</a></li>
+</ul><ul id="telEurope" title="Europa">
+<li><a href="#bosniaandherzegovina">A Bósnia e Herzegovina</a></li>
+<li><a href="#croatia">A Croácia</a></li>
+<li><a href="#albania">Albânia</a></li>
+<li><a href="#germany">Alemanha</a></li>
+<li><a href="#andorra">Andorra</a></li>
+<li><a href="#austria">Áustria</a></li>
+<li><a href="#belgium">Bélgica</a></li>
+<li><a href="#belarus">Bielorrússia</a></li>
+<li><a href="#bulgaria">Bulgária</a></li>
+<li><a href="#cyprus">Chipre</a></li>
+<li><a href="#vaticancity">Cidade do Vaticano</a></li>
+<li><a href="#denmark">Dinamarca</a></li>
+<li><a href="#slovakia">Eslováquia</a></li>
+<li><a href="#slovenia">Eslovénia</a></li>
+<li><a href="#spain">Espanha</a></li>
+<li><a href="#estonia">Estónia</a></li>
+<li><a href="#finland">Finlândia</a></li>
+<li><a href="#france">França</a></li>
+<li><a href="#greece">Grécia</a></li>
+<li><a href="#netherlands">Holanda</a></li>
+<li><a href="#hungary">Hungria</a></li>
+<li><a href="#ireland">Irlanda</a></li>
+<li><a href="#iceland">Islândia</a></li>
+<li><a href="#italy">Itália</a></li>
+<li><a href="#kosovo">Kosovo</a></li>
+<li><a href="#latvia">Letónia</a></li>
+<li><a href="#liechtenstein">Liechtenstein</a></li>
+<li><a href="#lithuania">Lituânia</a></li>
+<li><a href="#luxembourg">Luxemburgo</a></li>
+<li><a href="#macedonia">Macedónia</a></li>
+<li><a href="#malta">Malta</a></li>
+<li><a href="#moldova">Moldávia</a></li>
+<li><a href="#monaco">Mônaco</a></li>
+<li><a href="#montenegro">Montenegro</a></li>
+<li><a href="#norway">Noruega</a></li>
+<li><a href="#poland">Polônia</a></li>
+<li><a href="#portugal">Portugal</a></li>
+<li><a href="#unitedkingdom">Reino Unido</a></li>
+<li><a href="#czechrepublic">República Checa</a></li>
+<li><a href="#romania">Romênia</a></li>
+<li><a href="#russia">Rússia</a></li>
+<li><a href="#sanmarino">San Marino</a></li>
+<li><a href="#serbia">Sérvia</a></li>
+<li><a href="#sweden">Suécia</a></li>
+<li><a href="#switzerland">Suíça</a></li>
+<li><a href="#turkey">Turquia</a></li>
+<li><a href="#ukraine">Ucrânia</a></li>
+</ul><ul id="telNorthamerica" title="América do Norte/Central">
+<li><a href="#antiguaandbarbuda">Antígua e Barbuda</a></li>
+<li><a href="#bahamas">Bahamas</a></li>
+<li><a href="#barbados">Barbados</a></li>
+<li><a href="#belize">Belize</a></li>
+<li><a href="#canada">Canadá</a></li>
+<li><a href="#costarica">Costa Rica</a></li>
+<li><a href="#cuba">Cuba</a></li>
+<li><a href="#dominica">Dominica</a></li>
+<li><a href="#elsalvador">El Salvador</a></li>
+<li><a href="#unitedstatesofamerica">Estados Unidos da América</a></li>
+<li><a href="#grenada">Granada</a></li>
+<li><a href="#greenland">Gronelândia</a></li>
+<li><a href="#guatemala">Guatemala</a></li>
+<li><a href="#haiti">Haiti</a></li>
+<li><a href="#honduras">Honduras</a></li>
+<li><a href="#caymanislands">Ilhas Cayman</a></li>
+<li><a href="#jamaica">Jamaica</a></li>
+<li><a href="#mexico">México</a></li>
+<li><a href="#nicaragua">Nicarágua</a></li>
+<li><a href="#panama">Panamá</a></li>
+<li><a href="#dominicanrepublic">República Dominicana</a></li>
+<li><a href="#stlucia">Saint Pierre e Miquelon</a></li>
+<li><a href="#stkittsandnevis">Santa Lúcia</a></li>
+<li><a href="#saintpierreandmiquelon">São Cristóvão e Nevis</a></li>
+<li><a href="#stvincentandgrenadines">São Vicente e Granadinas</a></li>
+<li><a href="#trinidadandtobago">Trinidad e Tobago</a></li>
+</ul><ul id="telOceania" title="Oceania">
+<li><a href="#australia">Austrália</a></li>
+<li><a href="#fiji">Fiji</a></li>
+<li><a href="#marshallislands">Ilhas Marshall</a></li>
+<li><a href="#solomonislands">Ilhas Salomão</a></li>
+<li><a href="#kiribati">Kiribati</a></li>
+<li><a href="#micronesia">Micronésia</a></li>
+<li><a href="#nauru">Nauru</a></li>
+<li><a href="#newzealand">Nova Zelândia</a></li>
+<li><a href="#palau">Palau</a></li>
+<li><a href="#papuanewguinea">Papua Nova Guiné</a></li>
+<li><a href="#samoa">Samoa</a></li>
+<li><a href="#tonga">Tonga</a></li>
+<li><a href="#tuvalu">Tuvalu</a></li>
+<li><a href="#vanuatu">Vanuatu</a></li>
+</ul><ul id="telSouthamerica" title="América do Sul">
+<li><a href="#argentina">Argentina</a></li>
+<li><a href="#bolivia">Bolívia</a></li>
+<li><a href="#brazil">Brasil</a></li>
+<li><a href="#chile">Chile</a></li>
+<li><a href="#colombia">Colômbia</a></li>
+<li><a href="#ecuador">Equador</a></li>
+<li><a href="#guyana">Guiana</a></li>
+<li><a href="#paraguay">Paraguai</a></li>
+<li><a href="#peru">Peru</a></li>
+<li><a href="#suriname">Suriname</a></li>
+<li><a href="#uruguay">Uruguai</a></li>
+<li><a href="#venezuela">Venezuela</a></li>
+</ul>
+
+
+  	<!-- <li>Deactive your Bankcards <a href="tel:116116">(116116)</a></li> -->
+
+<!-- ALL COUNTRIES WITH EMERGENCY NUMBERS -->
+
+<ul id="southafrica" title="África do Sul"><br /><ol><li>Bombeiros <a href="tel:10111">(10111)</a></li><li>Médico <a href="tel:10177">(10177)</a></li><li>Polícia <a href="tel:10111">(10111)</a></li></ol></ul>
+<ul id="angola" title="Angola"><br /><ol><li>Bombeiros <a href="tel:118">(118)</a></li><li>Médico <a href="tel:118">(118)</a></li><li>Polícia <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="algeria" title="Argélia"><br /><ol><li>Bombeiros <a href="tel:14">(14)</a></li><li>Médico <a href="tel:17">(17)</a></li><li>Polícia <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="benin" title="Benin"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico <a href="tel:301769">(301769)</a></li><li>Polícia <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="botswana" title="Botsuana"><br /><ol><li>Bombeiros <a href="tel:998">(998)</a></li><li>Médico <a href="tel:997">(997)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="burkinafaso" title="Burkina Faso"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico (local números)</li><li>Polícia <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="burundi" title="Burundi"><br /><ol><li>Bombeiros <a href="tel:não obrigatórias">(não obrigatórias)</a></li><li>Médico <a href="tel:não obrigatórias">(não obrigatórias)</a></li><li>Polícia <a href="tel:não obrigatórias">(não obrigatórias)</a></li></ol></ul>
+<ul id="capeverde" title="Cabo Verde"><br /><ol><li>Bombeiros <a href="tel:131">(131)</a></li><li>Médico <a href="tel:130">(130)</a></li><li>Polícia <a href="tel:132">(132)</a></li></ol></ul>
+<ul id="cameroon" title="Camarões"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico (local números)</li><li>Polícia <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="centralafricanrepublic" title="Central Africano República"><br /><ol><li>Bombeiros <a href="tel:118">(118)</a></li><li>Médico <a href="tel:610600">(610600)</a></li><li>Polícia <a href="tel:611253">(611253)</a></li></ol></ul>
+<ul id="chad" title="Chade"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico (local números)</li><li>Polícia <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="comoros" title="Comoros"><br /><ol><li>Bombeiros (apenas telefones de rádio)</li><li>Médico (apenas telefones de rádio)</li><li>Polícia (apenas telefones de rádio)</li></ol></ul>
+<ul id="congodemocraticrepublic" title="Congo (República Democrática)"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="congorepublic" title="Congo (República)"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="ivorycoast" title="Costa do Marfim"><br /><ol><li>Bombeiros <a href="tel:180">(180)</a></li><li>Médico <a href="tel:110">(110)</a></li><li>Polícia <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="djibouti" title="Djibuti"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico <a href="tel:351351">(351351)</a></li><li>Polícia <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="egypt" title="Egito"><br /><ol><li>Bombeiros <a href="tel:180">(180)</a></li><li>Médico <a href="tel:123">(123)</a></li><li>Polícia <a href="tel:122">(122)</a></li></ol></ul>
+<ul id="eritrea" title="Eritréia"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="ethiopia" title="Etiópia"><br /><ol><li>Bombeiros <a href="tel:93">(93)</a></li><li>Médico <a href="tel:92">(92)</a></li><li>Polícia <a href="tel:91">(91)</a></li></ol></ul>
+<ul id="gabon" title="Gabão"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico <a href="tel:1300">(1300)</a></li><li>Polícia <a href="tel:1730">(1730)</a></li></ol></ul>
+<ul id="gambia" title="Gâmbia"><br /><ol><li>Bombeiros <a href="tel:118">(118)</a></li><li>Médico <a href="tel:116">(116)</a></li><li>Polícia <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="ghana" title="Gana"><br /><ol><li>Bombeiros <a href="tel:192">(192)</a></li><li>Médico <a href="tel:193">(193)</a></li><li>Polícia <a href="tel:191">(191)</a></li></ol></ul>
+<ul id="guinea" title="Guiné"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="equatorialguinea" title="Guiné Equatorial"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="guinea-bissau" title="Guiné-Bissau"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="lesotho" title="Lesoto"><br /><ol><li>Bombeiros <a href="tel:122">(122)</a></li><li>Médico <a href="tel:121">(121)</a></li><li>Polícia <a href="tel:123">(123)</a></li></ol></ul>
+<ul id="liberia" title="Libéria"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="libya" title="Líbia"><br /><ol><li>Bombeiros <a href="tel:193">(193)</a></li><li>Médico <a href="tel:193">(193)</a></li><li>Polícia <a href="tel:193">(193)</a></li></ol></ul>
+<ul id="madagascar" title="Madagascar"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico <a href="tel:2262566">(2262566)</a></li><li>Polícia <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="malawi" title="Malauí"><br /><ol><li>Bombeiros <a href="tel:199">(199)</a></li><li>Médico <a href="tel:199">(199)</a></li><li>Polícia <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="mali" title="Mali"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico <a href="tel:15">(15)</a></li><li>Polícia <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="morocco" title="Marrocos"><br /><ol><li>Bombeiros <a href="tel:15">(15)</a></li><li>Médico <a href="tel:15">(15)</a></li><li>Polícia <a href="tel:19">(19)</a></li></ol></ul>
+<ul id="mauritius" title="Maurício"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:999">(999)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="mauritania" title="Mauritânia"><br /><ol><li>Bombeiros <a href="tel:118">(118)</a></li><li>Médico (local números)</li><li>Polícia <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="mayotte" title="Mayotte"><br /><ol><li>Bombeiros <a href="tel:603054">(603054)</a></li><li>Médico <a href="tel:15">(15)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="mozambique" title="Moçambique"><br /><ol><li>Bombeiros <a href="tel:198">(198)</a></li><li>Médico <a href="tel:117">(117)</a></li><li>Polícia <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="namibia" title="Namíbia"><br /><ol><li>Bombeiros <a href="tel:2032270">(2032270)</a></li><li>Médico <a href="tel:2032276">(2032276)</a></li><li>Polícia <a href="tel:1011">(1011)</a></li></ol></ul>
+<ul id="niger" title="Níger"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico <a href="tel:723141">(723141)</a></li><li>Polícia <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="nigeria" title="Nigéria"><br /><ol><li>Bombeiros <a href="tel:190">(190)</a></li><li>Médico <a href="tel:199">(199)</a></li><li>Polícia <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="kenya" title="Quênia"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:999">(999)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="sahrawiarabdemocraticrepublic" title="República Árabe Saaraui Democrática"><br /><ol><li>Bombeiros <a href="tel:--">(--)</a></li><li>Médico <a href="tel:--">(--)</a></li><li>Polícia <a href="tel:--">(--)</a></li></ol></ul>
+<ul id="reunion" title="Reunião"><br /><ol><li>Bombeiros <a href="tel:18 or 112 ">(18 or 112 )</a></li><li>Médico <a href="tel:15 or 112 ">(15 or 112 )</a></li><li>Polícia <a href="tel:17 or 112 ">(17 or 112 )</a></li></ol></ul>
+<ul id="rwanda" title="Ruanda"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="saotomeandprincipe" title="São Tomé e Príncipe"><br /><ol><li>Bombeiros <a href="tel:--">(--)</a></li><li>Médico <a href="tel:--">(--)</a></li><li>Polícia <a href="tel:--">(--)</a></li></ol></ul>
+<ul id="senegal" title="Senegal"><br /><ol><li>Bombeiros (local números)</li><li>Médico <a href="tel:8891515">(8891515)</a></li><li>Polícia (local números)</li></ol></ul>
+<ul id="sierraleone" title="Serra Leoa"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:999">(999)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="seychelles" title="Seychelles"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:999">(999)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="somalia" title="Somália"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="swaziland" title="Suazilândia"><br /><ol><li>Bombeiros (local números)</li><li>Médico <a href="tel:6060911">(6060911)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="sudan" title="Sudão"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico (local números)</li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="tanzania" title="Tanzânia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="togo" title="Togo"><br /><ol><li>Bombeiros <a href="tel:118">(118)</a></li><li>Médico <a href="tel:191">(191)</a></li><li>Polícia <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="tunisia" title="Tunísia"><br /><ol><li>Bombeiros <a href="tel:198">(198)</a></li><li>Médico <a href="tel:190">(190)</a></li><li>Polícia <a href="tel:197">(197)</a></li></ol></ul>
+<ul id="uganda" title="Uganda"><br /><ol><li>Bombeiros <a href="tel:999 or 111 móvel">(999 or 111 móvel)</a></li><li>Médico <a href="tel:999 or 111 móvel">(999 or 111 móvel)</a></li><li>Polícia <a href="tel:999 or 111 móvel">(999 or 111 móvel)</a></li></ol></ul>
+<ul id="zambia" title="Zâmbia"><br /><ol><li>Bombeiros <a href="tel:993 or 112 móvel">(993 or 112 móvel)</a></li><li>Médico <a href="tel:991 or 112 móvel">(991 or 112 móvel)</a></li><li>Polícia <a href="tel:999 or 112 móvel">(999 or 112 móvel)</a></li></ol></ul>
+<ul id="zimbabwe" title="Zimbabué"><br /><ol><li>Bombeiros <a href="tel:993">(993)</a></li><li>Médico <a href="tel:994">(994)</a></li><li>Polícia <a href="tel:995">(995)</a></li></ol></ul>
+
+
+
+<ul id="afghanistan" title="Afeganistão"><br /><ol><li>Bombeiros <a href="tel:--">(--)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:--">(--)</a></li></ol></ul>
+<ul id="saudiarabia" title="Arábia Saudita"><br /><ol><li>Bombeiros <a href="tel:998">(998)</a></li><li>Médico <a href="tel:997">(997)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="armenia" title="Armênia"><br /><ol><li>Bombeiros <a href="tel:101">(101)</a></li><li>Médico <a href="tel:103">(103)</a></li><li>Polícia <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="azerbaijan" title="Azerbaijão"><br /><ol><li>Bombeiros <a href="tel:101">(101)</a></li><li>Médico <a href="tel:103">(103)</a></li><li>Polícia <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="bangladesh" title="Bangladesh"><br /><ol><li>Bombeiros <a href="tel:9555555">(9555555)</a></li><li>Médico <a href="tel:199">(199)</a></li><li>Polícia <a href="tel:8665513">(8665513)</a></li></ol></ul>
+<ul id="bahrain" title="Barém"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:999">(999)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="brunei" title="Brunei"><br /><ol><li>Bombeiros <a href="tel:995">(995)</a></li><li>Médico <a href="tel:991">(991)</a></li><li>Polícia <a href="tel:993">(993)</a></li></ol></ul>
+<ul id="bhutan" title="Butão"><br /><ol><li>Bombeiros <a href="tel:113">(113)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="cambodia" title="Camboja"><br /><ol><li>Bombeiros <a href="tel:118">(118)</a></li><li>Médico <a href="tel:199">(199)</a></li><li>Polícia <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="qatar" title="Catar"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:999">(999)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="kazakhstan" title="Cazaquistão"><br /><ol><li>Bombeiros <a href="tel:03">(03)</a></li><li>Médico <a href="tel:03">(03)</a></li><li>Polícia <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="china" title="China"><br /><ol><li>Bombeiros <a href="tel:119">(119)</a></li><li>Médico <a href="tel:120">(120)</a></li><li>Polícia <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="singapore" title="Cingapura"><br /><ol><li>Bombeiros <a href="tel:995">(995)</a></li><li>Médico <a href="tel:995">(995)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="northkorea" title="Coréia do Norte"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="southkorea" title="Coréia do Sul (República da Coreia)"><br /><ol><li>Bombeiros <a href="tel:119">(119)</a></li><li>Médico <a href="tel:119">(119)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="kurdistan" title="Curdistão"><br /><ol><li>Bombeiros <a href="tel:125">(125)</a></li><li>Médico <a href="tel:115">(115)</a></li><li>Polícia <a href="tel:129">(129)</a></li></ol></ul>
+<ul id="unitedarabemirates" title="Emirados Árabes Unidos"><br /><ol><li>Bombeiros <a href="tel:997">(997)</a></li><li>Médico <a href="tel:998">(998)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="philippines" title="Filipinas"><br /><ol><li>Bombeiros <a href="tel:117">(117)</a></li><li>Médico <a href="tel:117">(117)</a></li><li>Polícia <a href="tel:117">(117)</a></li></ol></ul>
+<ul id="georgia" title="Geórgia"><br /><ol><li>Bombeiros <a href="tel:022">(022)</a></li><li>Médico <a href="tel:022">(022)</a></li><li>Polícia <a href="tel:022">(022)</a></li></ol></ul>
+<ul id="hongkong" title="Hong Kong"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:999">(999)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="yemen" title="Iêmen"><br /><ol><li>Bombeiros <a href="tel:199">(199)</a></li><li>Médico <a href="tel:199">(199)</a></li><li>Polícia <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="india" title="Índia"><br /><ol><li>Bombeiros <a href="tel:101">(101)</a></li><li>Médico <a href="tel:102">(102)</a></li><li>Polícia <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="indonesia" title="Indonésia"><br /><ol><li>Bombeiros <a href="tel:113">(113)</a></li><li>Médico <a href="tel:118">(118)</a></li><li>Polícia <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="iran" title="Irão"><br /><ol><li>Bombeiros <a href="tel:125 or 112 ">(125 or 112 )</a></li><li>Médico <a href="tel:115 or 112 ">(115 or 112 )</a></li><li>Polícia <a href="tel:110 or 112 ">(110 or 112 )</a></li></ol></ul>
+<ul id="iraq" title="Iraque"><br /><ol><li>Bombeiros <a href="tel:não obrigatórias">(não obrigatórias)</a></li><li>Médico <a href="tel:não obrigatórias">(não obrigatórias)</a></li><li>Polícia <a href="tel:não obrigatórias">(não obrigatórias)</a></li></ol></ul>
+<ul id="israel" title="Israel"><br /><ol><li>Bombeiros <a href="tel:102">(102)</a></li><li>Médico <a href="tel:101">(101)</a></li><li>Polícia <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="japan" title="Japão"><br /><ol><li>Bombeiros <a href="tel:119">(119)</a></li><li>Médico <a href="tel:119">(119)</a></li><li>Polícia <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="jordan" title="Jordânia"><br /><ol><li>Bombeiros <a href="tel:193">(193)</a></li><li>Médico <a href="tel:193">(193)</a></li><li>Polícia <a href="tel:192">(192)</a></li></ol></ul>
+<ul id="kuwait" title="Kuwait"><br /><ol><li>Bombeiros <a href="tel:777">(777)</a></li><li>Médico <a href="tel:777">(777)</a></li><li>Polícia <a href="tel:777">(777)</a></li></ol></ul>
+<ul id="laos" title="Laos"><br /><ol><li>Bombeiros (local números)</li><li>Médico <a href="tel:03">(03)</a></li><li>Polícia (local números)</li></ol></ul>
+<ul id="lebanon" title="Líbano"><br /><ol><li>Bombeiros <a href="tel:175">(175)</a></li><li>Médico <a href="tel:140">(140)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="macau" title="Macau"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:999">(999)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="malaysia" title="Malásia"><br /><ol><li>Bombeiros <a href="tel:999 or 112 ">(999 or 112 )</a></li><li>Médico <a href="tel:999 or 112 ">(999 or 112 )</a></li><li>Polícia <a href="tel:999 or 112 ">(999 or 112 )</a></li></ol></ul>
+<ul id="maldives" title="Maldivas"><br /><ol><li>Bombeiros <a href="tel:118">(118)</a></li><li>Médico <a href="tel:102">(102)</a></li><li>Polícia <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="mongolia" title="Mongólia"><br /><ol><li>Bombeiros <a href="tel:101">(101)</a></li><li>Médico <a href="tel:103">(103)</a></li><li>Polícia <a href="tel:102">(102)</a></li></ol></ul>
+<ul id="myanmar" title="Myanmar"><br /><ol><li>Bombeiros <a href="tel:199">(199)</a></li><li>Médico <a href="tel:199">(199)</a></li><li>Polícia <a href="tel:199">(199)</a></li></ol></ul>
+<ul id="nepal" title="Nepal"><br /><ol><li>Bombeiros <a href="tel:101">(101)</a></li><li>Médico <a href="tel:228094">(228094)</a></li><li>Polícia <a href="tel:100">(100)</a></li></ol></ul>
+<ul id="srilanka" title="O Sri Lanka"><br /><ol><li>Bombeiros <a href="tel:111">(111)</a></li><li>Médico <a href="tel:110">(110)</a></li><li>Polícia <a href="tel:119 or 112 não obrigatórias">(119 or 112 não obrigatórias)</a></li></ol></ul>
+<ul id="oman" title="Omã"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:999">(999)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="pakistan" title="Paquistão"><br /><ol><li>Bombeiros <a href="tel:16">(16)</a></li><li>Médico <a href="tel:115">(115)</a></li><li>Polícia <a href="tel:15">(15)</a></li></ol></ul>
+<ul id="kyrgyzstan" title="Quirguistão"><br /><ol><li>Bombeiros <a href="tel:03">(03)</a></li><li>Médico <a href="tel:03">(03)</a></li><li>Polícia <a href="tel:133">(133)</a></li></ol></ul>
+<ul id="syria" title="Síria"><br /><ol><li>Bombeiros <a href="tel:113">(113)</a></li><li>Médico <a href="tel:110">(110)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="thailand" title="Tailândia"><br /><ol><li>Bombeiros <a href="tel:199">(199)</a></li><li>Médico <a href="tel:191">(191)</a></li><li>Polícia <a href="tel:191 móvel">(191 móvel)</a></li></ol></ul>
+<ul id="taiwan" title="Taiwan"><br /><ol><li>Bombeiros <a href="tel:119">(119)</a></li><li>Médico <a href="tel:119">(119)</a></li><li>Polícia <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="tajikistan" title="Tajiquistão"><br /><ol><li>Bombeiros (local números)</li><li>Médico <a href="tel:03">(03)</a></li><li>Polícia <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="easttimor" title="Timor Leste"><br /><ol><li>Bombeiros <a href="tel:--">(--)</a></li><li>Médico <a href="tel:7233212">(7233212)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="turkmenistan" title="Turquemenistão"><br /><ol><li>Bombeiros <a href="tel:03">(03)</a></li><li>Médico <a href="tel:03">(03)</a></li><li>Polícia <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="uzbekistan" title="Uzbequistão"><br /><ol><li>Bombeiros <a href="tel:03">(03)</a></li><li>Médico <a href="tel:03">(03)</a></li><li>Polícia <a href="tel:03">(03)</a></li></ol></ul>
+<ul id="vietnam" title="Vietnã"><br /><ol><li>Bombeiros <a href="tel:114">(114)</a></li><li>Médico <a href="tel:115">(115)</a></li><li>Polícia <a href="tel:113">(113)</a></li></ol></ul>
+
+
+
+<ul id="bosniaandherzegovina" title="A Bósnia e Herzegovina"><br /><ol><li>Bombeiros <a href="tel:123">(123)</a></li><li>Médico <a href="tel:124">(124)</a></li><li>Polícia <a href="tel:122">(122)</a></li></ol></ul>
+<ul id="croatia" title="A Croácia"><br /><ol><li>Bombeiros <a href="tel:93">(93)</a></li><li>Médico <a href="tel:94">(94)</a></li><li>Polícia <a href="tel:92">(92)</a></li></ol></ul>
+<ul id="albania" title="Albânia"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico <a href="tel:17">(17)</a></li><li>Polícia <a href="tel:19">(19)</a></li></ol></ul>
+<ul id="germany" title="Alemanha"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="andorra" title="Andorra"><br /><ol><li>Bombeiros <a href="tel:118">(118)</a></li><li>Médico <a href="tel:118">(118)</a></li><li>Polícia <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="austria" title="Áustria"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="belgium" title="Bélgica"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="belarus" title="Bielorrússia"><br /><ol><li>Bombeiros <a href="tel:01">(01)</a></li><li>Médico <a href="tel:03">(03)</a></li><li>Polícia <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="bulgaria" title="Bulgária"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="cyprus" title="Chipre"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="vaticancity" title="Cidade do Vaticano"><br /><ol><li>Bombeiros <a href="tel:115">(115)</a></li><li>Médico <a href="tel:113">(113)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="denmark" title="Dinamarca"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="slovakia" title="Eslováquia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="slovenia" title="Eslovénia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:113">(113)</a></li></ol></ul>
+<ul id="spain" title="Espanha"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="estonia" title="Estónia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="finland" title="Finlândia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="france" title="França"><br /><ol><li>Bombeiros <a href="tel:18 or 112">(18 or 112)</a></li><li>Médico <a href="tel:15 or 112">(15 or 112)</a></li><li>Polícia <a href="tel:17 or 112">(17 or 112)</a></li></ol></ul>
+<ul id="greece" title="Grécia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="netherlands" title="Holanda"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="hungary" title="Hungria"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="ireland" title="Irlanda"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="iceland" title="Islândia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="italy" title="Itália"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="kosovo" title="Kosovo"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="latvia" title="Letónia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="liechtenstein" title="Liechtenstein"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="lithuania" title="Lituânia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="luxembourg" title="Luxemburgo"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="macedonia" title="Macedónia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="malta" title="Malta"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="moldova" title="Moldávia"><br /><ol><li>Bombeiros <a href="tel:901">(901)</a></li><li>Médico <a href="tel:903">(903)</a></li><li>Polícia <a href="tel:902">(902)</a></li></ol></ul>
+<ul id="monaco" title="Mônaco"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="montenegro" title="Montenegro"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="norway" title="Noruega"><br /><ol><li>Bombeiros <a href="tel:110">(110)</a></li><li>Médico <a href="tel:113">(113)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="poland" title="Polônia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="portugal" title="Portugal"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="unitedkingdom" title="Reino Unido"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="czechrepublic" title="República Checa"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="romania" title="Romênia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="russia" title="Rússia"><br /><ol><li>Bombeiros <a href="tel:01">(01)</a></li><li>Médico <a href="tel:03">(03)</a></li><li>Polícia <a href="tel:02">(02)</a></li></ol></ul>
+<ul id="sanmarino" title="San Marino"><br /><ol><li>Bombeiros <a href="tel:116">(116)</a></li><li>Médico <a href="tel:113">(113)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="serbia" title="Sérvia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="sweden" title="Suécia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="switzerland" title="Suíça"><br /><ol><li>Bombeiros <a href="tel:118 or 112">(118 or 112)</a></li><li>Médico <a href="tel: 144 or 112">( 144 or 112)</a></li><li>Polícia <a href="tel:117 or 112">(117 or 112)</a></li></ol></ul>
+<ul id="turkey" title="Turquia"><br /><ol><li>Bombeiros <a href="tel:110">(110)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:155">(155)</a></li></ol></ul>
+<ul id="ukraine" title="Ucrânia"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+
+
+
+<ul id="antiguaandbarbuda" title="Antígua e Barbuda"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="bahamas" title="Bahamas"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="barbados" title="Barbados"><br /><ol><li>Bombeiros <a href="tel:113">(113)</a></li><li>Médico <a href="tel:115">(115)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="belize" title="Belize"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="canada" title="Canadá"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="costarica" title="Costa Rica"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="cuba" title="Cuba"><br /><ol><li>Bombeiros <a href="tel:26811">(26811)</a></li><li>Médico <a href="tel:26811">(26811)</a></li><li>Polícia <a href="tel:26811">(26811)</a></li></ol></ul>
+<ul id="dominica" title="Dominica"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:999">(999)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="elsalvador" title="El Salvador"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="unitedstatesofamerica" title="Estados Unidos da América "><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="grenada" title="Granada"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+<ul id="greenland" title="Gronelândia"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="guatemala" title="Guatemala"><br /><ol><li>Bombeiros <a href="tel:122">(122)</a></li><li>Médico <a href="tel:123">(123)</a></li><li>Polícia <a href="tel:110">(110)</a></li></ol></ul>
+<ul id="haiti" title="Haiti"><br /><ol><li>Bombeiros (local números)</li><li>Médico <a href="tel:118">(118)</a></li><li>Polícia <a href="tel:114">(114)</a></li></ol></ul>
+<ul id="honduras" title="Honduras"><br /><ol><li>Bombeiros <a href="tel:198">(198)</a></li><li>Médico <a href="tel:378654">(378654)</a></li><li>Polícia <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="caymanislands" title="Ilhas Cayman"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="jamaica" title="Jamaica"><br /><ol><li>Bombeiros <a href="tel:110">(110)</a></li><li>Médico <a href="tel:110">(110)</a></li><li>Polícia <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="mexico" title="México"><br /><ol><li>Bombeiros <a href="tel:060">(060)</a></li><li>Médico <a href="tel:060">(060)</a></li><li>Polícia <a href="tel:080">(080)</a></li></ol></ul>
+<ul id="nicaragua" title="Nicarágua"><br /><ol><li>Bombeiros <a href="tel:2650162">(2650162)</a></li><li>Médico <a href="tel:2651761">(2651761)</a></li><li>Polícia <a href="tel:118">(118)</a></li></ol></ul>
+<ul id="panama" title="Panamá"><br /><ol><li>Bombeiros <a href="tel:103">(103)</a></li><li>Médico <a href="tel:2699778">(2699778)</a></li><li>Polícia <a href="tel:104">(104)</a></li></ol></ul>
+<ul id="dominicanrepublic" title="República Dominicana"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="stlucia" title="Saint Pierre e Miquelon"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+<ul id="stkittsandnevis" title="Santa Lúcia"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="saintpierreandmiquelon" title="São Cristóvão e Nevis"><br /><ol><li>Bombeiros <a href="tel:18">(18)</a></li><li>Médico <a href="tel:15">(15)</a></li><li>Polícia <a href="tel:17">(17)</a></li></ol></ul>
+<ul id="stvincentandgrenadines" title="São Vicente e Granadinas"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="trinidadandtobago" title="Trinidad e Tobago"><br /><ol><li>Bombeiros <a href="tel:990">(990)</a></li><li>Médico <a href="tel:990">(990)</a></li><li>Polícia <a href="tel:999">(999)</a></li></ol></ul>
+
+
+
+<ul id="australia" title="Austrália"><br /><ol><li>Bombeiros <a href="tel:000 or 112 móvel">(000 or 112 móvel)</a></li><li>Médico <a href="tel:000 or 112 móvel">(000 or 112 móvel)</a></li><li>Polícia <a href="tel:000 or 112 móvel">(000 or 112 móvel)</a></li></ol></ul>
+<ul id="fiji" title="Fiji"><br /><ol><li>Bombeiros <a href="tel:9170">(9170)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="marshallislands" title="Ilhas Marshall"><br /><ol><li>Bombeiros (local números)</li><li>Médico <a href="tel:6254111 ">(6254111 )</a></li><li>Polícia <a href="tel:6258666">(6258666)</a></li></ol></ul>
+<ul id="solomonislands" title="Ilhas Salomão"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="kiribati" title="Kiribati"><br /><ol><li>Bombeiros (local números)</li><li>Médico <a href="tel:994">(994)</a></li><li>Polícia (local números)</li></ol></ul>
+<ul id="micronesia" title="Micronésia"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="nauru" title="Nauru"><br /><ol><li>Bombeiros (local números)</li><li>Médico (local números)</li><li>Polícia (local números)</li></ol></ul>
+<ul id="newzealand" title="Nova Zelândia"><br /><ol><li>Bombeiros <a href="tel:111">(111)</a></li><li>Médico <a href="tel:111">(111)</a></li><li>Polícia <a href="tel:111">(111)</a></li></ol></ul>
+<ul id="palau" title="Palau"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="papuanewguinea" title="Papua Nova Guiné"><br /><ol><li>Bombeiros <a href="tel:110">(110)</a></li><li>Médico (local números)</li><li>Polícia <a href="tel:000">(000)</a></li></ol></ul>
+<ul id="samoa" title="Samoa"><br /><ol><li>Bombeiros <a href="tel:994">(994)</a></li><li>Médico <a href="tel:996">(996)</a></li><li>Polícia <a href="tel:995">(995)</a></li></ol></ul>
+<ul id="tonga" title="Tonga"><br /><ol><li>Bombeiros <a href="tel:999">(999)</a></li><li>Médico <a href="tel:933">(933)</a></li><li>Polícia <a href="tel:922">(922)</a></li></ol></ul>
+<ul id="tuvalu" title="Tuvalu"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="vanuatu" title="Vanuatu"><br /><ol><li>Bombeiros <a href="tel:112">(112)</a></li><li>Médico <a href="tel:112">(112)</a></li><li>Polícia <a href="tel:112">(112)</a></li></ol></ul>
+
+
+
+<ul id="argentina" title="Argentina"><br /><ol><li>Bombeiros <a href="tel:100">(100)</a></li><li>Médico <a href="tel:107">(107)</a></li><li>Polícia <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="bolivia" title="Bolívia"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="brazil" title="Brasil"><br /><ol><li>Bombeiros <a href="tel:193">(193)</a></li><li>Médico <a href="tel:192">(192)</a></li><li>Polícia <a href="tel:190">(190)</a></li></ol></ul>
+<ul id="chile" title="Chile"><br /><ol><li>Bombeiros <a href="tel:132">(132)</a></li><li>Médico <a href="tel:131">(131)</a></li><li>Polícia <a href="tel:133">(133)</a></li></ol></ul>
+<ul id="colombia" title="Colômbia"><br /><ol><li>Bombeiros <a href="tel:119">(119)</a></li><li>Médico <a href="tel:119">(119)</a></li><li>Polícia <a href="tel:119">(119)</a></li></ol></ul>
+<ul id="ecuador" title="Equador"><br /><ol><li>Bombeiros <a href="tel:102">(102)</a></li><li>Médico <a href="tel:131">(131)</a></li><li>Polícia <a href="tel:101">(101)</a></li></ol></ul>
+<ul id="guyana" title="Guiana"><br /><ol><li>Bombeiros <a href="tel:912">(912)</a></li><li>Médico <a href="tel:913">(913)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="paraguay" title="Paraguai"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="peru" title="Peru"><br /><ol><li>Bombeiros <a href="tel:116">(116)</a></li><li>Médico <a href="tel:116">(116)</a></li><li>Polícia <a href="tel:105">(105)</a></li></ol></ul>
+<ul id="suriname" title="Suriname"><br /><ol><li>Bombeiros <a href="tel:115">(115)</a></li><li>Médico <a href="tel:115">(115)</a></li><li>Polícia <a href="tel:115">(115)</a></li></ol></ul>
+<ul id="uruguay" title="Uruguai"><br /><ol><li>Bombeiros <a href="tel:911">(911)</a></li><li>Médico <a href="tel:911">(911)</a></li><li>Polícia <a href="tel:911">(911)</a></li></ol></ul>
+<ul id="venezuela" title="Venezuela "><br /><ol><li>Bombeiros <a href="tel:171">(171)</a></li><li>Médico <a href="tel:171">(171)</a></li><li>Polícia <a href="tel:171">(171)</a></li></ol></ul>
+
+
+
+</body>
+</html>

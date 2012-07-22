@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErsteHilfe3", "FirstAid3\ErsteHilfe3.csproj", "{EEB2F9A8-7189-416A-A8F6-F6F9D0FC6C73}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "SmartDeviceCab1", "SmartDeviceCab1\SmartDeviceCab1.vddproj", "{DE7104D5-1391-46F9-90B1-0EA7C96C320F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEB2F9A8-7189-416A-A8F6-F6F9D0FC6C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB2F9A8-7189-416A-A8F6-F6F9D0FC6C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB2F9A8-7189-416A-A8F6-F6F9D0FC6C73}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EEB2F9A8-7189-416A-A8F6-F6F9D0FC6C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB2F9A8-7189-416A-A8F6-F6F9D0FC6C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB2F9A8-7189-416A-A8F6-F6F9D0FC6C73}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DE7104D5-1391-46F9-90B1-0EA7C96C320F}.Debug|Any CPU.ActiveCfg = Debug
+		{DE7104D5-1391-46F9-90B1-0EA7C96C320F}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

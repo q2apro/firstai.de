@@ -1,0 +1,9 @@
+MIDlet-Name: Prvno pomoc ve vasem mobilu
+MIDlet-Version: 3.0
+MIDlet-Vendor: Kai Kajus Noack
+MIDlet-Jar-URL: Sony-Ericsson-JavaPlatform8-de_DE-example.jar
+MIDlet-Jar-Size: 536616
+MIDlet-Icon: /icon.png
+MIDlet-Info-URL: http://www.firstai.de
+MIDlet-1: Prvni pomoc 3.0 std,icon.png,de.firstai.FirstAid3
+MIDlet-Delete-Confirm: Do you really want to remove the application?
