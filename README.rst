@@ -45,9 +45,11 @@ Please note that the illustrations are copyrighted by med4Teens_. But they are f
 ---------
 About firstai.de
 ---------
-I started firstai.de in 2007 and tried to improve it whenever I found time. Thanks to the support of volunteers the software was translated into other languages over the years. Today, the software is available in 7 languages (cz_, de_, en_, fr_, lt_, pt_, vi_). 
+I started firstai.de in 2007 and tried to improve it whenever I found time. Thanks to the support of great volunteers the software was translated into other languages over the years. Today, the software is available in 7 languages (cz_, de_, en_, fr_, lt_, pt_, vi_). 
 
-CALL: In June 2012 Robert Moleda finished the Polish translation. However, I don't have the opportunity to continue the development, i.e. no eclipse and no j2me polish means no compiling. So if you have eclipse with j2me polish set up and running, please take the language file from the polish translation, put the translation into the code and **compile** the software! Then we could publish it on firstai.de - that would be awesome!
+CALL: In June 2012 Robert Moleda finished the Polish translation. However, I do not have the opportunity to continue the development, i.e. no eclipse and no j2me polish means no compiling. So if you have eclipse with j2me polish set up and running, please take the language file from the polish translation, put the translation into the code and **compile** the software! Then we could publish it on firstai.de - that would be awesome!
+
+If you are an Android programmer feel free to take the code and build an android app. Just inform us that we can upload it. 
 
 .. _cz: http://www.firstai.de/cesky/
 .. _de: http://www.firstai.de/deutsch/
@@ -60,8 +62,9 @@ CALL: In June 2012 Robert Moleda finished the Polish translation. However, I don
 ---------
 Final Note
 ---------
-This project is 100% free, and will be free forever. 
+This project is 100% free, and will stay free for everybody. 
 
 The project was created to help people, and not to make money. 
-Thank you for using this software and helping others!
+
+Thank you for using this software and thus helping others!
 
