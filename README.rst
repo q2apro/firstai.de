@@ -49,6 +49,8 @@ I started firstai.de in 2007 and tried to improve it whenever I found time. Than
 
 **CALL:** In June 2012 Robert Moleda finished the Polish_ translation. However, I do not have the opportunity to continue the development. So if you have eclipse with j2me polish set up and running, please take the language file from the polish translation, put the translation into the code and **compile** the software! Then we could publish it on www.firstai.de - that would be awesome!
 
+Polish version: https://github.com/kaikajus/firstai.de/tree/master/j2me-java-version/pl-standard
+
 If you are an Android programmer feel free to take the code and build the android app. Just inform us that we can upload it. 
 
 .. _translated: http://www.firstai.de/wiki/index.html
