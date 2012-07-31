@@ -47,9 +47,9 @@ About firstai.de
 ---------
 I started firstai.de in 2007 and tried to improve it whenever I found time. Thanks to the support of great volunteers the software was translated_ into other languages over the years. Today, the software is available in 7 languages (cz_, de_, en_, fr_, lt_, pt_, vi_). 
 
-CALL: In June 2012 Robert Moleda finished the Polish_ translation. However, I do not have the opportunity to continue the development, i.e. no eclipse and no j2me polish means no compiling. So if you have eclipse with j2me polish set up and running, please take the language file from the polish translation, put the translation into the code and **compile** the software! Then we could publish it on firstai.de - that would be awesome!
+**CALL:** In June 2012 Robert Moleda finished the Polish_ translation. However, I do not have the opportunity to continue the development. So if you have eclipse with j2me polish set up and running, please take the language file from the polish translation, put the translation into the code and **compile** the software! Then we could publish it on www.firstai.de - that would be awesome!
 
-If you are an Android programmer feel free to take the code and build an android app. Just inform us that we can upload it. 
+If you are an Android programmer feel free to take the code and build the android app. Just inform us that we can upload it. 
 
 .. _translated: http://www.firstai.de/wiki/index.html
 .. _Polish: https://docs.google.com/spreadsheet/ccc?key=0AvQujJzUIaLHdG5iQnVZcjdEekh3Zm5ncnlKVVJsUEE
