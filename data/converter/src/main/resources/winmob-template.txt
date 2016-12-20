@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>${WinMobTitle}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<meta name="description" content="${WinMobDescription}" />
+<!-- 	Copyright of Web-Application 
+	CC by-nc-nd 3.0 (c) Kai Kajus Noack-->
+	<style type="text/css" media="screen">@import "iui/iui.css";</style>
+	<style type="text/css" media="screen">		</style>
+	
+	<script language="javascript" type="text/javascript">
+	var recentLayer = 'home'; 
+	var lastLayer = '';
+	var level = 0;
+	function showAid(what) {
+		if (what != 'home') {
+			level ++;
+			document.getElementById("home").style.display = "none"; 
+			document.getElementById(recentLayer).style.display = "none"; 
+			document.getElementById(what).style.display = "block"; 
+			document.getElementById("menuButton").style.display = "none"; 
+			document.getElementById("backButton").style.display = "inline"; 
+		}
+		else {
+			document.getElementById(recentLayer).style.display = "none"; 
+			document.getElementById("home").style.display = "block"; 
+			document.getElementById("menuButton").style.display = "inline"; 
+			document.getElementById("backButton").style.display = "none"; 
+			level = 0;
+		}
+		lastLayer = recentLayer; 
+		recentLayer = what;
+	}
+	function showLast() {
+		level -= 2;
+		if (level < 0) { showAid('home'); }
+		else { showAid(lastLayer); }
+	}
+	
+	function startScreen() {
+		document.getElementById(recentLayer).style.display = "none"; 
+		document.getElementById("home").style.display = "block"; 
+		document.getElementById("menuButton").style.display = "inline"; 
+		document.getElementById("backButton").style.display = "none"; 
+	}
+		
+	</script>
+</head>
+
+<body>
+    <div id="toptoolbar" class="toolbar">
+        <h1 id="pageTitle">${WinMobTitle}</h1>
+	<a id="backButton" class="button" href="#toptoolbar" onclick="showLast()">${iPhoneBackButton}</a>
+	<a id="menuButton" class="button" href="#toptoolbar" onclick="showAid('menu')">${iPhoneMenuButton}</a> 
+</div>
+
+    <ul id="home" title="${WinMobTitle}" >
+        <li><a href="#toptoolbar" onclick="showAid('aid_disclaimer')">${disclaimerMenuTitle}</a></li>
+        <li><a href="#toptoolbar" onclick="showAid('telEmergency')">${emergencyNumbersMenuTitle}</a></li>
+${MENU}
+        <li><a href="#toptoolbar" onclick="showAid('cclicence')"><img style="margin-top:4px; margin-bottom:2px;" src="iui/cc88x31.png" /> </a></li>
+    </ul>
+
+
+<ul id="aid_disclaimer" title="${disclaimerTitle}"><h3>${disclaimerTitle}</h3>
+<ol><li><b>${softwareHeader}</b><br />
+${softwareName}<br />
+${softwareVersion}: ${WinMobVersionNumber}<br />
+${softwareRelease}: ${WinMobReleaseDate}<br />
+${SOFTWARECOPYRIGHT}
+${softwareLicense} <br /><a href="#toptoolbar" onclick="showAid('cclicence')"><img style="border:none; margin: 0px 0px 20px 0px;" alt="Creative Commons" src="iui/cc88x31.png" /></a><br />
+${softwareNotice}<br /><br />${softwareIllustrations} &copy; <a target="_blank" href="http://stefan.ganz.priv.at/">Med4Teens</a></li><br /><br />
+<li><b>${disclaimerHeader}</b><br />
+${disclaimerNotice1}<br />
+${disclaimerNotice2}<br />
+${disclaimerNotice3}<br /><br />
+${disclaimerNotice4}</li><br /><br />
+<li><b>${developmentHeader}</b><br />
+
+${developmentText}<br /><br />
+${developmentMoreInfo1} <a href="http://www.firstai.de">www.firstai.de</a> ${developmentMoreInfo2} <script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>"+emailME+"</a>"); </script></li><br /><br />
+<span style="font-style:italic;font-size:80%">${slogan}</span><br /></ol><br /><a id="backButton2" class="button" href="#toptoolbar" onclick="showLast()">${iPhoneBackButton}</a><br /><br /></ul><br />
+
+
+${SECTIONS}
+
+    <ul id="language" title="${languageChooser}">
+        <li><a target="_self" href="firstaidDE.html">Deutsch</a></li>
+        <li><a target="_self" href="firstaidEN.html">English</a></li>
+        <li><a target="_self" href="firstaidFR.html">Fran&ccedil;ais</a></li>
+        <li><a target="_self" href="firstaidLT.html">Lietuvi&#154;kai</a></li>
+        <li><a target="_self" href="firstaidVI.html">Ti&#7871;ng Vi&#7879;t</a></li>
+    </ul>
+
+<ul id="menu" title="${iPhoneMenuButton}">
+        <li><a href="#toptoolbar" onclick="showAid('language')">${languageChooser}</a></li>
+        <!-- <li><a target="_self" href="">${offlineBookmark}</a></li>-->
+        <li><a href="#toptoolbar" onclick="showAid('donate')">${donateProject}</a></li>
+        <li><script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>${mailToDeveloper}</a>"); </script>
+        <!-- <li><a target="_self" href="http://www.firstai.de/winmobile/offline/">${checkNewVersion}</a></li> -->
+        </ul>
+	
+    <ul id="donate" title="${donate}">
+  <h3><span style="color:#00B316;">${whyDonate}</span></h3>
+  <p>${donate1}</p>
+  <p>${donateOnlineVia} <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=${paypalID}">PayPal</a>${orWireTransfer}</p>
+  <p>${everyContributionCounts}</p><br />
+  <p><span style="font-style:italic;font-size:80%;">${smallStep}</span></p></ul>
+  <ul id="cclicence" title="Licence">  <h3>${license}</h3>
+  <p><b>Creative Commons BY-NC-ND 3.0</b><br />
+${licenseTerms}</p>
+   <ol><li><b>${licenseAttribution}</b><br />
+${licenseAttribution1} <i>Kai Kajus Noack</i>${licenseAttribution2} <i>www.firstai.de</i> ${licenseAttribution3}</li><br />
+   <li><b>${licenseNoCommercial}</b><br />
+${licenseNoCommercial1}</li><br />
+   <li><b>${licenseNoDeriv}</b><br />
+${licenseNoDeriv1}</li><br />
+<li>${licenseDistribution1} <span style="font-size:80%;">http://creativecommons.org/licenses/by-nc-nd/3.0/${licenseSuffix}</span>${licenseDistribution2}</li><br />
+<li>${licenseWaived}</li><br />
+<li>${licenseMoralRights}</li></ol></ul>
+
+${EMERGENCYNUMBERS}
+
+
+</body>
+</html>
