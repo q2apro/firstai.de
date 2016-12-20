@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<firstaide>
+  <strings>
+    <string key="title">Erste Hilfe</string>
+    <string key="back">Zurück</string>
+    <string key="disclaimerMenuTitle"># Haftung + Hinweise!</string>
+    <string key="disclaimerTitle">Haftung + Hinweise</string>
+    <string key="softwareHeader">Software</string>
+    <string key="softwareName">Erste Hilfe auf dem Handy</string>
+    <string key="softwareCopyright">Copyright: Kai Kajus Noack</string>
+    <string key="translatorCopyright"/>
+    <string key="softwareLicense">Lizenz: Creative Commons</string>
+    <string key="softwareNotice">Dieses Programm soll Informationen zur Ersten Hilfe geben. Es stellt jedoch in keiner Weise einen Ersatz für einen Erste-Hilfe-Kurs dar, sondern dient der Auffrischung des bereits erworbenen Wissens. </string>
+    <string key="softwareIllustrations">Illustrationen</string>
+    <string key="disclaimerHeader">Haftungsausschluss</string>
+    <string key="disclaimerNotice1">Bitte beachten Sie, dass ich keine Verantwortung für Konsequenzen, die aus der Nutzung entstehen, übernehme.</string>
+    <string key="disclaimerNotice2">JEGLICHE HAFTUNG IST AUSGESCHLOSSEN!</string>
+    <string key="disclaimerNotice3">VERWENDUNG AUF EIGENE GEFAHR!</string>
+    <string key="disclaimerNotice4">In allen Notfällen suchen Sie bitte sofort professionelle Hilfe.</string>
+    <string key="developmentHeader">Entwicklung des Projekts</string>
+    <string key="developmentText">Das Programm soll vielsprachig werden. Freiwillige Übersetzer gesucht!!</string>
+    <string key="developmentMoreInfo1">Weitere Informationen erhaltet ihr im Internet unter</string>
+    <string key="developmentMoreInfo2">oder schreibt eine E-Mail an:</string>
+    <string key="slogan">Rette einen Menschen und du rettest die ganze Welt.</string>
+    <string key="emergencyNumbersMenuTitle"># Notrufe weltweit</string>
+    <string key="dial112">Notruf 112 wählen</string>
+    <string key="emergency_fire">Feuerwehr</string>
+    <string key="emergency_medical">Notarzt</string>
+    <string key="emergency_police">Polizei</string>
+    <string key="emergency_cancelcard">Geldkarten sperren</string>
+    <string key="emergency_local">lokale Nummern</string>
+    <string key="emergency_nosystem">kein System</string>
+    <string key="emergency_radioonly">nur Radiotelefon</string>
+    <string key="emergency_none">--</string>
+    <string key="emergency_or">oder</string>
+    <string key="emergency_mobile">mobil</string>
+    <string key="emergency_tourist">Touristen</string>
+    <!-- Continents -->
+    <string key="continent">Kontinent</string>
+    <string key="continent_Africa">Afrika</string>
+    <string key="continent_Asia">Asien</string>
+    <string key="continent_Europe">Europa</string>
+    <string key="continent_Northamerica">Nord-/Zentralamerika</string>
+    <string key="continent_Oceania">Ozeanien</string>
+    <string key="continent_Southamerica">Südamerika</string>
+    <!-- Countries -->
+    <string key="country_afghanistan">Afghanistan</string>
+    <string key="country_albania">Albanien</string>
+    <string key="country_algeria">Algerien</string>
+    <string key="country_andorra">Andorra</string>
+    <string key="country_angola">Angola</string>
+    <string key="country_antiguaandbarbuda">Antigua und Barbuda</string>
+    <string key="country_argentina">Argentinien</string>
+    <string key="country_armenia">Armenien</string>
+    <string key="country_australia">Australien</string>
+    <string key="country_austria">Österreich</string>
+    <string key="country_azerbaijan">Aserbaidschan</string>
+    <string key="country_bahamas">Bahamas</string>
+    <string key="country_bahrain">Bahrain</string>
+    <string key="country_bangladesh">Bangladesch</string>
+    <string key="country_barbados">Barbados</string>
+    <string key="country_belarus">Weißrussland</string>
+    <string key="country_belgium">Belgien</string>
+    <string key="country_belize">Belize</string>
+    <string key="country_benin">Benin</string>
+    <string key="country_bhutan">Bhutan</string>
+    <string key="country_bolivia">Bolivien</string>
+    <string key="country_bosniaandherzegovina">Bosnien und Herzegowina</string>
+    <string key="country_botswana">Botsuana</string>
+    <string key="country_brazil">Brasilien</string>
+    <string key="country_brunei">Brunei</string>
+    <string key="country_bulgaria">Bulgarien</string>
+    <string key="country_burkinafaso">Burkina Faso</string>
+    <string key="country_burundi">Burundi</string>
+    <string key="country_cambodia">Kambodscha</string>
+    <string key="country_cameroon">Kamerun</string>
+    <string key="country_canada">Kanada</string>
+    <string key="country_capeverde">Kap Verde</string>
+    <string key="country_caymanislands">Cayman Islands</string>
+    <string key="country_centralafricanrepublic">Zentralafrikanische Republik</string>
+    <string key="country_chad">Tschad</string>
+    <string key="country_chile">Chile</string>
+    <string key="country_china">China</string>
+    <string key="country_colombia">Kolumbien</string>
+    <string key="country_comoros">Komoren</string>
+    <string key="country_congodemocraticrepublic">Kongo (Demokrat. Republik)</string>
+    <string key="country_congorepublic">Kongo (Republik)</string>
+    <string key="country_costarica">Costa Rica</string>
+    <string key="country_croatia">Kroatien</string>
+    <string key="country_cuba">Kuba</string>
+    <string key="country_cyprus">Zypern</string>
+    <string key="country_czechrepublic">Tschechien</string>
+    <string key="country_denmark">Dänemark</string>
+    <string key="country_djibouti">Dschibuti</string>
+    <string key="country_dominica">Dominica</string>
+    <string key="country_dominicanrepublic">Dominikanische Republik</string>
+    <string key="country_easttimor">Osttimor</string>
+    <string key="country_ecuador">Ecuador</string>
+    <string key="country_egypt">Ägypten</string>
+    <string key="country_elsalvador">El Salvador</string>
+    <string key="country_equatorialguinea">Äquatorialguinea</string>
+    <string key="country_eritrea">Eritrea</string>
+    <string key="country_estonia">Estland</string>
+    <string key="country_ethiopia">Äthiopien</string>
+    <string key="country_fiji">Fidschi</string>
+    <string key="country_finland">Finnland</string>
+    <string key="country_france">Frankreich</string>
+    <string key="country_gabon">Gabun</string>
+    <string key="country_gambia">Gambia</string>
+    <string key="country_georgia">Georgien</string>
+    <string key="country_germany">Deutschland</string>
+    <string key="country_ghana">Ghana</string>
+    <string key="country_greece">Griechenland</string>
+    <string key="country_greenland">Grönland</string>
+    <string key="country_grenada">Grenada</string>
+    <string key="country_guatemala">Guatemala</string>
+    <string key="country_guinea">Guinea</string>
+    <string key="country_guinea-bissau">Guinea-Bissau</string>
+    <string key="country_guyana">Guyana</string>
+    <string key="country_haiti">Haiti</string>
+    <string key="country_honduras">Honduras</string>
+    <string key="country_hongkong">Hong Kong</string>
+    <string key="country_hungary">Ungarn</string>
+    <string key="country_iceland">Island</string>
+    <string key="country_india">Indien</string>
+    <string key="country_indonesia">Indonesien</string>
+    <string key="country_iran">Iran</string>
+    <string key="country_iraq">Irak</string>
+    <string key="country_ireland">Irland</string>
+    <string key="country_israel">Israel</string>
+    <string key="country_italy">Italien</string>
+    <string key="country_ivorycoast">Elfenbeinküste</string>
+    <string key="country_jamaica">Jamaika</string>
+    <string key="country_japan">Japan</string>
+    <string key="country_jordan">Jordanien</string>
+    <string key="country_kazakhstan">Kasachstan</string>
+    <string key="country_kenya">Kenia</string>
+    <string key="country_kiribati">Kiribati</string>
+    <string key="country_kosovo">Kosovo</string>
+    <string key="country_kurdistan">Kurdistan</string>
+    <string key="country_kuwait">Kuwait</string>
+    <string key="country_kyrgyzstan">Kirgisistan</string>
+    <string key="country_laos">Laos</string>
+    <string key="country_latvia">Lettland</string>
+    <string key="country_lebanon">Libanon</string>
+    <string key="country_lesotho">Lesotho</string>
+    <string key="country_liberia">Liberia</string>
+    <string key="country_libya">Libyen</string>
+    <string key="country_liechtenstein">Liechtenstein</string>
+    <string key="country_lithuania">Litauen</string>
+    <string key="country_luxembourg">Luxemburg</string>
+    <string key="country_macau">Macao</string>
+    <string key="country_macedonia">Mazedonien</string>
+    <string key="country_madagascar">Madagaskar</string>
+    <string key="country_malawi">Malawi</string>
+    <string key="country_malaysia">Malaysia</string>
+    <string key="country_maldives">Malediven</string>
+    <string key="country_mali">Mali</string>
+    <string key="country_malta">Malta</string>
+    <string key="country_marshallislands">Marshallinseln</string>
+    <string key="country_mauritania">Mauretanien</string>
+    <string key="country_mauritius">Mauritius</string>
+    <string key="country_mayotte">Mayotte</string>
+    <string key="country_mexico">Mexiko</string>
+    <string key="country_micronesia">Mikronesien</string>
+    <string key="country_moldova">Moldau (Moldawien)</string>
+    <string key="country_monaco">Monaco</string>
+    <string key="country_mongolia">Mongolei</string>
+    <string key="country_montenegro">Montenegro</string>
+    <string key="country_morocco">Marokko</string>
+    <string key="country_mozambique">Mosambik</string>
+    <string key="country_myanmar">Myanmar</string>
+    <string key="country_namibia">Namibia</string>
+    <string key="country_nauru">Nauru</string>
+    <string key="country_nepal">Nepal</string>
+    <string key="country_netherlands">Niederlande</string>
+    <string key="country_newzealand">Neuseeland</string>
+    <string key="country_nicaragua">Nicaragua</string>
+    <string key="country_niger">Niger</string>
+    <string key="country_nigeria">Nigeria</string>
+    <string key="country_northkorea">Nordkorea</string>
+    <string key="country_norway">Norwegen</string>
+    <string key="country_oman">Oman</string>
+    <string key="country_pakistan">Pakistan</string>
+    <string key="country_palau">Palau</string>
+    <string key="country_panama">Panama</string>
+    <string key="country_papuanewguinea">Papua-Neuguinea</string>
+    <string key="country_paraguay">Paraguay</string>
+    <string key="country_peru">Peru</string>
+    <string key="country_philippines">Philippinen</string>
+    <string key="country_poland">Polen</string>
+    <string key="country_portugal">Portugal</string>
+    <string key="country_qatar">Katar</string>
+    <string key="country_reunion">Réunion</string>
+    <string key="country_romania">Rumänien</string>
+    <string key="country_russia">Russland</string>
+    <string key="country_rwanda">Ruanda</string>
+    <string key="country_sahrawiarabdemocraticrepublic">Sahara (Demokrat. Arab. Republik)</string>
+    <string key="country_saintpierreandmiquelon">Saint Pierre und Miquelon</string>
+    <string key="country_samoa">Samoa</string>
+    <string key="country_sanmarino">San Marino</string>
+    <string key="country_saotomeandprincipe">Sao Tomé und Principe</string>
+    <string key="country_saudiarabia">Saudi-Arabien</string>
+    <string key="country_senegal">Senegal</string>
+    <string key="country_serbia">Serbien</string>
+    <string key="country_seychelles">Seychellen</string>
+    <string key="country_sierraleone">Sierra Leone</string>
+    <string key="country_singapore">Singapur</string>
+    <string key="country_slovakia">Slowakei</string>
+    <string key="country_slovenia">Slowenien</string>
+    <string key="country_solomonislands">Salomonen</string>
+    <string key="country_somalia">Somalia</string>
+    <string key="country_southafrica">Südafrika</string>
+    <string key="country_southkorea">Südkorea</string>
+    <string key="country_spain">Spanien</string>
+    <string key="country_srilanka">Sri Lanka</string>
+    <string key="country_stkittsandnevis">Saint Kitts und Nevis</string>
+    <string key="country_stlucia">Saint Lucia</string>
+    <string key="country_stvincentandgrenadines">Saint Vincent und Grenadinen</string>
+    <string key="country_sudan">Sudan</string>
+    <string key="country_suriname">Suriname</string>
+    <string key="country_swaziland">Swasiland</string>
+    <string key="country_sweden">Schweden</string>
+    <string key="country_switzerland">Schweiz</string>
+    <string key="country_syria">Syrien</string>
+    <string key="country_taiwan">Taiwan</string>
+    <string key="country_tajikistan">Tadschikistan</string>
+    <string key="country_tanzania">Tansania</string>
+    <string key="country_thailand">Thailand</string>
+    <string key="country_togo">Togo</string>
+    <string key="country_tonga">Tonga</string>
+    <string key="country_trinidadandtobago">Trinidad und Tobago</string>
+    <string key="country_tunisia">Tunesien</string>
+    <string key="country_turkey">Türkei</string>
+    <string key="country_turkmenistan">Turkmenistan</string>
+    <string key="country_tuvalu">Tuvalu</string>
+    <string key="country_uganda">Uganda</string>
+    <string key="country_ukraine">Ukraine</string>
+    <string key="country_unitedarabemirates">Vereinigte Arabische Emirate</string>
+    <string key="country_unitedkingdom">Großbritannien</string>
+    <string key="country_unitedstatesofamerica">Vereinigten Staaten von Amerika</string>
+    <string key="country_uruguay">Uruguay</string>
+    <string key="country_uzbekistan">Usbekistan</string>
+    <string key="country_vanuatu">Vanuatu</string>
+    <string key="country_vaticancity">Vatikanstadt</string>
+    <string key="country_venezuela">Venezuela</string>
+    <string key="country_vietnam">Vietnam</string>
+    <string key="country_yemen">Jemen</string>
+    <string key="country_zambia">Sambia</string>
+    <string key="country_zimbabwe">Simbabwe</string>
+    <!-- iPhone only -->
+    <string key="audioPrefix">de</string>
+    <string key="iPhoneTitle">Erste Hilfe iPhone 1.0</string>
+    <string key="iPhoneTitleOffline">Erste Hilfe iPhone 1.0 Offline</string>
+    <string key="iPhoneDescription">iPhone Version für Erste Hilfe auf dem Handy - Online - inklusive aller Bilder und Audio</string>
+    <string key="iPhoneDescriptionOffline">iPhone Version für Erste Hilfe auf dem Handy - Offline - inklusive Bilder</string>
+    <string key="WinMobTitle">Erste Hilfe Windows Mobile 1.0</string>
+    <string key="WinMobDescription">Version für Erste Hilfe auf dem Handy - Internet Explorer Mobile - inklusive aller Bilder</string>
+    <string key="softwareVersion">Version</string>
+    <string key="WinMobVersionNumber">w1.0</string>
+    <string key="iPhoneVersionNumber">i1.0</string>
+    <string key="softwareRelease">Release</string>
+    <string key="WinMobReleaseDate">2008-12-24</string>
+    <string key="iPhoneReleaseDate">2008-12-24</string>
+    <string key="iPhoneBackButton">Zurück</string>
+    <string key="iPhoneMenuButton">Menü</string>
+    <string key="languageChooser">Sprache wählen</string>
+    <string key="iPhoneOfflineFilename">firstaidDEoffline.html</string>
+    <string key="offlineBookmark">Bookmark der Offline-Version</string>
+    <string key="donateProject">Projekt-Spende</string>
+    <string key="mailToDeveloper">Mail an Entwickler</string>
+    <string key="checkNewVersion">Auf neue Version prüfen</string>
+    <string key="donate">Spenden</string>
+    <string key="whyDonate">Warum spenden?</string>
+    <string key="donate1">Denkst du, das Projekt ist eine gute Idee? Dann spende bitte! Denn das Projekt überlebt nur durch Spenden.</string>
+    <string key="donateOnlineVia">Spende online via</string>
+    <string key="paypalID">5315619</string>
+    <string key="orWireTransfer"> oder überweise einen Betrag auf das Konto: Kai Kajus Noack, Konto-Nr. 5400736393, BLZ 70220300, BWM Bank</string>
+    <string key="everyContributionCounts">Jede Unterstützung zählt!</string>
+    <string key="smallStep">Ein kleiner Schritt für einen Menschen, aber ein großer Schritt für die Menschheit.</string>
+    <string key="license">Lizenz</string>
+    <string key="licenseTerms">Du darfst das Werk zu den folgenden Bedingungen vervielfältigen, verbreiten und öffentlich zugänglich machen:</string>
+    <string key="licenseAttribution">Namensnennung</string>
+    <string key="licenseAttribution1">Du musst den Namen des Rechteinhabers</string>
+    <string key="licenseAttribution2"> nennen und einen Link auf die Webseite</string>
+    <string key="licenseAttribution3">angeben (wodurch aber nicht der Eindruck entstehen darf, du oder die Nutzung des Werkes durch dich würden entlohnt).</string>
+    <string key="licenseNoCommercial">Keine kommerzielle Nutzung</string>
+    <string key="licenseNoCommercial1">Dieses Werk darf nicht für kommerzielle Zwecke verwendet werden.</string>
+    <string key="licenseNoDeriv">Keine Bearbeitung</string>
+    <string key="licenseNoDeriv1">Dieses Werk darf nicht bearbeitet oder in anderer Weise verändert werden.</string>
+    <string key="licenseDistribution1">Im Falle einer Verbreitung musst du anderen die Lizenzbedingungen, unter welche dieses Werk fällt, mitteilen. Einfach den Link auf</string>
+    <string key="licenseSuffix">de/</string>
+    <string key="licenseDistribution2"> einbinden.</string>
+    <string key="licenseWaived">Jede der vorgenannten Bedingungen kann aufgehoben werden, sofern du dazu die Einwilligung des Rechteinhabers erhältst.</string>
+    <string key="licenseMoralRights">Diese Lizenz lässt die Urheberpersönlichkeitsrechte unberührt.</string>
+  </strings>
+  <section id="aid_general">
+    <title>Allgemeines</title>
+    <audio>2.mp3</audio>
+    <step>Leisten Sie immer Erste Hilfe. Sie können keine Fehler machen.</step>
+    <step>Achten Sie immer auf Ihre eigene Sicherheit.</step>
+    <step>Machen Sie sich ein Bild von der Situation + Sichern Sie die Unfallstelle.</step>
+    <step>Notruf + Sofortmaßnahmen!</step>
+    <step>Bei mehreren Verletzten hat der am stärksten bedrohte Vorrang.</step>
+    <step>Beruhigen Sie den Betroffenen. Und bleiben Sie selbst ruhig!</step>
+    <step>Lagern Sie den Betroffenen falls möglich bequem. Grundsätzlich nie Alkohol, Nikotin oder Medikamente verabreichen.</step>
+  </section>
+  <section headImage="46" id="aid_allergic">
+    <title>Allergische Reaktion</title>
+    <audio>3.mp3</audio>
+    <step>Notruf absetzen.</step>
+    <step>Beruhigen des Betroffenen und bequem hinsetzen.</step>
+    <step>Allergie-auslösenden Stoff (z. B. Insektenstachel) vorsichtig entfernen.</step>
+    <step>Betroffene Hautstelle kühlen (feuchter Umschlag, Eis).</step>
+    <image file="046ice"/>
+    <step>Falls Betroffener ein Gegenmittel hat, sollte er dieses nutzen.</step>
+    <step>Kontrolle des Zustands bis Notarzt eintrifft.</step>
+    <step>Bei eintretender Bewusstlosigkeit oder Atemnot entsprechende Maßnahmen ergreifen!</step>
+    <image file="077"/>
+  </section>
+  <section id="aid_amputation">
+    <title>Amputation</title>
+    <audio>4.mp3</audio>
+    <description>Abgetrennter Körperteil kann wieder angenäht werden. Ziel: Amputat bis zum Eintreffen im Krankenhaus kühlen. </description>
+    <step>Betroffenen beruhigen, hinlegen und zudecken.</step>
+    <step>Blutung stoppen, siehe 'Blutung (schwer)' und 'Schock'.</step>
+    <step>Abgetrennten Körperteil in ein sauberes trockenes Tuch wickeln und in eine wasserdichte Plastiktüte legen. </step>
+    <step>Diese Plastiktüte verschließen und in eine zweite Plastiktüte legen, die kühles Wasser/Eis enthält. </step>
+    <step>Keinen Alkohol, Zigaretten oder Essen geben (falls im Krankenhaus mit Narkose operiert wird). </step>
+    <step>Das Amputat nicht einfrieren (nur kühlen). </step>
+    <step>Notarzt rufen oder selbst zum Krankenhaus fahren. </step>
+  </section>
+  <section headImage="47" id="aid_animalbite">
+    <title>Tierbiss</title>
+    <audio>45.mp3</audio>
+    <description>Achtung, hohe Infektionsgefahr. Folgen wie Eiter, Tetanus, Tollwut.</description>
+    <step>Wunde sofort mit heißem Seifenwasser auswaschen.</step>
+    <image file="049"/>
+    <step>Anschließend Wunddesinfektion auftragen.</step>
+    <step>Bei starker Blutung den Oberkörper erhöht lagern.</step>
+    <step>Keimfreien Verband anlegen.</step>
+    <image file="085"/>
+    <step>Krankenhaus aufsuchen oder Notruf absetzen.</step>
+  </section>
+  <section id="aid_apnoea">
+    <title>Atemstillstand</title>
+    <altTitle>Beatmung</altTitle>
+    <audio>6.mp3</audio>
+    <description>Keine Geräusche oder Atembewegungen, auffallende Hautverfärbung.</description>
+    <step>Notruf absetzen.</step>
+    <step>Betroffenen auf Rücken legen.</step>
+    <step>Entfernen von Fremdkörpern aus Mund und Rachen. Überstrecken des Kopfes in den Nacken.</step>
+    <image file="067"/>
+    <step>Nasenflügel zusammendrücken, damit Nase geschlossen ist.</step>
+    <image file="010"/>
+    <step>Tief einatmen und Mund auf Mund des Betroffenen aufsetzen, sodass keine Luft entweichen kann.</step>
+    <image file="011"/>
+    <step>Langsam und vollständig ausatmen.</step>
+    <step>Falls ohne Erfolg: Atemspende fortsetzen bis Notarzt eintrifft.</step>
+  </section>
+  <section id="aid_asthma">
+    <title>Asthma / Atemnot</title>
+    <audio>5.mp3</audio>
+    <description>Starke Atemnot. Pfeifendes Atemgeräusch. Angstgefühle.</description>
+    <step>Beruhigen des Betroffenen. (Bleiben Sie selbst ruhig!)</step>
+    <step>Kleidung lockern.</step>
+    <step>Betroffenen bequem leicht nach vorne gebeugt hinsetzen und auffordern, langsam und tief ein- und auszuatmen.</step>
+    <step>Falls der Betroffene einen Inhalator besitzt, sollte dieser benutzt werden (helfen Sie dabei). Nach 5-10 min sollte sich Wirkung zeigen.</step>
+    <image file="074"/>
+    <step>Sofern keine Besserung eintritt: Inhalator jede 5 min anwenden, solange bis Notarzt eintrifft.</step>
+    <step>Notruf absetzen.</step>
+    <step>Falls es zum Atemstillstand kommt, mit der <link target="aid_apnoea">Beatmung</link> beginnen.</step>
+  </section>
+  <section id="aid_backinjury">
+    <title>Rückenverletzung</title>
+    <altTitle>Wirbelsäule</altTitle>
+    <audio>59.mp3</audio>
+    <description>Schmerzen im Rücken, gefühllose Arme und Beine.</description>
+    <step>Verletzten auf keinen Fall bewegen!</step>
+    <image file="064"/>
+    <step>Kopf so halten, dass Betroffener stabil liegt.</step>
+    <image file="065"/>
+    <step>Verletzten nur mittels seitlicher Polsterung stabilisieren.</step>
+    <step>Betroffenen beruhigen.</step>
+    <step>Notruf absetzen, Hinweis auf Rückenverletzung.</step>
+  </section>
+  <section id="aid_birth">
+    <title>Geburt</title>
+    <audio>25.mp3</audio>
+    <description>Abgang von Fruchtwasser. Presswehen treten ein. Unerwartete Geburt.</description>
+    <image file="025"/>
+    <step>Intimsphäre wahren und Ruhe bewahren! - Notruf absetzen.</step>
+    <step>Die Schwangere breitbeinig, mit freigemachtem Unterkörper auf sterile Unterlage hinsetzen.</step>
+    <step>Kniee anwinkeln. Beine etwas heranziehen. Becken leicht erhöht lagern. - Die Geburt ist ein natürlicher Prozess und läuft häufig ohne Komplikationen ab.</step>
+    <step>Schwangere beruhigen und auf Atmung konzentrieren lassen: Durch Nase einatmen und Mund ausatmen (normales Atemtempo).</step>
+    <step>Pressrhythmus: Tief Luft holen, anhalten und pressen. Sobald Kopf des Babys erscheint, mit beiden Händen unterstützend zugreifen.</step>
+    <image file="021"/>
+    <image file="022"/>
+    <step>Nach der Geburt: Neugeborenes schräg nach unten hängen, um Fruchtwasser aus Atemwegen zu befreien. (Evtl. mit dem Mund das Fruchtwasser aus der Nase des Babys absaugen.) Kind muss atmen und schreien!</step>
+    <step>Nabelschnur 30 cm vom Kind entfernt abbinden (kann auch im Krankenhaus erfolgen). Scheide der Mutter steril abdecken.</step>
+    <image file="023"/>
+    <step>Das Baby abtrocknen und warm halten. Uhrzeit notieren und zum Krankenhaus fahren.</step>
+  </section>
+  <section headImage="82" id="aid_bleedinglight">
+    <title>Blutung (leicht)</title>
+    <audio>13.mp3</audio>
+    <description>Ziel: Stoppen der Blutung.</description>
+    <step>Wunde nicht berühren (Infektionsgefahr).</step>
+    <step>Wunde nicht mit Puder, Salben, Sprays behandeln.</step>
+    <step>Wundversorgung mittels keimfreier Wundauflage und Befestigungsmaterial (Pflaster, Binde).</step>
+    <image file="098"/>
+    <step>Bei kleiner Blutung reicht meist ein Pflasterstreifen.</step>
+    <step>Bei großflächiger Verletzung Wundauflage und Verbandtuch benutzen. Verband nicht zu fest binden, da Stauung zu vermehrter Blutung führt.</step>
+    <image file="084"/>
+    <image file="085"/>
+    <step>Hinweis: Tollwut-Wunden mit Seifenlösung auswaschen.</step>
+    <image file="049"/>
+  </section>
+  <section id="aid_bleedingsevere">
+    <title>Blutung (schwer)</title>
+    <audio>14.mp3</audio>
+    <description>Spritzendes, in Stößen austretendes Blut. Gefahr: Schock durch Blutverlust, Infektionen, Tod. Ziel: Stoppen der Blutung.</description>
+    <step>Kleidung entfernen (notfalls aufschneiden), Wunde freilegen.</step>
+    <step>Binde oder notfalls Kleidungsstück mit Druck um Wunde wickeln.</step>
+    <image file="086"/>
+    <step>Für mind. 10 min Druck auf Wunde ausüben.</step>
+    <step>Falls Binde mit Blut durchnässt, nicht die alte Binde entfernen! Eine andere Binde/Kleidungsstück darüber binden.</step>
+    <step>Verletztes Glied (sofern nicht gebrochen) über Höhe des Herzens lagern, damit sich Blutung verlangsamt. Wenn möglich Betroffenen hinlegen.</step>
+    <step>Falls Blutung nicht stoppt, Druck auf Wunde beibehalten und zusätzlich Druckpunkte über der Wunde setzen: Bei Blutung am Unterarm den Oberarm abdrücken (Ader auf Arm-Innenseite mittig zwischen Ellbogen und Achselhöhle, mit Fingern abdrücken). Bei Blutung des Beins, Druckpunkt in Leiste setzen (Ader in Leistenbeuge, wo Arterie über Beckenknochen verläuft, mit Handballen abdrücken).</step>
+    <image file="089"/>
+    <image file="092"/>
+    <step>Sofort Notarzt anfordern.</step>
+    <step>Sobald Blutung unter Kontrolle: Schockbekämpfung einleiten.</step>
+    <image file="093"/>
+  </section>
+  <section id="aid_brainconcussion">
+    <title>Gehirnerschütterung</title>
+    <audio>27.mp3</audio>
+    <description>Kopfschmerz, Übelkeit, Erbrechen. Sehstörung. Bewusstlosigkeit kann eintreten.</description>
+    <image file="035a"/>
+    <step>Betroffenen hinlegen.</step>
+    <step>Notruf absetzen.</step>
+    <description>Bei Blutung am Kopf:</description>
+    <step>Betroffenen hinlegen, Kopf erhöht lagern (Kissen).</step>
+    <image file="061"/>
+    <step>Wundversorgung durchführen (Kopf-Verband anlegen).</step>
+    <step>Notruf absetzen.</step>
+  </section>
+  <section id="aid_burningslight">
+    <title>Verbrennung (leicht)</title>
+    <audio>52.mp3</audio>
+    <description>Rötung der Haut. Leichte Schwellung. Schmerzen.</description>
+    <step>Betroffene Stelle unter laufendem kalten Wasser kühlen.</step>
+    <image file="100"/>
+    <step>Feuchten Verband locker anlegen.</step>
+  </section>
+  <section id="aid_burningsevere">
+    <title>Verbrennung (schwer)</title>
+    <audio>53.mp3</audio>
+    <description>Gefleckte weiße rote Stellen, Blasenbildung. Flüssigkeitsaustritt aus Haut. Tiefe Gewebeschädigung. Starke Schmerzen oder keine Schmerzen (aufgrund verbrannter Nerven).</description>
+    <image file="097"/>
+    <step>Kleidung soweit wie möglich entfernen.</step>
+    <step>Mit kaltem Wasser (ca. 15°C) bis zu 10 min kühlen, bis Schmerzlinderung eintritt.</step>
+    <image file="100"/>
+    <step>Falls Verbrennung großflächig, nur mit feuchten Tüchern kühlen.</step>
+    <step>Notruf absetzen.</step>
+    <step>Nach Kühlung die Wundversorgung durchführen. Sterile, trockene Wundauflage benutzen. Keine Flüssigkeiten aufbringen (keine Cremes, Öle, Salben etc.). Blasen nicht aufstechen.</step>
+    <image file="085"/>
+    <step>Atmung und Bewusstsein des Betroffenen kontrollieren, bis Notarzt eintrifft.</step>
+  </section>
+  <section id="aid_checkbreathing">
+    <title>Atmung prüfen</title>
+    <audio>7.mp3</audio>
+    <step>Atemgeräusche prüfen.</step>
+    <step>Atmung am Oberbauch feststellen (Hand auflegen).</step>
+    <image file="027"/>
+    <step>Atmung an Nase/Mund fühlbar.</step>
+  </section>
+  <section id="aid_chemicalburneyes">
+    <title>Verätzung (Augen)</title>
+    <audio>9.mp3</audio>
+    <step>Notarzt rufen, auf Ätz-Substanz hinweisen.</step>
+    <step>Auge sofort mit viel Wasser spülen. Gesundes Auge während Spülung abdecken.</step>
+    <step>Wasserstrahl vom inneren Augenwinkel zum äußeren Augenwinkel. Ca. 20 min reinigen.</step>
+    <image file="019"/>
+    <step>Beide Augen des Betroffenen schließen und mit angefeuchtetem Tuch verbinden.</step>
+    <image file="020"/>
+    <step>Zustand kontrollieren, bis Notarzt eintrifft.</step>
+  </section>
+  <section id="aid_chemicalburn">
+    <title>Verätzung</title>
+    <audio>51.mp3</audio>
+    <description>Zerstörung von Gewebe.</description>
+    <image file="095"/>
+    <step>Eigenschutz beachten!</step>
+    <step>Zügig handeln und verätzte Stellen abspülen (bei Verätzung der Augen mind. 20 min mit klarem Wasser spülen). Wasserstrahl vom inneren Augenwinkel zum äußeren Augenwinkel.</step>
+    <image file="100"/>
+    <step>Notruf absetzen.</step>
+    <step>Bei Verätzung des Verdauungsweges: Vermehrt Flüssigkeit trinken.</step>
+    <step>Kein Erbrechen auslösen!</step>
+  </section>
+  <section id="aid_dangerzone">
+    <title>Gefahrenzone (Retten)</title>
+    <audio>26.mp3</audio>
+    <step>Grifftechnik: Arm des Verletzten vor dessen Brust, hinter den Verletzten stellen.</step>
+    <step>Mit beiden Händen den angewinkelten Arm des Verletzten durch dessen Achseln greifen.</step>
+    <step>Person in Sicherheit bringen.</step>
+    <image file="001"/>
+    <image file="007"/>
+  </section>
+  <section id="aid_diabeticcoma">
+    <title>Diabetisches Koma</title>
+    <altTitle>Überzuckerung</altTitle>
+    <audio>15.mp3</audio>
+    <description>Blutzuckerspiegel zu hoch bzw. Insulinmangel.</description>
+    <description>Symptome: Durst, häufiges Wasserlassen, Übelkeit, Erbrechen. Atem riecht nach Obst.</description>
+    <step>Notruf absetzen.</step>
+    <step>Unterstützung bei der Insulingabe, sofern sichergestellt, dass Diabetiker.</step>
+    <image file="016"/>
+    <step>
+      <link target="aid_recoveryposition">Stabile Seitenlage</link>. (Keine weiteren Möglichkeiten für den Ersthelfer.)</step>
+    <step>Zustand des Betroffenen kontrollieren bis Notarzt eintrifft.</step>
+  </section>
+  <section id="aid_diarrhoea">
+    <title>Durchfall</title>
+    <audio>16.mp3</audio>
+    <description>Nahrungsmittel-Unverträglichkeit, Darm-Entzündung oder Erkrankung. Stuhlgang wässrig, schleimig oder blutig.</description>
+    <step>Gefahr für Kreislauf aufgrund Flüssigkeits- und Salz-Verlustes!</step>
+    <step>Flüssigkeit zuführen (Tee, Wasser).</step>
+    <step>Bei starken Beschwerden Arzt aufsuchen oder Notruf absetzen.</step>
+  </section>
+  <section id="aid_drowning">
+    <title>Ertrinken</title>
+    <audio>24.mp3</audio>
+    <step>Notruf absetzen. Personen in der Nähe um Hilfe bitten.</step>
+    <image file="032"/>
+    <step>Aus Wasser retten!</step>
+    <image file="033"/>
+    <image file="034"/>
+    <step>Wenn Atmung vorhanden: <link target="aid_recoveryposition">Stabile Seitenlage</link>. Betroffenen warm halten (Decke). Zustand kontrollieren, bis der Notarzt eintrifft.</step>
+    <step>Bei Atemstillstand sofort mit <link target="aid_resuscitation">Wiederbelebung beginnen!</link> (Ausfließenlassen von Wasser aus Lungen ist nutzlos.)</step>
+  </section>
+  <section id="aid_electricityaccident">
+    <title>Elektrounfall</title>
+    <audio>18.mp3</audio>
+    <step>Zuerst Stromzuleitung unterbrechen!</step>
+    <image file="045plug"/>
+    <image file="045"/>
+    <step>Gefahr: Bewusstlosigkeit, Atemstillstand.</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - Bewusstlosigkeit mit Atmung</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - Bewusstlosigkeit ohne Atmung</link>
+    </step>
+    <image file="042"/>
+    <image file="043"/>
+  </section>
+  <section id="aid_emergencycall">
+    <title>Notruf</title>
+    <audio>34.mp3</audio>
+    <step>Wählen Sie mit dem nächst-verfügbaren Telefon 112. Immer möglich und kostenlos! Zögern Sie nie, den Notarzt zu rufen!</step>
+    <step>Am Telefon Folgendes durchgeben:</step>
+    <step>- Wo (Unfallort). </step>
+    <step>- Was ist passiert. </step>
+    <step>- Wie viele Verletzte. </step>
+    <step>- Welche Verletzungen. </step>
+    <step>Danach auf Rückfragen warten.</step>
+  </section>
+  <section id="aid_epilepsy">
+    <title>Epileptischer Anfall</title>
+    <audio>19.mp3</audio>
+    <description>Starrer Körper, geballte Fäuste, gepresster Kiefer, Zucken in Beinen oder Gesicht. Rollende Augen. Speichelfluss. Bewusstlosigkeit möglich.</description>
+    <image file="058"/>
+    <step>Betroffenen nicht halten oder in Bewegung einschränken.</step>
+    <step>Betroffenen auf weiche Unterlage (Kissen) legen, Objekte in direkter Nähe entfernen, somit Selbstverletzungen vorbeugen.</step>
+    <step>Beruhigend zum Betroffenen reden. Kleidung lockern, für Atemfreiheit sorgen.</step>
+    <step>Falls Betroffener erbricht, Kopf zur Seite drehen, damit Erbrochenes abfließen kann.</step>
+    <step>Atemwege freihalten. Gefahr, dass Zunge verschluckt wird.</step>
+    <step>
+      <link target="aid_recoveryposition">Stabile Seitenlage</link> + Notruf absetzen. Weiterhin Zustand des Betroffenen kontrollieren.</step>
+    <step>Andere Leute auf Distanz halten.</step>
+  </section>
+  <section id="aid_eyeinjury">
+    <title>Augenverletzung</title>
+    <audio>8.mp3</audio>
+    <step>Fremdkörper im Auge belassen, nicht entfernen.</step>
+    <step>Augen nicht bewegen, um weitere Verletzungen zu vermeiden. Auge nicht berühren.</step>
+    <step>Bei Augen-Blutung mit Kompresse oder Verbandtuch bedecken.</step>
+    <image file="020"/>
+    <step>Auge mit kalter Auflage kühlen (verringert Schwellung, Blutung stoppt schneller).</step>
+    <step>Notruf absetzen oder selbst zum Krankenhaus fahren.</step>
+  </section>
+  <section id="aid_fracture">
+    <title>Knochenbruch</title>
+    <audio>32.mp3</audio>
+    <description>Anzeichen: Unnatürliche Lage und Beweglichkeit. Deformierung. Schmerzhafte Bewegung, berührungsempfindlich.</description>
+    <image file="104"/>
+    <step>Bewegungen vermeiden!</step>
+    <step>Notruf absetzen.</step>
+    <step>Bruch ruhig stellen, d.h. Umpolstern mit dichtem Material. Position des gebrochenen Knochens beibehalten.</step>
+    <image file="107"/>
+    <step>Bei offenem Bruch die Wunde keimfrei abdecken.</step>
+    <image file="106"/>
+  </section>
+  <section id="aid_frostbitemild">
+    <title>Erfrierung (leicht)</title>
+    <audio>21.mp3</audio>
+    <description>Blässe, Schwellen. Gefahr für Blutzufuhr.</description>
+    <step>Warmen Bereich aufsuchen.</step>
+    <step>Kälte beseitigen. Nasse Kleidung entfernen, abtrocknen.</step>
+    <step>Aufwärmen mit lauwarmem Wasser und Körperwärme des Helfers.</step>
+    <step>Warmes Getränk (Tee) geben. Keinen Alkohol!</step>
+    <image file="040"/>
+  </section>
+  <section id="aid_frostbitesevere">
+    <title>Erfrierung (stark)</title>
+    <audio>22.mp3</audio>
+    <description>Kalte harte Haut, grau-weiß, Blasenbildung, Gewebe stirbt ab. Gefahr für Blutzufuhr!</description>
+    <image file="096"/>
+    <step>Warmen Bereich aufsuchen.</step>
+    <step>Wunden versorgen/abdecken.</step>
+    <step>Zuckerhaltiges Getränk verabreichen.</step>
+    <step>Nicht warmreiben!</step>
+    <step>Notruf absetzen.</step>
+  </section>
+  <section id="aid_heartattack">
+    <title>Herzinfarkt</title>
+    <audio>29.mp3</audio>
+    <description>Schwere mehr als 5 min anhaltende Schmerzen + Druck im Brustkorb, besonders in Arme/Schultern ausstrahlend. Angstgefühl, Blässe, kalter Schweiß. Eventuell Übelkeit, Kurzatmigkeit.</description>
+    <image file="076"/>
+    <image file="083"/>
+    <step>Notruf absetzen! Hinweis auf vermuteten Herzinfarkt.</step>
+    <step>Oberkörper erhöht lagern. Enge Kleidung lockern. Keine Medikamente oder Getränke geben.</step>
+    <image file="061"/>
+    <step>Beruhigend auf Betroffenen einreden.</step>
+    <step>Bewusstsein und Atmung kontrollieren.</step>
+    <step>Dem Betroffenen Aspirin verabreichen, falls verfügbar.</step>
+    <step>Bei Bewusstlosigkeit die <link target="aid_resuscitation">Wiederbelebung einleiten</link>.</step>
+  </section>
+  <section id="aid_hypoglycaemia">
+    <title>Unterzuckerung</title>
+    <audio>50.mp3</audio>
+    <description>Blutzuckerspiegel unter Mindestwert (aufgrund Überdosierung von Insulin oder ungenügender Nahrungsaufnahme).</description>
+    <description>Symptome: Blässe, Nervosität, Hunger, Zittern, Schweiß.</description>
+    <image file="018"/>
+    <step>Zuerst klären, ob der Betroffene Diabetiker ist (siehe Diabetiker-Ausweis).</step>
+    <step>Notruf absetzen.</step>
+    <step>Dem Betroffenen gezuckerte Getränke und Traubenzucker geben (sofern keine Schluckschwierigkeiten).</step>
+    <image file="017"/>
+    <step>Bei Bewusstlosigkeit und vorhandener Atmung: <link target="aid_recoveryposition">Stabile Seitenlage</link> einnehmen und Atmung kontrollieren. Falls Atemstillstand eintritt, den Betroffenen beatmen.</step>
+    <step>Wenn Atmung vorhanden, dem Bewusstlosen ein Stück Zucker in die Backentasche legen und von außen gegendrücken.</step>
+  </section>
+  <section id="aid_hyperthermia">
+    <title>Überhitzung</title>
+    <altTitle>Hitzschlag</altTitle>
+    <audio>30.mp3</audio>
+    <description>Durst, Schwäche, Desorientiertheit, Bewusstseinsstörung, starker Schweiß, heiße Haut.</description>
+    <image file="035"/>
+    <step>Notruf absetzen.</step>
+    <step>Kühlen, schattigen Platz aufsuchen (Raum mit Klimaanlage sehr geeignet).</step>
+    <step>Betroffenen hinlegen, Beine hochlagern. Kleidung lockern.</step>
+    <image file="078"/>
+    <step>Haut mit Wasser kühlen oder kalte Handtücher auflegen.</step>
+    <step>Viel Wasser oder Säfte trinken.</step>
+  </section>
+  <section id="aid_hypothermia">
+    <title>Unterkühlung</title>
+    <audio>49.mp3</audio>
+    <description>Kältezittern, Schläfrigkeit, Erschöpfung, bis hin zur Bewusstlosigkeit. Kalte, blasse Haut. Langsamer Puls, schwacher Herzschlag.</description>
+    <image file="014"/>
+    <step>Warmen Bereich aufsuchen.</step>
+    <step>Notruf absetzen.</step>
+    <step>Kälteeinwirkung beenden. Körpertemperatur erhöhen (Decke und Körper-zu-Körper-Kontakt).</step>
+    <step>Nasse Kleidung entfernen und trockene warme Kleidung anziehen. In Decken packen. Kopf bedecken.</step>
+    <step>Heißen Tee, Brühe oder heißes Wasser zu trinken geben. Keinen Alkohol! Betroffenen wachhalten.</step>
+    <image file="039"/>
+    <image file="040"/>
+    <step>Zustand bis zum Eintreffen des Notarztes kontrollieren. Bei Verlust des Bewusstseins Wiederbelebung einleiten.</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - Bewusstlosigkeit mit Atmung</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - Bewusstlosigkeit ohne Atmung</link>
+    </step>
+  </section>
+  <section id="aid_icerescue">
+    <title>Eisunfall</title>
+    <audio>17.mp3</audio>
+    <description>Eigenschutz beachten! Gefahr: Ertrinken, Unterkühlung.</description>
+    <step>Rettung erfolgt via Leiter, Brett, Stange. Gewicht muss großflächig verteilt werden.</step>
+    <step>Andere Personen um Mithilfe auffordern. Notruf absetzen lassen.</step>
+    <step>Auf Bauch (möglichst angeseilt) mit Hilfsmittel vorsichtig zur Einbruchstelle robben.</step>
+    <image file="041"/>
+    <step>Verunglücktem auf Distanz das Hilfsmittel reichen (nicht die Hand!) und herausziehen.</step>
+    <step>Rückwärts bis zum Ufer zurückrobben.</step>
+    <step>Erste-Hilfe-Maßnahmen.</step>
+    <step>Eigenrettung möglich: Bei festem Eis Gewicht auf Eis verteilen und sich selbst herausziehen. Flach auf Bauch zum Ufer zurückrobben. Bei brüchigem Eis versuchen Eis bis zum Ufer Stück für Stück abzubrechen.</step>
+  </section>
+  <section headImage="46" id="aid_insectstings">
+    <title>Insektenstich</title>
+    <audio>31.mp3</audio>
+    <description>Schwellungen, Hautausschlag, brennendes Gefühl, Schwäche, Atemnot, Kreislaufprobleme, Herzrasen.</description>
+    <step>Stachel vorsichtig entfernen (mit Pinzette). Nicht auf Stachel drücken, könnte noch mehr Gift injizieren.</step>
+    <step>Kühlung der betroffenen Stelle (kalte Kompresse).</step>
+    <step>Betroffene Stelle niedriger als Herz-Höhe halten, damit Gift langsamer zirkuliert.</step>
+    <step>Bei Stich im Mund-Rachen-Raum: Eis lutschen lassen, kalte Umschläge um Hals.</step>
+    <image file="046ice"/>
+    <step>Bei ernsten Beschwerden Notruf absetzen.</step>
+  </section>
+  <section id="aid_nosebleeding">
+    <title>Nasenbluten</title>
+    <audio>33.mp3</audio>
+    <description>Kleine Ader in Nasenspitze geplatzt.</description>
+    <step>Blutenden leicht nach vorne gelehnt hinsetzen. Kopf gerade halten.</step>
+    <step>Nicht flach lagern, da Kopf über Herz-Höhe Bluten verlangsamt.</step>
+    <step>Kalter Nackenumschlag.</step>
+    <step>Nasenspitze bis zum Stopp der Blutung zudrücken (für 10 min).</step>
+    <step>Anschließend Nase in keiner Weise anstrengen (kein Naseschnauben).</step>
+    <step>Bei ernsten Beschwerden oder wenn Blutung anhält Notruf absetzen.</step>
+  </section>
+  <section headImage="52" id="aid_poisining">
+    <title>Vergiftung</title>
+    <audio>54.mp3</audio>
+    <description>Verwirrung, Halluzination, große Pupillen, Fieber, Krämpfe. Bewusstlosigkeit.</description>
+    <step>Gegenmittel nur verabreichen, wenn medizinisch ausgebildete Person vor Ort.</step>
+    <image file="056"/>
+    <step>Keine Getränke geben. Kein Erbrechen auslösen.</step>
+    <step>Notruf absetzen + auf Vergiftung hinweisen!</step>
+    <step>Giftreste und Erbrochenes sicherstellen!</step>
+    <image file="054a"/>
+    <step>Sofern Betroffener bewusstlos ist und atmet: <link target="aid_recoveryposition">Stabile Seitenlage</link> herstellen. Bewusstsein und Atmung kontrollieren bis Notarzt eintrifft.</step>
+    <step>Sofern keine Atmung: Maßnahmen zur <link target="aid_resuscitation">Wiederbelebung einleiten</link>. Mund vorher von eventuell Erbrochenem befreien.</step>
+  </section>
+  <section id="aid_recoveryposition">
+    <title>Stabile Seitenlage</title>
+    <audio>44.mp3</audio>
+    <step>Betroffenen in Rückenlage, Beine ausstrecken. Daneben knien.</step>
+    <step>Nahen Arm im rechten Winkel zum Körper positionieren.</step>
+    <step>Fernen Arm über Brust des Verletzten ziehen und Handrücken auf Wange platzieren.</step>
+    <image file="008"/>
+    <step>Entferntes Knie fassen, zu sich ziehen und auf Boden legen. Bein etwa im rechten Winkel positionieren. Hand des Betroffenen bleibt auf dessen Wange.</step>
+    <step>Sicherstellen, dass Atemwege frei sind.</step>
+    <step>Kopf in Nacken beugen, Kinn anheben. Mund leicht öffnen. Atmung kontrollieren.</step>
+    <image file="009"/>
+    <step>Bewusstsein und Atmung kontrollieren bis Notarzt eintrifft.</step>
+    <description>Stabile Seitenlage (Baby):</description>
+    <image file="028"/>
+  </section>
+  <section id="aid_resuscitation">
+    <title>Wiederbelebung</title>
+    <altTitle>Herzdruckmassage</altTitle>
+    <altTitle>Reanimation</altTitle>
+    <audio>58.mp3</audio>
+    <subsection># Herzdruckmassage</subsection>
+    <step>Betroffenen in Rückenlage. Daneben hinknien.</step>
+    <step>Brustkorb freimachen.</step>
+    <step>In der Mitte des Brustkorbs (kurz über Brustbein) einen Handballen platzieren.</step>
+    <image file="013"/>
+    <step>Anderen Handballen auf Handrücken der bereits platzierten Hand.</step>
+    <step>Arme, Ellbogen durchdrücken.</step>
+    <image file="003"/>
+    <step>Brustkorb des Betroffenen 5 cm senkrecht eindrücken (aus dem Oberkörper arbeiten) und wieder entlasten.</step>
+    <step>30-mal in Folge kurz und kräftig drücken.</step>
+    <subsection># Beatmung</subsection>
+    <step>Entfernen von Fremdkörpern aus Mund und Rachen. Überstrecken des Kopfes in den Nacken.</step>
+    <image file="067"/>
+    <step>Nasenflügel zusammendrücken, damit Nase geschlossen ist.</step>
+    <image file="010"/>
+    <step>Tief einatmen und Mund auf Mund des Betroffenen aufsetzen, sodass keine Luft entweichen kann.</step>
+    <image file="011"/>
+    <step>Zweimal Mund zu Mund beatmen (langsam, vollständig ausatmen).</step>
+    <step>Danach wieder Herzdruckmassage.</step>
+    <description>Herzdruckmassage + Beatmung fortführen bis Rettungsdienst kommt.</description>
+    <image file="012"/>
+    <subsection># Wiederbelebung (Baby)</subsection>
+    <step>Nur zwei Finger benutzen:</step>
+    <image file="029"/>
+    <step>Nicht zu stark beatmen:</step>
+    <image file="030"/>
+  </section>
+  <section id="aid_safeguardaccident">
+    <title>Unfallstelle sichern</title>
+    <altTitle>Verkehrsunfall</altTitle>
+    <audio>55.mp3</audio>
+    <step>Eigenen Pkw 50-100 m hinter Unfallstelle halten (falls Autobahn oder Landstraße). Danach Warnblinker anschalten und Warnweste anziehen.</step>
+    <step>Warndreieck vor Unfallstelle aufstellen. Achtung: Bei einem Unfall in der Kurve, Warndreieck vor der Kurve platzieren!</step>
+    <image file="111"/>
+    <step>Andere Personen um Mithilfe auffordern.</step>
+    <step>Tür des Unfall-Pkws öffnen (falls verklemmt, mittels Wagenheber aufstemmen). Zündung ausschalten.</step>
+    <step>Unfallopfer bergen: Abschnallen, Sitz nach hinten schieben. Verletzten <link target="aid_dangerzone">mit Rettungsgriff</link> aus Wagen befreien.</step>
+    <image file="001"/>
+    <step>Notruf absetzen.</step>
+    <step>Erste-Hilfe-Maßnahmen.</step>
+  </section>
+  <section id="aid_shock">
+    <title>Schock</title>
+    <audio>40.mp3</audio>
+    <description>Kreislauf-Störung durch mangelhafte Sauerstoffversorgung im Körper.</description>
+    <description>Ursache: Verlust von Flüssigkeit, reduzierte Blutmenge.</description>
+    <description>Symptome: Blässe, kalte Haut, kalter Schweiß, Unruhe.</description>
+    <step>Schockursache beseitigen (z.B. Flüssigkeitsverlust stoppen, Wunde abbinden)!</step>
+    <step>Betroffenen auf Decke legen, Beine hoch lagern. Beruhigen.</step>
+    <image file="078"/>
+    <step>Notruf absetzen.</step>
+    <step>Bei Atem- und Herz-Kreislauf-Störungen <link target="aid_resuscitation">Wiederbelebung einleiten</link>.</step>
+  </section>
+  <section id="aid_skullfracture">
+    <title>Schädelbasisbruch</title>
+    <audio>37.mp3</audio>
+    <description>Leichte Blutungen aus Nase, Mund oder Ohr. Oft offene Wunde am Schädel.</description>
+    <step>Atemwege freihalten.</step>
+    <step>Bei Bewusstsein: Verletzten nach vorne gebeugt hinsetzen. Weitere Bewegungen vermeiden!</step>
+    <step>Bei Bewusstlosigkeit: <link target="aid_recoveryposition">Stabile Seitenlage</link> (keinen Druck auf Kopfwunde).</step>
+    <step>Notruf absetzen.</step>
+    <step>Kopfverband anlegen.</step>
+    <step>Bei Atem- und Herz-Kreislauf-Störungen <link target="aid_resuscitation">Wiederbelebung einleiten</link>.</step>
+  </section>
+  <section headImage="51" id="aid_snakebite">
+    <title>Schlangenbiss</title>
+    <audio>39.mp3</audio>
+    <description>Punktförmige Wunde in Stecknadelgröße, heftige Schmerzen, Schwellung, blaurote Verfärbung. Kreislaufstörung, Schockgefahr.</description>
+    <step>Verletzten Körperteil ruhigstellen</step>
+    <step>Kalte Umschläge auf Bissstelle.</step>
+    <step>Schockbekämpfung.</step>
+    <step>Notruf absetzen.</step>
+  </section>
+  <section id="aid_sos">
+    <title>SOS</title>
+    <audio>43.mp3</audio>
+    <step>Signal: 3x kurz, 3x lang, 3x kurz.</step>
+    <step>Optisch (Blitzlicht, Taschenlampe) oder Akustisch (Signalpfeife, Klopfen).</step>
+  </section>
+  <section id="aid_sprain">
+    <title>Verstauchung + Verrenkung</title>
+    <audio>57.mp3</audio>
+    <description>Schmerzen, Schwellung (Bluterguss), Funktionsverlust, Verformung des Gliedes.</description>
+    <step>Ruhigstellung des Gliedes ausschließlich in der für Betroffenen angenehmsten Position.</step>
+    <step>Kühlen (mit Eisbeutel).</step>
+    <step>Falls möglich Glied hoch lagern.</step>
+    <step>Krankenhaus aufsuchen oder Notruf absetzen.</step>
+  </section>
+  <section id="aid_stroke">
+    <title>Schlaganfall</title>
+    <audio>38.mp3</audio>
+    <description>Plötzliches Lähmungs- oder Taubheitsgefühl (Gesicht, Arm, Bein), gestörtes Sprachverständnis, Sehstörung, Bewusstseinstrübung, starke Kopfschmerzen. Probleme beim Atmen und Schlucken, Kontrollverlust über Blase und Darm.</description>
+    <image file="059"/>
+    <step>Notruf absetzen!</step>
+    <step>Enge Kleidung lockern, keine Medikamente oder Getränke geben.</step>
+    <step>Betroffenen bequem hinsetzen oder hinlegen. Beruhigen!</step>
+    <step>Bewusstsein und Atmung kontrollieren.</step>
+    <step>Bei Atem- und Herz-Kreislauf-Störungen <link target="aid_resuscitation">Wiederbelebung einleiten</link>.</step>
+  </section>
+  <section id="aid_suffocation">
+    <title>Ersticken</title>
+    <altTitle>Verschlucken</altTitle>
+    <audio>23.mp3</audio>
+    <description>Unzureichende Sauerstoffversorgung. Luftröhre verschlossen. Gefahr: Atemstillstand.</description>
+    <description>Symptome: Pfeifendes Atemgeräusch, Hustenreiz, Atemnot, Hautverfärbung.</description>
+    <image file="066"/>
+    <step>Sofort handeln! Betroffenen kräftig Husten lassen.</step>
+    <step>Mit flacher Hand auf Rücken zwischen Schulterblättern kräftig klopfen (Babys dabei auf Unterarm legen, Kopf nach unten halten).</step>
+    <image file="068"/>
+    <image file="031"/>
+    <step>Wenn ohne Erfolg: Hinter Person stellen, Arme um Taille legen, leicht nach vorne beugen.</step>
+    <step>Hand zur Faust ballen, auf Magen-Höhe des Betroffenen positionieren und mit anderer Hand umfassen.</step>
+    <image file="069"/>
+    <step>Beide Hände in Umklammerung mit hartem Stoß in Richtung Magen nach oben/innen ziehen (als ob Sie die Person hochheben wollen).</step>
+    <step>Bis zu 5-mal wiederholen! Luftwege sollten vom Objekt befreit sein.</step>
+    <step>Notruf absetzen.</step>
+    <step>Falls Maßnahme nicht erfolgreich, trotzdem fortsetzen, bis Notarzt eintrifft.</step>
+  </section>
+  <section id="aid_sunburn">
+    <title>Sonnenbrand</title>
+    <audio>41.mp3</audio>
+    <step>Betroffenen aus direkter Sonneneinstrahlung nehmen. Weitere Sonne meiden.</step>
+    <step>Viel Wasser trinken, um Dehydration entgegenzuwirken.</step>
+    <step>Bei ernsthaftem Sonnenbrand (Blasenbildung, Rötung, Schmerzen) unbedingt Arzt aufsuchen.</step>
+    <step>Leichte Hautrötungen mit feuchten Umschlägen kühlen. After-Sun-Lotion oder Gel auftragen.</step>
+  </section>
+  <section id="aid_sunstroke">
+    <title>Sonnenstich</title>
+    <audio>42.mp3</audio>
+    <description>Heißer roter Kopf, kühle Haut, Übelkeit, Kopfschmerz, Schwindelgefühl. Ursache: Reizung der Hirnhaut.</description>
+    <image file="035"/>
+    <step>Kühlen Ort aufsuchen (Schatten) und Oberkörper des Betroffenen erhöht lagern.</step>
+    <image file="061"/>
+    <step>Mit nassen Tüchern Kopf kühlen.</step>
+    <step>Notruf absetzen, Atmung weiterhin kontrollieren.</step>
+    <step>Bei Bewusstsein: Ggf. kühles Getränk geben.</step>
+    <step>Bei Atemstillstand mit Beatmung beginnen:</step>
+    <step>
+      <link target="aid_apnoea">Weiter mit Beatmung!</link>
+    </step>
+    <image file="036"/>
+  </section>
+  <section id="aid_unconsciouswithbreath">
+    <title>Bewusstlosigkeit mit Atmung</title>
+    <audio>11.mp3</audio>
+    <description>Keine Reaktion auf Ansprache und Schütteln. Atmung vorhanden.</description>
+    <image file="057"/>
+    <step>Falls Menschen in der Nähe, diese um Mithilfe bitten.</step>
+    <step>
+      <link target="aid_recoveryposition">Stabile Seitenlage</link>. Kopf nach hinten ziehen, Mund öffnen, damit bei Erbrechen dieses ablaufen kann.</step>
+    <image file="008"/>
+    <image file="009"/>
+    <step>Notruf absetzen.</step>
+  </section>
+  <section id="aid_unconsciouswithoutbreath">
+    <title>Bewusstlosigkeit ohne Atmung</title>
+    <audio>12.mp3</audio>
+    <step>Keine Reaktion vorhanden, Atmung nicht feststellbar.</step>
+    <image file="057"/>
+    <step>
+      <link target="aid_resuscitation">Wiederbelebung einleiten!</link>
+    </step>
+  </section>
+  <section id="aid_vomiting">
+    <title>Erbrechen</title>
+    <audio>20.mp3</audio>
+    <description>Folge von Übelkeit. Magen befreit sich. Ursachen: Infektion, Vergiftung, Geschwür, Medikamente, falsche Nahrung, Schwangerschaft.</description>
+    <image file="054"/>
+    <step>Gefahr für Kreislauf aufgrund Flüssigkeits- und Salz-Verlustes!</step>
+    <step>Flüssigkeit zuführen (Tee, Wasser).</step>
+    <step>Bei starken Beschwerden, blutigem oder anhaltendem Erbrechen Arzt aufsuchen.</step>
+  </section>
+</firstaide>

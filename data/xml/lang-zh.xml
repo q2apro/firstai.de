@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<firstaide>
+  <strings>
+    <string key="title">您的手機急救指引</string>
+    <string key="back">〈Back〉</string>
+    <string key="disclaimerMenuTitle"># 免責聲明及一般資訊</string>
+    <string key="disclaimerTitle">免責聲明及一般資訊</string>
+    <string key="softwareHeader">軟件</string>
+    <string key="softwareName">您的手機急救指引</string>
+    <string key="softwareCopyright">版權所有：Kai Kajus Noack，柏林</string>
+    <string key="translatorCopyright">〈Translators: …〉</string>
+    <string key="softwareLicense">版權：共享創作</string>
+    <string key="softwareNotice">這份指引能提供急救知識，但請注意，它並不能夠替代急救課程，它只能提供資訊讓你溫故知新。</string>
+    <string key="softwareIllustrations">〈Illustrations〉</string>
+    <string key="disclaimerHeader">免責聲明</string>
+    <string key="disclaimerNotice1">請注意，我們不承擔因使用此軟件而造成的任何責任。</string>
+    <string key="disclaimerNotice2">〈ANY LIABILITY IS EXCLUDED!〉</string>
+    <string key="disclaimerNotice3">使用者需自行承擔風險！</string>
+    <string key="disclaimerNotice4">在任何緊急情況下，應立即尋求專業醫療協助。</string>
+    <string key="developmentHeader">項目開發</string>
+    <string key="developmentText">我們期望此計劃有多種語言的版本，我們需要義工翻譯！</string>
+    <string key="developmentMoreInfo1">請到</string>
+    <string key="developmentMoreInfo2">取得更多資訊，或寫電子郵件至：</string>
+    <string key="slogan">救人一命等於挽救了世界。</string>
+    <string key="emergencyNumbersMenuTitle"># 緊急電話號碼</string>
+    <string key="dial112">〈Call Emergency 112〉</string>
+    <string key="emergency_fire">〈Fire〉</string>
+    <string key="emergency_medical">〈Medical〉</string>
+    <string key="emergency_police">〈Police〉</string>
+    <string key="emergency_cancelcard"/>
+    <string key="emergency_local">〈local numbers〉</string>
+    <string key="emergency_nosystem">〈no system〉</string>
+    <string key="emergency_radioonly">〈only radio telephones〉</string>
+    <string key="emergency_none">〈--〉</string>
+    <string key="emergency_or">〈or〉</string>
+    <string key="emergency_mobile">〈mobile〉</string>
+    <string key="emergency_tourist">〈tourists〉</string>
+    <!-- Continents -->
+    <string key="continent">〈Continent〉</string>
+    <string key="continent_Africa">〈Africa〉</string>
+    <string key="continent_Asia">〈Asia〉</string>
+    <string key="continent_Europe">〈Europe〉</string>
+    <string key="continent_Northamerica">〈North-/Central-America〉</string>
+    <string key="continent_Oceania">〈Oceania〉</string>
+    <string key="continent_Southamerica">〈South-America〉</string>
+    <!-- Countries -->
+    <string key="country_afghanistan">〈Afghanistan〉</string>
+    <string key="country_albania">〈Albania〉</string>
+    <string key="country_algeria">〈Algeria〉</string>
+    <string key="country_andorra">〈Andorra〉</string>
+    <string key="country_angola">〈Angola〉</string>
+    <string key="country_antiguaandbarbuda">〈Antigua and Barbuda〉</string>
+    <string key="country_argentina">〈Argentina〉</string>
+    <string key="country_armenia">〈Armenia〉</string>
+    <string key="country_australia">〈Australia〉</string>
+    <string key="country_austria">〈Austria〉</string>
+    <string key="country_azerbaijan">〈Azerbaijan〉</string>
+    <string key="country_bahamas">〈Bahamas〉</string>
+    <string key="country_bahrain">〈Bahrain〉</string>
+    <string key="country_bangladesh">〈Bangladesh〉</string>
+    <string key="country_barbados">〈Barbados〉</string>
+    <string key="country_belarus">〈Belarus〉</string>
+    <string key="country_belgium">〈Belgium〉</string>
+    <string key="country_belize">〈Belize〉</string>
+    <string key="country_benin">〈Benin〉</string>
+    <string key="country_bhutan">〈Bhutan〉</string>
+    <string key="country_bolivia">〈Bolivia〉</string>
+    <string key="country_bosniaandherzegovina">〈Bosnia and Herzegovina〉</string>
+    <string key="country_botswana">〈Botswana〉</string>
+    <string key="country_brazil">〈Brazil〉</string>
+    <string key="country_brunei">〈Brunei〉</string>
+    <string key="country_bulgaria">〈Bulgaria〉</string>
+    <string key="country_burkinafaso">〈Burkina Faso〉</string>
+    <string key="country_burundi">〈Burundi〉</string>
+    <string key="country_cambodia">〈Cambodia〉</string>
+    <string key="country_cameroon">〈Cameroon〉</string>
+    <string key="country_canada">〈Canada〉</string>
+    <string key="country_capeverde">〈Cape Verde〉</string>
+    <string key="country_caymanislands">〈Cayman Islands〉</string>
+    <string key="country_centralafricanrepublic">〈Central African Republic〉</string>
+    <string key="country_chad">〈Chad〉</string>
+    <string key="country_chile">〈Chile〉</string>
+    <string key="country_china">〈China〉</string>
+    <string key="country_colombia">〈Colombia〉</string>
+    <string key="country_comoros">〈Comoros〉</string>
+    <string key="country_congodemocraticrepublic">〈Congo (Democratic Republic)〉</string>
+    <string key="country_congorepublic">〈Congo (Republic)〉</string>
+    <string key="country_costarica">〈Costa Rica〉</string>
+    <string key="country_croatia">〈Croatia〉</string>
+    <string key="country_cuba">〈Cuba〉</string>
+    <string key="country_cyprus">〈Cyprus〉</string>
+    <string key="country_czechrepublic">〈Czech Republic〉</string>
+    <string key="country_denmark">〈Denmark〉</string>
+    <string key="country_djibouti">〈Djibouti〉</string>
+    <string key="country_dominica">〈Dominica〉</string>
+    <string key="country_dominicanrepublic">〈Dominican Republic〉</string>
+    <string key="country_easttimor">〈East Timor〉</string>
+    <string key="country_ecuador">〈Ecuador〉</string>
+    <string key="country_egypt">〈Egypt〉</string>
+    <string key="country_elsalvador">〈El Salvador〉</string>
+    <string key="country_equatorialguinea">〈Equatorial Guinea〉</string>
+    <string key="country_eritrea">〈Eritrea〉</string>
+    <string key="country_estonia">〈Estonia〉</string>
+    <string key="country_ethiopia">〈Ethiopia〉</string>
+    <string key="country_fiji">〈Fiji〉</string>
+    <string key="country_finland">〈Finland〉</string>
+    <string key="country_france">〈France〉</string>
+    <string key="country_gabon">〈Gabon〉</string>
+    <string key="country_gambia">〈Gambia〉</string>
+    <string key="country_georgia">〈Georgia〉</string>
+    <string key="country_germany">〈Germany〉</string>
+    <string key="country_ghana">〈Ghana〉</string>
+    <string key="country_greece">〈Greece〉</string>
+    <string key="country_greenland">〈Greenland〉</string>
+    <string key="country_grenada">〈Grenada〉</string>
+    <string key="country_guatemala">〈Guatemala〉</string>
+    <string key="country_guinea">〈Guinea〉</string>
+    <string key="country_guinea-bissau">〈Guinea-Bissau〉</string>
+    <string key="country_guyana">〈Guyana〉</string>
+    <string key="country_haiti">〈Haiti〉</string>
+    <string key="country_honduras">〈Honduras〉</string>
+    <string key="country_hongkong">〈Hong Kong〉</string>
+    <string key="country_hungary">〈Hungary〉</string>
+    <string key="country_iceland">〈Iceland〉</string>
+    <string key="country_india">〈India〉</string>
+    <string key="country_indonesia">〈Indonesia〉</string>
+    <string key="country_iran">〈Iran〉</string>
+    <string key="country_iraq">〈Iraq〉</string>
+    <string key="country_ireland">〈Ireland〉</string>
+    <string key="country_israel">〈Israel〉</string>
+    <string key="country_italy">〈Italy〉</string>
+    <string key="country_ivorycoast">〈Ivory Coast〉</string>
+    <string key="country_jamaica">〈Jamaica〉</string>
+    <string key="country_japan">〈Japan〉</string>
+    <string key="country_jordan">〈Jordan〉</string>
+    <string key="country_kazakhstan">〈Kazakhstan〉</string>
+    <string key="country_kenya">〈Kenya〉</string>
+    <string key="country_kiribati">〈Kiribati〉</string>
+    <string key="country_kosovo">〈Kosovo〉</string>
+    <string key="country_kurdistan">〈Kurdistan〉</string>
+    <string key="country_kuwait">〈Kuwait〉</string>
+    <string key="country_kyrgyzstan">〈Kyrgyzstan〉</string>
+    <string key="country_laos">〈Laos〉</string>
+    <string key="country_latvia">〈Latvia〉</string>
+    <string key="country_lebanon">〈Lebanon〉</string>
+    <string key="country_lesotho">〈Lesotho〉</string>
+    <string key="country_liberia">〈Liberia〉</string>
+    <string key="country_libya">〈Libya〉</string>
+    <string key="country_liechtenstein">〈Liechtenstein〉</string>
+    <string key="country_lithuania">〈Lithuania〉</string>
+    <string key="country_luxembourg">〈Luxembourg〉</string>
+    <string key="country_macau">〈Macau〉</string>
+    <string key="country_macedonia">〈Macedonia〉</string>
+    <string key="country_madagascar">〈Madagascar〉</string>
+    <string key="country_malawi">〈Malawi〉</string>
+    <string key="country_malaysia">〈Malaysia〉</string>
+    <string key="country_maldives">〈Maldives〉</string>
+    <string key="country_mali">〈Mali〉</string>
+    <string key="country_malta">〈Malta〉</string>
+    <string key="country_marshallislands">〈Marshall Islands〉</string>
+    <string key="country_mauritania">〈Mauritania〉</string>
+    <string key="country_mauritius">〈Mauritius〉</string>
+    <string key="country_mayotte">〈Mayotte〉</string>
+    <string key="country_mexico">〈Mexico〉</string>
+    <string key="country_micronesia">〈Micronesia〉</string>
+    <string key="country_moldova">〈Moldova〉</string>
+    <string key="country_monaco">〈Monaco〉</string>
+    <string key="country_mongolia">〈Mongolia〉</string>
+    <string key="country_montenegro">〈Montenegro〉</string>
+    <string key="country_morocco">〈Morocco〉</string>
+    <string key="country_mozambique">〈Mozambique〉</string>
+    <string key="country_myanmar">〈Myanmar〉</string>
+    <string key="country_namibia">〈Namibia〉</string>
+    <string key="country_nauru">〈Nauru〉</string>
+    <string key="country_nepal">〈Nepal〉</string>
+    <string key="country_netherlands">〈Netherlands〉</string>
+    <string key="country_newzealand">〈New Zealand〉</string>
+    <string key="country_nicaragua">〈Nicaragua〉</string>
+    <string key="country_niger">〈Niger〉</string>
+    <string key="country_nigeria">〈Nigeria〉</string>
+    <string key="country_northkorea">〈North Korea〉</string>
+    <string key="country_norway">〈Norway〉</string>
+    <string key="country_oman">〈Oman〉</string>
+    <string key="country_pakistan">〈Pakistan〉</string>
+    <string key="country_palau">〈Palau〉</string>
+    <string key="country_panama">〈Panama〉</string>
+    <string key="country_papuanewguinea">〈Papua New Guinea〉</string>
+    <string key="country_paraguay">〈Paraguay〉</string>
+    <string key="country_peru">〈Peru〉</string>
+    <string key="country_philippines">〈Philippines〉</string>
+    <string key="country_poland">〈Poland〉</string>
+    <string key="country_portugal">〈Portugal〉</string>
+    <string key="country_qatar">〈Qatar〉</string>
+    <string key="country_reunion">〈Réunion〉</string>
+    <string key="country_romania">〈Romania〉</string>
+    <string key="country_russia">〈Russia〉</string>
+    <string key="country_rwanda">〈Rwanda〉</string>
+    <string key="country_sahrawiarabdemocraticrepublic">〈Sahrawi Arab Democratic Republic〉</string>
+    <string key="country_saintpierreandmiquelon">〈Saint Pierre and Miquelon〉</string>
+    <string key="country_samoa">〈Samoa〉</string>
+    <string key="country_sanmarino">〈San Marino〉</string>
+    <string key="country_saotomeandprincipe">〈Sao Tomé and Principe〉</string>
+    <string key="country_saudiarabia">〈Saudi Arabia〉</string>
+    <string key="country_senegal">〈Senegal〉</string>
+    <string key="country_serbia">〈Serbia〉</string>
+    <string key="country_seychelles">〈Seychelles〉</string>
+    <string key="country_sierraleone">〈Sierra Leone〉</string>
+    <string key="country_singapore">〈Singapore〉</string>
+    <string key="country_slovakia">〈Slovakia〉</string>
+    <string key="country_slovenia">〈Slovenia〉</string>
+    <string key="country_solomonislands">〈Solomon Islands〉</string>
+    <string key="country_somalia">〈Somalia〉</string>
+    <string key="country_southafrica">〈South Africa〉</string>
+    <string key="country_southkorea">〈South Korea (Republic Korea)〉</string>
+    <string key="country_spain">〈Spain〉</string>
+    <string key="country_srilanka">〈Sri Lanka〉</string>
+    <string key="country_stkittsandnevis">〈Saint Kitts and Nevis〉</string>
+    <string key="country_stlucia">〈Saint Lucia〉</string>
+    <string key="country_stvincentandgrenadines">〈Saint Vincent and Grenadines〉</string>
+    <string key="country_sudan">〈Sudan〉</string>
+    <string key="country_suriname">〈Suriname〉</string>
+    <string key="country_swaziland">〈Swaziland〉</string>
+    <string key="country_sweden">〈Sweden〉</string>
+    <string key="country_switzerland">〈Switzerland〉</string>
+    <string key="country_syria">〈Syria〉</string>
+    <string key="country_taiwan">〈Taiwan〉</string>
+    <string key="country_tajikistan">〈Tajikistan〉</string>
+    <string key="country_tanzania">〈Tanzania〉</string>
+    <string key="country_thailand">〈Thailand〉</string>
+    <string key="country_togo">〈Togo〉</string>
+    <string key="country_tonga">〈Tonga〉</string>
+    <string key="country_trinidadandtobago">〈Trinidad and Tobago〉</string>
+    <string key="country_tunisia">〈Tunisia〉</string>
+    <string key="country_turkey">〈Turkey〉</string>
+    <string key="country_turkmenistan">〈Turkmenistan〉</string>
+    <string key="country_tuvalu">〈Tuvalu〉</string>
+    <string key="country_uganda">〈Uganda〉</string>
+    <string key="country_ukraine">〈Ukraine〉</string>
+    <string key="country_unitedarabemirates">〈United Arab Emirates〉</string>
+    <string key="country_unitedkingdom">〈United Kingdom〉</string>
+    <string key="country_unitedstatesofamerica">〈United States of America〉</string>
+    <string key="country_uruguay">〈Uruguay〉</string>
+    <string key="country_uzbekistan">〈Uzbekistan〉</string>
+    <string key="country_vanuatu">〈Vanuatu〉</string>
+    <string key="country_vaticancity">〈Vatican City〉</string>
+    <string key="country_venezuela">〈Venezuela〉</string>
+    <string key="country_vietnam">〈Vietnam〉</string>
+    <string key="country_yemen">〈Yemen〉</string>
+    <string key="country_zambia">〈Zambia〉</string>
+    <string key="country_zimbabwe">〈Zimbabwe〉</string>
+    <!-- iPhone only -->
+    <string key="audioPrefix"/>
+    <string key="iPhoneTitle">您的手機急救指引 iPhone 1.0</string>
+    <string key="iPhoneTitleOffline">您的手機急救指引 iPhone 1.0 Offline</string>
+    <string key="iPhoneDescription">〈iPhone Version for First Aid on your Mobile - Online - including all images〉</string>
+    <string key="iPhoneDescriptionOffline">〈iPhone Version for First Aid on your Mobile - Offline - including images〉</string>
+    <string key="WinMobTitle">您的手機急救指引 〈Windows Mobile〉 1.0</string>
+    <string key="WinMobDescription">〈Version for First Aid on your Mobile - Internet Explorer Mobile - including all images〉</string>
+    <string key="softwareVersion">版本</string>
+    <string key="WinMobVersionNumber">3.0</string>
+    <string key="iPhoneVersionNumber">3.0</string>
+    <string key="softwareRelease">發布日期</string>
+    <string key="WinMobReleaseDate">09年07月01日</string>
+    <string key="iPhoneReleaseDate">09年07月01日</string>
+    <string key="iPhoneBackButton">〈Back〉</string>
+    <string key="iPhoneMenuButton">〈Menu〉</string>
+    <string key="languageChooser">〈Choose your Language〉</string>
+    <string key="iPhoneOfflineFilename">firstaidZHoffline.html</string>
+    <string key="offlineBookmark">〈Bookmark Offline-Version〉</string>
+    <string key="donateProject">〈Donate for Project〉</string>
+    <string key="mailToDeveloper">〈Mail to Developer〉</string>
+    <string key="checkNewVersion">〈Check for new Version〉</string>
+    <string key="donate">〈Donate〉</string>
+    <string key="whyDonate">〈Why donate?〉</string>
+    <string key="donate1">〈Do you think the project is a good idea? Then donate please! Because the project survives only by donations.〉</string>
+    <string key="donateOnlineVia">〈Donate online via〉</string>
+    <string key="paypalID">〈5315644〉</string>
+    <string key="orWireTransfer">〈.〉</string>
+    <string key="everyContributionCounts">〈Every single contribution counts!〉</string>
+    <string key="smallStep">〈One small step for a man, one giant leap for mankind.〉</string>
+    <string key="license">〈Licence〉</string>
+    <string key="licenseTerms">〈You are free to copy, distribute and transmit the work under the following conditions:〉</string>
+    <string key="licenseAttribution">〈Attribution〉</string>
+    <string key="licenseAttribution1">〈You must attribute the work by mentioning the licensor's name〉</string>
+    <string key="licenseAttribution2">〈 and linking to the website〉</string>
+    <string key="licenseAttribution3">〈(but not in any way that suggests that they endorse you or your use of the work).〉</string>
+    <string key="licenseNoCommercial">〈Noncommercial〉</string>
+    <string key="licenseNoCommercial1">〈You may not use this work for commercial purposes.〉</string>
+    <string key="licenseNoDeriv">〈No Derivative Works〉</string>
+    <string key="licenseNoDeriv1">〈You may not alter, transform, or build upon this work.〉</string>
+    <string key="licenseDistribution1">〈For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to〉</string>
+    <string key="licenseSuffix"/>
+    <string key="licenseDistribution2"/>
+    <string key="licenseWaived">〈Any of the above conditions can be waived if you get permission from the copyright holder.〉</string>
+    <string key="licenseMoralRights">〈Nothing in this license impairs or restricts the author's moral rights.〉</string>
+  </strings>
+  <section id="aid_general">
+    <title>一般指引 </title>
+    <step>務必施行急救。你不能犯任何錯誤。</step>
+    <step>必須時刻注意自己的安全。</step>
+    <step>檢查事故的狀況和確定現場環境安全。</step>
+    <step>報警求助+現場急救！</step>
+    <step>如果現場有多名傷者，應根據其傷勢決定處理的先後次序，先處理最危急的傷病者。</step>
+    <step>最重要是自己保持鎮定，並嘗試安慰傷者及其他人士！</step>
+    <step>如果可能的話，嘗試將傷者置於一舒適的臥姿。不要給予傷者含酒精之飲料、尼古丁或藥物。</step>
+  </section>
+  <section headImage="46" id="aid_allergic">
+    <title>過敏反應 </title>
+    <step>立即報警尋求緊急醫療援助。</step>
+    <step>嘗試令傷病者冷靜，並讓其舒適的坐下。。</step>
+    <step>如果可以的話，小心的移除引起過敏的物質（如蜜蜂的螫刺）。</step>
+    <step>以冷敷法（冷水，冰塊等）敷在傷處，減少不適 。</step>
+    <image file="046ice"/>
+    <step>如果傷病者有解毒劑，協助傷病者使用該藥物。</step>
+    <step>在救護車到達前，小心監察傷者的狀況。</step>
+    <step>如果傷病者失去意識或停止呼吸，遵循適當的指示。</step>
+    <image file="077"/>
+  </section>
+  <section id="aid_amputation">
+    <title>斷肢</title>
+    <description>傷者的斷肢是有機會能重新接上的。 急救目標: 保持斷肢冷凍直至送抵醫院。</description>
+    <step>安慰傷者，置傷者於臥姿，為傷者保暖。</step>
+    <step>嘗試止血。用磞帶，或需要時用潔淨的衣服充當敷料壓住傷口止血。詳見「嚴重出血」及「休克」。</step>
+    <step>用潔淨和乾的布料包裹傷肢，將傷肢放入一個防水的塑膠袋;或直接將傷肢放入防水的塑膠袋。</step>
+    <step>緊封此塑膠袋，並將其放入另一個有冰塊或冷水的塑膠袋 (不要讓傷肢直接接觸冰塊或水)。</step>
+    <step>不要給予傷者酒精飲品、煙或食物。</step>
+    <step>不要過份冷凍傷肢，只要保持低溫即可。</step>
+    <step>報警或將傷者緊急送院。</step>
+  </section>
+  <section headImage="47" id="aid_animalbite">
+    <title>動物咬傷 </title>
+    <description>注意：有很高的感染風險，甚至可能會出現破傷風或狂犬病。</description>
+    <step>用暖肥皂水清洗傷口。</step>
+    <image file="049"/>
+    <step>及後消毒傷口。</step>
+    <step>如果有嚴重出血，扶起傷者的上身。</step>
+    <step>使用無菌敷料和繃帶包紮傷口。</step>
+    <image file="085"/>
+    <step>立即將傷者送往醫院或尋求緊急醫療協助。</step>
+  </section>
+  <section id="aid_apnoea">
+    <title>呼吸暫停 </title>
+    <altTitle>呼吸問題 </altTitle>
+    <description>沒有呼吸聲音和呼吸動作，明顯的膚色轉變。</description>
+    <step>立即報警尋求緊急醫療援助。</step>
+    <step>將傷者置於臥姿。</step>
+    <step>使傷者頭部後抑。清除傷者口腔及喉嚨中的異物。</step>
+    <image file="067"/>
+    <step>用手指緊掐傷者鼻孔，使其鼻孔緊閉。</step>
+    <image file="010"/>
+    <step>深呼吸，接著用口密封傷者口部。</step>
+    <image file="011"/>
+    <step>慢慢吹氣，時間約為兩秒。</step>
+    <step>如果未能讓他自行呼吸，繼續施行人工呼吸，直至救護車到達。</step>
+  </section>
+  <section id="aid_asthma">
+    <title>哮喘 </title>
+    <altTitle>呼吸急促</altTitle>
+    <description>嚴重呼吸困難。喘息呼吸的聲音。焦慮。</description>
+    <step>保持自己和傷病者冷靜。</step>
+    <step>解鬆阻礙呼吸的衣服。</step>
+    <step>讓傷病者坐下並向前傾，讓傷病者慢慢的深呼吸。</step>
+    <step>協助傷病者取用噴霧吸入器。病者情況應該在5-10分鐘內改善 。</step>
+    <image file="074"/>
+    <step>如果病人情況沒有改善，每5分鐘協助其使用噴霧吸入器，直至救護車到達。</step>
+    <step>立即報警尋求醫療援助。</step>
+    <step>如果傷病者停止呼吸，立即施行人工呼吸（見「呼吸暫停」）。<link target="aid_apnoea">〈+〉</link>
+    </step>
+  </section>
+  <section id="aid_backinjury">
+    <title>背部/頸椎創傷 </title>
+    <altTitle>脊柱骨折 </altTitle>
+    <description>背部疼痛，肢體沒有反應或麻木。</description>
+    <step>切勿移動傷者！</step>
+    <image file="064"/>
+    <step>用手穩定傷者的頭部。</step>
+    <image file="065"/>
+    <step>固定傷病者，不應作任何移動。</step>
+    <step>安慰傷者。</step>
+    <step>立即尋求緊急醫療援助，並告知救護人員傷者有頸椎創傷。</step>
+  </section>
+  <section id="aid_birth">
+    <title>緊急接生 </title>
+    <description>羊水不斷滲出。子宮收縮和出現陣痛。突發的分娩。</description>
+    <image file="025"/>
+    <step>注意產婦的隱私。保持鎮定，安慰產婦。立即報警召喚醫護人員。</step>
+    <step>協助產婦清除下身衣物，坐在潔淨的墊子上，分開雙腿。</step>
+    <step>兩膝屈曲。將產道向上。分娩是自然的過程，通常過程會比較順利。</step>
+    <step>安慰產婦，並指示她專注在其呼吸上：要用正常速度從鼻吸氣，從口呼氣。</step>
+    <step>分娩的節奏：深呼吸，盡量屏氣，然後向下用力。當嬰兒的頭部娩出後，用雙手支撐其頭部。</step>
+    <image file="021"/>
+    <image file="022"/>
+    <step>分娩後：傾斜嬰兒使其頭部向下以便排出氣道內的羊水。你可能需要自行從其鼻腔吸出嬰兒氣道內的液體。無論如何都必須令嬰兒有呼吸！</step>
+    <step>在距離嬰兒30cm處把臍帶打結綁好（可以在醫院才做）。同時保持產婦陰道清潔。</step>
+    <image file="023"/>
+    <step>拭乾嬰兒身體，並注意為嬰兒保溫。記下出生時間並安排盡快送院。</step>
+  </section>
+  <section headImage="82" id="aid_bleedinglight">
+    <title>輕微出血 </title>
+    <description>急救目標：止血。</description>
+    <step>請勿觸摸傷口（有傷口感染的風險） 。</step>
+    <step>不要以粉末、藥膏或噴霧劑治理傷口。</step>
+    <step>以消毒敷料和磞帶包紮傷口</step>
+    <image file="098"/>
+    <step>一般的輕微出血用黏性敷料便以足夠。</step>
+    <step>。</step>
+    <image file="084"/>
+    <image file="085"/>
+    <step>注意：如傷口是被患狂犬病的動物造成的，則必須用肥皂水清洗。</step>
+    <image file="049"/>
+  </section>
+  <section id="aid_bleedingsevere">
+    <title>嚴重出血 </title>
+    <description>噴出的血液。危險：因為出血而做成的窒息、傷口感染，死亡。 急救目標：止血。</description>
+    <step>立即尋求緊急醫療援助。</step>
+    <step>應先帶上手套。揭開衣服並露出傷口(有需要時適當的剪開傷者的衣服)。</step>
+    <image file="086"/>
+    <step>用磞帶，或需要時用潔淨的衣服充當敷料壓住傷口止血</step>
+    <step>施加壓力，至少10分鐘。</step>
+    <step>如果敷料被血液浸透，不要移去，並應該直接在最上層加上敷料。</step>
+    <step>如果沒有骨折，則升高受傷肢體至高於心臟的位置，以減低血壓。如果可行的話將傷者置於臥姿。</step>
+    <image file="089"/>
+    <image file="092"/>
+    <step>如果流血不止，保持對傷口的壓力，並在止血點施加壓力：上肢-前臂受傷（用你的手指壓住內側手臂的動脈，在肘部和軀幹中間） 。下肢-(止血點在傷肢那一邊的腹股溝，用你的手掌壓住腹股溝的動脈） 。</step>
+    <step>當出血受到控制後，採取預防哽咽的措施。</step>
+    <image file="093"/>
+  </section>
+  <section id="aid_brainconcussion">
+    <title>腦震盪 </title>
+    <description>頭痛，噁心，嘔吐等症狀。視線變得模糊。可能失去意識。</description>
+    <image file="035a"/>
+    <step>置傷者於臥姿。</step>
+    <step>立即報警尋求緊急醫療援助。</step>
+    <description>如果頭部出血：</description>
+    <step>置傷者於臥姿，用枕頭等墊高頭部 。</step>
+    <image file="061"/>
+    <step>處理傷口 。</step>
+    <step>立即報警尋求緊急醫療援助。</step>
+  </section>
+  <section id="aid_burningslight">
+    <title>輕微燒傷/熨傷 </title>
+    <description>發紅的皮膚。輕度腫脹。傷處有痛楚。</description>
+    <step>用流動的冷水冷卻傷處。</step>
+    <image file="100"/>
+    <step>用濕繃帶鬆的包裹傷處 (切勿緊緊的包紮傷處)。</step>
+  </section>
+  <section id="aid_burningsevere">
+    <title>嚴重燒傷。 </title>
+    <description>傷處有白、紅色的斑點，出現水泡。皮膚失去體液。組織嚴重受損，出現強烈的疼痛或不痛（因為燒傷神經） 。</description>
+    <image file="097"/>
+    <step>盡量除去傷處的衣服 (切勿強行撕開黏著傷處的衣服)。</step>
+    <step>用流動的冷水冷卻傷處 (大概15°C, 59°F) 大約十分鐘，直至痛楚消退。</step>
+    <image file="100"/>
+    <step>如有大範圍燒傷，用濕布覆蓋在上。</step>
+    <step>立即尋求緊急醫療援助。</step>
+    <step>冷卻後的傷口做處理：使用無菌敷料。不要使用藥用乳膏，油，藥膏等 。不要刺破水泡。</step>
+    <image file="085"/>
+    <step>監控傷者的呼吸和清醒程度直至救護人員到達。</step>
+  </section>
+  <section id="aid_checkbreathing">
+    <title>檢查呼吸 </title>
+    <step>檢查呼吸的聲音。</step>
+    <step>用手放在上腹，判斷是否有呼吸 。</step>
+    <image file="027"/>
+    <step>感覺傷者口、鼻有否呼吸。</step>
+  </section>
+  <section id="aid_chemicalburneyes">
+    <title>化學燒傷（眼睛） </title>
+    <step>立即尋求緊急醫療援助，並告知有化學品燒傷。</step>
+    <step>用水沖洗受感染的眼，覆蓋並防止水濺到另一邊的眼。</step>
+    <step>水由內側向外側沖洗，最少沖洗20分鐘。</step>
+    <image file="019"/>
+    <step>讓傷者閉上雙眼並用濕的敷料覆蓋。</step>
+    <image file="020"/>
+    <step>監察傷者的狀況直至救護人員抵達。</step>
+  </section>
+  <section id="aid_chemicalburn">
+    <title>化學性燒傷 </title>
+    <description>損傷的組織。</description>
+    <image file="095"/>
+    <step>切記注意自身安全！</step>
+    <step>迅速行動，用大量清水清洗傷處 (注意不要濺到本來沒污染的地方)。</step>
+    <image file="100"/>
+    <step>立即報警尋求緊急醫療援助。</step>
+    <step>如果食道或口腔有化學性燒傷，讓傷者飲用大量清水。</step>
+    <step>不要嘗試使傷者嘔吐！</step>
+  </section>
+  <section id="aid_dangerzone">
+    <title>緊急撤離危險區 </title>
+    <step>拖運法: 急救員處於傷病者後方，將傷病者其中一手臂放於其胸前。</step>
+    <step>雙手穿過傷病者腋下，抓緊他的手腕和前臂。</step>
+    <step>用力向後拖行，將傷病者帶到安全地方。</step>
+    <image file="001"/>
+    <image file="007"/>
+  </section>
+  <section id="aid_diabeticcoma">
+    <title>糖尿病昏迷 </title>
+    <altTitle>血糖過高 </altTitle>
+    <description>血糖水平過高（缺乏胰島素） 。</description>
+    <description>症狀：口渴，尿頻，噁心，嘔吐。呼吸氣味中帶有水果或葡萄酒的氣味。</description>
+    <step>立即報警尋求緊急醫療援助。</step>
+    <step>如確定為糖尿病患者，協助他取用胰島素。</step>
+    <image file="016"/>
+    <step>置傷者於復原臥式。 （急救員沒有進一步措施可以採取。 ）<link target="aid_recoveryposition">〈+〉</link>
+    </step>
+    <step>監察傷病者狀況直至救護人員抵達。</step>
+  </section>
+  <section id="aid_diarrhoea">
+    <title>腹瀉 </title>
+    <description>對於食物中毒、腸道感染或疾病的反應。糞便稀釋、黏滑或帶血。</description>
+    <step>血液循環可能因過度脫水及鹽份嚴重流失而受到影響！</step>
+    <step>給予傷病者飲料（如茶、水等） 。</step>
+    <step>如果傷病者有嚴重不適，立即尋求緊急醫療援助。</step>
+  </section>
+  <section id="aid_drowning">
+    <title>遇溺</title>
+    <step>立即報警尋求緊急醫療援助，並要求旁人幫忙。</step>
+    <image file="032"/>
+    <step>將遇溺者從水中救出！</step>
+    <image file="033"/>
+    <image file="034"/>
+    <step>如果遇溺者有呼吸：置其於復原臥式。覆蓋傷者身體以保暖。監察傷病者狀況直至救護人員抵達。<link target="aid_recoveryposition">〈+〉</link>
+    </step>
+    <step>如果遇溺者沒有呼吸：立即開始復甦！（從肺部迫出傷者吞下的水是沒有作用的。）<link target="aid_resuscitation">〈+〉</link>
+    </step>
+  </section>
+  <section id="aid_electricityaccident">
+    <title>觸電</title>
+    <step>立即切斷電源！</step>
+    <image file="045plug"/>
+    <image file="045"/>
+    <step>危險：失去意識，呼吸暫停。</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A -無意識但有呼吸</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath"> B-無意識無呼吸</link>
+    </step>
+    <image file="042"/>
+    <image file="043"/>
+  </section>
+  <section id="aid_emergencycall">
+    <title>緊急電話 </title>
+    <step>用最近可用的電話撥120報警（歐洲：112，美國：911）。電話總是能接通而且是免費的！不要猶豫，要求緊急醫療協助！</step>
+    <step>在通話中你必須提供下列資料：</step>
+    <step>發生了什麼事、</step>
+    <step>事故地點、</step>
+    <step>傷病者的數目、</step>
+    <step>傷病者的傷勢及狀況。</step>
+    <step>然後等待進一步的指示或當值人員的問題。</step>
+  </section>
+  <section id="aid_epilepsy">
+    <title>癲癇 </title>
+    <description>僵硬的身體，握緊拳頭，下顎向下壓，四肢或面部肌肉抽搐。眼睛無意識的轉動。流涎。不省人事。</description>
+    <image file="058"/>
+    <step>不要按著傷病者或限制他們的行動。</step>
+    <step>將傷病者置於一軟墊上。移開四周的物件，以防止傷病者對自己做成傷害。</step>
+    <step>安慰傷病者。解鬆緊身的衣服，確保能自由呼吸。</step>
+    <step>如果傷病者嘔吐，將其頭部側向一方讓其嘔吐物流出。</step>
+    <step>保持氣道暢通，防止其舌頭向下滑。</step>
+    <step>置傷病者於復原臥式，並立即報警尋求緊急醫療援助。監察傷病者的狀況直至救護人員抵達。<link target="aid_recoveryposition">〈+〉</link>
+    </step>
+    <step>請其他人保持距離。</step>
+  </section>
+  <section id="aid_eyeinjury">
+    <title>眼外傷 </title>
+    <step>不要試圖移除眼球的異物。</step>
+    <step>不要轉動眼球，囑咐傷者保持眼睛靜止。亦不要觸摸眼睛。</step>
+    <step>如果眼球出血，用溼敷布或無菌紗布覆蓋。</step>
+    <image file="020"/>
+    <step>用冷凍墊冷卻受傷的眼睛（減輕腫脹，更快止血） 。</step>
+    <step>立即報警尋求緊急醫療援助或將傷者緊急送院。</step>
+  </section>
+  <section id="aid_fracture">
+    <title>骨折 </title>
+    <description>症狀：異常的姿態及動作。肢體變形。活動時有痛楚，有觸痛。</description>
+    <image file="104"/>
+    <step>避免活動！</step>
+    <step>立即尋求緊急醫療援助。</step>
+    <step>固定傷肢 - 用墊子在傷肢四周做支撐。保持傷肢在同一個位置。</step>
+    <image file="107"/>
+    <step>如果是有創骨折，用敷料覆蓋傷口。</step>
+    <image file="106"/>
+  </section>
+  <section id="aid_frostbitemild">
+    <title>輕度凍傷 </title>
+    <description>臉色蒼白，腫脹。血液循環受威脅。</description>
+    <step>將傷者移到較溫暖的位置。</step>
+    <step>盡量不要留在寒冷的地方，除去濕冷的衣服，抹乾傷病者的身體。</step>
+    <step>用溫水和急救員的體溫協助傷病者回復體溫。</step>
+    <step>給予傷病者暖的飲料(如茶等)。不要給予傷病者酒精飲品！</step>
+    <image file="040"/>
+  </section>
+  <section id="aid_frostbitesevere">
+    <title>嚴重凍傷 </title>
+    <description>冷而且僵硬皮膚，皮膚表層呈灰白色。出現水泡，皮膚組織壞死。血液循環受威脅！</description>
+    <image file="096"/>
+    <step>將傷者移到較溫暖的地方。</step>
+    <step>處理傷口。</step>
+    <step>給予傷者暖的含糖飲料。</step>
+    <step>不要試圖摩擦傷病者以提升其體溫！</step>
+    <step>立即報警尋求緊急醫療援助。</step>
+  </section>
+  <section id="aid_heartattack">
+    <title>心臟病發 </title>
+    <description>心臟有嚴重、持久的壓力和痛楚，可能持續5分鐘以上。特別是在肩膀和上肢。焦慮，臉色蒼白，皮膚濕冷。可能有噁心，呼吸急促。</description>
+    <image file="076"/>
+    <image file="083"/>
+    <step>立即報警尋求緊急醫療援助，並告知傷病者懷疑心臟病突發。</step>
+    <step>將傷病者放成半坐臥姿勢，用物件支持頭與肩。解鬆緊身的衣物。不要給予傷病者飲料和藥物。</step>
+    <image file="061"/>
+    <step>冷靜的與傷病者對話，安慰傷病者。</step>
+    <step>檢查呼吸和意識水平。</step>
+    <step>如傷病者有亞士匹靈而又是清醒的話，讓其嚼碎一粒藥片吞下。</step>
+    <step>如傷病者失去呼吸或脈搏，立即施行復甦（見「復甦」）。<link target="aid_resuscitation">〈+〉</link>
+    </step>
+  </section>
+  <section id="aid_hypoglycaemia">
+    <title>血糖過低 </title>
+    <description>血糖水平低於最低值（因為身體有過量的胰島素或沒有足夠的食物攝入量） 。</description>
+    <description>症狀：臉色蒼白，緊張，飢餓，發抖，出汗。</description>
+    <image file="018"/>
+    <step>確認傷病者是否患有糖尿病（尋找相關的醫療手鐲或醫療咭） 。</step>
+    <step>立即報警尋求緊急醫療援助。</step>
+    <step>給予傷病者含糖飲料和葡萄糖（如果傷病者是清醒的、亦沒有吞嚥問題的話） 。</step>
+    <image file="017"/>
+    <step>如果傷病者有呼吸而是清醒的，置其於復原臥式，監察呼吸狀況。如果傷病者停止呼吸，施行人工呼吸（見「呼吸暫停」）。<link target="aid_recoveryposition">〈+〉</link>
+    </step>
+    <step>如果傷病者有呼吸，你可以把一塊糖放在傷病者的頰囊，從外面向內反複推動。但必需監禁傷病者狀況，切勿讓糖塊掉下阻塞氣道。</step>
+  </section>
+  <section id="aid_hyperthermia">
+    <title>體溫失調（體溫過高） </title>
+    <description>口渴，無力，迷失方向，感到噁心，意識模糊及感到混亂，嚴重出汗，皮膚發熱發紅。</description>
+    <image file="035"/>
+    <step>立即報警尋求緊急醫療援助。</step>
+    <step>將傷病者置於陰涼處（最好是有室內空調的地方) 。</step>
+    <step>讓傷病者平臥，提高雙腳。鬆開緊身的衣服。</step>
+    <image file="078"/>
+    <step>用冷水協助降溫或讓其臥在冰涼的毛巾上。</step>
+    <step>給予傷病者大量清水或果汁等飲料。</step>
+  </section>
+  <section id="aid_hypothermia">
+    <title>體溫失調 (體溫過低)</title>
+    <description>發抖，嗜睡，體力透支甚至昏迷。皮膚濕冷蒼白。脈搏緩慢而微弱。</description>
+    <image file="014"/>
+    <step>將傷病者置於一比較溫暖的地方。</step>
+    <step>立即報警尋求緊急醫療援助。</step>
+    <step>協助傷病者回復體溫（蓋暖和需要時利用急救員的體溫)</step>
+    <step>移去傷病者身上濕冷的衣服，並協助傷病者穿上保暖衣物。為傷者蓋暖，尤其注意頭部保溫。</step>
+    <step>給予傷病者熱飲，如茶、暖水等。切勿給予傷病者酒精飲品！盡量使傷病者保持清醒。</step>
+    <image file="039"/>
+    <image file="040"/>
+    <step>監察傷病者狀況直至救援人員抵達。如傷病者失去意識，立即開始復甦：</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A-無意識但有呼吸</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B-無意識及無呼吸</link>
+    </step>
+  </section>
+  <section id="aid_icerescue">
+    <title>冰救援 </title>
+    <description>急救員必需注意自身安全。危險: 遇溺、體溫過低。</description>
+    <step>要求旁人協助，並立即報警召喚救援人員。</step>
+    <step>利用梯子、木板、棒子等物拯救傷病者。注意要平均分佈重量。</step>
+    <step>用腹部爬行，並用竿等工具作支撐（如果可行的話，可用繩索將自己和一固定點聯繫起來）。</step>
+    <image file="041"/>
+    <step>用工具（而不是你的手！）觸碰傷病者，指示他拿穩它，然後把他拉出來。</step>
+    <step>向後爬行回到冰的邊緣。</step>
+    <step>施行急救措施。</step>
+    <step>自救的可能：如果冰是固體，您可以借用自己的體重施力在冰上，並把自己拉出來，然後爬行到冰的邊緣；如果冰是脆弱的，試圖一點一點地打破冰塊直到到達冰的邊緣。</step>
+  </section>
+  <section headImage="46" id="aid_insectstings">
+    <title>昆蟲螫傷 </title>
+    <description>腫脹，皮疹，灼熱的感覺，乏力，呼吸困難，意識下降，室性心動過速。</description>
+    <step>小心的用鑷子移除嵌入皮膚的螫刺。注意切勿擠壓毒囊，否則可能將殘餘的毒素注入傷者體內。</step>
+    <step>冷敷有關部位 。</step>
+    <step>被螫傷的部位應該置於低於心臟的位置，以減慢毒素流動的速度。</step>
+    <step>如果口部或顎骨附近被螫傷，讓傷者將冷凍的食物(如冰琪淋)放在口裡。並在喉部作冷敷，減低因喉部腫脹導致呼吸困難的危險。</step>
+    <image file="046ice"/>
+    <step>如果傷者有嚴重不適，尤其如果傷者有呼吸困難或意識降低的徵狀，立即報警尋求緊急醫療援助。</step>
+  </section>
+  <section id="aid_nosebleeding">
+    <title>流鼻血 </title>
+    <description>鼻孔內血管破裂。</description>
+    <step>讓傷者坐下，微微向前傾。</step>
+    <step>盡量不要讓傷者躺下，因為頭部處於心臟上方能夠令出血減慢。</step>
+    <step>冷敷前額，這能讓血管收縮而減慢出血。</step>
+    <step>捏住鼻骨下柔軟部位十分鐘 。</step>
+    <step>止血後囑咐傷者別擤鼻或挖鼻孔引致再次出血。</step>
+    <step>如果傷病者有嚴重不適或出血二十分鐘後仍不能停止，立即尋求緊急醫療援助。</step>
+  </section>
+  <section headImage="52" id="aid_poisining">
+    <title>中毒 </title>
+    <description>混亂，產生幻覺，瞳孔放大，發燒，抽筋。失去意識。</description>
+    <step>只有在專業醫護人員指示下，方可給予傷病者解毒劑。</step>
+    <image file="056"/>
+    <step>不要給飲料。不要催吐。</step>
+    <step>報警求助及並告知救護人員傷者中毒！</step>
+    <step>保存剩餘的毒物和嘔吐物並交予救護人員！</step>
+    <image file="054a"/>
+    <step>如果傷亡有意識和呼吸：置傷者於復原臥式。監察傷病者狀況直至救護人員抵達。<link target="aid_recoveryposition">〈+〉</link>
+    </step>
+    <step>如果傷員沒有呼吸：立即施行復甦（見「復甦」）！但要事先要清除口中的嘔吐物。<link target="aid_resuscitation">〈+〉</link>
+    </step>
+  </section>
+  <section id="aid_recoveryposition">
+    <title>復原臥式 </title>
+    <step>讓傷病者仰臥，伸直雙腿。急救員跪在傷病者身邊。</step>
+    <step>將傷病者較靠近急救員的一隻手臂拉開，與其身體成直角。</step>
+    <step>將較遠的手臂拉過胸部，並使手背背對臉頰。</step>
+    <image file="008"/>
+    <step>將較遠的膝蓋拉向急救員，並把它置在地面上，使雙腳成直角。保持傷病者的手在其臉頰之下。</step>
+    <step>確保氣道暢通。</step>
+    <step>使其嘴巴微張，並傾側頭部使嘔吐可以流走。檢查呼吸。</step>
+    <image file="009"/>
+    <step>監察傷病者狀況直至救援人員抵達。</step>
+    <description>〈Recovery position for babies:〉</description>
+    <image file="028"/>
+  </section>
+  <section id="aid_resuscitation">
+    <title>復甦 </title>
+    <altTitle>心外壓 </altTitle>
+    <altTitle>復甦 </altTitle>
+    <subsection># 心外壓</subsection>
+    <step>讓傷病者仰臥。急救員跪在傷病者身邊。</step>
+    <step>〈Bare the chest.〉</step>
+    <step>〈Place the heel of the hand in the middle of the chest (just over sternum).〉</step>
+    <image file="013"/>
+    <step>另一方面廣場上包後面的手已經在的位置。</step>
+    <step>擠壓你的武器和胳膊肘。</step>
+    <image file="003"/>
+    <step>按5厘米深到人的胸部（權力來自上身）和釋放。</step>
+    <step>推30次連續不久，並強烈！</step>
+    <subsection># 煙</subsection>
+    <step>伸展頭到脖子上。刪除物質的嘴巴和喉嚨。</step>
+    <image file="067"/>
+    <step>推進兩翼的鼻子在一起，因此，鼻子是封閉。</step>
+    <image file="010"/>
+    <step>深呼吸，把你的嘴到口的人員傷亡，沒有空氣洩漏。</step>
+    <image file="011"/>
+    <step>不要嘴對嘴呼吸的2倍（呼吸緩慢並充分） 。</step>
+    <step>後來做心臟按摩一次。</step>
+    <description>重複心臟按摩口呼吸，直到抵達急診醫生。</description>
+    <image file="012"/>
+    <subsection>〈Resuscitation (Baby)〉</subsection>
+    <step>〈Only use two fingers:〉</step>
+    <image file="029"/>
+    <step>〈Do not breath too strong:〉</step>
+    <image file="030"/>
+  </section>
+  <section id="aid_safeguardaccident">
+    <title>事故現場安全 </title>
+    <altTitle>交通事故 </altTitle>
+    <step>在事故現場後方50-100米停車（如果您是在高速公路或鄉間道路）。開啟警示燈。穿上反光衣。</step>
+    <step>將三角形警示燈放在事故現場後方。注意：如果事故現場是位於彎道上，將警示燈置於彎道前。</step>
+    <image file="111"/>
+    <step>要求旁人協助。</step>
+    <step>打開肇事車輛的車門。如果未能順利打開，使用千斤頂。關掉引擎並拉起手動煞車(制動器)。</step>
+    <step>救出傷病者： Unstrap安全帶，座椅向後移動。自由傷亡的汽車救援抓地力。<link target="aid_dangerzone">〈+〉</link>
+    </step>
+    <image file="001"/>
+    <step>立即報警召喚救援人員。</step>
+    <step>為傷病者施行急救。</step>
+  </section>
+  <section id="aid_shock">
+    <title>休克 </title>
+    <description>循環系統疾病的貧困氧氣供應的機構。</description>
+    <description>原因：流體損失，降低血量。</description>
+    <description>症狀：臉色蒼白，皮膚冷，冒冷汗，焦慮。</description>
+    <step>消除造成的衝擊（如停止流失的液體，具有約束力的傷口） ！</step>
+    <step>受傷者躺在毯子上，雙腿的立場了。平靜的人。</step>
+    <image file="078"/>
+    <step>緊急呼籲。</step>
+    <step>如果呼吸困難或意識，開始復甦。<link target="aid_resuscitation">〈+〉</link>
+    </step>
+  </section>
+  <section id="aid_skullfracture">
+    <title>顱骨骨折 </title>
+    <description>輕出血的鼻子，嘴巴或耳朵。開放性傷口往往在頭骨。</description>
+    <step>保持呼吸道免費的。</step>
+    <step>如果意識到：讓傷者坐在一起低著頭前鋒。避免進一步的動作！</step>
+    <step>如果無意識：恢復立場（沒有壓力，傷口的頭） 。<link target="aid_recoveryposition">〈+〉</link>
+    </step>
+    <step>緊急呼籲。</step>
+    <step>適用於頭部纏著繃帶。</step>
+    <step>如果呼吸困難或意識，開始復甦。<link target="aid_resuscitation">〈+〉</link>
+    </step>
+  </section>
+  <section headImage="51" id="aid_snakebite">
+    <title>毒蛇咬傷 </title>
+    <description>標點傷口大小的針，嚴重的疼痛，腫脹，紫色。循環系統紊亂，休克的危險。</description>
+    <step>穩態受傷的身體部分。</step>
+    <step>適用於冷戰信封周圍咬的傷口。</step>
+    <step>措施防止休克。</step>
+    <step>緊急呼籲。</step>
+  </section>
+  <section id="aid_sos">
+    <title>SOS救援中心 </title>
+    <step>信號： 3短，長3倍， 3倍短。</step>
+    <step>光（閃光燈，手電筒） ，或聽覺（信號哨子，敲） 。</step>
+  </section>
+  <section id="aid_sprain">
+    <title>扭傷應變 </title>
+    <description>疼痛，腫脹（瘀傷） ，喪失功能，變形的肢體。</description>
+    <step>穩態受傷的身體部分只有在最舒適的位置的人員傷亡。</step>
+    <step>冷（用冰袋） 。</step>
+    <step>如果可能的話，立場受害國的一部分升高。</step>
+    <step>去醫院或醫生的緊急呼籲。</step>
+  </section>
+  <section id="aid_stroke">
+    <title>中風 </title>
+    <description>突然感覺癱瘓或麻木（臉部，手臂，腿部） ，動亂的語言理解，視力問題，不安的意識，嚴重頭痛。問題的呼吸和吞嚥，失去控制膀胱和腸道。</description>
+    <image file="059"/>
+    <step>緊急呼叫！</step>
+    <step>放鬆緊張的衣服，不給藥物或飲料。</step>
+    <step>坐或躺在舒適有關的人。平靜的他/她！</step>
+    <step>控制意識和呼吸。</step>
+    <step>如果呼吸困難或意識，開始復甦。<link target="aid_resuscitation">〈+〉</link>
+    </step>
+  </section>
+  <section id="aid_suffocation">
+    <title>窒息 </title>
+    <altTitle>燕子/窒息 </altTitle>
+    <description>氧氣供應不足。氣管封閉。危險：窒息。</description>
+    <description>症狀：哮喘呼吸噪音，刺激咳嗽，呼吸急促，皮膚變色。</description>
+    <image file="066"/>
+    <step>立即行動！讓有關的人咳嗽非常強烈。</step>
+    <step>罷工強烈的單位手的背面之間的肩胛骨（躺在嬰兒在您的前臂，頭部向下） 。</step>
+    <image file="068"/>
+    <image file="031"/>
+    <step>如果沒有成功：站在後面的人，摟著腰，低頭略有前進。</step>
+    <step>幹你的拳頭，位置在身高的人的肚子，並採取與您的另一方面。</step>
+    <image file="069"/>
+    <step>在接受使用兩手給予沉重打擊方向向上胃（當您將設法解除人） 。</step>
+    <step>重複此了5倍！航空公司應免費從對象。</step>
+    <step>緊急呼籲。</step>
+    <step>如果急救措施是不成功的繼續做，直到醫生來應急。</step>
+  </section>
+  <section id="aid_sunburn">
+    <title>日炙 </title>
+    <step>刪除受影響的人從陽光直接照射。避免進一步的太陽。</step>
+    <step>喝大量的水停止脫水。</step>
+    <step>如果有一個嚴重的陽光燒傷（水皰，紅腫，疼痛） ，求醫。</step>
+    <step>如果皮膚只是輕輕紅，它可以冷卻濕信封。使用後，太陽洗劑或凝膠。</step>
+  </section>
+  <section id="aid_sunstroke">
+    <title>中暑 </title>
+    <description>紅頭熱，冷的皮膚，疾病，頭痛，頭暈。原因：刺激腦細胞膜。</description>
+    <image file="035"/>
+    <step>轉到一個酷地方（影子）和位置，上身的人了。</step>
+    <image file="061"/>
+    <step>頭部冷濕毯子。</step>
+    <step>緊急呼叫，隨時控制呼吸。</step>
+    <step>如果意識到：給飲料降溫，如果適用。</step>
+    <step>如果出現呼吸暫停，呼吸開始：</step>
+    <step>
+      <link target="aid_apnoea">去同呼吸讓！</link>
+    </step>
+    <image file="036"/>
+  </section>
+  <section id="aid_unconsciouswithbreath">
+    <title>無意識同呼吸 </title>
+    <description>沒有反應，大聲地問，沒有反應，顫抖。呼吸確實存在。</description>
+    <image file="057"/>
+    <step>如果還有人在你身邊尋求幫助。</step>
+    <step>回收的立場。開放的嘴和頭部的位置這種方式，嘔吐可以流失。<link target="aid_recoveryposition">〈+〉</link>
+    </step>
+    <image file="008"/>
+    <image file="009"/>
+    <step>緊急呼籲。</step>
+  </section>
+  <section id="aid_unconsciouswithoutbreath">
+    <title>無意識無呼吸 </title>
+    <step>沒有人員傷亡的反應，沒有呼吸。</step>
+    <image file="057"/>
+    <step>開始復甦。<link target="aid_resuscitation">〈+〉</link>
+    </step>
+  </section>
+  <section id="aid_vomiting">
+    <title>嘔吐 </title>
+    <description>源自噁心。胃清空本身。原因：感染，中毒，潰瘍，毒品，不良食物，懷孕。</description>
+    <image file="054"/>
+    <step>危險的流通，因為脫水和損失的鹽！</step>
+    <step>給予液體（茶，水） 。</step>
+    <step>如果有強大的障礙，血腥或持續嘔吐緊急呼叫醫生。</step>
+  </section>
+</firstaide>

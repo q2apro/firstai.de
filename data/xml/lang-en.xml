@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<firstaide>
+  <strings>
+    <string key="title">First Aid</string>
+    <string key="back">Back</string>
+    <string key="disclaimerMenuTitle"># Disclaimer + Info!</string>
+    <string key="disclaimerTitle">Disclaimer + Info</string>
+    <string key="softwareHeader">Software</string>
+    <string key="softwareName">First Aid on your Mobile</string>
+    <string key="softwareCopyright">Copyright: Kai Kajus Noack</string>
+    <string key="translatorCopyright"/>
+    <string key="softwareLicense">Licence: Creative Commons</string>
+    <string key="softwareNotice">This program is supposed to give information on first aid. However, it does not represent a substitute to a first aid course. It rather serves you refreshing your already acquired knowledge.</string>
+    <string key="softwareIllustrations">Illustrations</string>
+    <string key="disclaimerHeader">Disclaimer</string>
+    <string key="disclaimerNotice1">Please note that I take no responsibility for consequences resulting from the use of the software.</string>
+    <string key="disclaimerNotice2">ANY LIABILITY IS EXCLUDED!</string>
+    <string key="disclaimerNotice3">USE AT YOUR OWN RISK!</string>
+    <string key="disclaimerNotice4">In all emergencies, please seek professional help immediately.</string>
+    <string key="developmentHeader">Project Development</string>
+    <string key="developmentText">The program is supposed to become multilingual. Voluntary Translators needed!!</string>
+    <string key="developmentMoreInfo1">Further information is available on the Internet</string>
+    <string key="developmentMoreInfo2">or write an email to:</string>
+    <string key="slogan">To save one life is to have saved the world.</string>
+    <string key="emergencyNumbersMenuTitle"># Emergency Calls</string>
+    <string key="dial112">Call Emergency 112</string>
+    <string key="emergency_fire">Fire</string>
+    <string key="emergency_medical">Medical</string>
+    <string key="emergency_police">Police</string>
+    <string key="emergency_cancelcard">Deactive your Bankcards</string>
+    <string key="emergency_local">local numbers</string>
+    <string key="emergency_nosystem">no system</string>
+    <string key="emergency_radioonly">only radio telephones</string>
+    <string key="emergency_none">--</string>
+    <string key="emergency_or">or</string>
+    <string key="emergency_mobile">mobile</string>
+    <string key="emergency_tourist">tourists</string>
+    <!-- Continents -->
+    <string key="continent">Continent</string>
+    <string key="continent_Africa">Africa</string>
+    <string key="continent_Asia">Asia</string>
+    <string key="continent_Europe">Europe</string>
+    <string key="continent_Northamerica">North-/Central-America</string>
+    <string key="continent_Oceania">Oceania</string>
+    <string key="continent_Southamerica">South-America</string>
+    <!-- Countries -->
+    <string key="country_afghanistan">Afghanistan</string>
+    <string key="country_albania">Albania</string>
+    <string key="country_algeria">Algeria</string>
+    <string key="country_andorra">Andorra</string>
+    <string key="country_angola">Angola</string>
+    <string key="country_antiguaandbarbuda">Antigua and Barbuda</string>
+    <string key="country_argentina">Argentina</string>
+    <string key="country_armenia">Armenia</string>
+    <string key="country_australia">Australia</string>
+    <string key="country_austria">Austria</string>
+    <string key="country_azerbaijan">Azerbaijan</string>
+    <string key="country_bahamas">Bahamas</string>
+    <string key="country_bahrain">Bahrain</string>
+    <string key="country_bangladesh">Bangladesh</string>
+    <string key="country_barbados">Barbados</string>
+    <string key="country_belarus">Belarus</string>
+    <string key="country_belgium">Belgium</string>
+    <string key="country_belize">Belize</string>
+    <string key="country_benin">Benin</string>
+    <string key="country_bhutan">Bhutan</string>
+    <string key="country_bolivia">Bolivia</string>
+    <string key="country_bosniaandherzegovina">Bosnia and Herzegovina</string>
+    <string key="country_botswana">Botswana</string>
+    <string key="country_brazil">Brazil</string>
+    <string key="country_brunei">Brunei</string>
+    <string key="country_bulgaria">Bulgaria</string>
+    <string key="country_burkinafaso">Burkina Faso</string>
+    <string key="country_burundi">Burundi</string>
+    <string key="country_cambodia">Cambodia</string>
+    <string key="country_cameroon">Cameroon</string>
+    <string key="country_canada">Canada</string>
+    <string key="country_capeverde">Cape Verde</string>
+    <string key="country_caymanislands">Cayman Islands</string>
+    <string key="country_centralafricanrepublic">Central African Republic</string>
+    <string key="country_chad">Chad</string>
+    <string key="country_chile">Chile</string>
+    <string key="country_china">China</string>
+    <string key="country_colombia">Colombia</string>
+    <string key="country_comoros">Comoros</string>
+    <string key="country_congodemocraticrepublic">Congo (Democratic Republic)</string>
+    <string key="country_congorepublic">Congo (Republic)</string>
+    <string key="country_costarica">Costa Rica</string>
+    <string key="country_croatia">Croatia</string>
+    <string key="country_cuba">Cuba</string>
+    <string key="country_cyprus">Cyprus</string>
+    <string key="country_czechrepublic">Czech Republic</string>
+    <string key="country_denmark">Denmark</string>
+    <string key="country_djibouti">Djibouti</string>
+    <string key="country_dominica">Dominica</string>
+    <string key="country_dominicanrepublic">Dominican Republic</string>
+    <string key="country_easttimor">East Timor</string>
+    <string key="country_ecuador">Ecuador</string>
+    <string key="country_egypt">Egypt</string>
+    <string key="country_elsalvador">El Salvador</string>
+    <string key="country_equatorialguinea">Equatorial Guinea</string>
+    <string key="country_eritrea">Eritrea</string>
+    <string key="country_estonia">Estonia</string>
+    <string key="country_ethiopia">Ethiopia</string>
+    <string key="country_fiji">Fiji</string>
+    <string key="country_finland">Finland</string>
+    <string key="country_france">France</string>
+    <string key="country_gabon">Gabon</string>
+    <string key="country_gambia">Gambia</string>
+    <string key="country_georgia">Georgia</string>
+    <string key="country_germany">Germany</string>
+    <string key="country_ghana">Ghana</string>
+    <string key="country_greece">Greece</string>
+    <string key="country_greenland">Greenland</string>
+    <string key="country_grenada">Grenada</string>
+    <string key="country_guatemala">Guatemala</string>
+    <string key="country_guinea">Guinea</string>
+    <string key="country_guinea-bissau">Guinea-Bissau</string>
+    <string key="country_guyana">Guyana</string>
+    <string key="country_haiti">Haiti</string>
+    <string key="country_honduras">Honduras</string>
+    <string key="country_hongkong">Hong Kong</string>
+    <string key="country_hungary">Hungary</string>
+    <string key="country_iceland">Iceland</string>
+    <string key="country_india">India</string>
+    <string key="country_indonesia">Indonesia</string>
+    <string key="country_iran">Iran</string>
+    <string key="country_iraq">Iraq</string>
+    <string key="country_ireland">Ireland</string>
+    <string key="country_israel">Israel</string>
+    <string key="country_italy">Italy</string>
+    <string key="country_ivorycoast">Ivory Coast</string>
+    <string key="country_jamaica">Jamaica</string>
+    <string key="country_japan">Japan</string>
+    <string key="country_jordan">Jordan</string>
+    <string key="country_kazakhstan">Kazakhstan</string>
+    <string key="country_kenya">Kenya</string>
+    <string key="country_kiribati">Kiribati</string>
+    <string key="country_kosovo">Kosovo</string>
+    <string key="country_kurdistan">Kurdistan</string>
+    <string key="country_kuwait">Kuwait</string>
+    <string key="country_kyrgyzstan">Kyrgyzstan</string>
+    <string key="country_laos">Laos</string>
+    <string key="country_latvia">Latvia</string>
+    <string key="country_lebanon">Lebanon</string>
+    <string key="country_lesotho">Lesotho</string>
+    <string key="country_liberia">Liberia</string>
+    <string key="country_libya">Libya</string>
+    <string key="country_liechtenstein">Liechtenstein</string>
+    <string key="country_lithuania">Lithuania</string>
+    <string key="country_luxembourg">Luxembourg</string>
+    <string key="country_macau">Macau</string>
+    <string key="country_macedonia">Macedonia</string>
+    <string key="country_madagascar">Madagascar</string>
+    <string key="country_malawi">Malawi</string>
+    <string key="country_malaysia">Malaysia</string>
+    <string key="country_maldives">Maldives</string>
+    <string key="country_mali">Mali</string>
+    <string key="country_malta">Malta</string>
+    <string key="country_marshallislands">Marshall Islands</string>
+    <string key="country_mauritania">Mauritania</string>
+    <string key="country_mauritius">Mauritius</string>
+    <string key="country_mayotte">Mayotte</string>
+    <string key="country_mexico">Mexico</string>
+    <string key="country_micronesia">Micronesia</string>
+    <string key="country_moldova">Moldova</string>
+    <string key="country_monaco">Monaco</string>
+    <string key="country_mongolia">Mongolia</string>
+    <string key="country_montenegro">Montenegro</string>
+    <string key="country_morocco">Morocco</string>
+    <string key="country_mozambique">Mozambique</string>
+    <string key="country_myanmar">Myanmar</string>
+    <string key="country_namibia">Namibia</string>
+    <string key="country_nauru">Nauru</string>
+    <string key="country_nepal">Nepal</string>
+    <string key="country_netherlands">Netherlands</string>
+    <string key="country_newzealand">New Zealand</string>
+    <string key="country_nicaragua">Nicaragua</string>
+    <string key="country_niger">Niger</string>
+    <string key="country_nigeria">Nigeria</string>
+    <string key="country_northkorea">North Korea</string>
+    <string key="country_norway">Norway</string>
+    <string key="country_oman">Oman</string>
+    <string key="country_pakistan">Pakistan</string>
+    <string key="country_palau">Palau</string>
+    <string key="country_panama">Panama</string>
+    <string key="country_papuanewguinea">Papua New Guinea</string>
+    <string key="country_paraguay">Paraguay</string>
+    <string key="country_peru">Peru</string>
+    <string key="country_philippines">Philippines</string>
+    <string key="country_poland">Poland</string>
+    <string key="country_portugal">Portugal</string>
+    <string key="country_qatar">Qatar</string>
+    <string key="country_reunion">Réunion</string>
+    <string key="country_romania">Romania</string>
+    <string key="country_russia">Russia</string>
+    <string key="country_rwanda">Rwanda</string>
+    <string key="country_sahrawiarabdemocraticrepublic">Sahrawi Arab Democratic Republic</string>
+    <string key="country_saintpierreandmiquelon">Saint Pierre and Miquelon</string>
+    <string key="country_samoa">Samoa</string>
+    <string key="country_sanmarino">San Marino</string>
+    <string key="country_saotomeandprincipe">Sao Tomé and Principe</string>
+    <string key="country_saudiarabia">Saudi Arabia</string>
+    <string key="country_senegal">Senegal</string>
+    <string key="country_serbia">Serbia</string>
+    <string key="country_seychelles">Seychelles</string>
+    <string key="country_sierraleone">Sierra Leone</string>
+    <string key="country_singapore">Singapore</string>
+    <string key="country_slovakia">Slovakia</string>
+    <string key="country_slovenia">Slovenia</string>
+    <string key="country_solomonislands">Solomon Islands</string>
+    <string key="country_somalia">Somalia</string>
+    <string key="country_southafrica">South Africa</string>
+    <string key="country_southkorea">South Korea (Republic Korea)</string>
+    <string key="country_spain">Spain</string>
+    <string key="country_srilanka">Sri Lanka</string>
+    <string key="country_stkittsandnevis">Saint Kitts and Nevis</string>
+    <string key="country_stlucia">Saint Lucia</string>
+    <string key="country_stvincentandgrenadines">Saint Vincent and Grenadines</string>
+    <string key="country_sudan">Sudan</string>
+    <string key="country_suriname">Suriname</string>
+    <string key="country_swaziland">Swaziland</string>
+    <string key="country_sweden">Sweden</string>
+    <string key="country_switzerland">Switzerland</string>
+    <string key="country_syria">Syria</string>
+    <string key="country_taiwan">Taiwan</string>
+    <string key="country_tajikistan">Tajikistan</string>
+    <string key="country_tanzania">Tanzania</string>
+    <string key="country_thailand">Thailand</string>
+    <string key="country_togo">Togo</string>
+    <string key="country_tonga">Tonga</string>
+    <string key="country_trinidadandtobago">Trinidad and Tobago</string>
+    <string key="country_tunisia">Tunisia</string>
+    <string key="country_turkey">Turkey</string>
+    <string key="country_turkmenistan">Turkmenistan</string>
+    <string key="country_tuvalu">Tuvalu</string>
+    <string key="country_uganda">Uganda</string>
+    <string key="country_ukraine">Ukraine</string>
+    <string key="country_unitedarabemirates">United Arab Emirates</string>
+    <string key="country_unitedkingdom">United Kingdom</string>
+    <string key="country_unitedstatesofamerica">United States of America</string>
+    <string key="country_uruguay">Uruguay</string>
+    <string key="country_uzbekistan">Uzbekistan</string>
+    <string key="country_vanuatu">Vanuatu</string>
+    <string key="country_vaticancity">Vatican City</string>
+    <string key="country_venezuela">Venezuela</string>
+    <string key="country_vietnam">Vietnam</string>
+    <string key="country_yemen">Yemen</string>
+    <string key="country_zambia">Zambia</string>
+    <string key="country_zimbabwe">Zimbabwe</string>
+    <!-- iPhone only -->
+    <string key="audioPrefix">en</string>
+    <string key="iPhoneTitle">First Aid iPhone 1.0</string>
+    <string key="iPhoneTitleOffline">First Aid iPhone 1.0 Offline</string>
+    <string key="iPhoneDescription">iPhone Version for First Aid on your Mobile - Online - including all images and audio</string>
+    <string key="iPhoneDescriptionOffline">iPhone Version for First Aid on your Mobile - Offline - including images</string>
+    <string key="WinMobTitle">First Aid Windows Mobile 1.0</string>
+    <string key="WinMobDescription">Version for First Aid on your Mobile - Internet Explorer Mobile - including all images</string>
+    <string key="softwareVersion">Version</string>
+    <string key="WinMobVersionNumber">w1.0</string>
+    <string key="iPhoneVersionNumber">i1.0</string>
+    <string key="softwareRelease">Release</string>
+    <string key="WinMobReleaseDate">2008-12-24</string>
+    <string key="iPhoneReleaseDate">2008-12-24</string>
+    <string key="iPhoneBackButton">Back</string>
+    <string key="iPhoneMenuButton">Menu</string>
+    <string key="languageChooser">Choose your Language</string>
+    <string key="iPhoneOfflineFilename">firstaidENoffline.html</string>
+    <string key="offlineBookmark">Bookmark Offline-Version</string>
+    <string key="donateProject">Donate for Project</string>
+    <string key="mailToDeveloper">Mail to Developer</string>
+    <string key="checkNewVersion">Check for new Version</string>
+    <string key="donate">Donate</string>
+    <string key="whyDonate">Why donate?</string>
+    <string key="donate1">Do you think the project is a good idea? Then donate please! Because the project survives only by donations.</string>
+    <string key="donateOnlineVia">Donate online via</string>
+    <string key="paypalID">5315644</string>
+    <string key="orWireTransfer">.</string>
+    <string key="everyContributionCounts">Every single contribution counts!</string>
+    <string key="smallStep">One small step for a man, one giant leap for mankind.</string>
+    <string key="license">Licence</string>
+    <string key="licenseTerms">You are free to copy, distribute and transmit the work under the following conditions:</string>
+    <string key="licenseAttribution">Attribution</string>
+    <string key="licenseAttribution1">You must attribute the work by mentioning the licensor's name</string>
+    <string key="licenseAttribution2"> and linking to the website</string>
+    <string key="licenseAttribution3">(but not in any way that suggests that they endorse you or your use of the work).</string>
+    <string key="licenseNoCommercial">Noncommercial</string>
+    <string key="licenseNoCommercial1">You may not use this work for commercial purposes.</string>
+    <string key="licenseNoDeriv">No Derivative Works</string>
+    <string key="licenseNoDeriv1">You may not alter, transform, or build upon this work.</string>
+    <string key="licenseDistribution1">For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to</string>
+    <string key="licenseSuffix"/>
+    <string key="licenseDistribution2"/>
+    <string key="licenseWaived">Any of the above conditions can be waived if you get permission from the copyright holder.</string>
+    <string key="licenseMoralRights">Nothing in this license impairs or restricts the author's moral rights.</string>
+  </strings>
+  <section id="aid_general">
+    <title>General Conduct</title>
+    <audio>2.mp3</audio>
+    <step>Always perform first aid. You cannot make any mistakes.</step>
+    <step>Always pay attention to your own safety.</step>
+    <step>Examine the situation and secure the accident place.</step>
+    <step>Emergency call + First Aid measures!</step>
+    <step>If there are several casualties, the treatment of the most harmed has priority.</step>
+    <step>Always try to calm down the person concerned. Stay calm yourself!</step>
+    <step>If possible lay her/him down comfortably. Never give alcohol, nicotine or drugs to a person who is the victim of an accident.</step>
+  </section>
+  <section headImage="46" id="aid_allergic">
+    <title>Allergic Reaction</title>
+    <audio>3.mp3</audio>
+    <step>Phone for an ambulance immediately.</step>
+    <step>Try to calm down the casualty and let him sit comfortable.</step>
+    <step>Remove allergic causing matter (e.g. sting of a bee) carefully.</step>
+    <step>Cool affected skin (wet compress, ice).</step>
+    <image file="046ice"/>
+    <step>If casualty has an antidote, he should use it (help him).</step>
+    <step>Monitor casualty's condition until ambulance arrives.</step>
+    <step>If casualty loses consciousness or breathing stops, follow appropriate instructions!</step>
+    <image file="077"/>
+  </section>
+  <section id="aid_amputation">
+    <title>Amputation</title>
+    <audio>4.mp3</audio>
+    <description>Amputated body part can be reattached again. Goal: Keep amputated part cool until you arrive at hospital. </description>
+    <step>Calm the person, lay him/her down, and cover with blanket.</step>
+    <step>Stop the bleeding, see 'Bleeding (severe)' and 'Shock'.</step>
+    <step>Wrap amputated part in a clean and dry cloth, and put it into a waterproof plastic bag. </step>
+    <step>Close this plastic bag and put it into another plastic bag, that contains cool water/ice. </step>
+    <step>Do not give alcohol, cigarettes or food to casualty (in case of a surgery with anaesthesia in hospital). </step>
+    <step>Do not freeze the amputated part (just keep it cool). </step>
+    <step>Call emergency or drive casualty to hospital yourself.</step>
+  </section>
+  <section headImage="47" id="aid_animalbite">
+    <title>Animal bite</title>
+    <audio>5.mp3</audio>
+    <description> Attention: High danger of infection. Result could be infection, tetanus, rabies.</description>
+    <step>Wash wound with hot soapy water.</step>
+    <image file="049"/>
+    <step>Afterwards disinfect the wound.</step>
+    <step>If there is severe bleeding, elevate the person's upper body.</step>
+    <step>Apply an aseptic bandage.</step>
+    <image file="085"/>
+    <step>Go to a hospital or call emergency doctor.</step>
+  </section>
+  <section id="aid_apnoea">
+    <title>Apnoea</title>
+    <altTitle>Breathing</altTitle>
+    <audio>6.mp3</audio>
+    <description> No breathing sounds or breath movements, noticeable discolouration of the skin.</description>
+    <step>Emergency call.</step>
+    <step>Lay casualty on his/her back.</step>
+    <step>Remove any substances from the mouth and throat. Stretch head backwards.</step>
+    <image file="067"/>
+    <step>Pinch the nose, so that nose is closed.</step>
+    <image file="010"/>
+    <step>Take a deep breath and put your mouth onto the mouth of the casualty, that no air can leak.</step>
+    <image file="011"/>
+    <step>Breath out slowly and fully.</step>
+    <step>If without success: Do breathing as long as ambulance arrives.</step>
+  </section>
+  <section id="aid_asthma">
+    <title>Asthma</title>
+    <altTitle>Breathlessness</altTitle>
+    <audio>7.mp3</audio>
+    <description>Heavy breathlessness. Wheezing respiratory noise. Anxieties.</description>
+    <step>Calm the person. Stay calm yourself!</step>
+    <step>Loosen clothing.</step>
+    <step>Let casualty sit and lean forward, encourage him/her to breath slowly and deeply.</step>
+    <step>If casualty has an inhalator, he should use it (help him). After 5-10 min it should take effect.</step>
+    <image file="074"/>
+    <step>If there is no improvement: Use inhalator every 5 min until ambulance arrives.</step>
+    <step>Emergency call.</step>
+    <step>If apnoea (cessation of breathing) occurs, follow instructions given for <link target="aid_apnoea">apnoea</link>.</step>
+  </section>
+  <section id="aid_backinjury">
+    <title>Back Injury</title>
+    <altTitle>Spinal fracture</altTitle>
+    <audio>8.mp3</audio>
+    <description> Pain in the back, numb arms and legs.</description>
+    <step>Do not move the casualty!!</step>
+    <image file="064"/>
+    <step>Hold the head so that the person lies still (keep their head stationary)</step>
+    <image file="065"/>
+    <step>Stabilize the casualty with bolsters on either side.</step>
+    <step>Calm the person.</step>
+    <step>Emergency call, point out the back injury.</step>
+  </section>
+  <section id="aid_birth">
+    <title>Birth</title>
+    <audio>9.mp3</audio>
+    <description> Outflow of amniotic fluid. Contraction pains occur. Unexpected birth.</description>
+    <image file="025"/>
+    <step>Pay attention to privacy and keep calm! - Emergency call.</step>
+    <step>Let the pregnant woman bare the lower part of her body, and sit down on a sterile underlay with spread legs.</step>
+    <step>Angle the knees. Pull up the legs. Position the basin slightly upward. - Birth is a natural process and runs mostly without complications.</step>
+    <step>Calm the woman, let her concentrate on her breathing: Breathe in through nose, breathe out through mouth (in normal speed).</step>
+    <step>Rhythm of pressing: Take a deep breath, hold breath, and press. As soon as the baby's head appears, support by taking hold of it with both of your hands.</step>
+    <image file="021"/>
+    <image file="022"/>
+    <step>After the childbirth: Hold the baby on a slant with head down to liberate the airways from amniotic fluid. (You may have to suck out the fluid from the baby's nose by mouth.) The baby must breathe and cry!</step>
+    <step>Bind off the umbilical cord 30 cm away from the child (can also be done in hospital). Keep the vagina of the mother sterile.</step>
+    <image file="023"/>
+    <step>Dry the baby and keep it warm. Note the time and drive to the hospital.</step>
+  </section>
+  <section headImage="82" id="aid_bleedinglight">
+    <title>Bleeding (light)</title>
+    <audio>10.mp3</audio>
+    <description> Goal: Stop the bleeding.</description>
+    <step>Do not touch the wound (danger of infection).</step>
+    <step>Do not treat wound with powder, salves or sprays.</step>
+    <step>Wound treatment: cover with sterile material and a bandage.</step>
+    <image file="098"/>
+    <step>For slight bleeding a plaster is often sufficient.</step>
+    <step>If wound is large-scale, use a wound cover and a bandage. Do not apply bandage too tight, as a stasis can lead to increased bleeding.</step>
+    <image file="084"/>
+    <image file="085"/>
+    <step>Note: Wounds as a result of the bite from a rabid animal have to be washed with soapy solution.</step>
+    <image file="049"/>
+  </section>
+  <section id="aid_bleedingsevere">
+    <title>Bleeding (severe)</title>
+    <audio>11.mp3</audio>
+    <description> Splashing, pulsating blood. Danger: Choking because of blood loss, infections, death. Goal: Stop the bleeding.</description>
+    <step>Remove clothes (cut if necessary) and reveal wound.</step>
+    <step>Wrap a bandage or, if necessary, a garment with pressure around the wound.</step>
+    <image file="086"/>
+    <step>Exert pressure for at least 10 min.</step>
+    <step>If bandage is soaked with blood, do not remove it. Instead wrap another bandage/garment around it.</step>
+    <step>Place the affected limb (if not broken) higher than the heart to reduce amount of blood pressure. If possible lay down casualty.</step>
+    <step>If bleeding does not stop, keep pressure on wound, and set additional pressure point on wound: For a bleeding of the forearm compress the upper arm (press vein at inner side of arm, in the middle of elbow and arm-pit, using your fingers). For bleeding of leg, set pressure point in groin (press vein at crook of groin, where artery leads over pelvic bone, using the ball of your hand).</step>
+    <image file="089"/>
+    <image file="092"/>
+    <step>Call emergency doctor immediately.</step>
+    <step>As soon as bleeding is under control: Initiate anti-shocking measures.</step>
+    <image file="093"/>
+  </section>
+  <section id="aid_brainconcussion">
+    <title>Brain Concussion</title>
+    <audio>12.mp3</audio>
+    <description> Headache, nausea, vomiting. Impaired vision. Unconsciousness can occur.</description>
+    <image file="035a"/>
+    <step>Lay down person concerned.</step>
+    <step>Emergency call.</step>
+    <description> If bleeding from head:</description>
+    <step>Lay down casualty, with the head elevated (on pillow).</step>
+    <image file="061"/>
+    <step>Do wound-treatment (use head-bandage).</step>
+    <step>Emergency call.</step>
+  </section>
+  <section id="aid_burningslight">
+    <title>Burning (slight)</title>
+    <audio>15.mp3</audio>
+    <description> Redness of skin. Mild swellings. Pain.</description>
+    <step>Hold area involved under cool water.</step>
+    <image file="100"/>
+    <step>Apply wet bandage loosely.</step>
+  </section>
+  <section id="aid_burningsevere">
+    <title>Burning (severe)</title>
+    <audio>16.mp3</audio>
+    <description> Spotted white-red areas, blistering. Skin loses fluid. Deep damage of tissue. Strong pain or no pain (because of burned nerves).</description>
+    <image file="097"/>
+    <step>Remove clothes as much as possible.</step>
+    <step>Cool burned body parts with water (about 15°C, 59°F) up to 10 min, until pain reduces.</step>
+    <image file="100"/>
+    <step>If burning is extensive, just use wet cloths to cool.</step>
+    <step>Emergency call.</step>
+    <step>After cooling, do the wound treatment: Use a sterile dressing. Do not apply fluids (no creams, oils, ointments etc.). Do not pierce the blisters.</step>
+    <image file="085"/>
+    <step>Control breathing and consciousness of the person until emergency doctor arrives.</step>
+  </section>
+  <section id="aid_checkbreathing">
+    <title>Check Breathing</title>
+    <audio>17.mp3</audio>
+    <step>Check breathing sounds.</step>
+    <step>Diagnose breathing in the upper abdomen (lay your hand on it).</step>
+    <image file="027"/>
+    <step>Sense breathing at nose and mouth.</step>
+  </section>
+  <section id="aid_chemicalburneyes">
+    <title>Chemical Burn (Eyes)</title>
+    <audio>18.mp3</audio>
+    <step>Emergency call, point out chemicals.</step>
+    <step>Flush eye with much water. Cover healthy eye during flushing.</step>
+    <step>Lead the water jet from inner angle of eye to outer angle of eye. Clean for at least 20 min under clear water.</step>
+    <image file="019"/>
+    <step>Close both eyes of the casualty and bind with wet cloth.</step>
+    <image file="020"/>
+    <step>Monitor condition until ambulance arrives.</step>
+  </section>
+  <section id="aid_chemicalburn">
+    <title>Chemical Burn</title>
+    <audio>19.mp3</audio>
+    <description> Injury of tissue.</description>
+    <image file="095"/>
+    <step>Mind self-protection!</step>
+    <step>Act quickly and wash the burned locations.</step>
+    <image file="100"/>
+    <step>Emergency call.</step>
+    <step>If there is a chemical burn of the digestive tract, particularly the mouth and throat, drink a lot of water.</step>
+    <step>Do not cause vomiting!</step>
+  </section>
+  <section id="aid_dangerzone">
+    <title>Danger Zone (Rescue)</title>
+    <audio>21.mp3</audio>
+    <step>Grip execution: Position one arm of the injured in front of his/her chest, and get behind him/her.</step>
+    <step>Put your hands under the shoulders of the wounded, grabbing the angled arm.</step>
+    <step>Pull back and carry the person into safety.</step>
+    <image file="001"/>
+    <image file="007"/>
+  </section>
+  <section id="aid_diabeticcoma">
+    <title>Diabetic Coma</title>
+    <altTitle>Hyperglycaemia (sugar)</altTitle>
+    <audio>22.mp3</audio>
+    <description> Blood sugar level is too high (resp. lack of insulin).</description>
+    <description> Symptoms: Thirst, frequent urination, nausea, vomit. Breath smells of fruits/wine.</description>
+    <step>Call emergency.</step>
+    <step>Support casualty (if confirmed as diabetic) taking insulin.</step>
+    <image file="016"/>
+    <step>
+      <link target="aid_recoveryposition">Recovery position.</link> (No further possibilities for the first aider.)</step>
+    <step>Monitor the condition of the casualty until emergency doctor arrives.</step>
+  </section>
+  <section id="aid_diarrhoea">
+    <title>Diarrhoea</title>
+    <audio>23.mp3</audio>
+    <description>Reaction to contaminated food, infection of intestine or disorder. Stool is diluted, slimy or bloody.</description>
+    <step>Danger for the circulation because of dehydration and loss of salt!</step>
+    <step>Give liquids (tea, water).</step>
+    <step>If there are strong disorders call the emergency doctor.</step>
+  </section>
+  <section id="aid_drowning">
+    <title>Drowning</title>
+    <audio>24.mp3</audio>
+    <step>Call emergency. Ask people next to you for help.</step>
+    <image file="032"/>
+    <step>Rescue person out of water!</step>
+    <image file="033"/>
+    <image file="034"/>
+    <step>If casualty is breathing: <link target="aid_recoveryposition">Recovery position.</link> Keep him/her warm (cover). Monitor condition until emergency doctor arrives.</step>
+    <step>If casualty is not breathing: Immediately start with <link target="aid_resuscitation">resuscitation!</link> (Ejecting water from the lungs is useless.)</step>
+  </section>
+  <section id="aid_electricityaccident">
+    <title>Electricity Accident</title>
+    <audio>25.mp3</audio>
+    <step>Firstly interrupt the electricity supply!</step>
+    <image file="045plug"/>
+    <image file="045"/>
+    <step>Danger: Unconsciousness, apnoea.</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - Unconsciousness with breathing</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - Unconsciousness without breathing</link>
+    </step>
+    <image file="042"/>
+    <image file="043"/>
+  </section>
+  <section id="aid_emergencycall">
+    <title>Emergency Call</title>
+    <audio>26.mp3</audio>
+    <step>Dial 112 with the next available phone (USA: 911). Always possible and for free! Do not hesitate to call for an ambulance!</step>
+    <step>On the phone you must provide the following information:</step>
+    <step>- What has happened </step>
+    <step>- Where (accident place) </step>
+    <step>- How many casualties </step>
+    <step>- What kind of injuries. </step>
+    <step>Afterwards wait for further instructions or queries.</step>
+  </section>
+  <section id="aid_epilepsy">
+    <title>Epilepsy</title>
+    <audio>27.mp3</audio>
+    <description> Rigid body, clenched fists, pressed jaw, twitching in limbs or face. Rolling eyes. Salivation. Unconsciousness possible.</description>
+    <image file="058"/>
+    <step>Do not hold the casualty or restrain their movement.</step>
+    <step>Lay the casualty on a soft base (cushion), remove close objects to prevent self-injury.</step>
+    <step>Calm down the casualty. Loosen clothing, provide freedom to breath.</step>
+    <step>If casualty vomits, turn their head to the side so that vomit can drain.</step>
+    <step>Keep airways clear. Danger of swallowing the tongue.</step>
+    <step>
+      <link target="aid_recoveryposition">Recovery Position</link> + Emergency call. Continue monitoring the casualty's condition.</step>
+    <step>Keep other people at distance.</step>
+  </section>
+  <section id="aid_eyeinjury">
+    <title>Eye Injury</title>
+    <audio>28.mp3</audio>
+    <step>Leave object in the eye of casualty, do not remove it.</step>
+    <step>Keep eyes motionless to avoid further injuries. Do not touch the eye.</step>
+    <step>If eye is bleeding, cover it with a compress or a sterile gauze.</step>
+    <image file="020"/>
+    <step>Cool the eye with a cold pad (reduces swelling, bleeding stops quicker).</step>
+    <step>Emergency call or drive casualty to hospital yourself.</step>
+  </section>
+  <section id="aid_fracture">
+    <title>Fracture</title>
+    <audio>29.mp3</audio>
+    <description> Symptoms: Unnatural position and movability of bone. Deformation. Painful movement, touch-sensitive.</description>
+    <image file="104"/>
+    <step>Avoid movements!</step>
+    <step>Emergency call.</step>
+    <step>Immobilize the fractured bone, i.e. bolster material around bone tightly. Keep position of the bone.</step>
+    <image file="107"/>
+    <step>If fracture is open, cover the wound with sterile material.</step>
+    <image file="106"/>
+  </section>
+  <section id="aid_frostbitemild">
+    <title>Frostbite (mild)</title>
+    <audio>30.mp3</audio>
+    <description> Paleness, swellings. Danger for blood supply.</description>
+    <step>Move casualty into a warm area.</step>
+    <step>Get away from cold, remove cold clothes, dry person.</step>
+    <step>Warm up with lukewarm water and with body heat of the helper.</step>
+    <step>Give warm drink (tea). No alcohol!</step>
+    <image file="040"/>
+  </section>
+  <section id="aid_frostbitesevere">
+    <title>Frostbite (severe)</title>
+    <audio>31.mp3</audio>
+    <description> Cold hard skin, grey-white, blistering, tissue dies off. Danger for blood supply!</description>
+    <image file="096"/>
+    <step>Go to warm area.</step>
+    <step>Wound treatment/covering.</step>
+    <step>Give a sugary drink.</step>
+    <step>Do not rub the casualty to warm them!</step>
+    <step>Emergency call.</step>
+  </section>
+  <section id="aid_heartattack">
+    <title>Heart Attack</title>
+    <audio>32.mp3</audio>
+    <description> Heavy, more than 5 min lasting pressure and pain in the chest, particularly radiating in the arms/shoulders. Anxiety, paleness, cold sweat. Possibly nausea, shortness of breath.</description>
+    <image file="076"/>
+    <image file="083"/>
+    <step>Emergency call! Point out the supposed heart attack.</step>
+    <step>Position with the upper body elevated. Loosen tight clothing. Do not give drugs or drinks.</step>
+    <image file="061"/>
+    <step>Talk calmly to the person concerned.</step>
+    <step>Control consciousness and breathing.</step>
+    <step>Give aspirin if available.</step>
+    <step>If person becomes unconscious, start <link target="aid_resuscitation">resuscitation</link>.</step>
+  </section>
+  <section id="aid_hypoglycaemia">
+    <title>Hypoglycaemia (low sugar)</title>
+    <audio>34.mp3</audio>
+    <description>Blood sugar level is below minimum value (because of overdose of insulin or insufficient intake of food).</description>
+    <description>Symptoms: Paleness, nervousness, hunger, shivering, sweating.</description>
+    <image file="018"/>
+    <step>Make sure that the person is a diabetic (look for a diabetic badge).</step>
+    <step>Emergency call.</step>
+    <step>Give a sugary drink and dextrose/glucose (if there are no problems in swallowing).</step>
+    <image file="017"/>
+    <step>If person is conscious and breathing: <link target="aid_recoveryposition">Recovery position.</link> Monitor breathing of the person. If apnoea appears, start with breath giving.</step>
+    <step>If there is breathing, you can put a lump of sugar into the cheek pouch, push from outside against it.</step>
+  </section>
+  <section id="aid_hyperthermia">
+    <title>Hyperthermia (hot body)</title>
+    <audio>35.mp3</audio>
+    <description> Thirst, weakness, disorientation, nausea, confusion, strong sweating, hot skin.</description>
+    <image file="035"/>
+    <step>Emergency call.</step>
+    <step>Find a cool shady place (room with air conditioning preferable).</step>
+    <step>Lay down person, elevate legs. Loosen clothing.</step>
+    <image file="078"/>
+    <step>Cool skin with cold water or lay on cold towels.</step>
+    <step>Give plenty of water or juices to drink.</step>
+  </section>
+  <section id="aid_hypothermia">
+    <title>Hypothermia (cool body)</title>
+    <audio>36.mp3</audio>
+    <description> Cold shiver, drowsiness, exhaustion up to unconsciousness. Cold pale skin. Slow pulse, weak heartbeat.</description>
+    <image file="014"/>
+    <step>Go to a warm area/room.</step>
+    <step>Call emergency.</step>
+    <step>Increase body temperature (cover and body-to-body-contact).</step>
+    <step>Remove wet clothes and put on warm clothes. Cover with blankets or other covers. Cover the head.</step>
+    <step>Give hot tea, soup or hot water to drink. No alcohol! Keep person awake.</step>
+    <image file="039"/>
+    <image file="040"/>
+    <step>Monitor casualty's condition until emergency doctor arrives. If person becomes unconscious, initiate resuscitation:</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - Unconsciousness with breathing</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - Unconsciousness without breathing</link>
+    </step>
+  </section>
+  <section id="aid_icerescue">
+    <title>Ice Rescue</title>
+    <audio>37.mp3</audio>
+    <description> Pay attention to your own safety. Danger: Drowning, Hypothermia.</description>
+    <step>Ask other people for help. Call for an emergency ambulance.</step>
+    <step>Rescue via ladder, board or bar. Weight must be distributed evenly.</step>
+    <step>Crawl carefully on your front along the support (if possible roped to a stable point) with a pole or similar tool.</step>
+    <image file="041"/>
+    <step>Reach to the person with the pole or other tool (not your hand!), encourage him/her to take hold of it and pull him/her out.</step>
+    <step>Crawl backwards back to the edge.</step>
+    <step>First-Aid measures.</step>
+    <step>Self-rescue possible: If ice is solid, you can distribute your weight on the ice and pull yourself out. Crawl flat on your front to the edge. If ice is fragile, try to break the ice piece by piece up to the edge.</step>
+  </section>
+  <section headImage="46" id="aid_insectstings">
+    <title>Insect stings</title>
+    <audio>38.mp3</audio>
+    <description> Swelling, skin rash, burning feeling, weakness, difficult breathing, decreased consciousness, tachycardia.</description>
+    <step>Remove sting carefully (with a tweezer). Do not squeeze the sting as this could inject more venom.</step>
+    <step>Cool concerned spot (apply a cold compress).</step>
+    <step>Concerned area should be kept lower than the heart to slow circulation of the venom.</step>
+    <step>If stung in mouth/jaw area: Suck ice-cream, and apply a cold compress around throat.</step>
+    <image file="046ice"/>
+    <step>If severe problems, notably difficulty in breathing or decreased consciousness, occur, call an ambulance immediately.</step>
+  </section>
+  <section id="aid_nosebleeding">
+    <title>Nosebleeding</title>
+    <audio>39.mp3</audio>
+    <description> Burst small artery in the nose.</description>
+    <step>Sit the person down, leaning slightly forward. Keep head straight.</step>
+    <step>Do not position the person flat, as head over height of heart slows down bleeding.</step>
+    <step>Place cooling material round neck (wet cloth).</step>
+    <step>Pinch nostrils together until bleeding stops (for 10 min).</step>
+    <step>Afterwards do not strain the nose (no snorting).</step>
+    <step>If severe problems occur or bleeding cannot be stopped, call emergency doctor.</step>
+  </section>
+  <section headImage="52" id="aid_poisining">
+    <title>Poisoning</title>
+    <audio>40.mp3</audio>
+    <description> Confusion, hallucinations, enlarged pupils, fever, cramps. Unconsciousness.</description>
+    <step>Only give antidotes if you are accompanied by a trained medic.</step>
+    <image file="056"/>
+    <step>Do not give drinks. Do not cause vomiting.</step>
+    <step>Emergency call + point out the poisoning!</step>
+    <step>Safeguard rest of poison and the vomit!</step>
+    <image file="054a"/>
+    <step>If casualty is conscious and breathing: <link target="aid_recoveryposition">Recovery position.</link> Monitor condition until emergency doctor arrives.</step>
+    <step>If casualty is not breathing: Immediately start with <link target="aid_resuscitation">resuscitation!</link> Free mouth from vomit beforehand.</step>
+  </section>
+  <section id="aid_recoveryposition">
+    <title>Recovery Position</title>
+    <audio>42.mp3</audio>
+    <step>Lay casualty on her/his back, straighten legs. Knee beside him/her.</step>
+    <step>Place arm nearest to you at a right angle to the body.</step>
+    <step>Pull arm furthest from you across the chest and place the back of the hand against cheek.</step>
+    <image file="008"/>
+    <step>Get the far knee, pull it to your side, and lay it on the ground. Position the leg at a right angle. Keep casualty's hand under the cheek of the person.</step>
+    <step>Make sure the airways are free.</step>
+    <step>Open mouth slightly, and position the head to the side so that vomit can drain. Check breathing.</step>
+    <image file="009"/>
+    <step>Control the casualty's condition until the emergency doctor arrives.</step>
+    <description>Recovery position for babies:</description>
+    <image file="028"/>
+  </section>
+  <section id="aid_resuscitation">
+    <title>Resuscitation</title>
+    <altTitle>Chest Compression</altTitle>
+    <altTitle>Reanimation</altTitle>
+    <audio>43.mp3</audio>
+    <subsection>#Heart Massage</subsection>
+    <step>Lay casualty on his/her back. Kneel beside person.</step>
+    <step>Bare the chest.</step>
+    <step>Place the heel of the hand in the middle of the chest (just over sternum).</step>
+    <image file="013"/>
+    <step>Place other hand on the back of the hand which is already in position.</step>
+    <step>Extend your arms and elbows.</step>
+    <image file="003"/>
+    <step>Press 5 cm deep into the person's chest (power comes from upper part of the body) and release.</step>
+    <step>Push 30 times in a row shortly and strongly!</step>
+    <subsection>#Breathing</subsection>
+    <step>Remove any substances out of mouth and throat. Stretch head backwards.</step>
+    <image file="067"/>
+    <step>Pinch the nose together, so that nose is closed.</step>
+    <image file="010"/>
+    <step>Take a deep breath and put your mouth onto the mouth of the casualty, that no air can leak.</step>
+    <image file="011"/>
+    <step>Do mouth-to-mouth breathing two times (breath out slowly and fully).</step>
+    <step>Afterwards do heart massage again.</step>
+    <description>Repeat heart massage + mouth-breathing until the emergency doctor arrives.</description>
+    <image file="012"/>
+    <subsection>Resuscitation (Baby)</subsection>
+    <step>Only use two fingers:</step>
+    <image file="029"/>
+    <step>Do not breath too strong:</step>
+    <image file="030"/>
+  </section>
+  <section id="aid_safeguardaccident">
+    <title>Safeguard Accident</title>
+    <altTitle>Traffic Accident</altTitle>
+    <audio>44.mp3</audio>
+    <step>Stop your own car 50-100 m behind the accident site (if you are on a highway or country road). Switch on warning lights. Put on high visibility vest.</step>
+    <step>Position the warning triangle before the accident site. Attention: If accident is on a curve position the warning triangle before the curve!</step>
+    <image file="111"/>
+    <step>Ask other people for their help.</step>
+    <step>Open the door of the accident car (if jammed, prise it open using a car jack). Turn off ignition.</step>
+    <step>Rescue the accident victim: Unstrap seat-belt, move seat backwards. Free the casualty out of the car <link target="aid_dangerzone">by rescue grip</link>.</step>
+    <image file="001"/>
+    <step>Emergency call.</step>
+    <step>Proceed with first aid measures.</step>
+  </section>
+  <section id="aid_shock">
+    <title>Shock</title>
+    <audio>45.mp3</audio>
+    <description> Circulatory disorder by poor oxygen supply in the body.</description>
+    <description>Cause: Loss of fluid, reduced blood volume.</description>
+    <description>Symptoms: Paleness, cold skin, cold sweat, anxiety.</description>
+    <step>Eliminate the cause of the shock (e.g. stop the fluid loss, bind the wound)!</step>
+    <step>Lay the wounded person on a blanket, raising the legs. Calm the person.</step>
+    <image file="078"/>
+    <step>Emergency call.</step>
+    <step>If difficulties in breathing or consciousness, initiate <link target="aid_resuscitation">resuscitation</link>.</step>
+  </section>
+  <section id="aid_skullfracture">
+    <title>Skull fracture</title>
+    <audio>46.mp3</audio>
+    <description> Light bleeding from nose, mouth or ear. Often open wounds on skull.</description>
+    <step>Keep the airways free.</step>
+    <step>If conscious: Let the injured sit with head bowed forwards. Avoid further movements!</step>
+    <step>If unconscious: <link target="aid_recoveryposition">Recovery position</link> (no pressure on wound of head).</step>
+    <step>Emergency call.</step>
+    <step>Apply head bandage.</step>
+    <step>If difficulties in breathing or consciousness, initiate <link target="aid_resuscitation">resuscitation</link>.</step>
+  </section>
+  <section headImage="51" id="aid_snakebite">
+    <title>Snakebite</title>
+    <audio>47.mp3</audio>
+    <description> Puncture wound the size of a pin, severe pains, swelling, purple colour. Circulatory disturbance, danger of shock.</description>
+    <step>Steady the wounded part of the body.</step>
+    <step>Apply cold material around bite wound.</step>
+    <step>Take measures against shock.</step>
+    <step>Emergency call.</step>
+  </section>
+  <section id="aid_sos">
+    <title>SOS</title>
+    <audio>48.mp3</audio>
+    <step>Signal: 3x short, 3x long, 3x short.</step>
+    <step>Optically (strobe light, flashlight), or acoustically (signal whistle, knocking).</step>
+  </section>
+  <section id="aid_sprain">
+    <title>Sprain + Strain</title>
+    <audio>50.mp3</audio>
+    <description> Pain, swelling (bruise), loss of function, deformation of the limb.</description>
+    <step>Place the injured part of the body in the position most comfortable for the casualty.</step>
+    <step>Cool (using ice packs).</step>
+    <step>If possible, position the injured part elevated.</step>
+    <step>Go to hospital or call emergency doctor.</step>
+  </section>
+  <section id="aid_stroke">
+    <title>Stroke</title>
+    <audio>51.mp3</audio>
+    <description> Sudden feeling of paralysis or numbness (face, arm, leg), disturbances in language understanding, vision problems, disturbed consciousness, severe headache. Problems in breathing and swallowing, loss of control over bladder and intestine.</description>
+    <image file="059"/>
+    <step>Emergency call!</step>
+    <step>Loosen tight clothing. Do not give drugs or drinks.</step>
+    <step>Sit or lay down person concerned comfortably. Calm him/her!</step>
+    <step>Control consciousness and breathing.</step>
+    <step>If difficulties in breathing or consciousness, initiate <link target="aid_resuscitation">resuscitation.</link>
+    </step>
+  </section>
+  <section id="aid_suffocation">
+    <title>Suffocation (Choking)</title>
+    <altTitle>Choking</altTitle>
+    <altTitle>Swallow/Choking</altTitle>
+    <audio>52.mp3</audio>
+    <description> Insufficient oxygen supply. Trachea closed. Danger: Apnoea.</description>
+    <description>Symptoms: Wheezing respiratory noise, cough stimulus, shortness of breath, skin discolouration.</description>
+    <image file="066"/>
+    <step>Immediate action! Let the person concerned cough very strongly.</step>
+    <step>Strike strongly with a flat hand on the back between the shoulder blades (lay babies on your forearm, with head down).</step>
+    <image file="068"/>
+    <image file="031"/>
+    <step>If without success: Stand behind person, arms around waist, bow slightly forward.</step>
+    <step>Clench your fist, position it at height of person's stomach, and take it with your other hand.</step>
+    <image file="069"/>
+    <step>In embrace use both hands to give a hard blow upwards towards stomach (as if you would try to lift the person).</step>
+    <step>Repeat this up to 5 times! Airways should get free from object.</step>
+    <step>Emergency call.</step>
+    <step>If first aid measure is unsuccessful at first, keep on doing it until emergency doctor arrives.</step>
+  </section>
+  <section id="aid_sunburn">
+    <title>Sunburn</title>
+    <audio>53.mp3</audio>
+    <step>Remove affected person from direct sunlight. Avoid further sun.</step>
+    <step>Drink much water to stop dehydration.</step>
+    <step>If there is a serious sunburn (blisters, redness, pain), seek medical advice.</step>
+    <step>If the skin is just lightly red, it can be cooled with wet compresses. Use after-sun lotion or gel.</step>
+  </section>
+  <section id="aid_sunstroke">
+    <title>Sunstroke</title>
+    <audio>54.mp3</audio>
+    <description> Hot red head, cool skin, sickness, headache, dizziness. Cause: Irritation of the cerebral membrane.</description>
+    <image file="035"/>
+    <step>Go to a cool place (shadow) and position the upper body of the person up.</step>
+    <image file="061"/>
+    <step>Cool the head with wet blankets.</step>
+    <step>Emergency call, keep controlling the breathing.</step>
+    <step>If conscious: Give cool drink if applicable.</step>
+    <step>If apnoea appears, start with breathing:</step>
+    <step>
+      <link target="aid_apnoea">Go on with Breath Giving!</link>
+    </step>
+    <image file="036"/>
+  </section>
+  <section id="aid_unconsciouswithbreath">
+    <title>Unconscious with breathing</title>
+    <audio>57.mp3</audio>
+    <description>No reaction on loudly asking, no response on shaking. Breathing does exist.</description>
+    <image file="057"/>
+    <step>If there are people next to you ask for help.</step>
+    <step>
+      <link target="aid_recoveryposition">Recovery position.</link> Open mouth and position head this way that vomit can drain.</step>
+    <image file="008"/>
+    <image file="009"/>
+    <step>Emergency call.</step>
+  </section>
+  <section id="aid_unconsciouswithoutbreath">
+    <title>Unconscious without breathing</title>
+    <audio>58.mp3</audio>
+    <step>No reaction of casualty, no breathing.</step>
+    <image file="057"/>
+    <step>
+      <link target="aid_resuscitation">Initiate Resuscitation.</link>
+    </step>
+  </section>
+  <section id="aid_vomiting">
+    <title>Vomiting</title>
+    <audio>59.mp3</audio>
+    <description> Arises from nausea. Stomach empties itself. Causes: Infection, poisoning, ulcer, drugs, bad food, pregnancy.</description>
+    <image file="054"/>
+    <step>Danger for the circulation because of dehydration and loss of salt!</step>
+    <step>Give liquids (tea, water).</step>
+    <step>If there are strong disorders, bloody or continuous vomiting, call the emergency doctor.</step>
+  </section>
+</firstaide>

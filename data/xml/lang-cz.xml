@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<firstaide>
+  <strings>
+    <string key="title">První Pomoc</string>
+    <string key="back">Zpět</string>
+    <string key="disclaimerMenuTitle"># Zřeknutí se odpovědnosti + informace</string>
+    <string key="disclaimerTitle">Zřeknutí se odpovědnosti + informace</string>
+    <string key="softwareHeader">Software</string>
+    <string key="softwareName">První pomoc ve vašem mobilu</string>
+    <string key="softwareCopyright">Copyright: Kai Kajus Noack</string>
+    <string key="translatorCopyright">Translator: Pavel Prokeš</string>
+    <string key="softwareLicense">License: Creative Commons</string>
+    <string key="softwareNotice">Tento program má poskytovat informace o první pomoci. Nepředstavuje však náhradu za kurz první pomoci. Poslouží vám spíše k osvěžení vašich již získaných znalostí.</string>
+    <string key="softwareIllustrations">Obrázky</string>
+    <string key="disclaimerHeader">Zřeknutí se zodpovědnosti</string>
+    <string key="disclaimerNotice1">Dovoluji si upozornit, že nepřebírám žádnou odpovědnost za následky vyplývající z použití tohoto programu.</string>
+    <string key="disclaimerNotice2">JAKÁKOLIV ODPOVĚDNOST JE VYLOUČENA!</string>
+    <string key="disclaimerNotice3">POUŽITÍ NA VLASTNÍ RIZIKO!</string>
+    <string key="disclaimerNotice4">Ve všech naléhavých případech, vyhledejte prosím ihned odbornou pomoc.</string>
+    <string key="developmentHeader">Vývoj projektu</string>
+    <string key="developmentText">Předpokládá se, že program bude vícejazyčný. Potřebujeme dobrovolné překladatele.</string>
+    <string key="developmentMoreInfo1">Další informace jsou dostupné na Internetu</string>
+    <string key="developmentMoreInfo2">, nebo pište na email:</string>
+    <string key="slogan">Zachránit jeden život je jako zachránit svět.</string>
+    <string key="emergencyNumbersMenuTitle"># Tísňová volání</string>
+    <string key="dial112">Volejte záchrannou službu 112</string>
+    <string key="emergency_fire">Hasiči</string>
+    <string key="emergency_medical">Záchranná lékařská pomoc</string>
+    <string key="emergency_police">Policie</string>
+    <string key="emergency_cancelcard"/>
+    <string key="emergency_local">místní čísla</string>
+    <string key="emergency_nosystem">nesystémové</string>
+    <string key="emergency_radioonly">pouze radiotelefony</string>
+    <string key="emergency_none">--</string>
+    <string key="emergency_or">nebo</string>
+    <string key="emergency_mobile">mobily</string>
+    <string key="emergency_tourist">turisté</string>
+    <!-- Continents -->
+    <string key="continent">Kontinent</string>
+    <string key="continent_Africa">Afrika</string>
+    <string key="continent_Asia">Asie</string>
+    <string key="continent_Europe">Evropa</string>
+    <string key="continent_Northamerica">Severní a Střední Amerika</string>
+    <string key="continent_Oceania">Oceánie</string>
+    <string key="continent_Southamerica">Jižní Amerika</string>
+    <!-- Countries -->
+    <string key="country_afghanistan">Afghánistán</string>
+    <string key="country_albania">Albánie</string>
+    <string key="country_algeria">Alžírsko</string>
+    <string key="country_andorra">Andorra</string>
+    <string key="country_angola">Angola</string>
+    <string key="country_antiguaandbarbuda">Antigua a Barbuda</string>
+    <string key="country_argentina">Argentina</string>
+    <string key="country_armenia">Arménie</string>
+    <string key="country_australia">Austrálie</string>
+    <string key="country_austria">Rakousko</string>
+    <string key="country_azerbaijan">Azerbajdžán</string>
+    <string key="country_bahamas">Bahamy</string>
+    <string key="country_bahrain">Bahrain</string>
+    <string key="country_bangladesh">Bangladéš</string>
+    <string key="country_barbados">Barbados</string>
+    <string key="country_belarus">Bělorusko</string>
+    <string key="country_belgium">Belgie</string>
+    <string key="country_belize">Belize</string>
+    <string key="country_benin">Benin</string>
+    <string key="country_bhutan">Bhútán</string>
+    <string key="country_bolivia">Bolívie</string>
+    <string key="country_bosniaandherzegovina">Bosna a Hercegovina</string>
+    <string key="country_botswana">Botswana</string>
+    <string key="country_brazil">Brazílie</string>
+    <string key="country_brunei">Brunei</string>
+    <string key="country_bulgaria">Bulharsko</string>
+    <string key="country_burkinafaso">Horní Volta</string>
+    <string key="country_burundi">Burundi</string>
+    <string key="country_cambodia">Kambodža</string>
+    <string key="country_cameroon">Kamerun</string>
+    <string key="country_canada">Kanada</string>
+    <string key="country_capeverde">Mys Verde</string>
+    <string key="country_caymanislands">Kajmanské ostrovy</string>
+    <string key="country_centralafricanrepublic">Středoafrická republika</string>
+    <string key="country_chad">Čad</string>
+    <string key="country_chile">Chile</string>
+    <string key="country_china">Čína</string>
+    <string key="country_colombia">Kolumbie</string>
+    <string key="country_comoros">Komory</string>
+    <string key="country_congodemocraticrepublic">Kongo (demokratická republika)</string>
+    <string key="country_congorepublic">Kongo (republika)</string>
+    <string key="country_costarica">Kostarika</string>
+    <string key="country_croatia">Chorvatsko</string>
+    <string key="country_cuba">Kuba</string>
+    <string key="country_cyprus">Kypr</string>
+    <string key="country_czechrepublic">Česká Republika</string>
+    <string key="country_denmark">Dánsko</string>
+    <string key="country_djibouti">Džibuti</string>
+    <string key="country_dominica">Dominika</string>
+    <string key="country_dominicanrepublic">Dominikánská republika</string>
+    <string key="country_easttimor">Východní Timor</string>
+    <string key="country_ecuador">Ekvádor</string>
+    <string key="country_egypt">Egypt</string>
+    <string key="country_elsalvador">Salvador</string>
+    <string key="country_equatorialguinea">Rovníková Guinea</string>
+    <string key="country_eritrea">Eritrea</string>
+    <string key="country_estonia">Estonsko</string>
+    <string key="country_ethiopia">Etiopie</string>
+    <string key="country_fiji">Fidži</string>
+    <string key="country_finland">Finsko</string>
+    <string key="country_france">Francie</string>
+    <string key="country_gabon">Gabun</string>
+    <string key="country_gambia">Gambie</string>
+    <string key="country_georgia">Gruzie</string>
+    <string key="country_germany">Německo</string>
+    <string key="country_ghana">Ghana</string>
+    <string key="country_greece">Řecko</string>
+    <string key="country_greenland">Grónsko</string>
+    <string key="country_grenada">Grenada</string>
+    <string key="country_guatemala">Guatemala</string>
+    <string key="country_guinea">Guinea</string>
+    <string key="country_guinea-bissau">Guinea-Bissau</string>
+    <string key="country_guyana">Guyana</string>
+    <string key="country_haiti">Haiti</string>
+    <string key="country_honduras">Honduras</string>
+    <string key="country_hongkong">Hong Kong</string>
+    <string key="country_hungary">Maďarsko</string>
+    <string key="country_iceland">Island</string>
+    <string key="country_india">Indie</string>
+    <string key="country_indonesia">Indonésie</string>
+    <string key="country_iran">Írán</string>
+    <string key="country_iraq">Irák</string>
+    <string key="country_ireland">Irsko</string>
+    <string key="country_israel">Izrael</string>
+    <string key="country_italy">Itálie</string>
+    <string key="country_ivorycoast">Pobřeží Slonoviny</string>
+    <string key="country_jamaica">Jamajka</string>
+    <string key="country_japan">Japonsko</string>
+    <string key="country_jordan">Jordán</string>
+    <string key="country_kazakhstan">Kazachstán</string>
+    <string key="country_kenya">Keni</string>
+    <string key="country_kiribati">Kiribati</string>
+    <string key="country_kosovo">Kosovo</string>
+    <string key="country_kurdistan">Kurdistán</string>
+    <string key="country_kuwait">Kuvajt</string>
+    <string key="country_kyrgyzstan">Kyrgistán</string>
+    <string key="country_laos">Laos</string>
+    <string key="country_latvia">Lotyšsko</string>
+    <string key="country_lebanon">Libanon</string>
+    <string key="country_lesotho">Lesotho</string>
+    <string key="country_liberia">Libérie</string>
+    <string key="country_libya">Libye</string>
+    <string key="country_liechtenstein">Lichtenjstensko</string>
+    <string key="country_lithuania">Litva</string>
+    <string key="country_luxembourg">Lucembursko</string>
+    <string key="country_macau">Macao</string>
+    <string key="country_macedonia">Makedonie</string>
+    <string key="country_madagascar">Madagaskar</string>
+    <string key="country_malawi">Malawi</string>
+    <string key="country_malaysia">Malajsie</string>
+    <string key="country_maldives">Maledivy</string>
+    <string key="country_mali">Mali</string>
+    <string key="country_malta">Malta</string>
+    <string key="country_marshallislands">Marshallovy ostrovy</string>
+    <string key="country_mauritania">Mauritánie</string>
+    <string key="country_mauritius">Mauritius</string>
+    <string key="country_mayotte">Mayotte</string>
+    <string key="country_mexico">Mexiko</string>
+    <string key="country_micronesia">Mikronésie</string>
+    <string key="country_moldova">Moldavsko</string>
+    <string key="country_monaco">Monako</string>
+    <string key="country_mongolia">Mongolsko</string>
+    <string key="country_montenegro">Černá Hora</string>
+    <string key="country_morocco">Maroko</string>
+    <string key="country_mozambique">Mosambik</string>
+    <string key="country_myanmar">Myanmar</string>
+    <string key="country_namibia">Namibie</string>
+    <string key="country_nauru">Nauru</string>
+    <string key="country_nepal">Nepál</string>
+    <string key="country_netherlands">Nizozemsko</string>
+    <string key="country_newzealand">Nový Zéland</string>
+    <string key="country_nicaragua">Nikaragua</string>
+    <string key="country_niger">Niger</string>
+    <string key="country_nigeria">Nigérie</string>
+    <string key="country_northkorea">Severní Korea</string>
+    <string key="country_norway">Norsko</string>
+    <string key="country_oman">Omán</string>
+    <string key="country_pakistan">Pákistán</string>
+    <string key="country_palau">Palau</string>
+    <string key="country_panama">Panama</string>
+    <string key="country_papuanewguinea">Papua a Nová Guinea</string>
+    <string key="country_paraguay">Paraguay</string>
+    <string key="country_peru">Peru</string>
+    <string key="country_philippines">Filipíny</string>
+    <string key="country_poland">Polsko</string>
+    <string key="country_portugal">Portugalsko</string>
+    <string key="country_qatar">Katar</string>
+    <string key="country_reunion">Reunion</string>
+    <string key="country_romania">Rumunsko</string>
+    <string key="country_russia">Rusko</string>
+    <string key="country_rwanda">Rwanda</string>
+    <string key="country_sahrawiarabdemocraticrepublic">Sahrawi Arab Democratic Republic</string>
+    <string key="country_saintpierreandmiquelon">Svatý Kryštof a Nevis</string>
+    <string key="country_samoa">Samoa</string>
+    <string key="country_sanmarino">San Marino</string>
+    <string key="country_saotomeandprincipe">Sao Tomé a Principe</string>
+    <string key="country_saudiarabia">Saudská Arábie</string>
+    <string key="country_senegal">Senegal</string>
+    <string key="country_serbia">Srbsko</string>
+    <string key="country_seychelles">Seychely</string>
+    <string key="country_sierraleone">Sierra Leone</string>
+    <string key="country_singapore">Singapur</string>
+    <string key="country_slovakia">Slovensko</string>
+    <string key="country_slovenia">Slovinsko</string>
+    <string key="country_solomonislands">Šalomounovy Ostrovy</string>
+    <string key="country_somalia">Somálsko</string>
+    <string key="country_southafrica">Jižní Afrika</string>
+    <string key="country_southkorea">Jižní Korea (Korejská Republika)</string>
+    <string key="country_spain">Španělsko</string>
+    <string key="country_srilanka">Srí Lanka</string>
+    <string key="country_stkittsandnevis">Svatá Lucie</string>
+    <string key="country_stlucia">Saint Pierre a Miquelon</string>
+    <string key="country_stvincentandgrenadines">Svatý Vincent a Grenadiny</string>
+    <string key="country_sudan">Súdán</string>
+    <string key="country_suriname">Surinam</string>
+    <string key="country_swaziland">Svazijsko</string>
+    <string key="country_sweden">Švédsko</string>
+    <string key="country_switzerland">Švýcarsko</string>
+    <string key="country_syria">Sýrie</string>
+    <string key="country_taiwan">Taiwan</string>
+    <string key="country_tajikistan">Tádžikistán</string>
+    <string key="country_tanzania">Tanzánie</string>
+    <string key="country_thailand">Thajsko</string>
+    <string key="country_togo">Togo</string>
+    <string key="country_tonga">Tonga</string>
+    <string key="country_trinidadandtobago">Trinidad a Tobago</string>
+    <string key="country_tunisia">Tunisko</string>
+    <string key="country_turkey">Turecko</string>
+    <string key="country_turkmenistan">Turkmenistán</string>
+    <string key="country_tuvalu">Tuvalu</string>
+    <string key="country_uganda">Uganda</string>
+    <string key="country_ukraine">Ukrajina</string>
+    <string key="country_unitedarabemirates">Spojené Arabské Emiráty</string>
+    <string key="country_unitedkingdom">Velká Británie</string>
+    <string key="country_unitedstatesofamerica">Spojené Státy Americké</string>
+    <string key="country_uruguay">Uruguay</string>
+    <string key="country_uzbekistan">Uzbekistán</string>
+    <string key="country_vanuatu">Vanuatu</string>
+    <string key="country_vaticancity">Vatikán</string>
+    <string key="country_venezuela">Venezuela</string>
+    <string key="country_vietnam">Vietnam</string>
+    <string key="country_yemen">Jemen</string>
+    <string key="country_zambia">Zambie</string>
+    <string key="country_zimbabwe">Zimbabwe</string>
+    <!-- iPhone only -->
+    <string key="audioPrefix"/>
+    <string key="iPhoneTitle">První Pomoc iPhone 1.0</string>
+    <string key="iPhoneTitleOffline">První Pomoc iPhone 1.0 Offline</string>
+    <string key="iPhoneDescription">〈iPhone Version for First Aid on your Mobile - Online - including all images〉</string>
+    <string key="iPhoneDescriptionOffline">〈iPhone Version for First Aid on your Mobile - Offline - including images〉</string>
+    <string key="WinMobTitle">První Pomoc 〈Windows Mobile〉 1.0</string>
+    <string key="WinMobDescription">〈Version for First Aid on your Mobile - Internet Explorer Mobile - including all images〉</string>
+    <string key="softwareVersion">Verze</string>
+    <string key="WinMobVersionNumber">3.0</string>
+    <string key="iPhoneVersionNumber">3.0</string>
+    <string key="softwareRelease">Vydání</string>
+    <string key="WinMobReleaseDate">2009-10-31</string>
+    <string key="iPhoneReleaseDate">2009-10-31</string>
+    <string key="iPhoneBackButton">Zpět</string>
+    <string key="iPhoneMenuButton">Menu</string>
+    <string key="languageChooser">Vyberte svůj jazyk</string>
+    <string key="iPhoneOfflineFilename">firstaidCZoffline.html</string>
+    <string key="offlineBookmark">Udělejte si záložku na verzi Off-line</string>
+    <string key="donateProject">Přispějte na projekt</string>
+    <string key="mailToDeveloper">Mail na vývojáře</string>
+    <string key="checkNewVersion">Zjištění nové verze</string>
+    <string key="donate">Příspěvek</string>
+    <string key="whyDonate">Proč přispívat?</string>
+    <string key="donate1">Myslíte že je projekt dobrý nápad? Potom prosím přispějte. Protože projekt přežívá pouze díky vám a mně.</string>
+    <string key="donateOnlineVia">Přispívejte on-line prostřednictvím Pay Pal</string>
+    <string key="paypalID">5315644</string>
+    <string key="orWireTransfer"> na: @firstai.de</string>
+    <string key="everyContributionCounts">Každý příspěvek se počítá.</string>
+    <string key="smallStep">Je to malý krůček pro člověka, ale velký pro lidstvo!</string>
+    <string key="license">Licence</string>
+    <string key="licenseTerms">Toto dílo můžete zdarma kopírovat, šířit a přenášet za následujících podmínek:</string>
+    <string key="licenseAttribution">Přisuzování</string>
+    <string key="licenseAttribution1">Přisuzovat tuto práci musíte připomenutím autora licence</string>
+    <string key="licenseAttribution2"> a odkazem na webovou stránku</string>
+    <string key="licenseAttribution3">(ale ne takovým způsobem, který doporučuje aby potvrdil tvoje nebo vaše povolení k použití díla).</string>
+    <string key="licenseNoCommercial">Nekomerční</string>
+    <string key="licenseNoCommercial1">Toto dílo nesmíte použít pro komerční účely.</string>
+    <string key="licenseNoDeriv">Neměňte dílo</string>
+    <string key="licenseNoDeriv1">Toto dílo nesmíte upravovat, měnit, nebo na něm stavět jiná díla.</string>
+    <string key="licenseDistribution1">Pro jakékoliv jiné použití nebo šíření tohoto díla, musíte ostatním objasnit licenční pojmy. Nejlepší způsob jak to provést, je link na</string>
+    <string key="licenseSuffix"/>
+    <string key="licenseDistribution2"/>
+    <string key="licenseWaived">Dostanete-li povolení od držitele licence, můžete kteroukoliv výše uvedenou podmínku zanedbat.</string>
+    <string key="licenseMoralRights">Nic v této licenci nenarušuje, nebo neomezuje autorova morální práva.</string>
+  </strings>
+  <section id="aid_general">
+    <title>Obecné chování</title>
+    <step>Vždy poskytujte první pomoc. Nemůžete udělat žádné chyby.</step>
+    <step>Vždy věnujte pozornost vlastnímu bezpečí.</step>
+    <step>Posuďte situaci a zajistěte místo nehody.</step>
+    <step>Volejte záchrannou službu a provádějte úkony první pomoci.</step>
+    <step>Pokud je více obětí, přednostně ošetřujte nejvíce postižené.</step>
+    <step>Vždy se pokuste uklidnit dotyčné osoby. Sám zůstaňte klidný.</step>
+    <step>Je-li to možné, oběť pohodlně položte. Osobám postiženým nehodou nikdy nedávejte alkohol, nikotin, nebo léky.</step>
+  </section>
+  <section headImage="46" id="aid_allergic">
+    <title>Alergická reakce</title>
+    <step>Volejte okamžitě záchrannou službu.</step>
+    <step>Pokuste se uklidnit oběť a pomožte jí pohodlně se posadit.</step>
+    <step>Opatrně odstraňte látky způsobující alergii (např. včelí žihadlo).</step>
+    <step>Ochlazujte postiženou pokožku (mokré obklady, led).</step>
+    <image file="046ice"/>
+    <step>Pokud má oběť protilék, měla by ho použít (pomozte jí)</step>
+    <step>Do příjezdu záchranné služby kontrolujte stav oběti.</step>
+    <step>Pokud oběť ztratí vědomí, nebo se zastaví dýchání, řiďte se příslušnými pokyny.</step>
+    <image file="077"/>
+  </section>
+  <section id="aid_amputation">
+    <title>Amputace</title>
+    <description>Amputovaná část těla může být opětovně chirurgicky připojena. Cíle: Do příjezdu do nemocnice udržet amputovanou část v chladu.</description>
+    <step>Uklidněte osobu, položte jí na zem a přikryjte pokrývkou.</step>
+    <step>Zastavte krvácení viz 'Krvácení (vážné)' a 'Šok'.</step>
+    <step>Amputovanou část zabalte do čisté a suché látky a vložte do vodovzdorného plastového sáčku.</step>
+    <step>Tento sáček uzavřete a vložte do dalšího plastového sáčku obsahujícího studenou vodu, nebo led.</step>
+    <step>Oběti nepodávejte alkohol, cigarety, nebo jídlo (pro případ že bude v nemocnici proveden chirurgický zákrok s celkovou anestézií).</step>
+    <step>Amputovanou část nezmrazujte, (pouze ji udržujte v chladu).</step>
+    <step>Volejte záchrannou službu, nebo odvezte postiženého do nemocnice sám.</step>
+  </section>
+  <section headImage="47" id="aid_animalbite">
+    <title>Pokousání zvířetem</title>
+    <description>Pozor: Vysoké nebezpečí infekce. Následkem může být hnisání, tetanus, nebo vzteklina.</description>
+    <step>Zranění omyjte horkou mýdlovou vodou.</step>
+    <image file="049"/>
+    <step>Následně zranění vydesinfikujte.</step>
+    <step>Pokud postižený silně krvácí, zvedněte jeho horní část těla.</step>
+    <step>Přiložte sterilní obvaz.</step>
+    <image file="085"/>
+    <step>Jděte do nemocnice, nebo zavolejte pohotovostního lékaře.</step>
+  </section>
+  <section id="aid_apnoea">
+    <title>Zástava dechu</title>
+    <altTitle>Dýchání</altTitle>
+    <description>Chybí zvuky dýchání a pohyby hrudníku, je viditelná změna barvy pokožky.</description>
+    <step>Volejte záchrannou službu.</step>
+    <step>Položte oběť na záda.</step>
+    <step>Z úst a krku odstraňte cizí předměty. Zakloňte jí hlavu.</step>
+    <image file="067"/>
+    <step>Stiskněte nos prsty tak, aby byl uzavřen.</step>
+    <image file="010"/>
+    <step>Zhluboka se nadechněte a přiložte svá ústa na ústa oběti tak, aby vzduch neunikal.</step>
+    <image file="011"/>
+    <step>Pomalu a naplno vdechujte.</step>
+    <step>Nemáte-li úspěch: Vdechujte tak dlouho dokud nedorazí záchranka.</step>
+  </section>
+  <section id="aid_asthma">
+    <title>Astma</title>
+    <altTitle>Ztížené dýchání</altTitle>
+    <description>Silná dušnost. Hvízdavé zvuky dýchání. Obavy.</description>
+    <step>Uklidněte osobu. Sám zůstaňte klidný.</step>
+    <step>Uvolněte postiženému oděv.</step>
+    <step>Posaďte postiženého a nakloňte ho dopředu. Povzbuzujte ho, aby dýchal pomalu a zhluboka.</step>
+    <step>Pokud má postižený inhalátor, měl by ho použít (pomožte mu). Účinek by se měl dostavit za 5 až 10 minut.</step>
+    <image file="074"/>
+    <step>Pokud nenastane zlepšení: Až do příjezdu záchranky používejte inhalátor každých 5 minut.</step>
+    <step>Volejte záchrannou službu.</step>
+    <step>Pokud se zastaví dýchání, řiďte se pokyny pro <link target="aid_apnoea">zástavu dechu</link>.</step>
+  </section>
+  <section id="aid_backinjury">
+    <title>Poranění páteře</title>
+    <altTitle>Poranění míchy</altTitle>
+    <description>Bolest v zádech, ztuhlost rukou a nohou.</description>
+    <step>S postiženým nehýbejte!!</step>
+    <image file="064"/>
+    <step>Držte hlavu oběti tak, aby ležela stabilně (hlavu držte pevně).</step>
+    <image file="065"/>
+    <step>Oběť stabilizujte polštářky položenými z obou stran.</step>
+    <step>Uklidňujte postiženého.</step>
+    <step>Volejte záchrannou službu. Oznamte podezření na poranění páteře.</step>
+  </section>
+  <section id="aid_birth">
+    <title>Porod</title>
+    <description>Odtok plodové vody. Nastávají bolestivé stahy. Neočekávaný porod.</description>
+    <image file="025"/>
+    <step>Věnujte pozornost soukromí rodičky a zachovávejte klid. Volejte záchrannou službu.</step>
+    <step>Umožněte těhotné ženě obnažit si dolní polovinu těla a sednout si na sterilní podložku s roztaženými nohama.</step>
+    <step>Ohněte kolena. Zvedněte nohy nahoru. Pánev předsuňte lehce vzhůru. Porod je přirozený proces a probíhá většinou bez komplikací.</step>
+    <step>Uklidněte ženu a nechte ji soustředit se na svůj dech: Vdechovat nosem a vydechovat ústy (normální rychlostí).</step>
+    <step>Rytmus tlačení: Zhluboka nadechnout, zadržet dech a zatlačit. Jakmile se objeví hlavička dítěte podpírejte jí držením oběma rukama.</step>
+    <image file="021"/>
+    <image file="022"/>
+    <step>Po porodu: Držte dítě na předloktí s hlavou dolů tak, aby se z dýchacích cest uvolnila plodová voda. (Tekutinu můžete vysát dítěti z nosu svými ústy). Dítě musí začít dýchat a plakat.</step>
+    <step>Ve vzdálenosti asi 30 cm od dítěte pevně podvažte pupeční šňůru. Porodní cesty matky udržujte v čistotě.</step>
+    <image file="023"/>
+    <step>Osušte dítě a udržujte ho teplé. Poznamenejte čas narození a jeďte do nemocnice.</step>
+  </section>
+  <section headImage="82" id="aid_bleedinglight">
+    <title>Krvácení - lehké</title>
+    <description>Cíle: Zastavit krvácení.</description>
+    <step>Nedotýkejte se poranění (nebezpečí infekce).</step>
+    <step>Neošetřujte zranění zásypy, mastmi, nebo spreji.</step>
+    <step>Léčba zranění: Zakryjte ho sterilním materiálem a obvažte.</step>
+    <image file="098"/>
+    <step>Na mírné krvácení zpravidla stačí náplast.</step>
+    <step>Rozsáhlé zranění zakryjte sterilním polštářkem a obvažte. Neutahujte obvaz příliš těsně, protože městnání může vést ke zvýšenému krvácení.</step>
+    <image file="084"/>
+    <image file="085"/>
+    <step>Zranění způsobené kousnutím vzteklého zvířete má být omyto mýdlovou vodou.</step>
+    <image file="049"/>
+  </section>
+  <section id="aid_bleedingsevere">
+    <title>Krvácení - vážné</title>
+    <description>Stříkající, pulsující krvácení. Nebezpečí: Dušení způsobené ztrátou krve, infekce, smrt. Cíle: Zastavit krvácení.</description>
+    <step>Svlékněte oděv (v případě nutnosti rozstřihněte) a odhalte poranění.</step>
+    <step>Ovažte obvazem, nebo v případě potřeby kusem šatstva stlačujícím okolí rány.</step>
+    <image file="086"/>
+    <step>Tlak na ránu udržujte nejméně 10 minut.</step>
+    <step>Pokud je obvaz nasáklý krví, neodstraňujte jej. Namísto toho jej obalte dalším obvazem, nebo kusem šatstva.</step>
+    <step>Postiženou končetinu (není-li zlomena) umístěte kvůli snížení krevního tlaku nad úroveň srdce. Je-li to možné, postiženého položte.</step>
+    <step>Jestliže krvácení neustane, udržujte tlak na ránu a vyhledejte další tlakový bod pro poranění: Při krvácení na předloktí stlačujte nadloktí (pomocí prstů stiskněte žílu na vnitřní straně paže, uprostřed lokte, nebo v podpažní jamce. Při krvácení na noze stiskněte bod ve slabinách (pomocí koule ze spojených rukou stiskněte žílu na ohbí třísel v místě, kde vede tepna přes pánevní kost.</step>
+    <image file="089"/>
+    <image file="092"/>
+    <step>Volejte okamžitě záchrannou službu.</step>
+    <step>Po zvládnutí krvácení: co nejdříve zahajte opatření proti šoku.</step>
+    <image file="093"/>
+  </section>
+  <section id="aid_brainconcussion">
+    <title>Otřes mozku</title>
+    <description>Bolest hlavy, nevolnost, zvracení. Rozostřené vidění, Může nastat bezvědomí.</description>
+    <image file="035a"/>
+    <step>Postiženou osobu položte.</step>
+    <step>Volejte záchrannou službu.</step>
+    <description>Při krvácení z hlavy:</description>
+    <step>Položte oběť s nazdvihnutou hlavou (na polštáři).</step>
+    <image file="061"/>
+    <step>Ošetřujte poranění (použijte obvaz hlavy).</step>
+    <step>Volejte záchrannou službu.</step>
+  </section>
+  <section id="aid_burningslight">
+    <title>Spáleniny (lehké)</title>
+    <description>Zarudlá kůže. Mírný otok. Bolest.</description>
+    <step>Postižená místa ochlazujte studenou vodou.</step>
+    <image file="100"/>
+    <step>Přiložte volný, mokrý obklad.</step>
+  </section>
+  <section id="aid_burningsevere">
+    <title>Spáleniny (vážné)</title>
+    <description>Skvrnité bíločervené oblasti s puchýři. Kůže ztrácí tekutiny. Hluboké poškození tkání. Silná, nebo žádná bolest (protože jsou spáleny nervy).</description>
+    <image file="097"/>
+    <step>Podle možností odstraňte co nejvíce oblečení.</step>
+    <step>Popálené části těla ochlazujte až 10 minut studenou vodou (okolo 15°C, 59°F), dokud se nezmírní bolest.</step>
+    <image file="100"/>
+    <step>Při rozsáhlých popáleninách provádějte ochlazování mokrou látkou.</step>
+    <step>Volejte záchrannou službu.</step>
+    <step>Po ochlazení ošetřete poranění. Nepoužívejte tekutiny (žádné krémy, oleje, masti atd.). Puchýře nepropichujte.</step>
+    <image file="085"/>
+    <step>Do příjezdu záchranné služby kontrolujte stav a vědomí postiženého.</step>
+  </section>
+  <section id="aid_checkbreathing">
+    <title>Kontrola dýchání</title>
+    <step>Ověřte zvuky dýchání.</step>
+    <step>Dýchání zjišťujte na horní části břicha (přiložením ruky).</step>
+    <image file="027"/>
+    <step>Snažte se vycítit dech z nosu a z úst oběti.</step>
+  </section>
+  <section id="aid_chemicalburneyes">
+    <title>Popálení chemikáliemi (oči)</title>
+    <step>Volejte záchrannou službu, informujte je o druhu chemikálie.</step>
+    <step>Vyplachujte oko velkým množstvím vody. Při vyplachování druhé oko zakryjte.</step>
+    <step>Proud vody veďte od vnitřního koutku oka k vnějšímu okraji. Vyplachujte ho nejméně 20 minut čistou vodou.</step>
+    <image file="019"/>
+    <step>Zavřete obě oči oběti a zavažte je mokrou látkou.</step>
+    <image file="020"/>
+    <step>Do příjezdu záchranné služby kontrolujte stav oběti.</step>
+  </section>
+  <section id="aid_chemicalburn">
+    <title>Popálení chemikáliemi</title>
+    <description>Poranění tkání.</description>
+    <image file="095"/>
+    <step>Mějte na mysli vlastní ochranu.</step>
+    <step>Jednejte rychle a omyjte popálená místa.</step>
+    <image file="100"/>
+    <step>Volejte záchrannou službu.</step>
+    <step>Jedná-li se o popálení zažívacího ústrojí, zvláště úst a hrdla, pijte hodně vody.</step>
+    <step>Nevyvolávejte zvracení.</step>
+  </section>
+  <section id="aid_dangerzone">
+    <title>Nebezpečná zóna (záchrana)</title>
+    <step>Provedení úchopu: Položte jednu ruku zraněného přes jeho hrudník a postavte se za něj.</step>
+    <step>Vsuňte své ruce pod ramena zraněného a uchopte jimi jeho ohnutou paží.</step>
+    <step>Táhněte vzad a odtáhněte zraněného do bezpečí.</step>
+    <image file="001"/>
+    <image file="007"/>
+  </section>
+  <section id="aid_diabeticcoma">
+    <title>Diabetické koma</title>
+    <altTitle>Hyperglykémie (nadbytek cukru)</altTitle>
+    <description>Hladina krevního cukru je příliš vysoká (jinak řečeno nedostatek inzulinu).</description>
+    <description>Příznaky: Žízeň, časté močení, nevolnost, zvracení. Dech páchne jako ovoce, nebo víno.</description>
+    <step>Volejte záchrannou službu</step>
+    <step>Pomožte osobě (je-li ověřena jako diabetik) užít inzulin.</step>
+    <image file="016"/>
+    <step>
+      <link target="aid_recoveryposition">Uložte jí do stabilizované polohy.</link> (Jiná možnost první pomoci není.)</step>
+    <step>Do příjezdu záchranné služby kontrolujte stav oběti.</step>
+  </section>
+  <section id="aid_diarrhoea">
+    <title>Průjem</title>
+    <description>Reakce na zkažené jídlo. Podráždění, nebo infekce střev. Stolice je řídká, slizká, nebo krvavá.</description>
+    <step>Nebezpečí pro krevní oběh, protože dochází ke ztrátám tekutin a solí.</step>
+    <step>Podávejte tekutiny (čaj, vodu).</step>
+    <step>Při silných potížích volejte pohotovostního lékaře.</step>
+  </section>
+  <section id="aid_drowning">
+    <title>Tonutí</title>
+    <step>Volejte záchrannou službu. Požádejte lidi v blízkosti o pomoc.</step>
+    <image file="032"/>
+    <step>Zachraňte člověka z vody.</step>
+    <image file="033"/>
+    <image file="034"/>
+    <step>Když oběť dýchá: <link target="aid_recoveryposition">Uložte jí do stabilizované polohy</link>. Udržujte jí v teple (zakrytou). Do příjezdu záchranné služby kontrolujte stav oběti.
+    </step>
+    <step>Když oběť nedýchá: Okamžitě zahajte <link target="aid_resuscitation">resuscitaci</link>! (Odsávání vody z plic je bez užitku).
+    </step>
+  </section>
+  <section id="aid_electricityaccident">
+    <title>Úraz elektřinou</title>
+    <step>Nejdříve odpojte přívod elektřiny.</step>
+    <image file="045plug"/>
+    <image file="045"/>
+    <step>Nebezpečí: Bezvědomí, zástava dechu.</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - Bezvědomí s dýcháním.</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - Bezvědomí se ztrátou dechu</link>
+    </step>
+    <image file="042"/>
+    <image file="043"/>
+  </section>
+  <section id="aid_emergencycall">
+    <title>Tísňové volání</title>
+    <step>Na nejbližším dostupném telefonu vytočte číslo 112 (v USA: 911). Je vždy dostupné a zdarma. Nezneužívejte ho k volání sanitky! </step>
+    <step>Do telefonu musíte poskytnout následující informace:</step>
+    <step>- Co se stalo.</step>
+    <step>- Kde (místo nehody).</step>
+    <step>- Kolik je postižených.</step>
+    <step>- Jaké mají poranění.</step>
+    <step>Potom čekejte na další pokyny, nebo otázky.</step>
+  </section>
+  <section id="aid_epilepsy">
+    <title>Epilepsie</title>
+    <description>Ztuhlé tělo, sevřené pěsti, stisknuté čelisti. Záškuby v končetinách nebo ve tváři. Oči obrácené v sloup. Slinění. Případné bezvědomí.</description>
+    <image file="058"/>
+    <step>Nedržte oběť, nebo neomezujte její pohyby.</step>
+    <step>Položte oběť na měkkou podložku. Odstraňte blízké předměty abyste zabránili sebepoškození oběti.</step>
+    <step>Uklidněte oběť. Uvolněte jí šatstvo aby mohla volně dýchat.</step>
+    <step>Když oběť zvrací, otočte jí hlavu na stranu aby mohly zvratky odtékat.</step>
+    <step>Udržujte volné dýchací cesty. Nebezpečí zapadnutí jazyka.</step>
+    <step>
+      <link target="aid_recoveryposition">Uložte oběť do stabilizované polohy</link> a volejte záchrannou službu. Pokračujte v kontrole stavu oběti.</step>
+    <step>Přihlížející osoby udržujte v povzdálí.</step>
+  </section>
+  <section id="aid_eyeinjury">
+    <title>Poranění očí</title>
+    <step>Ponechejte cizí těleso v oku oběti. Neodstraňujte jej.</step>
+    <step>Aby se předešlo dalšímu zranění, neměla by oběť hýbat očima. Nedotýkejte se oka.</step>
+    <step>Pokud oko krvácí, zakryjte ho obvazem, nebo sterilní gázou.</step>
+    <image file="020"/>
+    <step>Ochlazujte oko chladicím polštářkem zmenší se otok a krvácení ustane rychleji).</step>
+    <step>Volejte záchrannou službu, nebo dovezte oběť do nemocnice sám.</step>
+  </section>
+  <section id="aid_fracture">
+    <title>Zlomenina</title>
+    <description>Příznaky: Neobvyklá poloha, nebo pohyblivost kostí. Bolest při pohybu, citlivost na dotek.</description>
+    <image file="104"/>
+    <step>Vyvarujte se s postiženým hýbat!</step>
+    <step>Volejte záchrannou službu.</step>
+    <step>Pevně znehybněte zlomenou kost např. vycpávkovým materiálem okolo kosti. Zachovejte polohu kostí.</step>
+    <image file="107"/>
+    <step>U otevřené zlomeniny zakryjte ránu sterilním materiálem.</step>
+    <image file="106"/>
+  </section>
+  <section id="aid_frostbitemild">
+    <title>Omrzliny mírné</title>
+    <description>Bledost, otékání. Nebezpečí pro krevní oběh.</description>
+    <step>Přesuňte oběť na teplé místo.</step>
+    <step>Dostaňte postiženého z chladna, svlékněte studený oděv, a osušte ho.</step>
+    <step>Zahřívejte oběť vlažnou vodou a tělesným teplem pomáhajícího.</step>
+    <step>Podávejte horké nápoje (čaj). Nepodávejte alkohol.</step>
+    <image file="040"/>
+  </section>
+  <section id="aid_frostbitesevere">
+    <title>Omrzliny vážné</title>
+    <description>Studená, ztuhlá kůže šedobílé barvy, puchýře, odumírání tkání. Nebezpečí pro krevní oběh.</description>
+    <image file="096"/>
+    <step>Jděte na teplé místo.</step>
+    <step>Ošetřete a zakryjte zranění.</step>
+    <step>Podávejte sladké nápoje.</step>
+    <step>Neprohřívejte oběť třením.</step>
+    <step>Volejte záchrannou službu.</step>
+  </section>
+  <section id="aid_heartattack">
+    <title>Srdeční infarkt</title>
+    <description>Silný, déle než 5 minut trvající tlak a bolest na hrudníku, obzvlášť vyzařující do ramena nebo paže. Úzkost, zblednutí, studený pot. Případná nevolnost, zkrácený dech.</description>
+    <image file="076"/>
+    <image file="083"/>
+    <step>Volejte záchrannou službu. Sdělte jim podezření na srdeční infarkt.</step>
+    <step>Postiženého posaďte tak, aby měl horní část těla zvednutou. Uvolněte mu těsný oděv. Nepodávejte léky ani nápoje.</step>
+    <image file="061"/>
+    <step>Na postiženou osobu mluvte uklidňujícím tónem.</step>
+    <step>Kontrolujte stav vědomí a dýchání.</step>
+    <step>Je-li dostupný, podejte aspirin.</step>
+    <step>Upadne-li postižený do bezvědomí, zahajte <link target="aid_resuscitation">resuscitaci</link>.</step>
+  </section>
+  <section id="aid_hypoglycaemia">
+    <title>Hypoglykémie (nedostatek cukru)</title>
+    <description>Hladina krevního cukru je pod minimální úrovní (v důsledku předávkování inzulinu, nebo nedostatečného přísunu potravy).</description>
+    <description>Příznaky: Bledost, nervozita, hlad, třesavka, pocení.</description>
+    <image file="018"/>
+    <step>Ujistěte se že postižený je diabetik (podívejte se po štítku diabetika).</step>
+    <step>Volejte záchrannou službu.</step>
+    <step>Podávejte sladké nápoje a dextrózu, nebo glukózu (není-li problém s polykáním).</step>
+    <image file="017"/>
+    <step>Když je postižený při vědomí a dýchá: <link target="aid_recoveryposition">Uložte ho do stabilizované polohy</link> a kontrolujte jeho dech. Dojde-li k zástavě dechu, zahajte umělé dýchání.</step>
+    <step>Pokud dýchá, můžete mu vložit do úst mezi zuby a tvář kousek cukru a přidržovat ho na místě tlakem zvenčí.</step>
+  </section>
+  <section id="aid_hyperthermia">
+    <title>Vyčerpání z přehřátí (horké tělo)</title>
+    <description>Žízeň, slabost, dezorientace, nevolnost, zmatenost, silné pocení, horká pokožka.</description>
+    <image file="035"/>
+    <step>Volejte záchrannou službu.</step>
+    <step>Vyhledejte chladné a stinné místo (přednostně klimatizovanou místnost).</step>
+    <step>Postiženého položte a nadzdvihněte mu nohy. Uvolněte mu oděv.</step>
+    <image file="078"/>
+    <step>Pokožku ochlazujte studenou vodou, nebo na ní položte mokré ručníky.</step>
+    <step>Dávejte pít velké množství vody, nebo ovocných šťáv.</step>
+  </section>
+  <section id="aid_hypothermia">
+    <title>Podchlazení (studené tělo)</title>
+    <description>Chvění chladem, ospalost, vyčerpání až ztráta vědomí. Studená, bledá kůže. Pomalý puls, slabý srdeční tep.</description>
+    <image file="014"/>
+    <step>Jděte na teplé místo/ místnost.</step>
+    <step>Volejte záchrannou službu.</step>
+    <step>Zvyšujte tělesnou teplotu postiženého zakrytím a vzájemným tělesným kontaktem oběti a zachránce.</step>
+    <step>Svlékněte postiženému mokrý oděv a oblečte mu zahřáté oblečení. Zakryjte ho pokrývkami nebo jiným materiálem. Zakryjte mu hlavu.</step>
+    <step>Dávejte pít horký čaj, polévku nebo vodu. Nepodávejte alkohol. Udržujte postiženého v bdělém stavu.</step>
+    <image file="039"/>
+    <image file="040"/>
+    <step>Do příjezdu záchranné služby kontrolujte stav oběti. Pokud ztratí vědomí, zahajte ihned resuscitaci:</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - Bezvědomí s dýcháním.</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - Bezvědomí bez dýchání.</link>
+    </step>
+  </section>
+  <section id="aid_icerescue">
+    <title>Záchrana z ledu</title>
+    <description>Věnujte pozornost vlastní bezpečnosti. Nebezpečí: Utonutí, podchlazení.</description>
+    <step>Požádejte okolní osoby o pomoc. Volejte záchrannou službu.</step>
+    <step>Zachraňujte s pomocí žebříku, prkna, nebo tyče. Váha musí být rozložena rovnoměrně.</step>
+    <step>Plazte se opatrně po břiše společně s podporou (pokud je to možné, přivažte se k pevnému bodu) s tyčí, nebo podobným nástrojem.</step>
+    <image file="041"/>
+    <step>Dosáhněte k postiženému tyčí, nebo podobným nástrojem (ne rukou) a povzbuzujte ho ať se jí chytí a táhněte ho ven.</step>
+    <step>Plazte se zpět ke břehu.</step>
+    <step>Poskytujte první pomoc.</step>
+    <step>Případná sebezáchrana: Je-li led pevný, můžete rozložit svojí váhu na led a vytáhnout se ven. Plazte se po břiše ke břehu. Pokud je led křehký, zkuste kousek po kousku lámat led až ke břehu.</step>
+  </section>
+  <section headImage="46" id="aid_insectstings">
+    <title>Pobodání hmyzem</title>
+    <description>Otok, kožní vyrážka, pocit pálení, slabost, obtížné dýchání, snížená úroveň vědomí, zrychleny srdeční puls.</description>
+    <step>Žihadlo opatrně vytáhněte (pomocí pinzety). Nevymačkávejte ho, protože byste dostali do rány více jedu.</step>
+    <step>Postižené místo ochlazujte (přiložte studený obklad).</step>
+    <step>Aby se zpomalilo šíření jedu, měla by se postižená oblast udržovat pod úrovní srdce.</step>
+    <step>Při pobodání v oblasti úst, nebo čelistí: Cucejte zmrzlinu a okolo krku ovažte studený obklad.</step>
+    <image file="046ice"/>
+    <step>Při vážných problémech, pozorovatelně obtížné dýchání, nebo snížená úroveň vědomí,volejte ihned záchrannou službu.</step>
+  </section>
+  <section id="aid_nosebleeding">
+    <title>Krvácení z nosu</title>
+    <description>Prasknutí malé tepny v nose.</description>
+    <step>Posaďte postiženého a lehce ho nahněte dopředu. Hlavu má držet zpříma.</step>
+    <step>Postiženého nepokládejte, protože při zvýšené poloze hlavy nad úrovní srdce se krvácení zpomaluje.</step>
+    <step>Na krk přiložte chladivý materiál (mokrou látku).</step>
+    <step>Stiskněte prsty nos a držte ho dokud krvácení neustane (asi 10 min.).</step>
+    <step>Potom nos nenamáhejte (nesmrkejte).</step>
+    <step>Pokud je problém vážný a krvácení nelze zastavit, volejte pohotovostního lékaře.</step>
+  </section>
+  <section headImage="52" id="aid_poisining">
+    <title>Otrava</title>
+    <description>Zmatenost, halucinace, rozšířené zornice, horečka, křeče. Bezvědomí.</description>
+    <step>Protijed podávejte pouze v případě součinnosti s vyškoleným zdravotníkem.</step>
+    <image file="056"/>
+    <step>Nepodávejte nápoje. Nevyvolávejte zvracení.</step>
+    <step>Volejte záchranou službu, sdělte jim druh jedu.</step>
+    <step>Uschovejte zbytek jedu a zvratků.</step>
+    <image file="054a"/>
+    <step>Je-li oběť při vědomí a dýchá: <link target="aid_recoveryposition">uložte jí do stabilizované polohy</link>. Do příjezdu záchranné služby kontrolujte stav oběti.</step>
+    <step>Když oběť nedýchá: <link target="aid_resuscitation">Okamžitě zahajte resuscitaci</link>. Předtím ale odstraňte z úst oběti případné zvratky.    </step>
+  </section>
+  <section id="aid_recoveryposition">
+    <title>Stabilizovaná poloha</title>
+    <step>Položte postiženého na záda a natáhněte mu nohy. Klekněte si vedle něho.</step>
+    <step>Paži která je blíže u vás natáhněte v pravém úhlu k tělu.</step>
+    <step>Vzdálenější paži natáhněte přes hrudník a horní stranu ruky položte na tvář.</step>
+    <image file="008"/>
+    <step>Uchopte vzdálenější koleno a přetáhněte ho na svou stranu a položte ho na zem. Nohu ohněte do pravého úhlu. Ruku oběti udržujte pod její tváří.</step>
+    <step>Ujistěte se, že dýchací cesty jsou volné.</step>
+    <step>Mírně otevřete ústa postiženého a otočte hlavu na stranu tak, aby mohly vytékat případné zvratky. Kontrolujte dýchání.</step>
+    <image file="009"/>
+    <step>Do příjezdu záchranné služby kontrolujte stav oběti.</step>
+    <description>Stabilizovaná poloha pro děti:</description>
+    <image file="028"/>
+  </section>
+  <section id="aid_resuscitation">
+    <title>Resuscitace</title>
+    <altTitle>Stlačování hrudníku</altTitle>
+    <altTitle>Oživování</altTitle>
+    <subsection># Srdeční masáž</subsection>
+    <step>Položte postiženého na záda. Klekněte si vedle něj.</step>
+    <step>Obnažte hrudník.</step>
+    <step>Položte dlaň ruky do středu hrudníku (přímo na hrudní kost).</step>
+    <image file="013"/>
+    <step>Na hřbet přiložené ruky položte dlaň své druhé ruky.</step>
+    <step>Natáhněte paže v loktech.</step>
+    <image file="003"/>
+    <step>Stlačte hrudník oběti o 5 cm dolů (síla vychází z horní části těla) a uvolněte tlak.</step>
+    <step>Proveďte sérii 30 rychlých a silných stlačení!</step>
+    <subsection># Umělé dýchání</subsection>
+    <step>Odstraňte jakékoliv cizí předměty z úst a krku. Zakloňte hlavu dozadu.</step>
+    <image file="067"/>
+    <step>Stiskněte nos prsty tak, aby byl uzavřen.</step>
+    <image file="010"/>
+    <step>Zhluboka se nadechněte a přiložte svá ústa na ústa oběti tak, aby vzduch neunikal.</step>
+    <image file="011"/>
+    <step>Proveďte dva vdechy z úst do úst (vdechujte pomalu a zhluboka).</step>
+    <step>Poté pokračujte v srdeční masáži.</step>
+    <description>Do příjezdu záchranné služby opakujte srdeční masáž a dýchání s úst do úst.</description>
+    <image file="012"/>
+    <subsection>Resuscitace (děti)</subsection>
+    <step>Použijte pouze dva prsty:</step>
+    <image file="029"/>
+    <step>Nevdechujte příliš silně:</step>
+    <image file="030"/>
+  </section>
+  <section id="aid_safeguardaccident">
+    <title>Zabezpečení místa nehody</title>
+    <altTitle>Dopravní nehoda</altTitle>
+    <step>Zastavte své auto 50 až 100 m za místem nehody (pokud jste na dálnici, nebo rychlostní silnici). Zapněte varovná světla. Oblékněte si výstražnou vestu.</step>
+    <step>Před místo nehody položte výstražný trojúhelník. Pozor: Je-li nehoda v místě zatáčky, dejte trojúhelník před zatáčku!</step>
+    <image file="111"/>
+    <step>Požádejte okolostojící o pomoc.</step>
+    <step>Otevřete dveře auta postiženého nehodou (jsou-li zaklíněny, použijte k jejich vypáčení zvedák automobilu). Vypněte zapalování.</step>
+    <step>Zachraňte oběti nehody: Rozepněte záchranné pasy, posuňte sedačku dozadu. Vysvoboďte oběť z auta pomocí <link target="aid_dangerzone">záchranného úchopu.</link>
+    </step>
+    <image file="001"/>
+    <step>Volejte záchrannou službu.</step>
+    <step>Pokračujte poskytováním první pomoci.</step>
+  </section>
+  <section id="aid_shock">
+    <title>Šok</title>
+    <description>Potíže krevního oběhu v důsledku nedostatečného zásobování těla kyslíkem.</description>
+    <description>Příčina: Ztráta tekutin, snížení objemu krve.</description>
+    <description>Příznaky: Bledost, studená kůže, studený pot, úzkost.</description>
+    <step>Odstraňte příčiny šoku (např. zastavte ztrátu tekutin, obvažte zranění)!</step>
+    <step>Položte zraněnou osobu na přikrývku a nadzdvihněte jí nohy. Uklidňujte jí.</step>
+    <image file="078"/>
+    <step>Volejte záchrannou službu.</step>
+    <step>Nastanou-li dýchací potíže nebo bezvědomí, zahajte <link target="aid_resuscitation">resuscitaci</link>.</step>
+  </section>
+  <section id="aid_skullfracture">
+    <title>Zlomenina lebky</title>
+    <description>Mírné krvácení z nosu, úst, nebo uší. Často otevřené poranění lebky.</description>
+    <step>Udržujte volné dýchací cesty.</step>
+    <step>Je-li při vědomí: Posaďte poraněného s hlavou ohnutou dopředu. Vyvarujte se dalších pohybů s obětí!</step>
+    <step>Je-li v bezvědomí: <link target="aid_recoveryposition">Uložte oběť do stabilizované polohy</link> (netlačte na ránu na hlavě).</step>
+    <step>Volejte záchrannou službu.</step>
+    <step>Přiložte obvaz hlavy.</step>
+    <step>Nastanou-li dýchací potíže nebo bezvědomí, zahajte <link target="aid_resuscitation">resuscitaci</link>.
+    </step>
+  </section>
+  <section headImage="51" id="aid_snakebite">
+    <title>Hadí uštknutí</title>
+    <description>Bodné poranění o průměru hřebíku, silné bolesti, otok, fialové zbarvení. Poruchy krevního oběhu, nebezpečí šoku.</description>
+    <step>Stabilizujte poraněnou část těla.</step>
+    <step>Okolo místa uštknutí přiložte chladivý materiál.</step>
+    <step>Podnikněte opatření proti šoku.</step>
+    <step>Volejte záchrannou službu.</step>
+  </section>
+  <section id="aid_sos">
+    <title>SOS</title>
+    <step>Signál: 3x krátce, 3x dlouze, 3x krátce</step>
+    <step>Opticky (blikač nebo baterka), nebo akusticky (signální píšťala, klepání).</step>
+  </section>
+  <section id="aid_sprain">
+    <title>Vymknutí a přetažení vazů</title>
+    <description>Bolest, otok (modřina), ztráta funkce kloubu, deformace končetiny.</description>
+    <step>Položte poraněnou část těla do polohy, co nejpohodlnější pro postiženého.</step>
+    <step>Ochlazujte poranění (použijte sáček s ledem).</step>
+    <step>Pokud je to možně, umístěte poraněnou část do vyvýšené polohy.</step>
+    <step>Jděte do nemocnice, nebo zavolejte pohotovostního lékaře.</step>
+  </section>
+  <section id="aid_stroke">
+    <title>Mozková mrtvice</title>
+    <description>Náhlý pocit ochrnutí nebo znecitlivění (tváře, paže, noha), poruchy srozumitelnosti mluvy, potíže s viděním, střídání vědomí s bezvědomím, silná bolest hlavy. Problém s dýcháním a polykáním. Ztráta kontroly nad močovým měchýřem a střevy.</description>
+    <image file="059"/>
+    <step>Volejte záchrannou službu!</step>
+    <step>Uvolněte těsný oděv, nepodávejte léky, nebo nápoje.</step>
+    <step>Postiženého pohodlně položte. Uklidňujte ho.</step>
+    <step>Kontrolujte stav vědomí a dýchání.</step>
+    <step>Při potížích s dýcháním nebo vědomím zahajte ihned <link target="aid_resuscitation">resuscitaci</link>.</step>
+  </section>
+  <section id="aid_suffocation">
+    <title>Udušení (Dušení)</title>
+    <altTitle>Spolknutí předmětu/ Dušení</altTitle>
+    <description>Nedostatečné zásobování kyslíkem. Uzavřená průdušnice. Nebezpečí: Zástava dechu.</description>
+    <description>Příznaky: Sípavé zvuky dýchání, stimulace kašle, zkrácený dech, změna barvy kůže.</description>
+    <image file="066"/>
+    <step>Okamžitě jednejte! Nechejte postiženého silně kašlat.</step>
+    <step>Udeřte silně dlaní ruky mezi lopatky (dítě položte na předloktí hlavou dolů).</step>
+    <image file="068"/>
+    <image file="031"/>
+    <step>Není-li úspěch: Postavte se za osobu, ruce dejte okolo pasu a lehce jí nakloňte dopředu.</step>
+    <step>Sevřete pěst, položte jí do výše břicha oběti a uchopte jí druhou rukou.</step>
+    <image file="069"/>
+    <step>Při sevření použijte obě ruce k provedení prudkého stlačení břicha směrem dovnitř a nahoru (jako kdybyste chtěli osobu zvednout).</step>
+    <step>Opakujte to 5 krát! Dýchací cesty by se měly uvolnit od cizího předmětu.</step>
+    <step>Volejte záchrannou službu.</step>
+    <step>Pokud tato metoda nemá napoprvé úspěch, provádějte jí až do příjezdu záchranné služby.</step>
+  </section>
+  <section id="aid_sunburn">
+    <title>Spáleniny od slunce</title>
+    <step>Dostaňte postiženého z přímého slunečního svitu. Vyvarujte se dalšího pobytu na slunci.</step>
+    <step>Pijte hodně vody aby se zastavila dehydratace.</step>
+    <step>Má-li postižený vážné spáleniny (puchýře, zčervenání pokožky, bolest) vyhledejte lékařskou pomoc.</step>
+    <step>Je-li kůže jen lehce červená, může být ochlazována mokrým obkladem.. Použijte mléko, nebo gel používaný po opalování.</step>
+  </section>
+  <section id="aid_sunstroke">
+    <title>Tepelný úpal</title>
+    <description>Horký, červený obličej, studená kůže, nevolnost, bolest hlavy, závratě. Podráždění mozkových plen.</description>
+    <image file="035"/>
+    <step>Jděte na chladné místo (do stínu) a zvedněte horní polovinu těla postiženého nahoru.</step>
+    <image file="061"/>
+    <step>Ochlazujte hlavu mokrými pokrývkami.</step>
+    <step>Volejte záchrannou službu. Provádějte kontrolu dýchání.</step>
+    <step>Je-li postižený při vědomi: Pokud to je možné, podávejte studené nápoje.</step>
+    <step>Nastane-li zástava dechu, zahajte umělé dýchání.</step>
+    <step>
+      <link target="aid_apnoea">Provádějte umělé dýchání.</link>
+    </step>
+    <image file="036"/>
+  </section>
+  <section id="aid_unconsciouswithbreath">
+    <title>Bezvědomí s dýcháním</title>
+    <description>Není odezva na hlasité oslovení nebo zatřesení s postiženým. Postižený dýchá.</description>
+    <image file="057"/>
+    <step>Jsou-li poblíž lidé požádejte je o pomoc.</step>
+    <step>
+      <link target="aid_recoveryposition">Uložte postiženého do stabilizované polohy</link>. Otevřete mu ústa a hlavu dejte do takové polohy, aby mohly odtékat zvratky.</step>
+    <image file="008"/>
+    <image file="009"/>
+    <step>Volejte záchrannou službu.</step>
+  </section>
+  <section id="aid_unconsciouswithoutbreath">
+    <title>Bezvědomí bez dýchání</title>
+    <step>Postižený nereaguje na podněty, nedýchá.</step>
+    <image file="057"/>
+    <step>
+      <link target="aid_resuscitation">Zahajte resuscitaci.</link>
+    </step>
+  </section>
+  <section id="aid_vomiting">
+    <title>Zvracení</title>
+    <description>Nastává z nevolnosti. Samovolné vyprazdňování žaludku. Příčiny: infekce, otravy, žaludeční vřed, léky, zkažené jídlo.</description>
+    <image file="054"/>
+    <step>Nebezpečí pro krevní oběh z důvodu dehydratace a ztráty solí.</step>
+    <step>Podávejte tekutiny (čaj, vodu).</step>
+    <step>Pokud jsou vážné potíže, krvavé nebo neustávající zvracení, volejte záchrannou službu.</step>
+  </section>
+</firstaide>
