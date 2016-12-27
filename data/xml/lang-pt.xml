@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<firstaide>
+  <strings>
+    <string key="title">Primeiros Socorros</string>
+    <string key="back">Voltar</string>
+    <string key="disclaimerMenuTitle"># Aviso Legal</string>
+    <string key="disclaimerTitle">Aviso Legal</string>
+    <string key="softwareHeader">Software </string>
+    <string key="softwareName">Primeiros Socorros no seu celular</string>
+    <string key="softwareCopyright">Copyright: Kai Kajus Noack</string>
+    <string key="translatorCopyright">Tradutor: Lucas Daniel Souza de Medeiros</string>
+    <string key="softwareLicense">Licença: Creative Commons</string>
+    <string key="softwareNotice">Este programa tem o propósito de dar informações sobre primeiros socorros. No entanto, elas não substituem nenhum curso. É algo que serve para atualizar o conhecimento já adquirido.</string>
+    <string key="softwareIllustrations">Figuras</string>
+    <string key="disclaimerHeader">Disclaimer </string>
+    <string key="disclaimerNotice1">Por favor note que eu não me responsabilizo pelas consequências resultantes da utilização do software.</string>
+    <string key="disclaimerNotice2">Qualquer responsabilidade é excluída!</string>
+    <string key="disclaimerNotice3">Utilização por sua conta e risco!</string>
+    <string key="disclaimerNotice4">Em todas as situações de emergência, por favor procurar ajuda profissional imediatamente.</string>
+    <string key="developmentHeader">Projeto de Desenvolvimento </string>
+    <string key="developmentText">O programa pretende tornar-se multilingue. Tradutores Voluntários são bem vindos!</string>
+    <string key="developmentMoreInfo1">Mais informações estão disponíveis na Internet</string>
+    <string key="developmentMoreInfo2">ou escreva um e-mail para:</string>
+    <string key="slogan">Salvar uma vida, é ter salvado o mundo.</string>
+    <string key="emergencyNumbersMenuTitle"># Chamadas de emergência</string>
+    <string key="dial112">Ligue para emergência 112</string>
+    <string key="emergency_fire">Bombeiros</string>
+    <string key="emergency_medical">Médico</string>
+    <string key="emergency_police">Polícia</string>
+    <string key="emergency_cancelcard"/>
+    <string key="emergency_local">local números</string>
+    <string key="emergency_nosystem">não obrigatórias</string>
+    <string key="emergency_radioonly">apenas telefones de rádio</string>
+    <string key="emergency_none">--</string>
+    <string key="emergency_or">or</string>
+    <string key="emergency_mobile">móvel</string>
+    <string key="emergency_tourist">turistas</string>
+    <!-- Continents -->
+    <string key="continent">Continente</string>
+    <string key="continent_Africa">África</string>
+    <string key="continent_Asia">Ásia</string>
+    <string key="continent_Europe">Europa</string>
+    <string key="continent_Northamerica">América do Norte/Central</string>
+    <string key="continent_Oceania">Oceania</string>
+    <string key="continent_Southamerica">América do Sul</string>
+    <!-- Countries -->
+    <string key="country_afghanistan">Afeganistão</string>
+    <string key="country_albania">Albânia</string>
+    <string key="country_algeria">Argélia</string>
+    <string key="country_andorra">Andorra</string>
+    <string key="country_angola">Angola</string>
+    <string key="country_antiguaandbarbuda">Antígua e Barbuda</string>
+    <string key="country_argentina">Argentina</string>
+    <string key="country_armenia">Armênia</string>
+    <string key="country_australia">Austrália</string>
+    <string key="country_austria">Áustria</string>
+    <string key="country_azerbaijan">Azerbaijão</string>
+    <string key="country_bahamas">Bahamas</string>
+    <string key="country_bahrain">Barém</string>
+    <string key="country_bangladesh">Bangladesh</string>
+    <string key="country_barbados">Barbados</string>
+    <string key="country_belarus">Bielorrússia</string>
+    <string key="country_belgium">Bélgica</string>
+    <string key="country_belize">Belize</string>
+    <string key="country_benin">Benin</string>
+    <string key="country_bhutan">Butão</string>
+    <string key="country_bolivia">Bolívia</string>
+    <string key="country_bosniaandherzegovina">A Bósnia e Herzegovina</string>
+    <string key="country_botswana">Botsuana</string>
+    <string key="country_brazil">Brasil</string>
+    <string key="country_brunei">Brunei</string>
+    <string key="country_bulgaria">Bulgária</string>
+    <string key="country_burkinafaso">Burkina Faso</string>
+    <string key="country_burundi">Burundi</string>
+    <string key="country_cambodia">Camboja</string>
+    <string key="country_cameroon">Camarões</string>
+    <string key="country_canada">Canadá</string>
+    <string key="country_capeverde">Cabo Verde</string>
+    <string key="country_caymanislands">Ilhas Cayman</string>
+    <string key="country_centralafricanrepublic">Central Africano República</string>
+    <string key="country_chad">Chade</string>
+    <string key="country_chile">Chile</string>
+    <string key="country_china">China</string>
+    <string key="country_colombia">Colômbia</string>
+    <string key="country_comoros">Comoros</string>
+    <string key="country_congodemocraticrepublic">Congo (República Democrática)</string>
+    <string key="country_congorepublic">Congo (República)</string>
+    <string key="country_costarica">Costa Rica</string>
+    <string key="country_croatia">A Croácia</string>
+    <string key="country_cuba">Cuba</string>
+    <string key="country_cyprus">Chipre</string>
+    <string key="country_czechrepublic">República Checa</string>
+    <string key="country_denmark">Dinamarca</string>
+    <string key="country_djibouti">Djibuti</string>
+    <string key="country_dominica">Dominica</string>
+    <string key="country_dominicanrepublic">República Dominicana</string>
+    <string key="country_easttimor">Timor Leste</string>
+    <string key="country_ecuador">Equador</string>
+    <string key="country_egypt">Egito</string>
+    <string key="country_elsalvador">El Salvador</string>
+    <string key="country_equatorialguinea">Guiné Equatorial</string>
+    <string key="country_eritrea">Eritréia</string>
+    <string key="country_estonia">Estónia</string>
+    <string key="country_ethiopia">Etiópia</string>
+    <string key="country_fiji">Fiji</string>
+    <string key="country_finland">Finlândia</string>
+    <string key="country_france">França</string>
+    <string key="country_gabon">Gabão</string>
+    <string key="country_gambia">Gâmbia</string>
+    <string key="country_georgia">Geórgia</string>
+    <string key="country_germany">Alemanha</string>
+    <string key="country_ghana">Gana</string>
+    <string key="country_greece">Grécia</string>
+    <string key="country_greenland">Gronelândia</string>
+    <string key="country_grenada">Granada</string>
+    <string key="country_guatemala">Guatemala</string>
+    <string key="country_guinea">Guiné</string>
+    <string key="country_guinea-bissau">Guiné-Bissau</string>
+    <string key="country_guyana">Guiana</string>
+    <string key="country_haiti">Haiti</string>
+    <string key="country_honduras">Honduras</string>
+    <string key="country_hongkong">Hong Kong</string>
+    <string key="country_hungary">Hungria</string>
+    <string key="country_iceland">Islândia</string>
+    <string key="country_india">Índia</string>
+    <string key="country_indonesia">Indonésia</string>
+    <string key="country_iran">Irão</string>
+    <string key="country_iraq">Iraque</string>
+    <string key="country_ireland">Irlanda</string>
+    <string key="country_israel">Israel</string>
+    <string key="country_italy">Itália</string>
+    <string key="country_ivorycoast">Costa do Marfim</string>
+    <string key="country_jamaica">Jamaica</string>
+    <string key="country_japan">Japão</string>
+    <string key="country_jordan">Jordânia</string>
+    <string key="country_kazakhstan">Cazaquistão</string>
+    <string key="country_kenya">Quênia</string>
+    <string key="country_kiribati">Kiribati</string>
+    <string key="country_kosovo">Kosovo</string>
+    <string key="country_kurdistan">Curdistão</string>
+    <string key="country_kuwait">Kuwait</string>
+    <string key="country_kyrgyzstan">Quirguistão</string>
+    <string key="country_laos">Laos</string>
+    <string key="country_latvia">Letónia</string>
+    <string key="country_lebanon">Líbano</string>
+    <string key="country_lesotho">Lesoto</string>
+    <string key="country_liberia">Libéria</string>
+    <string key="country_libya">Líbia</string>
+    <string key="country_liechtenstein">Liechtenstein</string>
+    <string key="country_lithuania">Lituânia</string>
+    <string key="country_luxembourg">Luxemburgo</string>
+    <string key="country_macau">Macau</string>
+    <string key="country_macedonia">Macedónia</string>
+    <string key="country_madagascar">Madagascar</string>
+    <string key="country_malawi">Malauí</string>
+    <string key="country_malaysia">Malásia</string>
+    <string key="country_maldives">Maldivas</string>
+    <string key="country_mali">Mali</string>
+    <string key="country_malta">Malta</string>
+    <string key="country_marshallislands">Ilhas Marshall</string>
+    <string key="country_mauritania">Mauritânia</string>
+    <string key="country_mauritius">Maurício</string>
+    <string key="country_mayotte">Mayotte</string>
+    <string key="country_mexico">México</string>
+    <string key="country_micronesia">Micronésia</string>
+    <string key="country_moldova">Moldávia</string>
+    <string key="country_monaco">Mônaco</string>
+    <string key="country_mongolia">Mongólia</string>
+    <string key="country_montenegro">Montenegro</string>
+    <string key="country_morocco">Marrocos</string>
+    <string key="country_mozambique">Moçambique</string>
+    <string key="country_myanmar">Myanmar</string>
+    <string key="country_namibia">Namíbia</string>
+    <string key="country_nauru">Nauru</string>
+    <string key="country_nepal">Nepal</string>
+    <string key="country_netherlands">Holanda</string>
+    <string key="country_newzealand">Nova Zelândia</string>
+    <string key="country_nicaragua">Nicarágua</string>
+    <string key="country_niger">Níger</string>
+    <string key="country_nigeria">Nigéria</string>
+    <string key="country_northkorea">Coréia do Norte</string>
+    <string key="country_norway">Noruega</string>
+    <string key="country_oman">Omã</string>
+    <string key="country_pakistan">Paquistão</string>
+    <string key="country_palau">Palau</string>
+    <string key="country_panama">Panamá</string>
+    <string key="country_papuanewguinea">Papua Nova Guiné</string>
+    <string key="country_paraguay">Paraguai</string>
+    <string key="country_peru">Peru</string>
+    <string key="country_philippines">Filipinas</string>
+    <string key="country_poland">Polônia</string>
+    <string key="country_portugal">Portugal</string>
+    <string key="country_qatar">Catar</string>
+    <string key="country_reunion">Reunião</string>
+    <string key="country_romania">Romênia</string>
+    <string key="country_russia">Rússia</string>
+    <string key="country_rwanda">Ruanda</string>
+    <string key="country_sahrawiarabdemocraticrepublic">República Árabe Saaraui Democrática</string>
+    <string key="country_saintpierreandmiquelon">São Cristóvão e Nevis</string>
+    <string key="country_samoa">Samoa</string>
+    <string key="country_sanmarino">San Marino</string>
+    <string key="country_saotomeandprincipe">São Tomé e Príncipe</string>
+    <string key="country_saudiarabia">Arábia Saudita</string>
+    <string key="country_senegal">Senegal</string>
+    <string key="country_serbia">Sérvia</string>
+    <string key="country_seychelles">Seychelles</string>
+    <string key="country_sierraleone">Serra Leoa</string>
+    <string key="country_singapore">Cingapura</string>
+    <string key="country_slovakia">Eslováquia</string>
+    <string key="country_slovenia">Eslovénia</string>
+    <string key="country_solomonislands">Ilhas Salomão</string>
+    <string key="country_somalia">Somália</string>
+    <string key="country_southafrica">África do Sul</string>
+    <string key="country_southkorea">Coréia do Sul (República da Coreia)</string>
+    <string key="country_spain">Espanha</string>
+    <string key="country_srilanka">O Sri Lanka</string>
+    <string key="country_stkittsandnevis">Santa Lúcia</string>
+    <string key="country_stlucia">Saint Pierre e Miquelon</string>
+    <string key="country_stvincentandgrenadines">São Vicente e Granadinas</string>
+    <string key="country_sudan">Sudão</string>
+    <string key="country_suriname">Suriname</string>
+    <string key="country_swaziland">Suazilândia</string>
+    <string key="country_sweden">Suécia</string>
+    <string key="country_switzerland">Suíça</string>
+    <string key="country_syria">Síria</string>
+    <string key="country_taiwan">Taiwan</string>
+    <string key="country_tajikistan">Tajiquistão</string>
+    <string key="country_tanzania">Tanzânia</string>
+    <string key="country_thailand">Tailândia</string>
+    <string key="country_togo">Togo</string>
+    <string key="country_tonga">Tonga</string>
+    <string key="country_trinidadandtobago">Trinidad e Tobago</string>
+    <string key="country_tunisia">Tunísia</string>
+    <string key="country_turkey">Turquia</string>
+    <string key="country_turkmenistan">Turquemenistão</string>
+    <string key="country_tuvalu">Tuvalu</string>
+    <string key="country_uganda">Uganda</string>
+    <string key="country_ukraine">Ucrânia</string>
+    <string key="country_unitedarabemirates">Emirados Árabes Unidos</string>
+    <string key="country_unitedkingdom">Reino Unido</string>
+    <string key="country_unitedstatesofamerica">Estados Unidos da América</string>
+    <string key="country_uruguay">Uruguai</string>
+    <string key="country_uzbekistan">Uzbequistão</string>
+    <string key="country_vanuatu">Vanuatu</string>
+    <string key="country_vaticancity">Cidade do Vaticano</string>
+    <string key="country_venezuela">Venezuela</string>
+    <string key="country_vietnam">Vietnã</string>
+    <string key="country_yemen">Iêmen</string>
+    <string key="country_zambia">Zâmbia</string>
+    <string key="country_zimbabwe">Zimbabué</string>
+    <!-- iPhone only -->
+    <string key="audioPrefix"/>
+    <string key="iPhoneTitle">Primeiros Socorros 1.0 iPhone</string>
+    <string key="iPhoneTitleOffline">Primeiros Socorros 1.0 iPhone</string>
+    <string key="iPhoneDescription">iPhone Version Primeiros Socorros no seu celular</string>
+    <string key="iPhoneDescriptionOffline">iPhone Version Primeiros Socorros no seu celular</string>
+    <string key="WinMobTitle">Primeiros Socorros 〈Windows Mobile〉 1.0</string>
+    <string key="WinMobDescription">〈Version for First Aid on your Mobile - Internet Explorer Mobile - including all images〉</string>
+    <string key="softwareVersion">Versão</string>
+    <string key="WinMobVersionNumber">w3.0</string>
+    <string key="iPhoneVersionNumber">i3.0</string>
+    <string key="softwareRelease">Release</string>
+    <string key="WinMobReleaseDate">2009-09-20</string>
+    <string key="iPhoneReleaseDate">2009-09-20</string>
+    <string key="iPhoneBackButton">Voltar</string>
+    <string key="iPhoneMenuButton">Menu</string>
+    <string key="languageChooser">Escolha seu idioma</string>
+    <string key="iPhoneOfflineFilename">firstaidPToffline.html</string>
+    <string key="offlineBookmark">Favoritos Offline - Versão</string>
+    <string key="donateProject">Doações para o Projeto</string>
+    <string key="mailToDeveloper">E-mails para desenvolvedores</string>
+    <string key="checkNewVersion">Verifique se há novas versões</string>
+    <string key="donate">Doação</string>
+    <string key="whyDonate">Porque doar?</string>
+    <string key="donate1">Você acha que o projeto é uma boa idéia? Então por favor doe! Porque o projeto sobrevive apenas por você e eu.</string>
+    <string key="donateOnlineVia">Doar on-line via</string>
+    <string key="paypalID">5315644</string>
+    <string key="orWireTransfer"> para: donation @ firstai.de ou você pode enviar uma doação pelo correio.</string>
+    <string key="everyContributionCounts">Cada única contribuição conta!</string>
+    <string key="smallStep">(Um pequeno passo para um homem, um salto gigante para a humanidade.)</string>
+    <string key="license">Licença</string>
+    <string key="licenseTerms">Vocês são livres para copiar, distribuir e transmitir a trabalhar sob as seguintes condições:</string>
+    <string key="licenseAttribution">Atribuição</string>
+    <string key="licenseAttribution1">Você deve dar crédito ao trabalho de mencionar o nome do licenciante</string>
+    <string key="licenseAttribution2">ou ligando para o site</string>
+    <string key="licenseAttribution3">(mas não de qualquer forma que sugira que eles endossa você ou o uso do trabalho).</string>
+    <string key="licenseNoCommercial">Não-Comercial</string>
+    <string key="licenseNoCommercial1">Você não pode utilizar esta obra para fins comerciais.</string>
+    <string key="licenseNoDeriv">Não a Obras Derivadas</string>
+    <string key="licenseNoDeriv1">Você não pode alterar, transformar ou criar em cima deste trabalho.</string>
+    <string key="licenseDistribution1">Para cada reutilização ou distribuição, deverá deixar claro para outros os termos da licença desta obra. A melhor maneira de fazer isso é com um link para</string>
+    <string key="licenseSuffix"/>
+    <string key="licenseDistribution2"/>
+    <string key="licenseWaived">Qualquer das condições acima pode ser aplicada se você receber permissão do detentor dos direitos autorais.</string>
+    <string key="licenseMoralRights">Nada nesta licença prejudica ou restringe os direitos morais do autor.</string>
+  </strings>
+  <section id="aid_general">
+    <title>Conduta Geral</title>
+    <step>Realizar sempre os primeiros socorros. Você não pode cometer erros.</step>
+    <step>Prestar sempre atenção à sua própria segurança.</step>
+    <step>Analisar a situação e garantir segurança no lugar do acidente.</step>
+    <step>Chamada de emergência + Primeiros Socorros!</step>
+    <step>Se existirem várias vítimas, o tratamento dos mais prejudicados tem prioridade.</step>
+    <step>Tente acalmar a vítima. Fique calmo você também!</step>
+    <step>Se possível deitá-lo(a) confortavelmente. Nunca dê álcool, nicotina ou drogas para uma pessoa.</step>
+  </section>
+  <section headImage="46" id="aid_allergic">
+    <title>Reação alérgica</title>
+    <step>Telefone para uma ambulância imediatamente.</step>
+    <step>Tente acalmar a vítima e deixá-lo sentar-se confortavelmente.</step>
+    <step>Remover a causa da alergia (por exemplo um férrão de abelha) cuidadosamente.</step>
+    <step>Esfrie a pele afetada (compressa úmida, gelo).</step>
+    <image file="046ice"/>
+    <step>Se tiver um antídoto, ele deve usá-lo (ajude-o).</step>
+    <step>Monitore a condição da vítima até a ambulância chegar.</step>
+    <step>Se o acidentado perder a consciência ou a respiração parar, siga instruções apropriadas!</step>
+    <image file="077"/>
+  </section>
+  <section id="aid_amputation">
+    <title>Amputação</title>
+    <description>A parte do corpo amputada pode ser recolocada. Objetivo: Manter a parte amputada arrefecida até chegar ao hospital.</description>
+    <step>Acalmar a pessoa, deitá-lo(a) para baixo, e cobrir com cobertor.</step>
+    <step>Parar o sangramento, consulte 'Hemorragia (grave)' e 'Choque'.</step>
+    <step>Embrulhe a parte amputada em um pano limpo e seco, e colocá-la em um saco plástico impermeável.</step>
+    <step>Fechar este saco plástico e colocá-lo em outro saco plástico, que contenha água fria/gelo.</step>
+    <step>Não dê álcool, cigarros ou alimentos à vítima (no caso de uma cirurgia com anestesia no hospital).</step>
+    <step>Não congele a parte amputada, (apenas mantenha fria).</step>
+    <step>Ligue para emergência ou por ultimo leve-a ao hospital sozinho.</step>
+  </section>
+  <section headImage="47" id="aid_animalbite">
+    <title>Mordida de Animal</title>
+    <description>Atenção: alto risco de infecção. Resultado poderia dar infecção, tétano, ou raiva.</description>
+    <step>Lavar ferida com água quente sabão.</step>
+    <image file="049"/>
+    <step>Depois desinfecte a ferida.</step>
+    <step>Se houver hemorragia grave, elevar a parte superior do corpo da pessoa.</step>
+    <step>Aplicar um curativo asséptico.</step>
+    <image file="085"/>
+    <step>Vá a um hospital ou ligue para emergência.</step>
+  </section>
+  <section id="aid_apnoea">
+    <title>Apnéia</title>
+    <altTitle>Respiração</altTitle>
+    <description>Sem sons ou movimentos respiratórios, perceptível descoloração da pele.</description>
+    <step>Chamada de emergência.</step>
+    <step>Deite o acidentado de costas.</step>
+    <step>Estique a cabeça pra trás. Remover objetos da boca e da garganta.</step>
+    <image file="067"/>
+    <step>Puxe o nariz e verifique se está fechado.</step>
+    <image file="010"/>
+    <step>Respire fundo e encaixe a boca na boca do acidentado, de forma que não possa vazar ar.</step>
+    <image file="011"/>
+    <step>Respire fora devagar e completamente.</step>
+    <step>Senão tiver sucesso: Faça respiração até a ambulância chegar.</step>
+  </section>
+  <section id="aid_asthma">
+    <title>Asma</title>
+    <altTitle>Dispnéia</altTitle>
+    <description>Grande dificuldade em respirar. Chiado ruído respiratório. Ansiedades.</description>
+    <step>Acalme à pessoa. Fique calmo você também!</step>
+    <step>Afrouxar roupas.</step>
+    <step>Deixe o acidentado sentar inclinado para frente, mande-o respirar devagar e profundamente.</step>
+    <step>Se ocasionalmente tiver um inalador, ele deve usá-lo (ajude-o). 5-10 min após a utilização deverá fazer efeito.</step>
+    <image file="074"/>
+    <step>Caso não haja melhora: Use o inalador a cada 5 min até ambulância chegar.</step>
+    <step>Chamada de emergência.</step>
+    <step>Se houver <link target="aid_apnoea">apnéia</link>, comece com a respiração.</step>
+  </section>
+  <section id="aid_backinjury">
+    <title>Lesões nas Costas</title>
+    <altTitle>Fratura Espinhal</altTitle>
+    <description>Dor nas costas, braços e pernas dormentes.</description>
+    <step>Não mova o acidentado!!</step>
+    <image file="064"/>
+    <step>Segure a cabeça do jeito que estiver, mantendo a pessoa estável (manter a sua cabeça parado)</step>
+    <image file="065"/>
+    <step>Estabilizar o acidentado com travesseiros na lateral.</step>
+    <step>Acalme à vitima.</step>
+    <step>Ligue para emergência, lembre-se de salientar o tipo de lesão.</step>
+  </section>
+  <section id="aid_birth">
+    <title>Nascimento</title>
+    <description>Saída de líquido amniótico. Contração, ocorrerá dores. Nascimento inesperado.</description>
+    <image file="025"/>
+    <step>Preste atenção à privacidade e mantenha a calma! - Ligue para a emergência.</step>
+    <step>Deixar a mulher grávida nua apenas parte inferior do seu corpo, e sente-se em local estéril sobre um calço com as pernas dobradas.</step>
+    <step>Dobre os joelhos. Suba as pernas. Posição da bacia ligeiramente ascendente. - O parto é um processo natural e ocorrerá sem complicações.</step>
+    <step>Mantenha a mulher calma, deixe-a concentrar-se na propria respiração: inspire através do nariz, e expire da boca para fora (em velocidade normal).</step>
+    <step>Ritmo de pressionamento: Respire fundo, mantenha respiração, e pressione. Logo que a cabeça do bebê aparecer, apoie-o, segurando-o com ambas as mãos.</step>
+    <image file="021"/>
+    <image file="022"/>
+    <step>Após o parto: Segure o bebê cuidadosamente com cabeça para baixo para liberar as vias aéreas e saida de líquido amniótico. (Talvez você tenha que sugar para fora o fluido a partir da boca do bebê pelo nariz.) O bebê deve respirar e chorar!</step>
+    <step>Amarrar o cordão umbilical 30 centímetros de distância da criança (também pode ser feito no hospital). Mantenha a vagina da mãe estéril.</step>
+    <image file="023"/>
+    <step>Seque o bebê e o mantenha aquecido. Anote a hora e leve-a para o hospital.</step>
+  </section>
+  <section headImage="82" id="aid_bleedinglight">
+    <title>Sangramento leve</title>
+    <description>Objetivo: Parar o sangramento.</description>
+    <step>Não toque na ferida (risco de infecção).</step>
+    <step>Não se trata ferida com pó ou sprays.</step>
+    <step>Rratamento da ferida: utilize material estéril e uma bandagem.</step>
+    <image file="098"/>
+    <step>Para pequenas hemorragias é freqüentemente suficiente um tamponamento.</step>
+    <step>Se for uma grande hemorragia usar uma atadura e cobrir com uma bandagem. Não se aplica à bandagem apertado como uma imobilização, pode levar ao aumento das hemorragias.</step>
+    <image file="084"/>
+    <image file="085"/>
+    <step>Nota: Ferimentos de raiva têm que ser lavadas com solução de sabão.</step>
+    <image file="049"/>
+  </section>
+  <section id="aid_bleedingsevere">
+    <title>Sangramento grave</title>
+    <description>Salpicos, sangue pulsante. Perigo: Pode engasgar por causa da perda de sangue, infecções, a morte. Objetivo: Parar o sangramento.</description>
+    <step>Remover roupas (cortar se necessário) e amostrar ferida.</step>
+    <step>Enrole uma gaze ou se necessário, uma peça com a pressão em torno da ferida.</step>
+    <image file="086"/>
+    <step>Exercer pressão por pelo menos 10 min.</step>
+    <step>Se for as bandagens ficarem encharcadas com sangue, não remova-as. Em vez disso, enrole outra bandagem / vestuário em torno do ferimento.</step>
+    <step>Conservar o membro afetado (caso não esteja quebrado) mais elevado do que o coração para reduzir a quantidade de pressão arterial. Se possível deitar à viima.</step>
+    <step>Se não parar de sangrar, manter a pressão sobre a ferida, e defina mais um ponto de pressão na ferida: Para uma hemorragia do antebraço comprima o braço (Pressione na face interna da veia do braço, no meio do cotovelo e na dobra do braço, utilizando seus dedos). Sangramento na perna deve-se fazer pressão de ponto no inguinal (pressione na veia da virilha trafulha, artéria onde leva mais de osso ilíaco, utilizando a sua palma da mão).</step>
+    <image file="089"/>
+    <image file="092"/>
+    <step>Ligue para emergência médico imediatamente.</step>
+    <step>Assim que o sangramento estiver sob controle: Iniciar medidas anti-asfixiante.</step>
+    <image file="093"/>
+  </section>
+  <section id="aid_brainconcussion">
+    <title>Concussão no cerébro</title>
+    <description>Dores de cabeça, náuseas, vômitos. Visão deficiente. Inconsciência pode ocorrer.</description>
+    <image file="035a"/>
+    <step>Olhar desinteressado ou vago (ao infinito).</step>
+    <step>Chame a emergência.</step>
+    <description>Se sangrar a cabeça:</description>
+    <step>Posicione a vítima, em uma posição de cabeça elevada (no travesseiro).</step>
+    <image file="061"/>
+    <step>Faça tratamento de ferida (utilize bandagem estéril).</step>
+    <step>Ligue para emergência.</step>
+  </section>
+  <section id="aid_burningslight">
+    <title>Queimaduras Ligeiras</title>
+    <description>Vermelhidão da pele. Leve inchaço. Dor.</description>
+    <step>Mantenha a área queimada sob água fria.</step>
+    <image file="100"/>
+    <step>Aplicar curativo molhado folgadamente.</step>
+  </section>
+  <section id="aid_burningsevere">
+    <title>Queimaduras Graves</title>
+    <description>Manchas de vermelho-branco e areas com formação de bolhas. A pele perde fluido. Danos profundos de tecido. Forte dor ou sem dor (por causa dos nervos queimados).</description>
+    <image file="097"/>
+    <step>Remover as roupas tanto quanto possível.</step>
+    <step>Refrigere as partes do corpo queimado com água (cerca de 15 ° C, 59 ° F) por até 10 minutos, até a dor diminuir.</step>
+    <image file="100"/>
+    <step>Em casos em que a queimadura for extensa, utilize toalhas molhadas para esfriar.</step>
+    <step>Ligue para emergência.</step>
+    <step>Após o resfriamento da ferida: Use um curativo estéril. Não aplique qualquer fluido (sem cremes, óleos, pomadas, etc.) Não furar as bolhas.</step>
+    <image file="085"/>
+    <step>Controle a respiração e consciência da pessoa até a chegada da emergência.</step>
+  </section>
+  <section id="aid_checkbreathing">
+    <title>Checar Respiração</title>
+    <step>Verifique sons respiratórios.</step>
+    <step>Diagnosticar a respiração na parte superior do abdómen (leigos a sua mão sobre ela).</step>
+    <image file="027"/>
+    <step>No sentido respiração boca e nariz.</step>
+  </section>
+  <section id="aid_chemicalburneyes">
+    <title>Queimadura Quimica (Olhos)</title>
+    <step>Ligue para emergência, leve a embalagem do produto químico, 'pois o mesmo tem telefone especifico para casos de acidentes.'</step>
+    <step>Lave os olhos com muita água. Cubra algum olho saudável durante a lavagem.</step>
+    <step>Conduzir o jato de água do ângulo interior do olho ao ângulo exterior do olho. Limpe durante pelo menos 20 minutos sob água.</step>
+    <image file="019"/>
+    <step>Fechar os dois olhos da vitima e cobri-lo com pano úmido.</step>
+    <image file="020"/>
+    <step>Monitore as condições até a ambulância chegar.</step>
+  </section>
+  <section id="aid_chemicalburn">
+    <title>Queimadura Quimica</title>
+    <description>Lesões de tecido.</description>
+    <image file="095"/>
+    <step>Mente auto-defesa!</step>
+    <step>Agir rapidamente e lavar os locais queimados.</step>
+    <image file="100"/>
+    <step>Ligar para emergência.</step>
+    <step>Se há uma queimadura química no sistema digestivo uma das maneiras é beber muita água.</step>
+    <step>Não provocar vômitos!</step>
+  </section>
+  <section id="aid_dangerzone">
+    <title>Zona de Perigo (Resgate)</title>
+    <step>Realização: Posicione os braços da vitima na frente de seu peito, e ficar por trás dele / dela.</step>
+    <step>Coloque as mãos sob os ombros dos feridos, agarrando o braço de forma angular.</step>
+    <step>Puxar para trás e levar a pessoa em segurança.</step>
+    <image file="001"/>
+    <image file="007"/>
+  </section>
+  <section id="aid_diabeticcoma">
+    <title>Coma diabético</title>
+    <altTitle>A hiperglicemia (açúcar)</altTitle>
+    <description>Nível de açúcar no sangue for demasiado elevado (falta de insulina).</description>
+    <description>Sintomas: Sede, freqüência urinária, náuseas, vômitos. Respiração com cheiro de frutas / vinho.</description>
+    <step>Ligue para emergência.</step>
+    <step>Ajude a vitima (se for assegurada diabéticos) a tomar insulina.</step>
+    <image file="016"/>
+    <step>
+      <link target="aid_recoveryposition">Posição de recuperação.</link> (Não existem posições para os primeiros socorros.)</step>
+    <step>Monitorar a condição da vitima até que chegue médico de emergência.</step>
+  </section>
+  <section id="aid_diarrhoea">
+    <title>Diarreia</title>
+    <description>Reação para alimentos contaminados, a infecção do intestino ou distúrbio. Fezes é diluído, viscosas ou sanguinolenta.</description>
+    <step>Perigo para a circulação devido à desidratação e perda de sal!</step>
+    <step>Dê líquidos (chá, água).</step>
+    <step>Se houver fortes perturbações levar ao médico de emergência.</step>
+  </section>
+  <section id="aid_drowning">
+    <title>Afogamento</title>
+    <step>Chamada de emergência. Pergunte as pessoas próximas a você para ajudar.</step>
+    <image file="032"/>
+    <step>Resgate a pessoa para fora da água!</step>
+    <image file="033"/>
+    <image file="034"/>
+    <step>Se a vitima estiver respirando: <link target="aid_recoveryposition">Posição de recuperação</link>. Mantenha-o quente (cubra-o). Monitore seu estado até a chegada da ambulancia.</step>
+    <step>Se a vitima não estiver respirando: Comece imediatamente com a <link target="aid_resuscitation">reanimação</link>! (Remover a água dos pulmões é inútil.)</step>
+  </section>
+  <section id="aid_electricityaccident">
+    <title>Acidente com Electricidade</title>
+    <step>Em primeiro lugar interromper o fornecimento de electricidade!</step>
+    <image file="045plug"/>
+    <image file="045"/>
+    <step>Perigo: inconsciência, apneia.</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - inconsciência com a respiração</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - inconsciência sem respirar</link>
+    </step>
+    <image file="042"/>
+    <image file="043"/>
+  </section>
+  <section id="aid_emergencycall">
+    <title>Ligar para emergência</title>
+    <step>Disque 193 (bombeiros) 192 (SAMU). Sempre que possível, é de graça! Não hesite em ligar para uma ambulância!</step>
+    <step>Ao telefonar você deve fornecer as seguintes informações:</step>
+    <step>- O que tem acontecido</step>
+    <step>- Onde (lugar do acidente)</step>
+    <step>- Quantas vitimas </step>
+    <step>- Que tipo de lesões.</step>
+    <step>Posteriormente espere para novas investigações. </step>
+  </section>
+  <section id="aid_epilepsy">
+    <title>Epilepsia</title>
+    <description>Corpo rígido, punhos fechados , mandíbula pressionada, contração muscular nos membros ou face. Olhos revirando. Salivação. possível inconsciência .</description>
+    <image file="058"/>
+    <step>Não segure a vitima ou o seu movimento.</step>
+    <step>Coloque a vitima em uma base suave (almofadas), remover objetos proximos para evitar auto-lesão.</step>
+    <step>Acalme a vitima. Afrouxar roupas, dar liberdade de respiração.</step>
+    <step>Se a vitima vômitar, vire a cabeça para o lado que o vômito possa escorrer.</step>
+    <step>Manter vias aéreas claro. Risco de engolir a língua.</step>
+    <step>
+      <link target="aid_recoveryposition">Posição recuperação</link>: chame a emergência. Continuar a monitorar o estado da vítima.</step>
+    <step>Mantenha os curiosos à distância.</step>
+  </section>
+  <section id="aid_eyeinjury">
+    <title>Lesões oculares</title>
+    <step>Deixe objeto no olho da vitima, não remova-o!</step>
+    <step>Mantenha os olhos sem se mexer para evitar novas lesões. Não toque no olho.</step>
+    <step>Se olho está sangrando, cubra-o com uma compressa ou uma gaze estéril.</step>
+    <image file="020"/>
+    <step>Mantenha o olho com uma almofada fria (reduz edema, estanca a hemorragia mais rápido).</step>
+    <step>Ligue para emergência ou leve-o por si mesmo.</step>
+  </section>
+  <section id="aid_fracture">
+    <title>Fratura</title>
+    <description>Sintomas: Posição deslocada e mobilidade do osso. Deformação. Movimento doloroso, sensível ao toque.</description>
+    <image file="104"/>
+    <step>Evite movimentos!</step>
+    <step>Ligar para emergencia.</step>
+    <step>Imobilizar o osso fraturado, ou seja, imobilizar o local apoiado-o firmemente. Manter a posição do osso.</step>
+    <image file="107"/>
+    <step>Se for fratura aberta, cobrir a ferida com material estéril.</step>
+    <image file="106"/>
+  </section>
+  <section id="aid_frostbitemild">
+    <title>Queimadura por frio leve</title>
+    <description>Palidez, inchaços. Perigo para a irrigação sanguínea.</description>
+    <step>Leve à vitima para uma zona quente.</step>
+    <step>Afaste-se de frio, retire roupas frio, seque a pessoa.</step>
+    <step>Aquecer com água morna e com o calor do corpo do ajudante.</step>
+    <step>Dar bebida quente (chá). Nenhum álcool!</step>
+    <image file="040"/>
+  </section>
+  <section id="aid_frostbitesevere">
+    <title>Queimadura por frio grave</title>
+    <description>Pele extremamente fria, cinza-branca, bolhas, tecido morto. Perigo para o fornecimento de sangue!</description>
+    <image file="096"/>
+    <step>Ir para a área quente.</step>
+    <step>Tratamento ferida / cobertura.</step>
+    <step>Dê uma bebida açucarada.</step>
+    <step>Não esfregue a vitima com material quente!</step>
+    <step>Chame a emergência.</step>
+  </section>
+  <section id="aid_heartattack">
+    <title>Ataque do coração</title>
+    <description>Pesados, com duração superior a 5 min de pressão e dor no peito, especialmente irradiando nos braços/ombros. Ansiedade, palidez, sudorese fria. Eventualmente, náuseas, falta de ar.</description>
+    <image file="076"/>
+    <image file="083"/>
+    <step>Chame a emergência e peça o 'DEA'(desfribilador externo automatico)! Avise sobre o suposto ataque cardíaco.</step>
+    <step>Posicione a parte superior do corpo elevada. Afrouxar roupas apertadas. Não dê drogas ou bebidas.</step>
+    <image file="061"/>
+    <step>Calmamente conversar com a pessoa em causa.</step>
+    <step>Controle a consciência e respiração.</step>
+    <step>Dê a aspirina se disponível.</step>
+    <step>Se pessoa estiver inconsciente iniciar a <link target="aid_resuscitation">reanimação</link>.</step>
+  </section>
+  <section id="aid_hypoglycaemia">
+    <title>A hipoglicemia (níveis baixos de açúcar)</title>
+    <description>Nível de açúcar no sangue está abaixo valor mínimo (porcausa de overdose de insulina suficiente ou não ingestão de alimentos).</description>
+    <description>Sintomas: Palidez, nervosismo, a fome, arrepios, suores.</description>
+    <image file="018"/>
+    <step>Certifique-se de que a pessoa é diabética (procure por um crachá de diabético).</step>
+    <step>Chame a emergência.</step>
+    <step>Dê uma bebida açucarada e dextrose/glicose (se não houver problemas de deglutição).</step>
+    <image file="017"/>
+    <step>Se pessoa está consciente e respira: <link target="aid_recoveryposition">Posição de recuperação</link>. Monitore a respiração da pessoa. Se houver apneia, dê início com a respiração.</step>
+    <step>Se não houver respiração, você pode colocar um pouco de açúcar na bochecha, empurre a partir de fora contra ele.</step>
+  </section>
+  <section id="aid_hyperthermia">
+    <title>Hipertermia (calor corporal)</title>
+    <description>Sede, fraqueza, desorientação, náuseas, confusão, forte sudorese, pele quente.</description>
+    <image file="035"/>
+    <step>Chame a emergência.</step>
+    <step>Encontre um lugar fresco (sala com ar condicionado preferível).</step>
+    <step>Fixar pessoa, elevar as pernas. Afrouxar roupas.</step>
+    <image file="078"/>
+    <step>Arrefecer a pele com muita água ou passar toalha umida.</step>
+    <step>Dê muita água ou sucos para beber.</step>
+  </section>
+  <section id="aid_hypothermia">
+    <title>A hipotermia (corpo frio)</title>
+    <description>Arrepio frio, sonolência, cansaço, até inconsciência. Cor de pele pálida. Pulso lento, batimento cardíaco fraco.</description>
+    <image file="014"/>
+    <step>Vá a uma área quente/sala.</step>
+    <step>Chamar a emergência.</step>
+    <step>Pare de impacto do frio. Aumente da temperatura corporal (cubra e faça contato corpo-a-corpo).</step>
+    <step>Remover roupas molhadas e colocar roupas quentes. Cobrir a cabeça.</step>
+    <step>Dá chá quente, sopa quente ou água para beber. Nenhum álcool! Manter a pessoa acordada.</step>
+    <image file="039"/>
+    <image file="040"/>
+    <step>Monitore a condição da vitima até que a emergencia chegue. Se pessoa ficar inconsciente, inicie a reanimação:</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - inconsciência com a respiração</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - inconsciência sem respirar</link>
+    </step>
+  </section>
+  <section id="aid_icerescue">
+    <title>Resgate no gelo</title>
+    <description>Preste atenção à sua própria segurança. Perigo: Afogamento, hipotermia.</description>
+    <step>Resgate via escada de bordo ou corda. O peso deve ser distribuído amplamente.</step>
+    <step>Chame outras pessoas para ajudar. Deixe uma pessoa responsavel por chamar a ambulância.</step>
+    <step>Rastejar cuidadosamente sobre sua barriga (se possível até um ponto estável) com a ferramenta para a violação.</step>
+    <image file="041"/>
+    <step>Manuseie sobre a vitima a distância da ferramenta, (não é a sua mão!) E puxe-a para fora.</step>
+    <step>Rastejar para trás de volta para a beira.</step>
+    <step>Primeiros socorros.</step>
+    <step>Possível auto-salvamento: Se o gelo é sólido pode-se distribuir o seu peso sobre o gelo e puxe-se. Rastejar em sua barriga para a beira. Se gelo for frágil, pode tentar quebrar o gelo pedaço por pedaço até a beira.</step>
+  </section>
+  <section headImage="46" id="aid_insectstings">
+    <title>Picadas de Insetos</title>
+    <description>Inchaço, vermelhidão, sensação de queimor, fraqueza, dificuldade respiratória, diminuição da consciência, taquicardia.</description>
+    <step>Retire com cuidado o ferrão (com uma pinça). Não aperte o ferrão pois assim poderia injetar mais veneno.</step>
+    <step>Refrigerar o local da causa (aplicar uma compressa fria).</step>
+    <step>Área em questão deve ser mantida mais baixo do que o coração a fim de diminuir a circulação do veneno.</step>
+    <step>Se a picada for na area boca-queixo: Abuse de gelados, e aplique uma compressa fria em torno da garganta.</step>
+    <image file="046ice"/>
+    <step>Se ocorrerem problemas graves chamar uma ambulância.</step>
+  </section>
+  <section id="aid_nosebleeding">
+    <title>Sangramento no Nariz</title>
+    <description>Rompeu uma pequena artéria na ponta do nariz.</description>
+    <step>Sente a pessoa com o sangramento, um pouco virada pra frente. Manter a cabeça reta.</step>
+    <step>Não coloque a pessoa deitada, mantenha a cabeça acima do nivel do coração, para assim cessar o sangramento lentamente.</step>
+    <step>Enrole o pescoço com pano frio.</step>
+    <step>Pressione as narinas juntas até que estanque a hemorragia (por 10 min).</step>
+    <step>Depois não assoe o nariz (sem sopros violentos).</step>
+    <step>Se ocorrerem problemas graves ou sangramento não puder ser parado, chame a emergência médica.</step>
+  </section>
+  <section headImage="52" id="aid_poisining">
+    <title>Envenenamento</title>
+    <description>Confusão, alucinações, pupilas dilatadas, febre, cãinbras. Inconsciência.</description>
+    <step>Só dar antídotos, se forem acompanhados por um médico treinado.</step>
+    <image file="056"/>
+    <step>Não dê bebidas. Não provocar vômitos.</step>
+    <step>Chame a emergência anotar o tipo do envenenamento!</step>
+    <step>Guardar os restos do veneno e vomitar!</step>
+    <image file="054a"/>
+    <step>Se vítima está consciente e respira: Manter em <link target="aid_recoveryposition">posição de recuperação</link>. Monitore o estado da vitima ate a chegada da ambulância.</step>
+    <step>Se a vítima não estiver respirando: Começar imediatamente com <link target="aid_resuscitation">reanimação</link>! Limpe a boca de vômito de antemão.</step>
+  </section>
+  <section id="aid_recoveryposition">
+    <title>Posição de Recuperação</title>
+    <step>Coloque a vitima sobre as suas costas, posiciona as pernas. Joelho para baixo ao lado.</step>
+    <step>Coloque o braço mais próximo a você em um ângulo reto com o corpo.</step>
+    <step>Puxar braço mais afastado do peito e coloque as costas da mão contra a bochecha.</step>
+    <image file="008"/>
+    <step>Pegue o joelho longe, puxe-o para seu lado, e estabelecem-lo no chão. Posição da perna direita em um ângulo. Manter a mão sobre a bochecha da vitima.</step>
+    <step>Certifique-se as vias aéreas estão livres.</step>
+    <step>Boca ligeiramente aberta, e a posição da cabeça de forma que o vômito possa escorrer. Confira a respiração.</step>
+    <image file="009"/>
+    <step>Controle o estado da vitima até que a emergência chegue.</step>
+    <description>Posição de recuperação para bebês:</description>
+    <image file="028"/>
+  </section>
+  <section id="aid_resuscitation">
+    <title>Reanimação</title>
+    <altTitle>A compressão do tórax</altTitle>
+    <subsection># Massagem no Coração</subsection>
+    <step>Deite a vitima de frente. Ajoelhe-se ao lado.</step>
+    <step>Retire qualquer roupa que cubra o peito(regiao do coracao).</step>
+    <step>Coloque uma mão aberta no meio do peito (um pouco acima do esterno).</step>
+    <image file="013"/>
+    <step>Colocar a outra mão sobre as costas da mão, que já está na posição correta.</step>
+    <step>Estique os seus braços e cotovelos.</step>
+    <image file="003"/>
+    <step>Pressione 5 cm de profundidade no tórax da vitima (a força vem da parte superior do corpo) e solte.</step>
+    <step>Pressione 30 vezes em uma linha em breve e forte!</step>
+    <subsection># Respiração</subsection>
+    <step>Estique a cabeça para trás do pescoço. Remover substâncias para fora da boca e da garganta.</step>
+    <image file="067"/>
+    <step>Empurre as abas do nariz em conjunto, de forma que nariz fique fechado.</step>
+    <image file="010"/>
+    <step>Respire fundo e coloque a boca na boca da vitima, de forma que não pode vazar ar.</step>
+    <image file="011"/>
+    <step>Fazer a respiração boca-a-boca duas vezes (respiração lenta e totalmente fora).</step>
+    <step>Depois fazer massagem cardíaca novamente.</step>
+    <description>Repita a massagem cardíaca, respiração boca até a chegada da ambulância.</description>
+    <image file="012"/>
+    <subsection>Ressuscitação (Bebê)</subsection>
+    <step>Use apenas dois dedos:</step>
+    <image file="029"/>
+    <step>Não respire muito forte:</step>
+    <image file="030"/>
+  </section>
+  <section id="aid_safeguardaccident">
+    <title>Segurança em Acidente</title>
+    <altTitle>Acidente de Tráfego</altTitle>
+    <step>Pare com seu próprio carro 50-100m atrás do local do acidente, (se você estiver em uma rodovia). Ligue os alertas. Ponha colentede visibilidade.</step>
+    <step>Posicione o triângulo de aviso antes do local do acidente. Atenção: Se o acidente é uma curva posicione o triângulo de aviso antes da curva!</step>
+    <image file="111"/>
+    <step>Peça ajuda à outras pessoas.</step>
+    <step>Abrir a porta do carro da vitima. Desligue ignição.</step>
+    <step>Socorro às vítimas do acidente: soltar o cinto de segurança, mova o assento para trás. Deixe a remoção da vitima de dentro do carro <link target="aid_dangerzone">pelo pessoal de resgate</link>.</step>
+    <image file="001"/>
+    <step>Chame a emergência.</step>
+    <step>Prossiga com os primeiros socorros.</step>
+  </section>
+  <section id="aid_shock">
+    <title>Choque</title>
+    <description>Distúrbio circulatório pela fraca oferta de oxigênio no organismo.</description>
+    <description>Causa: Perda de líquido, reduzido volume sanguíneo.</description>
+    <description>Sintomas: Palidez, pele fria, suor frio, ansiedade.</description>
+    <step>Eliminar a causa do choque (por exemplo, parar a perda de fluido, vincular a ferida)!</step>
+    <step>Estabelecer os feridos em um cobertor, a posição das pernas para cima. Manter a vitima calma.</step>
+    <image file="078"/>
+    <step>Chame a emergência.</step>
+    <step>Se notar dificuldades em respirar ou consciência, iniciar <link target="aid_resuscitation">reanimação</link>.</step>
+  </section>
+  <section id="aid_skullfracture">
+    <title>Fratura Craniana</title>
+    <description>Aspectos: sangramentos fora do nariz, boca ou ouvido. Muitas vezes existem feridas abertas no crânio.</description>
+    <step>Mantenha as vias aéreas livres.</step>
+    <step>Se consciente: Sente com os feridos curvando a cabeça para frente. Evitar maiores movimentos!</step>
+    <step>Se inconsciente: <link target="aid_recoveryposition">Posição de Recuperação</link> (sem pressão sobre a ferida da cabeça).</step>
+    <step>Chame a emergência.</step>
+    <step>Aplicar curativo na cabeça.</step>
+    <step>Se as dificuldades em respirar ou consciência, iniciar <link target="aid_resuscitation">reanimação</link>.</step>
+  </section>
+  <section headImage="51" id="aid_snakebite">
+    <title>Acidente ofídico</title>
+    <description>Ferimento no tamanho de um alfinete, dor severa, edema, cor púrpura. Distúrbio circulatório, perigo de choque.</description>
+    <step>Estabilize a parte do corpo ferida.</step>
+    <step>Aplicar compressa fria ao redor da ferida.</step>
+    <step>Utilize medidas contra choque.</step>
+    <step>Chame a emergência.</step>
+  </section>
+  <section id="aid_sos">
+    <title>SOS</title>
+    <step>Sinal: 3x curto, longas 3x, 3x curto.</step>
+    <step>Visualmente (luz estrobo, lanterna), ou acusticamente (sinal de apito, bater).</step>
+  </section>
+  <section id="aid_sprain">
+    <title>Esforços + distenção</title>
+    <description>Dor, inchaço (contusão), perda da função, deformação do membro.</description>
+    <step>Imobilize a parte lesada do corpo apenas na posição mais confortável para a vitima.</step>
+    <step>Resfriar (utilizando bolsa de gelo).</step>
+    <step>Se possível, elevar a parte lesada.</step>
+    <step>Ir para o hospital ou chamar a emergência médica.</step>
+  </section>
+  <section id="aid_stroke">
+    <title>Ataque Súbito</title>
+    <description>Súbita sensação de dormência ou paralisia (face, braços, pernas), perturbações da linguagem compreensão, a visão problemas de consciência perturbada, uma forte dor de cabeça. Problemas na respiração e deglutição, perda de controle sobre a bexiga e intestino.</description>
+    <image file="059"/>
+    <step>Chame a emergência!</step>
+    <step>Afrouxar roupas apertadas, não dê drogas ou bebidas.</step>
+    <step>Sentar ou deita-lo confortavelmente. Acalme-o!</step>
+    <step>Controle consciência e respiração.</step>
+    <step>Se sentir dificuldades em respirar ou consciência, iniciar <link target="aid_resuscitation">reanimação</link>.</step>
+  </section>
+  <section id="aid_suffocation">
+    <title>Asfixia</title>
+    <altTitle>Engasgado</altTitle>
+    <description>A insuficiência de oxigénio. Traquéia fechou. Perigo: apneia.</description>
+    <description>Sintomas: ofegante ruído respiratório, tosse constante, falta de ar, descoloração da pele.</description>
+    <image file="066"/>
+    <step>Ação imediata! Deixa a pessoa aflita com tosse muito forte.</step>
+    <step>Bata firmemente com uma mão nas costas plana entre as escápulas.</step>
+    <image file="068"/>
+    <image file="031"/>
+    <step>Se sem sucesso: Fique atrás da vitima, braços em volta da cintura, curvar ligeiramente para frente.</step>
+    <step>Firmar o seu punho, posição que tinha à altura do estômago da pessoa, e levá-la com a outra mão.</step>
+    <image file="069"/>
+    <step>Ao abraçar usar as duas mãos para dar um duro golpe para cima em direção O estômago (seria como tentar levantar a pessoa).</step>
+    <step>Repita até 5-vezes! Vias respiratórias devem ficar isentas do objeto.</step>
+    <step>Chamada de emergência.</step>
+    <step>Se os primeiros socorros não for bem-sucedido, continue à fazê-lo até que chegue a emergência.</step>
+  </section>
+  <section id="aid_sunburn">
+    <title>Queimadura solar</title>
+    <step>Retire a pessoa afectada a partir de luz solar direta. Evitar maiores exposições.</step>
+    <step>Beba muita água para reparar a desidratação.</step>
+    <step>Se existir uma grave queimadura solar (bolhas, vermelhidão, dor), procurar um médico.</step>
+    <step>Se a pele tiver um leve vermelho, ela pode ser arrefecida com toalha molhada. Usar gel ou loção após o a exposição.</step>
+  </section>
+  <section id="aid_sunstroke">
+    <title>Insolação</title>
+    <description>Cabeça quente vermelho, pele fria, de doença, de cabeça, tontura. Causa: irritação da membrana cerebral.</description>
+    <image file="035"/>
+    <step>Vá para um lugar frio (sombra) e colocar a parte superior do corpo da pessoa para cima.</step>
+    <image file="061"/>
+    <step>Esfriar a cabeça com cobertores molhados.</step>
+    <step>Chame a emergência, mantenha o controle da respiração.</step>
+    <step>Se consciente: Ministre bebida fresca, se aplicável.</step>
+    <step>Se aparecer apneia, inicie a respiração:</step>
+    <step>
+      <link target="aid_apnoea">Vá em frente dê-lhe respiração!</link>
+    </step>
+    <image file="036"/>
+  </section>
+  <section id="aid_unconsciouswithbreath">
+    <title>Inconsciência com respiração</title>
+    <description>Nenhuma reação em voz alta a perguntas, sem resposta sobre agitação. Existe apenas respiração.</description>
+    <image file="057"/>
+    <step>Se há pessoas próximas a você peça ajuda.</step>
+    <step>
+      <link target="aid_recoveryposition">Posição de recuperação</link>. Boca aberta de maneira que o vômito possa escorrer.</step>
+    <image file="008"/>
+    <image file="009"/>
+    <step>Chame a emergência.</step>
+  </section>
+  <section id="aid_unconsciouswithoutbreath">
+    <title>Inconsciência sem respirar</title>
+    <step>Nenhuma reação da vítima, sem respirar.</step>
+    <image file="057"/>
+    <step>Inicie <link target="aid_resuscitation">Reanimação.</link>
+    </step>
+  </section>
+  <section id="aid_vomiting">
+    <title>Vômito</title>
+    <description>Surge a partir de náuseas. Estômago esvazia por si mesmo. Causas: Infecção, intoxicação, úlcera, drogas, comida ruim, ou gravidez.</description>
+    <image file="054"/>
+    <step>Perigo para a circulação devido à desidratação e perda de sal!</step>
+    <step>Dê líquidos (chá, água).</step>
+    <step>Se houver fortes perturbações, com sangue ou vômitos contínuos chame a emergência médica.</step>
+  </section>
+</firstaide>

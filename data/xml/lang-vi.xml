@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<firstaide>
+  <strings>
+    <string key="title">cấp cứu</string>
+    <string key="back">lùi lại</string>
+    <string key="disclaimerMenuTitle"># Phủ nhận + Thông tin</string>
+    <string key="disclaimerTitle">Phủ nhận + Thông tin</string>
+    <string key="softwareHeader">Phần Mềm</string>
+    <string key="softwareName">Hướng dẫn cấp cứu trên điện thoại di động</string>
+    <string key="softwareCopyright">Bản quyền: Kai Kajus Noack</string>
+    <string key="translatorCopyright">Thông dịch: Thanh Dang + Vu Nguyen</string>
+    <string key="softwareLicense">Giấy phép: Creative Commons</string>
+    <string key="softwareNotice">Chương trình này được thiết kế để cung cấp thông tin về sơ cứu. Tuy nhiên, nó không có chức năng thay thế cho 1 khóa học cấp cứu. Thay vào đó, nó giúp bạn ôn lại những kiến thức về cấp cứu đã học được.</string>
+    <string key="softwareIllustrations">tranh minh hoạ</string>
+    <string key="disclaimerHeader">Phủ Nhận </string>
+    <string key="disclaimerNotice1">Xin lưu ý rằng tôi không chịu trách nhiệm về những hậu quả xảy ra từ việc sử dụng các phần mềm.</string>
+    <string key="disclaimerNotice2">Bất kỳ trách nhiệm hữu là loại trừ!</string>
+    <string key="disclaimerNotice3">Xử dụng tại rủi ro riêng của bạn!</string>
+    <string key="disclaimerNotice4">Trong tất cả các trường hợp khẩn cấp, hãy tìm kiếm sự giúp đỡ chuyên môn ngay lập tức.</string>
+    <string key="developmentHeader">Dự án Phát Triển </string>
+    <string key="developmentText">Chương trình được dư. đóan trở thành đa ngôn ngữ. Cần người thông dịch tự nguyện.</string>
+    <string key="developmentMoreInfo1">Những thông tin xa hơn thì có sẵn trên Internet</string>
+    <string key="developmentMoreInfo2">hoặc viết một email đến:</string>
+    <string key="slogan">Cứu một cuộc sống củng giống như bạn cứu cả trên thế giới.</string>
+    <string key="emergencyNumbersMenuTitle"># Cuộc Gọi Khẩn Cấp</string>
+    <string key="dial112">Call Emergency 112</string>
+    <string key="emergency_fire">Lửa</string>
+    <string key="emergency_medical">Y tế</string>
+    <string key="emergency_police">Cảnh sát</string>
+    <string key="emergency_cancelcard"/>
+    <string key="emergency_local">Số địa phương</string>
+    <string key="emergency_nosystem">Không có hệ thống</string>
+    <string key="emergency_radioonly">Chỉ có hình máy điện thoại</string>
+    <string key="emergency_none">--</string>
+    <string key="emergency_or">or</string>
+    <string key="emergency_mobile">điện thoại di động</string>
+    <string key="emergency_tourist">Chỉ có hình máy điện thoại</string>
+    <!-- Continents -->
+    <string key="continent">Lục địa</string>
+    <string key="continent_Africa">Châu Phi</string>
+    <string key="continent_Asia">Châu á</string>
+    <string key="continent_Europe">Châu âu</string>
+    <string key="continent_Northamerica">Bắc Mỹ</string>
+    <string key="continent_Oceania">Châu Đại Dương</string>
+    <string key="continent_Southamerica">Nam-Mỹ</string>
+    <!-- Countries -->
+    <string key="country_afghanistan">Afghanistan</string>
+    <string key="country_albania">Albania</string>
+    <string key="country_algeria">Algérie</string>
+    <string key="country_andorra">Andorra</string>
+    <string key="country_angola">Angola</string>
+    <string key="country_antiguaandbarbuda">Antigua và Barbuda</string>
+    <string key="country_argentina">Argentina</string>
+    <string key="country_armenia">Armenia</string>
+    <string key="country_australia">úc</string>
+    <string key="country_austria">áo</string>
+    <string key="country_azerbaijan">Azerbaijan</string>
+    <string key="country_bahamas">Bahamas</string>
+    <string key="country_bahrain">Bahrain</string>
+    <string key="country_bangladesh">Băng-la-đét</string>
+    <string key="country_barbados">Barbados</string>
+    <string key="country_belarus">Belarus</string>
+    <string key="country_belgium">Bỉ</string>
+    <string key="country_belize">Belize</string>
+    <string key="country_benin">Bê-nanh</string>
+    <string key="country_bhutan">Bhutan</string>
+    <string key="country_bolivia">Bolivia</string>
+    <string key="country_bosniaandherzegovina">Bosnia và Herzegovina</string>
+    <string key="country_botswana">Botswana</string>
+    <string key="country_brazil">Brazil</string>
+    <string key="country_brunei">Brunei</string>
+    <string key="country_bulgaria">Bungari</string>
+    <string key="country_burkinafaso">Burkina Faso</string>
+    <string key="country_burundi">Bu-run-đi</string>
+    <string key="country_cambodia">Cam-pu-chia</string>
+    <string key="country_cameroon">Cameroon</string>
+    <string key="country_canada">Canada</string>
+    <string key="country_capeverde">Cape Verde</string>
+    <string key="country_caymanislands">Quần đảo Cayman</string>
+    <string key="country_centralafricanrepublic">Cộng hòa Trung Phi</string>
+    <string key="country_chad">Chad</string>
+    <string key="country_chile">Chile</string>
+    <string key="country_china">Trung Quốc</string>
+    <string key="country_colombia">Colombia</string>
+    <string key="country_comoros">Comoros</string>
+    <string key="country_congodemocraticrepublic">Congo (Cộng hòa Dân chủ)</string>
+    <string key="country_congorepublic">Congo (Cộng hoà)</string>
+    <string key="country_costarica">Costa Rica</string>
+    <string key="country_croatia">Croatia</string>
+    <string key="country_cuba">Cuba</string>
+    <string key="country_cyprus">Síp</string>
+    <string key="country_czechrepublic">Cộng hòa Séc</string>
+    <string key="country_denmark">Đan Mạch</string>
+    <string key="country_djibouti">Gi-bu-ti</string>
+    <string key="country_dominica">Dominica</string>
+    <string key="country_dominicanrepublic">Cộng hoà Dominica</string>
+    <string key="country_easttimor">Đông Timor</string>
+    <string key="country_ecuador">Ecuador</string>
+    <string key="country_egypt">Ai Cập</string>
+    <string key="country_elsalvador">El Salvador</string>
+    <string key="country_equatorialguinea">Equatorial Guinea</string>
+    <string key="country_eritrea">Eritrea</string>
+    <string key="country_estonia">Estonia</string>
+    <string key="country_ethiopia">Etiopia</string>
+    <string key="country_fiji">Phi-gi</string>
+    <string key="country_finland">Phần Lan</string>
+    <string key="country_france">Pháp</string>
+    <string key="country_gabon">Ga-bông</string>
+    <string key="country_gambia">Gambia</string>
+    <string key="country_georgia">Georgia</string>
+    <string key="country_germany">Đức</string>
+    <string key="country_ghana">Viet-Nam</string>
+    <string key="country_greece">Hy Lạp</string>
+    <string key="country_greenland">Greenland</string>
+    <string key="country_grenada">Grê-na-đa</string>
+    <string key="country_guatemala">Guatemala</string>
+    <string key="country_guinea">Ghi-nê</string>
+    <string key="country_guinea-bissau">Guinea-Bissau</string>
+    <string key="country_guyana">Guy-a-na</string>
+    <string key="country_haiti">Haiti</string>
+    <string key="country_honduras">Honduras</string>
+    <string key="country_hongkong">Hồng Kông</string>
+    <string key="country_hungary">Hungary</string>
+    <string key="country_iceland">Iceland</string>
+    <string key="country_india">Ấn Độ</string>
+    <string key="country_indonesia">Indonesia</string>
+    <string key="country_iran">Iran</string>
+    <string key="country_iraq">Iraq</string>
+    <string key="country_ireland">Ai Len</string>
+    <string key="country_israel">Y-sơ</string>
+    <string key="country_italy">ý</string>
+    <string key="country_ivorycoast">Bờ biển Ngà</string>
+    <string key="country_jamaica">Jamaica</string>
+    <string key="country_japan">Nhật Bản</string>
+    <string key="country_jordan">Jordan</string>
+    <string key="country_kazakhstan">Kazakhstan</string>
+    <string key="country_kenya">Kenya</string>
+    <string key="country_kiribati">Kiribati</string>
+    <string key="country_kosovo">Kosovo</string>
+    <string key="country_kurdistan">Kurdistan</string>
+    <string key="country_kuwait">Kuwait</string>
+    <string key="country_kyrgyzstan">Kyrgyzstan</string>
+    <string key="country_laos">Lào</string>
+    <string key="country_latvia">Latvia</string>
+    <string key="country_lebanon">Li-băng</string>
+    <string key="country_lesotho">Lesotho</string>
+    <string key="country_liberia">Liberia</string>
+    <string key="country_libya">Libya</string>
+    <string key="country_liechtenstein">Liechtenstein</string>
+    <string key="country_lithuania">Lithuania</string>
+    <string key="country_luxembourg">Luxembourg</string>
+    <string key="country_macau">Macau</string>
+    <string key="country_macedonia">Macedonia</string>
+    <string key="country_madagascar">Madagascar</string>
+    <string key="country_malawi">Ma-la-uy</string>
+    <string key="country_malaysia">Malaysia</string>
+    <string key="country_maldives">Maldives</string>
+    <string key="country_mali">Ma-li</string>
+    <string key="country_malta">Malta</string>
+    <string key="country_marshallislands">Quần đảo Marshall</string>
+    <string key="country_mauritania">Mauritanie</string>
+    <string key="country_mauritius">Mauritius</string>
+    <string key="country_mayotte">Mayotte</string>
+    <string key="country_mexico">Mexico</string>
+    <string key="country_micronesia">Micronesia</string>
+    <string key="country_moldova">Moldova</string>
+    <string key="country_monaco">Mô-na-cô</string>
+    <string key="country_mongolia">Mông Cổ</string>
+    <string key="country_montenegro">Montenegro</string>
+    <string key="country_morocco">Ma rốc</string>
+    <string key="country_mozambique">Mô-dăm-bích</string>
+    <string key="country_myanmar">Myanmar</string>
+    <string key="country_namibia">Namibia</string>
+    <string key="country_nauru">Nauru</string>
+    <string key="country_nepal">Nepal</string>
+    <string key="country_netherlands">Hà Lan</string>
+    <string key="country_newzealand">New Zealand</string>
+    <string key="country_nicaragua">Nicaragua</string>
+    <string key="country_niger">Ni-giê</string>
+    <string key="country_nigeria">Nigeria</string>
+    <string key="country_northkorea">Bắc Triều Tiên</string>
+    <string key="country_norway">Na Uy</string>
+    <string key="country_oman">ô-man</string>
+    <string key="country_pakistan">Pakistan</string>
+    <string key="country_palau">Palau</string>
+    <string key="country_panama">Panama</string>
+    <string key="country_papuanewguinea">Papua New Guinea</string>
+    <string key="country_paraguay">Paraguay</string>
+    <string key="country_peru">Peru</string>
+    <string key="country_philippines">Philippines</string>
+    <string key="country_poland">Ba Lan</string>
+    <string key="country_portugal">Bồ Đào Nha</string>
+    <string key="country_qatar">Qatar</string>
+    <string key="country_reunion">Réunion</string>
+    <string key="country_romania">Romania</string>
+    <string key="country_russia">Nga</string>
+    <string key="country_rwanda">Ru-an-đa</string>
+    <string key="country_sahrawiarabdemocraticrepublic">Cộng hòa Dân chủ Ả Rập Sahrawi</string>
+    <string key="country_saintpierreandmiquelon">Saint-Pierre và Miquelon</string>
+    <string key="country_samoa">Samoa</string>
+    <string key="country_sanmarino">San Marino</string>
+    <string key="country_saotomeandprincipe">Sao Tomé và Principe</string>
+    <string key="country_saudiarabia">Ả Rập Saudi</string>
+    <string key="country_senegal">Senegal</string>
+    <string key="country_serbia">Serbia</string>
+    <string key="country_seychelles">Xây-sen</string>
+    <string key="country_sierraleone">Sierra Leone</string>
+    <string key="country_singapore">Singapore</string>
+    <string key="country_slovakia">Slovakia</string>
+    <string key="country_slovenia">Slovenia</string>
+    <string key="country_solomonislands">Quần đảo Solomon</string>
+    <string key="country_somalia">Xô-ma-li</string>
+    <string key="country_southafrica">Nam Phi</string>
+    <string key="country_southkorea">Hàn Quốc (Cộng hòa Hàn Quốc)</string>
+    <string key="country_spain">Tây Ban Nha</string>
+    <string key="country_srilanka">Sri Lanka</string>
+    <string key="country_stkittsandnevis">Saint Kitts và Nevis</string>
+    <string key="country_stlucia">Saint Lucia</string>
+    <string key="country_stvincentandgrenadines">Saint Vincent và Grenadines</string>
+    <string key="country_sudan">Xu-đăng</string>
+    <string key="country_suriname">Xu-ri-nam</string>
+    <string key="country_swaziland">Swaziland</string>
+    <string key="country_sweden">Thụy Điển</string>
+    <string key="country_switzerland">Thụy Sĩ</string>
+    <string key="country_syria">Syria</string>
+    <string key="country_taiwan">Đài Loan</string>
+    <string key="country_tajikistan">Tajikistan</string>
+    <string key="country_tanzania">Tanzania</string>
+    <string key="country_thailand">Thái Lan</string>
+    <string key="country_togo">Tô-gô</string>
+    <string key="country_tonga">Tông-ga</string>
+    <string key="country_trinidadandtobago">Trinidad và Tobago</string>
+    <string key="country_tunisia">Tunisia</string>
+    <string key="country_turkey">Thổ Nhĩ Kỳ</string>
+    <string key="country_turkmenistan">Turkmenistan</string>
+    <string key="country_tuvalu">Tu-va-lu</string>
+    <string key="country_uganda">Uganda</string>
+    <string key="country_ukraine">Ukraina</string>
+    <string key="country_unitedarabemirates">United Arab Emirates</string>
+    <string key="country_unitedkingdom">Vương quốc Anh</string>
+    <string key="country_unitedstatesofamerica">United States of America</string>
+    <string key="country_uruguay">Uruguay</string>
+    <string key="country_uzbekistan">Uzbekistan</string>
+    <string key="country_vanuatu">Vanuatu</string>
+    <string key="country_vaticancity">Thành phố Vatican</string>
+    <string key="country_venezuela">Venezuela</string>
+    <string key="country_vietnam">Việt Nam</string>
+    <string key="country_yemen">Y-ê-men</string>
+    <string key="country_zambia">Zambia</string>
+    <string key="country_zimbabwe">Zimbabwe</string>
+    <!-- iPhone only -->
+    <string key="audioPrefix"/>
+    <string key="iPhoneTitle">cấp cứu iPhone 1.0</string>
+    <string key="iPhoneTitleOffline">cấp cứu iPhone 1.0 Offline</string>
+    <string key="iPhoneDescription"/>
+    <string key="iPhoneDescriptionOffline"/>
+    <string key="WinMobTitle">cấp cứu Windows Mobile 1.0</string>
+    <string key="WinMobDescription"/>
+    <string key="softwareVersion">Phiên bản</string>
+    <string key="WinMobVersionNumber">w1.0</string>
+    <string key="iPhoneVersionNumber">i1.0</string>
+    <string key="softwareRelease">Ngày phát hành</string>
+    <string key="WinMobReleaseDate">2009-05-05</string>
+    <string key="iPhoneReleaseDate">2009-05-05</string>
+    <string key="iPhoneBackButton">lùi lại</string>
+    <string key="iPhoneMenuButton">Menu</string>
+    <string key="languageChooser">Lựa chọn của bạn Ngôn ngữ</string>
+    <string key="iPhoneOfflineFilename">firstaidVIoffline.html</string>
+    <string key="offlineBookmark">Bookmark gián tuyến-Version</string>
+    <string key="donateProject">Tài trợ cho dự án</string>
+    <string key="mailToDeveloper">Thư để phát triển</string>
+    <string key="checkNewVersion">Kiểm tra cho Phiên bản mới</string>
+    <string key="donate">Donation</string>
+    <string key="whyDonate">Tại sao tặng?</string>
+    <string key="donate1">Bạn có nghĩ rằng dự án là một ý tưởng tốt? Kề đền, vui lòng đóng góp ! Bởi vì dự án tồn tại chỉ do bạn và tôi.</string>
+    <string key="donateOnlineVia">Tài trợ trực tuyến qua</string>
+    <string key="paypalID">5315644</string>
+    <string key="orWireTransfer">.</string>
+    <string key="everyContributionCounts">Tất cả các đơn đóng góp đếm!</string>
+    <string key="smallStep">(Một bước nhỏ cho một người, một bước nhảy lớn cho cả nhân loại.)</string>
+    <string key="license">Giấy phép</string>
+    <string key="licenseTerms">Bạn đang miễn phí để sao chép, phân phối và chuyển giao công việc dưới các điều kiện sau đây:</string>
+    <string key="licenseAttribution">Đặc tính</string>
+    <string key="licenseAttribution1">Bạn phải chỉ định công việc đề cập. đế cho phép tên của</string>
+    <string key="licenseAttribution2"> và liên kết với trang web</string>
+    <string key="licenseAttribution3">(nhưng không có trong bất kỳ cách nào mà gợi ý rằng ho. xác nhận bạn hoặc công việc bạn xử dụng ).</string>
+    <string key="licenseNoCommercial">Không-Thương mại</string>
+    <string key="licenseNoCommercial1">Bạn không thể xử dụng việc này cho các mục đích thương mại.</string>
+    <string key="licenseNoDeriv">Không chuyển hóa những công việc</string>
+    <string key="licenseNoDeriv1">Bạn có thể không thay đổi, chuyển đổi, hoặc xây dựng theo công việc này.</string>
+    <string key="licenseDistribution1">Đối với bất kỳ sự phân phối hoặc tái sử dụng, bạn cần phải làm rõ những thời hạn giấy phép khác của việc này. Cách tốt nhất để làm được điều này là liên kết tới</string>
+    <string key="licenseSuffix"/>
+    <string key="licenseDistribution2"/>
+    <string key="licenseWaived">Bất kỳ những điều kiện ở trên có thể được miễn nếu bạn có sự cho phép của người giữ bản quyền.</string>
+    <string key="licenseMoralRights">Không điều gì trong giấy phép này hư hại hoặc hạn chế những luân lý đúng của tác giả.</string>
+  </strings>
+  <section id="aid_general">
+    <title>Bước Tiến Hành Chung</title>
+    <step>Luôn luôn tiến hành sơ cứu, bạn không được phạm lỗi nào</step>
+    <step>Luôn luôn chú ý đến an toàn của riêng bạn.</step>
+    <step>Kiểm tra tình hình an toàn và các nơi xảy ra tai nạn.</step>
+    <step>Gọi cấp cứu và các pương pháp sơ cứu!</step>
+    <step>Nếu có nhiều người bị thương, bạn phải sơ cứu cho người bị nặng nhất</step>
+    <step>Giữ bình tĩnh cho những người có liên quan và cho chính bạn!</step>
+    <step>Nếu có thể, đặt nạn nhân nằm xuống 1 cách thoải mái. Tuyệt đối không cho nạn nhân của tai nạn uống rượu, nicotin hay các loại thuốc.</step>
+  </section>
+  <section headImage="46" id="aid_allergic">
+    <title>Dị ứng</title>
+    <step>Điện thoại cho xe cứu thương ngay lập tức.</step>
+    <step>Cố gắng giữ nạn nhân bình tĩnh và để nạn nhân ngồi một cách thoải mái</step>
+    <step>Lấy vật làm dị ứng ra (Vd: nọc ong)</step>
+    <step>Làm mát vùng da bị thương. (Băng ướt, nước đá').</step>
+    <image file="046ice"/>
+    <step>Nếu nạn nhân có thuốc giải độc, giúp ông ta uống.</step>
+    <step>Theo dõi tình hình nạn nhân cho đến khi xe cấp cứu tới.</step>
+    <step>Nếu nạn nhân bất tỉnh hoặc ngừng thở, làm theo hướng dẫn thích hợp</step>
+    <image file="077"/>
+  </section>
+  <section id="aid_amputation">
+    <title>Thủ Thuật Cắt Cụt</title>
+    <description>Phần bị tách rời của cơ thể khi tai nạn có thể hàng gắn lại. Mục đích: Hãy giữ lạnh phần ấy cho đến khi bạn tới bệnh viện.</description>
+    <step>Trấn tỉnh người đó. Đặt người đó nằm xuống và bao bọc lại với những cái mền.</step>
+    <step>Chặn đứng sự ra máu, xem "Sự Ra máu nặng" và "Sự Kích ngât"</step>
+    <step>Hãy gói phần bị tách rời ấy trong vải khô, sạch sẽ và để phần ấy vào trong bao bọc nhựa không thấm nước.</step>
+    <step>Hãy cột bao nhựa ấy lại và để vào trong một bao nhựa khác có nước lạnh/nước đá.</step>
+    <step>Không cho nạn nhân dùng rượu, thúc hút hay thức ăn ( khi cứu nạn nhân lúc mê man trong bệnh viện.)</step>
+    <step>Đừng để phần tách rời ấy bị đông cứng (chỉ giữ lạnh phần ấy thôi!).</step>
+    <step>Gọi cấp cứu hay mình tự đưa nạn nhân vào bệnh viện.</step>
+  </section>
+  <section headImage="47" id="aid_animalbite">
+    <title>Thú Cắn</title>
+    <description>Chú ý: Khả năng nhiễm trùng cao, hậu quả có thể là nhiểm trùng, uốn ván, dại.</description>
+    <step>Rửa vết thương với nước xà phòng nóng.</step>
+    <image file="049"/>
+    <step>Sau đó khử trùng vết thương.</step>
+    <step>Nếu có chảy máu nặng, nâng cao phần thân trên của nạn nhân.</step>
+    <step>Dán băng khử trùng.</step>
+    <image file="085"/>
+    <step>Đưa đến một bệnh viện hoặc gọi bác sĩ khẩn cấp.</step>
+  </section>
+  <section id="aid_apnoea">
+    <title>Ngừng Thở</title>
+    <altTitle>Hơi Thở</altTitle>
+    <description>Không có tiếng thở hoặc cơn thở, làng da bị biến màu rõ ràng.</description>
+    <step>Gọi Khẩn Cấp.</step>
+    <step>Đặt nạn nhân nằm trên lưng của ông/bà ta.</step>
+    <step>Loại bỏ chất nhờn ra khỏi miệng và họng. Ngửa đầu ra phiá sau.</step>
+    <image file="067"/>
+    <step>Bóp cửa mũi lại với nhau để lổ mũi đóng lại.</step>
+    <image file="010"/>
+    <step>Hít một hơi thở thật sâu và áp miệng của bạn lên miệng của nạn nhân, không để hơi thóat ra ngoài.</step>
+    <image file="011"/>
+    <step>Thở hết hơi ra một cách chậm rãi và đầy .</step>
+    <step>Nếu không thành công: Thực hiện tiếp tục tiếp hơi trong khi chờ đợi xe cứu thương tới.</step>
+  </section>
+  <section id="aid_asthma">
+    <title>Suyễn</title>
+    <altTitle>Hết Hơi</altTitle>
+    <description>Thở nặng. Tiếng thở khò khè. Hồi hộp.</description>
+    <step>Trấn an nạn nhân. Giữ bình tĩnh cho mình!</step>
+    <step>Nới lỏng quần áo.</step>
+    <step>Hãy để nạn nhân ngồi dựa về phía trước, khuyẽn khích người đó thở chậm và sâu.</step>
+    <step>Nạn nhân nên xài ống hút suyễn nếu có (giúp anh ta). Sau 5-10 phút, thuốc suyễn sẽ có hiệu lực.</step>
+    <image file="074"/>
+    <step>Nếu không có cải tiến: Sử dụng ống hút suyễn mỗi 5 phút cho đến khi xe cứu thương đến.</step>
+    <step>Gọi khẩn cấp.</step>
+    <step>Nếu ngừng thở, theo lời chỉ dẫn khi nạn nhân bị <link target="aid_apnoea">ngừng thở</link>.</step>
+  </section>
+  <section id="aid_backinjury">
+    <title>Chấn Thương Lưng</title>
+    <altTitle>Gãy Xương Cột Sống</altTitle>
+    <description>Đau ở sau lưng, tê cánh tay và chân.</description>
+    <step>Không di chuyển nạn nhân!!</step>
+    <image file="064"/>
+    <step>Giữ cái đầu để nạn nhân nằm yên (giữ cái đầu một chỗ)</step>
+    <image file="065"/>
+    <step>Ổn định nạn nhân với bolsters bên cạnh.</step>
+    <step>Trấn an nạn nhân.</step>
+    <step>Gọi khẩn cấp, chỉ ra thương tích sau lưng.</step>
+  </section>
+  <section id="aid_birth">
+    <title>Sinh Đẻ</title>
+    <description>Sự tiết ra của chất lỏng trong màng bọc thai nhi. Những cơn đau co lút xảy ra. Sinh nở ngoài ý muốn.</description>
+    <image file="025"/>
+    <step>Chú ý đến sự riêng tư và giữ bình tĩnh! - Gọi cấp cứu.</step>
+    <step>Để người phụ nữ mang thai ở truồng phần dưới của cơ thể, và ngồi xuống trên một khoảng đất vô trùng với hai chân dang ra.</step>
+    <step>Gấp đầu gối lại. Kéo hai chân dứơi lên trên. Lót ngửa cái chậu lớn nhẹ nhàng và o vị Trí'. - Sinh sản là một quá trình tự nhiên và diễn tiến hầu hết là không có biến chứng.</step>
+    <step>Trấn tỉnh người phụ nữ, để bà ấy tập trung vào hơi thở: Thở vào qua mũi, thở ra thông qua miệng (ở tốc độ bình thường).</step>
+    <step>Nhịp nhấn: Lấy một hơi thở sâu, giữ hơi thở, và rặn. Chẳng bao lâu đầu em bé sẽ hiện ra, trợ giúp bằng cách giử lấy nó với cả hai tay của bạn.</step>
+    <image file="021"/>
+    <image file="022"/>
+    <step>Sau khi sinh: Giữ em bé theo chiều nghiêng với đầu dốc xuống để xả hơi đường thông khí từ màng bọc thai nhi. (Có lẽ bạn cần phải hút ra chất lỏng từ mũi của em bé bằng miệng.) Em bé phải thở và khóc!</step>
+    <step>Buộc cuống rốn 30 cm từ đứa trẻ (cũng có thể được thực hiện trong bệnh viện). Giử âm đạo của người mẹ khô ráo.</step>
+    <image file="023"/>
+    <step>Lau khô Em bé' và giữ ấm nó. Lưu ý thời gian và lái xe đến bệnh viện.</step>
+  </section>
+  <section headImage="82" id="aid_bleedinglight">
+    <title>Sự Ra Máu Nhẹ</title>
+    <description>Mục tiêu: Chặn đứng sự ra máu.</description>
+    <step>Đừng đụng chạm tới vết thương (nguy cơ nhiễm trùng).</step>
+    <step>Đừng chữa trị vết thương với bột, thoa thuốc hoặc phun.</step>
+    <step>Điều trị vết thương: che đậy với những vật liệu khô ráo và một băng dán.</step>
+    <image file="098"/>
+    <step>Nếu chảy máu nhẹ, đắp thuốc dán thường là đủ.</step>
+    <step>Nếu vết thương lớn rộng, dùng một băng bọc thương tích và một băng dán. Đừng dán băng dán quá chặt, một sự dồn ứ có thể dẩn tới sự ra máu nhiều hơn.</step>
+    <image file="084"/>
+    <image file="085"/>
+    <step>Lưu ý: Những vết thương bởi bị thú dại cắn phải được rửa với dung dịch xà bông.</step>
+    <image file="049"/>
+  </section>
+  <section id="aid_bleedingsevere">
+    <title>Sự Ra Máu Nặng</title>
+    <description>Mạch máu văng bắn lên. Nguy hiểm: Ngộp thở vì mất máu, nhiễm trùng, chết. Mục tiêu: Chặn đứng sự ra máu.</description>
+    <step>Cởi bỏ quần áo (cắt, nếu cần) và làm lộ vết thương.</step>
+    <step>Quấn một băng vải hoặc nếu cần thiết một mảnh áo quần. Xiết chặt xung quanh vết thương.</step>
+    <image file="086"/>
+    <step>Cố gắng quấn chặt ít nhất 10 phút.</step>
+    <step>Nếu băng vải đã thấm đầy máu, đừng tháo ra. Thay vào đó quấn một băng khác hay áo quần xung quanh nó.</step>
+    <step>Đặt chân, tay bị ảnh hưởng (nếu không gãy) cao hơn tim để làm giãm lượng áp lực của máu. Nếu có thể, đặt bệnh nhân nằm dài xuống.</step>
+    <step>Nếu máu chảy không ngừng, giữ áp lực trên vết thương, và đặt thêm điểm áp lực trên vết thương: Đối với chảy máu của cánh tay, đè ép phần phía trên cánh tay (nhấn mạch máu ở phía bên trong của cánh tay, ở giữa cùi chỏ và nách, xử dụng các ngón tay của bạn). Đối với chảy máu ở chân, đặt điểm áp lực ở háng (nhấn mạch máu ở nơi gập lại của háng, nơi mà động mạch nằm phía trên xương chậu, xử dụng lòng bàn tay của tay bạn).</step>
+    <image file="089"/>
+    <image file="092"/>
+    <step>Khẩn cấp gọi bác sĩ ngay lập tức.</step>
+    <step>Chẳng bao lâu khi chảy máu được kiềm chế: bắt đầu các biện pháp cầm và đo máu.</step>
+    <image file="093"/>
+  </section>
+  <section id="aid_brainconcussion">
+    <title>Chấn Động Não</title>
+    <description>Nhức đầu, buồn nôn, nôn mửa. Khiếm thị tầm nhìn. Tình trạng bất tỉnh có thể xảy ra.</description>
+    <image file="035a"/>
+    <step>Đặt nằm người có liên quan.</step>
+    <step>Gọi khẩn cấp.</step>
+    <description>Nếu chảy máu ở đầu:</description>
+    <step>Đặt người bị thương nằm xuống với vị trí đầu cao (trên gối).</step>
+    <image file="061"/>
+    <step>Thực hiện điều trị vết thương (xử dụng băng dán đầu).</step>
+    <step>Gọi cấp cứu.</step>
+  </section>
+  <section id="aid_burningslight">
+    <title>Phỏng Nhẹ</title>
+    <description>Da ửng đỏ. Phồng lên nhẹ. Đau.</description>
+    <step>Giử vùng bị thương dưới nước lạnh.</step>
+    <image file="100"/>
+    <step>Đặt băng uớt lên vết thương một cách lỏng lẻo.</step>
+  </section>
+  <section id="aid_burningsevere">
+    <title>Phỏng Trầm Trọng</title>
+    <description>Nhiều vùng nổi đốm trắng đỏ, da phồng lên. Da mất chất lỏng. Mô, tế bào tổn thương nặng. Đau dữ dội hoặc không đau (vì thần kinh bị đốt).</description>
+    <image file="097"/>
+    <step>Cởi bỏ quần áo càng nhiều càng tốt.</step>
+    <step>Làm mát những nơi bị phỏng với nước (khoảng 15 ° C, 59 ° F) lên đến 10 phút, cho đến khi giảm đau.</step>
+    <image file="100"/>
+    <step>Nếu vết phỏng rộng, hãy dùng quần áo ướt để làm mát.</step>
+    <step>Gọi cấp cứu.</step>
+    <step>Sau khi làm mát, thực hiện điều trị vết thương: Xử dụng một băng khử trùng băng bó. Không áp dụng những chất lỏng (không dùng kem, dầu, dung dịch dầu v.v). Đừng đâm thấu qua những chổ bị phồng.</step>
+    <image file="085"/>
+    <step>Kiểm soát hơi thở và ý thức tỉnh của người bị thương cho đến khi bác sĩ cấp cứu đến.</step>
+  </section>
+  <section id="aid_checkbreathing">
+    <title>Kiểm Tra Hơi Thở</title>
+    <step>Kiểm tra tiếng thở.</step>
+    <step>Chẩn đoán hơi thở ở phía trên bụng (đặt tay của bạn trên đó).</step>
+    <image file="027"/>
+    <step>Cảm thấy hơi thở từ mũi và miệng.</step>
+  </section>
+  <section id="aid_chemicalburneyes">
+    <title>Phỏng Hóa Chất (Mắt)</title>
+    <step>Gọi cấp cứu, chỉ ra những loại hóa chất nào.</step>
+    <step>Phun vô mắt với nhiều nước. Che con mắt lành mạnh trong lúc phun nước.</step>
+    <step>Dẫn lực nước từ bên trong góc mắt đển bên ngoài góc mắt. Chùi rửa ít nhất 20 phút dưới nước sạch.</step>
+    <image file="019"/>
+    <step>Khép hai mắt của người bị thương và buộc lại với miếng vải ướt.</step>
+    <image file="020"/>
+    <step>Theo dỏi tình trạng cho đến khi xe cứu thương đến.</step>
+  </section>
+  <section id="aid_chemicalburn">
+    <title>Phỏng Hóa Chất</title>
+    <description>Thương tích của tế bào.</description>
+    <image file="095"/>
+    <step>Chú ý bảo vệ bản thân!</step>
+    <step>Hành động một cách nhanh chóng và rửa những nơi bị phỏng.</step>
+    <image file="100"/>
+    <step>Gọi cấp cứu.</step>
+    <step>Nếu có phỏng hóa chất thuộc vùng tiêu hoá, đặc biệt là ở miệng và cổ họng, uống thật nhiều nước.</step>
+    <step>Đừng làm nôn mửa!</step>
+  </section>
+  <section id="aid_dangerzone">
+    <title>Khu Vực Nguy Hiểm (Giải Cứu)</title>
+    <step>Tình huống thực hiện: Đặt một cánh tay của người bị thương trước ngực của anh/chị ấy, và đứng phía sau người đó.</step>
+    <step>Đặt tay của bạn dưới vai của những người bị thương, nắm lấy khủy tay.</step>
+    <step>Kéo trở lại và đem người ấy đến nơi an toàn.</step>
+    <image file="001"/>
+    <image file="007"/>
+  </section>
+  <section id="aid_diabeticcoma">
+    <title>Chứng Hôn Mê Của Tiểu Đường</title>
+    <altTitle>Hyperglycaemia (đường)</altTitle>
+    <description>Lượng đường trong máu ở mức quá cao (resp. thiếu insulin).</description>
+    <description>Những triệu chứng: khát, thường xuyên đi tiểu, buồn nôn, mửa. Hơi thở có mùi của các loại trái cây/rượu.</description>
+    <step>Gọi cấp cứu.</step>
+    <step>Giúp đở người bệnh (nếu xác nhận là bệnh tiểu đường) dùng insulin.</step>
+    <image file="016"/>
+    <step>
+      <link target="aid_recoveryposition">Phục hồi tư thế.</link> (Người làm cấp cứu không thể làm gì hơn nữa.)</step>
+    <step>Giám sát tình trạng của người bệnh cho đến khi bác sĩ cấp cứu tới.</step>
+  </section>
+  <section id="aid_diarrhoea">
+    <title>Tiêu Chảy</title>
+    <description>Sự phản ứng của thức ăn nhiễm độc, nhiễm trùng của ruột hay rối loạn. Phân thì loãng, có bọt hoặc máu.</description>
+    <step>Nguy hiểm cho sự lưu thông vì mất nước và thiếu muối !</step>
+    <step>Cho uống chất lỏng (trà, nước).</step>
+    <step>Nếu có rối loạn trầm trọng gọi khẩn cấp bác sĩ cấp cứu.</step>
+  </section>
+  <section id="aid_drowning">
+    <title>Chết Đuối</title>
+    <step>Gọi cấp cứu. Hỏi người xung quanh bạn để được giúp đỡ.</step>
+    <image file="032"/>
+    <step>Cứu người ra khỏi nước!</step>
+    <image file="033"/>
+    <image file="034"/>
+    <step>Nếu người bị nạn vẫn đang thở: <link target="aid_recoveryposition">Phục hồi lại tư thế.</link> Giữ người đó ấm (bao bọc). Giám sát tình trạng cho tới khi bác sĩ cấp cứu đến.</step>
+    <step>Nếu người bị nạn đã ngưng thở: Ngay lập tức bắt đầu làm cho sống lại. <link target="aid_resuscitation">(hồi sinh)</link>! (Trục nước ra từ phổi thì vô ích.)</step>
+  </section>
+  <section id="aid_electricityaccident">
+    <title>Tai Nạn Về Điện</title>
+    <step>Trước hết là cắt đứt các vật cung cấp điện!</step>
+    <image file="045plug"/>
+    <image file="045"/>
+    <step>Nguy hiểm: Bất tỉnh, ngừng thở cấp tính.</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - Bất tỉnh nhưng vẫn còn thở</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - Bất tỉnh mà không thở</link>
+    </step>
+    <image file="042"/>
+    <image file="043"/>
+  </section>
+  <section id="aid_emergencycall">
+    <title>Gọi Khẩn Cấp </title>
+    <step>Quay số 112 với những điện thoại sẳn sàng bên cạnh (Mỹ: 911). Luôn luôn có thể gọi và miễn phí!</step>
+    <step>Không ngần ngại gọi một xe cứu thương! Trên điện thoại, bạn phải cung cấp các thông tin sau:</step>
+    <step>- Điều gì đã xảy ra </step>
+    <step>- ở đâu (nơi xảy ra tai nạn) </step>
+    <step>- bao nhiêu người bị nạn </step>
+    <step>- những loại thương tích nào.</step>
+    <step>Sau đó chờ những chỉ dẫn thêm hoặc những câu hỏi.</step>
+  </section>
+  <section id="aid_epilepsy">
+    <title>Bịnh Kinh Phong</title>
+    <description>Cứng ngắc cơ thể, bàn tay nắm chặt, ép hàm, chân tay hay mặt co rút. Mắt xoay tròn. Xùi bọt mép. Có thể bất tỉnh.</description>
+    <image file="058"/>
+    <step>Đừng giữ nạn nhân hoặc kềm chế cử động của họ.</step>
+    <step>Đặt người bị nạn nằm trên một nền mềm (lót gối), di chuyển tới gần đối tượng để ngăn ngừa tự gây thương tích.</step>
+    <step>Trấn tỉnh nạn nhân. Nới lỏng quần áo, cung cấp sự tự do để thở.</step>
+    <step>Nếu nạn nhân nôn mửa, xoay đầu của họ sang bên cạnh để mửa có thể trào ra.</step>
+    <step>Giữ cho đường hô hấp được thông suốt. Nguy hiểm về sự nuốt lưỡi.</step>
+    <step>
+      <link target="aid_recoveryposition">Phục hồi</link> tư thế + gọi cấp cứu. Tiếp tục giám sát tình trạng của nạn nhân.</step>
+    <step>Giữ cho những người khác ở khoảng cách.</step>
+  </section>
+  <section id="aid_eyeinjury">
+    <title>Bị Thương Mắt</title>
+    <step>Để yên vật trong mắt của nạn nhân, đừng di chuyển nó.</step>
+    <step>Giữ mắt đứng yên để tránh bị tổn thương thêm. Đừng chạm vào mắt.</step>
+    <step>Nếu mắt bị chảy máu, che phủ nó với một băng vải hoặc một băng vải lưới đã sát trùng.</step>
+    <image file="020"/>
+    <step>Làm mát mắt với một miếng lót lạnh (làm giảm sưng, chảy máu ngưng nhanh hơn).</step>
+    <step>Gọi điện thoại cấp cứu hoặc bạn lái xe đưa nạn nhân đến bệnh viện .</step>
+  </section>
+  <section id="aid_fracture">
+    <title>Gãy Xương</title>
+    <description>Triệu chứng: Vị trí không tự nhiên và di độ của xương. Làm biến hình. Đau đớn di chuyển, đụng chạm nhạy cảm.</description>
+    <image file="104"/>
+    <step>Tránh những sự di chuyển!</step>
+    <step>Gọi cấp cứu.</step>
+    <step>Để yên chổ xương bị gãy ,i.e dùng vật liệu để chống hoăc kẹp chặt xung quanh xương. Giữ vị trí của xương.</step>
+    <image file="107"/>
+    <step>Nếu vết nứt bị hở, bao bọc vết thương với vật liệu khô ráo.</step>
+    <image file="106"/>
+  </section>
+  <section id="aid_frostbitemild">
+    <title>Sự Tê Cóng Nhẹ</title>
+    <description>Tái xanh, sưng lên. Nguy hiểm cho cung cấp máu.</description>
+    <step>Mang nạn nhân tới một nơi ấm áp.</step>
+    <step>Tránh xa chổ lạnh, cởi bỏ quần áo lạnh, làm khô nạn nhân.</step>
+    <step>Làm nóng người với nước ấm và với thân nhiệt của người giúp đỡ.</step>
+    <step>Cho uống nước ấm (trà). Đừng cho uống rượu!</step>
+    <image file="040"/>
+  </section>
+  <section id="aid_frostbitesevere">
+    <title>Sự Tê Cóng Nặng</title>
+    <description>Da lạnh cứng, màu xám-trắng, phồng lên, tế bào chết đi. Nguy hiểm cho cung cấp máu!</description>
+    <image file="096"/>
+    <step>Di chuyển tới khu vực ấm.</step>
+    <step>Điều trị thương tích/bọc lại.</step>
+    <step>Cho một thức uống có đường.</step>
+    <step>Đừng chà xát nạn nhân để làm ấm họ!</step>
+    <step>Gọi cấp cứu.</step>
+  </section>
+  <section id="aid_heartattack">
+    <title>Đau Tim</title>
+    <description>Nặng, hơn 5 phút kéo dài áp lực và đau trong ngực, đặc biệt bức xạ trong cánh tay/vai. Lo lắng, tái mét, toát mồ hôi lạnh. Có thể là buồn nôn, thở dốc.</description>
+    <image file="076"/>
+    <image file="083"/>
+    <step>Gọi cấp cứu! Chỉ ra chứng đau tim.</step>
+    <step>Tư thế với cơ thể nâng cao. Nới lỏng quần áo chật. Không cho các lọai thuốc hoặc thức uống.</step>
+    <image file="061"/>
+    <step>Nói chuyện một cách bình tĩnh với người bịnh.</step>
+    <step>Kiểm soát sự mất ý thức và hơi thở.</step>
+    <step>Cho aspirin nếu có.</step>
+    <step>Nếu người đó trở nên bất tỉnh, bắt đầu làm <link target="aid_resuscitation">hồi sinh</link>.</step>
+  </section>
+  <section id="aid_hypoglycaemia">
+    <title>Hypoglycaemia (thấp đường)</title>
+    <description>Lượng đường trong máu dưới mức tối thiểu (vì quá liều insulin hoặc không có đủ phần ăn của thực phẩm).</description>
+    <description>Triệu chứng: Tái xanh, hồi hộp, đói, rùng mình, toát mồ hôi.</description>
+    <image file="018"/>
+    <step>Xác định rằng người đó thì mắc bệnh tiểu đường (tìm kiếm dấu hiệu của bệnh tiểu đường).</step>
+    <step>Gọi cấp cứu.</step>
+    <step>Cho một thức uống có đường và Dextrose/đường thực vật (nếu không bị khó khăn khi nuốt).</step>
+    <image file="017"/>
+    <step>Nếu người đó tỉnh lại và thở: <link target="aid_recoveryposition">Phục hồi tư thế</link>. Theo dõi hơi thở của họ. Nếu bị ngừng thở, bắt đầu với tiếp hơi.</step>
+    <step>Nếu đang thở, bạn có thể đặt một cục đường vào bên trong má miệng, đẩy nó từ bên ngoài.</step>
+  </section>
+  <section id="aid_hyperthermia">
+    <title>Hyperthermia (thân nhiệt)</title>
+    <description>Khát, yếu đuối, rối loạn, buồn nôn, lầm lẩn, ra nhiều đổ mồ hôi, da nóng.</description>
+    <image file="035"/>
+    <step>Gọi cấp cứu.</step>
+    <step>Tìm một nơi bóng râm mát mẻ (phòng với không khí lạnh càng tốt).</step>
+    <step>Đặt người đó nằm xuống, nâng cao chân. Nới lỏng quần áo.</step>
+    <image file="078"/>
+    <step>Làm mát da với nước lạnh hoặc nằm trên khăn lạnh.</step>
+    <step>Cung cấp cho nhiều nước hay nước trái cây để uống.</step>
+  </section>
+  <section id="aid_hypothermia">
+    <title>Hạ Thân Nhiệt (mát cơ thể)</title>
+    <description>Ớn lạnh, mơ màng, kiệt sức đến bất tỉnh. Da tái lạnh. Mạch chậm, tim đập yếu.</description>
+    <image file="014"/>
+    <step>Đến một khu vực/phòng ấm áp.</step>
+    <step>Gọi cấp cứu.</step>
+    <step>Tăng nhiệt độ cơ thể lên (bao lại và cơ thể-tiếp xưc với cơ thể).</step>
+    <step>Cởi bỏ quần áo ướt và mặc vào quần áo ấm. Bao bọc lại với những cái mền hoặc những vật bao bọc khác. Bọc lấy đầu.</step>
+    <step>Cho trà nóng , súp hoặc nước nóng để uống. Đừng cho uống rượu! Giữ người tỉnh thức.</step>
+    <image file="039"/>
+    <image file="040"/>
+    <step>Quan sát tình trạng của nạn nhân cho đến khi bác sĩ cấp cứu tới. Nếu người đó bất tỉnh, bắt đầu làm hồi sinh:</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - Tình trạng bất tỉnh với thở</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - Tình trạng bất tỉnh mà không thở</link>
+    </step>
+  </section>
+  <section id="aid_icerescue">
+    <title>Giải Cứu Trên Băng Đá</title>
+    <description>Chú ý đến sự an toàn của bạn. Nguy hiểm: sự chết đuối, hạ thân nhiệt.</description>
+    <step>Hỏi những người khác giúp đở. Gọi cho một xe cứu thương cấp cứu.</step>
+    <step>Giải cứu bằng cách dùng thang, tấm ván hoặc song cửa. Sức nặng phải dược phân bố một cách cân bằng</step>
+    <step>Bò cẩn thận trên bụng của bạn (nếu có thể cột lại tới một điểm cố định) với một cây sào hoặc dụng cụ tương tự.</step>
+    <image file="041"/>
+    <step>Với tới người đó với cây sào hoặc dụng cụ khác (không phải tay của bạn), khuyến khích ông/bà ấy nắm lấy nó và kéo ông/bà ấy ra.</step>
+    <step>Bò ngược trở lại.</step>
+    <step>Các biên pháp cứu thương.</step>
+    <step>Tự cứu lấy bản thân: Nếu băng mà rắn , bạn có thể phân bố sức nặng của bạn trên băng và kéo mình ra . Trườn sấp trên bụng cho tới bờ. Nếu băng mà mỏng, cố gắng làm vở từng mảng từng mảng cho tới bờ.</step>
+  </section>
+  <section headImage="46" id="aid_insectstings">
+    <title>Côn Trùng Chích</title>
+    <description>Sưng, da đay, cảm giác bị đốt, yếu đuối, khó thở, giảm ý thức, tim đập nhanh.</description>
+    <step>Lấy kim độc ra một cách cẩn thận (với một cây nhíp). Đừng bóp kim độc như thế có thể chích thêm nọc độc.</step>
+    <step>Làm mát chổ bị độc (áp lên một băng vải lạnh).</step>
+    <step>Khu vực có liên quan phải được giử thấp hơn tim để làm chậm lưu thông của chất độc.</step>
+    <step>Nếu chất độc trong miệng/vùng hàm: mút kem, và dùng một băng vải lạnh quần xung quanh họng.</step>
+    <image file="046ice"/>
+    <step>Nếu vấn đề nghiêm trọng, sự khó khăn đáng kể trong hô hấp hoặc làm giảm sự nhận thức xảy ra gọi một xe cứu thương ngay lập tức.</step>
+  </section>
+  <section id="aid_nosebleeding">
+    <title>Chảy Máu Cam</title>
+    <description>Động mạch nhỏ vở ra trong mũi.</description>
+    <step>Đặt người đó ngồi xuống, nghiêng nhẹ về phía trứơc. Giữ đầu thẳng.</step>
+    <step>Đừng để tư thế nằm ngang, như đầu cao trên tim làm chậm chảy máu.</step>
+    <step>Đặt những vật liệu lạnh xung quanh cổ (y phục ướt).</step>
+    <step>Bóp lổ mủi lại với nhau cho đến khi ngưng chảy máu (10 phút).</step>
+    <step>Sau đó đừng căng mũi (không khịt mủi).</step>
+    <step>Nếu vấn đề nghiêm trọng xảy ra hay chảy máu không thể ngừng lại, gọi bác sĩ cấp cứu.</step>
+  </section>
+  <section headImage="52" id="aid_poisining">
+    <title>Trúng Độc</title>
+    <description>Rối lọan, ảo giác, con ngươi mắt lớn ra, sốt, gân rút. Bất tỉnh.</description>
+    <step>Chỉ cho thuốc giải độc nếu bạn có theo một khóa huấn luyện cứu thương.</step>
+    <image file="056"/>
+    <step>Không cho thức uống. Đừng gây nôn mửa.</step>
+    <step>Gọi cấp cứu + chỉ ra chất độc!</step>
+    <step>Bảo vệ an toàn tất cả chất độc và chất mửa!</step>
+    <image file="054a"/>
+    <step>Nếu nạn nhân sáng suốt và thở: <link target="aid_recoveryposition">Phục hồi tư thế</link>. Quan sát tình trạng cho đến khi bác sĩ cấp cứu đến.</step>
+    <step>Nếu nạn nhân không thở: Ngay lập tức bắt đầu làm <link target="aid_resuscitation">hồi sinh!</link> Nhớ lấy chất mửa ra khỏi miệng trước.</step>
+  </section>
+  <section id="aid_recoveryposition">
+    <title>Tư Thế Phục Hồi</title>
+    <step>Đặt nạn nhân nằm trên lưng bà/ông ấy, duỗi thẳng hai chân. Quỳ xuống bên cạnh ông/bà ấy'.</step>
+    <step>Để cánh tay gần bạn nhất ở một góc phải với cơ thể.</step>
+    <step>Kéo cánh tay xa hơn từ bạn chéo qua ngực và đặt lưng bàn tay trên má.</step>
+    <image file="008"/>
+    <step>Nắm lấy đầu gối phía xa, kéo nó về phía bạn, và đặt nằm trên mặt đất. Vị trí của chân ở góc bên phải. Giữ tay của nạn nhân dưới má của người đó.</step>
+    <step>Hãy chắc chắn rằng đường hô hấp được thông suốt.</step>
+    <step>Mở hé miệng, và lấy tư thế đầu qua bên cạnh để chất mữa trào ra. Theo dỏi hơi thở.</step>
+    <image file="009"/>
+    <step>Kiểm soát tình trạng của nạn nhân cho tới khi bác sĩ cấp cứu đến.</step>
+    <description>Phục hồi tư thế cho em bé:</description>
+    <image file="028"/>
+  </section>
+  <section id="aid_resuscitation">
+    <title>Hồi Sinh</title>
+    <altTitle>Reanimation</altTitle>
+    <altTitle>Tức Ngực</altTitle>
+    <subsection># Xoa Bóp Tim</subsection>
+    <step>Đặt nạn nhân nằm trên lưng ông ấy/bà ấy. Quỳ xuống bên cạnh họ.</step>
+    <step>Ngực để trần.</step>
+    <step>Đặt cườm tay ở giữa ngực (chỉ hơn xương ức).</step>
+    <image file="013"/>
+    <step>Đặt tay kia trên phía sau bàn tay mà đã ở trong vị trí.</step>
+    <step>Duỗi thẳng cánh tay và cùi chỏ.</step>
+    <image file="003"/>
+    <step>Nhấn sâu 5 cm vào ngực của người đó (sức lực đến từ phần trên của cơ thể) rồi thả lỏng cánh tay.</step>
+    <step>Nhấn 30 lần một cách ngắn và mạnh!</step>
+    <subsection># Sự Thở</subsection>
+    <step>Loại bỏ những chất trong miệng ra khỏi miệng và họng. Ngửa đầu ra phía sau.</step>
+    <image file="067"/>
+    <step>Bóp cửa mũi lại với nhau để lổ mũi đóng lại.</step>
+    <image file="010"/>
+    <step>Hít một hơi thở thật sâu và đặt miệng bạn lên miệng của nạn nhân, đừng để không khí xì ra.</step>
+    <image file="011"/>
+    <step>Thực hành cách thở miệng-áp-miệng hai lần (hơi thở ra chậm và đầy).</step>
+    <step>Sau đó thực hành xoa bóp tim lần nửa.</step>
+    <description>Xoa tim lại + làm hô hấp bằng miệng cho đến khi bác sĩ cấp cứu đến.</description>
+    <image file="012"/>
+    <subsection>Làm hồi sinh (Em Bé)</subsection>
+    <step>chỉ dùng 2 ngón tay</step>
+    <image file="029"/>
+    <step>Đừng thở manh quá:</step>
+    <image file="030"/>
+  </section>
+  <section id="aid_safeguardaccident">
+    <title>An Toàn Tai Nạn</title>
+    <altTitle>Tai Nạn Giao Thông</altTitle>
+    <step>Dừng xe hơi của bạn 50-100 m phía sau nơi tai nạn xảy ra (nếu bạn đang trên một đường cao tốc hoặc đường quê). Chuyển sang đèn cảnh báo. Mặc áo mà có thể được thấy từ xa.</step>
+    <step>Đặc cái tam giác cảnh cáo trước nơi xãy ra tai nạn. Lưu ý: Nếu tai nạn xãy ra trên đường cong, đặc cái tam giác cảnh cáo trước đường cong!</step>
+    <image file="111"/>
+    <step>Yêu cầu những người khác giúp đỡ.</step>
+    <step>Mở cửa xe bị nạn (nếu bị kẹt, bẩy nó ra bằng cách xử dụng một con đội). Tắt máy.</step>
+    <step>Cứu nạn nhân bị tai nạn: Cởi tháo dây seat-belt, đẩy ghế ngồi ra phía sau. Cứu nạn nhân ra khỏi xe bằng phương pháp giải <link target="aid_dangerzone">cứu ôm chặt</link>.</step>
+    <image file="001"/>
+    <step>Gọi cấp cứu.</step>
+    <step>Tiến hành các biện pháp cứu thương.</step>
+  </section>
+  <section id="aid_shock">
+    <title>Sự Kích Ngất</title>
+    <description>Rối loạn tuần hoàn do cung cấp dưỡng khí xấu trong cơ thể.</description>
+    <description>Nguyên nhân: mất chất lỏng, lượng máu giảm.</description>
+    <description>Triệu chứng: Da tái, da lạnh, mồ hôi lạnh, lo lắng.</description>
+    <step>Loại bỏ những nguyên nhân của shock (ví dụ như chặn đứng sự mất mát các chất lỏng, băng bó vết thương)!</step>
+    <step>Đặt người bị thương trên một cái chăn, vị trí của chân lên cao. Trấn tỉnh người đó.</step>
+    <image file="078"/>
+    <step>Gọi cấp cứu.</step>
+    <step>Nếu bị khó khăn trong lúc thở hay mất ý thức, bắt đầu phương pháp <link target="aid_resuscitation">hồi sinh</link>.</step>
+  </section>
+  <section id="aid_skullfracture">
+    <title>Nứt Xương Sọ</title>
+    <description>Chảy máu ở nhẹ mũi, miệng hoặc tai. Thường là các vết thương mở miệng trên sọ.</description>
+    <step>Giử đường hô hấp thông suốt.</step>
+    <step>Nếu tỉnh táo: Hãy để người bị thương ngồi với đầu cúi ra phía trứơc. Tránh di chuyển xa hơn!</step>
+    <step>Nếu bất tỉnh: <link target="aid_recoveryposition">Phục hồi</link> tư thế (đừng đặt áp lực lên vết thương trên đầu).</step>
+    <step>Gọi cấp cứu.</step>
+    <step>Băng bó đầu lại.</step>
+    <step>Nếu bị khó khăn trong sự hô hấp hay bất tỉnh, bắt đầu phương pháp <link target="aid_resuscitation">hồi sinh</link>.</step>
+  </section>
+  <section headImage="51" id="aid_snakebite">
+    <title>Rắn Cắn</title>
+    <description>Vết thương bị đâm nhỏ, đau nặng, sưng lên, màu tím. Tuần hoàn rối loạn, nguy cơ bị sốc.</description>
+    <step>Giữ yên phần bị thương của cơ thể.</step>
+    <step>Xử dụng vật liệu lạnh bao xung quanh vết thương bị cắn.</step>
+    <step>Các biện pháp chống bị sốc.</step>
+    <step>Gọi cấp cứu.</step>
+  </section>
+  <section id="aid_sos">
+    <title>SOS Tín Hiệu Cầu Cứu (Save Our Soul)</title>
+    <step>Tín hiệu: 3x ngắn, dài 3x, 3x ngắn.</step>
+    <step>Thị giác (đèn bão, đèn "pin"), hoặc thính giác (tín hiệu còi, gỏ).</step>
+  </section>
+  <section id="aid_sprain">
+    <title>Trẹo + Trặc Gân</title>
+    <description>Đau, sưng (bầm), sự mất chức năng, sự biến hình của chân tay.</description>
+    <step>Đặt phần bị thương của cơ thể ở vị trí thoải mái nhất cho nạn nhân.</step>
+    <step>Làm mát (bằng cách xử dụng những bịch nước đá ).</step>
+    <step>Nếu có thể, nâng cao vị trí phần bị thương.</step>
+    <step>Đưa đến bệnh viện hoặc gọi bác sĩ cấp cứu.</step>
+  </section>
+  <section id="aid_stroke">
+    <title>Tai Biến Mạch Máu Não</title>
+    <description>Bất thình lình bị cảm giác như tê liệt hoặc tê cóng (mặt, cánh tay, chân), bối rối trong sự hiểu biết ngôn ngữ, thị giác bị khó khăn, rối loạn ý thức, nhức đầu trầm trọng. Những vấn đề trong sự hô hấp và nuốt, mất kiểm soát của bọng đái và ruột.</description>
+    <image file="059"/>
+    <step>Gọi cấp cứu!</step>
+    <step>Nới lỏng quần áo chật. Đừng cho các loại thuốc hoặc thức uống.</step>
+    <step>Cho người đó ngồi hay nằm xuống một cách thoải mái. Trấn an anh/chị ấy!</step>
+    <step>Kiểm soát sự thức tỉnh và sự thở.</step>
+    <step>Nếu gặp những khó khăn trong sự thở hay giảm ý thức, bắt đầu phương pháp <link target="aid_resuscitation">hồi sinh</link>.</step>
+  </section>
+  <section id="aid_suffocation">
+    <title>Sự Ngộp Thở</title>
+    <altTitle>Nuốt/Nghẹn</altTitle>
+    <description>Cung cấp không đủ dưỡng khí. Khí quản bị đóng. Nguy hiểm: chứng ngừng thở.</description>
+    <description>Triệu chứng: Tiếng hô hấp phát ra khò khè, kích thích ho, thở dốc, da mất màu.</description>
+    <image file="066"/>
+    <step>Hành động ngay lập tức! Để cho người bị nạn ho thật mạnh.</step>
+    <step>Đánh mạnh với bàn tay phẳng lên lưng ở giửa bả vai (đặt em bé nằm trên cánh tay trước của bạn, với đầu chúi xuống).</step>
+    <image file="068"/>
+    <image file="031"/>
+    <step>Nếu không thành công: đứng đằng sau người đó, choàng tay xung quanh thắt lưng, cúi về phía trước một chút.</step>
+    <step>Nắm chặt tay lại, đặt ở vị trí cao của dạ dày người đó, và nắm lấy bàn tay kia.</step>
+    <image file="069"/>
+    <step>Trong lúc ôm, xử dụng cả hai tay để cho một thổ mạnh lên trên phía bao tử (như bạn cố gắng để nâng người đó).</step>
+    <step>Làm lại như vậy 5 lần! Đường hô hấp sẽ được thông suốt.</step>
+    <step>Gọi cấp cứu.</step>
+    <step>Nếu phương pháp cứu chửa không thành công ở bước đầu, tiếp tục làm cho đến khi bác sĩ cấp cứu đến.</step>
+  </section>
+  <section id="aid_sunburn">
+    <title>Phỏng Nắng</title>
+    <step>Di chuyển người bị ảnh hưởng ra khỏi ánh sáng mặt trời. Tránh xa ánh nắng.</step>
+    <step>Uống nhiều nước để ngừng mất nước.</step>
+    <step>Nếu đó là phỏng nắng nghiêm trọng (phồng lên, đỏ, đau), tìm kiếm lời khuyên y tế.</step>
+    <step>Nếu da chỉ màu đỏ nhạt, nó có thể được làm mát với băng vải ướt. Xử dụng sau đó lotion hoặc gel.</step>
+  </section>
+  <section id="aid_sunstroke">
+    <title>Sốc Nắng</title>
+    <description>Đầu nóng đỏ, da mát, bệnh tật, nhức đầu, chóng mặt. Nguyên nhân: sự đau nhức của các màng não mỏng.</description>
+    <image file="035"/>
+    <step>Đến một nơi thoáng mát (bóng râm) và đặt phần trên cơ thể của người bịnh lên cao.</step>
+    <image file="061"/>
+    <step>Làm mát đầu với chăn ướt.</step>
+    <step>Gọi cấp cứu, tiếp tục kiểm soát hơi thở.</step>
+    <step>Nếu tỉnh táo: Cho uống nước lạnh nếu được.</step>
+    <step>Nếu chứng ngưng thở xuất hiện, bắt đầu với hơi thở:</step>
+    <step>
+      <link target="aid_apnoea">Tiếp tục với phương pháp tiếp hơi thở!</link>
+    </step>
+    <image file="036"/>
+  </section>
+  <section id="aid_unconsciouswithbreath">
+    <title>Tình trạng bất tỉnh với hơi thở</title>
+    <description>Không phản ứng trên sự hỏi lớn tiếng, không trả lời khi bị lắc. Có hơi thở.</description>
+    <image file="057"/>
+    <step>Nếu có người bên cạnh bạn yêu cầu được giúp đỡ.</step>
+    <step>
+      <link target="aid_recoveryposition">Phục hồi tư thế.</link> Mở miệng và giữ cái đầu để chất mửa có thể chảy ra.</step>
+    <image file="008"/>
+    <image file="009"/>
+    <step>Gọi cấp cứu.</step>
+  </section>
+  <section id="aid_unconsciouswithoutbreath">
+    <title>Tình trạng bất tỉnh không hơi thở</title>
+    <step>Không có phản ứng của nạn nhân, không có hơi thở.</step>
+    <image file="057"/>
+    <step>Bắt đầu làm <link target="aid_resuscitation">hồi sinh</link>.</step>
+  </section>
+  <section id="aid_vomiting">
+    <title>ói Mửa</title>
+    <description>Phát sinh từ buồn nôn. Dạ dày tự trống rỏng. Nguyên nhân: Viêm nhiễm, ngộ độc, ung nhọt, các loại thuốc, thức ăn xấu, mang thai.</description>
+    <image file="054"/>
+    <step>Nguy hiểm cho lưu thông vì mất nước và thiếu muối!</step>
+    <step>Cho các loại nước (trà, nước lọc).</step>
+    <step>Nếu có những rối loạn mạnh, ra máu hoặc tiếp tục nôn mửa gọi cho bác sĩ cấp cứu.</step>
+  </section>
+</firstaide>

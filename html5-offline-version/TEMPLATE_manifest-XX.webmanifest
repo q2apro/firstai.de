@@ -1,0 +1,15 @@
+{
+  "lang": "XX",
+  "name": "XXTITLEXX",
+  "short_name": "XXTITLEXX",
+  "icons": [{
+    "src": "img/apple-touch-icon.png",
+    "sizes": "45x45"
+  },{
+    "src": "img/android-icon.png",
+    "sizes": "192x192"
+  }],
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#acffdd"
+}

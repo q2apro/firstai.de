@@ -1,0 +1,9 @@
+data/converter/bin
+data/converter/target
+data/converter/.classpath
+data/converter/.project
+data/converter/.settings
+html5-offline-version/offline-*.html
+html5-offline-version/online-*.html
+html5-offline-version/offline-*.manifest
+html5-offline-version/manifest-*.webmanifest

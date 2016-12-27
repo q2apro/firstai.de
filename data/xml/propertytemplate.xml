@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<firstaide>
+  <strings>
+    <string key="title">$string.title</string>
+    <string key="back">$string.back</string>
+    <string key="disclaimerMenuTitle">$string.disclaimerMenuTitle</string>
+    <string key="disclaimerTitle">$string.disclaimerTitle</string>
+    <string key="softwareHeader">$string.softwareHeader</string>
+    <string key="softwareName">$string.softwareName</string>
+    <string key="softwareCopyright">$string.softwareCopyright</string>
+    <string key="translatorCopyright">$string.translatorCopyright</string>
+    <string key="softwareLicense">$string.softwareLicense</string>
+    <string key="softwareNotice">$string.softwareNotice</string>
+    <string key="softwareIllustrations">$string.softwareIllustrations</string>
+    <string key="disclaimerHeader">$string.disclaimerHeader</string>
+    <string key="disclaimerNotice1">$string.disclaimerNotice1</string>
+    <string key="disclaimerNotice2">$string.disclaimerNotice2</string>
+    <string key="disclaimerNotice3">$string.disclaimerNotice3</string>
+    <string key="disclaimerNotice4">$string.disclaimerNotice4</string>
+    <string key="developmentHeader">$string.developmentHeader</string>
+    <string key="developmentText">$string.developmentText</string>
+    <string key="developmentMoreInfo1">$string.developmentMoreInfo1</string>
+    <string key="developmentMoreInfo2">$string.developmentMoreInfo2</string>
+    <string key="slogan">$string.slogan</string>
+    <string key="emergencyNumbersMenuTitle">$string.emergencyNumbersMenuTitle</string>
+    <string key="dial112">$string.dial112</string>
+    <string key="emergency_fire">$string.emergency_fire</string>
+    <string key="emergency_medical">$string.emergency_medical</string>
+    <string key="emergency_police">$string.emergency_police</string>
+    <string key="emergency_cancelcard">$string.emergency_cancelcard</string>
+    <string key="emergency_local">$string.emergency_local</string>
+    <string key="emergency_nosystem">$string.emergency_nosystem</string>
+    <string key="emergency_radioonly">$string.emergency_radioonly</string>
+    <string key="emergency_none">$string.emergency_none</string>
+    <string key="emergency_or">$string.emergency_or</string>
+    <string key="emergency_mobile">$string.emergency_mobile</string>
+    <string key="emergency_tourist">$string.emergency_tourist</string>
+    <!-- Continents -->
+    <string key="continent">$string.continent</string>
+    <string key="continent_Africa">$string.continent_Africa</string>
+    <string key="continent_Asia">$string.continent_Asia</string>
+    <string key="continent_Europe">$string.continent_Europe</string>
+    <string key="continent_Northamerica">$string.continent_Northamerica</string>
+    <string key="continent_Oceania">$string.continent_Oceania</string>
+    <string key="continent_Southamerica">$string.continent_Southamerica</string>
+    <!-- Countries -->
+    <string key="country_afghanistan">$string.country_afghanistan</string>
+    <string key="country_albania">$string.country_albania</string>
+    <string key="country_algeria">$string.country_algeria</string>
+    <string key="country_andorra">$string.country_andorra</string>
+    <string key="country_angola">$string.country_angola</string>
+    <string key="country_antiguaandbarbuda">$string.country_antiguaandbarbuda</string>
+    <string key="country_argentina">$string.country_argentina</string>
+    <string key="country_armenia">$string.country_armenia</string>
+    <string key="country_australia">$string.country_australia</string>
+    <string key="country_austria">$string.country_austria</string>
+    <string key="country_azerbaijan">$string.country_azerbaijan</string>
+    <string key="country_bahamas">$string.country_bahamas</string>
+    <string key="country_bahrain">$string.country_bahrain</string>
+    <string key="country_bangladesh">$string.country_bangladesh</string>
+    <string key="country_barbados">$string.country_barbados</string>
+    <string key="country_belarus">$string.country_belarus</string>
+    <string key="country_belgium">$string.country_belgium</string>
+    <string key="country_belize">$string.country_belize</string>
+    <string key="country_benin">$string.country_benin</string>
+    <string key="country_bhutan">$string.country_bhutan</string>
+    <string key="country_bolivia">$string.country_bolivia</string>
+    <string key="country_bosniaandherzegovina">$string.country_bosniaandherzegovina</string>
+    <string key="country_botswana">$string.country_botswana</string>
+    <string key="country_brazil">$string.country_brazil</string>
+    <string key="country_brunei">$string.country_brunei</string>
+    <string key="country_bulgaria">$string.country_bulgaria</string>
+    <string key="country_burkinafaso">$string.country_burkinafaso</string>
+    <string key="country_burundi">$string.country_burundi</string>
+    <string key="country_cambodia">$string.country_cambodia</string>
+    <string key="country_cameroon">$string.country_cameroon</string>
+    <string key="country_canada">$string.country_canada</string>
+    <string key="country_capeverde">$string.country_capeverde</string>
+    <string key="country_caymanislands">$string.country_caymanislands</string>
+    <string key="country_centralafricanrepublic">$string.country_centralafricanrepublic</string>
+    <string key="country_chad">$string.country_chad</string>
+    <string key="country_chile">$string.country_chile</string>
+    <string key="country_china">$string.country_china</string>
+    <string key="country_colombia">$string.country_colombia</string>
+    <string key="country_comoros">$string.country_comoros</string>
+    <string key="country_congodemocraticrepublic">$string.country_congodemocraticrepublic</string>
+    <string key="country_congorepublic">$string.country_congorepublic</string>
+    <string key="country_costarica">$string.country_costarica</string>
+    <string key="country_croatia">$string.country_croatia</string>
+    <string key="country_cuba">$string.country_cuba</string>
+    <string key="country_cyprus">$string.country_cyprus</string>
+    <string key="country_czechrepublic">$string.country_czechrepublic</string>
+    <string key="country_denmark">$string.country_denmark</string>
+    <string key="country_djibouti">$string.country_djibouti</string>
+    <string key="country_dominica">$string.country_dominica</string>
+    <string key="country_dominicanrepublic">$string.country_dominicanrepublic</string>
+    <string key="country_easttimor">$string.country_easttimor</string>
+    <string key="country_ecuador">$string.country_ecuador</string>
+    <string key="country_egypt">$string.country_egypt</string>
+    <string key="country_elsalvador">$string.country_elsalvador</string>
+    <string key="country_equatorialguinea">$string.country_equatorialguinea</string>
+    <string key="country_eritrea">$string.country_eritrea</string>
+    <string key="country_estonia">$string.country_estonia</string>
+    <string key="country_ethiopia">$string.country_ethiopia</string>
+    <string key="country_fiji">$string.country_fiji</string>
+    <string key="country_finland">$string.country_finland</string>
+    <string key="country_france">$string.country_france</string>
+    <string key="country_gabon">$string.country_gabon</string>
+    <string key="country_gambia">$string.country_gambia</string>
+    <string key="country_georgia">$string.country_georgia</string>
+    <string key="country_germany">$string.country_germany</string>
+    <string key="country_ghana">$string.country_ghana</string>
+    <string key="country_greece">$string.country_greece</string>
+    <string key="country_greenland">$string.country_greenland</string>
+    <string key="country_grenada">$string.country_grenada</string>
+    <string key="country_guatemala">$string.country_guatemala</string>
+    <string key="country_guinea">$string.country_guinea</string>
+    <string key="country_guinea-bissau">$string.country_guinea-bissau</string>
+    <string key="country_guyana">$string.country_guyana</string>
+    <string key="country_haiti">$string.country_haiti</string>
+    <string key="country_honduras">$string.country_honduras</string>
+    <string key="country_hongkong">$string.country_hongkong</string>
+    <string key="country_hungary">$string.country_hungary</string>
+    <string key="country_iceland">$string.country_iceland</string>
+    <string key="country_india">$string.country_india</string>
+    <string key="country_indonesia">$string.country_indonesia</string>
+    <string key="country_iran">$string.country_iran</string>
+    <string key="country_iraq">$string.country_iraq</string>
+    <string key="country_ireland">$string.country_ireland</string>
+    <string key="country_israel">$string.country_israel</string>
+    <string key="country_italy">$string.country_italy</string>
+    <string key="country_ivorycoast">$string.country_ivorycoast</string>
+    <string key="country_jamaica">$string.country_jamaica</string>
+    <string key="country_japan">$string.country_japan</string>
+    <string key="country_jordan">$string.country_jordan</string>
+    <string key="country_kazakhstan">$string.country_kazakhstan</string>
+    <string key="country_kenya">$string.country_kenya</string>
+    <string key="country_kiribati">$string.country_kiribati</string>
+    <string key="country_kosovo">$string.country_kosovo</string>
+    <string key="country_kurdistan">$string.country_kurdistan</string>
+    <string key="country_kuwait">$string.country_kuwait</string>
+    <string key="country_kyrgyzstan">$string.country_kyrgyzstan</string>
+    <string key="country_laos">$string.country_laos</string>
+    <string key="country_latvia">$string.country_latvia</string>
+    <string key="country_lebanon">$string.country_lebanon</string>
+    <string key="country_lesotho">$string.country_lesotho</string>
+    <string key="country_liberia">$string.country_liberia</string>
+    <string key="country_libya">$string.country_libya</string>
+    <string key="country_liechtenstein">$string.country_liechtenstein</string>
+    <string key="country_lithuania">$string.country_lithuania</string>
+    <string key="country_luxembourg">$string.country_luxembourg</string>
+    <string key="country_macau">$string.country_macau</string>
+    <string key="country_macedonia">$string.country_macedonia</string>
+    <string key="country_madagascar">$string.country_madagascar</string>
+    <string key="country_malawi">$string.country_malawi</string>
+    <string key="country_malaysia">$string.country_malaysia</string>
+    <string key="country_maldives">$string.country_maldives</string>
+    <string key="country_mali">$string.country_mali</string>
+    <string key="country_malta">$string.country_malta</string>
+    <string key="country_marshallislands">$string.country_marshallislands</string>
+    <string key="country_mauritania">$string.country_mauritania</string>
+    <string key="country_mauritius">$string.country_mauritius</string>
+    <string key="country_mayotte">$string.country_mayotte</string>
+    <string key="country_mexico">$string.country_mexico</string>
+    <string key="country_micronesia">$string.country_micronesia</string>
+    <string key="country_moldova">$string.country_moldova</string>
+    <string key="country_monaco">$string.country_monaco</string>
+    <string key="country_mongolia">$string.country_mongolia</string>
+    <string key="country_montenegro">$string.country_montenegro</string>
+    <string key="country_morocco">$string.country_morocco</string>
+    <string key="country_mozambique">$string.country_mozambique</string>
+    <string key="country_myanmar">$string.country_myanmar</string>
+    <string key="country_namibia">$string.country_namibia</string>
+    <string key="country_nauru">$string.country_nauru</string>
+    <string key="country_nepal">$string.country_nepal</string>
+    <string key="country_netherlands">$string.country_netherlands</string>
+    <string key="country_newzealand">$string.country_newzealand</string>
+    <string key="country_nicaragua">$string.country_nicaragua</string>
+    <string key="country_niger">$string.country_niger</string>
+    <string key="country_nigeria">$string.country_nigeria</string>
+    <string key="country_northkorea">$string.country_northkorea</string>
+    <string key="country_norway">$string.country_norway</string>
+    <string key="country_oman">$string.country_oman</string>
+    <string key="country_pakistan">$string.country_pakistan</string>
+    <string key="country_palau">$string.country_palau</string>
+    <string key="country_panama">$string.country_panama</string>
+    <string key="country_papuanewguinea">$string.country_papuanewguinea</string>
+    <string key="country_paraguay">$string.country_paraguay</string>
+    <string key="country_peru">$string.country_peru</string>
+    <string key="country_philippines">$string.country_philippines</string>
+    <string key="country_poland">$string.country_poland</string>
+    <string key="country_portugal">$string.country_portugal</string>
+    <string key="country_qatar">$string.country_qatar</string>
+    <string key="country_reunion">$string.country_reunion</string>
+    <string key="country_romania">$string.country_romania</string>
+    <string key="country_russia">$string.country_russia</string>
+    <string key="country_rwanda">$string.country_rwanda</string>
+    <string key="country_sahrawiarabdemocraticrepublic">$string.country_sahrawiarabdemocraticrepublic</string>
+    <string key="country_saintpierreandmiquelon">$string.country_saintpierreandmiquelon</string>
+    <string key="country_samoa">$string.country_samoa</string>
+    <string key="country_sanmarino">$string.country_sanmarino</string>
+    <string key="country_saotomeandprincipe">$string.country_saotomeandprincipe</string>
+    <string key="country_saudiarabia">$string.country_saudiarabia</string>
+    <string key="country_senegal">$string.country_senegal</string>
+    <string key="country_serbia">$string.country_serbia</string>
+    <string key="country_seychelles">$string.country_seychelles</string>
+    <string key="country_sierraleone">$string.country_sierraleone</string>
+    <string key="country_singapore">$string.country_singapore</string>
+    <string key="country_slovakia">$string.country_slovakia</string>
+    <string key="country_slovenia">$string.country_slovenia</string>
+    <string key="country_solomonislands">$string.country_solomonislands</string>
+    <string key="country_somalia">$string.country_somalia</string>
+    <string key="country_southafrica">$string.country_southafrica</string>
+    <string key="country_southkorea">$string.country_southkorea</string>
+    <string key="country_spain">$string.country_spain</string>
+    <string key="country_srilanka">$string.country_srilanka</string>
+    <string key="country_stkittsandnevis">$string.country_stkittsandnevis</string>
+    <string key="country_stlucia">$string.country_stlucia</string>
+    <string key="country_stvincentandgrenadines">$string.country_stvincentandgrenadines</string>
+    <string key="country_sudan">$string.country_sudan</string>
+    <string key="country_suriname">$string.country_suriname</string>
+    <string key="country_swaziland">$string.country_swaziland</string>
+    <string key="country_sweden">$string.country_sweden</string>
+    <string key="country_switzerland">$string.country_switzerland</string>
+    <string key="country_syria">$string.country_syria</string>
+    <string key="country_taiwan">$string.country_taiwan</string>
+    <string key="country_tajikistan">$string.country_tajikistan</string>
+    <string key="country_tanzania">$string.country_tanzania</string>
+    <string key="country_thailand">$string.country_thailand</string>
+    <string key="country_togo">$string.country_togo</string>
+    <string key="country_tonga">$string.country_tonga</string>
+    <string key="country_trinidadandtobago">$string.country_trinidadandtobago</string>
+    <string key="country_tunisia">$string.country_tunisia</string>
+    <string key="country_turkey">$string.country_turkey</string>
+    <string key="country_turkmenistan">$string.country_turkmenistan</string>
+    <string key="country_tuvalu">$string.country_tuvalu</string>
+    <string key="country_uganda">$string.country_uganda</string>
+    <string key="country_ukraine">$string.country_ukraine</string>
+    <string key="country_unitedarabemirates">$string.country_unitedarabemirates</string>
+    <string key="country_unitedkingdom">$string.country_unitedkingdom</string>
+    <string key="country_unitedstatesofamerica">$string.country_unitedstatesofamerica</string>
+    <string key="country_uruguay">$string.country_uruguay</string>
+    <string key="country_uzbekistan">$string.country_uzbekistan</string>
+    <string key="country_vanuatu">$string.country_vanuatu</string>
+    <string key="country_vaticancity">$string.country_vaticancity</string>
+    <string key="country_venezuela">$string.country_venezuela</string>
+    <string key="country_vietnam">$string.country_vietnam</string>
+    <string key="country_yemen">$string.country_yemen</string>
+    <string key="country_zambia">$string.country_zambia</string>
+    <string key="country_zimbabwe">$string.country_zimbabwe</string>
+    <!-- iPhone only -->
+    <string key="audioPrefix">$string.audioPrefix</string>
+    <string key="iPhoneTitle">$string.iPhoneTitle</string>
+    <string key="iPhoneTitleOffline">$string.iPhoneTitleOffline</string>
+    <string key="iPhoneDescription">$string.iPhoneDescription</string>
+    <string key="iPhoneDescriptionOffline">$string.iPhoneDescriptionOffline</string>
+    <string key="WinMobTitle">$string.WinMobTitle</string>
+    <string key="WinMobDescription">$string.WinMobDescription</string>
+    <string key="softwareVersion">$string.softwareVersion</string>
+    <string key="WinMobVersionNumber">$string.WinMobVersionNumber</string>
+    <string key="iPhoneVersionNumber">$string.iPhoneVersionNumber</string>
+    <string key="softwareRelease">$string.softwareRelease</string>
+    <string key="WinMobReleaseDate">$string.WinMobReleaseDate</string>
+    <string key="iPhoneReleaseDate">$string.iPhoneReleaseDate</string>
+    <string key="iPhoneBackButton">$string.iPhoneBackButton</string>
+    <string key="iPhoneMenuButton">$string.iPhoneMenuButton</string>
+    <string key="languageChooser">$string.languageChooser</string>
+    <string key="iPhoneOfflineFilename">$string.iPhoneOfflineFilename</string>
+    <string key="offlineBookmark">$string.offlineBookmark</string>
+    <string key="donateProject">$string.donateProject</string>
+    <string key="mailToDeveloper">$string.mailToDeveloper</string>
+    <string key="checkNewVersion">$string.checkNewVersion</string>
+    <string key="donate">$string.donate</string>
+    <string key="whyDonate">$string.whyDonate</string>
+    <string key="donate1">$string.donate1</string>
+    <string key="donateOnlineVia">$string.donateOnlineVia</string>
+    <string key="paypalID">$string.paypalID</string>
+    <string key="orWireTransfer">$string.orWireTransfer</string>
+    <string key="everyContributionCounts">$string.everyContributionCounts</string>
+    <string key="smallStep">$string.smallStep</string>
+    <string key="license">$string.license</string>
+    <string key="licenseTerms">$string.licenseTerms</string>
+    <string key="licenseAttribution">$string.licenseAttribution</string>
+    <string key="licenseAttribution1">$string.licenseAttribution1</string>
+    <string key="licenseAttribution2">$string.licenseAttribution2</string>
+    <string key="licenseAttribution3">$string.licenseAttribution3</string>
+    <string key="licenseNoCommercial">$string.licenseNoCommercial</string>
+    <string key="licenseNoCommercial1">$string.licenseNoCommercial1</string>
+    <string key="licenseNoDeriv">$string.licenseNoDeriv</string>
+    <string key="licenseNoDeriv1">$string.licenseNoDeriv1</string>
+    <string key="licenseDistribution1">$string.licenseDistribution1</string>
+    <string key="licenseSuffix">$string.licenseSuffix</string>
+    <string key="licenseDistribution2">$string.licenseDistribution2</string>
+    <string key="licenseWaived">$string.licenseWaived</string>
+    <string key="licenseMoralRights">$string.licenseMoralRights</string>
+  </strings>
+  <section id="aid_general">
+    <title>$aid_general.title</title>
+    <audio>$aid_general.audio?</audio>
+    <step>$aid_general.step1</step>
+    <step>$aid_general.step2</step>
+    <step>$aid_general.step3</step>
+    <step>$aid_general.step4</step>
+    <step>$aid_general.step5</step>
+    <step>$aid_general.step6</step>
+    <step>$aid_general.step7</step>
+  </section>
+  <section headImage="46" id="aid_allergic">
+    <title>$aid_allergic.title</title>
+    <audio>$aid_allergic.audio?</audio>
+    <step>$aid_allergic.step1</step>
+    <step>$aid_allergic.step2</step>
+    <step>$aid_allergic.step3</step>
+    <step>$aid_allergic.step4</step>
+    <image file="046ice"/>
+    <step>$aid_allergic.step5</step>
+    <step>$aid_allergic.step6</step>
+    <step>$aid_allergic.step7</step>
+    <image file="077"/>
+  </section>
+  <section id="aid_amputation">
+    <title>$aid_amputation.title</title>
+    <audio>$aid_amputation.audio?</audio>
+    <description>$aid_amputation.description1</description>
+    <step>$aid_amputation.step1</step>
+    <step>$aid_amputation.step2</step>
+    <step>$aid_amputation.step3</step>
+    <step>$aid_amputation.step4</step>
+    <step>$aid_amputation.step5</step>
+    <step>$aid_amputation.step6</step>
+    <step>$aid_amputation.step7</step>
+  </section>
+  <section headImage="47" id="aid_animalbite">
+    <title>$aid_animalbite.title</title>
+    <audio>$aid_animalbite.audio?</audio>
+    <description>$aid_animalbite.description1</description>
+    <step>$aid_animalbite.step1</step>
+    <image file="049"/>
+    <step>$aid_animalbite.step2</step>
+    <step>$aid_animalbite.step3</step>
+    <step>$aid_animalbite.step4</step>
+    <image file="085"/>
+    <step>$aid_animalbite.step5</step>
+  </section>
+  <section id="aid_apnoea">
+    <title>$aid_apnoea.title</title>
+    <altTitle>$aid_apnoea.altTitle1</altTitle>
+    <audio>$aid_apnoea.audio?</audio>
+    <description>$aid_apnoea.description1</description>
+    <step>$aid_apnoea.step1</step>
+    <step>$aid_apnoea.step2</step>
+    <step>$aid_apnoea.step3</step>
+    <image file="067"/>
+    <step>$aid_apnoea.step4</step>
+    <image file="010"/>
+    <step>$aid_apnoea.step5</step>
+    <image file="011"/>
+    <step>$aid_apnoea.step6</step>
+    <step>$aid_apnoea.step7</step>
+  </section>
+  <section id="aid_asthma">
+    <title>$aid_asthma.title</title>
+    <altTitle>$aid_asthma.altTitle1?</altTitle>
+    <audio>$aid_asthma.audio?</audio>
+    <description>$aid_asthma.description1</description>
+    <step>$aid_asthma.step1</step>
+    <step>$aid_asthma.step2</step>
+    <step>$aid_asthma.step3</step>
+    <step>$aid_asthma.step4</step>
+    <image file="074"/>
+    <step>$aid_asthma.step5</step>
+    <step>$aid_asthma.step6</step>
+    <step>$aid_asthma.step7@1<link target="aid_apnoea">$aid_asthma.step7@2</link>$aid_asthma.step7@3</step>
+  </section>
+  <section id="aid_backinjury">
+    <title>$aid_backinjury.title</title>
+    <altTitle>$aid_backinjury.altTitle1</altTitle>
+    <audio>$aid_backinjury.audio?</audio>
+    <description>$aid_backinjury.description1</description>
+    <step>$aid_backinjury.step1</step>
+    <image file="064"/>
+    <step>$aid_backinjury.step2</step>
+    <image file="065"/>
+    <step>$aid_backinjury.step3</step>
+    <step>$aid_backinjury.step4</step>
+    <step>$aid_backinjury.step5</step>
+  </section>
+  <section id="aid_birth">
+    <title>$aid_birth.title</title>
+    <audio>$aid_birth.audio?</audio>
+    <description>$aid_birth.description1</description>
+    <image file="025"/>
+    <step>$aid_birth.step1</step>
+    <step>$aid_birth.step2</step>
+    <step>$aid_birth.step3</step>
+    <step>$aid_birth.step4</step>
+    <step>$aid_birth.step5</step>
+    <image file="021"/>
+    <image file="022"/>
+    <step>$aid_birth.step6</step>
+    <step>$aid_birth.step7</step>
+    <image file="023"/>
+    <step>$aid_birth.step8</step>
+  </section>
+  <section headImage="82" id="aid_bleedinglight">
+    <title>$aid_bleedinglight.title</title>
+    <audio>$aid_bleedinglight.audio?</audio>
+    <description>$aid_bleedinglight.description1</description>
+    <step>$aid_bleedinglight.step1</step>
+    <step>$aid_bleedinglight.step2</step>
+    <step>$aid_bleedinglight.step3</step>
+    <image file="098"/>
+    <step>$aid_bleedinglight.step4</step>
+    <step>$aid_bleedinglight.step5</step>
+    <image file="084"/>
+    <image file="085"/>
+    <step>$aid_bleedinglight.step6</step>
+    <image file="049"/>
+  </section>
+  <section id="aid_bleedingsevere">
+    <title>$aid_bleedingsevere.title</title>
+    <audio>$aid_bleedingsevere.audio?</audio>
+    <description>$aid_bleedingsevere.description1</description>
+    <step>$aid_bleedingsevere.step1</step>
+    <step>$aid_bleedingsevere.step2</step>
+    <image file="086"/>
+    <step>$aid_bleedingsevere.step3</step>
+    <step>$aid_bleedingsevere.step4</step>
+    <step>$aid_bleedingsevere.step5</step>
+    <step>$aid_bleedingsevere.step6</step>
+    <image file="089"/>
+    <image file="092"/>
+    <step>$aid_bleedingsevere.step7</step>
+    <step>$aid_bleedingsevere.step8</step>
+    <image file="093"/>
+  </section>
+  <section id="aid_brainconcussion">
+    <title>$aid_brainconcussion.title</title>
+    <audio>$aid_brainconcussion.audio?</audio>
+    <description>$aid_brainconcussion.description1</description>
+    <image file="035a"/>
+    <step>$aid_brainconcussion.step1</step>
+    <step>$aid_brainconcussion.step2</step>
+    <description>$aid_brainconcussion.description2</description>
+    <step>$aid_brainconcussion.step3</step>
+    <image file="061"/>
+    <step>$aid_brainconcussion.step4</step>
+    <step>$aid_brainconcussion.step5</step>
+  </section>
+  <section id="aid_burningslight">
+    <title>$aid_burningslight.title</title>
+    <audio>$aid_burningslight.audio?</audio>
+    <description>$aid_burningslight.description1</description>
+    <step>$aid_burningslight.step1</step>
+    <image file="100"/>
+    <step>$aid_burningslight.step2</step>
+  </section>
+  <section id="aid_burningsevere">
+    <title>$aid_burningsevere.title</title>
+    <audio>$aid_burningsevere.audio?</audio>
+    <description>$aid_burningsevere.description1</description>
+    <image file="097"/>
+    <step>$aid_burningsevere.step1</step>
+    <step>$aid_burningsevere.step2</step>
+    <image file="100"/>
+    <step>$aid_burningsevere.step3</step>
+    <step>$aid_burningsevere.step4</step>
+    <step>$aid_burningsevere.step5</step>
+    <image file="085"/>
+    <step>$aid_burningsevere.step6</step>
+  </section>
+  <section id="aid_checkbreathing">
+    <title>$aid_checkbreathing.title</title>
+    <audio>$aid_checkbreathing.audio?</audio>
+    <step>$aid_checkbreathing.step1</step>
+    <step>$aid_checkbreathing.step2</step>
+    <image file="027"/>
+    <step>$aid_checkbreathing.step3</step>
+  </section>
+  <section id="aid_chemicalburneyes">
+    <title>$aid_chemicalburneyes.title</title>
+    <audio>$aid_chemicalburneyes.audio?</audio>
+    <step>$aid_chemicalburneyes.step1</step>
+    <step>$aid_chemicalburneyes.step2</step>
+    <step>$aid_chemicalburneyes.step3</step>
+    <image file="019"/>
+    <step>$aid_chemicalburneyes.step4</step>
+    <image file="020"/>
+    <step>$aid_chemicalburneyes.step5</step>
+  </section>
+  <section id="aid_chemicalburn">
+    <title>$aid_chemicalburn.title</title>
+    <audio>$aid_chemicalburn.audio?</audio>
+    <description>$aid_chemicalburn.description1</description>
+    <image file="095"/>
+    <step>$aid_chemicalburn.step1</step>
+    <step>$aid_chemicalburn.step2</step>
+    <image file="100"/>
+    <step>$aid_chemicalburn.step3</step>
+    <step>$aid_chemicalburn.step4</step>
+    <step>$aid_chemicalburn.step5</step>
+  </section>
+  <section id="aid_dangerzone">
+    <title>$aid_dangerzone.title</title>
+    <audio>$aid_dangerzone.audio?</audio>
+    <step>$aid_dangerzone.step1</step>
+    <step>$aid_dangerzone.step2</step>
+    <step>$aid_dangerzone.step3</step>
+    <image file="001"/>
+    <image file="007"/>
+  </section>
+  <section id="aid_diabeticcoma">
+    <title>$aid_diabeticcoma.title</title>
+    <altTitle>$aid_diabeticcoma.altTitle1</altTitle>
+    <audio>$aid_diabeticcoma.audio?</audio>
+    <description>$aid_diabeticcoma.description1</description>
+    <description>$aid_diabeticcoma.description2</description>
+    <step>$aid_diabeticcoma.step1</step>
+    <step>$aid_diabeticcoma.step2</step>
+    <image file="016"/>
+    <step>$aid_diabeticcoma.step3@1<link target="aid_recoveryposition">$aid_diabeticcoma.step3@2</link>$aid_diabeticcoma.step3@3</step>
+    <step>$aid_diabeticcoma.step4</step>
+  </section>
+  <section id="aid_diarrhoea">
+    <title>$aid_diarrhoea.title</title>
+    <audio>$aid_diarrhoea.audio?</audio>
+    <description>$aid_diarrhoea.description1</description>
+    <step>$aid_diarrhoea.step1</step>
+    <step>$aid_diarrhoea.step2</step>
+    <step>$aid_diarrhoea.step3</step>
+  </section>
+  <section id="aid_drowning">
+    <title>$aid_drowning.title</title>
+    <audio>$aid_drowning.audio?</audio>
+    <step>$aid_drowning.step1</step>
+    <image file="032"/>
+    <step>$aid_drowning.step2</step>
+    <image file="033"/>
+    <image file="034"/>
+    <step>$aid_drowning.step3@1<link target="aid_recoveryposition">$aid_drowning.step3@2</link>$aid_drowning.step3@3</step>
+    <step>$aid_drowning.step4@1<link target="aid_resuscitation">$aid_drowning.step4@2</link>$aid_drowning.step4@3</step>
+  </section>
+  <section id="aid_electricityaccident">
+    <title>$aid_electricityaccident.title</title>
+    <audio>$aid_electricityaccident.audio?</audio>
+    <step>$aid_electricityaccident.step1</step>
+    <image file="045plug"/>
+    <image file="045"/>
+    <step>$aid_electricityaccident.step2</step>
+    <step>$aid_electricityaccident.step3@1<link target="aid_unconsciouswithbreath">$aid_electricityaccident.step3@2</link>$aid_electricityaccident.step3@3</step>
+    <step>$aid_electricityaccident.step4@1<link target="aid_unconsciouswithoutbreath">$aid_electricityaccident.step4@2</link>$aid_electricityaccident.step4@3</step>
+    <image file="042"/>
+    <image file="043"/>
+  </section>
+  <section id="aid_emergencycall">
+    <title>$aid_emergencycall.title</title>
+    <audio>$aid_emergencycall.audio?</audio>
+    <step>$aid_emergencycall.step1</step>
+    <step>$aid_emergencycall.step2</step>
+    <step>$aid_emergencycall.step3</step>
+    <step>$aid_emergencycall.step4</step>
+    <step>$aid_emergencycall.step5</step>
+    <step>$aid_emergencycall.step6</step>
+    <step>$aid_emergencycall.step7</step>
+  </section>
+  <section id="aid_epilepsy">
+    <title>$aid_epilepsy.title</title>
+    <audio>$aid_epilepsy.audio?</audio>
+    <description>$aid_epilepsy.description1</description>
+    <image file="058"/>
+    <step>$aid_epilepsy.step1</step>
+    <step>$aid_epilepsy.step2</step>
+    <step>$aid_epilepsy.step3</step>
+    <step>$aid_epilepsy.step4</step>
+    <step>$aid_epilepsy.step5</step>
+    <step>$aid_epilepsy.step6@1<link target="aid_recoveryposition">$aid_epilepsy.step6@2</link>$aid_epilepsy.step6@3</step>
+    <step>$aid_epilepsy.step7</step>
+  </section>
+  <section id="aid_eyeinjury">
+    <title>$aid_eyeinjury.title</title>
+    <audio>$aid_eyeinjury.audio?</audio>
+    <step>$aid_eyeinjury.step1</step>
+    <step>$aid_eyeinjury.step2</step>
+    <step>$aid_eyeinjury.step3</step>
+    <image file="020"/>
+    <step>$aid_eyeinjury.step4</step>
+    <step>$aid_eyeinjury.step5</step>
+  </section>
+  <section id="aid_fracture">
+    <title>$aid_fracture.title</title>
+    <audio>$aid_fracture.audio?</audio>
+    <description>$aid_fracture.description1</description>
+    <image file="104"/>
+    <step>$aid_fracture.step1</step>
+    <step>$aid_fracture.step2</step>
+    <step>$aid_fracture.step3</step>
+    <image file="107"/>
+    <step>$aid_fracture.step4</step>
+    <image file="106"/>
+  </section>
+  <section id="aid_frostbitemild">
+    <title>$aid_frostbitemild.title</title>
+    <audio>$aid_frostbitemild.audio?</audio>
+    <description>$aid_frostbitemild.description1</description>
+    <step>$aid_frostbitemild.step1</step>
+    <step>$aid_frostbitemild.step2</step>
+    <step>$aid_frostbitemild.step3</step>
+    <step>$aid_frostbitemild.step4</step>
+    <image file="040"/>
+  </section>
+  <section id="aid_frostbitesevere">
+    <title>$aid_frostbitesevere.title</title>
+    <audio>$aid_frostbitesevere.audio?</audio>
+    <description>$aid_frostbitesevere.description1</description>
+    <image file="096"/>
+    <step>$aid_frostbitesevere.step1</step>
+    <step>$aid_frostbitesevere.step2</step>
+    <step>$aid_frostbitesevere.step3</step>
+    <step>$aid_frostbitesevere.step4</step>
+    <step>$aid_frostbitesevere.step5</step>
+  </section>
+  <section id="aid_heartattack">
+    <title>$aid_heartattack.title</title>
+    <audio>$aid_heartattack.audio?</audio>
+    <description>$aid_heartattack.description1</description>
+    <image file="076"/>
+    <image file="083"/>
+    <step>$aid_heartattack.step1</step>
+    <step>$aid_heartattack.step2</step>
+    <image file="061"/>
+    <step>$aid_heartattack.step3</step>
+    <step>$aid_heartattack.step4</step>
+    <step>$aid_heartattack.step5</step>
+    <step>$aid_heartattack.step6@1<link target="aid_resuscitation">$aid_heartattack.step6@2</link>$aid_heartattack.step6@3</step>
+  </section>
+  <section id="aid_hypoglycaemia">
+    <title>$aid_hypoglycaemia.title</title>
+    <audio>$aid_hypoglycaemia.audio?</audio>
+    <description>$aid_hypoglycaemia.description1</description>
+    <description>$aid_hypoglycaemia.description2</description>
+    <image file="018"/>
+    <step>$aid_hypoglycaemia.step1</step>
+    <step>$aid_hypoglycaemia.step2</step>
+    <step>$aid_hypoglycaemia.step3</step>
+    <image file="017"/>
+    <step>$aid_hypoglycaemia.step4@1<link target="aid_recoveryposition">$aid_hypoglycaemia.step4@2</link>$aid_hypoglycaemia.step4@3</step>
+    <step>$aid_hypoglycaemia.step5</step>
+  </section>
+  <section id="aid_hyperthermia">
+    <title>$aid_hyperthermia.title</title>
+    <altTitle>$aid_hyperthermia.altTitle1?</altTitle>
+    <audio>$aid_hyperthermia.audio?</audio>
+    <description>$aid_hyperthermia.description1</description>
+    <image file="035"/>
+    <step>$aid_hyperthermia.step1</step>
+    <step>$aid_hyperthermia.step2</step>
+    <step>$aid_hyperthermia.step3</step>
+    <image file="078"/>
+    <step>$aid_hyperthermia.step4</step>
+    <step>$aid_hyperthermia.step5</step>
+  </section>
+  <section id="aid_hypothermia">
+    <title>$aid_hypothermia.title</title>
+    <audio>$aid_hypothermia.audio?</audio>
+    <description>$aid_hypothermia.description1</description>
+    <image file="014"/>
+    <step>$aid_hypothermia.step1</step>
+    <step>$aid_hypothermia.step2</step>
+    <step>$aid_hypothermia.step3</step>
+    <step>$aid_hypothermia.step4</step>
+    <step>$aid_hypothermia.step5</step>
+    <image file="039"/>
+    <image file="040"/>
+    <step>$aid_hypothermia.step6</step>
+    <step>$aid_hypothermia.step7@1<link target="aid_unconsciouswithbreath">$aid_hypothermia.step7@2</link>$aid_hypothermia.step7@3</step>
+    <step>$aid_hypothermia.step8@1<link target="aid_unconsciouswithoutbreath">$aid_hypothermia.step8@2</link>$aid_hypothermia.step8@3</step>
+  </section>
+  <section id="aid_icerescue">
+    <title>$aid_icerescue.title</title>
+    <audio>$aid_icerescue.audio?</audio>
+    <description>$aid_icerescue.description1</description>
+    <step>$aid_icerescue.step1</step>
+    <step>$aid_icerescue.step2</step>
+    <step>$aid_icerescue.step3</step>
+    <image file="041"/>
+    <step>$aid_icerescue.step4</step>
+    <step>$aid_icerescue.step5</step>
+    <step>$aid_icerescue.step6</step>
+    <step>$aid_icerescue.step7</step>
+  </section>
+  <section headImage="46" id="aid_insectstings">
+    <title>$aid_insectstings.title</title>
+    <audio>$aid_insectstings.audio?</audio>
+    <description>$aid_insectstings.description1</description>
+    <step>$aid_insectstings.step1</step>
+    <step>$aid_insectstings.step2</step>
+    <step>$aid_insectstings.step3</step>
+    <step>$aid_insectstings.step4</step>
+    <image file="046ice"/>
+    <step>$aid_insectstings.step5</step>
+  </section>
+  <section id="aid_nosebleeding">
+    <title>$aid_nosebleeding.title</title>
+    <audio>$aid_nosebleeding.audio?</audio>
+    <description>$aid_nosebleeding.description1</description>
+    <step>$aid_nosebleeding.step1</step>
+    <step>$aid_nosebleeding.step2</step>
+    <step>$aid_nosebleeding.step3</step>
+    <step>$aid_nosebleeding.step4</step>
+    <step>$aid_nosebleeding.step5</step>
+    <step>$aid_nosebleeding.step6</step>
+  </section>
+  <section headImage="52" id="aid_poisining">
+    <title>$aid_poisining.title</title>
+    <audio>$aid_poisining.audio?</audio>
+    <description>$aid_poisining.description1</description>
+    <step>$aid_poisining.step1</step>
+    <image file="056"/>
+    <step>$aid_poisining.step2</step>
+    <step>$aid_poisining.step3</step>
+    <step>$aid_poisining.step4</step>
+    <image file="054a"/>
+    <step>$aid_poisining.step5@1<link target="aid_recoveryposition">$aid_poisining.step5@2</link>$aid_poisining.step5@3</step>
+    <step>$aid_poisining.step6@1<link target="aid_resuscitation">$aid_poisining.step6@2</link>$aid_poisining.step6@3</step>
+  </section>
+  <section id="aid_recoveryposition">
+    <title>$aid_recoveryposition.title</title>
+    <audio>$aid_recoveryposition.audio?</audio>
+    <step>$aid_recoveryposition.step1</step>
+    <step>$aid_recoveryposition.step2</step>
+    <step>$aid_recoveryposition.step3</step>
+    <image file="008"/>
+    <step>$aid_recoveryposition.step4</step>
+    <step>$aid_recoveryposition.step5</step>
+    <step>$aid_recoveryposition.step6</step>
+    <image file="009"/>
+    <step>$aid_recoveryposition.step7</step>
+    <description>$aid_recoveryposition.description1</description>
+    <image file="028"/>
+  </section>
+  <section id="aid_resuscitation">
+    <title>$aid_resuscitation.title</title>
+    <altTitle>$aid_resuscitation.altTitle1</altTitle>
+    <altTitle>$aid_resuscitation.altTitle2?</altTitle>
+    <audio>$aid_resuscitation.audio?</audio>
+    <subsection>$aid_resuscitation.sub1.subsection</subsection>
+    <step>$aid_resuscitation.sub1.step1</step>
+    <step>$aid_resuscitation.sub1.step2</step>
+    <step>$aid_resuscitation.sub1.step3</step>
+    <image file="013"/>
+    <step>$aid_resuscitation.sub1.step4</step>
+    <step>$aid_resuscitation.sub1.step5</step>
+    <image file="003"/>
+    <step>$aid_resuscitation.sub1.step6</step>
+    <step>$aid_resuscitation.sub1.step7</step>
+    <subsection>$aid_resuscitation.sub2.subsection</subsection>
+    <step>$aid_resuscitation.sub2.step1</step>
+    <image file="067"/>
+    <step>$aid_resuscitation.sub2.step2</step>
+    <image file="010"/>
+    <step>$aid_resuscitation.sub2.step3</step>
+    <image file="011"/>
+    <step>$aid_resuscitation.sub2.step4</step>
+    <step>$aid_resuscitation.sub2.step5</step>
+    <description>$aid_resuscitation.sub2.description1</description>
+    <image file="012"/>
+    <subsection>$aid_resuscitation.sub3.subsection</subsection>
+    <step>$aid_resuscitation.sub3.step1</step>
+    <image file="029"/>
+    <step>$aid_resuscitation.sub3.step2</step>
+    <image file="030"/>
+  </section>
+  <section id="aid_safeguardaccident">
+    <title>$aid_safeguardaccident.title</title>
+    <altTitle>$aid_safeguardaccident.altTitle1?</altTitle>
+    <audio>$aid_safeguardaccident.audio?</audio>
+    <step>$aid_safeguardaccident.step1</step>
+    <step>$aid_safeguardaccident.step2</step>
+    <image file="111"/>
+    <step>$aid_safeguardaccident.step3</step>
+    <step>$aid_safeguardaccident.step4</step>
+    <step>$aid_safeguardaccident.step5@1<link target="aid_dangerzone">$aid_safeguardaccident.step5@2</link>$aid_safeguardaccident.step5@3</step>
+    <image file="001"/>
+    <step>$aid_safeguardaccident.step6</step>
+    <step>$aid_safeguardaccident.step7</step>
+  </section>
+  <section id="aid_shock">
+    <title>$aid_shock.title</title>
+    <audio>$aid_shock.audio?</audio>
+    <description>$aid_shock.description1</description>
+    <description>$aid_shock.description2</description>
+    <description>$aid_shock.description3</description>
+    <step>$aid_shock.step1</step>
+    <step>$aid_shock.step2</step>
+    <image file="078"/>
+    <step>$aid_shock.step3</step>
+    <step>$aid_shock.step4@1<link target="aid_resuscitation">$aid_shock.step4@2</link>$aid_shock.step4@3</step>
+  </section>
+  <section id="aid_skullfracture">
+    <title>$aid_skullfracture.title</title>
+    <audio>$aid_skullfracture.audio?</audio>
+    <description>$aid_skullfracture.description1</description>
+    <step>$aid_skullfracture.step1</step>
+    <step>$aid_skullfracture.step2</step>
+    <step>$aid_skullfracture.step3@1<link target="aid_recoveryposition">$aid_skullfracture.step3@2</link>$aid_skullfracture.step3@3</step>
+    <step>$aid_skullfracture.step4</step>
+    <step>$aid_skullfracture.step5</step>
+    <step>$aid_skullfracture.step6@1<link target="aid_resuscitation">$aid_skullfracture.step6@2</link>$aid_skullfracture.step6@3</step>
+  </section>
+  <section headImage="51" id="aid_snakebite">
+    <title>$aid_snakebite.title</title>
+    <audio>$aid_snakebite.audio?</audio>
+    <description>$aid_snakebite.description1</description>
+    <step>$aid_snakebite.step1</step>
+    <step>$aid_snakebite.step2</step>
+    <step>$aid_snakebite.step3</step>
+    <step>$aid_snakebite.step4</step>
+  </section>
+  <section id="aid_sos">
+    <title>$aid_sos.title</title>
+    <audio>$aid_sos.audio?</audio>
+    <step>$aid_sos.step1</step>
+    <step>$aid_sos.step2</step>
+  </section>
+  <section id="aid_sprain">
+    <title>$aid_sprain.title</title>
+    <audio>$aid_sprain.audio?</audio>
+    <description>$aid_sprain.description1</description>
+    <step>$aid_sprain.step1</step>
+    <step>$aid_sprain.step2</step>
+    <step>$aid_sprain.step3</step>
+    <step>$aid_sprain.step4</step>
+  </section>
+  <section id="aid_stroke">
+    <title>$aid_stroke.title</title>
+    <audio>$aid_stroke.audio?</audio>
+    <description>$aid_stroke.description1</description>
+    <image file="059"/>
+    <step>$aid_stroke.step1</step>
+    <step>$aid_stroke.step2</step>
+    <step>$aid_stroke.step3</step>
+    <step>$aid_stroke.step4</step>
+    <step>$aid_stroke.step5@1<link target="aid_resuscitation">$aid_stroke.step5@2</link>$aid_stroke.step5@3</step>
+  </section>
+  <section id="aid_suffocation">
+    <title>$aid_suffocation.title</title>
+    <altTitle>$aid_suffocation.altTitle1?</altTitle>
+    <altTitle>$aid_suffocation.altTitle2?</altTitle>
+    <audio>$aid_suffocation.audio?</audio>
+    <description>$aid_suffocation.description1</description>
+    <description>$aid_suffocation.description2</description>
+    <image file="066"/>
+    <step>$aid_suffocation.step1</step>
+    <step>$aid_suffocation.step2</step>
+    <image file="068"/>
+    <image file="031"/>
+    <step>$aid_suffocation.step3</step>
+    <step>$aid_suffocation.step4</step>
+    <image file="069"/>
+    <step>$aid_suffocation.step5</step>
+    <step>$aid_suffocation.step6</step>
+    <step>$aid_suffocation.step7</step>
+    <step>$aid_suffocation.step8</step>
+  </section>
+  <section id="aid_sunburn">
+    <title>$aid_sunburn.title</title>
+    <audio>$aid_sunburn.audio?</audio>
+    <step>$aid_sunburn.step1</step>
+    <step>$aid_sunburn.step2</step>
+    <step>$aid_sunburn.step3</step>
+    <step>$aid_sunburn.step4</step>
+  </section>
+  <section id="aid_sunstroke">
+    <title>$aid_sunstroke.title</title>
+    <audio>$aid_sunstroke.audio?</audio>
+    <description>$aid_sunstroke.description1</description>
+    <image file="035"/>
+    <step>$aid_sunstroke.step1</step>
+    <image file="061"/>
+    <step>$aid_sunstroke.step2</step>
+    <step>$aid_sunstroke.step3</step>
+    <step>$aid_sunstroke.step4</step>
+    <step>$aid_sunstroke.step5</step>
+    <step>$aid_sunstroke.step6@1<link target="aid_apnoea">$aid_sunstroke.step6@2</link>$aid_sunstroke.step6@3</step>
+    <image file="036"/>
+  </section>
+  <section id="aid_unconsciouswithbreath">
+    <title>$aid_unconsciouswithbreath.title</title>
+    <audio>$aid_unconsciouswithbreath.audio?</audio>
+    <description>$aid_unconsciouswithbreath.description1</description>
+    <image file="057"/>
+    <step>$aid_unconsciouswithbreath.step1</step>
+    <step>$aid_unconsciouswithbreath.step2@1<link target="aid_recoveryposition">$aid_unconsciouswithbreath.step2@2</link>$aid_unconsciouswithbreath.step2@3</step>
+    <image file="008"/>
+    <image file="009"/>
+    <step>$aid_unconsciouswithbreath.step3</step>
+  </section>
+  <section id="aid_unconsciouswithoutbreath">
+    <title>$aid_unconsciouswithoutbreath.title</title>
+    <audio>$aid_unconsciouswithoutbreath.audio?</audio>
+    <step>$aid_unconsciouswithoutbreath.step1</step>
+    <image file="057"/>
+    <step>$aid_unconsciouswithoutbreath.step2@1<link target="aid_resuscitation">$aid_unconsciouswithoutbreath.step2@2</link>$aid_unconsciouswithoutbreath.step2@3</step>
+  </section>
+  <section id="aid_vomiting">
+    <title>$aid_vomiting.title</title>
+    <audio>$aid_vomiting.audio?</audio>
+    <description>$aid_vomiting.description1</description>
+    <image file="054"/>
+    <step>$aid_vomiting.step1</step>
+    <step>$aid_vomiting.step2</step>
+    <step>$aid_vomiting.step3</step>
+  </section>
+</firstaide>

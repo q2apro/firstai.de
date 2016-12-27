@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<firstaide>
+  <strings>
+    <string key="title">Pirmoji Medicinos Pagalba</string>
+    <string key="back">Atgal</string>
+    <string key="disclaimerMenuTitle"># Atsakomybė + Nuorodos</string>
+    <string key="disclaimerTitle">Atsakomybė + Nuorodos</string>
+    <string key="softwareHeader">Programinė įranga</string>
+    <string key="softwareName">Pirmoji Medicinos Pagalba Mobiliajam Telefonui</string>
+    <string key="softwareCopyright">Visos teisės saugomos: Kai Kajus Noack</string>
+    <string key="translatorCopyright">Vertėja: Alma Petruškevičiūtė</string>
+    <string key="softwareLicense">Licencija: Creative Commons by-nc-nd</string>
+    <string key="softwareNotice">Ši programa teikia informaciją apie pirmąją medicinos pagalbą. Ji neatstoja pirmosios pagalbos kurso, bet padeda atnaujinti jau įgytas žinias.</string>
+    <string key="softwareIllustrations">Iliustracijos</string>
+    <string key="disclaimerHeader">Atsakomybės nebuvimas</string>
+    <string key="disclaimerNotice1">Prašau atsižvelgti į tai, jog už galimas vartojimo pasekmes neatsakau.</string>
+    <string key="disclaimerNotice2">NEPRISIIMU JOKIOS ATSAKOMYBĖS!</string>
+    <string key="disclaimerNotice3">VISĄ RIZIKĄ PRISIIMA VARTOTOJAS!</string>
+    <string key="disclaimerNotice4">Visais nelaimės atvejais nedelsiant kreipkitės profesionalios pagalbos.</string>
+    <string key="developmentHeader">Projekto rengimo</string>
+    <string key="developmentText">Ši programa skirta tam, kad taptu daugiakalbe. Ieškome savanorių vertėjų!</string>
+    <string key="developmentMoreInfo1">Daugiau informacijos galite rasti internete adresu</string>
+    <string key="developmentMoreInfo2">arba klauskite elektroniniu paštu:</string>
+    <string key="slogan">Išgelbėk vieną žmogų ir Tu išgelbėsi žmoniją.</string>
+    <string key="emergencyNumbersMenuTitle"># Pagalbos telefonai</string>
+    <string key="dial112">Skambinti 112</string>
+    <string key="emergency_fire">Gaisrine</string>
+    <string key="emergency_medical">Gydytojas</string>
+    <string key="emergency_police">Policija</string>
+    <string key="emergency_cancelcard"/>
+    <string key="emergency_local">vietinio telefono ryšio numeriais</string>
+    <string key="emergency_nosystem">nera ryšio</string>
+    <string key="emergency_radioonly">tik radijo ryšio telefonais</string>
+    <string key="emergency_none">--</string>
+    <string key="emergency_or">arba</string>
+    <string key="emergency_mobile">mobilusis</string>
+    <string key="emergency_tourist">turistams</string>
+    <!-- Continents -->
+    <string key="continent">Žemynas</string>
+    <string key="continent_Africa">Afrika</string>
+    <string key="continent_Asia">Azija</string>
+    <string key="continent_Europe">Europa</string>
+    <string key="continent_Northamerica">Šiaurės / Centrinė-Amerika</string>
+    <string key="continent_Oceania">Okeanija</string>
+    <string key="continent_Southamerica">Pietų Amerika</string>
+    <!-- Countries -->
+    <string key="country_afghanistan">Afganistanas</string>
+    <string key="country_albania">Albanija</string>
+    <string key="country_algeria">Alžyras</string>
+    <string key="country_andorra">Andora</string>
+    <string key="country_angola">Angola</string>
+    <string key="country_antiguaandbarbuda">Antigva ir Barbuda</string>
+    <string key="country_argentina">Argentina</string>
+    <string key="country_armenia">Armėnija</string>
+    <string key="country_australia">Australija</string>
+    <string key="country_austria">Austrija</string>
+    <string key="country_azerbaijan">Azerbaidžanas</string>
+    <string key="country_bahamas">Bahamai</string>
+    <string key="country_bahrain">Bahreinas</string>
+    <string key="country_bangladesh">Bangladešas</string>
+    <string key="country_barbados">Barbadosas</string>
+    <string key="country_belarus">Baltarusija</string>
+    <string key="country_belgium">Belgija</string>
+    <string key="country_belize">Belizas</string>
+    <string key="country_benin">Beninas</string>
+    <string key="country_bhutan">Butanas</string>
+    <string key="country_bolivia">Bolivija</string>
+    <string key="country_bosniaandherzegovina">Bosnija ir Hercegovina</string>
+    <string key="country_botswana">Botsvana</string>
+    <string key="country_brazil">Brazilija</string>
+    <string key="country_brunei">Brunėjus</string>
+    <string key="country_bulgaria">Bulgarija</string>
+    <string key="country_burkinafaso">Burkina Fasas</string>
+    <string key="country_burundi">Burundis</string>
+    <string key="country_cambodia">Kambodža</string>
+    <string key="country_cameroon">Kamerunas</string>
+    <string key="country_canada">Kanada</string>
+    <string key="country_capeverde">Žaliojo Kyšulio salos</string>
+    <string key="country_caymanislands">Kaimanu salos</string>
+    <string key="country_centralafricanrepublic">Centrinė Afrikos Respublika</string>
+    <string key="country_chad">Cadas</string>
+    <string key="country_chile">Čilė</string>
+    <string key="country_china">Kinija</string>
+    <string key="country_colombia">Kolumbija</string>
+    <string key="country_comoros">Komorai</string>
+    <string key="country_congodemocraticrepublic">Kongas (Kongo Demokratinė Respublika)</string>
+    <string key="country_congorepublic">Kongas (Kongo Respublika)</string>
+    <string key="country_costarica">Kosta Rika</string>
+    <string key="country_croatia">Kroatija</string>
+    <string key="country_cuba">Kuba</string>
+    <string key="country_cyprus">Kipras</string>
+    <string key="country_czechrepublic">Čekijos Respublika</string>
+    <string key="country_denmark">Danija</string>
+    <string key="country_djibouti">Džibutis</string>
+    <string key="country_dominica">Dominika</string>
+    <string key="country_dominicanrepublic">Dominikos Respublika</string>
+    <string key="country_easttimor">Rytų Timoras</string>
+    <string key="country_ecuador">Ekvadoras</string>
+    <string key="country_egypt">Egiptas</string>
+    <string key="country_elsalvador">El Salvadoras</string>
+    <string key="country_equatorialguinea">Pusiaujo Gvinėja</string>
+    <string key="country_eritrea">Eritrėja</string>
+    <string key="country_estonia">Estija</string>
+    <string key="country_ethiopia">Etiopija</string>
+    <string key="country_fiji">Fidžis</string>
+    <string key="country_finland">Suomija</string>
+    <string key="country_france">Prancūzija</string>
+    <string key="country_gabon">Gabonas</string>
+    <string key="country_gambia">Gambija</string>
+    <string key="country_georgia">Gruzija</string>
+    <string key="country_germany">Vokietija</string>
+    <string key="country_ghana">Gana</string>
+    <string key="country_greece">Graikija</string>
+    <string key="country_greenland">Grenlandija</string>
+    <string key="country_grenada">Grenada</string>
+    <string key="country_guatemala">Gvatemala</string>
+    <string key="country_guinea">Gvinėja</string>
+    <string key="country_guinea-bissau">Gvinėja-Bisau</string>
+    <string key="country_guyana">Gajana</string>
+    <string key="country_haiti">Haitis</string>
+    <string key="country_honduras">Honduras</string>
+    <string key="country_hongkong">Honkongas</string>
+    <string key="country_hungary">Vengrija</string>
+    <string key="country_iceland">Islandija</string>
+    <string key="country_india">Indija</string>
+    <string key="country_indonesia">Indonezija</string>
+    <string key="country_iran">Iranas</string>
+    <string key="country_iraq">Irakas</string>
+    <string key="country_ireland">Airija</string>
+    <string key="country_israel">Izraelis</string>
+    <string key="country_italy">Italija</string>
+    <string key="country_ivorycoast">Dramblio Kaulo Krantas</string>
+    <string key="country_jamaica">Jamaika</string>
+    <string key="country_japan">Japonija</string>
+    <string key="country_jordan">Jordanija</string>
+    <string key="country_kazakhstan">Kazachstanas</string>
+    <string key="country_kenya">Kenija</string>
+    <string key="country_kiribati">Kiribatis</string>
+    <string key="country_kosovo">Kosovas</string>
+    <string key="country_kurdistan">Kurdistanas</string>
+    <string key="country_kuwait">Kuveitas</string>
+    <string key="country_kyrgyzstan">Kirgizija</string>
+    <string key="country_laos">Laosas</string>
+    <string key="country_latvia">Latvija</string>
+    <string key="country_lebanon">Libanas</string>
+    <string key="country_lesotho">Lesotas</string>
+    <string key="country_liberia">Liberija</string>
+    <string key="country_libya">Libija</string>
+    <string key="country_liechtenstein">Lichtenšteinas</string>
+    <string key="country_lithuania">Lietuva</string>
+    <string key="country_luxembourg">Liuksemburgas</string>
+    <string key="country_macau">Makao</string>
+    <string key="country_macedonia">Makedonija</string>
+    <string key="country_madagascar">Madagaskaras</string>
+    <string key="country_malawi">Malavis</string>
+    <string key="country_malaysia">Malaizija</string>
+    <string key="country_maldives">Maldyvai</string>
+    <string key="country_mali">Malis</string>
+    <string key="country_malta">Malta</string>
+    <string key="country_marshallislands">Maršalo salos</string>
+    <string key="country_mauritania">Mauritanija</string>
+    <string key="country_mauritius">Mauricijus</string>
+    <string key="country_mayotte">Majota</string>
+    <string key="country_mexico">Meksika</string>
+    <string key="country_micronesia">Mikronezija</string>
+    <string key="country_moldova">Moldavija</string>
+    <string key="country_monaco">Monakas</string>
+    <string key="country_mongolia">Mongolija</string>
+    <string key="country_montenegro">Juodkalnija</string>
+    <string key="country_morocco">Marokas</string>
+    <string key="country_mozambique">Mozambikas</string>
+    <string key="country_myanmar">Mianmaras</string>
+    <string key="country_namibia">Namibija</string>
+    <string key="country_nauru">Nauru</string>
+    <string key="country_nepal">Nepalas</string>
+    <string key="country_netherlands">Nyderlandai</string>
+    <string key="country_newzealand">Naujoji Zelandija</string>
+    <string key="country_nicaragua">Nikaragva</string>
+    <string key="country_niger">Nigeris</string>
+    <string key="country_nigeria">Nigerija</string>
+    <string key="country_northkorea">Šiaurės Korėja</string>
+    <string key="country_norway">Norvegija</string>
+    <string key="country_oman">Omanas</string>
+    <string key="country_pakistan">Pakistanas</string>
+    <string key="country_palau">Palau</string>
+    <string key="country_panama">Panama</string>
+    <string key="country_papuanewguinea">Papua ir Naujoji Gvineja</string>
+    <string key="country_paraguay">Paragvajus</string>
+    <string key="country_peru">Peru</string>
+    <string key="country_philippines">Filipinai</string>
+    <string key="country_poland">Lenkija</string>
+    <string key="country_portugal">Portugalija</string>
+    <string key="country_qatar">Kataras</string>
+    <string key="country_reunion">Reunionas</string>
+    <string key="country_romania">Rumunija</string>
+    <string key="country_russia">Rusija</string>
+    <string key="country_rwanda">Ruanda</string>
+    <string key="country_sahrawiarabdemocraticrepublic">Sacharos Arabų Demokratinė Respublika</string>
+    <string key="country_saintpierreandmiquelon">Sent Pjeras ir Mikelonas</string>
+    <string key="country_samoa">Samoa</string>
+    <string key="country_sanmarino">San Marinas</string>
+    <string key="country_saotomeandprincipe">San Tome ir Prinsipe</string>
+    <string key="country_saudiarabia">Saudo Arabija</string>
+    <string key="country_senegal">Senegalas</string>
+    <string key="country_serbia">Serbija</string>
+    <string key="country_seychelles">Seišeliai</string>
+    <string key="country_sierraleone">Siera Leone</string>
+    <string key="country_singapore">Singapuras</string>
+    <string key="country_slovakia">Slovakija</string>
+    <string key="country_slovenia">Slovėnija</string>
+    <string key="country_solomonislands">Saliamono Salos</string>
+    <string key="country_somalia">Somalis</string>
+    <string key="country_southafrica">Pietų Afrika</string>
+    <string key="country_southkorea">Pietų Korėja (Korėjos Respublika)</string>
+    <string key="country_spain">Ispanija</string>
+    <string key="country_srilanka">Šri Lanka</string>
+    <string key="country_stkittsandnevis">Sent Kitsas ir Nevis</string>
+    <string key="country_stlucia">Sent Lusija</string>
+    <string key="country_stvincentandgrenadines">Sent Vinsentas ir Grenadinai</string>
+    <string key="country_sudan">Sudanas</string>
+    <string key="country_suriname">Surinamas</string>
+    <string key="country_swaziland">Svazilandas</string>
+    <string key="country_sweden">Švedija</string>
+    <string key="country_switzerland">Šveicarija</string>
+    <string key="country_syria">Sirija</string>
+    <string key="country_taiwan">Taivanas</string>
+    <string key="country_tajikistan">Tadžikistanas</string>
+    <string key="country_tanzania">Tanzanija</string>
+    <string key="country_thailand">Tailandas</string>
+    <string key="country_togo">Togas</string>
+    <string key="country_tonga">Tonga</string>
+    <string key="country_trinidadandtobago">Trinidadas ir Tobagas</string>
+    <string key="country_tunisia">Tunisas</string>
+    <string key="country_turkey">Turkija</string>
+    <string key="country_turkmenistan">Turkmėnistanas</string>
+    <string key="country_tuvalu">Tuvalu</string>
+    <string key="country_uganda">Uganda</string>
+    <string key="country_ukraine">Ukraina</string>
+    <string key="country_unitedarabemirates">Jungtiniai Arabu Emyratai</string>
+    <string key="country_unitedkingdom">Jungtinė Karalystė</string>
+    <string key="country_unitedstatesofamerica">Jungtinės Amerikos Valstijos</string>
+    <string key="country_uruguay">Urugvajus</string>
+    <string key="country_uzbekistan">Uzbekija</string>
+    <string key="country_vanuatu">Vanuatu</string>
+    <string key="country_vaticancity">Vatikanas</string>
+    <string key="country_venezuela">Venesuela</string>
+    <string key="country_vietnam">Vietnamas</string>
+    <string key="country_yemen">Jemenas</string>
+    <string key="country_zambia">Zambija</string>
+    <string key="country_zimbabwe">Zimbabvė</string>
+    <!-- iPhone only -->
+    <string key="audioPrefix"/>
+    <string key="iPhoneTitle">Pirmoji Medicinos Pagalba iPhone 1.0</string>
+    <string key="iPhoneTitleOffline">Pirmoji Medicinos Pagalba iPhone 1.0 Offline</string>
+    <string key="iPhoneDescription"/>
+    <string key="iPhoneDescriptionOffline"/>
+    <string key="WinMobTitle">Pirmoji Medicinos Pagalba winMobile 1.0</string>
+    <string key="WinMobDescription"/>
+    <string key="softwareVersion">Versija</string>
+    <string key="WinMobVersionNumber">w3.0</string>
+    <string key="iPhoneVersionNumber">j3.0</string>
+    <string key="softwareRelease">Leidiniai</string>
+    <string key="WinMobReleaseDate">2008-12-24</string>
+    <string key="iPhoneReleaseDate">2008-12-24</string>
+    <string key="iPhoneBackButton">Atgal</string>
+    <string key="iPhoneMenuButton">Menu</string>
+    <string key="languageChooser">Pasirinkite kalbą</string>
+    <string key="iPhoneOfflineFilename">firstaidLToffline.html</string>
+    <string key="offlineBookmark">Offline-Versija</string>
+    <string key="donateProject">Parama projektui</string>
+    <string key="mailToDeveloper">Rašyti laiška Kurejui</string>
+    <string key="checkNewVersion">Ieškoti naujos versijos</string>
+    <string key="donate">Parama</string>
+    <string key="whyDonate">Kodėl paremti?</string>
+    <string key="donate1">Jeigu manote, kad projektas yra gera idėja. Prašome mus paremti. Šis projektas egzistuos tik Jūsų aukų dėka.</string>
+    <string key="donateOnlineVia">Aukas siųskite internetu per</string>
+    <string key="paypalID">5315644</string>
+    <string key="orWireTransfer">.</string>
+    <string key="everyContributionCounts">Kiekvienas įnašas vertingas!</string>
+    <string key="smallStep">Vienas mažas žingsnelis žmogui, vienas milžiniškas šuolis žmonijai.</string>
+    <string key="license">Licencija</string>
+    <string key="licenseTerms">Galima kopijuoti, platinti ir naudotis pagal šias sąlygas:</string>
+    <string key="licenseAttribution">Nuosavybė</string>
+    <string key="licenseAttribution1">Galima naudotis nurodant, kad licencija priklaiso Kūrėjui</string>
+    <string key="licenseAttribution2">, bei esant nuorodai į svetaine</string>
+    <string key="licenseAttribution3">(tačiau ne bet kaip, o neutraliai, nuoroda nereiškia, kad mes pritariame jums ar jusu darbui).</string>
+    <string key="licenseNoCommercial">Nekomercinis projektas</string>
+    <string key="licenseNoCommercial1">Jums negalima naudoti šio darbo komerciniais tikslais.</string>
+    <string key="licenseNoDeriv">Naudojimas</string>
+    <string key="licenseNoDeriv1">Jūs negalite keisti, perrašyti, papildyti šio darbo.</string>
+    <string key="licenseDistribution1">Norint platinti privaloma laikytis šios licencijos sąlygų. Geriausias su nuoroda į</string>
+    <string key="licenseSuffix"/>
+    <string key="licenseDistribution2"/>
+    <string key="licenseWaived">Šios sąlygos gali būti keičiamos tik su savininko pritarimu.</string>
+    <string key="licenseMoralRights">Licencija neįtakoja autoriaus asmeninių teisių.</string>
+  </strings>
+  <section id="aid_general">
+    <title>Bendros nuorodos</title>
+    <step>Visuomet suteikite pirmąją medicinos pagalbą. Nedarykite klaidų.</step>
+    <step>Saugokitės patys.</step>
+    <step>Susidarykite aiškų vaizdą apie situaciją + pažymėkite nelaimės vietą.</step>
+    <step>Iškvieskite greitąją pagalbą + Suteikite nukentėjusiajam pirmąją medicinos pagalbą.</step>
+    <step>Esant keliems nukentėjusiesiems pirmenybę suteikite sunkiausiai sužalotam.</step>
+    <step>Nuraminkite nukentėjusįjį. Stenkitės išlikti ramus!</step>
+    <step>Paguldykite susižalojusį kaip galima patogiau. Jokiu būdu neduokite jam alkoholio, nikotino arba vaistų.</step>
+  </section>
+  <section headImage="46" id="aid_allergic">
+    <title>Alerginės reakcijos</title>
+    <step>Iškviesti greitąją pagalbą.</step>
+    <step>Nuraminkite alergijos ištiktą žmogų ir pasodinkite jį patogiai.</step>
+    <step>Pašalinkite alergijos sukėlėją (pvz. vabzdžio geluonį).</step>
+    <step>Šaldykie alerginės reakcijos ištikta vietą (drėgnais kompresais, ledu).</step>
+    <image file="046ice"/>
+    <step>Jei žmogus, ištiktas alergines reakcijos, turi priešalerginių vaistų, duokite juos išgerti.</step>
+    <step>Kontroliuokite alergijos ištiktojo būklę, kol atvyks gydytojas.</step>
+    <step>Sąmonės netekimo ar kvėpavimo sutrikimo atvejais imkitės atitinkamų priemonių!</step>
+    <image file="077"/>
+  </section>
+  <section id="aid_amputation">
+    <title>Amputavimas</title>
+    <description>Amputuotos kūno dalys gali būti prisiūtos. Amputuotą kūno dalį šaldyti, kol atvyks gydytojas.</description>
+    <step>Nukentėjusįjį nuraminkite, paguldykite ir užklokite.</step>
+    <step>Sustabdykite kraujavimą, žiūrėti 'Kraujavimas (stiprus") ir "Šokas".</step>
+    <step>Amputuotą kūno dalį suvyniokite į švarų sausą rankšluostį ir įdėkite į neperšlampantį plastikinį maišelį.</step>
+    <step>Plastikinį maišelį užriškite ir įdėkite į kitą plastikinį maišelį pripildytą šalto vandens arba ledo.</step>
+    <step>Neduokite alkoholio, rūkyti ar valgyti (ligoninėje gali prireikti operuoti su narkoze).</step>
+    <step>Amputuotos kūno dalies nedėkite į šaldikliį (tik šaldykite).</step>
+    <step>Kvieskite greitąją pagalbą arba važiuokite į ligoninę.</step>
+  </section>
+  <section headImage="47" id="aid_animalbite">
+    <title>Gyvūnų įkandimai</title>
+    <description>Dėmesio: Galite užsikrėsti stablige, pasiutlige.</description>
+    <step>Nuplaukite žaizdą karštu vandeniu su muilu.</step>
+    <image file="049"/>
+    <step>Dezinfekuokite žaizdą.</step>
+    <step>Sunkaus kraujavimo atveju, paguldykite nekentėjusį taip, kad viršutinė kūno dalis būtų pakelta.</step>
+    <step>Sutvarstykite steriliu tvarsčiu.</step>
+    <image file="085"/>
+    <step>Kreipkitės pas gydytoją arba kvieskite greitąją pagalbą.</step>
+  </section>
+  <section id="aid_apnoea">
+    <title>Kvėpavimas sustojęs</title>
+    <altTitle>Dirbtinis kvėpavimas</altTitle>
+    <description>Negirdėti kvėpavimo, nėra kvėpavimui būdingų judesių, pasikeitusi odos spalva.</description>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Paguldykite kvėpavimo sutrikimų ištiktąjį ant nugaros.</step>
+    <step>Iš nukentėjusiojo burnos ir gerklės pašalinkite svetimkūnius. Atloškite nukentejusiojo galvą.</step>
+    <image file="067"/>
+    <step>Suspauskite nosies sparnelius taip, kad nosis būtų užkimšta.</step>
+    <image file="010"/>
+    <step>Giliai įkvėpkite, priglauskite savo burną prie nukentėjusiojo burnos taip, kad visas Jūsų iškvėpiamas oras patektų į nukentėjusiojo plaučius.</step>
+    <image file="011"/>
+    <step>Giliai ir lėtai iškvėpkite.</step>
+    <step>Jei nukentėjusysis neatsigauna, tęskite dirbtinį kvėpavimą iš burnos į burną, kol atvyks gydytojas.</step>
+  </section>
+  <section id="aid_asthma">
+    <title>Astma / Kvėpavimo sutrikimai</title>
+    <altTitle>Dusulys</altTitle>
+    <description>Ūmūs kvėpavimo sutrikimai. Švokščiantis kvėpavimas. Baimės jausmas.</description>
+    <step>Nuraminkite ištiktą astmos priepuolio žmogų. Stenkitės išlikti ramus!</step>
+    <step>Atlaisvinkite jo drabužius.</step>
+    <step>Ištiktąjį astmos priepolio pasodinkite patogiai, šiek tiek palenkite į priekį, liepkite jam lėtai ir giliai kvėpuoti.</step>
+    <step>Jei astmos priepuolio ištiktasis turi inhaliatorių, padėkite jam juo pasinaudoti. Po 5-10 min. turėtų pagerėti.</step>
+    <image file="074"/>
+    <step>Jei nepagerėtų, toliau naudokite inhaliatorių kas 5 minutes, kol atvyks gydytojas.</step>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Jei astmos priepuolio ištiktasis nustotų kvėpuoti, pradėkite dirbtinį <link target="aid_apnoea">kvėpavimą</link>.</step>
+  </section>
+  <section id="aid_backinjury">
+    <title>Nugaros sužalojimai</title>
+    <altTitle>Stuburo lūžis</altTitle>
+    <description>Skausmas nugaroje, nutirpę rankos ir kojos.</description>
+    <step>Jokiu būdu nejudinkite sužalotojo!</step>
+    <image file="064"/>
+    <step>Laikykite nukentėjusiojo galvą taip, kad būsena būtų stabili.</step>
+    <image file="065"/>
+    <step>Stabilizuoti nukentėjusiojo būseną paremiant iš šonų.</step>
+    <step>Nusiraminkite nukentėjusįjį.</step>
+    <step>Kvieskite greitąją pagalbą, informuokite apie nugaros sužeidimą.</step>
+  </section>
+  <section id="aid_birth">
+    <title>Gimdymo priėmimas</title>
+    <description>Ištekėjo vaisiaus vandenys. Prasideda gimdymo skausmai. Netikėtas gimdymas.</description>
+    <image file="025"/>
+    <step>Išlikite ramūs! - Kvieskite greitąją pagalbą.</step>
+    <step>Pasodinkite nėščiąją praskėstomis apnuogintomis kojomis ant sterilaus pagrindo.</step>
+    <step>Sulenkite kelius. Šiek tiek pakelkite jos dubenį. - Gimdymas yra natūralus procesas ir dažniausiai praeina be komplikacijų.</step>
+    <step>Nuraminkite moterį, leiskite jai sutelkti dėmesį į kvėpavimą: Įkvėpti per nosį, iškvėpti per burną (normaliu greičiu).</step>
+    <step>Stūmimo ritmas: Giliai įkvėpti, sulaikyti kvėpavimą, stumti. Kai pasirodys kūdikio galvutė, prilaikykite ją abiem rankomis.</step>
+    <image file="021"/>
+    <image file="022"/>
+    <step>Po gimdymo: pakelkite kūdikį nuožulniai galva žemyn lengvai palenkta galvele, kad iš kūdikio kvėpavimo takų pasišalintų skystis. (Gali prireikti iš jo burnos ir nosytės burnos pagalba issiurbti likusį skystį). Kūdikis turi kvėpuoti ir verkti!</step>
+    <step>Suriškite bambagyslę 30 cm atstumu nuo kudikio (tai gali būti atlikta ligoninėje). Steriliai apdenkite gimdyvės makštį.</step>
+    <image file="023"/>
+    <step>Nusausinkite kūdikį ir laikykite jį šiltai. Įsidėmėkite laiką ir važiuokite i ligoninę.</step>
+  </section>
+  <section headImage="82" id="aid_bleedinglight">
+    <title>Kraujavimas, lengvas</title>
+    <description>Tikslas: Kraujavimo sustabdymas.</description>
+    <step>Žaizdos nelieskite (dėl infekcijos pavojaus).</step>
+    <step>Žaizdos niekuo netepkite, nepurkškite ir nepudruokite.</step>
+    <step>Ant žaizdos uždėkite sterilų tvarstį ir jį užklijuokite pleistru ar bintu apriškite sužeistą vietą.</step>
+    <image file="098"/>
+    <step>Esant silpnam kraujavimui užtenka tik paprasto pleistro.</step>
+    <step>Didesnei žaizdai naudokite sterilų tvarstį. Ji uždėkite ant žaizdos ir apriškite bintu (veržkite ne per stipriai, nes tai gali sukelti dar didesnį kraujavimą).</step>
+    <image file="084"/>
+    <image file="085"/>
+    <step>Įkandus pasiutusiam gyvūnui žaizdą nuplaukite vandeniu ir muilu.</step>
+    <image file="049"/>
+  </section>
+  <section id="aid_bleedingsevere">
+    <title>Kraujavimas, stiprus</title>
+    <description>Kraujas liejasi iš žaizdos pulsuodamas, purkšdamas. Pavojus, kad ištiks šokas dėl kraujo netekimo, infekcija, žmogus gali mirti. Tikslas: kraujavimo sustabdymas.</description>
+    <step>Pašalinkite drabužius (esant būtinybei juos prakirpkite), apnuoginkite sužalotą vietą.</step>
+    <step>Bintu arba drabužio skiaute apvyniokite žaizdą ją užspaudžiant.</step>
+    <image file="086"/>
+    <step>Užveržtą žaizdą laikykite mažiausiai 10 minučių.</step>
+    <step>Jei naudojamas varžtas persisunkė krauju, jo nepašalinkite! Ant viršaus dėkite kitą bintą ar drabužio skiautę.</step>
+    <step>Sužeistą galūnę, jei ji nelūžus, pakelkite aukščiau širdies lygmens, kad kraujavimas susilpnėtų. Jei yra galimybė, sužeistąjį paguldykite.</step>
+    <step>Jei kraujavimo nepavyksta sustabdyti, žaizdą laikykite užspaudę toliau, tuo pačiu veržkite virš sužeistos vietos: kraujuojant dilbiui- žastą (pirštais spauskite per viduįi iš vidinės rankos pusės tarp alkūnės ir pažasties); kraujuojant kojai - užspauskite ranka kirkšnį (spauskite kraujagysles kirkšnyje, kur arterija eina per dubens kaulus).</step>
+    <image file="089"/>
+    <image file="092"/>
+    <step>Nedelsiant kvieskite greitąją pagalbą.</step>
+    <step>Jeigu kraujavimas sustojo, imkitės pirmosios pagalbos priemonių šokui pašalinti.</step>
+    <image file="093"/>
+  </section>
+  <section id="aid_brainconcussion">
+    <title>Smegenų sukrėtimas</title>
+    <description>Galvos skausmas, pykinimas, vėmimas. Pablogėjęs regėjimas. Galimas sąmonįs netekimas.</description>
+    <image file="035a"/>
+    <step>Nukentėjusįjį paguldykite.</step>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <description>Jeigu galva kraujuoja:</description>
+    <step>Paguldykite nukentėjusįjį, pakelkite galvą (ant pagalvės).</step>
+    <image file="061"/>
+    <step>Apriškite žaizdą (naudokite tvarstį).</step>
+    <step>Kvieskite greitąją pagalbą.</step>
+  </section>
+  <section id="aid_burningslight">
+    <title>Nudegimas, lengvas</title>
+    <description>Odos paraudimas. Lengvas patinimas. Skausmas.</description>
+    <step>Šaldykite sužeistą vietą po šaltu tekančiu vandeniu.</step>
+    <image file="100"/>
+    <step>Neveržiant aptvarstykite drėgnu tvarsčiu.</step>
+  </section>
+  <section id="aid_burningsevere">
+    <title>Nudegimas, stiprus</title>
+    <description>Pūslėti baltai raudoni odos plotai. Šlapiuojanti oda. Giluminis audinių pažeidimas. Stiprus skausmas arba skausmo nėra (dėl sudegusių nervų).</description>
+    <image file="097"/>
+    <step>Pašalikite kiek įmanoma drabužius.</step>
+    <step>Šaldykite nudegusias kūno dalis šaltu vandeniu (maždaug 15 ° C) iki 10 min, kol skausmas atslūgs.</step>
+    <image file="100"/>
+    <step>Jei nudeginimas platus, šaldykite drėgnais rankšluoščiais.</step>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Po to kai atšaldėte žaizdą, ją sutvarstykite. Naudokite sterilų sausą tvarstį. Nenaudokite jokių skysčių (kremų, aliejų, tepaųi ir kt.) Nepradurkite susidariusių pūslių.</step>
+    <image file="085"/>
+    <step>Kontroliuokite nukentėjusiojo kvėpavimą ir sąmonę kol atvyks gydytojas.</step>
+  </section>
+  <section id="aid_checkbreathing">
+    <title>Kvėpavimo kontroliavimas</title>
+    <step>Patikrinkite kvėpavimo garsą.</step>
+    <step>Krūtinės ląstos judėjimas (tikrinti ant pilvo uždedant ranką).</step>
+    <image file="027"/>
+    <step>Patikrinti ar jaučiamas kvėpavimą per nosį ar burną.</step>
+  </section>
+  <section id="aid_chemicalburneyes">
+    <title>Akių nudegimas chemikalais</title>
+    <step>Kvieskite greitąją pagalbą, informuokite apie cheminę medžiagą, nudeginusią akį.</step>
+    <step>Plaukite akį vandeniu. Plaunant uždenkite sveiką akį.</step>
+    <step>Sužeistą akį plaukite šalto vandens srove apie 20 min. nuo vidinio akies krašto link išorinio.</step>
+    <image file="019"/>
+    <step>Užmerkite abi akis ir užriškite drėgnu tvarsčiu.</step>
+    <image file="020"/>
+    <step>Stebėkite nukentėjusiojo būseną kol atvyks greitoji medicinos pagalba.</step>
+  </section>
+  <section id="aid_chemicalburn">
+    <title>Nudegimas chemikalais</title>
+    <description>Audinių sužalojimas.</description>
+    <image file="095"/>
+    <step>Saugokitės patys!</step>
+    <step>Nedelsiant nuplaukite nudegintą vietą (nudegusią akį plauti šaltu vandeniu maž. 20 min., vandens srovę kreipti nuo vidinio link išorinio akies krašto).</step>
+    <image file="100"/>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Cheminis virškinamojo trakto nudegimas. Gerti daug vandens.</step>
+    <step>Neprovokuoti vėmimo!</step>
+  </section>
+  <section id="aid_dangerzone">
+    <title>Gelbėjimas</title>
+    <step>Būdas: atsistokite už nukentėjusiojo, nukentėjusiojo ranka ant jo krūtinės.</step>
+    <step>Apkabinkite nukentėjusįjį pro pažastis ir paimkite už sulenktos nukentėjusiojo rankos.</step>
+    <step>Gabenkite nukentėjusįjį į saugią vietą.</step>
+    <image file="001"/>
+    <image file="007"/>
+  </section>
+  <section id="aid_diabeticcoma">
+    <title>Diabetinė koma</title>
+    <altTitle>Hiperglikemija (cukraus kiekio padidėjimas kraujyje)</altTitle>
+    <description>Cukraus koncentracija kraujyje per didelė (atitinkamai trūksta insulino).</description>
+    <description>Požymiai: troškulys, dažnas šlapinimasis, pykinimas, vėmimasi. Kvėpavimas atsiduoda vaisiais.</description>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Jeigu aišku, kad žmogus diabetikas, padėkite susileisti insulino.</step>
+    <image file="016"/>
+    <step>Paguldykite nukentėjusįjį <link target="aid_recoveryposition">stabiliai ant šono</link>. Daugiau pirmos pagalbos teikėjas negali tokiu atveju padaryti.</step>
+    <step>Stebėti buklę, kol atvyks gydytojas.</step>
+  </section>
+  <section id="aid_diarrhoea">
+    <title>Viduriavimas</title>
+    <description>Apsinuodijimas maistu, infekcijos arba žarnyno liga. Viduriavimas skystas, gleivėtas arba su krauju.</description>
+    <step>Pavojus dėl dehidratacijos ir mineralų trūkumo!</step>
+    <step>Duoti gerti skysčių (arbatos, vandens).</step>
+    <step>Sunkiais atvejais vykti pas gydytoją arba kvieti greitąją pagalbą.</step>
+  </section>
+  <section id="aid_drowning">
+    <title>Skendimas</title>
+    <step>Kvieskite greitąją pagalbą. Prašykite aplinkinių žmonių pagalbos.</step>
+    <image file="032"/>
+    <step>Gelbekite skęstantįjį!</step>
+    <image file="033"/>
+    <image file="034"/>
+    <step>Jeigu nukentėjusįsis kvėpuoja: Paguldykite į <link target="aid_recoveryposition">stabilią poziciją ant šono</link>. Apklokite (antklode). Stebėkite būkle, kol atvyks greitoji pagalba.</step>
+    <step>Jeigu nukentėjusįsis nekvėpuoja: Nedelsiant pradėkite <link target="aid_resuscitation">gaivinimą!</link> (Nesistenkinte pašalinti vandens iš plaučiu.)</step>
+  </section>
+  <section id="aid_electricityaccident">
+    <title>Nutrenkimas elektros srove</title>
+    <step>Visu pirma nutraukite elektros energijos tiekimą!</step>
+    <image file="045plug"/>
+    <image file="045"/>
+    <step>Galimas sąmonės netekimas kvėpavimo sustojimas.</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - Sąmonės netekimas,kvėpavimas nesutrikęs</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - Sąmonės netekimas, kvėpavimo nėra</link>
+    </step>
+    <image file="042"/>
+    <image file="043"/>
+  </section>
+  <section id="aid_emergencycall">
+    <title>Greitosios pagalbos kvietimas</title>
+    <step>Paskambinkite pirmu pasitaikiusiu telefonu 112 (JAV: 911). Visada galima ir nemokamai! Nedvejokite ir kvieskite greitaja pagalba!</step>
+    <step>Telefonu privalote suteikti šia informacija:</step>
+    <step>- Kas nutiko</step>
+    <step>- Kur (nelaimingo atsitikimo vieta) </step>
+    <step>- Kiek nukentejusiuju </step>
+    <step>- Kokios traumos.</step>
+    <step>Laukite tolimesniu nurodymu.</step>
+  </section>
+  <section id="aid_epilepsy">
+    <title>Epilepsija</title>
+    <description>Sustingęs kūnas, sugniaužti kumščiai, sukąstas žandikaulis, trūkčiojančios galūnės arba veidas. Besivartančios akys. Seilėjimasis. Galimas sąmonės netekimas.</description>
+    <image file="058"/>
+    <step>Nelaikykite nukentėjusiojo, neribokite jo judesių.</step>
+    <step>Paguldykite nukentėjusįjį ant minkšto pagrindo (pagalvės), pašalinkite arti esancius daiktus siekiant užkirsti kelią susižalojimams.</step>
+    <step>Raminkite nukentėjusįjį žodžiais. Atlaisvinkite drabužius, kad jis galėtų laisvai kvėpuoti.</step>
+    <step>Jeigu nukentėjęs vemia, pakreipkite jo galvą taip, kad neužspringtų.</step>
+    <step>Stebėkite, kad kvėpavimo takai būtų laisvi. Nukentėjęs gali nuryti liežuvį.</step>
+    <step>Paguldykite <link target="aid_recoveryposition">stabiliai ant šono</link> + kvieskite greitąją pagalbą. Stebėkite nukentėjusiojo būklę.</step>
+    <step>Neleiskite prisiartinti kitiems žmonėms.</step>
+  </section>
+  <section id="aid_eyeinjury">
+    <title>Akių sužeidimai</title>
+    <step>Svetimkūnį palikite akyje, nesistenkite jo pašalinti.</step>
+    <step>Akies nejudinkite ir nelieskite, tam kad jos dar daugiau nesužeistumėte.</step>
+    <step>Jeigu akis kraujuoja, uždėkite ant jos kompresą arba sterilų tvarstį.</step>
+    <image file="020"/>
+    <step>Akį šaldykite šaltu kompresu, tai mažina tinimą, stabdo kraujavimą.</step>
+    <step>Kvieskite greitąją pagalbą arba važiuokite į ligoninę.</step>
+  </section>
+  <section id="aid_fracture">
+    <title>Kaulo lūžis, atviras</title>
+    <description>Simptomai: nenatūrali pozicija, nenatūralus kaulų judėjimas. Deformacija. Skausmingas judėjimas, skausmas prisilietus.</description>
+    <image file="104"/>
+    <step>Vengti judesių!</step>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Uždėkite įtvarą sulaužytam kaului, paremkite nekeičiant kaulo pozicijos.</step>
+    <image file="107"/>
+    <step>Jei lūžis atviras, steriliai pridenkite žaizdą.</step>
+    <image file="106"/>
+  </section>
+  <section id="aid_frostbitemild">
+    <title>Nušalimas, lengvas</title>
+    <description>Blyškumas, patinimas. Gali sutrikti aprūpinimas krauju.</description>
+    <step>Nuveskite nukentėjusįjį į šilumą.</step>
+    <step>Pasistenkite nukentėjusįjį sušildyti, pašalinkite šlapius drabužius.</step>
+    <step>Sušildykite drungnu vandeniu ir savo kūno šiluma.</step>
+    <step>Duokite šilto gėrimo (arbatos). Jokio alkoholio!</step>
+    <image file="040"/>
+  </section>
+  <section id="aid_frostbitesevere">
+    <title>Nušalimas, sunkus</title>
+    <description>Šalta ir kieta kūno oda, pilkai balta spalva, darosi pūslės, audiniai apmiršta. Gali sutrikti aprūpinimas krauju!</description>
+    <image file="096"/>
+    <step>Eikite į šiltą vietą.</step>
+    <step>Žaizdas sutvarstykite/apdenkite.</step>
+    <step>Duokite cukrumi saldinto gėrimo.</step>
+    <step>Nesistenkite sušildyti trynimu!</step>
+    <step>Kvieskite greitąją pagalbą.</step>
+  </section>
+  <section id="aid_heartattack">
+    <title>Širdies infarktas</title>
+    <description>Sunkus, daugiau kaip 5 min. trunkantis spaudimas ir skausmas krūtinėje, ypatingai besiskleidižantis rankos bei paties srityje. Nerimas, blyškumas, šaltas prakaitas. Galimas pykinimas, dusulys.</description>
+    <image file="076"/>
+    <image file="083"/>
+    <step>Kvieskite greitąją pagalbą! Praneškite apie galimą širdies infarktą.</step>
+    <step>Viršutinę kūno dalį pakelkite. Atpalaiduokite drabužius. Neduokite vaistų ar gėrimų.</step>
+    <image file="061"/>
+    <step>Raminkite nukentėjusįjį žodžiais.</step>
+    <step>Kontroliuokite sąmonę ir kvėpavimą.</step>
+    <step>Jeigu turite, duokite aspirino.</step>
+    <step>Jei asmuo praranda sąmonę, pradėkite <link target="aid_resuscitation">gaivinimą</link>.</step>
+  </section>
+  <section id="aid_hypoglycaemia">
+    <title>Hipoglikemija (cukraus kiekio sumažėjimas kraujyje)</title>
+    <description>Cukraus koncentracija kraujyje yra mažesne nei mažiausia vertė (perdozavus insulino arba dėl nepakankamo maitinimosi).</description>
+    <description>Simptomai: blyškumas, nervingumas, alkis, drebulys, prakaitas.</description>
+    <image file="018"/>
+    <step>Įsitikinkite, kad asmuo yra diabetikas (diabetiko ženklelis).</step>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Duokite cukrumi saldinto gėrimo arba dekstrozės / gliukozės (jei nėra rijimo problemų).</step>
+    <image file="017"/>
+    <step>Jei asmuo be sąmonės, bet kvėpuoja: paguldykite <link target="aid_recoveryposition">stabiliai ant šono</link> ir stebėkite kvėpavimą. Jei kvėpavimas sustojo, darykite dirbtinį kvėpavimą.</step>
+    <step>Jei nukentėjusįsis kvėpuoja, bet be sąmonės, įdėkite gabaliuką cukraus už žando ir paspauskite iš išorės.</step>
+  </section>
+  <section id="aid_hyperthermia">
+    <title>Perkaitimas</title>
+    <description>Troškulys, silpnumas, orientacijos sutrikimas, pykinimas, sumišimas, stiprus prakaitavimas, karščiuojanti oda.</description>
+    <image file="035"/>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Vėsinti, ieškoti pavėsio (patalpa su oro kondicionieriumi pageidautina).</step>
+    <step>Asmenį paguldyti, pakelti kojas. Atlaisvinti drabužius.</step>
+    <image file="078"/>
+    <step>Odą vėsinti vandeniu arba uždėti šaltą rankšluostį.</step>
+    <step>Gerti daug vandens ar sulciui.</step>
+  </section>
+  <section id="aid_hypothermia">
+    <title>Sušalimas (Hipotermija)</title>
+    <description>Šaltas drebulys, mieguistumas, išsekimas net iki sąmonės netekimo. Šalta, blyški oda. Žemas pulsas, silpnas širdies plakimas.</description>
+    <image file="014"/>
+    <step>Eiti į šiltą patalpą.</step>
+    <step>Kviesti greitąją pagalbą.</step>
+    <step>Pašalinti šalčio šaltinį.. Didinti kūno temperatūrą (dekio arba savo kūno kontaktu).</step>
+    <step>Nurenkite šlapius drabužius ir aprengite šiltais drabužiais. Apsupkite dekiu. Uždenkite galvą.</step>
+    <step>Duokite atsigerti karštos arbatos, sriubos arba karšto vandens. Jokio alkoholio! Neleiskite asmeniui užmigti.</step>
+    <image file="039"/>
+    <image file="040"/>
+    <step>Stebėkite sušalusiojo būklę, kol atvyks greitoji pagalba. Jei asmuo netenka sąmonės, pradėkite gaivinimą:</step>
+    <step>
+      <link target="aid_unconsciouswithbreath">A - Nukentėjęs be sąmonės, bet kvėpuoja</link>
+    </step>
+    <step>
+      <link target="aid_unconsciouswithoutbreath">B - Be sąmonės, nekvėpuoja</link>
+    </step>
+  </section>
+  <section id="aid_icerescue">
+    <title>Nelaimingas atsitikimas ant ledo</title>
+    <description>Saugokitės patys. Pavojus nuskęsti, nušalimas.</description>
+    <step>Gelbėkite kopėčių, lentos ar lazdos pagalba. Svoris ant ledo turi būti tolygiai paskirstytas.</step>
+    <step>Paprašykite kitų žmonių pagalbos. Prašykite iškviesti greitąją pagalbą.</step>
+    <step>Su įrankiu rankoje, atsargiai šliaužkite ant pilvo (jei įmanoma, prisirišus virve) link įskilusio ledo.</step>
+    <image file="041"/>
+    <step>Paduokite nukentėjusiam įrankį (ne savo ranką!) ir traukite.</step>
+    <step>Šliaužkite atgal link kranto.</step>
+    <step>Suteikite Pirmąją medicinos pagalbą.</step>
+    <step>Savarankiškas gelbėjimasis: Jei ledas kietos, paskirstykite svorį tolygiai ir stenkitės išlipti.Ant pilvo šliaužkite link kranto. Jei ledas trapus, pabandykite sulaužyti ledą iki krašto.</step>
+  </section>
+  <section headImage="46" id="aid_insectstings">
+    <title>Vabzdžių įkandimai</title>
+    <description>Patinimas, odos bėrimas, deginimas, silpnumas, pasunkejęs kvėpavimas, svaigimas, tachikardija.</description>
+    <step>Atsargiai pašalinkite geluonį (su pincetu). Nespauskite geluonies, nes taip galite įšvirkšti daugiau nuodų.</step>
+    <step>Atšaldykite sužeistą vietą (uždėkite šaltą kompresą).</step>
+    <step>Įgeltą vietą laikykite žemiau nei širdis, taip cirkuliuos nuodai lėčiau.</step>
+    <step>Jeigu geluonis yra burnos ertmėje: čiulpti ledus ir uždėkite šaltą kompresą aplink gerklę.</step>
+    <image file="046ice"/>
+    <step>Pasireiškus sunkioms problemoms iškviesti greitąją pagalbą.</step>
+  </section>
+  <section id="aid_nosebleeding">
+    <title>Kraujavimas iš nosies</title>
+    <description>Įtrūkusi kraujagyslė nosies ertmėje.</description>
+    <step>Pasodinkite kraujuojantį asmenį ir truputį palenkite į prieki. Laikykite galvą tiesiai.</step>
+    <step>Neguldykite asmens, galvos padėtis virš širdies lėtina kraujavimą.</step>
+    <step>Uždėkite šaltą kompresą ant sprando.</step>
+    <step>Užspauskite nosį kol kraujavimas sustos (apie 10 min.)</step>
+    <step>Vėliau nevarginkite nosies (ne šnypškite).</step>
+    <step>Jeigu problema rimta arba kraujavimas ilgai nenustoja, kvieskite gydytoją.</step>
+  </section>
+  <section headImage="52" id="aid_poisining">
+    <title>Apsinuodijimas</title>
+    <description>Sumišimas, haliucinacijos, issiplėtę vyzdžiai, karščiavimas, mešlungis, sąmonės netekimas.</description>
+    <step>Duokite priešnuodžių tik tada jeigu šalia kvalifikuotas medikas.</step>
+    <image file="056"/>
+    <step>Neduokite gerti. Neprovokuokite vėmimo.</step>
+    <step>Iškvieskite greitąją pagalbą, būtinai nurodykite, kad asmuo apsinuodijęs!</step>
+    <step>Išsaugokite nuodų ir vėmimo likučius!</step>
+    <image file="054a"/>
+    <step>Jeigu nukentėjęs be sąmonės, bet kvėpuoja: paguldykite <link target="aid_recoveryposition">stabiliai ant šono</link>. Stebėkite sąmonę ir kvėpavimą kol atvyks gydytojas.</step>
+    <step>Jeigu nukentejusysis nekvėpuoja: Nedelsiant pradėkite <link target="aid_resuscitation">gaivinimą!</link> Prieš pradedant dirbtinį kvėpavimą, patikrinkite, ar neužsikimšę kvėpavimo takai, pavyzdžiui dėl vėmimo.</step>
+  </section>
+  <section id="aid_recoveryposition">
+    <title>Stabili pozicija ant šono.</title>
+    <step>Paguldykite nukentėjusįjį ant nugaros, ištieskite kojas. Atsiklaupkite šalia.</step>
+    <step>Arčiausiai jūsų esančią nekentėjusiojo ranką padėkite stačiu kampu prie kūno.</step>
+    <step>Tolimesniąją ranką uždėkite ant krūtinės, o delno išorinę pusę ant skruosto.</step>
+    <image file="008"/>
+    <step>4.Paimkite tolimesnį kelį, patraukite link savęs ir padėkite ant žemės. Koja turi gulėti stačiu kampu. Ranka nukentėjusiojo ant skruoto.</step>
+    <step>Įsitikinkite, kad kvėpavimo takai nėra blokuojami.</step>
+    <step>Atloškite galvą, kilstelėkite smakrą. Lengvai pražiodinkite burną. Stebėkite kvėpavimą.</step>
+    <image file="009"/>
+    <step>Stebėkite nukentėjusiojo būklę kol atvyks greitoji pagalba.</step>
+    <description>Kūdikio stabili pozicija ant šono</description>
+    <image file="028"/>
+  </section>
+  <section id="aid_resuscitation">
+    <title>Gaivinimas (Reanimacija)</title>
+    <altTitle>Krūtinės ląstos masažas</altTitle>
+    <altTitle>Reanimacija</altTitle>
+    <subsection># Išorinis širdies masažas</subsection>
+    <step>Nukentėjusįjį paguldykite ir atsiklaupkite šalia jo.</step>
+    <step>Atsekite krūtinės dalies drabužius.</step>
+    <step>Uždėkite savo vieną delną ant apatinės krūtinkaulio dalies.</step>
+    <image file="013"/>
+    <step>Kitą delną uždėkite ant jo.</step>
+    <step>Ištieskite rankas ir alkūnes.</step>
+    <image file="003"/>
+    <step>Statmenai iš viršaus nelenkdami alkūnių stipriai paspauskite krūtinkaulį apie 5 cm ir atleiskite.</step>
+    <step>Trumpai ir stipriai kartokite šį judesį iš eilės 30 kartų!</step>
+    <subsection># Dirbtinis kvėpavimas</subsection>
+    <step>Pašalinkite visus svetimkūnius, esancius nukentėjusiojo burnoje (protezus, vėmalų likučius ir kt.). Atloškite nukentėjusiojo galvą prilaikydami kaklą.</step>
+    <image file="067"/>
+    <step>Laisva ranka užspauskite nosį.</step>
+    <image file="010"/>
+    <step>Giliai įkvėpkite ir įpūskite orą nukentėjusiam į burną taip, kad oras negalėtų išeiti.</step>
+    <image file="011"/>
+    <step>Įpūtimą iš burnos į burną kartokite du kartus (lėtai, pilnai iškvepiant).</step>
+    <step>Vėl darykite išorinį širdies masažą.</step>
+    <description>Išorinis širdies masažas kartu su dirbtiniu kvėpavimu atliekamas tol kol atvažiuos greitoji pagalba.</description>
+    <image file="012"/>
+    <subsection># Kūdikio Gaivinimas</subsection>
+    <step>Naudoti tik du pirštus:</step>
+    <image file="029"/>
+    <step>Įpūskite ne per stipriai:</step>
+    <image file="030"/>
+  </section>
+  <section id="aid_safeguardaccident">
+    <title>Nelaimės vieta, pažymėkite</title>
+    <altTitle>Eismo nelaimė</altTitle>
+    <step>Savo automobilį pastatykite 50-100 m už eismo ivykio vietos (jeigu įvykis greitkelyje arba plente). Įjunkite avarinį signalą. Apsirenkite matomumo liemenę.</step>
+    <step>Įvykio vietoje pastatykite avarinį ženklą. Dėmesio: Jei avarija posūkyje, pastatykite avarinį ženklą prieš posūkį!</step>
+    <image file="111"/>
+    <step>Pašaukite aplinkinius žmones į pagalbą.</step>
+    <step>Atidarykite automobilio duris (jei užstrigę, naudokite automobilio keltuvą). Išjunkite degimą.</step>
+    <step>Gelbėkite avarijos auką : atsekite saugos diržą, atstumkite sėdynę. Iškelkite sužeistąjį <link target="aid_dangerzone">apkabinę per pažastis</link>.</step>
+    <image file="001"/>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Suteikite pirmąją medicinos pagalbą.</step>
+  </section>
+  <section id="aid_shock">
+    <title>Šokas</title>
+    <description>Kraujotakos sutrikimas dėl nepakankamo deguonies tiekimo į kūną.</description>
+    <description>Priežastis: Skysčių praradimas, sumažėjęs kraujo tūris.</description>
+    <description>Simptomai: blyškumas, šalta oda, šaltas prakaitas, nerimas.</description>
+    <step>Pašalinkite šoko priežastį (pvz.sustabdykite skysčių praradimą, sutvarstykite žaizdą)!</step>
+    <step>Paguldykite sužeistąjį ant paklodės, pakelkite kojas aukštyn. Nuraminkit nukentėjusįjį.</step>
+    <image file="078"/>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Jei sunku kvėpuoti ar sutrikusi kraujotaka, pradėkite <link target="aid_resuscitation">gaivinimą</link>.</step>
+  </section>
+  <section id="aid_skullfracture">
+    <title>Kaukolės lūžis</title>
+    <description>Lengvas kraujavimai iš nosies, burnos arba ausų. Dažnai atviros žaizdos kaukolėje.</description>
+    <step>Stebėkite kvėpavimo takus, kad neužsikimštų.</step>
+    <step>Jeigu nukentėjęs sąmoningas: Pasodinkite ir lengvai palenkite į priekį. Stenkitės daugiau nejudinti.!</step>
+    <step>Jei be sąmonės: <link target="aid_recoveryposition">Stabili pozicija ant šono</link> (nespauskite žaizdos galvoje).</step>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Sutvarstykite galvą tvarsčiu.</step>
+    <step>Jei sunku kvėpuoti, sutrikusi kraujotaka, <link target="aid_resuscitation">pradėkite gaivinimą</link>.</step>
+  </section>
+  <section headImage="51" id="aid_snakebite">
+    <title>Gyvatės įkandimas</title>
+    <description>Smeigtuko dydžio durtinė žaizda, stiprus skausmas, patinimas, purpurinė spalva. Kraujotakos sutrikimas, galimas šokas.</description>
+    <step>Įkąstą kūno dalį paguldyti.</step>
+    <step>Dėkite šaltus kompresus ant įkandimo vietos.</step>
+    <step>Imkitės veiksmų prieš šoką.</step>
+    <step>Kvieskite greitąją pagalbą.</step>
+  </section>
+  <section id="aid_sos">
+    <title>SOS - Nelaimės Signalas</title>
+    <step>Signalas: 3x trumpai, 3x ilgai, 3x trumpai.</step>
+    <step>Optiškai (lempute, prožektoriumi) oder akustiškai (signaliniškai švilpuku, beldimu).</step>
+  </section>
+  <section id="aid_sprain">
+    <title>Sausgyslės patempimas, sąnario išsukimas</title>
+    <description>Skausmas, tinimas (mėlynė), funcijos nebuvimas, galūnių deformacijos.</description>
+    <step>Paguldykite nukentėjusiojo galūnę patogiai.</step>
+    <step>Šaldyti (naudokite ledo paketus).</step>
+    <step>Jei įmanoma paguldykite galūnę aukščiau.</step>
+    <step>Vykite į ligoninę ar kvieskite greitosios pagalbos gydytoją.</step>
+  </section>
+  <section id="aid_stroke">
+    <title>Insultas</title>
+    <description>Staigus paralyžius arba nutirpimas (veido, rankos, kojos), kalbos, regos sutrikimai, sutrikusi sąmonė, stiprūs galvos skausmai. Kvėpavimo, rijimo problemos, šlapimo pūslės ir žarnyno nevaldymas.</description>
+    <image file="059"/>
+    <step>Kvieskite greitąją pagalbą!</step>
+    <step>Atpalaiduokite veržiančius drabužius, neduokite medikamentų, neduokite gerti.</step>
+    <step>Nukentėjusįjį pasodinkite arba paguldykite patogiai. Nusiraminkite!</step>
+    <step>Stebėkite sąmonę ir kvėpavimą.</step>
+    <step>Jeigu problemos su kvėpavimu arba sąmonės sutrikimai, <link target="aid_resuscitation">pradėkite gaivinimą</link>.</step>
+  </section>
+  <section id="aid_suffocation">
+    <title>Uždusimas / Užspringimas</title>
+    <description>Nepakankamas aprūpinimas deguonimi. Trachėja uždaryta. Gali sustoti kvėpavimas (apnėja)</description>
+    <description>Simptomai: švokščiantis kvėpavimas, kosulys, dusulys, odos spalvos pakitimas.</description>
+    <image file="066"/>
+    <step>Veikite skubiai! Leiskite nukentėjusiajam stipriai atsikosėti.</step>
+    <step>Stipriai suduokite plokščia ranka keletą kartų per nugarą tarp menčių (kūdikį pasiguldykite sau ant rankos, galvą laikykite žemyn).</step>
+    <image file="068"/>
+    <image file="031"/>
+    <step>Jei tai neduoda rezultatų: atsistokite asmeniui iš nugaros, uždėkite rankas ant juosmens, palenkite nukentėjusįjį lengvai į priekį.</step>
+    <step>Sugniaužkite kumštį nukentėjusiojo skrandžio lygmenyje ir apkabinkite kita ranka.</step>
+    <image file="069"/>
+    <step>Abi apkabinusias rankas traukite staigiu judesiu aukštyn/link savęs, lyg norėtumėte nukentėjusįjį kilstelėti.</step>
+    <step>Kartokite tai iki 5-ių kartų! Kvėpavimo takai turėtų atsilaisvinti, jeigu buvo užkimšti daiktu.</step>
+    <step>Kvieskite greitąją pagalbą.</step>
+    <step>Jei ši pirmosios pagalbos priemonė nėra sėkminga, vistiek tęskite ją kol atvyks gydytojas</step>
+  </section>
+  <section id="aid_sunburn">
+    <title>Nudegimas saulėje</title>
+    <step>Nuveskite nukentėjusįjį į pavėsį. Venkite saulė spindulių.</step>
+    <step>Duokite gerti daug vandens (dėl dehidratacijos).</step>
+    <step>Esant sunkiam nudegimui (darosi pūslės, paraudimas, skausmas), nedelsiant kreipkitės pas gydytoją.</step>
+    <step>Jeigu oda tik truputį raudona, šaldykite ją drėgnais kompresais. Naudokite kremą arba gelį skirtą tepti po deginimosi saulėje.</step>
+  </section>
+  <section id="aid_sunstroke">
+    <title>Saulės smūgis</title>
+    <description>Galva karšta ir raudona, oda šalta, šleikštulys, galvos skausmas, galvos svaigimas. Priežastis: Sudirginta smegenų membrana.</description>
+    <image file="035"/>
+    <step>Ieškokite vėsios vietos, pavėsio. Viršutinė kūno dalis turi būti pakelta aukščiau.</step>
+    <image file="061"/>
+    <step>Šaldykite galvą drėgnais kompresais.</step>
+    <step>Skambinkite greitajai pagalbai, stebėkite kvėpavimą.</step>
+    <step>Jei nekentėjusįsis sąmoningas: Duokite gerti šalto gėrimo.</step>
+    <step>Jeigu sustojo kvėpavimas, pradėkite dirbtinį kvėpavimą.</step>
+    <step>
+      <link target="aid_apnoea">Tęskite dirbtinį kvėpavimą!</link>
+    </step>
+    <image file="036"/>
+  </section>
+  <section id="aid_unconsciouswithbreath">
+    <title>Sąmonės netekimas/ nualpimas (nukentėjęs kvėpuoja)</title>
+    <description>Nukentėjęs nereaguoja į kalbinimą ar judinimą. Nukentėjęs kvėpuoja.</description>
+    <image file="057"/>
+    <step>Jei netoliese yra žmonių, kreipkitės į juos pagalbos.</step>
+    <step>Paguldykite nukentėjusįjį <link target="aid_recoveryposition">stabiliai ant šono</link>. Galvą palenkite žemyn, pražiodinkite burną, kad vemiant neužspringtų.</step>
+    <image file="008"/>
+    <image file="009"/>
+    <step>Kvieskite greitąją pagalbą.</step>
+  </section>
+  <section id="aid_unconsciouswithoutbreath">
+    <title>Sąmonės netekimas (nukentėjęs nekvėpuoja)</title>
+    <step>Nukentėjęs nerodo jokios reakcijos, nekvėpuoja.</step>
+    <image file="057"/>
+    <step>
+      <link target="aid_resuscitation">Pradėkite gaivinti</link> (dirbtinis kvėpavimas + širdies masažas).</step>
+  </section>
+  <section id="aid_vomiting">
+    <title>Vėmimas</title>
+    <description>Pykinimo rezultatas. Pasituština skrandis. Priežastys: infekcijos, apsinuodijimai, opos, medikamentai, nekokybiškas maistas, neštumas.</description>
+    <image file="054"/>
+    <step>Pavojus dėl dehidratacijos ir mineralų trūkumo!</step>
+    <step>Duokite gerti skysčių (arbatos, vandens).</step>
+    <step>Sunkiais atvejais, vemiant krauju arba jeigu vėmimas nenustoja, skambinkite gydytojui.</step>
+  </section>
+</firstaide>

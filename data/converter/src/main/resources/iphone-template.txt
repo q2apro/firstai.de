@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>${iPhoneTitle}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<meta name="description" content="${iPhoneDescription}" />
+<!-- Copyright of Web-Application - CC by-nc-nd 3.0 (c) Kai Kajus Noack-->
+<style type="text/css" media="screen">@import "iui/iui.css";</style>
+<style type="text/css" media="screen">
+	p, li { line-height: 2.0; font-family: Verdana, Arial; }
+	ul p { padding-left:15px; }
+	ul { list-style-type:decimal; }
+	ol { padding-bottom: 30px; }
+	img { border: 1px solid #575757; 
+		display: block; margin: 15px auto 15px auto;} 
+</style>
+<script type="application/x-javascript">
+		// back button used in iui
+		langback = "${iPhoneBackButton}";
+</script>
+<script type="application/x-javascript" src="iui/iui.js"></script>
+	<script type="application/x-javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }; false);
+		function hideURLbar() { window.scrollTo(0,1); }
+	</script>
+</head>
+<body>
+    <div class="toolbar">
+        <h1 id="pageTitle"></h1>
+        <a id="menuButton" class="button" href="#menu">${iPhoneMenuButton}</a>
+        <a id="backButton" class="button" href="#"></a>
+    </div>
+    <ul id="home" title="${iPhoneTitle}" selected="true">
+        <li><a href="#aid_disclaimer">${disclaimerMenuTitle}</a></li>
+        <li><a href="#telEmergency">${emergencyNumbersMenuTitle}</a></li>
+${MENU}
+        <li><a href="#cclicence"><img src="iui/cc88x31.png" /></a></li>
+    </ul>
+<ul id="aid_disclaimer" title="${disclaimerTitle}"><br />
+${DISCLAIMERAUDIO}
+<ol><li><b>${softwareHeader}</b><br />
+${softwareName}<br />
+${softwareVersion}: ${iPhoneVersionNumber}<br />
+${softwareRelease}: ${iPhoneReleaseDate}<br />
+${SOFTWARECOPYRIGHT}
+${softwareLicense} <a href="#cclicence"><img style="border:none; margin: 0px 0px 20px 0px;" alt="Creative Commons" src="iui/cc88x31.png" /></a>
+${softwareNotice}<br /><br /><b>${softwareIllustrations} &copy; <a target="_blank" href="http://stefan.ganz.priv.at/">Med4Teens</a><br />Interface &copy; <a target="_blank" href="http://code.google.com/p/iui/">iUI Library</a></b></li><br /><br />
+<li><b>${disclaimerHeader}</b><br />
+${disclaimerNotice1}<br />
+${disclaimerNotice2}<br />
+${disclaimerNotice3}<br /><br />
+${disclaimerNotice4}</li><br /><br />
+<li><b>${developmentHeader}</b><br />
+${developmentText}<br /><br />
+${developmentMoreInfo1} <a href="http://firstai.de/">www.firstai.de</a> ${developmentMoreInfo2} <script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>"+emailME+"</a>"); </script></li><br /><br />
+<span style="font-style:italic;font-size:80%">${slogan}</span><br /></ol></ul><br />
+${SECTIONS}
+   <ul id="menu" title="${iPhoneMenuButton}">
+        <li><a target="_self" href="#language">${languageChooser}</a></li>
+        <li><a target="_self" href="http://www.firstai.de/iphone/${iPhoneOfflineFilename}">${offlineBookmark}</a></li>
+        <li><a href="#donate">${donateProject}</a></li>
+        <li><script type="text/javascript"> emailME=("info@" + "firstai.de"); document.write("<a href='mailto:"+emailME+"'>${mailToDeveloper}</a>"); </script>
+        <!-- OFFLINE <li><a target="_self" href="http://iphone.firstai.de/offline/">${checkNewVersion}</a></li>-->
+        </ul> 
+    <ul id="language" title="${languageChooser}">
+	<li><a target="_self" href="firstaidDE.html">Deutsch</a></li>
+	<li><a target="_self" href="firstaidEN.html">English</a></li>
+	<li><a target="_self" href="firstaidFR.html">Français</a></li>
+	<li><a target="_self" href="firstaidLT.html">Lietuviškai</a></li>
+	<li><a target="_self" href="firstaidPT.html">Português</a></li>
+	<li><a target="_self" href="firstaidVI.html">Tiếng Việt</a></li>
+    </ul>
+    <ul id="donate" title="${donate}">
+  <h3 style="padding-left:15px;"><span style="color:#00B316;">${whyDonate}</span></h3>
+  <p>${donate1}</p>
+  <p>${donateOnlineVia} <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=${paypalID}">PayPal</a>${orWireTransfer}</p>
+  <p>${everyContributionCounts}</p><br />
+  <p><span style="font-style:italic;font-size:80%;">${smallStep}</span></p></ul>
+  <ul id="cclicence" title="Licence">  <h3 style="padding-left:15px;">${license}</h3>
+  <p><b>Creative Commons BY-NC-ND 3.0</b><br />
+${licenseTerms}</p>
+   <ol><li><b>${licenseAttribution}</b><br />
+${licenseAttribution1} <i>Kai Kajus Noack</i>${licenseAttribution2} <i>www.firstai.de</i> ${licenseAttribution3}</li><br />
+   <li><b>${licenseNoCommercial}</b><br />
+${licenseNoCommercial1}</li><br />
+   <li><b>${licenseNoDeriv}</b><br />
+${licenseNoDeriv1}</li><br />
+<li>${licenseDistribution1} <span style="font-size:80%;">http://creativecommons.org/licenses/by-nc-nd/3.0/${licenseSuffix}</span>${licenseDistribution2}</li><br />
+<li>${licenseWaived}</li><br />
+<li>${licenseMoralRights}</li></ol></ul>
+${EMERGENCYNUMBERS}
+</body>
+</html>
